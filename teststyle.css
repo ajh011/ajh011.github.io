@@ -27,6 +27,10 @@ body {
   font-family: 'Liberation Serif';
 }
 
+stickycovered{
+ height: 100vh; 
+}
+
 a {
  font-family: Georgia;
 }
