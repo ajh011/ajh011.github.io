@@ -37,7 +37,7 @@ a:hover {
 }
 
 #title {
-  background-image: url("./images/bonsais.png");
+  background-image: url("./bonsais.png");
   background-size: cover;
   background-position: center center;
   width: 100%;
