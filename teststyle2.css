@@ -63,7 +63,7 @@ body {
 
 
 #titname{
-  font-family: Scribble, serif;
+  font-family: Scribble, 'Monsieur La Doulaise', Tangerine, 'Liberation Serif';
   font-size: 65px;
   transform: scale(1.23, 1.7);
   -webkit-font-smoothing: antialiased;
