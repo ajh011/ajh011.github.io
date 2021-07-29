@@ -42,17 +42,25 @@ body {
   font-size: 21px;
   font-family: 'Work Sans', Garamond, 'Times New Roman', serif;
   font-weight: 350;
+  max-width: 87.5%;
+}
+
+body {
+  background-image: url("./images/back17op85.png");
+  background-color: hsla(0, 0%, 0%, 85%);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 #title {
-  width: 100%;
   position: sticky;
   top: 0px;
-  margin: 155px auto 35px;
+  margin: 205px auto 12px;
   color:#d6d6d666;
   z-index: 2;
-  padding: 25px 30px;
-  max-width: 1000px;  
+  padding: 15px 30px;
+  max-width: 90%;  
 }
 
 
@@ -61,11 +69,10 @@ body {
   font-family: Optima, Garamond; 
 }
 
-
 #titname{
   font-family: Scribble, 'Monsieur La Doulaise', Tangerine, 'Liberation Serif';
   font-size: 65px;
-  transform: scale(1.23, 1.7);
+  transform: scale(1.23, 1.67);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -82,15 +89,6 @@ a:hover {
 
 }
 
-body {
-  background-image: url("./images/back17op85.png");
-  background-color: hsla(0, 0%, 0%, 85%);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-
 #notes {
   text-align: left;
   margin-left: 50px;
@@ -102,7 +100,7 @@ body {
 }
 
 #titlebotcover{
-  height: 180px;
+  height: 210px;
 }
 
 ::-webkit-scrollbar {
