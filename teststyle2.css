@@ -85,7 +85,7 @@ a:hover {
 body {
   background-image: url("./images/back17op85.png");
   background-color: hsla(0, 0%, 0%, 85%);
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
