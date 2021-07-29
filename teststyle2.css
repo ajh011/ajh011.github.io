@@ -25,8 +25,8 @@
 
 @font-face {
     font-family: 'Scribble';
-    src: url('//fonts/scribble-webfont.woff2') format('woff2'),
-         url('//fonts/scribble-webfont.woff') format('woff');
+    src: url('fonts/scribble-webfont.woff2') format('woff2'),
+         url('fonts/scribble-webfont.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 
