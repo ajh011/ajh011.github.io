@@ -24,7 +24,7 @@ body {
 
 #title {
   padding: 25px 30px;
-  font-family: 'Liberation Serif';
+  font-family: 'Brush Script MS', 'Liberation Serif';
 }
 
 stickycovered{
@@ -60,6 +60,7 @@ a:hover {
 
 #subtitle{
   font-size: 32px;
+  font-family: Garamond;
 }
 
 #notes {
