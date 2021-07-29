@@ -65,7 +65,7 @@ body {
 #titname{
   font-family: Scribble, serif;
   font-size: 65px;
-  transform: scale(1.23, 2.3);
+  transform: scale(1.23, 1.7);
   -webkit-font-smoothing: antialiased;
 }
 
