@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Assumptions/Intro}{2}{section.1}%
+\contentsline {section}{\numberline {2}D'Alembert's Principle}{2}{section.2}%
+\contentsline {section}{\numberline {3}Hamilton's Principle}{3}{section.3}%
+\contentsline {section}{\numberline {4}Euler-Lagrange Equations}{3}{section.4}%
+\contentsline {section}{\numberline {5}Lagrangian on a Manifold}{4}{section.5}%
+\contentsline {section}{\numberline {6}Conjugate Coordinates}{6}{section.6}%
+\contentsline {section}{\numberline {7}Construction of Hamiltonian}{6}{section.7}%
+\contentsline {section}{\numberline {8}Noether's Theorem}{6}{section.8}%
+\contentsline {section}{\numberline {9}Symplectic Notes}{8}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Problem Set 1}{16}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Problem Set 2}{17}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Problem Set 3}{18}{subsection.9.3}%

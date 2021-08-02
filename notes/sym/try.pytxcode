@@ -1,0 +1,33 @@
+=>PYTHONTEX#sympy#default#9#0#code#####757#
+x, y, z =symbols('x y z')
+=>PYTHONTEX#sympy#default#9#1#i#####761#
+simplify(diff(-y/(x**2+y**2),y)+diff(-x/(x**2+y**2),x))
+=>PYTHONTEX#sympy#default#9#2#code#####764#
+myvar = 125
+=>PYTHONTEX#sympy#default#9#3#i#####768#
+myvar
+=>PYTHONTEX:SETTINGS#
+version=0.18dev
+outputdir=pythontex-files-try
+workingdir=.
+workingdirset=false
+gobble=none
+rerun=default
+hashdependencies=default
+makestderr=true
+stderrfilename=full
+keeptemps=none
+pyfuture=default
+pyconfuture=none
+pygments=true
+pygglobal=:GLOBAL||
+fvextfile=-1
+pyconbanner=none
+pyconfilename=stdin
+depythontex=false
+pygfamily=py|python3|
+pygfamily=pycon|pycon|
+pygfamily=sympy|python3|
+pygfamily=sympycon|pycon|
+pygfamily=pylab|python3|
+pygfamily=pylabcon|pycon|

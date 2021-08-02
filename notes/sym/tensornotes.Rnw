@@ -1,0 +1,75 @@
+%%%%quick build setup user setting for  knitr + pytex
+%%  here->    r -e "knitr::knit('%.Rnw')"|pdflatex -synctex=1 -interaction=nonstopmode %.tex|pythontex %.pytexcode|pdflatex -synctex=1 -interaction=nonstopmode %.tex|"C:/Program Files/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf
+
+%%%%quick build setup user setting for only knitr
+%%  here->    r -e "knitr::knit('%.Rnw')"|pdflatex -synctex=1 -interaction=nonstopmode %.tex|"C:/Program Files/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf
+
+%%%%quick build setup user setting for only pytex
+%%  here->    pdflatex -synctex=1 -interaction=nonstopmode %.tex|pythontex %.pytexcode|pdflatex -synctex=1 -interaction=nonstopmode %.tex|"C:/Program Files/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf
+
+
+
+\documentclass{article}
+
+
+
+\input{C:/tex/hdr/hdrk}
+\usepackage{verbatim}
+\usepackage{fullpage}
+
+
+
+
+
+
+\addtolength{\oddsidemargin}{.05in}
+\addtolength{\topmargin}{-.50in}
+\addtolength{\textheight}{1in}
+\reversemarginpar
+\addtolength{\headsep}{.25in}
+\parskip = 5pt plus 0pt minus 0pt
+\pagestyle{myheadings}
+\setlength{\parindent}{0in}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\title{Tensor Notes}%%Title
+\author{Alexander J. Heilman}%%Name
+\date{revised: \today}%%Date
+\markright{INSERT}%%Heading
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+
+
+\tableofcontents
+
+
+\section*{About}
+The following is a set of notes following along with the youtube series by XylyXylyX titled "What is a Tensor?".
+
+\section{"Elementary vector spaces"}
+
+\textbf{Definition:} A \textit{vector space} is a set $V$ of vectors over some field $F$ with two properties, scalar multiplication $F\times V \rightarrow V$ (which is distributive wrt addition and is associative) and vector addition $V+V\rightarrow V$ (which is distributive wrt multiplication and is associative and commutative)
+
+\section{"How to make a map."}
+
+Maps can be denoted $\langle \Lambda , \vec{v}  \rangle$,
+where $\Lambda$ is a map $\Lambda : V\rightarrow V$ and $\vec{v}\in V$ is a vector. Maps between vector spaces can be completely defined by their action on respective basis vectors'. Linear maps on vector spaces are defined to be those such that $\langle \Lambda , \alpha \vec{v}_1 + \beta \vec{v}_2\rangle =\alpha \langle \Lambda , \vec{v}_1 \rangle +\beta\langle\Lambda, \vec{v}_2\rangle$
+
+
+
+
+
+\end{document}
