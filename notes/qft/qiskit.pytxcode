@@ -1,0 +1,55 @@
+=>PYTHONTEX#py#default#default#0#block#####5#
+from qiskit import *
+qc = QuantumCircuit(2)
+qc.initialize([0,1], 0)
+qc.initialize([1,0], 1)
+qc.h(0)
+qc.draw()
+=>PYTHONTEX#py#default#default#1#block#####8#
+backend = BasicAer.get_backend('statevector_simulator')
+result = execute(qc, backend).result()
+endvector = result.get_statevector()
+print(endvector, decimals = 3)
+=>PYTHONTEX#py#default#default#2#block#####6#
+from qiskit.visualization import *
+plot_bloch_multivector(endvector)
+=>PYTHONTEX#py#default#default#3#block#####6#
+plot_state_city(endvector)
+=>PYTHONTEX#py#default#default#4#block#####16#
+plot_state_qsphere(endvector)
+=>PYTHONTEX#py#default#default#5#block#####10#
+from qiskit.circuit.library import QFT
+qft = QFT(3)
+qft3_000 = execute(qft, backend).result()
+plot_bloch_multivector(qft3_000.get_statevector())
+=>PYTHONTEX#py#default#default#6#block#####2#
+plot_bloch_multivector(qft3_001.get_statevector())
+=>PYTHONTEX#py#default#default#7#block#####10#
+plot_bloch_multivector(qft3_010.get_statevector())
+=>PYTHONTEX#py#default#default#8#block#####18#
+plot_bloch_multivector(qft3_011.get_statevector())
+=>PYTHONTEX:SETTINGS#
+version=0.17
+outputdir=pythontex-files-qiskit
+workingdir=.
+workingdirset=false
+gobble=none
+rerun=default
+hashdependencies=default
+makestderr=false
+stderrfilename=full
+keeptemps=none
+pyfuture=default
+pyconfuture=none
+pygments=true
+pygglobal=:GLOBAL||
+fvextfile=-1
+pyconbanner=none
+pyconfilename=stdin
+depythontex=false
+pygfamily=py|python3|
+pygfamily=pycon|pycon|
+pygfamily=sympy|python3|
+pygfamily=sympycon|pycon|
+pygfamily=pylab|python3|
+pygfamily=pylabcon|pycon|

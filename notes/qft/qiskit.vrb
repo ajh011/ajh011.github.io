@@ -1,0 +1,24 @@
+\frametitle{3-qubit QFT cont.}
+\begin{pyblock}
+plot_bloch_multivector(qft3_001.get_statevector())
+\end{pyblock}
+
+\begin{center}
+\includegraphics[scale=.25]{Downloads/q001.png}
+\end{center}
+
+\begin{pyblock}
+plot_bloch_multivector(qft3_010.get_statevector())
+\end{pyblock}
+
+\begin{center}
+\includegraphics[scale=.25]{Downloads/q010.png}
+\end{center}
+
+\begin{pyblock}
+plot_bloch_multivector(qft3_011.get_statevector())
+\end{pyblock}
+
+\begin{center}
+\includegraphics[scale=.25]{Downloads/q011.png}
+\end{center}
