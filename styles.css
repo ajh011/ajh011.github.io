@@ -57,7 +57,7 @@ body {
   position: sticky;
   top: 0px;
   opacity: .4;
-  margin: 205px auto 12px;
+  margin: 4vh auto 4vh;
   color:#d6d6d6;
   z-index: 2;
   padding: 15px 30px;
@@ -77,9 +77,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-stickycovered{
- height: 100vh; 
+
+#stickycovered{
+  height: 100vh !important; 
+  display: flex;
+  align-items: center;
 }
+
+
 
 a {
  font-family: Georgia;
@@ -100,9 +105,7 @@ a:hover {
   margin-left: 50px;
 }
 
-#titlebotcover{
-  height: 210px;
-}
+
 
 .prettya {
   color: #ffffff;
