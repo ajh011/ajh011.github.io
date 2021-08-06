@@ -46,7 +46,7 @@ body {
 }
 
 body {
-  background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.4)), url("./images/back17op85.png");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.8)), url("./images/back17comp.jpg");
   background-color: hsla(0, 0%, 0%, 85%);
   background-size: cover;
   background-position: center center;
