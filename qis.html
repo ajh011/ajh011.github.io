@@ -47,22 +47,46 @@
             Quantum Computational Science   
           </h1>
           <p id="expp">
-            Quantum computers promise new computational paradigms, generally justified
-            succintly with the discovery of Shor's Algorithim which demostrated that
-            an operational quantum computer could crack RSA encryption schemes currently
-            implemented on classical computers. Qiskit is a python module that 
-            allows one to play with simulated (and some real from IBM!) quantum computers.
-            Here I'd like to inlcude some qiskit .ipy notebooks and write up some 
-            latex going over basic algorithims (maybe basics aswell?).
+            Quantum computers promise new computational paradigms as hardware limitations
+            decrease. Their superiority is justified rather succintly with the following statement:
+            an operational quantum computer would immediatley render obsolete some
+            forms of cryptography currently implemented today (namely Shor's Algorithim
+            and it's application to the widely used RSA encryption scheme).
           </p>
+      </section>
+      <section id="algorithims">
+          <h2 id="algorithimstitle">
+            Basic Quantum Algorithims
+          </h2>
+            <p>
+            Many algorithims use more basic and smaller algorithims as components. Arguably, the three most
+            general and basic quantum algorithims are the Quantum Fourier Transform (QFT), the
+            quantum algorithim for phase estimation of some unitary operatory (Phase Estimation), and
+            the quantum algorithim for the amplification of some desirable subspace in some 
+            larger superposition (Amplitude Amplification). These three algorithims build off of each 
+            other in the order just espoused, that is, the QFT is the simplest, while phase estimation
+            incorporates the QFT, and amplitude amplification generally requires the use of phase
+            estimation.  
+            </p>
+
+
+          <h3 id="qfttitle">
+            Quantum Fourier Transform
+          </h3>
+           <p>
+             The QFT takes the discrete Fourier transform of the input state in terms of t
+           </p>
+          <h3 id="petitle">
+            Phase Estimation
+          </h3>
       </section>
       <section id="qiskit">
           <h2 id="qiskittitle">
             Qiskit  
           </h2>
           <p>
-            Qiskit is a python module that allows ones to explicitly code quantum
-            circuits on which simulations can be run. It also allows users to run
+            Qiskit is a python module that allows users to explicitly code quantum
+            circuit frameworks on which simulations can be run. It also allows users to run
             quantum experiments on real quantum computers at IBM, though all the 
             limitations of modern technology apply (low qubit counts, poor fidelity gates,
             and non-negligible noise).
