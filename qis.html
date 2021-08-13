@@ -3,7 +3,8 @@
   <head>
     <title>Quantum Computational Science</title>
     <link href="./styles/qisstyle.css" rel="stylesheet">
-
+    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+    <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,10 +49,10 @@
           </h1>
           <p id="expp">
             Quantum computers promise new computational paradigms as hardware limitations
-            decrease. Their superiority is justified rather succintly with the following statement:
+            decrease. Their relevance is justified rather succintly with the following statement:
             an operational quantum computer would immediatley render obsolete some
-            forms of cryptography currently implemented today (namely Shor's Algorithim
-            and it's application to the widely used RSA encryption scheme).
+            forms of cryptography currently implemented (namely Shor's Algorithim
+            application to the widely used RSA encryption scheme).
           </p>
       </section>
       <section id="algorithims">
@@ -59,14 +60,15 @@
             Basic Quantum Algorithims
           </h2>
             <p>
-            Many algorithims use more basic and smaller algorithims as components. Arguably, the three most
+            Many algorithims use more basic algorithims as components. Arguably, the three most
             general and basic quantum algorithims are the Quantum Fourier Transform (QFT), the
             quantum algorithim for phase estimation of some unitary operatory (Phase Estimation), and
             the quantum algorithim for the amplification of some desirable subspace in some 
             larger superposition (Amplitude Amplification). These three algorithims build off of each 
-            other in the order just espoused, that is, the QFT is the simplest, while phase estimation
+            other in the order just given. That is, the QFT is the simplest, while phase estimation
             incorporates the QFT, and amplitude amplification generally requires the use of phase
-            estimation.  
+            estimation. Phase estimation is the quantum machinery in Shor's algorithim.
+            Amplitude amplification can be seen as a generalization of Grover's search algorithim.
             </p>
 
 
@@ -74,11 +76,23 @@
             Quantum Fourier Transform
           </h3>
            <p>
-             The QFT takes the discrete Fourier transform of the input state in terms of t
-           </p>
+             The QFT takes the discrete Fourier transform of the input state in terms of the computational
+             bases as follows:
+
+              <div id="qfteq1">
+                $$ \vert j  \rangle  \rightarrow \frac{1}{\sqrt{N}}\sum_{k=0}^{N-1}e^{2\pi i j k/ N}\vert k \rangle $$
+              </div>
+            </p>
+
           <h3 id="petitle">
             Phase Estimation
           </h3>
+          <p>
+            Phase estimation can be seen easily to work in the idealized case where
+            the phase of some unitary operator theta is a binary decimal of order equal to
+            the number of qubits that successive powers of U to the 2 to the n are applied to.
+            Simply apply inverse QFT to the 
+          </p>
       </section>
       <section id="qiskit">
           <h2 id="qiskittitle">
@@ -97,23 +111,32 @@
             Resources
           </h2>
           <p>
-            The classic reference textbook for Quantum Information and Computational Science is the fantastic
-            <em id="nielsenchuang">Quantum Computation and Quantum Information</em> by
+            The classic reference for Quantum Information and Computational Science is the fantastic
+            textbook, <em id="nielsenchuang">Quantum Computation and Quantum Information</em>, by
             Michael A. Nielsen and Isaac L. Chuang. This text is also a reasonably good
-            introduction to the principles of QIS. However, a separate education in linear algebra
-            would be strongly recommended if it is to be taken as a starting point. It can be purchased
-            in print (although it can be found relatively easily online in pdf form due to it's ubiquity).
+            introduction to the principles of QIS. However, if taken as a starting point 
+            some familiarity with linear algebra is strongly recommended. It can be purchased
+            in print.
           </p>
           <p>
             For those first getting into the world of quantum programming with QISkit, 
             a wonderful free online textbook written as an introduction to both QIS and Qiskit 
             can be found at <a href="https://qiskit.org/textbook/ch-states/introduction.html">Qiskit textbook</a>.
-            It's written in a mixture of html and interactive jupyter notebook sections with real code,
+            It's written in a mixture of html and interactive jupyter notebook sections,
             allowing for a more interactive experience.
           </p>
           <p>
-            
+            A great number of smaller articles for expository information are surely out there.
+            One is <em><a href="https://arxiv.org/pdf/quant-ph/0011013.pdf">
+                    Basic concepts in quantum computation</a></em>
           </p>
-     </section>
+          <p>
+            <a href="https://arxiv.org/abs/quant-ph/0005055">Quantum Amplitude Amplification and Estimation</a>
+          </p>
+          <p>
+            <a href="http://twistedoakstudios.com/blog/Post2644_grovers-quantum-search-algorithm">Grover explained</a> <a href="https://algassert.com/post/1718">Shor explained</a>
+            Lov K. Grover's <a href="https://arxiv.org/abs/quant-ph/9712011">Quantum computers can search rapidly by using almost any transformation</a>
+          </p>
+    </section>
   </body>
 </html>
