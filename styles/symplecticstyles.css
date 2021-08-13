@@ -1,4 +1,3 @@
-
 body {
   color:#ffffff;
   width: 94%;
@@ -14,7 +13,7 @@ body {
 
 
 body {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.55)), url("../../images/backtop.jpg");
+  background-image: url("../images/backspherical.jpg");
   background-color: hsla(0, 0%, 0%, 85%);
   background-size: cover;
   background-position: center center;
