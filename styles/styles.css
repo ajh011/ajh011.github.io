@@ -75,6 +75,8 @@ body {
   font-size: 65px;
   transform: scale(1.23, 1.67);
   -webkit-font-smoothing: antialiased;
+  padding-bottom: 5%;
+
 }
 
 
