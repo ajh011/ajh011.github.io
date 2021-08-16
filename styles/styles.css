@@ -143,6 +143,10 @@ a:hover {
   left: 25%;
 }
 
+#3qubitQFT {
+  background-color: #ffffff;
+}
+
 ::-webkit-scrollbar {
   width: 20px;
 }

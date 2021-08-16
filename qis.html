@@ -4,7 +4,9 @@
     <title>Quantum Computational Science</title>
     <link href="./styles/qisstyle.css" rel="stylesheet">
     <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
-    <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}},
+                                  loader: {load: ['[tex]/ams']},
+                                  tex: {packages: {'[+]': ['ams']}});</script>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,8 +53,8 @@
             Quantum computers promise new computational paradigms as hardware limitations
             decrease. Their relevance is justified rather succintly with the following statement:
             an operational quantum computer would immediatley render obsolete some
-            forms of cryptography currently implemented (namely Shor's Algorithim
-            application to the widely used RSA encryption scheme).
+            forms of cryptography currently implemented (namely the application of Shor's Algorithim
+            to the widely used RSA encryption scheme).
           </p>
       </section>
       <section id="algorithims">
@@ -77,25 +79,43 @@
           </h3>
            <div id="qftcoll">
              <p>  
-               The QFT takes the discrete Fourier transform of the input state as follows:
+               Given some pure quantum state of the computational basis \(\vert j \rangle \) where \(j\) ranges from
+               \(N=0\) to \(2^n-1\), the \(n\)-qubit QFT acts on \(\vert j \rangle\) as
 
                 <div id="qfteq1">
-                  $$ \vert j  \rangle  \rightarrow \frac{1}{\sqrt{N}}\sum_{k=0}^{N-1}e^{2\pi i j k/ N}\vert k \rangle $$
+                  $$ \vert j  \rangle  \rightarrow \frac{1}{\sqrt{N}}\sum_{k=0}^{N-1}e^{2\pi i j k/ N}\vert k \rangle . $$
                 </div>
                
-               Here \( \vert j \rangle \) stands for the pure quantum state corresponding to some number in a range
-               \( 0 \) to \(2^{n}-1\) and \(k\) ranges over this aswell in the sum. In terms of the binary computational
-               basis, the QFT can be expanded as follows:
+               In terms of the binary computational basis, the QFT can be expanded as
 
                 <div id="qfteq2">
-                  $$ \vert j_1,...,j_n \rangle \rightarrow \frac{\left( \vert 0 \rangle  + e^{2\pi i0.j_n} \vert 1 \rangle  \right)\otimes \left( \vert 0 \rangle  + e^{2\pi i0.j_{n-1}j_n} \vert 1 \rangle \right)\otimes ...\otimes \left( \vert 0 \rangle  + e^{2\pi i0.j_1...j_n}  \vert 1 \rangle  \right)  }{2^{n/2}} $$
+                  $$ \vert j_1,...,j_n \rangle \rightarrow \frac{\left( \vert 0 \rangle  + e^{2\pi i0.j_n} \vert 1 \rangle  \right)\otimes \left( \vert 0 \rangle  + e^{2\pi i0.j_{n-1}j_n} \vert 1 \rangle \right)\otimes ...\otimes \left( \vert 0 \rangle  + e^{2\pi i0.j_1...j_n}  \vert 1 \rangle  \right)  }{2^{n/2}} .$$
                 </div>
 
                 And here the binary representation of decimals is used so that \( 0.j_1j_2...j_n=\frac{j_1}
                 {2}+\frac{j_2}{4}+...+\frac{j_n}{2^n}\) where all \( j_i=0 \) or 1.
+
+                The QFT, like any truly quantum algorithim, is really a unitary operator. As an example, 
+                here is the matrix form of the 3-qubit QFT:
+
+                $$  
+                    \frac{1}{2\sqrt{2}} 
+                    \begin{bmatrix}
+                    1 & 1 & 1 & 1 & 1 & 1 & 1 & 1\\
+                    1 & \omega &\omega ^2      &\omega ^3  &\omega ^{4} &\omega ^{5} &\omega ^{6} &\omega ^{7}\\
+                    1 & \omega ^2&\omega ^{4}  &\omega^{6} &1       &\omega ^2&\omega ^{4} &\omega ^{6}\\
+                    1 &\omega ^{3}&\omega ^{6} &\omega     &\omega ^{4} &\omega ^{7} &\omega ^2&\omega ^{5} \\
+                    1 &\omega ^{4}&           1&\omega^{4} &1&\omega ^{4} &1 & \omega ^{4}   \\
+                    1 &\omega ^{5}&\omega ^{2} &\omega^{7} &\omega ^{4} &\omega &\omega ^6&\omega ^{3} \\
+                    1 &\omega ^{6}&\omega ^{4} &\omega^2  &1&\omega ^{6} &\omega ^4&\omega ^{2} \\
+                    1 &\omega ^{7}&\omega ^{6} &\omega^{5}  &\omega ^{4} &\omega ^{3} &\omega ^2&\omega  \\
+                    \end{bmatrix}
+                 $$
               </p>
             </div>
-
+            <!--              <a href="https://commons.wikimedia.org/wiki/File:Quantum_Fourier_transform_on_three_qubits.svg">  -->
+                <img src="./images/3qubitQFT.png"   alt="3-qubit QFT circuit" height="auto" width="38%" id="3qubitQFT"> 
+          <!--  </a> -->
             <div id="qftcol2">
                
             </div>
