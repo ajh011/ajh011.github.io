@@ -39,10 +39,11 @@ body {
   margin: 25px auto;
   text-align: center;
   z-index: 0;
-  font-size: 21px;
-  font-family: 'Work Sans', Garamond, 'Times New Roman', serif;
-  font-weight: 350;
+  font-size: 22px;
+  font-family:  Arial, 'Work Sans', Garamond, 'Times New Roman', serif;
+  font-weight: 550;
   max-width: 87.5%;
+  line-height: 1.5;
 }
 
 body {
@@ -143,8 +144,8 @@ a:hover {
   left: 25%;
 }
 
-#3qubitQFT {
-  background-color: #ffffff;
+#interests {
+  font-family: ;
 }
 
 ::-webkit-scrollbar {
