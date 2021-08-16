@@ -83,13 +83,13 @@
                Given some pure quantum state of the computational basis \(\vert j \rangle \) where \(j\) ranges from
                \(N=0\) to \(2^n-1\), the \(n\)-qubit QFT acts on \(\vert j \rangle\) as
 
-                <div id="qfteq1">
+                <div id="qfteq1" class="eq">
                   $$ \vert j  \rangle  \rightarrow \frac{1}{\sqrt{N}}\sum_{k=0}^{N-1}e^{2\pi i j k/ N}\vert k \rangle . $$
                 </div>
                
                In terms of the binary computational basis, the QFT can be expanded as
 
-                <div id="qfteq2">
+                <div id="qfteq2"i class="eq">
                   $$ \vert j_1,...,j_n \rangle \rightarrow \frac{\left( \vert 0 \rangle  + e^{2\pi i0.j_n} \vert 1 \rangle  \right)\otimes \left( \vert 0 \rangle  + e^{2\pi i0.j_{n-1}j_n} \vert 1 \rangle \right)\otimes ...\otimes \left( \vert 0 \rangle  + e^{2\pi i0.j_1...j_n}  \vert 1 \rangle  \right)  }{2^{n/2}} .$$
                 </div>
 
@@ -99,7 +99,8 @@
                 The QFT, like any truly quantum algorithim, is really a unitary operator. As an example, 
                 here is the matrix form of the 3-qubit QFT:
 
-                $$  
+                <div id="3QFTmat" class="eq">
+                    $$  
                     \frac{1}{2\sqrt{2}} 
                     \begin{bmatrix}
                     1 & 1 & 1 & 1 & 1 & 1 & 1 & 1\\
@@ -111,12 +112,13 @@
                     1 &\omega ^{6}&\omega ^{4} &\omega^2  &1&\omega ^{6} &\omega ^4&\omega ^{2} \\
                     1 &\omega ^{7}&\omega ^{6} &\omega^{5}  &\omega ^{4} &\omega ^{3} &\omega ^2&\omega  \\
                     \end{bmatrix}
-                 $$
+                    $$
+                  </div>  
               </p>
             </div>
-            <!--              <a href="https://commons.wikimedia.org/wiki/File:Quantum_Fourier_transform_on_three_qubits.svg">  -->
-                <img src="./images/3qubitQFT.png"   alt="3-qubit QFT circuit" height="auto" width="38%" id="3qubitQFT"> 
-          <!--  </a> -->
+            <a href="https://commons.wikimedia.org/wiki/File:Quantum_Fourier_transform_on_three_qubits.svg" target="_blank">
+                <img src="./images/3qubitQFT.png"   alt="3-qubit QFT circuit" height="auto" width="38%" id="3qubitQFT">
+            </a>
             <div id="qftcol2">
                
             </div>
