@@ -126,11 +126,26 @@
           <h3 id="petitle">
             Phase Estimation
           </h3>
-          <p>
-            Phase estimation can be seen easily to work in the idealized case where
-            the phase of some unitary operator theta is a binary decimal of order equal to
-            the number of qubits that successive powers of U to the 2 to the n are applied to.
-            Simply apply inverse QFT to the 
+          <p id="peintro">
+            The quantum phase estimation algorithim computes the eigenvalue of some
+            unitary operator given an associated eigenvector. The name phase estimation comes
+            from the fact that the eigenvalues of a unitary operator are neccessarily of
+            norm one and thus have the form \( \lambda = e^{\theta i} \), so
+            finding the phase \( \theta \) is equivalent to calculating the eigenvalue.
+          </p>
+          <p id="pe2">
+          <a href="https://commons.wikimedia.org/wiki/File:PhaseCircuit-crop.svg"><img src="./images/nqubitPE.png" alt="N-qubit phase estimation circuit diagram." height="auto" width="38%"></a>
+          </p>
+          <h3 id="aatitle">
+            Amplitude Amplification
+          </h3>
+          <p id="aaintro">
+            Th amplitude amplification algorithim reflects the statevector about the axis of the 'bad' subspace 
+            once partitioned by an oracle. Consecutive reflections of this nature nudge
+            the statevector closer to the 'good' subspace, effectively 'searching' the space
+            to produce a statevector aligned with the 'good' subspace. Of course, the number
+            of reflections requires knowledge about the angle between the initial statevector
+            and the 'good' subspace. This information can be encoded in a unitary matrix???
           </p>
       </section>
       <section id="qiskit">
