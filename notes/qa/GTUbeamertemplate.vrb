@@ -1,0 +1,17 @@
+\frametitle{Where's the code?}
+
+    For the QFT transforms just shown, it's rather simple:\pause
+
+    \vspace{.4cm}
+
+\begin{pyverbatim}
+from qiskit.circuit.library import QFT
+qft = QFT(3)
+qft3_000 = execute(qft, backend).result()
+plot_bloch_multivector(qft3_000.get_statevector())
+\end{pyverbatim}
+
+    \vspace{.4cm}\pause
+
+    Moving forward, I'll just link the code online.
+

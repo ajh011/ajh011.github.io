@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.6)  18 AUG 2021 12:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.6)  18 AUG 2021 17:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -865,34 +865,121 @@ Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 \extratabsurround=\skip88
 \backup@length=\skip89
 \ar@cellbox=\box73
+) (/usr/share/texmf-dist/tex/latex/pythontex/pythontex.sty
+Package: pythontex 2021/06/06 v0.18 execute and typeset Python code and other languages
+ (/usr/share/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+ (/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count456
+\FV@InFile=\read4
+\FV@TabBox=\box74
+\c@FancyVerbLine=\count457
+\FV@StepNumber=\count458
+\FV@OutFile=\write6
+) (/usr/share/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+ (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)) (/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count459
+\output=\toks47
+\linenoprevgraf=\count460
+\linenumbersep=\dimen300
+\linenumberwidth=\dimen301
+\c@linenumber=\count461
+\c@pagewiselinenumber=\count462
+\c@LN@truepage=\count463
+\c@internallinenumber=\count464
+\c@internallinenumbers=\count465
+\quotelinenumbersep=\dimen302
+\bframerule=\dimen303
+\bframesep=\dimen304
+\bframebox=\box75
+LaTeX Info: Redefining \\ on input line 3056.
 )
-\@quotelevel=\count456
-\@quotereset=\count457
+\c@FV@TrueTabGroupLevel=\count466
+\c@FV@TrueTabCounter=\count467
+\FV@TabBox@Group=\box76
+\FV@TmpLength=\skip90
+\c@FV@HighlightLinesStart=\count468
+\c@FV@HighlightLinesStop=\count469
+\FV@LoopCount=\count470
+\FV@NCharsBox=\box77
+\FV@BreakIndent=\dimen305
+\FV@BreakIndentNChars=\count471
+\FV@BreakSymbolSepLeft=\dimen306
+\FV@BreakSymbolSepLeftNChars=\count472
+\FV@BreakSymbolSepRight=\dimen307
+\FV@BreakSymbolSepRightNChars=\count473
+\FV@BreakSymbolIndentLeft=\dimen308
+\FV@BreakSymbolIndentLeftNChars=\count474
+\FV@BreakSymbolIndentRight=\dimen309
+\FV@BreakSymbolIndentRightNChars=\count475
+\c@FancyVerbLineBreakLast=\count476
+\FV@LineBox=\box78
+\FV@LineIndentBox=\box79
+\FV@LineWidth=\dimen310
+) (/usr/share/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count477
+\decimalpart=\count478
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+) (/usr/share/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+ (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+\pgfopts@list@add@a@toks=\toks48
+\pgfopts@list@add@b@toks=\toks49
+) (/usr/share/texmf-dist/tex/latex/newfloat/newfloat.sty
+Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
+) (/usr/share/texmf-dist/tex/latex/currfile/currfile.sty
+Package: currfile 2020/09/29 v0.7d Provides the file path elements of the current input file
+ (/usr/share/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2020/09/29 v0.8a Hooks for input files
+ (/usr/share/texmf-dist/tex/latex/filehook/filehook-2020.sty
+Package: filehook-2020 2020/09/29 v0.8a Hooks for input files
+))
+\c@currfiledepth=\count479
+)
+\pytx@codefile=\write7
+\openout7 = `GTUbeamertemplate.pytxcode'.
+
+\c@pytx@FancyVerbLineTemp=\count480
+\c@pytx@py@default@default=\count481
+\c@pytx@pycon@default@default=\count482
+\c@pytx@sympy@default@default=\count483
+\c@pytx@sympycon@default@default=\count484
+\c@pytx@pylab@default@default=\count485
+\c@pytx@pylabcon@default@default=\count486
+)
+\@quotelevel=\count487
+\@quotereset=\count488
  (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count458
-\l__pdf_internal_box=\box74
+\l__color_backend_stack_int=\count489
+\l__pdf_internal_box=\box80
 ) (./GTUbeamertemplate.aux)
 \openout1 = `GTUbeamertemplate.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -930,24 +1017,24 @@ LaTeX Font Info:    ... okay on input line 52.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count459
-\scratchdimen=\dimen300
-\scratchbox=\box75
-\nofMPsegments=\count460
-\nofMParguments=\count461
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count462
-\MPscratchDim=\dimen301
-\MPnumerator=\count463
-\makeMPintoPDFobject=\count464
-\everyMPtoPDFconversion=\toks48
+\scratchcounter=\count490
+\scratchdimen=\dimen311
+\scratchbox=\box81
+\nofMPsegments=\count491
+\nofMParguments=\count492
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count493
+\MPscratchDim=\dimen312
+\MPnumerator=\count494
+\makeMPintoPDFobject=\count495
+\everyMPtoPDFconversion=\toks51
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 52.
+Package hyperref Info: Link coloring OFF on input line 53.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -955,68 +1042,68 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count465
+\c@section@level=\count496
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 53.
+LaTeX Info: Redefining \pageref on input line 53.
+LaTeX Info: Redefining \nameref on input line 53.
  (./GTUbeamertemplate.out) (./GTUbeamertemplate.out)
-\@outlinefile=\write6
-\openout6 = `GTUbeamertemplate.out'.
+\@outlinefile=\write8
+\openout8 = `GTUbeamertemplate.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 52.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 53.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 52.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 53.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 52.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 52.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 53.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 52.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 52.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 52.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 53.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 52.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 52.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 52.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 53.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 52.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 52.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 52.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 53.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 52.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 52.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 53.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 52.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 53.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 52.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 52.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 52.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 52.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 52.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 52.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 52.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 53.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 53.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 52.
+(Font)              `pureletters' in the math version `normal' on input line 53.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 52.
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 53.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 52.
+(Font)              `pureletters' in the math version `bold' on input line 53.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 52.
+(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 53.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 52.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 53.
  (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1057,50 +1144,81 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'GTUbeamertemplate.bbl' found.
  (./GTUbeamertemplate.bbl)
-Package biblatex Info: Reference section=0 on input line 52.
-Package biblatex Info: Reference segment=0 on input line 52.
- (./GTUbeamertemplate.nav) [1
+Package biblatex Info: Reference section=0 on input line 53.
+Package biblatex Info: Reference segment=0 on input line 53.
+ (./pythontex-files-GTUbeamertemplate/GTUbeamertemplate.pytxmcr)
+Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 53.
+\c@listing=\count497
+\newfloat@ftype=\count498
+Package newfloat Info: float type `listing'=8 on input line 53.
+ (./GTUbeamertemplate.nav) (./pythontex-files-GTUbeamertemplate/GTUbeamertemplate.pytxpyg) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 88.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 88.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 85.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 88.
  (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-) [2
-
-] [3
+) [3
 
 ] [4
 
+] [5
+
 ]
-Overfull \hbox (13.24164pt too wide) detected at line 105
-[]
+Overfull \hbox (16.28331pt too wide) detected at line 114
+[]\OML/cmm/m/it/10.95 :
  []
 
-[5
+<nqbqft.jpeg, id=149, 702.625pt x 241.90375pt>
+File: nqbqft.jpeg Graphic file (type jpg)
+<use nqbqft.jpeg>
+Package pdftex.def Info: nqbqft.jpeg  used on input line 114.
+(pdftex.def)             Requested size: 358.334pt x 123.36928pt.
 
-]
-Overfull \hbox (13.24164pt too wide) detected at line 105
-[]
+Overfull \hbox (51.04413pt too wide) in paragraph at lines 114--114
+ [][] 
  []
 
 [6
 
-]
-Overfull \hbox (13.24164pt too wide) detected at line 105
-[]
+ <./nqbqft.jpeg>]
+Overfull \hbox (16.28331pt too wide) detected at line 114
+[]\OML/cmm/m/it/10.95 :
+ []
+
+File: nqbqft.jpeg Graphic file (type jpg)
+<use nqbqft.jpeg>
+Package pdftex.def Info: nqbqft.jpeg  used on input line 114.
+(pdftex.def)             Requested size: 358.334pt x 123.36928pt.
+
+Overfull \hbox (51.04413pt too wide) in paragraph at lines 114--114
+ [][] 
  []
 
 [7
 
-] [8
+]
+Overfull \hbox (16.28331pt too wide) detected at line 114
+[]\OML/cmm/m/it/10.95 :
+ []
+
+File: nqbqft.jpeg Graphic file (type jpg)
+<use nqbqft.jpeg>
+Package pdftex.def Info: nqbqft.jpeg  used on input line 114.
+(pdftex.def)             Requested size: 358.334pt x 123.36928pt.
+
+Overfull \hbox (51.04413pt too wide) in paragraph at lines 114--114
+ [][] 
+ []
+
+[8
 
 ] [9
 
@@ -1116,15 +1234,42 @@ Overfull \hbox (13.24164pt too wide) detected at line 105
 
 ] [15
 
-] [16
+]
+<psi.png, id=409, 286.82156pt x 229.60782pt>
+File: psi.png Graphic file (type png)
+<use psi.png>
+Package pdftex.def Info: psi.png  used on input line 179.
+(pdftex.def)             Requested size: 200.77371pt x 160.72437pt.
+ [16
 
-] [17
+ <./psi.png>]
+File: psi.png Graphic file (type png)
+<use psi.png>
+Package pdftex.def Info: psi.png  used on input line 179.
+(pdftex.def)             Requested size: 200.77371pt x 160.72437pt.
+ [17
 
-] [18
+]
+File: psi.png Graphic file (type png)
+<use psi.png>
+Package pdftex.def Info: psi.png  used on input line 179.
+(pdftex.def)             Requested size: 200.77371pt x 160.72437pt.
+ [18
 
-] [19
+]
+<psinudge.png, id=488, 286.82156pt x 229.60782pt>
+File: psinudge.png Graphic file (type png)
+<use psinudge.png>
+Package pdftex.def Info: psinudge.png  used on input line 192.
+(pdftex.def)             Requested size: 200.77371pt x 160.72437pt.
+ [19
 
-] [20
+ <./psinudge.png>]
+File: psinudge.png Graphic file (type png)
+<use psinudge.png>
+Package pdftex.def Info: psinudge.png  used on input line 192.
+(pdftex.def)             Requested size: 200.77371pt x 160.72437pt.
+ [20
 
 ] [21
 
@@ -1138,27 +1283,444 @@ Overfull \hbox (13.24164pt too wide) detected at line 105
 
 ] [26
 
-] [27
+]
+<psis.png, id=696, 287.05644pt x 229.89087pt>
+File: psis.png Graphic file (type png)
+<use psis.png>
+Package pdftex.def Info: psis.png  used on input line 242.
+(pdftex.def)             Requested size: 249.73709pt x 200.00342pt.
+<psiSG.png, id=697, 287.05644pt x 229.89087pt>
+File: psiSG.png Graphic file (type png)
+<use psiSG.png>
+Package pdftex.def Info: psiSG.png  used on input line 242.
+(pdftex.def)             Requested size: 249.73709pt x 200.00342pt.
+ [27
 
-] [28
+ <./psis.png>]
+File: psis.png Graphic file (type png)
+<use psis.png>
+Package pdftex.def Info: psis.png  used on input line 242.
+(pdftex.def)             Requested size: 249.73709pt x 200.00342pt.
+File: psiSG.png Graphic file (type png)
+<use psiSG.png>
+Package pdftex.def Info: psiSG.png  used on input line 242.
+(pdftex.def)             Requested size: 249.73709pt x 200.00342pt.
+ [28
 
-] [29
-
-] [30
-
-] [31
-
-] [32
+ <./psiSG.png>]
+File: psiSG.png Graphic file (type png)
+<use psiSG.png>
+Package pdftex.def Info: psiSG.png  used on input line 261.
+(pdftex.def)             Requested size: 249.73709pt x 200.00342pt.
+<psiSGSpsi.png, id=750, 287.05644pt x 229.89087pt>
+File: psiSGSpsi.png Graphic file (type png)
+<use psiSGSpsi.png>
+Package pdftex.def Info: psiSGSpsi.png  used on input line 261.
+(pdftex.def)             Requested size: 249.73709pt x 200.00342pt.
+ [29
 
 ]
-\tf@nav=\write7
-\openout7 = `GTUbeamertemplate.nav'.
+File: psiSG.png Graphic file (type png)
+<use psiSG.png>
+Package pdftex.def Info: psiSG.png  used on input line 261.
+(pdftex.def)             Requested size: 249.73709pt x 200.00342pt.
+File: psiSGSpsi.png Graphic file (type png)
+<use psiSGSpsi.png>
+Package pdftex.def Info: psiSGSpsi.png  used on input line 261.
+(pdftex.def)             Requested size: 249.73709pt x 200.00342pt.
+ [30
 
-\tf@toc=\write8
-\openout8 = `GTUbeamertemplate.toc'.
+ <./psiSGSpsi.png>]
+File: psiSGSpsi.png Graphic file (type png)
+<use psiSGSpsi.png>
+Package pdftex.def Info: psiSGSpsi.png  used on input line 279.
+(pdftex.def)             Requested size: 249.73709pt x 200.00342pt.
+<-psiSGSpsi.png, id=803, 287.05644pt x 229.89087pt>
+File: -psiSGSpsi.png Graphic file (type png)
+<use -psiSGSpsi.png>
+Package pdftex.def Info: -psiSGSpsi.png  used on input line 279.
+(pdftex.def)             Requested size: 249.73709pt x 200.00342pt.
+ [31
 
-\tf@snm=\write9
-\openout9 = `GTUbeamertemplate.snm'.
+]
+File: psiSGSpsi.png Graphic file (type png)
+<use psiSGSpsi.png>
+Package pdftex.def Info: psiSGSpsi.png  used on input line 279.
+(pdftex.def)             Requested size: 249.73709pt x 200.00342pt.
+File: -psiSGSpsi.png Graphic file (type png)
+<use -psiSGSpsi.png>
+Package pdftex.def Info: -psiSGSpsi.png  used on input line 279.
+(pdftex.def)             Requested size: 249.73709pt x 200.00342pt.
+ [32
+
+ <./-psiSGSpsi.png>]
+<-psiSGSpsi_w_ntheta.png, id=856, 287.05644pt x 229.89087pt>
+File: -psiSGSpsi_w_ntheta.png Graphic file (type png)
+<use -psiSGSpsi_w_ntheta.png>
+Package pdftex.def Info: -psiSGSpsi_w_ntheta.png  used on input line 301.
+(pdftex.def)             Requested size: 249.73709pt x 200.00342pt.
+ [33
+
+ <./-psiSGSpsi_w_ntheta.png>]
+File: -psiSGSpsi_w_ntheta.png Graphic file (type png)
+<use -psiSGSpsi_w_ntheta.png>
+Package pdftex.def Info: -psiSGSpsi_w_ntheta.png  used on input line 301.
+(pdftex.def)             Requested size: 249.73709pt x 200.00342pt.
+ [34
+
+]
+File: -psiSGSpsi_w_ntheta.png Graphic file (type png)
+<use -psiSGSpsi_w_ntheta.png>
+Package pdftex.def Info: -psiSGSpsi_w_ntheta.png  used on input line 301.
+(pdftex.def)             Requested size: 249.73709pt x 200.00342pt.
+ [35
+
+]
+File: -psiSGSpsi_w_ntheta.png Graphic file (type png)
+<use -psiSGSpsi_w_ntheta.png>
+Package pdftex.def Info: -psiSGSpsi_w_ntheta.png  used on input line 301.
+(pdftex.def)             Requested size: 249.73709pt x 200.00342pt.
+ [36
+
+] [37
+
+] [38
+
+] [39
+
+] [40
+
+]
+<q000.png, id=1062, 685.56125pt x 231.86626pt>
+File: q000.png Graphic file (type png)
+<use q000.png>
+Package pdftex.def Info: q000.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+<q001.png, id=1063, 685.56125pt x 231.86626pt>
+File: q001.png Graphic file (type png)
+<use q001.png>
+Package pdftex.def Info: q001.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+<q010.png, id=1064, 685.56125pt x 231.86626pt>
+File: q010.png Graphic file (type png)
+<use q010.png>
+Package pdftex.def Info: q010.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+[41
+
+ <./q000.png> <./q001.png> <./q010.png>]
+File: q000.png Graphic file (type png)
+<use q000.png>
+Package pdftex.def Info: q000.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+File: q001.png Graphic file (type png)
+<use q001.png>
+Package pdftex.def Info: q001.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+File: q010.png Graphic file (type png)
+<use q010.png>
+Package pdftex.def Info: q010.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+[42
+
+]
+File: q000.png Graphic file (type png)
+<use q000.png>
+Package pdftex.def Info: q000.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+File: q001.png Graphic file (type png)
+<use q001.png>
+Package pdftex.def Info: q001.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+File: q010.png Graphic file (type png)
+<use q010.png>
+Package pdftex.def Info: q010.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+[43
+
+]
+File: q000.png Graphic file (type png)
+<use q000.png>
+Package pdftex.def Info: q000.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+File: q001.png Graphic file (type png)
+<use q001.png>
+Package pdftex.def Info: q001.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+File: q010.png Graphic file (type png)
+<use q010.png>
+Package pdftex.def Info: q010.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+[44
+
+]
+File: q000.png Graphic file (type png)
+<use q000.png>
+Package pdftex.def Info: q000.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+File: q001.png Graphic file (type png)
+<use q001.png>
+Package pdftex.def Info: q001.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+File: q010.png Graphic file (type png)
+<use q010.png>
+Package pdftex.def Info: q010.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+[45
+
+]
+File: q000.png Graphic file (type png)
+<use q000.png>
+Package pdftex.def Info: q000.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+File: q001.png Graphic file (type png)
+<use q001.png>
+Package pdftex.def Info: q001.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+File: q010.png Graphic file (type png)
+<use q010.png>
+Package pdftex.def Info: q010.png  used on input line 369.
+(pdftex.def)             Requested size: 137.10982pt x 46.37242pt.
+
+Overfull \hbox (35.7036pt too wide) in paragraph at lines 369--369
+[][] 
+ []
+
+[46
+
+]
+\openout4 = `GTUbeamertemplate.vrb'.
+
+ (./GTUbeamertemplate.vrb
+\c@pytx@py@default@defaultverb=\count499
+\c@pytx@py@default@defaultverb@line=\count500
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 12.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 12.
+) [47
+
+] (./GTUbeamertemplate.vrb) [48
+
+] (./GTUbeamertemplate.vrb) [49
+
+] [50
+
+] [51
+
+] [52
+
+] [53
+
+]
+<cppi4.png, id=1399, 1226.5825pt x 625.33624pt>
+File: cppi4.png Graphic file (type png)
+<use cppi4.png>
+Package pdftex.def Info: cppi4.png  used on input line 440.
+(pdftex.def)             Requested size: 282.10805pt x 143.82431pt.
+ [54
+
+ <./cppi4.png>]
+File: cppi4.png Graphic file (type png)
+<use cppi4.png>
+Package pdftex.def Info: cppi4.png  used on input line 440.
+(pdftex.def)             Requested size: 282.10805pt x 143.82431pt.
+ [55
+
+]
+File: cppi4.png Graphic file (type png)
+<use cppi4.png>
+Package pdftex.def Info: cppi4.png  used on input line 440.
+(pdftex.def)             Requested size: 282.10805pt x 143.82431pt.
+ [56
+
+]
+File: cppi4.png Graphic file (type png)
+<use cppi4.png>
+Package pdftex.def Info: cppi4.png  used on input line 440.
+(pdftex.def)             Requested size: 282.10805pt x 143.82431pt.
+ [57
+
+]
+<pepi4counts.png, id=1504, 462.72874pt x 323.2075pt>
+File: pepi4counts.png Graphic file (type png)
+<use pepi4counts.png>
+Package pdftex.def Info: pepi4counts.png  used on input line 460.
+(pdftex.def)             Requested size: 208.22601pt x 145.44203pt.
+ [58
+
+ <./pepi4counts.png>]
+File: pepi4counts.png Graphic file (type png)
+<use pepi4counts.png>
+Package pdftex.def Info: pepi4counts.png  used on input line 460.
+(pdftex.def)             Requested size: 208.22601pt x 145.44203pt.
+ [59
+
+]
+File: pepi4counts.png Graphic file (type png)
+<use pepi4counts.png>
+Package pdftex.def Info: pepi4counts.png  used on input line 460.
+(pdftex.def)             Requested size: 208.22601pt x 145.44203pt.
+ [60
+
+]
+File: pepi4counts.png Graphic file (type png)
+<use pepi4counts.png>
+Package pdftex.def Info: pepi4counts.png  used on input line 460.
+(pdftex.def)             Requested size: 208.22601pt x 145.44203pt.
+ [61
+
+]
+File: pepi4counts.png Graphic file (type png)
+<use pepi4counts.png>
+Package pdftex.def Info: pepi4counts.png  used on input line 460.
+(pdftex.def)             Requested size: 208.22601pt x 145.44203pt.
+ [62
+
+]
+<cp3pi4.png, id=1633, 1226.5825pt x 625.33624pt>
+File: cp3pi4.png Graphic file (type png)
+<use cp3pi4.png>
+Package pdftex.def Info: cp3pi4.png  used on input line 478.
+(pdftex.def)             Requested size: 282.10805pt x 143.82431pt.
+ [63
+
+ <./cp3pi4.png>]
+File: cp3pi4.png Graphic file (type png)
+<use cp3pi4.png>
+Package pdftex.def Info: cp3pi4.png  used on input line 478.
+(pdftex.def)             Requested size: 282.10805pt x 143.82431pt.
+ [64
+
+]
+File: cp3pi4.png Graphic file (type png)
+<use cp3pi4.png>
+Package pdftex.def Info: cp3pi4.png  used on input line 478.
+(pdftex.def)             Requested size: 282.10805pt x 143.82431pt.
+ [65
+
+]
+<pe3pi4counts.png, id=1711, 462.72874pt x 323.2075pt>
+File: pe3pi4counts.png Graphic file (type png)
+<use pe3pi4counts.png>
+Package pdftex.def Info: pe3pi4counts.png  used on input line 495.
+(pdftex.def)             Requested size: 208.22601pt x 145.44203pt.
+ [66
+
+ <./pe3pi4counts.png>]
+File: pe3pi4counts.png Graphic file (type png)
+<use pe3pi4counts.png>
+Package pdftex.def Info: pe3pi4counts.png  used on input line 495.
+(pdftex.def)             Requested size: 208.22601pt x 145.44203pt.
+ [67
+
+]
+File: pe3pi4counts.png Graphic file (type png)
+<use pe3pi4counts.png>
+Package pdftex.def Info: pe3pi4counts.png  used on input line 495.
+(pdftex.def)             Requested size: 208.22601pt x 145.44203pt.
+ [68
+
+] [69
+
+] [70
+
+]
+\tf@nav=\write9
+\openout9 = `GTUbeamertemplate.nav'.
+
+\tf@toc=\write10
+\openout10 = `GTUbeamertemplate.toc'.
+
+\tf@snm=\write11
+\openout11 = `GTUbeamertemplate.snm'.
 
  (./GTUbeamertemplate.aux)
 Package rerunfilecheck Info: File `GTUbeamertemplate.out' has not changed.
@@ -1168,18 +1730,18 @@ Package logreq Info: Writing requests to 'GTUbeamertemplate.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27710 strings out of 478994
- 515211 string characters out of 5864752
- 1027402 words of memory out of 5000000
- 44603 multiletter control sequences out of 15000+600000
- 414967 words of font info for 56 fonts, out of 8000000 for 9000
+ 30727 strings out of 478994
+ 572787 string characters out of 5864752
+ 1098431 words of memory out of 5000000
+ 47452 multiletter control sequences out of 15000+600000
+ 421226 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  131i,14n,132p,1852b,759s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb>
-Output written on GTUbeamertemplate.pdf (32 pages, 173651 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on GTUbeamertemplate.pdf (70 pages, 1056496 bytes).
 PDF statistics:
- 906 PDF objects out of 1000 (max. 8388607)
- 842 compressed objects within 9 object streams
- 65 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1930 PDF objects out of 2073 (max. 8388607)
+ 1787 compressed objects within 18 object streams
+ 141 named destinations out of 1000 (max. 500000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 

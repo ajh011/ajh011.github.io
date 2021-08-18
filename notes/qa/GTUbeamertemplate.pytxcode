@@ -1,0 +1,40 @@
+=>PYTHONTEX#py#default#defaultverb#0#verbatim#####7#
+from qiskit.circuit.library import QFT
+qft = QFT(3)
+qft3_000 = execute(qft, backend).result()
+plot_bloch_multivector(qft3_000.get_statevector())
+=>PYTHONTEX#py#default#defaultverb#1#verbatim#####7#
+from qiskit.circuit.library import QFT
+qft = QFT(3)
+qft3_000 = execute(qft, backend).result()
+plot_bloch_multivector(qft3_000.get_statevector())
+=>PYTHONTEX#py#default#defaultverb#2#verbatim#####7#
+from qiskit.circuit.library import QFT
+qft = QFT(3)
+qft3_000 = execute(qft, backend).result()
+plot_bloch_multivector(qft3_000.get_statevector())
+=>PYTHONTEX:SETTINGS#
+version=0.18
+outputdir=pythontex-files-GTUbeamertemplate
+workingdir=.
+workingdirset=false
+gobble=none
+rerun=default
+hashdependencies=default
+makestderr=false
+stderrfilename=full
+keeptemps=none
+pyfuture=default
+pyconfuture=none
+pygments=true
+pygglobal=:GLOBAL||
+fvextfile=-1
+pyconbanner=none
+pyconfilename=stdin
+depythontex=false
+pygfamily=py|python3|
+pygfamily=pycon|pycon|
+pygfamily=sympy|python3|
+pygfamily=sympycon|pycon|
+pygfamily=pylab|python3|
+pygfamily=pylabcon|pycon|

@@ -17,6 +17,7 @@ citestyle=ieee
 \usepackage{amsmath,amssymb}
 \usepackage{multirow}
 \usepackage{array}
+\usepackage{pythontex}
 
 % Uncomment here for a Turkish presentation.
 %\AtBeginDocument{%
@@ -50,6 +51,8 @@ citestyle=ieee
 %----------------------------------------------------------------------------------------
 
 \begin{document}
+
+\center
 
 \begin{frame}
     % Print the title page as the first slide
@@ -87,7 +90,10 @@ citestyle=ieee
 %------------------------------------------------
 
 \begin{frame}{QFT: The gory details}
-    The explict action of the n-qubit QFT on some given basis vector is 
+    The explict action of the n-qubit QFT on some given basis vector is
+    
+    \vspace{-.7cm}
+
     \[\hspace{-7cm}
         \vert j_1,...,j_n \rangle  \longrightarrow
     \]
@@ -96,8 +102,11 @@ citestyle=ieee
 
     \[
         \frac{\left( \vert 0 \rangle  + e^{2\pi i0.j_n} \vert 1 \rangle  \right)\otimes \left( \vert 0 \rangle  + e^{2\pi i0.j_{n-1}j_n} \vert 1 \rangle \right)\otimes ...\otimes \left( \vert 0 \rangle  + e^{2\pi i0.j_1...j_n}  \vert 1 \rangle  \right)  }{2^{n/2} }
-    \]. \pause
-    Show circuir here
+    .\] \pause
+
+    \vspace{-.6cm} 
+    
+    \includegraphics[scale=.51]{nqbqft.jpeg}
 
     Sorry for asking? \pause Don't be it's easier to see in matrix form
     
@@ -122,7 +131,7 @@ citestyle=ieee
     1 &\omega ^{6}&\omega ^{4} &\omega^2  &1&\omega ^{6} &\omega ^4&\omega ^{2} \\
     1 &\omega ^{7}&\omega ^{6} &\omega^{5}  &\omega ^{4} &\omega ^{3} &\omega ^2&\omega  \\
 \end{bmatrix}
-    \].\pause
+    .\]\pause
 
     Not so interesting yet, but it's usefulness will soon be found in phase estimation
     
@@ -158,28 +167,142 @@ citestyle=ieee
 
 %------------------------------------------------
 
-\begin{frame}{Amplitude Estimation}
-    Amplitude estimation takes some superposition of states partitioned into a 
-    good and a bad subspace, and returns a statevector nudged towards the good subspace.\pause
+\begin{frame}{Amplitude Amplification}
+    Amplitude estimation takes some statevector partitioned into a 
+    good and a bad subspace\pause 
+    
+    \includegraphics[scale=.7]{psi.png}\pause
 
-    \medskip
+     $\vert \psi  \rangle = sin(\theta )\vert \mathcal{G} \rangle +cos(\theta ) \vert \mathcal{B} \rangle  $.
+
+
+\end{frame}
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}{Amplitude Amplification}
+
+    And returns a statevector nudged towards the good subspace.
+
+    \includegraphics[scale=.7]{psinudge.png}\pause
 
     This is accomplished with consecutive applications of a special operator 
-     Show diagram here
 \end{frame}
 
 %------------------------------------------------
 
+
 %------------------------------------------------
 
-\begin{frame}{Amplitude Estimation: Working principles}
-    The initial statevector can be decomposed as
-    $\vert \psi  \rangle = sin(\theta )\vert \mathcal{G} \rangle +cos(\theta ) \vert \mathcal{B} \rangle  $.\pause
+\begin{frame}{Amplitude Amplification: Working principles}
+    Remember $\vert \psi  \rangle = sin(\theta )\vert \mathcal{G} \rangle +cos(\theta ) \vert \mathcal{B} \rangle  $.\pause
 
     \medskip
+    
+  	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+		
 
-    We then construct the operator: $\mathcal{S}=\mathbb{I}-2\vert \mathcal{B} \rangle\langle \mathcal{B} \vert  $
+	    \column{.15\textwidth}	
+		\column{.35\textwidth} % Right column and width
+          We define operators:\pause
+		\column{.55\textwidth} % Left column and width
+		\begin{enumerate}
+            \item \( \mathcal{S}_{\mathcal{G}}
+                                           =\mathbb{I}-2\vert \mathcal{G} \rangle
+                                           \langle \mathcal{G} \vert \)\pause
+            \item  \( \mathcal{S}_{\psi}
+                                         =\mathbb{I}-2\vert \psi
+                                         \rangle\langle\psi \vert \)\pause
+
+            \item  \( \mathcal{Q}=-\mathcal{S}_{\psi}\mathcal{S}_{\mathcal{G}}\)
+		\end{enumerate}
+	\end{columns}\pause
+
+    \vspace{1.3cm}
+
+    Let's see what they do!
 \end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Amplitude Amplification: Visualization I}
+
+    First apply the operator $ \mathcal{S}_{\mathcal{G}} $,
+
+   \begin{figure}
+    \begin{overprint}
+        \onslide<1>\centering\includegraphics[scale=.87]{psis.png}
+        \onslide<2>\centering\includegraphics[scale=.87]{psiSG.png}
+    \end{overprint}
+\end{figure}
+
+
+\end{frame}
+
+%------------------------------------------------
+
+
+%------------------------------------------------
+
+\begin{frame}{Amplitude Amplification: Visualization II}
+
+    Then apply the operator $ \mathcal{S}_{\mathcal{\psi }} $,
+
+   \begin{figure}
+    \begin{overprint}
+        \onslide<1>\centering\includegraphics[scale=.87]{psiSG.png}
+        \onslide<2>\centering\includegraphics[scale=.87]{psiSGSpsi.png}
+    \end{overprint}
+\end{figure}
+
+
+\end{frame}
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}{Amplitude Amplification: Visualization III}
+
+    Now, negate the resulting statevector
+
+   \begin{figure}
+    \begin{overprint}
+        \onslide<1>\centering\includegraphics[scale=.87]{psiSGSpsi.png}
+        \onslide<2>\centering\includegraphics[scale=.87]{-psiSGSpsi.png}
+    \end{overprint}
+\end{figure}
+
+
+\end{frame}
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}{Amplitude Amplification: Visualization IV}
+
+    \hspace{-.5cm }And voil\'a! 
+
+    \vspace{-.2cm}
+
+        \includegraphics[scale=.87]{-psiSGSpsi_w_ntheta.png}
+        \pause
+
+\vspace{-.45cm}
+
+\hspace{1.3cm}Though, we'd need to know $n$ as well\pause. Ideally $\lfloor \frac{\pi}{4\theta }  \rfloor$\pause
+
+Now, let's do some coding!
+
+
+\end{frame}
+
+%------------------------------------------------
+
+
 
 %------------------------------------------------
 \begin{frame}{Qiskit}
@@ -188,7 +311,7 @@ citestyle=ieee
 
 		
 		\column{.5\textwidth} % Right column and width
-	    Qiskit is a software devlopment kit with a python front-end partially
+	    Qiskit is a quantum software devlopment kit with a python front-end partially
         developed by IBM.\pause
 
 		\column{.45\textwidth} % Left column and width
@@ -208,7 +331,39 @@ citestyle=ieee
 %------------------------------------------------
 
 \begin{frame}{Running the QFT}
-    Let's run the 3-qubit QFT on some states\pause
+    Let's run the QFT on some states. \pause We'll use a statevector simulation.\pause 
+    The local evolution of the qubits is depicted in the bloch spheres below:
+
+    \medskip\pause
+
+\hspace{-1.2cm}
+\begin{minipage}[c]{0.25\textwidth}
+    Input: $\vert 000 \rangle \rightarrow$
+\end{minipage}
+\begin{minipage}[c]{0.33\textwidth}
+    \includegraphics[scale=.2]{q000.png}
+\end{minipage}
+
+    \medskip\pause
+
+\hspace{-1.2cm}
+\begin{minipage}[c]{0.25\textwidth}
+    Input: $\vert 001 \rangle \rightarrow$
+\end{minipage}
+\begin{minipage}[c]{0.33\textwidth}
+    \includegraphics[scale=.2]{q001.png}
+\end{minipage}
+
+    \medskip\pause
+
+\hspace{-1.2cm}
+\begin{minipage}[c]{0.25\textwidth}
+    Input: $\vert 010 \rangle \rightarrow$
+\end{minipage}
+\begin{minipage}[c]{0.33\textwidth}
+    \includegraphics[scale=.2]{q010.png}
+\end{minipage}
+
 
 
 \end{frame}
@@ -216,31 +371,58 @@ citestyle=ieee
 
 %------------------------------------------------
 
+
+
+
 %------------------------------------------------
 
-\begin{frame}{Running the QFT}
-    Let's run the 3-qubit QFT on some states\pause
+\begin{frame}[fragile]{Where's the code?}
 
-    \medskip
+    For the QFT transforms just shown, it's rather simple:\pause
 
-    Put bloch spheres of QFT inputs + ouputs here
+    \vspace{.4cm}
+
+\begin{pyverbatim}
+from qiskit.circuit.library import QFT
+qft = QFT(3)
+qft3_000 = execute(qft, backend).result()
+plot_bloch_multivector(qft3_000.get_statevector())
+\end{pyverbatim}
+
+    \vspace{.4cm}\pause
+
+    Moving forward, I'll just link the code online.
 
 \end{frame}
 
 
 %------------------------------------------------
+
+
+
 
 %------------------------------------------------
 
 \begin{frame}{Finding Phases}
-    Let's run the 3-qubit phase estimation algorithim on some gates\pause
+    Let's run the 3-qubit phase estimation algorithim on some gates.\pause
 
     \medskip
 
-    If we use controlled phase gates, we already know that $\vert 0 \rangle $ is an
-    eigenvector.
-    Put counts screenshots here
+    We'll use controlled phase gates\pause, with matrices of the form
 
+    \medskip
+
+    $$ CP\left(  \alpha   \right)= 
+    \begin{bmatrix}
+        1 & 0 & 0 & 0 \\
+        0 & 1 & 0 & 0 \\
+        0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & e^{i\alpha }\\ 
+    \end{bmatrix}.
+    $$\pause
+    
+     We already know that $\vert 1 \rangle $ is an
+     eigenvector of basic phase gates.
 \end{frame}
 
 
@@ -248,14 +430,67 @@ citestyle=ieee
 
 %------------------------------------------------
 
-\begin{frame}{Finding Phases}
-    Let's run the 3-qubit phase estimation algorithim on some gates\pause
+\begin{frame}{Finding Phases: CP($\pi /4$)}
+    This time, we'll use the qasm simulator\pause. This lets us get counts of
+    simulated measurements at the end\pause. So, let's see the circuit:\pause
 
     \medskip
 
-    If we use controlled phase gates, we already know that $\vert 0 \rangle $ is an
-    eigenvector.
-    Put counts screenshots here
+    \includegraphics[scale=.23]{cppi4.png}
+\end{frame}
+
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}{Finding Phases: CP($\pi /4$)}
+    Running the simulation gives a simulated measurement set:\pause
+
+    \medskip
+
+    \includegraphics[scale=.45]{pepi4counts.png}\pause
+
+    \vspace{.4cm}
+
+    Is this what we would expect? \pause Yes! \pause
+
+    As the phase can be encoded perfectly
+    in 3 qubits, we should expect the output vector to be $\vert k \rangle =\vert  \rangle $
+\end{frame}
+
+
+%------------------------------------------------
+
+
+%------------------------------------------------
+
+\begin{frame}{Finding Phases: CP($3\pi /4$)}
+    Running the simulation gives a simulated measurement set:\pause
+
+    \medskip
+
+    \includegraphics[scale=.23]{cp3pi4.png}\pause
+
+    \vspace{.4cm}
+
+
+\end{frame}
+
+
+%------------------------------------------------
+
+
+%------------------------------------------------
+
+\begin{frame}{Finding Phases: CP($3\pi /4$)}
+    Running the simulation gives a simulated measurement set:\pause
+
+    \medskip
+
+    \includegraphics[scale=.45]{pe3pi4counts.png}\pause
+
+    \vspace{.4cm}
 
 \end{frame}
 
