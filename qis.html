@@ -96,7 +96,7 @@
                 And here the binary representation of decimals is used so that \( 0.j_1j_2...j_n=\frac{j_1}
                 {2}+\frac{j_2}{4}+...+\frac{j_n}{2^n}\) where all \( j_i=0 \) or 1.
 
-                The QFT, like any truly quantum algorithim, is really a unitary operator. As an example, 
+                The QFT, like any strictly quantum operation, is really a unitary operator. As an example, 
                 here is the matrix form of the 3-qubit QFT:
 
                 <div id="3QFTmat" class="eq">
@@ -113,12 +113,21 @@
                     1 &\omega ^{7}&\omega ^{6} &\omega^{5}  &\omega ^{4} &\omega ^{3} &\omega ^2&\omega  \\
                     \end{bmatrix}
                     $$
-                  </div>  
+                </div>
+                And below is the corresponding quantum circuit for the 3-qubit QFT (without swaps):
+                <br>
+                <a href="https://commons.wikimedia.org/wiki/File:Quantum_Fourier_transform_on_three_qubits.svg" target="_blank">
+                  <img src="./images/3qubitQFTwhite.svg"   alt="3-qubit QFT circuit" height="auto" width="85%" id="3qubitQFT">
+                </a>
+                <br>
+                The QFT is a wonderful little routine, that would expedite many classical
+                processes' if only we had direct access to the output state vector.
+                However, one of the great uses of the QFT in quantum speed-ups is it's
+                close association to phase estimation, a truly useful template for 
+                quantum circuits.
               </p>
             </div>
-            <a href="https://commons.wikimedia.org/wiki/File:Quantum_Fourier_transform_on_three_qubits.svg" target="_blank">
-                <img src="./images/3qubitQFTwhite.svg"   alt="3-qubit QFT circuit" height="auto" width="38%" id="3qubitQFT">
-            </a>
+
             <div id="qftcol2">
                
             </div>
@@ -134,18 +143,39 @@
             finding the phase \( \theta \) is equivalent to calculating the eigenvalue.
           </p>
           <p id="pe2">
-          <a href="https://commons.wikimedia.org/wiki/File:PhaseCircuit-crop.svg"><img src="./images/nqubitPEwhite.svg" alt="N-qubit phase estimation circuit diagram." height="auto" width="38%"></a>
+          <a href="https://commons.wikimedia.org/wiki/File:PhaseCircuit-crop.svg"><img src="./images/nqubitPEwhite.svg" alt="N-qubit phase estimation circuit diagram." height="auto" width="85%"></a>
+          </p>
+          <p id-"pe3">
+            For an n-qubit phase estimation setup, any phase \( \theta=k\frac{2\pi}{2^n} \) with k an 
+            integer can be deduced exactly. That is, any phase that can be encoded perfectly on
+            n bits will be encoded as exactly the quanum state \( \vert k \rangle \). For phases not
+            of the form \( \frac{\pi k}{2^{n-1}} \), a superposition
+            of states will be produced. However, this superposition can be considered to be 'centered'
+            around the real value. Upon a set of measurements, the average value can be computed and
+            taken as the estimated phase. And the best n-bit approximation of \( k \) will
+            be measure with at least a probability ~40%.
+          </p>
+          <p id="pe4">
+            The phase estimation algorithim is a relatively efficient way
+            of calculating the eigenvalues given pairs of unitary operators and 
+            associated eigenvectors. This means, for those searching for applications,
+            all you have to do is reduce whatever mathematical problem you're trying to
+            solve into a unitary matrix and an associated eigenvector, and consider how 
+            one could encode the answer in the corresponding eigenvalue.
           </p>
           <h3 id="aatitle">
             Amplitude Amplification
           </h3>
           <p id="aaintro">
-            Th amplitude amplification algorithim reflects the statevector about the axis of the 'bad' subspace 
+            The amplitude amplification algorithim reflects the statevector about the axis of the 'bad' subspace 
             once partitioned by an oracle. Consecutive reflections of this nature nudge
             the statevector closer to the 'good' subspace, effectively 'searching' the space
             to produce a statevector aligned with the 'good' subspace. Of course, the number
             of reflections requires knowledge about the angle between the initial statevector
-            and the 'good' subspace. This information can be encoded in a unitary matrix???
+            and the 'good' subspace. This information can be garnered from the use of the 
+            amplitude estimation algorithim, a special case of phase estimation. The de facto
+            resource for these algorithims is Giles Brassard and Peter H&#248;yer's 
+            <a href="https://arxiv.org/abs/quant-ph/0005055">Quantum Amplitude Amplification and Estimation</a>.
           </p>
       </section>
       <section id="qiskit">
@@ -192,7 +222,6 @@
 
           </p>
           <p>
-            <a href="https://arxiv.org/abs/quant-ph/0005055">Quantum Amplitude Amplification and Estimation</a>
           </p>
           <p>
             <a href="http://twistedoakstudios.com/blog/Post2644_grovers-quantum-search-algorithm">Grover explained</a> <a href="https://algassert.com/post/1718">Shor explained</a>
@@ -200,6 +229,9 @@
             <a href="https://courses.cs.washington.edu/courses/cse599d/06wi/lecturenotes9.pdf">QFT notes Dave Bacon</a>
             <a href="https://www.scottaaronson.com/qclec/20.pdf">QFT notes Scott Aaronson</a>
             <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf">QC notes Ronald de Wolf</a>
+            <a href="https://viterbi-web.usc.edu/~tbrun/Course/lecture13.pdf">
+               QFT notes Todd Brun 
+            </a>
           </p>
     </section>
   </body>

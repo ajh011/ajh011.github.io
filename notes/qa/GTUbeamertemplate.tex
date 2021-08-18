@@ -1,0 +1,283 @@
+%--beamer--------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+\documentclass[xcolor=dvipsnames]{beamer}
+\usetheme{default}
+\usepackage[backend=bibtex,
+defernumbers=true,
+style=numeric,
+citestyle=ieee
+]{biblatex}
+%\addbibresource{ref.bib}
+\usepackage{hyperref}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{multirow}
+\usepackage{array}
+
+% Uncomment here for a Turkish presentation.
+%\AtBeginDocument{%
+%	\renewcommand\tablename{Tablo}
+%}
+%\AtBeginDocument{%
+%	\renewcommand\figurename{\u015eekil}
+%}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+% The titlo
+\title[Title]
+{
+ Quantum Algorithims \& Qiskit	
+}
+
+\subtitle{}
+\author{ Alexander J. Heilman }
+ 
+% can specify the institute here
+%\institute[]{\inst{1}Bilgisayar Mühendisli\u011fi Bölümü\\Gebze Teknik Üniversitesi\and\inst{2}Bili\u015fim Teknolojileri Enstitüsü\\Gebze Teknik Üniversitesi}
+
+\date{\today} % Date, can be changed to a custom date
+
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{frame}
+    % Print the title page as the first slide
+    \titlepage
+\end{frame}
+
+
+% Uncomment here if you want a table of contents. You should use \section etc. (explained below)
+% \begin{frame}{Preface}
+%     % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+%     \tableofcontents
+% \end{frame}
+
+
+%------------------------------------------------
+
+\begin{frame}{The Quantum Fourier Transform}
+    The quantum Fourier transform (QFT) is a quantum implementation of the discrete
+    Fourier transform
+
+    \medskip
+
+    \pause
+
+    This means if you give the QFT some state $\sum_{n}^{} \vert nk+l \rangle $, the
+    QFT will give back $\vert k \rangle $.
+
+    \medskip
+
+    \pause
+
+    But what does that look like?
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{QFT: The gory details}
+    The explict action of the n-qubit QFT on some given basis vector is 
+    \[\hspace{-7cm}
+        \vert j_1,...,j_n \rangle  \longrightarrow
+    \]
+
+    \vspace{-.9cm}
+
+    \[
+        \frac{\left( \vert 0 \rangle  + e^{2\pi i0.j_n} \vert 1 \rangle  \right)\otimes \left( \vert 0 \rangle  + e^{2\pi i0.j_{n-1}j_n} \vert 1 \rangle \right)\otimes ...\otimes \left( \vert 0 \rangle  + e^{2\pi i0.j_1...j_n}  \vert 1 \rangle  \right)  }{2^{n/2} }
+    \]. \pause
+    Show circuir here
+
+    Sorry for asking? \pause Don't be it's easier to see in matrix form
+    
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{QFT: The gory details II}
+ For example with $n=3$ the QFT is 
+
+    
+    \[
+      \frac{1}{2\sqrt{2}} 
+    \begin{bmatrix}
+    1 & 1 & 1 & 1 & 1 & 1 & 1 & 1\\
+    1 & \omega &\omega ^2      &\omega ^3  &\omega ^{4} &\omega ^{5} &\omega ^{6} &\omega ^{7}\\
+    1 & \omega ^2&\omega ^{4}  &\omega^{6} &1       &\omega ^2&\omega ^{4} &\omega ^{6}\\
+    1 &\omega ^{3}&\omega ^{6} &\omega     &\omega ^{4} &\omega ^{7} &\omega ^2&\omega ^{5} \\
+    1 &\omega ^{4}&           1&\omega^{4} &1&\omega ^{4} &1 & \omega ^{4}   \\
+    1 &\omega ^{5}&\omega ^{2} &\omega^{7} &\omega ^{4} &\omega &\omega ^6&\omega ^{3} \\
+    1 &\omega ^{6}&\omega ^{4} &\omega^2  &1&\omega ^{6} &\omega ^4&\omega ^{2} \\
+    1 &\omega ^{7}&\omega ^{6} &\omega^{5}  &\omega ^{4} &\omega ^{3} &\omega ^2&\omega  \\
+\end{bmatrix}
+    \].\pause
+
+    Not so interesting yet, but it's usefulness will soon be found in phase estimation
+    
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Phase Estimation}
+	Phase Estimation takes some given unitary operator and an associated eigenvector
+    and returns the corresponding eigenvalue.\pause
+
+    \medskip
+
+    Phase estimation really returns $\vert k \rangle $, where the eigenvalue is $\lambda = e^{i\theta }$
+    with $\theta =k \frac{2\pi }{2^{n} } $.\pause
+
+    \medskip
+
+    So how do we do this? \pause Easy!
+\end{frame}
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}{Phase Estimation: Not so bad!}
+    show circuit here with annotated state vector evolution, compare resulting
+    statevector to QFT output
+\end{frame}
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}{Amplitude Estimation}
+    Amplitude estimation takes some superposition of states partitioned into a 
+    good and a bad subspace, and returns a statevector nudged towards the good subspace.\pause
+
+    \medskip
+
+    This is accomplished with consecutive applications of a special operator 
+     Show diagram here
+\end{frame}
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}{Amplitude Estimation: Working principles}
+    The initial statevector can be decomposed as
+    $\vert \psi  \rangle = sin(\theta )\vert \mathcal{G} \rangle +cos(\theta ) \vert \mathcal{B} \rangle  $.\pause
+
+    \medskip
+
+    We then construct the operator: $\mathcal{S}=\mathbb{I}-2\vert \mathcal{B} \rangle\langle \mathcal{B} \vert  $
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Qiskit}
+	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+		
+
+		
+		\column{.5\textwidth} % Right column and width
+	    Qiskit is a software devlopment kit with a python front-end partially
+        developed by IBM.\pause
+
+		\column{.45\textwidth} % Left column and width
+		\textbf{Features}
+		\begin{enumerate}
+			\item Simulate + visualize quantum circuits you create 
+                yourself\pause
+			\item Compatible with IBM's current quantum computers\pause
+			\item Vibrant and active online community
+		\end{enumerate}
+	\end{columns}
+\end{frame}
+
+%------------------------------------------------
+
+
+%------------------------------------------------
+
+\begin{frame}{Running the QFT}
+    Let's run the 3-qubit QFT on some states\pause
+
+
+\end{frame}
+
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}{Running the QFT}
+    Let's run the 3-qubit QFT on some states\pause
+
+    \medskip
+
+    Put bloch spheres of QFT inputs + ouputs here
+
+\end{frame}
+
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}{Finding Phases}
+    Let's run the 3-qubit phase estimation algorithim on some gates\pause
+
+    \medskip
+
+    If we use controlled phase gates, we already know that $\vert 0 \rangle $ is an
+    eigenvector.
+    Put counts screenshots here
+
+\end{frame}
+
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}{Finding Phases}
+    Let's run the 3-qubit phase estimation algorithim on some gates\pause
+
+    \medskip
+
+    If we use controlled phase gates, we already know that $\vert 0 \rangle $ is an
+    eigenvector.
+    Put counts screenshots here
+
+\end{frame}
+
+
+%------------------------------------------------
+
+
+%------------------------------------------------
+
+\begin{frame}[allowframebreaks]{References}
+    % This might take more than one page
+    %\printbibliography
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+    \Huge{\centerline{Thanks}}
+\end{frame}
+
+%------------------------------------------------
+
+	
+
+\end{document}
