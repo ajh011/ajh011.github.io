@@ -44,11 +44,11 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>GTUbeamertemplate.aux</file>
-      <file>GTUbeamertemplate-blx.bib</file>
+      <file>qa.aux</file>
+      <file>qa-blx.bib</file>
     </provides>
     <requires type="dynamic">
-      <file>GTUbeamertemplate.bbl</file>
+      <file>qa.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -68,22 +68,23 @@
     <cmdline>
       <binary>bibtex</binary>
       <option>-min-crossrefs 2</option>
-      <infile>GTUbeamertemplate</infile>
+      <infile>qa</infile>
     </cmdline>
     <input>
-      <file>GTUbeamertemplate.aux</file>
+      <file>qa.aux</file>
     </input>
     <output>
-      <file>GTUbeamertemplate.bbl</file>
+      <file>qa.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>GTUbeamertemplate.bbl</file>
+      <file>qa.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>GTUbeamertemplate.aux</file>
-      <file>GTUbeamertemplate-blx.bib</file>
+      <file>qa.aux</file>
+      <file>qa-blx.bib</file>
     </requires>
     <requires type="editable">
+      <file>qaref.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>

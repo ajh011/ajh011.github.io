@@ -8,7 +8,7 @@ defernumbers=true,
 style=numeric,
 citestyle=ieee
 ]{biblatex}
-%\addbibresource{ref.bib}
+\addbibresource{qaref.bib}
 \usepackage{hyperref}
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
@@ -18,6 +18,7 @@ citestyle=ieee
 \usepackage{multirow}
 \usepackage{array}
 \usepackage{pythontex}
+\usepackage{hyperref}
 
 % Uncomment here for a Turkish presentation.
 %\AtBeginDocument{%
@@ -34,7 +35,7 @@ citestyle=ieee
 % The titlo
 \title[Title]
 {
- Quantum Algorithims \& Qiskit	
+ Quantum Algorithms \& Qiskit	
 }
 
 \subtitle{}
@@ -52,8 +53,6 @@ citestyle=ieee
 
 \begin{document}
 
-\center
-
 \begin{frame}
     % Print the title page as the first slide
     \titlepage
@@ -66,25 +65,67 @@ citestyle=ieee
 %     \tableofcontents
 % \end{frame}
 
+%------------------------------------------------
+
+\begin{frame}{Intentions}
+    
+    Introduce you to some basic quantum algorithms\pause
+    \begin{itemize}
+        \item Quantum Fourier Transform\pause
+        \item Phase Estimation\pause
+        \item Amplitude Amplification\pause
+    \end{itemize}
+
+    \medskip
+
+    \medskip
+
+    Introduce you to some tools available through Qiskit
+    \begin{itemize}
+        \item Visualize qubit evolution\pause
+        \item Simulate quantum circuits\pause
+        \item Experiment with real quantum computers
+    \end{itemize}
+
+    \medskip
+
+    \medskip
+
+\center
+
+\pause First, the QFT
+\end{frame}
+
+%------------------------------------------------
+
+
+\center
+
 
 %------------------------------------------------
 
 \begin{frame}{The Quantum Fourier Transform}
     The quantum Fourier transform (QFT) is a quantum implementation of the discrete
-    Fourier transform
+    Fourier transform.
+
+   
+    \pause
+\begin{columns}
+ \column{.42\textwidth}       This means if you give the QFT some basis state $\vert  b \rangle $, the
+    QFT will give back states with phases traveling around
+    the unit circle at a rate of $\omega ^ b$.\pause
+    
+  \column{.58\textwidth}   
+   
+  \includegraphics[scale=.4]{qftuc+poly.png}
+ 
+\end{columns}
 
     \medskip
 
     \pause
 
-    This means if you give the QFT some state $\sum_{n}^{} \vert nk+l \rangle $, the
-    QFT will give back $\vert k \rangle $.
-
-    \medskip
-
-    \pause
-
-    But what does that look like?
+    But how?
 \end{frame}
 
 %------------------------------------------------
@@ -108,7 +149,7 @@ citestyle=ieee
     
     \includegraphics[scale=.51]{nqbqft.jpeg}
 
-    Sorry for asking? \pause Don't be it's easier to see in matrix form
+    It's easier to see in matrix form
     
     
 \end{frame}
@@ -116,7 +157,7 @@ citestyle=ieee
 %------------------------------------------------
 
 \begin{frame}{QFT: The gory details II}
- For example with $n=3$ the QFT is 
+ For $n=3$ the QFT is 
 
     
     \[
@@ -142,14 +183,22 @@ citestyle=ieee
 
 \begin{frame}{Phase Estimation}
 	Phase Estimation takes some given unitary operator and an associated eigenvector
-    and returns the corresponding eigenvalue.\pause
+    and returns the corresponding eigenvalue.
+
+    
+    \[
+        \text{If } U\vert\psi\rangle  = \lambda\vert\psi\rangle \quad\text{ then }\quad U,\vert \psi  \rangle 
+        \overset{PE} \longrightarrow\lambda   
+    \].\pause 
+    
+    
 
     \medskip
 
-    Phase estimation really returns $\vert k \rangle $, where the eigenvalue is $\lambda = e^{i\theta }$
-    with $\theta =k \frac{2\pi }{2^{n} } $.\pause
+    Really it returns $\vert k \rangle $, where the eigenvalue is $\lambda = e^{i\theta }$
+    with $\theta =k \frac{2\pi }{2^{n} } $. \pause (Or closest n-bit approx. with at least 40\% probability)
 
-    \medskip
+    \medskip\pause
 
     So how do we do this? \pause Easy!
 \end{frame}
@@ -159,8 +208,17 @@ citestyle=ieee
 %------------------------------------------------
 
 \begin{frame}{Phase Estimation: Not so bad!}
-    show circuit here with annotated state vector evolution, compare resulting
-    statevector to QFT output
+       
+   \begin{figure}
+    \begin{overprint}
+        \onslide<1>\centering\vspace{.3cm}\includegraphics[scale=.15]{nqubitpe.png}
+        \onslide<2>\centering\includegraphics[scale=.33]{nqubitpemu1.png}
+        \onslide<3>\centering\includegraphics[scale=.33]{nqubitpemu2.png}
+        \onslide<4>\centering\includegraphics[scale=.33]{nqubitpemu3.png}
+    \end{overprint}
+\end{figure}
+
+
 \end{frame}
 
 %------------------------------------------------
@@ -169,7 +227,7 @@ citestyle=ieee
 
 \begin{frame}{Amplitude Amplification}
     Amplitude estimation takes some statevector partitioned into a 
-    good and a bad subspace\pause 
+    good and a bad subspace
     
     \includegraphics[scale=.7]{psi.png}\pause
 
@@ -233,8 +291,8 @@ citestyle=ieee
 
    \begin{figure}
     \begin{overprint}
-        \onslide<1>\centering\includegraphics[scale=.87]{psis.png}
-        \onslide<2>\centering\includegraphics[scale=.87]{psiSG.png}
+        \onslide<1>\centering\includegraphics[scale=.87]{psi4.png}
+        \onslide<2>\centering\includegraphics[scale=.87]{psi3.png}
     \end{overprint}
 \end{figure}
 
@@ -252,8 +310,8 @@ citestyle=ieee
 
    \begin{figure}
     \begin{overprint}
-        \onslide<1>\centering\includegraphics[scale=.87]{psiSG.png}
-        \onslide<2>\centering\includegraphics[scale=.87]{psiSGSpsi.png}
+        \onslide<1>\centering\includegraphics[scale=.87]{psi2_5.png}
+        \onslide<2>\centering\includegraphics[scale=.87]{psi2.png}
     \end{overprint}
 \end{figure}
 
@@ -270,8 +328,8 @@ citestyle=ieee
 
    \begin{figure}
     \begin{overprint}
-        \onslide<1>\centering\includegraphics[scale=.87]{psiSGSpsi.png}
-        \onslide<2>\centering\includegraphics[scale=.87]{-psiSGSpsi.png}
+        \onslide<1>\centering\includegraphics[scale=.87]{psi1_5.png}
+        \onslide<2>\centering\includegraphics[scale=.87]{psi1.png}
     \end{overprint}
 \end{figure}
 
@@ -288,7 +346,7 @@ citestyle=ieee
 
     \vspace{-.2cm}
 
-        \includegraphics[scale=.87]{-psiSGSpsi_w_ntheta.png}
+        \includegraphics[scale=.87]{psifin.png}
         \pause
 
 \vspace{-.45cm}
@@ -331,7 +389,7 @@ Now, let's do some coding!
 %------------------------------------------------
 
 \begin{frame}{Running the QFT}
-    Let's run the QFT on some states. \pause We'll use a statevector simulation.\pause 
+    Let's run the QFT on some states in Qiskit. \pause We'll use a statevector simulation. \pause 
     The local evolution of the qubits is depicted in the bloch spheres below:
 
     \medskip\pause
@@ -455,8 +513,12 @@ plot_bloch_multivector(qft3_000.get_statevector())
 
     Is this what we would expect? \pause Yes! \pause
 
-    As the phase can be encoded perfectly
-    in 3 qubits, we should expect the output vector to be $\vert k \rangle =\vert  \rangle $
+   As the phase can be encoded perfectly
+   in 3 qubits, we should expect
+    the output vector to be $\vert k \rangle =$
+       $\vert \alpha  \frac{2^{n-1} }{\pi }\rangle $ \pause or
+       $ \vert 001 \rangle $ in binary
+
 \end{frame}
 
 
@@ -465,12 +527,13 @@ plot_bloch_multivector(qft3_000.get_statevector())
 
 %------------------------------------------------
 
-\begin{frame}{Finding Phases: CP($3\pi /4$)}
-    Running the simulation gives a simulated measurement set:\pause
+\begin{frame}{Finding Phases: CP($5\pi /4$)}
+    Let's try it again with another ideal phase:
+    \pause
 
     \medskip
 
-    \includegraphics[scale=.23]{cp3pi4.png}\pause
+    \includegraphics[scale=.23]{cp5pi4.png}
 
     \vspace{.4cm}
 
@@ -483,26 +546,198 @@ plot_bloch_multivector(qft3_000.get_statevector())
 
 %------------------------------------------------
 
-\begin{frame}{Finding Phases: CP($3\pi /4$)}
-    Running the simulation gives a simulated measurement set:\pause
+\begin{frame}{Finding Phases: CP($5\pi /4$)}
+    
+    Now, we should get $\vert 5 \rangle=\vert 101\rangle$:
+    \pause
 
     \medskip
 
-    \includegraphics[scale=.45]{pe3pi4counts.png}\pause
+    \includegraphics[scale=.45]{pe5pi4counts.png}
+    \vspace{.4cm}
 
+    Yup!
+\end{frame}
+
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}{Finding Phases: CP($4\pi /5$)}
+    
+    Let's try something that's not an ideal phase:
+    \pause
+
+    \medskip
+
+    \includegraphics[scale=.23]{cp4pi5.png}
     \vspace{.4cm}
 
 \end{frame}
 
 
 %------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}{Finding Phases: CP($4\pi /5$)}
+    
+    Let's see what we get when we run the simulation several times:
+    \pause
+
+    \medskip
+
+    \includegraphics[scale=.45]{pe4pi5counts.png}\pause
+
+    \vspace{.4cm}
+
+     This seems to be a good estimate given $ \frac{4\pi }{5} \frac{4}{\pi } =3.2 \approx 3$.\pause
+
+     \medskip
+
+     Let's do some amplitude amplification!
+    
+\end{frame}
+
+
+%------------------------------------------------
+
+
+%------------------------------------------------
+
+\begin{frame}{Amplitude Amplification in Practice}
+
+    Below is a simple 2-qubit circuit for amplitude amplification that searches for the
+    $\vert 11 \rangle $ state:
+
+    \includegraphics[scale=.5]{grovercirc11.png}
+
+    \pause
+
+    The first section initializes the state into $\vert + \rangle ^{\otimes 2}  $\pause.
+
+    The second 
+    portion flips the sign of only $\vert 11 \rangle $\pause. 
+
+    The third section flips
+    the state about the original vector.\pause 
+
+    We only need to run the operations once as
+    $n=1$ here\pause.
+
+    \vspace{.43cm}
+
+    Let's run it!
+ 
+\end{frame}
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}{Amplitude Amplification in Practice: Simulation}
+   
+    Running the previous circuit on the simulation we used for phase estimation:
+
+    \includegraphics[scale=.45]{groversim.png}
+
+    \vspace{.43cm}\pause
+
+    Perfect results! \pause \ Let's run it for real!
+ 
+\end{frame}
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}{Amplitude Amplification in Practice: Calling IBMQ}
+   
+    Now, running our circuit on IBMQ-Lima, a real 5-qubit quantum computer:\pause
+
+    \medskip
+
+    \includegraphics[scale=.45]{groverreal.png}
+
+    \vspace{.43cm}\pause
+
+    Not too bad! 
+\end{frame}
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}{Wrapping Up!}
+ 
+    Basic Quantum Algorithms\pause
+    \begin{itemize}
+        \item Quantum Fourier Transform \pause
+        \item Phase Estimation\pause
+        \item Amplitude Amplification\pause
+    \end{itemize}
+
+    \medskip
+
+    \medskip
+    
+    Qiskit\pause
+    \begin{itemize}
+        \item Visualize qubit evolution\pause
+        \item Simulate experiments on circuits\pause
+        \item Run circuits on real computers!
+    \end{itemize}
+
+    \medskip
+
+    \medskip
+\end{frame}
+
+%------------------------------------------------
+
+
+
+%------------------------------------------------
+
+\begin{frame}{Moving Forward}
+    
+    Where to go from here?\pause
+
+    \begin{itemize}
+        \item Build to more complex applications\pause
+        \item Extend to quantum machine learning\pause
+        \item Run some interesting experiments
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+
+%------------------------------------------------
+
+\begin{frame}{That's it!}
+   
+    Notebooks for the circuits run here can be found at \url{https://alexheilman.com}
+
+
+\end{frame}
+
+%------------------------------------------------
+
+
+
+
 
 
 %------------------------------------------------
 
 \begin{frame}[allowframebreaks]{References}
     % This might take more than one page
-    %\printbibliography
+    \nocite{*}
+    \printbibliography
+
 \end{frame}
 
 %------------------------------------------------

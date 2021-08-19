@@ -153,7 +153,7 @@
             of states will be produced. However, this superposition can be considered to be 'centered'
             around the real value. Upon a set of measurements, the average value can be computed and
             taken as the estimated phase. And the best n-bit approximation of \( k \) will
-            be measure with at least a probability ~40%.
+            be measured with at least a probability ~40%.
           </p>
           <p id="pe4">
             The phase estimation algorithim is a relatively efficient way
@@ -167,8 +167,9 @@
             Amplitude Amplification
           </h3>
           <p id="aaintro">
-            The amplitude amplification algorithim reflects the statevector about the axis of the 'bad' subspace 
-            once partitioned by an oracle. Consecutive reflections of this nature nudge
+            The amplitude amplification algorithim reflects the statevector about the axis of the 'good' subspace 
+            once partitioned by an oracle, and then reflects about the axis of the original state vector.
+            Consecutive reflections of this nature nudge
             the statevector closer to the 'good' subspace, effectively 'searching' the space
             to produce a statevector aligned with the 'good' subspace. Of course, the number
             of reflections requires knowledge about the angle between the initial statevector

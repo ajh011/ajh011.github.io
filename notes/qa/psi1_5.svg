@@ -9,7 +9,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
-   sodipodi:docname="psi1.svg"
+   sodipodi:docname="psi1_5.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -244,7 +244,7 @@
      inkscape:cx="173.03571"
      inkscape:cy="144.82143"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g2197"
      inkscape:document-rotation="0"
      showgrid="false"
      units="mm"
@@ -436,13 +436,6 @@
        id="path1259"
        d="M 12.239287,75.752417 78.881645,8.0532019"
        style="opacity:0.266234;fill:none;stroke:#000000;stroke-width:0.119;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.119, 0.119;stroke-dashoffset:0;stroke-opacity:1" />
-    <path
-       inkscape:transform-center-y="-12.234713"
-       inkscape:transform-center-x="-12.050555"
-       sodipodi:nodetypes="ccc"
-       id="path837-4-9-1"
-       d="M 47.707408,39.659634 68.706719,18.398443 71.762922,15.304128"
-       style="opacity:0.8;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend-46-5-8)" />
     <g
        style="fill:#000000;stroke:#000000;stroke-width:0;opacity:0.2"
        id="g1962"
@@ -535,143 +528,19 @@
          id="g2157"
          data-mml-node="mo" />
       <g
-         style="opacity:0.4"
-         id="g2183"
-         transform="matrix(0.93091631,0,0,0.93091631,-3889.9739,4924.5004)"
-         data-mml-node="TeXAtom">
-        <g
-           style="opacity:0.45"
-           id="g2169"
-           data-mml-node="msub">
-          <g
-             id="g2161"
-             data-mml-node="mi">
-            <use
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use2159"
-               xlink:href="#MJX-21-TEX-C-53" />
-          </g>
-          <g
-             id="g2167"
-             transform="matrix(0.707,0,0,0.707,606,-150)"
-             data-mml-node="TeXAtom">
-            <g
-               id="g2165"
-               data-mml-node="mi">
-              <use
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2163"
-                 xlink:href="#MJX-21-TEX-I-3C8" />
-            </g>
-          </g>
-        </g>
-        <g
-           style="opacity:0.45"
-           id="g2181"
-           transform="translate(1116.3)"
-           data-mml-node="msub">
-          <g
-             id="g2173"
-             data-mml-node="mi">
-            <use
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use2171"
-               xlink:href="#MJX-21-TEX-C-53" />
-          </g>
-          <g
-             id="g2179"
-             transform="matrix(0.707,0,0,0.707,606,-150)"
-             data-mml-node="TeXAtom">
-            <g
-               id="g2177"
-               data-mml-node="mi">
-              <use
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2175"
-                 xlink:href="#MJX-21-TEX-C-47" />
-            </g>
-          </g>
-        </g>
-      </g>
-      <g
-         style="opacity:0.4"
-         id="g2187"
-         transform="matrix(0.93091631,0,0,0.93091631,-1848.3813,4924.5004)"
-         data-mml-node="mo">
-        <use
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use2185"
-           xlink:href="#MJX-21-TEX-N-7C" />
-      </g>
-      <g
-         style="opacity:0.45"
-         id="g2191"
-         transform="matrix(0.93091631,0,0,0.93091631,-1589.5866,4924.5004)"
-         data-mml-node="mi">
-        <use
-           style="opacity:0.4"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use2189"
-           xlink:href="#MJX-21-TEX-I-3C8" />
-      </g>
-      <g
-         style="opacity:0.34"
-         id="g2195"
-         transform="matrix(0.93091631,0,0,0.93091631,-983.5601,4924.5004)"
-         data-mml-node="mo">
-        <use
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use2193"
-           xlink:href="#MJX-21-TEX-N-27E9" />
-      </g>
-      <g
-         transform="translate(10828.793,21114.979)"
-         style="fill:#000000;stroke:#000000;stroke-width:0"
-         data-mml-node="mo"
-         id="g2157-9">
-        <use
-           xlink:href="#MJX-21-TEX-N-2212"
-           id="use2155-6"
-           x="0"
-           y="0"
-           width="100%"
-           height="100%" />
-      </g>
-      <g
-         style="fill:#000000;stroke:#000000;stroke-width:0"
+         style="fill:#000000;stroke:#000000;stroke-width:0;opacity:0.7"
          data-mml-node="TeXAtom"
-         transform="translate(11606.792,21114.979)"
-         id="g2183-5">
+         transform="matrix(0.96800072,0,0,0.96800072,-4231.2111,4905.6045)"
+         id="g2183-5-7">
         <g
            data-mml-node="msub"
-           id="g2169-7">
+           id="g2169-7-5">
           <g
              data-mml-node="mi"
-             id="g2161-6">
+             id="g2161-6-3">
             <use
                xlink:href="#MJX-21-TEX-C-53"
-               id="use2159-9"
+               id="use2159-9-5"
                x="0"
                y="0"
                width="100%"
@@ -680,13 +549,13 @@
           <g
              data-mml-node="TeXAtom"
              transform="matrix(0.707,0,0,0.707,606,-150)"
-             id="g2167-9">
+             id="g2167-9-6">
             <g
                data-mml-node="mi"
-               id="g2165-1">
+               id="g2165-1-2">
               <use
                  xlink:href="#MJX-21-TEX-I-3C8"
-                 id="use2163-9"
+                 id="use2163-9-9"
                  x="0"
                  y="0"
                  width="100%"
@@ -697,13 +566,13 @@
         <g
            data-mml-node="msub"
            transform="translate(1116.3)"
-           id="g2181-6">
+           id="g2181-6-1">
           <g
              data-mml-node="mi"
-             id="g2173-7">
+             id="g2173-7-2">
             <use
                xlink:href="#MJX-21-TEX-C-53"
-               id="use2171-8"
+               id="use2171-8-7"
                x="0"
                y="0"
                width="100%"
@@ -712,13 +581,13 @@
           <g
              data-mml-node="TeXAtom"
              transform="matrix(0.707,0,0,0.707,606,-150)"
-             id="g2179-3">
+             id="g2179-3-0">
             <g
                data-mml-node="mi"
-               id="g2177-2">
+               id="g2177-2-9">
               <use
                  xlink:href="#MJX-21-TEX-C-47"
-                 id="use2175-4"
+                 id="use2175-4-3"
                  x="0"
                  y="0"
                  width="100%"
@@ -728,39 +597,39 @@
         </g>
       </g>
       <g
-         style="fill:#000000;stroke:#000000;stroke-width:0"
+         style="fill:#000000;stroke:#000000;stroke-width:0;opacity:0.7"
          data-mml-node="mo"
-         transform="translate(13799.893,21114.979)"
-         id="g2187-4">
+         transform="matrix(0.96800072,0,0,0.96800072,-2108.2878,4905.6045)"
+         id="g2187-4-6">
         <use
            xlink:href="#MJX-21-TEX-N-7C"
-           id="use2185-1"
+           id="use2185-1-0"
            x="0"
            y="0"
            width="100%"
            height="100%" />
       </g>
       <g
-         style="fill:#000000;stroke:#000000;stroke-width:0"
+         style="fill:#000000;stroke:#000000;stroke-width:0;opacity:0.7"
          data-mml-node="mi"
-         transform="translate(14077.892,21114.979)"
-         id="g2191-3">
+         transform="matrix(0.96800072,0,0,0.96800072,-1839.1845,4905.6045)"
+         id="g2191-3-6">
         <use
            xlink:href="#MJX-21-TEX-I-3C8"
-           id="use2189-7"
+           id="use2189-7-2"
            x="0"
            y="0"
            width="100%"
            height="100%" />
       </g>
       <g
-         style="fill:#000000;stroke:#000000;stroke-width:0"
+         style="fill:#000000;stroke:#000000;stroke-width:0;opacity:0.7"
          data-mml-node="mo"
-         transform="translate(14728.892,21114.979)"
-         id="g2195-2">
+         transform="matrix(0.96800072,0,0,0.96800072,-1209.0161,4905.6045)"
+         id="g2195-2-6">
         <use
            xlink:href="#MJX-21-TEX-N-27E9"
-           id="use2193-5"
+           id="use2193-5-1"
            x="0"
            y="0"
            width="100%"

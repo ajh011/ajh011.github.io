@@ -1,0 +1,142 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{Qiskit}{misc}{}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.5281/zenodo.2562110
+    \endverb
+    \field{title}{Qiskit: An Open-source Framework for Quantum Computing}
+    \field{year}{2019}
+  \endentry
+
+  \entry{NC}{book}{}
+    \name{author}{2}{}{%
+      {{hash=NMA}{%
+         family={Nielsen},
+         familyi={N\bibinitperiod},
+         given={Michael\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=CIL}{%
+         family={Chuang},
+         familyi={C\bibinitperiod},
+         given={Isaac\bibnamedelima L.},
+         giveni={I\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{NMACIL1}
+    \strng{fullhash}{NMACIL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    One of the most cited books in physics of all time, Quantum Computation and
+  Quantum Information remains the best textbook in this exciting field of
+  science. This 10th anniversary edition includes an introduction from the
+  authors setting the work in context. This comprehensive textbook describes
+  such remarkable effects as fast quantum algorithms, quantum teleportation,
+  quantum cryptography and quantum error-correction. Quantum mechanics and
+  computer science are introduced before moving on to describe what a quantum
+  computer is, how it can be used to solve problems faster than 'classical'
+  computers and its real-world implementation. It concludes with an in-depth
+  treatment of quantum information. Containing a wealth of figures and
+  exercises, this well-known textbook is ideal for courses on the subject, and
+  will interest beginning graduate students and researchers in physics,
+  computer science, mathematics, and electrical engineering.%
+    }
+    \field{edition}{10th}
+    \field{isbn}{1107002176}
+    \field{title}{Quantum Computation and Quantum Information: 10th Anniversary
+  Edition}
+    \list{location}{1}{%
+      {USA}%
+    }
+    \field{year}{2011}
+  \endentry
+
+  \entry{nqbqft}{misc}{}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://jonathan-hui.medium.com/qc-quantum-fourier-transform-45436f90a43}}
+    \field{title}{n-qubit QFT diagram source}
+  \endentry
+
+  \entry{pediag}{misc}{}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://en.wikipedia.org/wiki/Quantum_phase_estimation_algorithm#/media/File:PhaseCircuit-crop.svg}}
+    \field{title}{Phase estimation diagram source}
+  \endentry
+
+  \entry{qiskittext}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://qiskit.org/textbook/preface.html}}
+    \field{title}{Qiskit Textbook}
+  \endentry
+
+  \entry{Brassard_2002}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BG}{%
+         family={Brassard},
+         familyi={B\bibinitperiod},
+         given={Gilles},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=HP}{%
+         family={Høyer},
+         familyi={H\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mosca},
+         familyi={M\bibinitperiod},
+         given={Michele},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Tapp},
+         familyi={T\bibinitperiod},
+         given={Alain},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Mathematical Society}%
+    }
+    \strng{namehash}{BGHPMM+1}
+    \strng{fullhash}{BGHPMMTA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1090/conm/305/05215
+    \endverb
+    \field{isbn}{9780821878958}
+    \field{issn}{0271-4132}
+    \field{pages}{53\u201374}
+    \field{title}{Quantum amplitude amplification and estimation}
+    \verb{url}
+    \verb http://dx.doi.org/10.1090/conm/305/05215
+    \endverb
+    \field{journaltitle}{Quantum Computation and Information}
+    \field{year}{2002}
+  \endentry
+\enddatalist
+\endinput

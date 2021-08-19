@@ -1,36 +1,108 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="psi2.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   id="svg8"
-   version="1.1"
-   viewBox="0 0 100.9 80.800004"
-   height="80.800003mm"
-   width="100.9mm"
-   inkscape:export-filename="/home/al/ajh011.github.io/notes/qa/psiSG.png"
+   inkscape:export-ydpi="600"
    inkscape:export-xdpi="600"
-   inkscape:export-ydpi="600">
+   inkscape:export-filename="/home/al/ajh011.github.io/notes/qa/psiSG.png"
+   width="100.9mm"
+   height="80.800003mm"
+   viewBox="0 0 100.9 80.800004"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   sodipodi:docname="psi2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs2">
     <inkscape:perspective
-       id="perspective1542"
-       inkscape:persp3d-origin="59.450002 : 26.933335 : 1"
-       inkscape:vp_z="118.9 : 40.400002 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
+       sodipodi:type="inkscape:persp3d"
        inkscape:vp_x="0 : 40.400002 : 1"
-       sodipodi:type="inkscape:persp3d" />
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="118.9 : 40.400002 : 1"
+       inkscape:persp3d-origin="59.450002 : 26.933335 : 1"
+       id="perspective1542" />
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path866"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Send"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path854"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path842"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <path
+       d="m 139,-249 h -2 q -12,0 -18,14 v 486 l 1,486 q 10,13 19,13 13,0 20,-15 v -970 q -8,-14 -18,-14 z"
+       id="MJX-13-TEX-N-7C" />
+    <path
+       d="m 304,342 q -12,0 -12,11 0,19 31,38 8,5 94,37 86,32 116,59 30,25 30,68 v 7 q 0,13 -6,27 -6,14 -27,29 -21,15 -55,18 -46,0 -79,-23 Q 363,590 330,539 263,446 210,238 196,183 173,120 135,31 121,16 108,1 85,-10 62,-21 47,-22 q -15,-1 -15,12 0,5 12,28 12,23 33,75 21,52 35,113 23,90 42,189 19,99 28,155 9,56 9,65 0,1 -1,1 -2,0 -11,-5 -9,-5 -22,-10 -13,-5 -26,-7 -18,0 -18,11 0,18 31,39 10,6 61,32 51,26 62,27 10,2 12,2 16,0 16,-12 0,-7 -7,-58 -7,-51 -10,-60 0,-3 9,7 49,53 115,87 66,34 138,35 63,0 93,-31 30,-31 31,-74 0,-40 -26,-76 -26,-36 -58,-61 -27,-22 -76,-49 l -13,-6 13,-5 q 62,-21 92,-64 30,-43 31,-94 0,-72 -52,-134 -52,-62 -131,-97 -79,-35 -160,-35 -76,0 -126,50 -14,14 -12,22 4,17 32,35 28,18 52,18 6,0 16,-8 10,-8 21,-20 11,-12 35,-19 24,-7 55,-9 79,0 129,46 40,43 40,105 v 12 q 0,18 -8,39 -8,21 -27,43 -19,22 -55,38 -36,16 -86,15 -15,0 -29,-1 -14,-1 -17,-2 z"
+       id="MJX-13-TEX-C-42" />
+    <path
+       d="m 55,732 q 1,7 6,12 5,5 14,6 10,0 17,-10 3,-7 94,-246 91,-239 92,-244 1,-5 -91,-244 -92,-239 -95,-246 -7,-10 -17,-10 -8,0 -13,5 -5,5 -7,13 0,5 90,243 91,237 91,239 0,2 -91,239 -90,238 -90,243 z"
+       id="MJX-13-TEX-N-27E9" />
+    <path
+       d="m 139,-249 h -2 q -12,0 -18,14 v 486 l 1,486 q 10,13 19,13 13,0 20,-15 v -970 q -8,-14 -18,-14 z"
+       id="MJX-14-TEX-N-7C" />
+    <path
+       d="m 216,68 q -61,0 -101,32 -40,32 -56,77 -16,45 -15,96 0,26 6,60 6,34 23,88 17,54 60,112 43,58 106,99 107,72 227,72 42,0 49,-1 40,-7 62,-22 22,-15 22,-46 0,-30 -29,-75 -29,-45 -47,-64 -33,-30 -68,-30 -15,0 -15,9 0,9 29,51 29,42 30,63 0,16 -10,28 -29,19 -86,19 -60,0 -108,-25 -48,-25 -75,-63 -27,-38 -46,-84 -19,-46 -24,-82 -5,-36 -6,-64 0,-77 36,-129 36,-52 107,-52 38,0 72,23 69,45 107,162 6,20 35,37 29,17 50,17 6,0 9,-3 3,-3 4,-5 l 1,-3 Q 560,341 551,302 542,263 512,173 482,83 451,31 359,-119 204,-119 q -41,1 -77,10 -36,9 -53,18 -17,9 -21,14 -1,2 -1,6 0,17 27,36 27,19 53,21 h 8 l 11,-5 q 59,-30 130,-30 h 8 q 23,0 40,18 22,24 43,67 21,43 33,73 12,30 11,33 l -8,-6 q -7,-5 -16,-11 -9,-6 -23,-14 -14,-8 -31,-15 -17,-7 -35,-14 -18,-7 -42,-10 -24,-3 -45,-4 z"
+       id="MJX-14-TEX-C-47" />
+    <path
+       d="m 55,732 q 1,7 6,12 5,5 14,6 10,0 17,-10 3,-7 94,-246 91,-239 92,-244 1,-5 -91,-244 -92,-239 -95,-246 -7,-10 -17,-10 -8,0 -13,5 -5,5 -7,13 0,5 90,243 91,237 91,239 0,2 -91,239 -90,238 -90,243 z"
+       id="MJX-14-TEX-N-27E9" />
+    <path
+       d="m 139,-249 h -2 q -12,0 -18,14 v 486 l 1,486 q 10,13 19,13 13,0 20,-15 v -970 q -8,-14 -18,-14 z"
+       id="MJX-9-TEX-N-7C" />
+    <path
+       d="m 161,441 q 41,0 65,-24 24,-24 24,-59 0,-20 -32,-106 -32,-86 -31,-125 3,-42 27,-66 21,-18 43,-24 18,-8 31,-8 h 1 l 82,331 q 84,331 85,332 3,2 16,2 20,0 20,-7 0,-9 -81,-331 -82,-328 -82,-329 0,-1 6,-1 86,0 163,88 77,88 78,164 0,24 -8,41 -8,17 -18,24 -10,7 -18,18 -8,11 -8,23 0,21 17,40 17,19 42,19 19,0 35,-18 16,-18 16,-59 0,-29 -11,-78 Q 612,239 605,220 573,125 492,57 411,-11 329,-11 h -10 l -23,-93 q -24,-94 -24,-95 -2,-6 -20,-6 h -13 q -6,6 -6,8 0,5 23,95 23,90 23,93 -7,1 -14,1 -159,22 -159,147 0,35 33,125 33,90 34,115 0,1 0,2 0,9 0,12 0,3 -4,7 -4,4 -11,4 h -4 Q 131,404 112,385 93,366 82,344 71,322 65,302 59,282 57,280 55,278 41,278 H 27 q -6,6 -6,9 0,12 13,46 13,34 48,71 35,37 79,37 z"
+       id="MJX-9-TEX-I-3C8" />
+    <path
+       d="m 55,732 q 1,7 6,12 5,5 14,6 10,0 17,-10 3,-7 94,-246 91,-239 92,-244 1,-5 -91,-244 -92,-239 -95,-246 -7,-10 -17,-10 -8,0 -13,5 -5,5 -7,13 0,5 90,243 91,237 91,239 0,2 -91,239 -90,238 -90,243 z"
+       id="MJX-9-TEX-N-27E9" />
+    <path
+       d="m 35,200 q 0,102 39,215 39,113 106,195 67,82 139,94 1,0 8,0 7,0 12,1 54,-4 84,-49 39,-60 39,-161 Q 462,380 417,261 372,142 302,66 232,-10 168,-10 h -7 q -36,0 -62,20 -26,20 -39,53 -13,33 -19,67 -6,34 -6,70 z m 348,366 q 0,102 -53,102 -36,0 -70,-45 -34,-45 -56,-102 -22,-57 -34,-100 -12,-43 -13,-50 49,-1 97,-1 l 97,1 q 1,1 8,33 7,32 16,80 9,48 8,82 z M 113,132 q 0,-106 53,-106 15,0 32,10 17,10 41,38 24,28 48,87 24,59 48,146 l 5,17 H 145 q 0,-3 -9,-38 -9,-35 -16,-78 -7,-43 -7,-76 z"
+       id="MJX-18-TEX-I-3B8" />
     <marker
        inkscape:isstock="true"
        style="overflow:visible"
-       id="Arrow2Mend"
+       id="Arrow2Mend-3"
        refX="0"
        refY="0"
        orient="auto"
@@ -39,222 +111,150 @@
          transform="scale(-0.6)"
          d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
          style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
-         id="path866" />
+         id="path866-3" />
     </marker>
     <marker
        inkscape:isstock="true"
        style="overflow:visible"
-       id="Arrow1Send"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow1Send">
-      <path
-         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="path854" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="Arrow1Lend"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lend">
-      <path
-         transform="matrix(-0.8,0,0,-0.8,-10,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="path842" />
-    </marker>
-    <path
-       id="MJX-13-TEX-N-7C"
-       d="m 139,-249 h -2 q -12,0 -18,14 v 486 l 1,486 q 10,13 19,13 13,0 20,-15 v -970 q -8,-14 -18,-14 z" />
-    <path
-       id="MJX-13-TEX-C-42"
-       d="m 304,342 q -12,0 -12,11 0,19 31,38 8,5 94,37 86,32 116,59 30,25 30,68 v 7 q 0,13 -6,27 -6,14 -27,29 -21,15 -55,18 -46,0 -79,-23 Q 363,590 330,539 263,446 210,238 196,183 173,120 135,31 121,16 108,1 85,-10 62,-21 47,-22 q -15,-1 -15,12 0,5 12,28 12,23 33,75 21,52 35,113 23,90 42,189 19,99 28,155 9,56 9,65 0,1 -1,1 -2,0 -11,-5 -9,-5 -22,-10 -13,-5 -26,-7 -18,0 -18,11 0,18 31,39 10,6 61,32 51,26 62,27 10,2 12,2 16,0 16,-12 0,-7 -7,-58 -7,-51 -10,-60 0,-3 9,7 49,53 115,87 66,34 138,35 63,0 93,-31 30,-31 31,-74 0,-40 -26,-76 -26,-36 -58,-61 -27,-22 -76,-49 l -13,-6 13,-5 q 62,-21 92,-64 30,-43 31,-94 0,-72 -52,-134 -52,-62 -131,-97 -79,-35 -160,-35 -76,0 -126,50 -14,14 -12,22 4,17 32,35 28,18 52,18 6,0 16,-8 10,-8 21,-20 11,-12 35,-19 24,-7 55,-9 79,0 129,46 40,43 40,105 v 12 q 0,18 -8,39 -8,21 -27,43 -19,22 -55,38 -36,16 -86,15 -15,0 -29,-1 -14,-1 -17,-2 z" />
-    <path
-       id="MJX-13-TEX-N-27E9"
-       d="m 55,732 q 1,7 6,12 5,5 14,6 10,0 17,-10 3,-7 94,-246 91,-239 92,-244 1,-5 -91,-244 -92,-239 -95,-246 -7,-10 -17,-10 -8,0 -13,5 -5,5 -7,13 0,5 90,243 91,237 91,239 0,2 -91,239 -90,238 -90,243 z" />
-    <path
-       id="MJX-14-TEX-N-7C"
-       d="m 139,-249 h -2 q -12,0 -18,14 v 486 l 1,486 q 10,13 19,13 13,0 20,-15 v -970 q -8,-14 -18,-14 z" />
-    <path
-       id="MJX-14-TEX-C-47"
-       d="m 216,68 q -61,0 -101,32 -40,32 -56,77 -16,45 -15,96 0,26 6,60 6,34 23,88 17,54 60,112 43,58 106,99 107,72 227,72 42,0 49,-1 40,-7 62,-22 22,-15 22,-46 0,-30 -29,-75 -29,-45 -47,-64 -33,-30 -68,-30 -15,0 -15,9 0,9 29,51 29,42 30,63 0,16 -10,28 -29,19 -86,19 -60,0 -108,-25 -48,-25 -75,-63 -27,-38 -46,-84 -19,-46 -24,-82 -5,-36 -6,-64 0,-77 36,-129 36,-52 107,-52 38,0 72,23 69,45 107,162 6,20 35,37 29,17 50,17 6,0 9,-3 3,-3 4,-5 l 1,-3 Q 560,341 551,302 542,263 512,173 482,83 451,31 359,-119 204,-119 q -41,1 -77,10 -36,9 -53,18 -17,9 -21,14 -1,2 -1,6 0,17 27,36 27,19 53,21 h 8 l 11,-5 q 59,-30 130,-30 h 8 q 23,0 40,18 22,24 43,67 21,43 33,73 12,30 11,33 l -8,-6 q -7,-5 -16,-11 -9,-6 -23,-14 -14,-8 -31,-15 -17,-7 -35,-14 -18,-7 -42,-10 -24,-3 -45,-4 z" />
-    <path
-       id="MJX-14-TEX-N-27E9"
-       d="m 55,732 q 1,7 6,12 5,5 14,6 10,0 17,-10 3,-7 94,-246 91,-239 92,-244 1,-5 -91,-244 -92,-239 -95,-246 -7,-10 -17,-10 -8,0 -13,5 -5,5 -7,13 0,5 90,243 91,237 91,239 0,2 -91,239 -90,238 -90,243 z" />
-    <path
-       id="MJX-9-TEX-N-7C"
-       d="m 139,-249 h -2 q -12,0 -18,14 v 486 l 1,486 q 10,13 19,13 13,0 20,-15 v -970 q -8,-14 -18,-14 z" />
-    <path
-       id="MJX-9-TEX-I-3C8"
-       d="m 161,441 q 41,0 65,-24 24,-24 24,-59 0,-20 -32,-106 -32,-86 -31,-125 3,-42 27,-66 21,-18 43,-24 18,-8 31,-8 h 1 l 82,331 q 84,331 85,332 3,2 16,2 20,0 20,-7 0,-9 -81,-331 -82,-328 -82,-329 0,-1 6,-1 86,0 163,88 77,88 78,164 0,24 -8,41 -8,17 -18,24 -10,7 -18,18 -8,11 -8,23 0,21 17,40 17,19 42,19 19,0 35,-18 16,-18 16,-59 0,-29 -11,-78 Q 612,239 605,220 573,125 492,57 411,-11 329,-11 h -10 l -23,-93 q -24,-94 -24,-95 -2,-6 -20,-6 h -13 q -6,6 -6,8 0,5 23,95 23,90 23,93 -7,1 -14,1 -159,22 -159,147 0,35 33,125 33,90 34,115 0,1 0,2 0,9 0,12 0,3 -4,7 -4,4 -11,4 h -4 Q 131,404 112,385 93,366 82,344 71,322 65,302 59,282 57,280 55,278 41,278 H 27 q -6,6 -6,9 0,12 13,46 13,34 48,71 35,37 79,37 z" />
-    <path
-       id="MJX-9-TEX-N-27E9"
-       d="m 55,732 q 1,7 6,12 5,5 14,6 10,0 17,-10 3,-7 94,-246 91,-239 92,-244 1,-5 -91,-244 -92,-239 -95,-246 -7,-10 -17,-10 -8,0 -13,5 -5,5 -7,13 0,5 90,243 91,237 91,239 0,2 -91,239 -90,238 -90,243 z" />
-    <path
-       id="MJX-18-TEX-I-3B8"
-       d="m 35,200 q 0,102 39,215 39,113 106,195 67,82 139,94 1,0 8,0 7,0 12,1 54,-4 84,-49 39,-60 39,-161 Q 462,380 417,261 372,142 302,66 232,-10 168,-10 h -7 q -36,0 -62,20 -26,20 -39,53 -13,33 -19,67 -6,34 -6,70 z m 348,366 q 0,102 -53,102 -36,0 -70,-45 -34,-45 -56,-102 -22,-57 -34,-100 -12,-43 -13,-50 49,-1 97,-1 l 97,1 q 1,1 8,33 7,32 16,80 9,48 8,82 z M 113,132 q 0,-106 53,-106 15,0 32,10 17,10 41,38 24,28 48,87 24,59 48,146 l 5,17 H 145 q 0,-3 -9,-38 -9,-35 -16,-78 -7,-43 -7,-76 z" />
-    <marker
-       inkscape:stockid="Arrow2Mend"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="Arrow2Mend-3"
-       style="overflow:visible"
-       inkscape:isstock="true">
-      <path
-         id="path866-3"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
-         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
-         transform="scale(-0.6)" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow2Mend"
-       orient="auto"
-       refY="0"
-       refX="0"
        id="Arrow2Mend-1"
-       style="overflow:visible"
-       inkscape:isstock="true">
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
       <path
-         id="path866-8"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         transform="scale(-0.6)"
          d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
-         transform="scale(-0.6)" />
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path866-8" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow2Mend-4"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path866-9" />
+    </marker>
+    <path
+       d="M554 512Q536 512 536 522Q536 525 539 539T542 564Q542 588 528 604Q515 616 482 625T410 635Q374 635 349 624T312 594T295 561T290 532Q290 505 303 482T342 442T378 419T409 404Q435 391 451 383T494 357T535 323T562 282T574 231Q574 133 464 56T220 -22Q138 -22 78 21T18 123Q18 184 61 227T156 274Q178 274 178 263Q178 260 177 258Q172 247 164 239T151 227T136 218L127 213L124 202Q118 186 118 163Q120 124 165 86T292 48Q374 48 423 86T473 186V193Q473 267 347 327Q268 364 239 389Q191 431 191 486Q191 547 242 600T356 679T470 705Q472 705 478 705T489 704Q551 704 596 682T642 610Q642 566 621 545Q592 516 554 512Z"
+       id="MJX-32-TEX-C-53" />
+    <path
+       d="M216 68Q155 68 115 100T59 177T44 273Q44 299 50 333T73 421T133 533T239 632Q346 704 466 704Q508 704 515 703Q555 696 577 681T599 635Q599 605 570 560T523 496Q490 466 455 466Q440 466 440 475T469 526T499 589Q499 605 489 617Q460 636 403 636Q343 636 295 611T220 548T174 464T150 382T144 318Q144 241 180 189T287 137Q325 137 359 160Q428 205 466 322Q472 342 501 359T551 376Q557 376 560 373T564 368L565 365Q560 341 551 302T512 173T451 31Q359 -119 204 -119Q163 -118 127 -109T74 -91T53 -77Q52 -75 52 -71Q52 -54 79 -35T132 -14H140L151 -19Q210 -49 281 -49H289Q312 -49 329 -31Q351 -7 372 36T405 109T416 142L408 136Q401 131 392 125T369 111T338 96T303 82T261 72T216 68Z"
+       id="MJX-32-TEX-C-47" />
+    <path
+       d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"
+       id="MJX-32-TEX-N-7C" />
+    <path
+       d="M161 441Q202 441 226 417T250 358Q250 338 218 252T187 127Q190 85 214 61Q235 43 257 37Q275 29 288 29H289L371 360Q455 691 456 692Q459 694 472 694Q492 694 492 687Q492 678 411 356Q329 28 329 27T335 26Q421 26 498 114T576 278Q576 302 568 319T550 343T532 361T524 384Q524 405 541 424T583 443Q602 443 618 425T634 366Q634 337 623 288T605 220Q573 125 492 57T329 -11H319L296 -104Q272 -198 272 -199Q270 -205 252 -205H239Q233 -199 233 -197Q233 -192 256 -102T279 -9Q272 -8 265 -8Q106 14 106 139Q106 174 139 264T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Q21 299 34 333T82 404T161 441Z"
+       id="MJX-32-TEX-I-3C8" />
+    <path
+       d="M55 732Q56 739 61 744T75 750Q85 750 92 740Q95 733 186 494T278 250T187 6T92 -240Q85 -250 75 -250Q67 -250 62 -245T55 -232Q55 -227 145 11Q236 248 236 250T145 489Q55 727 55 732Z"
+       id="MJX-32-TEX-N-27E9" />
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow2Mend-46"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path866-37" />
     </marker>
     <marker
        inkscape:stockid="Arrow2Mend"
        orient="auto"
        refY="0"
        refX="0"
-       id="Arrow2Mend-4"
+       id="Arrow2Mend-46-5"
        style="overflow:visible"
        inkscape:isstock="true">
       <path
-         id="path866-9"
+         id="path866-37-5"
          style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
          d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
          transform="scale(-0.6)" />
     </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow2Mend-46-5-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path866-37-5-4" />
+    </marker>
     <path
-       id="MJX-32-TEX-C-53"
+       id="MJX-32-TEX-C-53-2"
        d="M554 512Q536 512 536 522Q536 525 539 539T542 564Q542 588 528 604Q515 616 482 625T410 635Q374 635 349 624T312 594T295 561T290 532Q290 505 303 482T342 442T378 419T409 404Q435 391 451 383T494 357T535 323T562 282T574 231Q574 133 464 56T220 -22Q138 -22 78 21T18 123Q18 184 61 227T156 274Q178 274 178 263Q178 260 177 258Q172 247 164 239T151 227T136 218L127 213L124 202Q118 186 118 163Q120 124 165 86T292 48Q374 48 423 86T473 186V193Q473 267 347 327Q268 364 239 389Q191 431 191 486Q191 547 242 600T356 679T470 705Q472 705 478 705T489 704Q551 704 596 682T642 610Q642 566 621 545Q592 516 554 512Z" />
     <path
-       id="MJX-32-TEX-C-47"
+       id="MJX-32-TEX-C-47-4"
        d="M216 68Q155 68 115 100T59 177T44 273Q44 299 50 333T73 421T133 533T239 632Q346 704 466 704Q508 704 515 703Q555 696 577 681T599 635Q599 605 570 560T523 496Q490 466 455 466Q440 466 440 475T469 526T499 589Q499 605 489 617Q460 636 403 636Q343 636 295 611T220 548T174 464T150 382T144 318Q144 241 180 189T287 137Q325 137 359 160Q428 205 466 322Q472 342 501 359T551 376Q557 376 560 373T564 368L565 365Q560 341 551 302T512 173T451 31Q359 -119 204 -119Q163 -118 127 -109T74 -91T53 -77Q52 -75 52 -71Q52 -54 79 -35T132 -14H140L151 -19Q210 -49 281 -49H289Q312 -49 329 -31Q351 -7 372 36T405 109T416 142L408 136Q401 131 392 125T369 111T338 96T303 82T261 72T216 68Z" />
     <path
-       id="MJX-32-TEX-N-7C"
+       id="MJX-32-TEX-N-7C-5"
        d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z" />
     <path
-       id="MJX-32-TEX-I-3C8"
+       id="MJX-32-TEX-I-3C8-2"
        d="M161 441Q202 441 226 417T250 358Q250 338 218 252T187 127Q190 85 214 61Q235 43 257 37Q275 29 288 29H289L371 360Q455 691 456 692Q459 694 472 694Q492 694 492 687Q492 678 411 356Q329 28 329 27T335 26Q421 26 498 114T576 278Q576 302 568 319T550 343T532 361T524 384Q524 405 541 424T583 443Q602 443 618 425T634 366Q634 337 623 288T605 220Q573 125 492 57T329 -11H319L296 -104Q272 -198 272 -199Q270 -205 252 -205H239Q233 -199 233 -197Q233 -192 256 -102T279 -9Q272 -8 265 -8Q106 14 106 139Q106 174 139 264T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Q21 299 34 333T82 404T161 441Z" />
     <path
-       id="MJX-32-TEX-N-27E9"
+       id="MJX-32-TEX-N-27E9-3"
        d="M55 732Q56 739 61 744T75 750Q85 750 92 740Q95 733 186 494T278 250T187 6T92 -240Q85 -250 75 -250Q67 -250 62 -245T55 -232Q55 -227 145 11Q236 248 236 250T145 489Q55 727 55 732Z" />
-    <marker
-       inkscape:stockid="Arrow2Mend"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="Arrow2Mend-46"
-       style="overflow:visible"
-       inkscape:isstock="true">
-      <path
-         id="path866-37"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
-         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
-         transform="scale(-0.6)" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="Arrow2Mend-46-5"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow2Mend">
-      <path
-         transform="scale(-0.6)"
-         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
-         id="path866-37-5" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow2Mend"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="Arrow2Mend-46-5-8"
-       style="overflow:visible"
-       inkscape:isstock="true">
-      <path
-         id="path866-37-5-4"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
-         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
-         transform="scale(-0.6)" />
-    </marker>
     <path
-       d="M554 512Q536 512 536 522Q536 525 539 539T542 564Q542 588 528 604Q515 616 482 625T410 635Q374 635 349 624T312 594T295 561T290 532Q290 505 303 482T342 442T378 419T409 404Q435 391 451 383T494 357T535 323T562 282T574 231Q574 133 464 56T220 -22Q138 -22 78 21T18 123Q18 184 61 227T156 274Q178 274 178 263Q178 260 177 258Q172 247 164 239T151 227T136 218L127 213L124 202Q118 186 118 163Q120 124 165 86T292 48Q374 48 423 86T473 186V193Q473 267 347 327Q268 364 239 389Q191 431 191 486Q191 547 242 600T356 679T470 705Q472 705 478 705T489 704Q551 704 596 682T642 610Q642 566 621 545Q592 516 554 512Z"
-       id="MJX-32-TEX-C-53-2" />
+       id="MJX-21-TEX-N-2212"
+       d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z" />
     <path
-       d="M216 68Q155 68 115 100T59 177T44 273Q44 299 50 333T73 421T133 533T239 632Q346 704 466 704Q508 704 515 703Q555 696 577 681T599 635Q599 605 570 560T523 496Q490 466 455 466Q440 466 440 475T469 526T499 589Q499 605 489 617Q460 636 403 636Q343 636 295 611T220 548T174 464T150 382T144 318Q144 241 180 189T287 137Q325 137 359 160Q428 205 466 322Q472 342 501 359T551 376Q557 376 560 373T564 368L565 365Q560 341 551 302T512 173T451 31Q359 -119 204 -119Q163 -118 127 -109T74 -91T53 -77Q52 -75 52 -71Q52 -54 79 -35T132 -14H140L151 -19Q210 -49 281 -49H289Q312 -49 329 -31Q351 -7 372 36T405 109T416 142L408 136Q401 131 392 125T369 111T338 96T303 82T261 72T216 68Z"
-       id="MJX-32-TEX-C-47-4" />
+       id="MJX-21-TEX-C-53"
+       d="M554 512Q536 512 536 522Q536 525 539 539T542 564Q542 588 528 604Q515 616 482 625T410 635Q374 635 349 624T312 594T295 561T290 532Q290 505 303 482T342 442T378 419T409 404Q435 391 451 383T494 357T535 323T562 282T574 231Q574 133 464 56T220 -22Q138 -22 78 21T18 123Q18 184 61 227T156 274Q178 274 178 263Q178 260 177 258Q172 247 164 239T151 227T136 218L127 213L124 202Q118 186 118 163Q120 124 165 86T292 48Q374 48 423 86T473 186V193Q473 267 347 327Q268 364 239 389Q191 431 191 486Q191 547 242 600T356 679T470 705Q472 705 478 705T489 704Q551 704 596 682T642 610Q642 566 621 545Q592 516 554 512Z" />
     <path
-       d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"
-       id="MJX-32-TEX-N-7C-5" />
+       id="MJX-21-TEX-I-3C8"
+       d="M161 441Q202 441 226 417T250 358Q250 338 218 252T187 127Q190 85 214 61Q235 43 257 37Q275 29 288 29H289L371 360Q455 691 456 692Q459 694 472 694Q492 694 492 687Q492 678 411 356Q329 28 329 27T335 26Q421 26 498 114T576 278Q576 302 568 319T550 343T532 361T524 384Q524 405 541 424T583 443Q602 443 618 425T634 366Q634 337 623 288T605 220Q573 125 492 57T329 -11H319L296 -104Q272 -198 272 -199Q270 -205 252 -205H239Q233 -199 233 -197Q233 -192 256 -102T279 -9Q272 -8 265 -8Q106 14 106 139Q106 174 139 264T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Q21 299 34 333T82 404T161 441Z" />
     <path
-       d="M161 441Q202 441 226 417T250 358Q250 338 218 252T187 127Q190 85 214 61Q235 43 257 37Q275 29 288 29H289L371 360Q455 691 456 692Q459 694 472 694Q492 694 492 687Q492 678 411 356Q329 28 329 27T335 26Q421 26 498 114T576 278Q576 302 568 319T550 343T532 361T524 384Q524 405 541 424T583 443Q602 443 618 425T634 366Q634 337 623 288T605 220Q573 125 492 57T329 -11H319L296 -104Q272 -198 272 -199Q270 -205 252 -205H239Q233 -199 233 -197Q233 -192 256 -102T279 -9Q272 -8 265 -8Q106 14 106 139Q106 174 139 264T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Q21 299 34 333T82 404T161 441Z"
-       id="MJX-32-TEX-I-3C8-2" />
+       id="MJX-21-TEX-C-47"
+       d="M216 68Q155 68 115 100T59 177T44 273Q44 299 50 333T73 421T133 533T239 632Q346 704 466 704Q508 704 515 703Q555 696 577 681T599 635Q599 605 570 560T523 496Q490 466 455 466Q440 466 440 475T469 526T499 589Q499 605 489 617Q460 636 403 636Q343 636 295 611T220 548T174 464T150 382T144 318Q144 241 180 189T287 137Q325 137 359 160Q428 205 466 322Q472 342 501 359T551 376Q557 376 560 373T564 368L565 365Q560 341 551 302T512 173T451 31Q359 -119 204 -119Q163 -118 127 -109T74 -91T53 -77Q52 -75 52 -71Q52 -54 79 -35T132 -14H140L151 -19Q210 -49 281 -49H289Q312 -49 329 -31Q351 -7 372 36T405 109T416 142L408 136Q401 131 392 125T369 111T338 96T303 82T261 72T216 68Z" />
     <path
-       d="M55 732Q56 739 61 744T75 750Q85 750 92 740Q95 733 186 494T278 250T187 6T92 -240Q85 -250 75 -250Q67 -250 62 -245T55 -232Q55 -227 145 11Q236 248 236 250T145 489Q55 727 55 732Z"
-       id="MJX-32-TEX-N-27E9-3" />
+       id="MJX-21-TEX-N-7C"
+       d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z" />
     <path
-       d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"
-       id="MJX-21-TEX-N-2212" />
-    <path
-       d="M554 512Q536 512 536 522Q536 525 539 539T542 564Q542 588 528 604Q515 616 482 625T410 635Q374 635 349 624T312 594T295 561T290 532Q290 505 303 482T342 442T378 419T409 404Q435 391 451 383T494 357T535 323T562 282T574 231Q574 133 464 56T220 -22Q138 -22 78 21T18 123Q18 184 61 227T156 274Q178 274 178 263Q178 260 177 258Q172 247 164 239T151 227T136 218L127 213L124 202Q118 186 118 163Q120 124 165 86T292 48Q374 48 423 86T473 186V193Q473 267 347 327Q268 364 239 389Q191 431 191 486Q191 547 242 600T356 679T470 705Q472 705 478 705T489 704Q551 704 596 682T642 610Q642 566 621 545Q592 516 554 512Z"
-       id="MJX-21-TEX-C-53" />
-    <path
-       d="M161 441Q202 441 226 417T250 358Q250 338 218 252T187 127Q190 85 214 61Q235 43 257 37Q275 29 288 29H289L371 360Q455 691 456 692Q459 694 472 694Q492 694 492 687Q492 678 411 356Q329 28 329 27T335 26Q421 26 498 114T576 278Q576 302 568 319T550 343T532 361T524 384Q524 405 541 424T583 443Q602 443 618 425T634 366Q634 337 623 288T605 220Q573 125 492 57T329 -11H319L296 -104Q272 -198 272 -199Q270 -205 252 -205H239Q233 -199 233 -197Q233 -192 256 -102T279 -9Q272 -8 265 -8Q106 14 106 139Q106 174 139 264T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Q21 299 34 333T82 404T161 441Z"
-       id="MJX-21-TEX-I-3C8" />
-    <path
-       d="M216 68Q155 68 115 100T59 177T44 273Q44 299 50 333T73 421T133 533T239 632Q346 704 466 704Q508 704 515 703Q555 696 577 681T599 635Q599 605 570 560T523 496Q490 466 455 466Q440 466 440 475T469 526T499 589Q499 605 489 617Q460 636 403 636Q343 636 295 611T220 548T174 464T150 382T144 318Q144 241 180 189T287 137Q325 137 359 160Q428 205 466 322Q472 342 501 359T551 376Q557 376 560 373T564 368L565 365Q560 341 551 302T512 173T451 31Q359 -119 204 -119Q163 -118 127 -109T74 -91T53 -77Q52 -75 52 -71Q52 -54 79 -35T132 -14H140L151 -19Q210 -49 281 -49H289Q312 -49 329 -31Q351 -7 372 36T405 109T416 142L408 136Q401 131 392 125T369 111T338 96T303 82T261 72T216 68Z"
-       id="MJX-21-TEX-C-47" />
-    <path
-       d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"
-       id="MJX-21-TEX-N-7C" />
-    <path
-       d="M55 732Q56 739 61 744T75 750Q85 750 92 740Q95 733 186 494T278 250T187 6T92 -240Q85 -250 75 -250Q67 -250 62 -245T55 -232Q55 -227 145 11Q236 248 236 250T145 489Q55 727 55 732Z"
-       id="MJX-21-TEX-N-27E9" />
+       id="MJX-21-TEX-N-27E9"
+       d="M55 732Q56 739 61 744T75 750Q85 750 92 740Q95 733 186 494T278 250T187 6T92 -240Q85 -250 75 -250Q67 -250 62 -245T55 -232Q55 -227 145 11Q236 248 236 250T145 489Q55 727 55 732Z" />
   </defs>
   <sodipodi:namedview
-     inkscape:snap-global="true"
-     inkscape:window-maximized="1"
-     inkscape:window-y="-11"
-     inkscape:window-x="-11"
-     inkscape:window-height="1046"
-     inkscape:window-width="1920"
-     inkscape:snap-object-midpoints="true"
-     units="mm"
-     showgrid="false"
-     inkscape:document-rotation="0"
-     inkscape:current-layer="layer1"
-     inkscape:document-units="mm"
-     inkscape:cy="144.96099"
-     inkscape:cx="173.61158"
-     inkscape:zoom="1.979899"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     borderopacity="1.0"
-     bordercolor="#666666"
-     pagecolor="#ffffff"
+     inkscape:pagecheckerboard="0"
      id="base"
-     inkscape:pagecheckerboard="0" />
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="173.03571"
+     inkscape:cy="144.82143"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="mm"
+     inkscape:snap-object-midpoints="true"
+     inkscape:window-width="1916"
+     inkscape:window-height="1060"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -263,290 +263,387 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1"
+     inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1">
+     id="layer1">
     <path
-       id="path10"
+       style="fill:none;stroke:#000000;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 48.013906,7.801179 v 63.5"
-       style="fill:none;stroke:#000000;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       id="path10" />
     <path
-       id="path12"
+       style="fill:none;stroke:#000000;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 9.1201547,39.664571 H 87.172235"
-       style="fill:none;stroke:#000000;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       id="path12" />
     <path
-       inkscape:transform-center-y="-4.492139"
-       inkscape:transform-center-x="-16.574824"
-       sodipodi:nodetypes="cc"
-       id="path837"
+       style="opacity:0.194805;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
        d="M 48.022956,39.560548 81.075798,30.651674"
-       style="opacity:0.194805;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend)" />
+       id="path837"
+       sodipodi:nodetypes="cc"
+       inkscape:transform-center-x="-16.574824"
+       inkscape:transform-center-y="-4.492139" />
     <g
-       style="fill:#000000;stroke:#000000;stroke-width:0"
+       transform="matrix(0.00258918,0,0,-0.00258918,86.11326,42.790045)"
+       data-mml-node="math"
        id="g1343"
-       data-mml-node="math"
-       transform="matrix(0.00258918,0,0,-0.00258918,86.11326,42.790045)">
+       style="fill:#000000;stroke:#000000;stroke-width:0">
       <g
-         id="g1331"
-         data-mml-node="mo">
+         data-mml-node="mo"
+         id="g1331">
         <use
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
+           xlink:href="#MJX-13-TEX-N-7C"
            id="use1329"
-           xlink:href="#MJX-13-TEX-N-7C" />
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
       </g>
       <g
-         id="g1337"
+         data-mml-node="TeXAtom"
          transform="translate(278)"
-         data-mml-node="TeXAtom">
+         id="g1337">
         <g
-           id="g1335"
-           data-mml-node="mi">
+           data-mml-node="mi"
+           id="g1335">
           <use
-             height="100%"
-             width="100%"
-             y="0"
-             x="0"
+             xlink:href="#MJX-13-TEX-C-42"
              id="use1333"
-             xlink:href="#MJX-13-TEX-C-42" />
-        </g>
-      </g>
-      <g
-         id="g1341"
-         transform="translate(935)"
-         data-mml-node="mo">
-        <use
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use1339"
-           xlink:href="#MJX-13-TEX-N-27E9" />
-      </g>
-    </g>
-    <g
-       style="fill:#000000;stroke:#000000;stroke-width:0"
-       id="g1420"
-       data-mml-node="math"
-       transform="matrix(0.00282941,0,0,-0.00282941,49.208119,72.009946)">
-      <g
-         id="g1408"
-         data-mml-node="mo">
-        <use
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use1406"
-           xlink:href="#MJX-14-TEX-N-7C" />
-      </g>
-      <g
-         id="g1414"
-         transform="translate(278)"
-         data-mml-node="TeXAtom">
-        <g
-           id="g1412"
-           data-mml-node="mi">
-          <use
-             height="100%"
-             width="100%"
-             y="0"
              x="0"
-             id="use1410"
-             xlink:href="#MJX-14-TEX-C-47" />
+             y="0"
+             width="100%"
+             height="100%" />
         </g>
       </g>
       <g
-         id="g1418"
-         transform="translate(873)"
-         data-mml-node="mo">
+         data-mml-node="mo"
+         transform="translate(935)"
+         id="g1341">
         <use
-           height="100%"
-           width="100%"
-           y="0"
+           xlink:href="#MJX-13-TEX-N-27E9"
+           id="use1339"
            x="0"
-           id="use1416"
-           xlink:href="#MJX-14-TEX-N-27E9" />
+           y="0"
+           width="100%"
+           height="100%" />
       </g>
     </g>
     <g
-       style="opacity:0.194805;fill:#000000;stroke:#000000;stroke-width:0"
-       id="g1493"
+       transform="matrix(0.00282941,0,0,-0.00282941,49.208119,72.009946)"
        data-mml-node="math"
-       transform="matrix(0.00248948,0,0,-0.00248948,74.869239,29.198069)">
+       id="g1420"
+       style="fill:#000000;stroke:#000000;stroke-width:0">
       <g
-         id="g1483"
+         data-mml-node="mo"
+         id="g1408">
+        <use
+           xlink:href="#MJX-14-TEX-N-7C"
+           id="use1406"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+      </g>
+      <g
+         data-mml-node="TeXAtom"
+         transform="translate(278)"
+         id="g1414">
+        <g
+           data-mml-node="mi"
+           id="g1412">
+          <use
+             xlink:href="#MJX-14-TEX-C-47"
+             id="use1410"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+      <g
+         data-mml-node="mo"
+         transform="translate(873)"
+         id="g1418">
+        <use
+           xlink:href="#MJX-14-TEX-N-27E9"
+           id="use1416"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+      </g>
+    </g>
+    <g
+       transform="matrix(0.00248948,0,0,-0.00248948,74.869239,29.198069)"
+       data-mml-node="math"
+       id="g1493"
+       style="opacity:0.194805;fill:#000000;stroke:#000000;stroke-width:0">
+      <g
+         data-mml-node="mo"
+         id="g1483">
+        <use
+           xlink:href="#MJX-9-TEX-N-7C"
+           id="use1481"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+      </g>
+      <g
+         data-mml-node="mi"
+         transform="translate(278)"
+         id="g1487">
+        <use
+           xlink:href="#MJX-9-TEX-I-3C8"
+           id="use1485"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+      </g>
+      <g
+         data-mml-node="mo"
+         transform="translate(929)"
+         id="g1491">
+        <use
+           xlink:href="#MJX-9-TEX-N-27E9"
+           id="use1489"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+      </g>
+    </g>
+    <path
+       id="path920"
+       d="M 81.181315,30.668737 V 49.205606"
+       style="fill:none;stroke:#000000;stroke-width:0.0800905;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.320362, 0.320362;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       inkscape:transform-center-y="4.5572382"
+       inkscape:transform-center-x="-16.557043"
+       sodipodi:nodetypes="ccc"
+       id="path837-4"
+       d="m 47.745458,39.708732 28.800778,7.970227 4.191613,1.159973"
+       style="opacity:0.35;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend-46)" />
+    <path
+       id="path1125"
+       d="M 89.011211,28.610056 8.5066438,50.168199"
+       style="fill:none;stroke:#000000;stroke-width:0.181853;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.181853, 0.18185299999999999;stroke-dashoffset:0;stroke-opacity:1;opacity:0.2" />
+    <path
+       id="path1127"
+       d="M 40.248994,11.201612 57.287679,73.238851"
+       style="fill:none;stroke:#000000;stroke-width:0.152098;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.152098, 0.15209800000000001;stroke-dashoffset:0;stroke-opacity:1;opacity:0.2" />
+    <path
+       style="opacity:0.8;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend-46-5)"
+       d="M 47.661917,39.773595 26.70183,61.073457 23.651336,64.1734"
+       id="path837-4-9"
+       sodipodi:nodetypes="ccc"
+       inkscape:transform-center-x="12.027983"
+       inkscape:transform-center-y="12.256904" />
+    <path
+       style="opacity:0.2;fill:none;stroke:#000000;stroke-width:0.181853;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.181853, 0.181853;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 86.932343,47.429262 6.4277757,68.987405"
+       id="path1125-2" />
+    <g
+       style="fill:#000000;stroke:#000000;stroke-width:0;opacity:0.35"
+       id="g1962"
+       data-mml-node="math"
+       transform="matrix(0.00252004,0,0,-0.00252004,66.157129,49.672421)">
+      <g
+         id="g1948"
+         data-mml-node="msub">
+        <g
+           id="g1938"
+           data-mml-node="TeXAtom">
+          <g
+             id="g1936"
+             data-mml-node="mi">
+            <use
+               height="100%"
+               width="100%"
+               y="0"
+               x="0"
+               id="use1934"
+               xlink:href="#MJX-32-TEX-C-53-2" />
+          </g>
+        </g>
+        <g
+           id="g1946"
+           transform="matrix(0.707,0,0,0.707,606,-150)"
+           data-mml-node="TeXAtom">
+          <g
+             id="g1944"
+             data-mml-node="TeXAtom">
+            <g
+               id="g1942"
+               data-mml-node="mi">
+              <use
+                 height="100%"
+                 width="100%"
+                 y="0"
+                 x="0"
+                 id="use1940"
+                 xlink:href="#MJX-32-TEX-C-47-4" />
+            </g>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g1952"
+         transform="translate(1076.7)"
          data-mml-node="mo">
         <use
            height="100%"
            width="100%"
            y="0"
            x="0"
-           id="use1481"
-           xlink:href="#MJX-9-TEX-N-7C" />
+           id="use1950"
+           xlink:href="#MJX-32-TEX-N-7C-5" />
       </g>
       <g
-         id="g1487"
-         transform="translate(278)"
+         id="g1956"
+         transform="translate(1354.7)"
          data-mml-node="mi">
         <use
            height="100%"
            width="100%"
            y="0"
            x="0"
-           id="use1485"
-           xlink:href="#MJX-9-TEX-I-3C8" />
+           id="use1954"
+           xlink:href="#MJX-32-TEX-I-3C8-2" />
       </g>
       <g
-         id="g1491"
-         transform="translate(929)"
+         id="g1960"
+         transform="translate(2005.7)"
          data-mml-node="mo">
         <use
            height="100%"
            width="100%"
            y="0"
            x="0"
-           id="use1489"
-           xlink:href="#MJX-9-TEX-N-27E9" />
+           id="use1958"
+           xlink:href="#MJX-32-TEX-N-27E9-3" />
       </g>
     </g>
-    <path
-       inkscape:transform-center-y="12.256904"
-       inkscape:transform-center-x="12.027983"
-       sodipodi:nodetypes="ccc"
-       id="path837-4-9"
-       d="M 47.661917,39.773595 26.70183,61.073457 23.651336,64.1734"
-       style="opacity:0.69155844;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend-46-5)" />
-    <path
-       style="opacity:0.266234;fill:none;stroke:#000000;stroke-width:0.119;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.119, 0.119;stroke-dashoffset:0;stroke-opacity:1"
-       d="M 12.239287,75.752417 78.881645,8.0532019"
-       id="path1259"
-       inkscape:transform-center-x="2.5297313"
-       inkscape:transform-center-y="2.3854761" />
     <g
-       transform="matrix(0.002618,0,0,-0.002618,28.720671,71.84419)"
-       data-mml-node="math"
+       style="fill:#000000;stroke:#000000;stroke-width:0"
        id="g2197"
-       style="fill:#000000;stroke:#000000;stroke-width:0">
+       data-mml-node="math"
+       transform="matrix(0.00316577,0,0,-0.00316577,27.870356,76.062467)">
       <g
-         data-mml-node="mo"
-         id="g2157"
+         style="opacity:0.6"
          transform="matrix(0.93091631,0,0,0.93091631,-4614.2268,4924.5004)"
-         style="opacity:0.6" />
+         id="g2157"
+         data-mml-node="mo" />
       <g
-         id="g2183-5"
-         transform="matrix(1.3169431,0,0,1.3169431,-4814.4565,5392.0732)"
+         style="fill:#000000;stroke:#000000;stroke-width:0"
          data-mml-node="TeXAtom"
-         style="fill:#000000;stroke:#000000;stroke-width:0">
+         transform="translate(-3921.4072,5296.1829)"
+         id="g2183-5">
         <g
-           id="g2169-7"
-           data-mml-node="msub">
+           data-mml-node="msub"
+           id="g2169-7">
           <g
-             id="g2161-6"
-             data-mml-node="mi">
+             data-mml-node="mi"
+             id="g2161-6">
             <use
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
+               xlink:href="#MJX-21-TEX-C-53"
                id="use2159-9"
-               xlink:href="#MJX-21-TEX-C-53" />
+               x="0"
+               y="0"
+               width="100%"
+               height="100%" />
           </g>
           <g
-             id="g2167-9"
+             data-mml-node="TeXAtom"
              transform="matrix(0.707,0,0,0.707,606,-150)"
-             data-mml-node="TeXAtom">
+             id="g2167-9">
             <g
-               id="g2165-1"
-               data-mml-node="mi">
+               data-mml-node="mi"
+               id="g2165-1">
               <use
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
+                 xlink:href="#MJX-21-TEX-I-3C8"
                  id="use2163-9"
-                 xlink:href="#MJX-21-TEX-I-3C8" />
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
         <g
-           id="g2181-6"
+           data-mml-node="msub"
            transform="translate(1116.3)"
-           data-mml-node="msub">
+           id="g2181-6">
           <g
-             id="g2173-7"
-             data-mml-node="mi">
+             data-mml-node="mi"
+             id="g2173-7">
             <use
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
+               xlink:href="#MJX-21-TEX-C-53"
                id="use2171-8"
-               xlink:href="#MJX-21-TEX-C-53" />
+               x="0"
+               y="0"
+               width="100%"
+               height="100%" />
           </g>
           <g
-             id="g2179-3"
+             data-mml-node="TeXAtom"
              transform="matrix(0.707,0,0,0.707,606,-150)"
-             data-mml-node="TeXAtom">
+             id="g2179-3">
             <g
-               id="g2177-2"
-               data-mml-node="mi">
+               data-mml-node="mi"
+               id="g2177-2">
               <use
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
+                 xlink:href="#MJX-21-TEX-C-47"
                  id="use2175-4"
-                 xlink:href="#MJX-21-TEX-C-47" />
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
       </g>
       <g
-         id="g2187-4"
-         transform="matrix(1.3169431,0,0,1.3169431,-1926.2673,5392.0732)"
+         style="fill:#000000;stroke:#000000;stroke-width:0"
          data-mml-node="mo"
-         style="fill:#000000;stroke:#000000;stroke-width:0">
+         transform="translate(-1728.3062,5296.1829)"
+         id="g2187-4">
         <use
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
+           xlink:href="#MJX-21-TEX-N-7C"
            id="use2185-1"
-           xlink:href="#MJX-21-TEX-N-7C" />
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
       </g>
       <g
-         id="g2191-3"
-         transform="matrix(1.3169431,0,0,1.3169431,-1560.1584,5392.0732)"
+         style="fill:#000000;stroke:#000000;stroke-width:0"
          data-mml-node="mi"
-         style="fill:#000000;stroke:#000000;stroke-width:0">
+         transform="translate(-1450.3072,5296.1829)"
+         id="g2191-3">
         <use
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
+           xlink:href="#MJX-21-TEX-I-3C8"
            id="use2189-7"
-           xlink:href="#MJX-21-TEX-I-3C8" />
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
       </g>
       <g
-         id="g2195-2"
-         transform="matrix(1.3169431,0,0,1.3169431,-702.8285,5392.0732)"
+         style="fill:#000000;stroke:#000000;stroke-width:0"
          data-mml-node="mo"
-         style="fill:#000000;stroke:#000000;stroke-width:0">
+         transform="translate(-799.30722,5296.1829)"
+         id="g2195-2">
         <use
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
+           xlink:href="#MJX-21-TEX-N-27E9"
            id="use2193-5"
-           xlink:href="#MJX-21-TEX-N-27E9" />
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
       </g>
     </g>
   </g>

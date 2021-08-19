@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2021/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: GTUbeamertemplate.aux
+The top-level auxiliary file: qa.aux
 The style file: biblatex.bst
 Reallocated glb_str_ptr (elt_size=8) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
@@ -17,48 +17,49 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-Database file #1: GTUbeamertemplate-blx.bib
+Database file #1: qa-blx.bib
+Database file #2: qaref.bib
 Biblatex version: 3.16
 Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-You've used 1 entry,
+You've used 7 entries,
             6393 wiz_defined-function locations,
-            1200 strings with 8980 characters,
-and the built_in function-call counts, 1522 in all, are:
-= -- 72
-> -- 70
-< -- 1
-+ -- 49
-- -- 28
-* -- 31
-:= -- 368
+            1237 strings with 10759 characters,
+and the built_in function-call counts, 22811 in all, are:
+= -- 1430
+> -- 365
+< -- 141
++ -- 451
+- -- 132
+* -- 1282
+:= -- 2062
 add.period$ -- 0
-call.type$ -- 1
-change.case$ -- 0
+call.type$ -- 7
+change.case$ -- 84
 chr.to.int$ -- 42
-cite$ -- 0
-duplicate$ -- 11
-empty$ -- 103
-format.name$ -- 0
-if$ -- 322
+cite$ -- 12
+duplicate$ -- 2395
+empty$ -- 2426
+format.name$ -- 159
+if$ -- 4927
 int.to.chr$ -- 0
-int.to.str$ -- 0
+int.to.str$ -- 11
 missing$ -- 0
-newline$ -- 20
-num.names$ -- 0
-pop$ -- 47
+newline$ -- 129
+num.names$ -- 143
+pop$ -- 2047
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 101
 quote$ -- 0
-skip$ -- 77
+skip$ -- 844
 stack$ -- 0
-substring$ -- 151
-swap$ -- 1
-text.length$ -- 20
+substring$ -- 2293
+swap$ -- 598
+text.length$ -- 108
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 22
+type$ -- 226
 warning$ -- 0
-while$ -- 64
+while$ -- 271
 width$ -- 0
-write$ -- 20
+write$ -- 123
