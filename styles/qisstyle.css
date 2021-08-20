@@ -32,16 +32,18 @@ body {
 
 #QFT3qbcircuit {
   max-width: 14.5cm;
-  margin: 3%;
+  margin: 3.5%;
 }
 
 #PEnqbcircuit {
   max-width: 28.5cm;
-  margin: 1%;
+  margin: 0.5%;
 }
 
 #aavis1 {
   max-width: 24.5cm;
 }
 
-
+#qftpoly {
+  max-width: 20cm;
+}
