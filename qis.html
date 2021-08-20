@@ -80,13 +80,24 @@
           </h3>
            <div id="qftcoll">
              <p>  
+               The quantum Fourier transform is a quantum implementation
+               of the discrete Fourier transform. 
                Given some pure quantum state of the computational basis \(\vert j \rangle \) where \(j\) ranges from
                \(N=0\) to \(2^n-1\), the \(n\)-qubit QFT acts on \(\vert j \rangle\) as
 
                 <div id="qfteq1" class="eq">
                   $$ \vert j  \rangle  \rightarrow \frac{1}{\sqrt{N}}\sum_{k=0}^{N-1}e^{2\pi i j k/ N}\vert k \rangle . $$
                 </div>
-               
+                <div id="qftcols1">
+                  <div id="qftcols11">
+                    In this way, the QFT effectively takes some computational basis state \( \vert j \rangle \) and
+                    returns a complete superposition of basis states traveling around the unit circle at a 
+                    rate \( \omega^j \).
+                  </div>
+                  <div id="qftcols12">
+                    <img src="./images/qis/qftpoly.svg" alt="QFT polygon of state coefficients" > 
+                  </div>
+               </div>
                In terms of the binary computational basis, the QFT can be expanded as
 
                 <div id="qfteq2"i class="eq">
@@ -116,8 +127,8 @@
                 </div>
                 And below is the corresponding quantum circuit for the 3-qubit QFT (without swaps):
                 <br>
-                <a href="https://commons.wikimedia.org/wiki/File:Quantum_Fourier_transform_on_three_qubits.svg" target="_blank">
-                  <img src="./images/3qubitQFTwhite.svg"   alt="3-qubit QFT circuit" height="auto" width="85%" id="3qubitQFT">
+                <a  href="https://commons.wikimedia.org/wiki/File:Quantum_Fourier_transform_on_three_qubits.svg" target="_blank">
+                  <img id="QFT3qbcircuit" src="./images/3qubitQFTwhite.svg"   alt="3-qubit QFT circuit" height="auto" width="85%" >
                 </a>
                 <br>
                 The QFT is a wonderful little routine, that would expedite many classical
@@ -143,7 +154,8 @@
             finding the phase \( \theta \) is equivalent to calculating the eigenvalue.
           </p>
           <p id="pe2">
-          <a href="https://commons.wikimedia.org/wiki/File:PhaseCircuit-crop.svg"><img src="./images/nqubitPEwhite.svg" alt="N-qubit phase estimation circuit diagram." height="auto" width="85%"></a>
+          <a  href="https://commons.wikimedia.org/wiki/File:PhaseCircuit-crop.svg" target="_blank">
+            <img id="PEnqbcircuit" src="./images/qis/nqubitpemu3.svg" alt="N-qubit phase estimation circuit diagram." height="auto" width="85%" ></a>
           </p>
           <p id-"pe3">
             For an n-qubit phase estimation setup, any phase \( \theta=k\frac{2\pi}{2^n} \) with k an 
@@ -151,8 +163,7 @@
             n bits will be encoded as exactly the quanum state \( \vert k \rangle \). For phases not
             of the form \( \frac{\pi k}{2^{n-1}} \), a superposition
             of states will be produced. However, this superposition can be considered to be 'centered'
-            around the real value. Upon a set of measurements, the average value can be computed and
-            taken as the estimated phase. And the best n-bit approximation of \( k \) will
+            around the real value. Upon a set of measurements, the best n-bit approximation of \( k \) will
             be measured with at least a probability ~40%.
           </p>
           <p id="pe4">
@@ -167,11 +178,15 @@
             Amplitude Amplification
           </h3>
           <p id="aaintro">
-            The amplitude amplification algorithim reflects the statevector about the axis of the 'good' subspace 
+            The amplitude amplification algorithim reflects the statevector about the axis of the 'bad' subspace 
             once partitioned by an oracle, and then reflects about the axis of the original state vector.
             Consecutive reflections of this nature nudge
             the statevector closer to the 'good' subspace, effectively 'searching' the space
-            to produce a statevector aligned with the 'good' subspace. Of course, the number
+            to produce a statevector aligned with the 'good' subspace. 
+             <br>
+            <img id="aavis1" src="./images/qis/psifin.svg" width="87%" height="auto">
+             <br>
+            Of course, the number
             of reflections requires knowledge about the angle between the initial statevector
             and the 'good' subspace. This information can be garnered from the use of the 
             amplitude estimation algorithim, a special case of phase estimation. The de facto
