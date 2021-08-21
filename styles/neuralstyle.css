@@ -20,3 +20,47 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+#examplenn {
+  max-width:16.3cm;
+}
+
+#exneuron {
+  min-width:12cm;
+}
+
+#ffninput {
+  min-width:12cm;
+  max-width: 14cm;
+}
+
+#nleft {
+}
+
+#nnbpright {
+  width:65%;
+}
+
+#bppath {
+  max-width:14cm;
+}
+
+.flex {
+  display:flex;
+  align-items: center;
+}
+
+.wrap{
+ flex-wrap: wrap ;
+}
+
+.ib {
+  display: inline-block;
+  text-align: center;
+  vertical-align: center;
+}
+
+.margin5 {
+  margin:3% 5%;
+  min-width: 11cm;
+}

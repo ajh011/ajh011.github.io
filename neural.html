@@ -51,17 +51,60 @@
       Neural Networks have become a mainstay of modern machine learning. They're 
       especially interesting because of their basic and understandable components,
       and their loose association with an idealized brain. They're easily implementable
-      on pytorch and tensorflow, both python based machine learning modules. Here I'd
-      like to link relevany ipy notebooks and maybe some notes once I write some up (create
-      a nand gate, code mnist digit classifier, explicit form of neurons in latex). 
+      on pytorch and tensorflow, both python based machine learning modules.  
     </p>
-    <section id="ipy">
-      <h1 id="ipytitle">
-        '.ipy' Notebooks
-      </h1>
-      <p id="ipyexp">
-        Here I should include '.ipy' notebooks for digit classification and a nand gate
+    <img src="./images/neural/ffnwhite.svg" alt="Example neural network" width="87%" height="auto" id="examplenn">
+    <section id="neurons">
+      <h1 id="neuronstit">Neurons</h1>
+      <p >
+        <div id="nleft" class="">
+        The neuron is the basic building block of a neural network. Suprisingly,
+        the mathematical functions it employs are usually very simple. The prototypical neuron
+        simply multiplies all its inputs by a corresponding weight, sums up the products (it may add a bias as well),
+        and then outputs this sum after applying some activation function.
+        
+        <img src="./images/neural/neuronwbsmatwhite.svg" alt="Example neuron with weights and biases in matrix form" 
+          class=""     width="40%" height="auto" id="exneuron"> 
+        </div>
       </p>
+      <h2 id="activationfunctionstit">
+        Activation Functions
+      </h2>
+      <p id="afp1">
+        The activation function employed by neural nets is generally simple, both to aid
+        in computational complexity concerns when applying the model; and to streamline the 
+        process of backpropogation, described later. Perhaps the two most commonly seen activation
+        functions are the classical logarithmic Sigmoid function and the more modern and widely
+        used rectified linear unit (ReLU).
+      </p>
+      <a href="https://commons.wikimedia.org/wiki/File:Sigmoid-function-2.svg"> 
+          <img src="./images/neural/sigmoid.svg" alt="Example Sigmoid function plot" width="35%" height="auto" class="margin5"></a>
+          <img src="./images/neural/relu.svg" alt="Example rectified linear unit function plot" width="35%" height="auto" class="margin5">
+
+    </section>
+    <section id="neuralnetbas">
+      <h1 id="nnbtit">
+        Neural Network Basics
+      </h1>
+      <p id="nnbp1">
+        <img src="./images/neural/ffnwhiteinput.svg" alt="Basic computation done by a layer in a neural network" width="45%" height="auto"
+          id="ffninput" class="ib "> 
+        <div id="nnbpright" class="ib">
+          In between each intermediate layer of the neural network, the aggregation of
+          inputs can be seen as a matrix acting
+          on some input vector, as a natural extension of the single neuron case.
+          The activation function (assuming it's the same for all the neurons) 
+          can then simply act on this transformed vector via distribution.
+        </div>
+      </p>
+      <p id="bbnp2">
+      <!-- words wrap left--> <img src="./images/neural/ffnwhiteoutput.svg" alt="" >
+      </p>
+        <h2 id="bptit">
+          Backpropogation
+        </h2>
+        <img src="./images/neural/bbdiagtemp.svg" alt="Backpropogation path highlighted and annotated" width="87%" 
+          height="auto" id="bppath">
     </section>
     <section id="resources">
         <h1 id="restitle">
