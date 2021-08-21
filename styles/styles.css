@@ -39,11 +39,11 @@ body {
   margin: 25px auto;
   text-align: center;
   z-index: 0;
-  font-size: 28px;
+  font-size: 27px;
   font-family:  'Work Sans', Garamond, 'Times New Roman', serif;
-  font-weight: 700;
+  font-weight: 600;
   width: 87.5%;
-  max-width: 30cm;
+  max-width: 35.5cm;
   line-height: 1.5;
 }
 
