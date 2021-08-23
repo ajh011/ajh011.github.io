@@ -3,7 +3,11 @@
   <head>
     <title>Symplectic &amp; Variational Mechanics</title> 
     <link href="./styles/symplecticstyles.css" rel="stylesheet">
-
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}},
+                                  loader: {load: ['[tex]/ams']},
+                                  tex: {packages: {'[+]': ['ams']}});</script>
+ 
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,16 +52,82 @@
      <h1 id="title">
        Symplectic &amp;  Variational Mechanics
      </h1>
-     <p id="expp">
-       Here I'd like to link several resources for those interested in symplectic
-       mechanics. Mostly those of others. I'll also attach my set that follows along
-       with Tobias Osbourne's series, as well as link to his series itself (again).
+     <p id="expp1">
+       Mechanics, or the evolution of dynamical systems, is reduced to a 
+       problem of the calculus of variations via Lagrangian and Hamiltonian mechanics. These 
+       frameworks for mechanics presuppose that the natural evolution of dynamical systems
+       is somehow 'stationary' for variations in path. That is, the path taken by an object in physical
+       and phase space is the minimization of some integral, called the action.
      </p>
+     <p id="expp2">
+       The most modern mathematical framework of mechanics defines the space of configurations
+       as a \(2n\)-dimensional manifold with some symplectic form (a non-degenerate
+       2-form) that defines a 'flow' for all points in the configuration space. This symplectic
+       form is akin to the Hamiltonian of the usual variational mechanics and generates the dynamical
+       behaviour of the system via the associated flow.
+     </p>
+   </section>
+   <section id="varintro">
+     <h1 id="varintrotit">
+       Variational Mechanics
+     </h1>
+     <p id="varintrop1">
+       The form of the classical Lagrangian, \(  L=T-V \), can be derived from the 
+       assumption of D'Alembert's principle, an adaption of the principle of virtual work
+       to dynamical systems. Hamilton's principle itself can also be taken as the starting point
+       from which static and instantenous systems can be derived. Below, all three principles
+       are described.
+     </p>
+     <h2 id="povwtit">
+       The Principle of Virtual Work
+     </h2>
+     <p id="povwp1">
+       The principle of virtual work is a mathematical framework for systems of static equilibrium.
+       It essentially states that the total virtual work of the system is equal to zero for
+       static systems:
+       $$
+        \text{Principle of Virtual Work:} \quad \sum_i F_i^{total} \cdot \delta \vec{r}=0
+       $$
+     </p>
+
+     <h2 id="dptit">
+       D'Alembert's Principle
+     </h2>
+     <p id="dpp2">
+       The principle of virtual work can be adapted to instants of dynamical systems by treating
+       reactions of objects as inertial or 'reactive' forces via the Newtonian relation 
+       \( \frac{dp}{dt}=I\). Mathematically, this turns the statment into (assuming 
+       harmonious motions):
+       $$
+         \text{D'Alembert's Principle:} \quad \sum_i \left(F_i^a- I_i \right) \cdot \delta \vec{r}=0.
+       $$
+     </p>
+
+     <h2 id="hptit">
+       Hamilton's Principle
+     </h2>
+     <p id="hpp1">
+       For dynamical systems with some path through time, as opposed to reactions in instants, 
+       Hamilton's principle can be applied. Mathematically, it has the form:
+       $$
+         \text{Hamilton's Principle:} \quad \delta\int_{t_a}^{t_b} L(q,\dot{q})\ dt=0.
+       $$
+       Where here it is presupposed that there is some functional fully describing the
+       evolution of the system. This functional is the action, \(s=\int L \ dt\), and thus
+       we have a true problem amenable to the calculus of variations. 
+     </p>
+     <div class="center">
+     <img src="./images/sym/pathvar.svg" alt="Diagram for variations in path considered for Hamilton's Principle" width="60%" height="auto" id="pathvar" class="center image">
+     </div>
    </section>
 
 
    Maxim Jeffs' wonderful set of fitting <a href="https://people.math.harvard.edu/~jeffs/SymplecticNotes.pdf">Notes</a>.
    <a href="https://math.mit.edu/~cohn/Thoughts/symplectic.html">Why symplectic geometry is the natural
    setting for classical mechanics</a>
+
+   <br>
+
+   <a href="http://www.math.stonybrook.edu/~kirillov/mat560-fall19/MAT%20560.pdf">Takhtajan's Classical Field Mechanics</a>
   </body>
 </html>

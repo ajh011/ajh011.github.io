@@ -1,21 +1,29 @@
 body {
   color:#ffffff;
-  width: 94%;
+  width: 76%;
   margin: 25px auto;
-  text-align: center;
+  text-align: left;
   z-index: 0;
-  font-size: 21px;
+  font-size: 27px;
   font-family: 'Work Sans', Garamond, 'Times New Roman', serif;
   font-weight: 350;
-  max-width: 87.5%;
+  max-width: 37.5cm;
   min-height: 100vh;
 }
 
 
 body {
-  background-image: url("../images/backspherical.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.55)), url("../images/backspherical.jpg");
   background-color: hsla(0, 0%, 0%, 85%);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+#title{
+  text-align: center;
+}
+
+.center{
+  text-align: center;
 }
