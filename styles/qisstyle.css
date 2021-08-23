@@ -3,7 +3,7 @@ body {
   color:#ffffff;
   width: 76%;
   margin: 25px auto;
-  text-align: center;
+  text-align: left;
   z-index: 0;
   font-size: 27px;
   font-family: 'Work Sans', Garamond, 'Times New Roman', serif;
@@ -19,6 +19,25 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.center {
+  text-align: center;
+  display: block;
+  margin: 25px auto;
+}
+
+a img{
+  display: inline-block;
+}
+
+img {
+  display:  block;
+  margin: 25px auto;
+}
+
+#title{
+  text-align: center;
 }
 
 .eq {
