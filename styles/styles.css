@@ -22,14 +22,12 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-
 @font-face {
     font-family: 'Scribble';
     src: url('../fonts/scribble-webfont.woff2') format('woff2'),
          url('../fonts/scribble-webfont.woff') format('woff');
     font-weight: 300;
     font-style: normal;
-
 }
 
 body {
@@ -39,7 +37,7 @@ body {
   margin: 25px auto;
   text-align: center;
   z-index: 0;
-  font-size: 27px;
+  font-size: 24px;
   font-family:  'Work Sans', Garamond, 'Times New Roman', serif;
   font-weight: 600;
   width: 87.5%;
@@ -66,7 +64,6 @@ body {
   max-width: 90%;  
 }
 
-
 #subtitle{
   font-size: 32px;
   font-family: Optima, Garamond; 
@@ -78,25 +75,6 @@ body {
   transform: scale(1.23, 1.67);
   -webkit-font-smoothing: antialiased;
   padding-bottom: 5%;
-
-}
-
-
-#stickycovered{
-  height: 100vh !important; 
-  display: flex;
-  align-items: center;
-}
-
-
-
-a {
- font-family: Georgia;
-}
-
-a:hover {
-  color: magenta;
-
 }
 
 #notes {
@@ -107,6 +85,61 @@ a:hover {
 #references {
   text-align: left;
   margin-left: 50px;
+}
+
+@media (max-width: 7.5in) {
+  #testb {
+    font-size: 17px;
+    text-align: left;
+    text-justify: inter-word;
+    padding-bottom: 3%;
+  }
+  h3 {
+    text-align: center;
+    padding-top: 6%;
+    font-weight: 900;
+  }
+  #title {
+    line-height: .67;
+    padding-bottom: 0px;
+    margin-bottom: 3px;
+  }
+  #titname {
+    font-size: 1em;
+    padding-bottom: 0px;
+  }
+  #subtitle {
+    margin-top: 10px;
+    font-size: .6em;
+  }
+  #disj {
+    display: none;
+  }
+  
+  #notes {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  #references {
+    text-align: left;
+    margin-left: 20px;
+  }
+}
+
+#stickycovered{
+  height: 100vh !important; 
+  display: flex;
+  align-items: center;
+}
+
+a {
+ font-family: Georgia;
+}
+
+a:hover {
+  color: magenta;
+
 }
 
 
