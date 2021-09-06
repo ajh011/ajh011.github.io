@@ -100,7 +100,7 @@ body {
     font-weight: 900;
   }
   #title {
-    margin-top: -15%;
+    margin-top: -30%;
     line-height: .67;
     padding-bottom: 0px;
     margin-bottom: 3px;
@@ -135,7 +135,8 @@ body {
 }
 
 a {
- font-family: Georgia;
+  color: 
+  font-family: Georgia;
 }
 
 a:hover {
