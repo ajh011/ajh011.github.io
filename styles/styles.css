@@ -57,7 +57,7 @@ body {
   position: sticky;
   top: 0px;
   opacity: .4;
-  margin: 4vh auto 4vh;
+  margin: 4vh auto 1vh;
   color:#d6d6d6;
   z-index: 2;
   padding: 15px 30px;
@@ -71,10 +71,10 @@ body {
 
 #titname{
   font-family: Scribble, 'Monsieur La Doulaise', Tangerine, 'Liberation Serif';
-  font-size: 85px;
+  font-size: 81px;
   transform: scale(1.23, 1.67);
   -webkit-font-smoothing: antialiased;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
 }
 
 #notes {
@@ -87,32 +87,47 @@ body {
   margin-left: 50px;
 }
 
+#second {
+  position: relative;
+  top:-3.3in;
+}
+
 @media (max-width: 7.5in) {
   #testb {
-    font-size: 17px;
+    font-size: 18px;
     text-align: left;
     text-justify: inter-word;
     padding-bottom: 3%;
   }
+  
+  #second {
+    position: relative;
+    top:-1.8in;
+  }
+
   h3 {
     text-align: center;
     padding-top: 6%;
     font-weight: 900;
   }
+
   #title {
     margin-top: -30%;
     line-height: .67;
     padding-bottom: 0px;
     margin-bottom: 3px;
   }
+
   #titname {
     font-size: 1em;
     padding-bottom: 0px;
   }
+
   #subtitle {
     margin-top: 10px;
     font-size: .6em;
   }
+
   #disj {
     display: none;
   }
@@ -141,10 +156,7 @@ a {
 
 a:hover {
   color: magenta;
-
 }
-
-
 
 .prettya {
   color: #ffffff;
@@ -178,10 +190,6 @@ a:hover {
   background-color: hsla(0,0,0,0);
   top: 25%;
   left: 25%;
-}
-
-#interests {
-  font-family: ;
 }
 
 ::-webkit-scrollbar {
