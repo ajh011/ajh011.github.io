@@ -3,6 +3,11 @@
   <head>
     <title>Neural Networks</title>
     <link href="./styles/neuralstyle.css" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}},
+                                  loader: {load: ['[tex]/ams']},
+                                  tex: {packages: {'[+]': ['ams']}});</script>
     
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,60 +55,85 @@
     <p id="explanation">
       Neural Networks have become a mainstay of modern machine learning. They're 
       especially interesting because of their basic and understandable components,
-      and their loose association with an idealized brain. They're easily implementable
+      as well as their loose association with an idealized brain. They're easily implementable
       on pytorch and tensorflow, both python based machine learning modules.  
     </p>
-    <img src="./images/neural/ffnwhite.svg" alt="Example neural network" width="87%" height="auto" id="examplenn">
-    <section id="neurons">
-      <h1 id="neuronstit">Neurons</h1>
+    <img class="center" src="./images/neural/ffnwhite.svg" alt="Example neural network" width="87%" height="auto" id="examplenn">
+    <section id="basics">
+      <h1 id="basicstit"> Neural Network Components  </h1>
+      <h2 id="neuronstit">Neurons</h2>
       <p >
         <div id="nleft" class="">
-        The neuron is the basic building block of a neural network. Suprisingly,
-        the mathematical functions it employs are usually very simple. The prototypical neuron
+        The neuron is the basic building block of a neural network. Generally,
+        the mathematical functions it employs are relatively simple. The prototypical neuron
         simply multiplies all its inputs by a corresponding weight, sums up the products (it may add a bias as well),
         and then outputs this sum after applying some activation function.
         
         <img src="./images/neural/neuronwbsmatwhite.svg" alt="Example neuron with weights and biases in matrix form" 
-          class=""     width="40%" height="auto" id="exneuron"> 
+           width="80%" height="auto" id="exneuron" class="center"> 
         </div>
       </p>
-      <h2 id="activationfunctionstit">
+      <h3 id="activationfunctionstit">
         Activation Functions
-      </h2>
+      </h3>
       <p id="afp1">
         The activation function employed by a neuron in a neural net is generally simple: both to aid
         in computational complexity concerns when applying the model; and to streamline the 
         process of backpropogation, described later. Perhaps the two most commonly seen activation
-        functions are the classical logarithmic Sigmoid function and the more modern and widely
+        functions are the logarithmic Sigmoid function and the more modern and widely
         used rectified linear unit (ReLU).
       </p>
-      <div> 
-        <a href="https://commons.wikimedia.org/wiki/File:Sigmoid-function-2.svg" target="_blank" class=""> 
-          <img src="./images/neural/sigmoid.svg" alt="Example Sigmoid function plot" width="35%" height="auto" class="margin5 icenter">
-        </a>
-        <a href="https://commons.wikimedia.org/wiki/File:Sigmoid-function-2.svg" target="_blank" >
-          <img class="icenter" src="./images/neural/relu.svg" alt="Example rectified linear unit function plot" width="35%" height="auto" class="margin5 icenter">
-        </a>
+    <!--  <a href="https://commons.wikimedia.org/wiki/File:Sigmoid-function-2.svg" id="sigmoidlink" target="_blank" class="">    sigmoid     </a>
+     -->
+      <div id="actex">
+        <img src="./images/neural/sigmoid.svg" alt="Example Sigmoid function plot" width="45%" height="auto" class="margin5">
+        <img id="relu" src="./images/neural/relu.svg" alt="Example rectified linear unit function plot" width="45%" height="auto" class="margin5">
       </div>
     </section>
-    <section id="neuralnetbas">
-      <h1 id="nnbtit">
-        Neural Network Basics
-      </h1>
       <p id="nnbp1">
+        <h2> Layers </h2>
         <img src="./images/neural/ffnwhiteinput.svg" alt="Basic computation done by a layer in a neural network" width="45%" height="auto"
-          id="ffninput" class="ib "> 
-        <div id="nnbpright" class="ib">
+          id="ffninput"> 
+        <div id="nnbpright" >
           In between each intermediate layer of the neural network, the aggregation of
           inputs can be seen as a matrix acting
           on some input vector, as a natural extension of the single neuron case.
           The activation function (assuming it's the same for all the neurons) 
           can then simply act on this transformed vector via distribution.
         </div>
+        <iframe width="100%" height="400" src="https://www.desmos.com/calculator/ybzkozsi64" id="softmaxinteractive"></iframe>
       </p>
       <p id="bbnp2">
       <!-- words wrap left--> <img src="./images/neural/ffnwhiteoutput.svg" alt="" >
       </p>
+    </section>
+    <section id="training">
+      <h1 id="traintit">Training</h1>
+        <p id="trainp1"> 
+          A neural network is analagous to a, potentially huge, set
+          of knobs and dials. At this point, one may ask how we could ever 
+          adjust such a large number of parameters to actually do something useful? And 
+          at that, can it ever do something useful? It turns out <!--, with enough money 
+          poured into development and interested academics, --> some neural network 
+          frameworks are amazingly
+          good at classifying certain types of data, and this is accomplished with 
+          some rather straight-forward and mathematically clean training techniques.
+        </p>
+        <p id="trainp2">
+          To train a neural network, we need a set of training data and a set of test data. 
+        </p>
+        <h2 id="costtit"> Cost Function </h2>
+          <p id=costp1>
+            The accuracy of a particular instance of a neural network over a given set of data
+            can be metrized in the following way: 
+            $$ 
+              \mathcal{C}_{quadratic}=\frac{1}{2}\sum_{\text{Test Data}}\left|
+               x_{pred}^i - x_{label}^i \right|^2  
+            $$
+            This effectively defines a 'cost' that can be used to model the accuracy in 
+            a well-behaved and differentiable way. 
+          </p>
+             
         <h2 id="bptit">
           Backpropogation
         </h2>

@@ -21,10 +21,10 @@ body {
   background-repeat: no-repeat;
 }
 
-
-.icenter {
-    display: inline-block;
-  }
+img.center {
+  display: block;
+  margin: 3% auto;
+}
 
 .center {
   text-align: center;
@@ -32,13 +32,11 @@ body {
   margin: 25px auto;
 }
 
-a img {
-  display: inline-block;
-}
 
-img {
-  display:  block;
-  margin: 25px auto;
+#actex {
+  display: flex;
+  margin:  5% auto 10px;
+  justify-content: center;
 }
 
 
@@ -48,15 +46,15 @@ img {
 }
 
 #examplenn {
-  max-width:16.3cm;
+  max-width:12.3cm;
 }
 
 #exneuron {
-  min-width:12cm;
+  padding-top: 3%;
+  max-width:15cm;
 }
 
 #ffninput {
-  min-width:12cm;
   max-width: 14cm;
 }
 
@@ -86,6 +84,24 @@ img {
 }
 
 .margin5 {
-  margin:3% 5%;
-  min-width: 10cm;
+  margin-right: 5%;
+}
+
+@media (max-width: 8in) {
+  body {
+    font-size: 18px;
+    padding-bottom: 3%;
+  }
+
+  .margin5 {
+    min-width: 87%;
+    margin-right: 0;
+    margin: 3% auto;
+  }
+  
+  #actex {
+    display: block;
+    justify-content: center;
+    max-width: 4in;
+  }
 }

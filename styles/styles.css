@@ -39,7 +39,7 @@ body {
   z-index: 0;
   font-size: 24px;
   font-family:  'Work Sans', Garamond, 'Times New Roman', serif;
-  font-weight: 600;
+  font-weight: 575;
   width: 87.5%;
   max-width: 35.5cm;
   line-height: 1.5;
@@ -92,7 +92,7 @@ body {
   top:-3.3in;
 }
 
-@media (max-width: 7.5in) {
+@media (max-width: 8.3in) {
   #testb {
     font-size: 18px;
     text-align: left;
@@ -108,7 +108,7 @@ body {
   h3 {
     text-align: center;
     padding-top: 6%;
-    font-weight: 900;
+    font-weight: 950;
   }
 
   #title {
@@ -143,6 +143,23 @@ body {
   }
 }
 
+@media (max-width: 9.65in) {
+   #disj {
+    display: none;
+  }
+  
+    #subtitle {
+    margin-top: 10px;
+  }
+
+  #title {
+    line-height: .67;
+    padding-bottom: 0px;
+    margin-bottom: 3px;
+  }
+}
+
+
 #stickycovered{
   height: 100vh !important; 
   display: flex;
@@ -150,7 +167,8 @@ body {
 }
 
 a {
-  color: 
+  color: ;
+  font-weight: 600;
   font-family: Georgia;
 }
 
