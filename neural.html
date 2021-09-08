@@ -101,8 +101,9 @@
           The activation function (assuming it's the same for all the neurons) 
           can then simply act on this transformed vector via distribution.
         </div>
-        <iframe width="100%" height="400" src="https://www.desmos.com/calculator/ybzkozsi64" id="softmaxinteractive"></iframe>
+        <!--<iframe width="100%" height="400" src="https://www.desmos.com/calculator/qvltyv82p3" id="softmaxinteractive"></iframe>-->
       </p>
+        <iframe src="https://www.desmos.com/calculator/wdipmg9s0q?embed" width="100%" height="400" invertedColors="true" style="border: 1px solid #ccc" id="softmaxinteractive" frameborder=0></iframe>
       <p id="bbnp2">
       <!-- words wrap left--> <img src="./images/neural/ffnwhiteoutput.svg" alt="" >
       </p>
@@ -126,10 +127,12 @@
           <p id=costp1>
             The accuracy of a particular instance of a neural network over a given set of data
             can be metrized in the following way: 
-            $$ 
-              \mathcal{C}_{quadratic}=\frac{1}{2}\sum_{\text{Test Data}}\left|
-               x_{pred}^i - x_{label}^i \right|^2  
-            $$
+            <div id="costquad" class="eq">
+              $$ 
+                \mathcal{C}_{quadratic}=\frac{1}{2}\sum_{\text{Test Data}}\left|
+                 x_{pred}^i - x_{label}^i \right|^2  
+              $$
+            </div>
             This effectively defines a 'cost' that can be used to model the accuracy in 
             a well-behaved and differentiable way. 
           </p>

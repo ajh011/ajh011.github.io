@@ -66,3 +66,11 @@ img {
 #qftpoly {
   max-width: 20cm;
 }
+
+
+@media (max-width: 8in) {
+  body {
+    font-size: 18px;
+    padding-bottom: 3%;
+  }
+}

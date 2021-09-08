@@ -26,6 +26,11 @@ img.center {
   margin: 3% auto;
 }
 
+.eq {
+  overflow-x: auto;
+  margin: 0.8%;
+}
+
 .center {
   text-align: center;
   display: block;
@@ -103,5 +108,9 @@ img.center {
     display: block;
     justify-content: center;
     max-width: 4in;
+  }
+  
+  #softmaxinteractive {
+    max-height: 3in;
   }
 }
