@@ -26,6 +26,10 @@ img.center {
   margin: 3% auto;
 }
 
+#applet_container1 {
+  max-width:80%;
+}
+
 .eq {
   overflow-x: auto;
   margin: 0.8%;
