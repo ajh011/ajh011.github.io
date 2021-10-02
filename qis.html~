@@ -62,7 +62,9 @@
             decrease. Their relevance is justified rather succintly with the following statement:
             an operational quantum computer would immediatley render obsolete some
             forms of cryptography currently implemented (namely the application of Shor's Algorithim
-            to the widely used RSA encryption scheme).
+            to the widely used RSA encryption scheme). The foray into basic quantum algorithms below focuses
+	    on the current paradigm of the qubit, inspired by classical computation, but a case can be made
+	    for a future of quantum computation based on the <a href="qis/qudit.html">qudit</a>.
           </p>
       </section>
       <section id="algorithims">
@@ -114,10 +116,43 @@
                 And here the binary representation of decimals is used so that \( 0.j_1j_2...j_n=\frac{j_1}
                 {2}+\frac{j_2}{4}+...+\frac{j_n}{2^n}\) where all \( j_i=0 \) or 1.
 
-                The QFT, like any strictly quantum operation, is really a unitary operator. As an example, 
-                here is the matrix form of the 3-qubit QFT:
+                The QFT, like any strictly quantum operation, is really a unitary operator. 
+		
+		
+<style>
+.collapsible {
+  background-color: hsla(0,0%,50%,0.5);
+  color: white;
+  cursor: pointer;
+  padding: 18px 18px;
+  margin: 20px 20px 0px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
 
-                <div id="3QFTmat" class="eq">
+.active, .collapsible:hover {
+  background-color: hsla(0,50%,26%,0.9);
+}
+
+.content {
+  padding: 20px 18px;
+  display: none;
+  overflow: hidden;
+  background-color: hsla(0,0%,26%,0.9);
+  margin: 0px 0px 20px;
+}
+</style>
+
+<br>
+
+            	<button type="button" class="collapsible">3-Qubit QFT Example</button>
+		<div class="content">
+ 		  As an example, 
+                  here is the matrix form of the 3-qubit QFT:
+
+                  <div id="3QFTmat" class="eq">
                     $$  
                     \frac{1}{2\sqrt{2}} 
                     \begin{bmatrix}
@@ -131,21 +166,52 @@
                     1 &\omega ^{7}&\omega ^{6} &\omega^{5}  &\omega ^{4} &\omega ^{3} &\omega ^2&\omega  \\
                     \end{bmatrix}
                     $$
-                </div>
-                And below is the corresponding quantum circuit for the 3-qubit QFT (without swaps):
+                  </div>
+                  And below is the corresponding quantum circuit for the 3-qubit QFT (without swaps):
+                  <br>
+                  <a class="center" href="https://commons.wikimedia.org/wiki/File:Quantum_Fourier_transform_on_three_qubits.svg" target="_blank">
+                    <img id="QFT3qbcircuit" src="./images/3qubitQFTwhite.svg"   alt="3-qubit QFT circuit" height="auto" width="85%" >
+                  </a>
+		</div>
+
                 <br>
-                <a class="center" href="https://commons.wikimedia.org/wiki/File:Quantum_Fourier_transform_on_three_qubits.svg" target="_blank">
-                  <img id="QFT3qbcircuit" src="./images/3qubitQFTwhite.svg"   alt="3-qubit QFT circuit" height="auto" width="85%" >
-                </a>
-                <br>
+
+                <div class="margin5">
                 The QFT is a wonderful little routine, that would expedite many classical
                 processes' if only we had direct access to the output state vector.
                 However, one of the great uses of the QFT in quantum speed-ups is it's
                 close association to phase estimation, a truly useful template for 
-                quantum circuits.
+                quantum circuits. For a deeper look at the Quantum Fourier Transform see notes by
+                <a href="https://viterbi-web.usc.edu/~tbrun/Course/lecture13.pdf">
+                  Todd Brun
+                </a>,
+		<a href="https://courses.cs.washington.edu/courses/cse599d/06wi/lecturenotes9.pdf">
+	          Dave Bacon
+		</a>,
+		and
+                <a href="https://www.scottaaronson.com/qclec/20.pdf">
+		  Scott Aaronson
+		</a>
+		</div>
               </p>
             </div>
 
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
             <div id="qftcol2">
                
             </div>
@@ -187,7 +253,10 @@
             Amplitude Amplification
           </h3>
           <p id="aaintro">
-            The amplitude amplification algorithim reflects the statevector about the axis of the 'bad' subspace 
+	    A generalization of Lov K. Grover's Algorithm detailed in 
+	    <a href="https://arxiv.org/abs/quant-ph/9712011">
+	      Quantum computers can search rapidly by using almost any transformation
+	    </a>, the amplitude amplification algorithim reflects the statevector about the axis of the 'bad' subspace 
             once partitioned by an oracle, and then reflects about the axis of the original state vector.
             Consecutive reflections of this nature nudge
             the statevector closer to the 'good' subspace, effectively 'searching' the space
@@ -207,7 +276,7 @@
              Drag \( \vert\psi\rangle \) around to experiment with different initial states.
           </p>
 
-               <script type="text/javascript" src="https://www.geogebra.org/apps/deployggb.js"></script> 
+<!--               <script type="text/javascript" src="https://www.geogebra.org/apps/deployggb.js"></script> 
                <script>
 			 var parameters1 = {
 	  		"appName":"graphing"
@@ -232,13 +301,15 @@
                         window.onload = function() { 
 					applet1.inject(applet_container1);
                                         }
-               </script>
+	       </script>-->
 
 
-<iframe src="https://www.geogebra.org/classic/qz2yjtjg?embed" width="80%"  allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+	       <div class="centerframe">
+	         <iframe src="https://www.geogebra.org/classic/qz2yjtjg?embed" width="800" height="600"
+			 allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" id="ggbGrover" frameborder="0"></iframe></div>
 
-
-<div id="ggb-element"></div> 
+               <div id="ggb-element">
+	     </div> 
 <!--
 <script>  
     var params = {"appName": "graphing", "width": 800, "height": 600, "showToolBar": false, "showAlgebraInput": false, "showMenuBar": false, "material_id":"qz2yjtjg" };
@@ -249,13 +320,27 @@
 </script>
 -->
 
+
                   </section>
+    <section id="code">
+      <h1>Quantum Coding</h1>
+      <p>
+        Currently, the two most relevant software development kits for working with and simulating quantum circuits are
+	those supported by organizations developing the hardware. IBM has their Qiskit SDK and their IBM
+	Quantum Experience. They seem to be the most open to community involvement, both in terms of real access to quantum
+	hardware (pretty much anyone can run small experiments now) and general resources. Google has their Cirq SDK
+	which has some nice features (specifically the comparatively easy implementation of qudits) but they're generally
+	less liberal in giving access to their real devices. For a more comprehensive list of resources see the following
+	<a href="https://quantumcomputing.stackexchange.com/questions/1474/what-programming-languages-are-available-for-quantum-computers">
+	  Stack Exchange discussion
+	</a> or <a href="https://en.wikipedia.org/wiki/Quantum_programming">this Wikipedia list</a>.
+      </p>
       <section id="qiskit">
-          <h2 id="qiskittitle">
+          <h3 id="qiskittitle">
             Qiskit  
-          </h2>
+          </h3>
           <p>
-            Qiskit is a python module that allows users to explicitly code quantum
+            Qiskit is a python module supported by IBM that allows users to explicitly code quantum
             circuit frameworks on which simulations can be run. It also allows users to run
             quantum experiments on real quantum computers at IBM, though all the 
             limitations of modern technology apply (low qubit counts, poor fidelity gates,
@@ -273,7 +358,21 @@
             <iframe src="https://trinket.io/embed/python/edd948bf08" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
          </div> -->
       </section>
-      <section id="resources">
+       <section id="cirq">
+          <h3 id="cirqtitle">
+            Cirq  
+          </h3>
+          <p>
+            Cirq is a python module supported by Google	that allows users to explicitly code quantum
+	    circuits as well. Unfortunately Google is less liberal in granting access to their real quantum
+	    hardware, but simulations are built in.
+	  </p>
+	  <p>
+	    One introductory resource for cirq can be found <a href="https://quantumai.google/cirq/tutorials/basics">here</a>.
+	  </p>
+     </section>
+   </section>
+     <section id="resources">
           <h2 id="resourcestitle">
             Resources
           </h2>
@@ -283,27 +382,27 @@
             Michael A. Nielsen and Isaac L. Chuang. This text is also a reasonably good
             introduction to the principles of QIS. However, if taken as a starting point 
             some familiarity with linear algebra is strongly recommended. It can be purchased
-            in print.
+            in print, published by Cambridge University Press.
           </p>
+	  <p>
+	    Another introductory text for those getting into quantum computing is Eleanor G. Rieffel and 
+	    Wolfgang H. Polak's <em>Quantum Computing: A Gentle Introduction</em>. This text is arguably a better pure
+	    introduction to the field. It can also be found in print, published by MIT Press.
+	  </p>
           <p>
             A great number of smaller articles for expository information are surely out there.
             One is <em><a href="https://arxiv.org/pdf/quant-ph/0011013.pdf">
-                    Basic concepts in quantum computation</a></em>. Another article 
+            Basic concepts in quantum computation</a></em>. Another article 
             intended as an introduction to quantum algorithims is <em><a href="https://arxiv.org/pdf/1804.03719.pdf">
-                    Quantum Algorithm Implementations for Beginners</a></em>.
+            Quantum Algorithm Implementations for Beginners</a></em>. And a set of lecture notes
+            on quantum computation by Ronald de Wolf can be found 
+            <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf">here</a>.
 
           </p>
           <p>
           </p>
           <p>
             <a href="http://twistedoakstudios.com/blog/Post2644_grovers-quantum-search-algorithm">Grover explained</a> <a href="https://algassert.com/post/1718">Shor explained</a>
-            Lov K. Grover's <a href="https://arxiv.org/abs/quant-ph/9712011">Quantum computers can search rapidly by using almost any transformation</a>
-            <a href="https://courses.cs.washington.edu/courses/cse599d/06wi/lecturenotes9.pdf">QFT notes Dave Bacon</a>
-            <a href="https://www.scottaaronson.com/qclec/20.pdf">QFT notes Scott Aaronson</a>
-            <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf">QC notes Ronald de Wolf</a>
-            <a href="https://viterbi-web.usc.edu/~tbrun/Course/lecture13.pdf">
-               QFT notes Todd Brun 
-            </a>
           </p>
     </section>
   </body>

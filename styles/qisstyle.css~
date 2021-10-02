@@ -89,6 +89,5 @@ img {
 
 .margin5{
   margin 15px;
-  padding-top: 20px;
 }
 
