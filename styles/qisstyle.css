@@ -76,10 +76,18 @@ img {
 }
 
 #ggbGrover{
-  max-width: 90%;
+  max-width: 19cm;
+  width: 90%;
   height: auto;
   min-height: 450px;
   display: block;
+  margin: 0 auto;
+}
+
+#ggdosvg{
+  max-width: 22cm;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
 }
 

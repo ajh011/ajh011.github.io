@@ -69,7 +69,7 @@
         The generalized X gate for \(n\) qudits can be thought of as a cyclic permutation on the basis states. The one qudit generalized 
         \(X_{d}\) can be seen as an operator that adds one to the basis vector's index, and if it reaches \(d\) for a qu\(d\)it, it returns
         that digit of the index to \(0\).
-        <div id="xgate">
+        <div id="xgate" class="eq">
           $$
             \begin{bmatrix}
               0 & 0  & \cdots & 0& 1\\
@@ -87,7 +87,7 @@
         a phase \(e^{2\pi i k/d^n}=\omega^{k}_{d^n}\). In the complex plane,
         it effectively rotates each basis vector \(\vert k\rangle\)'s amplitude  
         by \(\frac{2\pi k}{d^n}\).
-        <div id="zgate">
+        <div id="zgate" class="eq">
           $$
             \begin{bmatrix}
               1 & 0 & 0 &\cdots & 0\\
@@ -101,7 +101,7 @@
       <h3>\(QFT_{d^n}\) \(n\)-Qu\(d\)it Quantum Fourier Transform</h3>
         The Quantum Fourier Transform is succintly described as \(QFT_{d^k}^{i,j}=\omega_{d^k}^{i\cdot j}\). This gives the matrix
         form:
-        <div id="qftgate">
+        <div id="qftgate" class="eq">
           $$\frac{1}{\sqrt{d^n}}
             \begin{bmatrix}
               1 & 1 & 1&1 &\cdots & 1\\
@@ -117,7 +117,7 @@
         The non-local controlled gates are also very important. They're definitively multi-qudit gates in that thay aren't separable into a tensor product
         of single-qudit gates. They're defined as gates that only apply a gate to the \(l\) target qudits when the \(n\) control qudit's have a certain value.
         For a one qudit gate \(G_d\) and \(n\) control qudits, the matrix form of the controlled \(G_d\) gate takes the form:
-        <div id="cgate">
+        <div id="cgate" class="eq">
           $$
             \begin{bmatrix}
              \mathbb{I_d} & 0 & 0 &\cdots & 0\\
@@ -132,7 +132,7 @@
       <p>
         The GGDO as defined by Samuel Hunt and Maximilien Gadouleau in 
         <a href="https://arxiv.org/pdf/2001.06316.pdf"><em>Grover’s Algorithm and Many-Valued Quantum Logic</em></a> is
-        <div id="ggdosvg"><img src="../images/qis/GGDOwhite.svg" alt="N-Qudit Generalized Grover Diffusion Operator"></div> 
+        <div id="ggdosvg"><img width="100%" height="auto" id="ggdoimg" src="../images/qis/GGDOwhite.svg" alt="N-Qudit Generalized Grover Diffusion Operator"></div> 
       </p>
   </body>
 </html>
