@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Qudits</title>
+    <link href="../styles/qisstyle.css" rel="stylesheet">
+
+
+    <!--Geogebra Support-->
+    <script src="navigation.js"></script>
+
+
+    <!--MathJax Support-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}},
+                                  loader: {load: ['[tex]/ams']},
+                                  tex: {packages: {'[+]': ['ams']}});</script>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../images/iconwhite/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/iconwhite/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/iconwhite/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/iconwhite/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../images/iconwhite/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../images/iconwhite/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../images/iconwhite/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../images/iconwhite/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../images/iconwhite/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../images/iconwhite/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../images/iconwhite/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../images/iconwhite/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../images/iconwhite/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="../images/iconwhite/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="../images/iconwhite/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="../images/iconwhite/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="../images/iconwhite/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="../images/iconwhite/mstile-310x310.png" />
+
+
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Resources and discussion relevant to Quantum Computational and Informational
+                                      Science. Topics include basic quantum algorithims and programming in Qiskit.">
+    <meta name="keywords" content=" ">
+    <meta name="author" content="Alexander J. Heilman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+  </head>
+  
+  <body>
+    <h1 id="title">Qudits</h1>
+      A qudit is a generalization of a qubit in that it's a quantum state of
+      finite dimension. Where a qubit's state can be described by a linear combination
+      of two orthogonal states, a qudit can be described by a linear combination of 
+      \( d \)-many orthogonal states.
+
+    <h2>Qudit Gates</h2>
+      The most relevant gates for our considerations at the moment are the Quantum Fourier Transform (QFT), the 
+      generalized \(X\) gate, the generalized \(Z\) gate and the idea of a multi-qudit controlled gate.
+      The general form of the gates are described individually below. Note that the generalized gates can
+      be applied to aribtrary numbers of qudits, though the \(Z\) and \(X\) gates are generally applied to one qudit
+      at a time as \(X_d\) and \(Z_d\).
+      <h3>\(X_{d^n}\) Generalized \(X\) Gate</h3>
+        The generalized X gate for \(n\) qudits can be thought of as a cyclic permutation on the basis states. The one qudit generalized 
+        \(X_{d}\) can be seen as an operator that adds one to the basis vector's index, and if it reaches \(d\) for a qu\(d\)it, it returns
+        that digit of the index to \(0\).
+        <div id="xgate">
+          $$
+            \begin{bmatrix}
+              0 & 0  & \cdots & 0& 1\\
+              1 & 0 & \cdots& 0 & 0\\
+              0 & 1  & \cdots& 0 & 0\\
+              \vdots & \vdots & \ddots & \vdots&\vdots\\
+              0 & 0 & \cdots &1&0 \\
+            \end{bmatrix}
+          $$
+        </div>
+      
+      <h3>\(Z_{d^n}\) Generalized \(Z\) Gate</h3>
+        The generalized Z gate for \(n\) qudits of dimension \(d\)
+        assosciates to each basis vector \(\vert k\rangle\) 
+        a phase \(e^{2\pi i k/d^n}=\omega^{k}_{d^n}\). In the complex plane,
+        it effectively rotates each basis vector \(\vert k\rangle\)'s amplitude  
+        by \(\frac{2\pi k}{d^n}\).
+        <div id="zgate">
+          $$
+            \begin{bmatrix}
+              1 & 0 & 0 &\cdots & 0\\
+              0 & \omega_{d^n} & 0&\cdots& 0\\
+              0 & 0 &\omega_{d^n}^2 & \cdots& 0\\
+              \vdots & \vdots &\vdots& \ddots & \vdots\\
+              0 & 0 & 0 & \cdots &\omega_{d^n}^{d^n-1} \\
+            \end{bmatrix}
+          $$
+        </div>
+      <h3>\(QFT_{d^n}\) \(n\)-Qu\(d\)it Quantum Fourier Transform</h3>
+        The Quantum Fourier Transform is succintly described as \(QFT_{d^k}^{i,j}=\omega_{d^k}^{i\cdot j}\). This gives the matrix
+        form:
+        <div id="qftgate">
+          $$\frac{1}{\sqrt{d^n}}
+            \begin{bmatrix}
+              1 & 1 & 1&1 &\cdots & 1\\
+              1 & \omega_{d^n}^1 & \omega_{d^n}^2&\omega_{d^n}^{3} &\cdots& \omega_{d^n}^{d-1}\\
+              1 & \omega_{d^n}^2 &\omega_{d^n}^{4} & \omega_{d^n}^{6} &\cdots& \omega_{d^n}^{2\cdot(d-1)}\\
+              1 & \omega_{d^n}^3 &\omega_{d^n}^{6} &\omega_{d^n}^{9} & \cdots& \omega_{d^n}^{3\cdot(d-1)}\\
+              \vdots & \vdots &\vdots& \vdots&\ddots & \vdots\\
+              1 & \omega_{d^n}^{d^n-1} & \omega_{d^n}^{(d^n-1)\cdot 2} & \omega_{d^n}^{(d^n-1)\cdot 3}  &\cdots &\omega_{d^n}^{(d^n-1)(d^n-1)} \\
+            \end{bmatrix}
+          $$
+        </div>
+      <h3>\(C^{n}G_{d^l}\) Qu\(d\)it Control \(G\)ates</h3>
+        The non-local controlled gates are also very important. They're definitively multi-qudit gates in that thay aren't separable into a tensor product
+        of single-qudit gates. They're defined as gates that only apply a gate to the \(l\) target qudits when the \(n\) control qudit's have a certain value.
+        For a one qudit gate \(G_d\) and \(n\) control qudits, the matrix form of the controlled \(G_d\) gate takes the form:
+        <div id="cgate">
+          $$
+            \begin{bmatrix}
+             \mathbb{I_d} & 0 & 0 &\cdots & 0\\
+             0& \mathbb{I_d} & 0 &\cdots & 0\\
+             0& 0 & \mathbb{I_d} &\cdots & 0\\
+             \vdots&\vdots&\vdots& \ddots & \cdots\\
+             0& 0 & 0 &\cdots & G_{d^l}\\
+            \end{bmatrix}
+          $$
+        </div>
+    <h2>Generalized Grover Diffusion Operator</h2>
+      <p>
+        The GGDO as defined by Samuel Hunt and Maximilien Gadouleau in 
+        <a href="https://arxiv.org/pdf/2001.06316.pdf"><em>Grover’s Algorithm and Many-Valued Quantum Logic</em></a> is
+        <div id="ggdosvg"><img src="../images/qis/GGDOwhite.svg" alt="N-Qudit Generalized Grover Diffusion Operator"></div> 
+      </p>
+  </body>
+</html>
