@@ -62,7 +62,10 @@
     <h2>Qudit Gates</h2>
       The most relevant gates for our considerations at the moment are the Quantum Fourier Transform (QFT), the 
       generalized \(X\) gate, the generalized \(Z\) gate and the idea of a multi-qudit controlled gate.
-      The general form of the gates are described individually below. Note that the generalized gates can
+      These gates are generalizations of the Pauli \(X\) and Pauli \(Z\) operators of two-dimensional
+      complex Hilbert spaces. For greater detail and other possible generalizations of the Pauli's in higher
+      dimensions, see <a href="https://en.wikipedia.org/wiki/Generalizations_of_Pauli_matrices#Construction:_The_clock_and_shift_matrices">here</a>.
+      Otherwise, the general form of the gates are described individually below. Note that the generalized gates can
       be applied to aribtrary numbers of qudits, though the \(Z\) and \(X\) gates are generally applied to one qudit
       at a time as \(X_d\) and \(Z_d\).
       <h3>\(X_{d^n}\) Generalized \(X\) Gate</h3>
@@ -80,6 +83,25 @@
             \end{bmatrix}
           $$
         </div>
+		
+
+<br>
+
+            	<button type="button" class="collapsible">Show Inverse</button>
+		<div class="content eq">
+		  $$
+                    X_{d^n}^{-1}=
+                   \begin{bmatrix}
+                   0 & 1  &0& \cdots & 0\\
+                   0 & 0 & 1& \cdots& 0 \\
+                   \vdots &\vdots & \vdots & \ddots & \vdots\\
+                   0 & 0  & 0&\cdots& 1 \\
+                   1 & 0 & 0 & \cdots &0 \\
+                   \end{bmatrix}
+                  $$
+		</div>
+
+
       
       <h3>\(Z_{d^n}\) Generalized \(Z\) Gate</h3>
         The generalized Z gate for \(n\) qudits of dimension \(d\)
@@ -98,25 +120,62 @@
             \end{bmatrix}
           $$
         </div>
+
+      	<button type="button" class="collapsible">Show Inverse</button>
+	<div class="content eq">
+	  $$
+	    Z_{d^n}^{-1}=
+            \begin{bmatrix}
+              1 & 0 & 0 &\cdots & 0\\
+              0 & \omega_{d^n}^{d^n-1} & 0&\cdots& 0\\
+              0 & 0 &\omega_{d^n}^{d^n-2} & \cdots& 0\\
+              \vdots & \vdots &\vdots& \ddots & \vdots\\
+              0 & 0 & 0 & \cdots &\omega_{d^n} \\
+            \end{bmatrix}
+           $$
+	</div>
+
+
       <h3>\(QFT_{d^n}\) \(n\)-Qu\(d\)it Quantum Fourier Transform</h3>
-        The Quantum Fourier Transform is succintly described as \(QFT_{d^k}^{i,j}=\omega_{d^k}^{i\cdot j}\). This gives the matrix
+        The Quantum Fourier Transform is succintly described element-wise as \(QFT_{d^n}^{i,j}=\omega_{d^n}^{i\cdot j}\). This gives the matrix
         form:
         <div id="qftgate" class="eq">
           $$\frac{1}{\sqrt{d^n}}
             \begin{bmatrix}
               1 & 1 & 1&1 &\cdots & 1\\
-              1 & \omega_{d^n}^1 & \omega_{d^n}^2&\omega_{d^n}^{3} &\cdots& \omega_{d^n}^{d-1}\\
-              1 & \omega_{d^n}^2 &\omega_{d^n}^{4} & \omega_{d^n}^{6} &\cdots& \omega_{d^n}^{2\cdot(d-1)}\\
-              1 & \omega_{d^n}^3 &\omega_{d^n}^{6} &\omega_{d^n}^{9} & \cdots& \omega_{d^n}^{3\cdot(d-1)}\\
+              1 & \omega_{d^n}^1 & \omega_{d^n}^{2}&\omega_{d^n}^{3} &\cdots& \omega_{d^n}^{d^n-1}\\
+              1 & \omega_{d^n}^2 &\omega_{d^n}^{4} & \omega_{d^n}^{6} &\cdots& \omega_{d^n}^{2\cdot(d^n-1)}\\
+              1 & \omega_{d^n}^3 &\omega_{d^n}^{6} &\omega_{d^n}^{9} & \cdots& \omega_{d^n}^{3\cdot(d^n-1)}\\
               \vdots & \vdots &\vdots& \vdots&\ddots & \vdots\\
               1 & \omega_{d^n}^{d^n-1} & \omega_{d^n}^{(d^n-1)\cdot 2} & \omega_{d^n}^{(d^n-1)\cdot 3}  &\cdots &\omega_{d^n}^{(d^n-1)(d^n-1)} \\
             \end{bmatrix}
           $$
         </div>
+
+            	<button type="button" class="collapsible">Show Inverse</button>
+		<div class="content eq">
+                  The inverse Quantum Fourier transform for \(n\)-qu\(d\)its can be described element-wise as \(QFT_{d^n}^{-1 \ (i,j)}=\omega_{d^n}^{-i\cdot j}\),
+                  giving the matrix form:
+                <div class="eq">                  
+		  $$
+                    QFT_{d^n}^{-1}=
+            \begin{bmatrix}
+              1 & 1 & 1&1 &\cdots & 1\\
+              1 & \omega_{d^n}^{(d^n-1)} & \omega_{d^n}^{(d^n-2)}&\omega_{d^n}^{(d^n-3)} &\cdots& \omega_{d^n}^{1}\\
+              1 & \omega_{d^n}^{(d^n-2)} &\omega_{d^n}^{(d^n-4)} & \omega_{d^n}^{(d^n-6)} &\cdots& \omega_{d^n}^{2}\\
+              1 & \omega_{d^n}^{(d^n-3)} &\omega_{d^n}^{(d^n-6)} &\omega_{d^n}^{(d^n-9)} & \cdots& \omega_{d^n}^{3}\\
+              \vdots & \vdots &\vdots& \vdots&\ddots & \vdots\\
+              1 & \omega_{d^n}^{1} & \omega_{d^n}^{[d^n-2(d^n-1)]} & \omega_{d^n}^{[d^n-3(d^n-1)]}  &\cdots &\omega_{d^n}^{(d^n-1)} \\
+            \end{bmatrix}
+                  $$
+                </div>
+		</div>
+
+
       <h3>\(C^{n}G_{d^l}\) Qu\(d\)it Control \(G\)ates</h3>
         The non-local controlled gates are also very important. They're definitively multi-qudit gates in that thay aren't separable into a tensor product
         of single-qudit gates. They're defined as gates that only apply a gate to the \(l\) target qudits when the \(n\) control qudit's have a certain value.
-        For a one qudit gate \(G_d\) and \(n\) control qudits, the matrix form of the controlled \(G_d\) gate takes the form:
+        For a one qudit gate \(G_d\) and \(n\) control qudits, the controlled \(G_d\) gate takes the form of the following block matrix:
         <div id="cgate" class="eq">
           $$
             \begin{bmatrix}
@@ -124,15 +183,40 @@
              0& \mathbb{I_d} & 0 &\cdots & 0\\
              0& 0 & \mathbb{I_d} &\cdots & 0\\
              \vdots&\vdots&\vdots& \ddots & \cdots\\
-             0& 0 & 0 &\cdots & G_{d^l}\\
+             0& 0 & 0 &\cdots & G_{d}\\
             \end{bmatrix}
           $$
         </div>
+    where each element is really a \(d\times d \) matrix.
     <h2>Generalized Grover Diffusion Operator</h2>
       <p>
         The GGDO as defined by Samuel Hunt and Maximilien Gadouleau in 
         <a href="https://arxiv.org/pdf/2001.06316.pdf"><em>Grover’s Algorithm and Many-Valued Quantum Logic</em></a> is
         <div id="ggdosvg"><img width="100%" height="auto" id="ggdoimg" src="../images/qis/GGDOwhite.svg" alt="N-Qudit Generalized Grover Diffusion Operator"></div> 
       </p>
+
+    <h2>Simulating Qudits</h2>
+      <p>
+        Google's quantum SDK, Cirq, natively supports qudits and qudit circuit simulations. A git repository of
+        these qudit gates and relevant items is graciously under development by Andy Phillips and can be found <a href="https://github.com/tuc56407/QuditScripts">here</a>.
+      </p>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
   </body>
 </html>

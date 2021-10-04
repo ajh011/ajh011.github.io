@@ -100,3 +100,30 @@ img {
   padding-top: 20px;
 }
 
+a{
+  color: magenta;
+}
+
+.collapsible {
+  background-color: hsla(0,0%,50%,0.5);
+  color: white;
+  cursor: pointer;
+  padding: 18px 18px;
+  margin: 20px 20px 0px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: hsla(0,50%,26%,0.9);
+}
+
+.content {
+  padding: 20px 18px;
+  display: none;
+  overflow: hidden;
+  background-color: hsla(0,0%,26%,0.9);
+  margin: 0px 0px 20px;
+}
