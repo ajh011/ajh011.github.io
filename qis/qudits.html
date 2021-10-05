@@ -3,6 +3,7 @@
   <head>
     <title>Qudits</title>
     <link href="../styles/qisstyle.css" rel="stylesheet">
+    <link href="../styles/qudits.css" rel="stylesheet">
 
 
     <!--Geogebra Support-->
@@ -53,13 +54,29 @@
   </head>
   
   <body>
+
+
+  <div id="home">
+    <a href="https://www.alexheilman.com"><img id="homeimg" src="../images/iconwhite/favicon-196x196.png" width="50"></a>
+  </div>
+
+  <div id="up">
+    <a id="upa" href="https://www.alexheilman.com/qis.html">QIS</a>
+  </div>
+<!--Here's some cool link things I'll open in the future -->
+
+
+
     <h1 id="title">Qudits</h1>
+     <p>
       A qudit is a generalization of a qubit in that it's a quantum state of
       finite dimension. Where a qubit's state can be described by a linear combination
       of two orthogonal states, a qudit can be described by a linear combination of 
       \( d \)-many orthogonal states.
+     </p>
 
     <h2>Qudit Gates</h2>
+     <p>
       The most relevant gates for our considerations at the moment are the Quantum Fourier Transform (QFT), the 
       generalized \(X\) gate, the generalized \(Z\) gate and the idea of a multi-qudit controlled gate.
       These gates are generalizations of the Pauli \(X\) and Pauli \(Z\) operators of two-dimensional
@@ -68,10 +85,13 @@
       Otherwise, the general form of the gates are described individually below. Note that the generalized gates can
       be applied to aribtrary numbers of qudits, though the \(Z\) and \(X\) gates are generally applied to one qudit
       at a time as \(X_d\) and \(Z_d\).
+     </p>
       <h3>\(X_{d^n}\) Generalized \(X\) Gate</h3>
-        The generalized X gate for \(n\) qudits can be thought of as a cyclic permutation on the basis states. The one qudit generalized 
+       <p>
+        The generalized X gate for \(n\) qudits, also known as the shift gate, can be thought of as a cyclic permutation on the basis states. The one qudit generalized 
         \(X_{d}\) can be seen as an operator that adds one to the basis vector's index, and if it reaches \(d\) for a qu\(d\)it, it returns
         that digit of the index to \(0\).
+       </p>
         <div id="xgate" class="eq">
           $$
             \begin{bmatrix}
@@ -85,12 +105,13 @@
         </div>
 		
 
-<br>
+        <br>
+     
 
-            	<button type="button" class="collapsible">Show Inverse</button>
-		<div class="content eq">
-		  $$
-                    X_{d^n}^{-1}=
+      	<button type="button" class="collapsible">Show Inverse</button>
+        <div class="content eq">
+	  $$
+              X_{d^n}^{-1}=
                    \begin{bmatrix}
                    0 & 1  &0& \cdots & 0\\
                    0 & 0 & 1& \cdots& 0 \\
@@ -98,17 +119,41 @@
                    0 & 0  & 0&\cdots& 1 \\
                    1 & 0 & 0 & \cdots &0 \\
                    \end{bmatrix}
-                  $$
-		</div>
+           $$
+	</div>
+
+      
+
+      	<button type="button" class="collapsible ralign">Qutrit Example</button>
+	<div class="content eq ">
+	  $$
+              X_{3}=
+                   \begin{bmatrix}
+                   0 & 0  &1\\
+                   1 & 0 & 0\\
+                   0 & 1 & 0\\
+                   \end{bmatrix},\quad
+              X_{3}^{-1}=
+                   \begin{bmatrix}
+                   0 & 1  &0\\
+                   0 & 0 & 1\\
+                   1 & 0 & 0\\
+                   \end{bmatrix}
+
+           $$
+	</div>
+
 
 
       
       <h3>\(Z_{d^n}\) Generalized \(Z\) Gate</h3>
-        The generalized Z gate for \(n\) qudits of dimension \(d\)
-        assosciates to each basis vector \(\vert k\rangle\) 
+       <p>
+        The generalized Z gate for \(n\) qudits of dimension \(d\), also known as the
+        clock gate, assosciates to each basis vector \(\vert k\rangle\) 
         a phase \(e^{2\pi i k/d^n}=\omega^{k}_{d^n}\). In the complex plane,
         it effectively rotates each basis vector \(\vert k\rangle\)'s amplitude  
         by \(\frac{2\pi k}{d^n}\).
+       </p>
         <div id="zgate" class="eq">
           $$
             \begin{bmatrix}
@@ -122,7 +167,8 @@
         </div>
 
       	<button type="button" class="collapsible">Show Inverse</button>
-	<div class="content eq">
+	<div class="content">
+          <div class="eq">
 	  $$
 	    Z_{d^n}^{-1}=
             \begin{bmatrix}
@@ -133,12 +179,37 @@
               0 & 0 & 0 & \cdots &\omega_{d^n} \\
             \end{bmatrix}
            $$
+           </div>
 	</div>
 
 
+      	<button type="button" class="collapsible ralign">Qutrit Example</button>
+	<div class="content">
+          <div  class="eq">
+	  $$
+              Z_{3}=
+                   \begin{bmatrix}
+                   1 & 0  &0\\
+                   0 & \omega_3 & 0\\
+                   0 & 0 & \omega_3^2\\
+                   \end{bmatrix},\quad
+              Z_{3}^{-1}=
+                   \begin{bmatrix}
+                   1 & 0  &0\\
+                   0 & \omega_3^2 & 0\\
+                   0 & 0 & \omega_3\\
+                   \end{bmatrix}
+           $$
+           </div>
+	</div>
+
+
+
       <h3>\(QFT_{d^n}\) \(n\)-Qu\(d\)it Quantum Fourier Transform</h3>
+       <p>
         The Quantum Fourier Transform is succintly described element-wise as \(QFT_{d^n}^{i,j}=\omega_{d^n}^{i\cdot j}\). This gives the matrix
         form:
+       </p>
         <div id="qftgate" class="eq">
           $$\frac{1}{\sqrt{d^n}}
             \begin{bmatrix}
@@ -172,7 +243,29 @@
 		</div>
 
 
+      	<button type="button" class="collapsible ralign">Qutrit Example</button>
+	<div class="content">
+          <div class="eq">
+	  $$
+              QFT_{3}=\frac{1}{\sqrt{3}}
+                   \begin{bmatrix}
+                   1 & 1  & 1\\
+                   1 & \omega_3 & \omega_3^2\\
+                   1 & \omega_3^2 & \omega_3\\
+                   \end{bmatrix},\quad
+              QFT_{3}^{-1}=\frac{1}{\sqrt{3}}
+                   \begin{bmatrix}
+                   1 & 1  &1\\
+                   1 & \omega_3^2 & \omega_3\\
+                   1 & \omega_3 & \omega_3^2 \\
+                   \end{bmatrix}
+           $$
+           </div>
+	</div>
+
+
       <h3>\(C^{n}G_{d^l}\) Qu\(d\)it Control \(G\)ates</h3>
+       <p>
         The non-local controlled gates are also very important. They're definitively multi-qudit gates in that thay aren't separable into a tensor product
         of single-qudit gates. They're defined as gates that only apply a gate to the \(l\) target qudits when the \(n\) control qudit's have a certain value.
         For a one qudit gate \(G_d\) and \(n\) control qudits, the controlled \(G_d\) gate takes the form of the following block matrix:
@@ -187,7 +280,71 @@
             \end{bmatrix}
           $$
         </div>
-    where each element is really a \(d\times d \) matrix.
+        where each element is really a \(d\times d \) matrix.
+       </p>
+
+
+    <h2>Function Encoding States</h2>
+      <p>
+        Using qu\(d\)its and the \(d\)th roots of unity, we can actually encode
+        multivariate functions over finite fields. The states we'll utilize are full
+        superpositions of the basis vectors of multi-qudit states. In other words, if we
+        extend the plus state of qubits \( \vert +\rangle\)<!-- \( = \frac{1}{\sqrt{2}}\begin{bmatrix}1\\1\\ \end{bmatrix}  \)-->
+        to qudits \( \vert +_d\rangle\)<!-- \(= \frac{1}{\sqrt{d}}\begin{bmatrix}1\\1\\ \vdots\\ 1\\ \end{bmatrix}  \)--> and then vary
+        the amplitudes by the \(d\)th roots of unity we can encode finite functions in the values of the amplitudes exponents.
+      </p> 
+
+      <div class="eq">
+        $$
+          \vert f(x_n)\rangle := \frac{1}{\sqrt{d^n}}\sum_{k=0}^{d^n-1}\omega_d^{f(x_n)}\vert k \rangle 
+
+        $$
+      </div>
+
+      <br> 
+
+      <button type="button" class="collapsible">Two Qutrit Example</button>
+      <div class="content">
+        Let's consider a simple two qutrit example that encodes the polynomial \(f(x,y)=xy^2+x\)
+        over the finite field \(\mathbb{F}_3\) (that is, the field of integers modulo three). 
+        In this context, it's implied the relative roots of unitary are those of order 3 as we are
+        considering qutrits. Thus, below,
+        our \(\omega\) is \(\omega_3=e^{\frac{2\pi i}{3}}\).
+        <div class="eq">
+        $$
+                   \frac{1}{\sqrt{9}}\sum_{k=0}^{9}\omega^{xy^2+x}\vert k \rangle
+          =\frac{1}{3}\left(\vert 00\rangle + \vert 01\rangle + \vert 02\rangle
+          + \omega \vert 10\rangle + \omega^2 \vert 11\rangle + \omega^2 \vert 12\rangle + \omega^2 \vert 20\rangle 
+          + \omega \vert 21\rangle + \omega \vert 22\rangle  \right)
+          =\begin{array}{c c} \hspace{.4cm} x\ y
+          & \begin{array}{c} \omega^{f(x,y)} \\ \end{array} \\
+          \begin{array}{c c c c c c c c c}\vert 00\rangle \\ \vert 01 \rangle\\
+          \vert 02 \rangle \\ \vert 10\rangle \\ \vert 11\rangle\\ \vert 12\rangle\\
+          \vert 20 \rangle \\ \vert 21 \rangle \\ \vert 22\rangle\end{array} \hspace{-.5cm}&
+          \left[
+          \begin{array}{c}
+          1 \\
+          1 \\
+          1 \\
+          \omega \\
+          \omega^2 \\
+          \omega^2\\
+          \omega^2\\
+          \omega \\
+          \omega \\
+          \end{array}
+          \right]
+          \end{array}
+        $$
+        </div>
+      </div>
+
+      <p>
+        This encoding can be physically realized by prescribed application
+        of generalized \(Z\) gates. For more detail, see <a href="https://arxiv.org/pdf/2012.00490.pdf">
+        <em>Finite-Function-Encoding Quantum States</em></a>.
+      </p>
+
     <h2>Generalized Grover Diffusion Operator</h2>
       <p>
         The GGDO as defined by Samuel Hunt and Maximilien Gadouleau in 
@@ -200,6 +357,8 @@
         Google's quantum SDK, Cirq, natively supports qudits and qudit circuit simulations. A git repository of
         these qudit gates and relevant items is graciously under development by Andy Phillips and can be found <a href="https://github.com/tuc56407/QuditScripts">here</a>.
       </p>
+
+
 
 <script>
 var coll = document.getElementsByClassName("collapsible");
