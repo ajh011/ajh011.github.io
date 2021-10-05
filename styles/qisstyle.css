@@ -199,6 +199,22 @@ a:hover{
 
 }
 
+@media (max-width: 4.8in) {
+  #upa{
+    font-size: 1.2em;
+    left:2.4%;
+  }
+
+ #home{
+  top: -.2%;
+  right: 6.7%;
+  }
+
+ #homeimg{
+  max=width: 2em;
+ }
+
+}
 
 
 
