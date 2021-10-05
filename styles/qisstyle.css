@@ -203,6 +203,7 @@ a:hover{
   #upa{
     font-size: 1.23em;
     left:1.8%;
+    display: none;
   }
 
  #home{
@@ -211,7 +212,8 @@ a:hover{
   }
 
  #homeimg{
-  max=width: 1.4em;
+  max-width: 1.4dem;
+  display: none;
  }
 
 }
