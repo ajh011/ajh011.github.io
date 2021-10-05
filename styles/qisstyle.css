@@ -201,8 +201,8 @@ a:hover{
 
 @media (max-width: 4.8in) {
   #upa{
-    font-size: 1em;
-    left:2%;
+    font-size: 1.23em;
+    left:1.8%;
   }
 
  #home{
@@ -211,7 +211,7 @@ a:hover{
   }
 
  #homeimg{
-  max=width: 2em;
+  max=width: 1.4em;
  }
 
 }
