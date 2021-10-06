@@ -134,11 +134,13 @@ a:hover{
   overflow: hidden;
   background-color: hsla(0,0%,26%,0.9);
   margin: 0px 0px 20px;
+  z-index: 1;
 }
 
 .ralign {
   position: absolute;
   right: 12%;
+  z-index: 1;
 }
 
 #home{
@@ -230,6 +232,11 @@ a.white{
   max-width: 1.4dem;
   display: none;
  }
+
+  .ralign {
+    position: static;
+    display: block;
+  }
 
 }
 
