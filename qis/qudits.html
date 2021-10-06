@@ -268,7 +268,8 @@
        <p>
         The non-local controlled gates are also very important. They're definitively multi-qudit gates in that thay aren't separable into a tensor product
         of single-qudit gates. They're defined as gates that only apply a gate to the \(l\) target qudits when the \(n\) control qudit's have a certain value.
-        For a one qudit gate \(G_d\) and \(n\) control qudits, the controlled \(G_d\) gate takes the form of the following block matrix:
+        For a one qudit gate \(G_d\) and \(n\) control qudits, and where the gate is only applied when the control qubits all hold values \(d-1\),
+        the controlled \(G_d\) gate takes the form of the following block matrix:
         <div id="cgate" class="eq">
           $$
             \begin{bmatrix}
@@ -341,20 +342,61 @@
 
       <p>
         This encoding can be physically realized by prescribed application
-        of generalized \(Z\) gates. For more detail, see <a href="https://arxiv.org/pdf/2012.00490.pdf">
+        of generalized \(Z\) gates. For prime \(d\) we have that all finite-functions
+        can be described by multivariate polynomials. For more detail, see <a href="https://arxiv.org/pdf/2012.00490.pdf">
         <em>Finite-Function-Encoding Quantum States</em></a>.
       </p>
 
     <h2>Generalized Grover Diffusion Operator</h2>
       <p>
-        The GGDO as defined by Samuel Hunt and Maximilien Gadouleau in 
-        <a href="https://arxiv.org/pdf/2001.06316.pdf"><em>Grover’s Algorithm and Many-Valued Quantum Logic</em></a> is
+        The generalized Grover diffusion operator, \(\Delta_d(n)\), as defined by Samuel Hunt and Maximilien Gadouleau in 
+        <a href="https://arxiv.org/pdf/2001.06316.pdf"><em>Grover’s Algorithm and Many-Valued Quantum Logic</em></a> is described in circuit form below.
         <div id="ggdosvg"><img width="100%" height="auto" id="ggdoimg" src="../images/qis/GGDOwhite.svg" alt="N-Qudit Generalized Grover Diffusion Operator"></div> 
+
+
+
+
+              <button type="button" class="collapsible">Two Qutrit Example</button>
+        <div class="content">
+        Let's look  at a two qutrit example and see what the operator \(\Delta_3(2)\) explicitly looks like. The circuit is the one below:
+        <div id="2qtggdosvg"><img width="100%" height="auto" id="2qtggdoimg" src="../images/qis/2qtGGDOwhite.svg" alt="N-Qudit Generalized Grover Diffusion Operator"></div> 
+        Note that we now omit the subscripts for the gates as the context assures us they're all 3 dimensional (given we're
+        dealing with qutrits).<!--
+        Now, let's see what this circuit looks like as a matrix
+        (And again, our \(\omega\) is \(\omega_3=e^{\frac{2\pi i}{3}}\) because we're 
+        dealing with three dimensional quantum states).
+        <div class="eq"> 
+        $$\text{placeholder TBA}
+          \begin{bmatrix}
+            1&1&1&1&1&1&1&1&1\\
+            1&1&1&1&1&1&1&1&1\\
+            1&1&1&1&1&1&1&1&1\\
+            1&1&1&1&1&1&1&1&1\\
+            1&1&1&1&1&1&1&1&1\\
+            1&1&1&1&1&1&1&1&1\\
+            1&1&1&1&1&1&1&1&1\\
+            1&1&1&1&1&1&1&1&1\\
+            1&1&1&1&1&1&1&1&1\\
+          \end{bmatrix}
+        $$
+        </div>   -->
+      </div>
+      </p>
+
+      <p>
+        A multi-valued grover search algorithm is also covered in
+        section 3 of Yale Fan's <a href="https://arxiv.org/pdf/0809.0932.pdf"><em>Applications of Multi-Valued Quantum Algorithms</em></a>.
+        And, a three dimensional case of Grover's search algorithm seems to have been developed in Sudhindu Bikash Mandal, et al.'s
+        <a href="https://ieeexplore.ieee.org/abstract/document/6845018?casa_token=qzUvwKgaNzkAAAAA:RSo7JmmVpd3KcGh7oVPPlk7WAfQjaLDiT8XmY4MTcrE1CioMhyY7xXLbFV0_nVyRN5CBv5wChg"><em>
+        Synthesis of Ternary Grover's Algorithm</em></a>. The ternary case also seems to have had applications for graph coloring problems
+        developed as is done in Yushi Wang and Marek Perkowski's <a href="https://ieeexplore.ieee.org/abstract/document/5954250?casa_token=-V7_UN9RmN8AAAAA:jNNAeWPcQRtkbenHhxcb9I5luUf0s9LCibz8rWPChg29iHfYsXXOKD0KDVrGsy2Wnu9lSFrT6w">
+        <em>Improved Complexity of Quantum Oracles for Ternary Grover Algorithm for Graph Coloring</em></a> (with a presentation
+        by the authors <a href="https://pdxscholar.library.pdx.edu/cgi/viewcontent.cgi?article=1203&context=ece_fac">here</a>).
       </p>
 
     <h2>Simulating Qudits</h2>
       <p>
-        Google's quantum SDK, Cirq, natively supports qudits and qudit circuit simulations. A git repository of
+        Google's quantum SDK, Cirq, <a class="white" href="https://quantumai.google/cirq/qudits#:~:text=In%20Cirq%2C%20qudits%20work%20exactly,the%20dimensions%20it%20works%20on.">natively supports qudits</a> and qudit circuit simulations. A git repository of
         these qudit gates and relevant items is graciously under development by Andy Phillips and can be found <a href="https://github.com/tuc56407/QuditScripts">here</a>.
       </p>
 

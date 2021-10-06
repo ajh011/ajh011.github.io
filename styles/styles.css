@@ -167,13 +167,15 @@ body {
 }
 
 a {
-  color: ;
+  color: magenta;
   font-weight: 600;
   font-family: Georgia;
+  text-decoration: none;
 }
 
 a:hover {
   color: magenta;
+  text-decoration: underline;
 }
 
 .prettya {
@@ -208,6 +210,10 @@ a:hover {
   background-color: hsla(0,0,0,0);
   top: 25%;
   left: 25%;
+}
+
+h3 {
+  font-weight: 900;
 }
 
 ::-webkit-scrollbar {

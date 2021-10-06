@@ -175,6 +175,21 @@ a:hover{
   opacity: 100%;
 }
 
+
+a.white{
+  color: white;
+  font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 8in) {
   body {
     font-size: 18px;

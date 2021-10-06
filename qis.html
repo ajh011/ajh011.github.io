@@ -160,7 +160,7 @@
                 processes' if only we had direct access to the output state vector.
                 However, one of the great uses of the QFT in quantum speed-ups is it's
                 close association to phase estimation, a truly useful template for 
-                quantum circuits. For a deeper look at the Quantum Fourier Transform see notes by
+                quantum circuits. For a deeper look at the Quantum Fourier Transform, see notes by
                 <a href="https://viterbi-web.usc.edu/~tbrun/Course/lecture13.pdf">
                   Todd Brun
                 </a>,
@@ -169,8 +169,8 @@
 		</a>,
 		and
                 <a href="https://www.scottaaronson.com/qclec/20.pdf">
-		  Scott Aaronson
-		</a>.
+		  Scott Aaronson</a> or Chapter 5 ("The quantum Fourier transform and it's applications") of <a href="http://mmrc.amss.cas.cn/tlb/201702/W020170224608149940643.pdf">
+                  Nielsen and Chuang</a>.
 		</div>
               </p>
             </div>
@@ -228,6 +228,14 @@ for (i = 0; i < coll.length; i++) {
             solve into a unitary matrix and an associated eigenvector, and consider how 
             one could encode the answer in the corresponding eigenvalue.
           </p>
+          <p id="pe5">
+            To see phase estimation in simulated action, see the examples in <a href="https://qiskit.org/textbook/ch-algorithms/quantum-phase-estimation.html">this section</a> 
+            of the Qiskit textbook. For greater depth, see Section 5.2 ("Phase estimation") of <a href="http://mmrc.amss.cas.cn/tlb/201702/W020170224608149940643.pdf">
+            Nielsen and Chuang</a>, lecture notes by <a href="https://inst.eecs.berkeley.edu/~cs191/fa05/lectures/lecture20_fa05.pdf">Birgitta Whaley</a>, a set
+            prepared for the <a href="https://www.ryanlarose.com/uploads/1/1/5/8/115879647/quic03-phase-estimation.pdf">QUIC Seminar</a>, a short practical overview by
+            <a href="https://courses.cs.washington.edu/courses/cse490q/20au/notes/13-notes1.pdf">Ansh Nagda</a>,
+            or a presentation by <a href="https://viterbi-web.usc.edu/~tbrun/Course/lecture14.pdf">Todd Brun</a>.             
+          </p>
           <h3 id="aatitle">
             Amplitude Amplification
           </h3>
@@ -254,6 +262,8 @@ for (i = 0; i < coll.length; i++) {
              Below is an interactive applet showing the first application of the oracle and Grover Diffusion Operator.
              Drag \( \vert\psi\rangle \) around to experiment with different initial states.
           </p>
+
+
 
 <!--               <script type="text/javascript" src="https://www.geogebra.org/apps/deployggb.js"></script> 
                <script>
@@ -376,9 +386,9 @@ for (i = 0; i < coll.length; i++) {
             Quantum Algorithm Implementations for Beginners</a></em>. And a set of lecture notes
             on quantum computation by Ronald de Wolf can be found 
             <a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf">here</a>.
-
           </p>
           <p>
+            
           </p>
           <p>
             <a href="http://twistedoakstudios.com/blog/Post2644_grovers-quantum-search-algorithm">Grover explained</a> <a href="https://algassert.com/post/1718">Shor explained</a>
