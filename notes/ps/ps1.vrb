@@ -1,0 +1,6 @@
+\frametitle{Finite Function Encoding}
+Given an $n$-qu$d$it system, where $d$ is prime, we can encode
+$n$-variable finite functions over the field $\mathbb{F}_d$ in the amplitude of the basis states.
+
+
+

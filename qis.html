@@ -169,7 +169,8 @@
 		</a>,
 		and
                 <a href="https://www.scottaaronson.com/qclec/20.pdf">
-		  Scott Aaronson</a> or Chapter 5 ("The quantum Fourier transform and it's applications") of <a href="http://mmrc.amss.cas.cn/tlb/201702/W020170224608149940643.pdf">
+		  Scott Aaronson</a> or Chapter 5 ("The quantum Fourier transform and it's applications") of 
+                  <a href="http://mmrc.amss.cas.cn/tlb/201702/W020170224608149940643.pdf#page=244">
                   Nielsen and Chuang</a>.
 		</div>
               </p>
@@ -230,7 +231,7 @@ for (i = 0; i < coll.length; i++) {
           </p>
           <p id="pe5">
             To see phase estimation in simulated action, see the examples in <a href="https://qiskit.org/textbook/ch-algorithms/quantum-phase-estimation.html">this section</a> 
-            of the Qiskit textbook. For greater depth, see Section 5.2 ("Phase estimation") of <a href="http://mmrc.amss.cas.cn/tlb/201702/W020170224608149940643.pdf">
+            of the Qiskit textbook. For greater depth, see Section 5.2 ("Phase estimation") of <a href="http://mmrc.amss.cas.cn/tlb/201702/W020170224608149940643.pdf#page=249">
             Nielsen and Chuang</a>, lecture notes by <a href="https://inst.eecs.berkeley.edu/~cs191/fa05/lectures/lecture20_fa05.pdf">Birgitta Whaley</a>, a set
             prepared for the <a href="https://www.ryanlarose.com/uploads/1/1/5/8/115879647/quic03-phase-estimation.pdf">QUIC Seminar</a>, a short practical overview by
             <a href="https://courses.cs.washington.edu/courses/cse490q/20au/notes/13-notes1.pdf">Ansh Nagda</a>,
@@ -244,7 +245,9 @@ for (i = 0; i < coll.length; i++) {
 	    <a href="https://arxiv.org/abs/quant-ph/9712011">
 	      Quantum computers can search rapidly by using almost any transformation
 	    </a>, the amplitude amplification algorithim reflects the statevector about the axis of the 'bad' subspace 
-            once partitioned by an oracle, and then reflects about the axis of the original state vector.
+            once partitioned by an oracle, and then reflects about the axis of the original state vector (which is always
+            \(\vert +\rangle^{\otimes n}\) in Grover's search algorithm with an 
+            angle made with the 'good' subspace of \(\frac{1}{\sqrt{2^n}}\) ).
             Consecutive reflections of this nature nudge
             the statevector closer to the 'good' subspace, effectively 'searching' the space
             to produce a statevector aligned with the 'good' subspace. 
@@ -258,10 +261,20 @@ for (i = 0; i < coll.length; i++) {
             resource for these algorithims is Giles Brassard and Peter H&#248;yer's 
             <a href="https://arxiv.org/abs/quant-ph/0005055">Quantum Amplitude Amplification and Estimation</a>.
           </p>
-          <p>
-             Below is an interactive applet showing the first application of the oracle and Grover Diffusion Operator.
-             Drag \( \vert\psi\rangle \) around to experiment with different initial states.
+          <p id="aap2">
+             Below is an interactive applet showing the first application of the oracle and Grover diffusion operator, known collectively as
+             a single Grover iteration. We denote the reflection about the
+             \(\mathcal{B}\) axis \(\mathcal{S_G}=\mathbb{I}-2\vert \psi \rangle \langle \psi \vert\). And we denote the reflection about the
+             original state-vector \(-S_{\vert \psi \rangle}=\mathbb{I}
+             -2\vert\psi\rangle\langle\psi\vert\). Note that the oracle is effectively the first reflection \(\mathcal{S_G} \), whereas the operator
+             \(-\mathcal{S_{\vert \psi\rangle}} \) is the Grover diffusion operator when \(\vert \psi\rangle=\vert +\rangle ^{\otimes n}\) and there's 
+             only one solution.
+             Drag \( \vert\psi\rangle \) around to experiment with initial states with different proportions of solutions:
           </p>
+
+
+
+
 
 
 
@@ -298,21 +311,46 @@ for (i = 0; i < coll.length; i++) {
 			 allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" id="ggbGrover" frameborder="0"></iframe></div>
 
                <div id="ggb-element">
-	     </div> 
-<!--
-<script>  
-    var params = {"appName": "graphing", "width": 800, "height": 600, "showToolBar": false, "showAlgebraInput": false, "showMenuBar": false, "material_id":"qz2yjtjg" };
-    var applet = new GGBApplet(params, true);
-    window.addEventListener("load", function() { 
-        applet.inject('ggb-element');
-    });
-</script>
--->
+ 	     </div> 
+             <!--
+             <script>  
+                 var params = {"appName": "graphing", "width": 800, "height": 600, "showToolBar": false, "showAlgebraInput": false, "showMenuBar": false, "material_id":"qz2yjtjg" };
+                 var applet = new GGBApplet(params, true);
+                 window.addEventListener("load", function() { 
+                     applet.inject('ggb-element');
+                     });
+             </script>
+             -->
 
 
-                  </section>
+
+
+
+
+
+               <p id="aap3">
+                 For more detail and exercises pertaining to Grover's search algorithm see 
+                 chapter 6 of<a href="http://mmrc.amss.cas.cn/tlb/201702/W020170224608149940643.pdf#page=276">
+                 Nielsen and Chuang</a>. Wikipedia has a nice article on the<a href="https://en.wikipedia.org/wiki/Grover%27s_algorithm#Geometric_proof_of_correctness">
+                 Geometrical Interpretation of Grover's Algorithm</a> and 
+                 <a href="https://en.wikipedia.org/wiki/Amplitude_amplification">Amplitude Amplification</a>.
+               </p> 
+               
+               <h2>Quantum Counting</h2>
+               <p id="qc1">
+                 Quantum counting, or amplitude estimation, is the algorithm used to find the number of solutions in
+                 the state \(\mathcal{S_G}\vert \psi\rangle\). That is, quantum counting is used to find
+                 the number of basis states inverted by the oracle in amplitude amplification. It really is just phase estimation applied 
+                 to repeated Grover iterations, as shown below.  
+                 <img id="qcvis" src="./images/qis/QCwhite.svg" width="100%" height="auto">
+ 
+               </p>   
+             
+             
+             </section>
+
     <section id="code">
-      <h1>Quantum Coding</h1>
+      <h2>Quantum Coding</h2>
       <p>
         Currently, the two most relevant software development kits for working with and simulating quantum circuits are
 	those supported by organizations developing the hardware. IBM has their Qiskit SDK and their IBM
