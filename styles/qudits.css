@@ -1,6 +1,18 @@
 h2{
   padding-top: 20px;
-  margin-bottom: -8px; 
+  margin-bottom: 4px; 
+  font-size: 170%;
+}
+
+h3{
+  margin-bottom: 6px;
+  font-size: 140%;
+}
+
+h4{
+  padding-bottom: 0px;
+  margin-bottom: -10px; 
+  font-size: 117%;
 }
 
 

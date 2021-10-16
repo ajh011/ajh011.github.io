@@ -57,11 +57,11 @@
 
 
   <div id="home">
-    <a href="https://www.alexheilman.com"><img id="homeimg" src="../images/iconwhite/favicon-196x196.png" width="50"></a>
+    <a target="_blank" href="https://www.alexheilman.com"><img id="homeimg" src="../images/iconwhite/favicon-196x196.png" width="50"></a>
   </div>
 
   <div id="up">
-    <a id="upa" href="https://www.alexheilman.com/qis.html">QIS</a>
+    <a target="_blank" id="upa" href="https://www.alexheilman.com/qis.html">QIS</a>
   </div>
 <!--Here's some cool link things I'll open in the future -->
 
@@ -81,7 +81,7 @@
       generalized \(X\) gate, the generalized \(Z\) gate and the idea of a multi-qudit controlled gate.
       These gates are generalizations of the Pauli \(X\) and Pauli \(Z\) operators of two-dimensional
       complex Hilbert spaces. For greater detail and other possible generalizations of the Pauli's in higher
-      dimensions, see <a href="https://en.wikipedia.org/wiki/Generalizations_of_Pauli_matrices#Construction:_The_clock_and_shift_matrices">here</a>.
+      dimensions, see <a target="_blank" href="https://en.wikipedia.org/wiki/Generalizations_of_Pauli_matrices#Construction:_The_clock_and_shift_matrices">here</a>.
       Otherwise, the general form of the gates are described individually below. Note that the generalized gates can
       be applied to arbitrary numbers of qudits, though the \(Z\) and \(X\) gates are generally applied to one qudit
       at a time as \(X_d\) and \(Z_d\).
@@ -152,7 +152,7 @@
         clock gate, assosciates to each basis vector \(\vert k\rangle\) 
         a phase \(e^{2\pi i k/d^n}=\omega^{k}_{d^n}\). In the complex plane,
         it effectively rotates each basis vector \(\vert k\rangle\)'s amplitude  
-        by \(\frac{2\pi k}{d^n}\).
+        by \(\frac{2\pi k}{d^n}.\)
        </p>
         <div id="zgate" class="eq">
           $$
@@ -262,50 +262,106 @@
            $$
            </div>
 	</div>
+      <p>
+        The \(QFT_d\) when applied to one qudit of dimension \(d\) is also
+        known as a radix-\(d\) Chrestenson gate.
+      </p>
 
 
       <h3>\(C^{n}G_{d^l}\) Qu\(d\)it Control \(G\)ates</h3>
        <p>
         The non-local controlled gates are also very important. They're definitively multi-qudit gates in that thay aren't separable into a tensor product
-        of single-qudit gates. They're defined as gates that only apply a gate to the \(l\) target qudits when the \(n\) control qudit's have a certain value.
-        For a one qudit gate \(G_d\) and \(n\) control qudits, and where the gate is only applied when the control qubits all hold values \(d-1\),
-        the controlled \(G_d\) gate takes the form of the following block matrix:
+        of single-qudit gates. They're defined as gates that only apply a gate to the \(l\) target qudits when the \(n\) control qudit's hold a certain value.
+        For a one qudit gate \(G_d\) (i.e. \(l=1\) )  and \(n\) control qudits where the gate is only applied when the control qudits hold the value \(k=1\),
+        the controlled \(G_d\) gate takes the form of the following block diagonal matrix:
         <div id="cgate" class="eq">
           $$
             \begin{bmatrix}
              \mathbb{I_d} & 0 & 0 &\cdots & 0\\
-             0& \mathbb{I_d} & 0 &\cdots & 0\\
+             0& G_d & 0 &\cdots & 0\\
              0& 0 & \mathbb{I_d} &\cdots & 0\\
-             \vdots&\vdots&\vdots& \ddots & \cdots\\
-             0& 0 & 0 &\cdots & G_{d}\\
+             \vdots&\vdots&\vdots& \ddots & \vdots\\
+             0& 0 & 0 &\cdots & \mathbb{I_d}\\
             \end{bmatrix}
           $$
         </div>
-        where each element is really a \(d\times d \) matrix.
+         where each element is really a \(d\times d \) matrix.
+         Alternatively, we can define the control gate to apply different gates for different
+         states of the control qudits, as opposed to just one specific state of the control qudits.
+         This results in a \(d^{n+l}\) block diagonal matrix of \(n\) different \(d^l \times d^l \) matrices. Shown below,
+        <div id="cgate" class="eq">
+          $$
+            \begin{bmatrix}
+             G_0 & 0 & 0 &\cdots & 0\\
+             0& G_1 & 0 &\cdots & 0\\
+             0& 0 & G_2 &\cdots & 0\\
+             \vdots&\vdots&\vdots& \ddots & \vdots\\
+             0& 0 & 0 &\cdots & G_{n-1}\\
+            \end{bmatrix}
+          $$
+        </div>
+         One example of this is the 
+         gate that applies the same gate raised to the \( k \)th power for the \( k \)th state
+         of the target qudit (where \( k \) ranges from to \(0\) to\( (d^n-1) \)), shown explicitly below as
+         $$
+            \begin{bmatrix}
+             \mathbb{I} & 0 & 0 &\cdots & 0\\
+             0& G^{} & 0 &\cdots & 0\\
+             0& 0 & G^{2}  &\cdots & 0\\
+             \vdots&\vdots&\vdots& \ddots & \vdots\\
+             0& 0 & 0 &\cdots & G^{(d^n-1)}
+            \end{bmatrix}
+          $$
+         <!--$$
+            \begin{bmatrix}
+             \mathbb{I} & 0 & 0 &\cdots & 0\\
+             0& G^{1\cdot d^k} & 0 &\cdots & 0\\
+             0& 0 & G^{2\cdot d^k}  &\cdots & 0\\
+             \vdots&\vdots&\vdots& \ddots & \vdots\\
+             0& 0 & 0 &\cdots & G^{(n-1)\cdot d^k }\\
+            \end{bmatrix}
+          $$-->
+          Which is known as a<a target="_blank" href="https://pdfs.semanticscholar.org/c006/ab26a26b8888e41ee3d0a5959fdfe333ca89.pdf">
+          quantum multiplexer</a>.
        </p>
 
+    <h2>Basic \(d\)-ary Quantum Algorithms</h2>
+      Some basic quantum algorithms of the qubit paradigm have already been extended to
+      \(d\)-ary qudit circuits. 
 
-    <h2>Function Encoding States</h2>
-      <p>
-        Using qu\(d\)its and the \(d\)th roots of unity, we can actually encode
-        multivariate functions over finite fields. The states we'll utilize are full
-        superpositions of the basis vectors of multi-qudit states. In other words, if we
-        extend the plus state of qubits \( \vert +\rangle\)<!-- \( = \frac{1}{\sqrt{2}}\begin{bmatrix}1\\1\\ \end{bmatrix}  \)-->
-        to qudits \( \vert +_d\rangle\)<!-- \(= \frac{1}{\sqrt{d}}\begin{bmatrix}1\\1\\ \vdots\\ 1\\ \end{bmatrix}  \)--> and then vary
-        the amplitudes by the \(d\)th roots of unity we can encode finite functions in the values of the amplitudes exponents.
-      </p> 
+      <h3>Qudit Phase Estimation</h3>
+        Phase estimation has a clean extentsion into the realm of qudits, as done by Vamsi Parasa
+        and Marek Perkowski in<a target="_blank" href="https://www.researchgate.net/publication/224247587_Quantum_Phase_Estimation_Using_Multivalued_Logic">
+        <em>Quantum Phase Estimation Using Multivalued Logic</em></a> (explained in the associated <a target="_blank" href="https://pdfs.semanticscholar.org/c006/ab26a26b8888e41ee3d0a5959fdfe333ca89.pdf">presentation</a>).
+        See also Ye Cao, et al.'s <a target="_blank" href="https://www.researchgate.net/publication/241299188_Quantum_Fourier_Transform_and_Phase_Estimation_in_Qudit_System"><em>Quantum Fourier Transform and Phase Estimation in Qudit System</em></a> 
+        and Hristo Tonchev and Nikolay V. Vitanov's <a target="_blank" href="https://www.researchgate.net/profile/Nikolay-Vitanov-2/publication/308939482_Quantum_phase_estimation_and_quantum_counting_with_qudits/links/59d9e781aca272e6096bc22a/Quantum-phase-estimation-and-quantum-counting-with-qudits.pdf"><em>Quantum phase estimation and quantum counting with qudits</em></a>.
+        
+      <h3>Multiple-Valued Grover Search Algorithm</h3>
+        Grover's search algorithm can only be used to evaluate sparse binary
+        functions, that is functions that can take one of two values over a range
+        of values.
 
-      <div class="eq">
+      <h4>Finite-Function-Encoding States</h4>
+        <p>
+          Using qu\(d\)its and the \(d\)th roots of unity, we can actually encode
+          multivariate functions over finite fields. The states we'll utilize are full
+          superpositions of the basis vectors of multi-qudit states. In other words, if we
+          extend the plus state of qubits \( \vert +\rangle\)<!-- \( = \frac{1}{\sqrt{2}}\begin{bmatrix}1\\1\\ \end{bmatrix}  \)-->
+          to qudits \( \vert +_d\rangle\)<!-- \(= \frac{1}{\sqrt{d}}\begin{bmatrix}1\\1\\ \vdots\\ 1\\ \end{bmatrix}  \)--> and then vary
+          the amplitudes by the \(d\)th roots of unity we can encode finite functions in the values of the amplitudes exponents.
+        </p> 
+
+        <div class="eq">
         $$
           \vert f(x_n)\rangle := \frac{1}{\sqrt{d^n}}\sum_{k=0}^{d^n-1}\omega_d^{f(x_n)}\vert k \rangle 
 
         $$
-      </div>
+        </div>
 
-      <br> 
+        <br> 
 
-      <button type="button" class="collapsible">Two Qutrit Example</button>
-      <div class="content">
+        <button type="button" class="collapsible">Two Qutrit Example</button>
+        <div class="content">
         Let's consider a simple two qutrit example that encodes the polynomial \(f(x,y)=xy^2+x\)
         over the finite field \(\mathbb{F}_3\) (that is, the field of integers modulo three). 
         In this context, it's implied the relative roots of unitary are those of order 3 as we are
@@ -343,20 +399,17 @@
       <p>
         This encoding can be physically realized by prescribed application
         of generalized \(Z\) gates. For prime \(d\) we have that all finite-functions
-        can be described by multivariate polynomials. For more detail, see <a href="https://arxiv.org/pdf/2012.00490.pdf">
+        can be described by multivariate polynomials. For more detail, see <a target="_blank" href="https://arxiv.org/pdf/2012.00490.pdf">
         <em>Finite-Function-Encoding Quantum States</em></a>.
       </p>
 
-    <h2>Generalized Grover Diffusion Operator</h2>
-      <p>
-        The generalized Grover diffusion operator, \(\Delta_d(n)\), as defined by Samuel Hunt and Maximilien Gadouleau in 
-        <a href="https://arxiv.org/pdf/2001.06316.pdf"><em>Grover’s Algorithm and Many-Valued Quantum Logic</em></a> is described in circuit form below.
-        <div id="ggdosvg"><img width="100%" height="auto" id="ggdoimg" src="../images/qis/GGDOwhite.svg" alt="N-Qudit Generalized Grover Diffusion Operator"></div> 
+      <h4>Generalized Grover Diffusion Operator</h4>
+        <p>
+          The generalized Grover diffusion operator, \(\Delta_d(n)\), as defined by Samuel Hunt and Maximilien Gadouleau in 
+          <a target="_blank" href="https://arxiv.org/pdf/2001.06316.pdf"><em>Grover’s Algorithm and Many-Valued Quantum Logic</em></a> is described in circuit form below.
+          <div id="ggdosvg"><img width="100%" height="auto" id="ggdoimg" src="../images/qis/GGDOwhite.svg" alt="N-Qudit Generalized Grover Diffusion Operator"></div> 
 
-
-
-
-              <button type="button" class="collapsible">Two Qutrit Example</button>
+        <button type="button" class="collapsible">Two Qutrit Example</button>
         <div class="content">
         Let's look  at a two qutrit example and see what the operator \(\Delta_3(2)\) explicitly looks like. The circuit is the one below:
         <div id="2qtggdosvg"><img width="100%" height="auto" id="2qtggdoimg" src="../images/qis/2qtGGDOwhite.svg" alt="N-Qudit Generalized Grover Diffusion Operator"></div> 
@@ -385,19 +438,23 @@
 
       <p>
         A multi-valued grover search algorithm is also covered in
-        section 3 of Yale Fan's <a href="https://arxiv.org/pdf/0809.0932.pdf"><em>Applications of Multi-Valued Quantum Algorithms</em></a>.
+        section 3 of Yale Fan's <a target="_blank" href="https://arxiv.org/pdf/0809.0932.pdf"><em>Applications of Multi-Valued Quantum Algorithms</em></a>.
         And, a three dimensional case of Grover's search algorithm seems to have been developed in Sudhindu Bikash Mandal, et al.'s
-        <a href="https://ieeexplore.ieee.org/abstract/document/6845018?casa_token=qzUvwKgaNzkAAAAA:RSo7JmmVpd3KcGh7oVPPlk7WAfQjaLDiT8XmY4MTcrE1CioMhyY7xXLbFV0_nVyRN5CBv5wChg"><em>
+        <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/6845018?casa_token=qzUvwKgaNzkAAAAA:RSo7JmmVpd3KcGh7oVPPlk7WAfQjaLDiT8XmY4MTcrE1CioMhyY7xXLbFV0_nVyRN5CBv5wChg"><em>
         Synthesis of Ternary Grover's Algorithm</em></a>. The ternary case also seems to have had applications for graph coloring problems
-        developed as is done in Yushi Wang and Marek Perkowski's <a href="https://ieeexplore.ieee.org/abstract/document/5954250?casa_token=-V7_UN9RmN8AAAAA:jNNAeWPcQRtkbenHhxcb9I5luUf0s9LCibz8rWPChg29iHfYsXXOKD0KDVrGsy2Wnu9lSFrT6w">
+        developed as is done in Yushi Wang and Marek Perkowski's <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/5954250?casa_token=-V7_UN9RmN8AAAAA:jNNAeWPcQRtkbenHhxcb9I5luUf0s9LCibz8rWPChg29iHfYsXXOKD0KDVrGsy2Wnu9lSFrT6w">
         <em>Improved Complexity of Quantum Oracles for Ternary Grover Algorithm for Graph Coloring</em></a> (with a presentation
-        by the authors <a href="https://pdxscholar.library.pdx.edu/cgi/viewcontent.cgi?article=1203&context=ece_fac">here</a>).
+        by the authors <a target="_blank" href="https://pdxscholar.library.pdx.edu/cgi/viewcontent.cgi?article=1203&context=ece_fac">here</a>).
       </p>
+
+
+
+
 
     <h2>Simulating Qudits</h2>
       <p>
-        Google's quantum SDK, Cirq, <a class="white" href="https://quantumai.google/cirq/qudits#:~:text=In%20Cirq%2C%20qudits%20work%20exactly,the%20dimensions%20it%20works%20on.">natively supports qudits</a> and qudit circuit simulations. A git repository of
-        these qudit gates and relevant items is graciously under development by Andy Phillips and can be found <a href="https://github.com/tuc56407/QuditScripts">here</a>.
+        Google's quantum SDK, Cirq, <a target="_blank" class="white" href="https://quantumai.google/cirq/qudits#:~:text=In%20Cirq%2C%20qudits%20work%20exactly,the%20dimensions%20it%20works%20on.">natively supports qudits</a> and qudit circuit simulations. A git repository of
+        these qudit gates and relevant items is graciously under development by Andy Phillips and can be found <a target="_blank" href="https://github.com/tuc56407/QuditScripts">here</a>.
       </p>
 
 
