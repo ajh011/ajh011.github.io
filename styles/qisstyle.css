@@ -154,7 +154,9 @@ a:hover{
  -webkit-filter: brightness(150%);
 }
 
-
+#ib{
+  display: inline-block;
+}
 
 
 #up{

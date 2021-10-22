@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alex PHP</title>
+    <link href="./styles/jumper.css" rel="stylesheet">
+    <link href="./styles/home.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./images/iconwhite/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./images/iconwhite/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/iconwhite/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./images/iconwhite/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./images/iconwhite/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./images/iconwhite/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./images/iconwhite/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./images/iconwhite/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./images/iconwhite/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./images/iconwhite/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./images/iconwhite/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./images/iconwhite/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./images/iconwhite/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="./images/iconwhite/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./images/iconwhite/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./images/iconwhite/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./images/iconwhite/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./images/iconwhite/mstile-310x310.png" />
+
+
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal homepage of Alex Heilman.
+                                      Links resources related to Quantum
+                                      Information Science,
+                                      Symplectic Geometry and Variational
+                                      Mechanics.">
+    <meta name="keywords" content="Alex Heilman, Alexander Heilman, Alexander
+                                   J Heilman, QIS, Quantum Information Science,
+                                   Quantum Computers, Quantum Computation, Symplectic
+                                    Notes, Symplectic Forms, Variational Mechanics,
+                                   Lagrangian, Hamiltonian, Physics, Physicist">
+    <meta name="author" content="Alexander J. Heilman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+      
+  </head>
+
+<body onload="startTime()">
+<div id="body2">
+  <div id="home">
+    <a target="_blank" href="https://www.alexheilman.com"><img id="homeimg" src="./images/iconwhite/favicon-196x196.png" width="50"></a>
+  </div>
+
+  <div id="time">
+    <span id="clock"></span>
+  </div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s + " EST";
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+         <div id="second">
+         </div>
+  <div id="crypto">
+  <!-- Cryptocurrency Price Widget --><script>!function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD,EUR,CNY",items:"BTC,ETH,LTC,XMR,BCH",backgroundColor:"676666",streaming:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CBCH",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();</script><a href="https://currencyrate.today/" rel="noopener" target="_blank">CurrencyRate.Today</a><!-- /Cryptocurrency Price Widget -->
+  </div>
+</div>
+</body>
+
+</html>
