@@ -8,3 +8,12 @@
 #home:hover{
  -webkit-filter: brightness(150%);
 }
+
+.hover{
+  transition: all .2s ease-in-out;
+}
+
+.hover:hover{
+  -webkit-filter: brightness(125%);
+  transform: scale(1.1);
+}

@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Alex PHP</title>
-    <link href="./styles/jumper.css" rel="stylesheet">
     <link href="./styles/home.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,10 +49,10 @@
 
 <body onload="startTime()">
 <div id="body2">
-  <div id="home">
-    <a target="_blank" href="https://www.alexheilman.com"><img id="homeimg" src="./images/iconwhite/favicon-196x196.png" width="50"></a>
-  </div>
 
+
+<div id="col1" class="flex">
+<!-- Clock-->
   <div id="time">
     <span id="clock"></span>
   </div>
@@ -76,11 +75,37 @@ function checkTime(i) {
 }
 </script>
 
-         <div id="second">
-         </div>
+
+<!--Icons-->
+<div class="grid" id="icons">
+  <div id="home" class="hover">
+    <a href="https://www.alexheilman.com"><img id="homeimg" src="./images/iconwhite/favicon-196x196.png" width="55"></a>
+  </div>
+  <div id="email" class="hover">
+    <a href="https://outlook.office.com/mail/inbox"><img src="./images/outlook.png" width="55"></a>
+  </div>
+  <div id="music" class="hover">
+    <a href="https://youtube.com"><img src="./images/youtube.png" width="55"></a>
+  </div>
+    
+</div>
+
+<!--Search-->
+<div id="search">
+<form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+<input name="sitesearch" type="hidden" value="alexheilman.com">
+<input autocomplete="on" class="form-control search" name="q" placeholder="Search my page..." required="required"  type="text">
+<button class="button" type="submit">Search</button>
+</form>
+
+</div>
+</div>
+
+<div id="col2" class="flex">
   <div id="crypto">
   <!-- Cryptocurrency Price Widget --><script>!function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD,EUR,CNY",items:"BTC,ETH,LTC,XMR,BCH",backgroundColor:"676666",streaming:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CBCH",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();</script><a href="https://currencyrate.today/" rel="noopener" target="_blank">CurrencyRate.Today</a><!-- /Cryptocurrency Price Widget -->
   </div>
+</div>
 </div>
 </body>
 
