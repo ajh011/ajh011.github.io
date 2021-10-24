@@ -1,0 +1,540 @@
+%%%%quick build setup user setting for  knitr + pytex
+%%  here->    r -e "knitr::knit('%.Rnw')"|pdflatex -synctex=1 -interaction=nonstopmode %.tex|pythontex %.pytexcode|pdflatex -synctex=1 -interaction=nonstopmode %.tex|"C:/Program Files/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf
+
+%%%%quick build setup user setting for only knitr
+%%  here->    r -e "knitr::knit('%.Rnw')"|pdflatex -synctex=1 -interaction=nonstopmode %.tex|"C:/Program Files/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf
+
+%%%%quick build setup user setting for only pytex
+%%  here->    pdflatex -synctex=1 -interaction=nonstopmode %.tex|pythontex %.pytexcode|pdflatex -synctex=1 -interaction=nonstopmode %.tex|"C:/Program Files/Adobe/Reader 11.0/Reader/AcroRd32.exe" %.pdf
+
+
+
+\documentclass{article}\usepackage[]{graphicx}\usepackage[]{color}
+% maxwidth is the original width if it is less than linewidth
+% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
+
+
+\input{C:/Users/ajh01/Desktop/Folder/oldtex/hdr/hdrk}
+\usepackage{verbatim}
+\usepackage{fullpage}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{transparent}
+\usepackage{pstricks}
+
+
+\addtolength{\oddsidemargin}{.05in}
+\addtolength{\topmargin}{-.50in}
+\addtolength{\textheight}{1in}
+\reversemarginpar
+\addtolength{\headsep}{.25in}
+\parskip = 5pt plus 0pt minus 0pt
+\pagestyle{myheadings}
+\setlength{\parindent}{0in}
+
+
+
+\newcommand{\pd}{\frac{\partial }{\partial \dot{q}}}
+\newcommand{\Rn}{\mathbb{R}^n}
+\newcommand{\M}{\mathcal{M}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\title{Symplectic Notes}%%Title
+\author{Alexander J. Heilman}%%Name
+\date{revised: \today}%%Date
+\markright{Symplectic Notes}%%Heading
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+\maketitle
+
+
+\tableofcontents
+
+
+\maketitle
+
+\tableofcontents
+
+The following notes follow Tobias Osbourne's lectures on Symplectic Geometry and Classical Mechanics %ref%.
+
+\textbf{Definition:} A \textit{locally Euclidean space} $\mathcal{M}$ of dimension $d$ is a Hausdorff topological space for which every point $p\in \mathcal{M}$ has a neighborhood homeomorphic to an open subset of $\mathbb{R}^d$.
+
+
+%\includegraphics[scale=.65]{drawing.eps}
+
+\input{drawingt.pdf_tex}
+
+\textbf{Definition:} A \textit{differentiable structure} $\mathcal{F}$ of class $C^k\ (1\leq k \leq \inf)$ on a locally Euclidean space $\mathcal{M}$ is a collection of charts $\lbrace (U_x , \phi_x)\vert \alpha \in A \rbrace$ satisfying 
+
+(i) $\bigcup_{\alpha \in A}=\mathcal{M}$
+
+(ii) $\phi_{\alpha}\circ\phi_{\beta}^{-1}$ is $C^k$ for all $\alpha ,\beta \in A$
+
+\input{drawingr2.pdf_tex}
+
+%\includegraphics[scale=.65]{drawing2.eps}
+
+\textbf{Definition:} A \textit{differentiable map} is a continuous map $f$ between manifolds $\mathcal{M}$ and $\mathcal{N}$ such that every chart $(U,\psi )$ of $\mathcal{M}$ and $(V,\phi )$ of $\mathcal{N}$, $\psi\circ f\circ\phi^{-1}$ is differentiable.
+
+\input{drawingr3.pdf_tex}
+
+%\includegraphics[scale=.65]{drawing3.eps}
+
+\textbf{Definition:} Two manifolds $\mathcal{M}$ and $\mathcal{N}$ are considered \textit{diffeomorphic} if there exists some differential map $f$ between them that also has a differentiable inverse.
+
+Compositions of diffeomorphisms are diffeomorphisms themselves, and thus form a group. The group of $C^k$ diffeomorphisms from some manifold $\mathcal{M}$ to itself is denoted $\mathit{Diff_k}(\mathcal{M})$.
+
+37:14 for circle group
+
+
+\textbf{Definition:} A \textit{curve} is defined as a smooth map from $\mathbb{R}$ to the manifold defined for some range $(a,b)$ where the range is an open set and $a<b$.
+
+\input{drawingt2.pdf_tex}
+
+
+\textbf{Definition:} A \textit{function} is a smooth map $f$ from $\mathcal{M}$ to $\mathbb{R}$.
+
+\input{drawingt3.pdf_tex} 
+
+The set of functions on some manifold $\mathcal{M}$ is a group and denoted $\mathcal{F(M)}$ (exactly like the differential structure).
+
+\textbf{Definition:} The \textit{tangent space} on some manifold $\mathcal{M}$ at some point contained in it $p$ is denoted $T_p\mathcal{M}$. It can be defined at every point $p \in \mathcal{M}$ as the set of velocity vectors for all possible curves passing through $p$. Where two curves that coincide in space at the same time are considered equivalent iff there first derivatives coincide aswell. Formally,
+
+(i) Consider $\mathcal{M}$ to be $C^k$ ($k\geq 1$) with maps $\phi_i$
+
+(ii) Define now the set of curves $\gamma_i(t)$ with an (open) domain $(-1,1)$ that coincide s.t. $\gamma_i(0)=p$
+
+(iii) Curves are considered equivalent at $p$ iff their first derivatives agree $\frac{\partial }{\partial t} \gamma_i(0)=x$ at $p$ aswell
+
+(iv) The equivalence classes imposed by (iii) on the first derivatives will be considered the vectors of the tangent space and are termed as such the tangent vectors
+
+The tangent space at some point $T_p\mathcal{M}$ can be shown to form a vector space where objects are the instantaneous velocity vectors of curves.
+
+\vspace{-2.5cm}
+
+\input{drawingt4.pdf_tex} 
+
+
+\textbf{Definition:} The \textit{tangent bundle} $T\mathcal{M}$ of some $n$ dimensional differentiable manifold $\mathcal{M}$ is the $2n$ dimensional manifold consisting of all points $p\in\mathcal{M}$ packaged with their respective tangent $T_p\mathcal{M}$ space. Formally,
+
+$$
+T\mathcal{M}=\bigcup_{p\in\mathcal{M}}p\times T_p\mathcal{M}
+$$
+
+\vspace{1cm}
+
+\textbf{Definition:} A \textit{form} of degree 1 (or 1-form) is a linear function from some vector space $\Rn$ to $\R$
+
+\vspace{-.18cm}
+
+$$\omega:\mathbb{R}^n\rightarrow\mathbb{R}$$
+
+\begin{center}
+\includegraphics[scale=1]{1form.pdf}
+\end{center}
+
+The space of 1-forms is a vector space itself and considered the dual space to $\mathbb{R}^n$, denoted $(\mathbb{R}^n)^*$
+
+Given a basis $(x_1,...,x_n)$ for some vector space $\Rn$ there is a natural corresponding basis for 1-forms denoted $(x^1,...,x^n)$. So any 1-form $\omega$ in $\Rn$ may be written 
+
+\input{natdbasis.pdf_tex}
+
+$$
+\omega=\sum_n a^i x_i=a^i x_i=a^idx_i
+$$
+
+As a heuristic, dual vectors can be thought of as objects that eat vectors and return scalars from the underlying field in a linear way. sometimes offering a way to measure vectors?
+
+\begin{center}
+\input{1formvector.pdf_tex}
+\end{center}
+
+\textbf{Definition:} The \textit{cotangent space} $T^*_p\M$ at some point $p$ in manifold $\M$ is the dual space to the tangent space at $p$. 
+
+
+\input{tstarpm.pdf_tex}
+
+Elements of the cotangent space are denoted $df$, and are analagous to incremental changes of functions $f:\M\rightarrow\R$ via $df=\frac{\partial f}{\partial x^{\mu}}dx^{\mu}$. Elements of the tangent space are denoted $V$, and are analagous to directional derivatives $v^{\mu}\frac{d}{dx^{\mu}}$. Then, $df(V)$, is the directional derivative of $f$ in the direction of $V$, i.e. $df(V)=v^{\mu}\frac{df}{dx^{\mu}}$.
+
+%\input{fdf.pdf_tex}
+
+
+\textbf{Definition:} A tensor product space $U\otimes V$ between two vector spaces $ U,V $ is a space specially constructed such that bilinear maps of the form $g:U\times V\rightarrow\mathbb{F}$ correspond naturally to linear maps $\tilde{g}:U\otimes V\rightarrow\mathbb{F}$ out of the tensor product space.  
+ 
+Now consider the tensor space characterized by $q,r$ via
+
+$$
+\mathfrak{T}^q_{r,p}(\M )= (\underbrace{ T_p\M\otimes T_p\M\otimes ... \otimes T_p\M }_q)\otimes (
+\underbrace{T_p^*\M\otimes ...\otimes T^*_p\M }_r)
+$$
+
+where $T\in\mathfrak{T}^q_{r,p}(\M )$ is called a tensor of type $(q,r)$ and is a vector in the vector space $\mathfrak{T}^q_{r,p}(\M )$. A basis for $\mathfrak{T}^q_{r,p}(\M )$ can be constructed by taking the tensor product of all possible combinations of basis elements, $(x_{i_{1}}\otimes x_{i_{2}}\otimes ... \otimes x_{i_{q}})\otimes (x^{i_{1}}\otimes ... \otimes x^{i_{r}})$, where $1\leq i\leq dim(\M )$. Thus, elements $T\in\mathfrak{T}^q_{r,p}(\M )$ have the form 
+
+$$
+T=T^{i_1i_2..i_q}_{i_1..i_r}\frac{\partial}{\partial x^{i_1}}\otimes...\otimes\frac{\partial}{\partial x^{i_q}}\otimes dx^{i_1} \otimes ... \otimes dx^{i_r}
+$$
+
+and are linear functions on the space $\left(\bigotimes_{j=1}^{q}T^*_p\M \right) \otimes\left(  \bigotimes_{k=1}^{r}T_p\M\right)$.
+
+\textbf{Definition:} A \textit{vector field} is a map $\M\rightarrow T_p\M$ that assigns a vector to each point in $p\in\M$ smoothly. The set of vector fields on a manifold $\M$ will be denoted $\mathcal{X}(\M)$
+
+\textbf{Definition:} A \textit{tensor field} is a map $\M \rightarrow \mathfrak{T}^q_{r,p}(\M )$ that smoothly assigns each point $p\in\M$ a tensor of type $(q,r)$. The set of tensor fields on a manifold $\M$ will be denoted $\mathfrak{T}^q_{r}$.
+
+Notice $\mathfrak{T}^0_0=\mathcal{F}(\M)$ and $\mathfrak{T}^1_0=\mathcal{X}(\M)$.
+  
+
+\textbf{Note:} Given some tensor space $V\otimes V\otimes...\otimes V$, there are two natural subspaces.
+
+The \textit{symmetric group} on $\underbrace{\otimes ... \otimes V}_n$ with the action $S_n$ given by 
+
+$$
+S_n=\lbrace x\in S_n \iff x\in \pi (1,2,...,n)\rbrace
+$$
+
+Where $\pi (1,2,...,n):V\otimes ... \otimes V \rightarrow V\otimes ... \otimes V$ is a permutation on $V\otimes ... \otimes V$ via $\pi (V_1\otimes ... \otimes V_n )=V_{\pi (1)}\otimes ... \otimes V_{\pi (n)}$. $S_n$ then gives a way to define a symmetric subspace $Sym_n(V)$ and an anti-symmetric subspace $\bigwedge^n(V)$ as
+
+$$
+Sym_n (V) \equiv \lbrace v \vert \pi (v)=v \ \ \ \forall \pi \in S_n\rbrace
+$$
+
+$$
+\bigwedge^n(V)\equiv \lbrace v\vert \pi (v)= sgn(\pi ) v\rbrace
+$$
+ 
+ \begin{center}
+ where $sgn(\pi)$ is defined as $(-1)^{\# \ of \ transpositions \ of \ \pi}$  
+\end{center}  
+ 
+$k$-forms can then be thought of as the anti-symmetric subspace of the tensor product of some cotangent space with itself $k$ times
+ 
+ 
+ \textbf{Definition} An \textit{exterior form of degree} $k$, or $k$-form, $\omega$  is a $k$-linear anti-symmetric function of $k$ vectors. Formally,
+ 
+ $$
+ \omega (\alpha \chi_1 + \beta \nu_1,\xi_2,...\xi_k )=\alpha \omega (\chi_1,\xi_2,...\xi_k )+\beta \omega (\nu_1,\xi_2,...\xi_k )
+ $$
+ 
+\begin{center}
+
+\end{center} 
+ 
+$$
+\omega(\chi_{\pi(1)},...,\chi_{\pi(k)})=sgn(\pi) \omega(\chi_1,...,\chi_n)
+$$ 
+ 
+Alternatively, $\omega\in\bigwedge^k(V^*)$. Note that $\bigwedge^k(V)=P_-(V\otimes...\otimes V)\equiv \frac{1}{k!}\sum_{\pi\in S_n}V_{\pi}\otimes ... \otimes V_{\pi}$. In consideration of $k$-forms there is a natural product to define, namely the exterior product or anti-symmetric product 
+ (or wedge product).
+ 
+\textbf{Definition:} The \textit{exterior product} $\omega_k\wedge \omega_l$, where $\omega_k$ is a $k$-form and $\omega_l$ is an $l$-form, is a $(k+l)$-form such that 
+
+$$
+\omega_k\wedge\omega_l=(-1)^l \omega_l\wedge\omega_k
+$$
+ 
+and actions of $\omega_k\wedge \omega_l$ on a vector $v_1\otimes ... \otimes v_{k+l}\in V^{\otimes(k+l)}$ is given by 
+
+$$
+(\omega_k\wedge \omega_l)(v_1\otimes ... \otimes v_{k+l})=\frac{1}{k!}\frac{1}{l!}\sum_
+{\pi\in S_{(k+l)}}sgn(\pi )\omega^k(v_{\pi(1)}\otimes ... \otimes v_{\pi(k)})\omega^l(v_{\pi(k+1)}\otimes ... \otimes v_{\pi(k+l)})
+$$  
+ 
+and 
+
+$$ 
+ (\omega^k\wedge\omega^l)\propto P^{(k+l)}_{-}(\omega^k\otimes\omega )
+$$
+ 
+A basis for $\bigwedge^{k}(V)\equiv \underbrace{ V\wedge ...\wedge V}_k$ given a basis $e
+ _j$ for $V$ is constructed by
+
+$$
+e_{j_1}\wedge e_{j_2}\wedge... \wedge e_{j_k}; \ \ \ j_1 < j_2<...<j_k
+$$
+
+As $e_j\wedge e_j=0$ and the operation is antisymmetric so any rearrangement of the same basis elements is at most changed by a negative phase
+
+
+For any smooth function $f:\M\rightarrow\mathcal{N}$ from one manifold to another, there is an induced map on the respective tangent spaces, $df:T\M\rightarrow T\mathcal{N}$.
+
+\begin{center}
+
+\input{inducedmap.pdf_tex}
+
+\end{center}
+
+\textbf{Definition:} A manifold $\M$ with some atlas $\mathcal{A}$ is defined to be \textit{orientable} iff for any coordinate basis $x^n$ for $U_x \in\mathcal{A}$ and $y^n$ for $U_y \in\mathcal{A}$ covering $\M$ we have
+
+$$
+J=det\left( \frac{\partial x^n}{\partial y^k} \right)>0
+$$ 
+ 
+ 
+If an $m$-dimensional manifold $\M$ is orientable there exists some $m$-form called a \textit{Volume Form} that is nonvanishing  
+ 
+\pagebreak
+
+
+
+\subsection{Problem Set 1}
+
+
+1. (i) A torus is a manifold as it is locally euclidean at every point
+
+(ii) A figure 8 is not a manifold as it intersects itself and at that point is not locally euclidean 
+
+(iii) The manifold defined by $z-x^2-y^2=0$ requires atleast two charts in $\mathbb{R}^2$
+
+(iv) The real projective space $\mathbb{R}P^n$ is the set of all lines passing through the origin in $\mathbb{R}^{n+1}$. Two points $\vec{x},\vec{y}\in\mathbb{R}^{n+1}$, define the same line if $\vec{x}=\alpha\vec{y}$ where $\alpha,\vec{x},\vec{y}\neq 0$. This gives us freedom to choose any point along each line as the representative for that line. 
+
+Define $U_i$ to be the set of lines with $x_i\neq 0 \ (1\leq i\leq n+1)$. Now define charts $\phi_i:U_i\rightarrow \mathbb{R}^n$:
+
+$$
+\phi_i: (x_1,...,x_{n+1})\rightarrow \left(\frac{x_1}{x_i},...,\frac{x_{i-1}}{x_i},\frac{x_{i+1}}{x_i},...,\frac{x_{n+1}}{x_i}\right)
+$$ 
+
+For $\vec{x}\in U_i\cap U_j$, $\phi_j\circ\phi_i^{-1}=
+\left(\frac{i_1 x_i}{x_j},...,\frac{x_i}{x_j} ,...,\frac{i_{j-1}x_i}{x_j},\frac{i_{j+1}x_i}{x_j},...,\frac{i_{n+1}x_i}{x_j}\right)
+$
+
+For $n+1=2$, $\vec{x}\in U_1\cap U_2$, $\phi_a\circ\phi_b^{-1}=
+\left(\frac{bx_1}{x_2}\right) 
+$ where $b$ is the input coordinate to the transition map and $\phi_a,\phi_b$ corresponds to $x_1,x_2$ respectively. This map is continuous as $x_1,x_2$ should never be zero according to the definition of the charts.
+
+2. (i) Given the circle $S^1$ embedded in $\mathbb{R}^2$ via $x^2+y^2=1$ and the charts $\phi_1 ,\phi_2$:
+
+$$
+\phi_1^{-1}: (0,2\pi )\rightarrow S^1
+$$
+
+\vspace{-.3cm}
+
+$$
+\phi_1^{-1}: \theta \rightarrow (cos(\theta ),sin(\theta ))
+$$
+
+\medskip
+
+$$
+\phi_2^{-1}: (-\pi ,\pi )\rightarrow S^1
+$$
+
+\vspace{-.3cm}
+
+$$
+\phi_2^{-1}: \theta \rightarrow (cos(\theta ),sin(\theta ))
+$$
+
+It is easily seen that the charts overlap only in $(0,\pi )$, and thus $\phi_1\circ\phi_2^{-1}$ is defined in this range as $\theta_{\phi_2}\rightarrow\theta_{\phi_2}+\pi$
+
+(ii) Given $S^2$ embedded in $\mathbb{R}^3$ via $x^2+y^2+z^2=1$, stereographic projection onto a plane under the sphere provides the chart
+
+ $$\phi_s:S^2\rightarrow \mathbb{R}^2$$
+
+ $$\phi_s:(x,y,z)\rightarrow (X=\frac{x}{1-z},Y=\frac{y}{1-z})
+ $$
+ 
+Which is well defined everywhere except for $z=1$, and thus atleast one more chart is required.
+
+(iii) Polar coordinates also provide a chart $\psi:S^2\rightarrow \mathbb{R}^2$ for the sphere given by 
+
+$$
+\psi^{-1}: (\theta ,\phi)\rightarrow(x=sin\theta cos\phi\,\ y=sin\theta sin\phi, \ z=cos\theta)
+$$
+
+which also fails for one point, $\theta=0$. Composition of the inverse map of polar coordinates and stereographic projection then yields
+
+$$
+\phi_s\circ\psi^{-1} :(\theta,\phi)\rightarrow (X=\frac{sin\theta cos\phi}{1-cos\theta},Y=\frac{sin\theta sin\phi}{1-cos\theta})
+$$
+
+3. (i)Vectors are directional derivatives, scalars are real numbers. Easily seen to satisfy distributivity, associativity rules satisfied as it would be for functions.
+
+(ii)$X[x^i(t)]$ can be interpreted as velocity in the $x^i$ direction at time $t$
+
+\pagebreak
+
+\subsection{Problem Set 2}
+
+1. (i) See E-L derivation section. % Note that $\frac{\partial L}{\partial q}=\frac{\partial L}{\partial x}\frac{\partial x}{\partial t}$ think
+
+(ii) Given $L=\frac{1}{2}g_{ij}(x_{\nu})\dot{x}^i\dot{x}^j$ where $g_{ij}$ is given to be a function of position, symmetric in $i,j$ and $g^{ik}g_{kj}=\delta^i_j$
+
+Applying EL eq.,
+
+$$
+\frac{d}{dt}\frac{d}{d\dot{x}^{\alpha}}\left(
+\frac{1}{2}g_{ij}(x_{\nu})\dot{x}^i\dot{x}^j
+\right)=\frac{d}{dx^{\alpha}}\left(
+\frac{1}{2}g_{ij}(x_{\nu})\dot{x}^i\dot{x}^j
+\right)
+$$
+
+
+$$
+\frac{d}{dt}\frac{d}{d\dot{x}^{\alpha}}\left(
+\frac{1}{2}g_{ij}(x_{\nu})\dot{x}^i\dot{x}^j
+\right)= \frac{d}{dt}\left( \frac{1}{2}g_{ij}(\delta^{\alpha}_{i}\dot{x^j}+\dot{x^i}\delta^{\alpha}_{j})\right)=\frac{d}{dt}\left( g_{\alpha j}\dot{x^j}\right)=g_{\alpha j}\ddot{x}^j
+$$
+
+$$
+\frac{d}{dx^{\alpha}}\left(
+\frac{1}{2}g_{ij}\dot{x}^i\dot{x}^j
+\right)
+$$
+
+
+2. (i.) Given $n$ different 1-forms $\omega_i$ and a permutation $\pi$ of $\lbrace 1,...,n\rbrace$, show that 
+
+$$
+\pi(\omega_1\wedge ... \wedge \omega_n)= sgn(\pi)\omega_1\wedge...\wedge\omega_n
+$$
+
+Given the wedge product is antisymmetric and the fact that permutations are partitioned by requiring an odd or an even number of transpositions, it follows that the required rearrangement to achieve $\pi$ is equal to $(-1)^{0\ if\ even \ or\ 1\ if \ odd}$.
+
+
+
+(ii.) Prove that the dimension of the vector space $\bigwedge^k V$ is 
+$\begin{bmatrix}
+n \\
+k
+\end{bmatrix}
+$.
+For a $k$-form in $n$ dimensions, there are $\frac{n!}{(n-k)!}$ choices of orders of basis vectors but due to anti-symmetry,   
+there are $k!$ rearrangements of any $k$-form up to some negative phase and $\frac{n!}{(n-k)!k!}=nCk$. As such, the dimension of $\bigwedge^n V=1$.
+
+(iii.) 3-forms in the space of $\R^3$ take the form:
+
+$$
+f(x,y,z)dx\wedge dy\wedge dz
+$$
+
+This manifold should be orientable? Jacobian always positive/unital?
+
+3. (i.) on arch
+
+(ii.) 1-forms on $\R$ will have the form $\omega=f(x)dx$ which is clearly closed and exact as some function can be defined $\frac{dg}{dx}=f,\ g=\int f(x) dx$.
+
+(iii.) Given the following form in $\R^2$, 
+
+$$
+\omega=\frac{-y}{x^2+y^2}dx + \frac{x}{x^2+y^2}dy
+$$
+
+calculate $d\omega$.
+
+$$
+d\omega=\left(\frac{d}{dy}\frac{y}{x^2+y^2}+\frac{d}{dx}\frac{x}{x^2+y^2}\right) dx\wedge dy=\left(\frac{1}{x^2+y^2}+\frac{-y}{(x^2+y^2)^2}(2y)+\frac{1}{x^2+y^2}+\frac{-x}{(x^2+y^2)^2}(2x)\right) dx\wedge dy
+$$
+
+$$
+=0
+$$
+
+We know $\omega\neq df$ for any function $f(x,y)$ and thus is not exact as this would entail 
+
+$$
+\frac{\partial f}{\partial x}=\frac{-y}{x^2+y^2},\ \frac{\partial f}{\partial y}=\frac{x}{x^2+y^2}
+$$
+
+but for a function we should have $\frac{\partial }{\partial y}\frac{\partial f}{\partial x}=\frac{\partial }{\partial x}\frac{\partial f}{\partial y}$, which is clearly not satisfied here as
+
+$$
+\frac{\partial }{\partial y}\frac{\partial f}{\partial x}=\frac{\partial }{\partial y}\frac{-y}{x^2+y^2}=\frac{1}{x^2+y^2}+\frac{-y}{(x^2+y^2)^2}(2y)
+$$
+
+$$
+\frac{\partial }{\partial x}\frac{\partial f}{\partial y}=\frac{\partial }{\partial x}\frac{x}{x^2+y^2}=\frac{1}{x^2+y^2}+\frac{x}{(x^2+y^2)^2}(2x)
+$$
+
+\begin{sympycode}
+x, y, z =symbols('x y z')
+\end{sympycode}
+
+$\sympy{simplify(diff(-y/(x**2+y**2),y)+diff(-x/(x**2+y**2),x))}$
+
+
+\begin{sympycode}
+myvar = 125
+\end{sympycode}
+
+$\sympy{myvar}$
+
+\subsection{Problem Set 3}
+
+
+1. (i) show that this atlas for the Mobius strip  is not orientable: charts $(x^1,x^2)$ and $(y^1,y^2)$ that overlap in regions $A_1$ of chart $x$ and $A_2$ of chart $y$ with transition map $x^1=y^1+7$, $x^2=y^2$ and overlap in regions $B_1$ of chart $x$ and $B_2$ of chart $y$ with transition map $x^1=y^1-7$, $x^2=-y^2$.
+
+(ii) Explain why all one-dimensional manifolds are orientable: A one dimensional manifold will always have charts of the form $x^i$ where there is only one parameter $x$ for every chart $i$. Thus $J=\frac{\partial x^i}{\partial x^j}$
+
+
+
+
+
+lecture 4 1:05:00 for ex statement
+
+lecture 5 1:09:00
+
+lecure 5 1:23:00
+
+%\cite{arnold1989}
+
+%\cite{coopersmith2017}
+
+\end{document}

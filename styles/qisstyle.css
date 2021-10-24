@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Scribble';
-    src: url('../fonts/scribble-webfont.woff2') format('woff2'),
-         url('../fonts/scribble-webfont.woff') format('woff');
+    src: url('../assets/fonts/scribble-webfont.woff2') format('woff2'),
+         url('../assets/fonts/scribble-webfont.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -23,7 +23,7 @@ body {
 
 
 body {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.55)), url("../images/backtop.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.55)), url("../assets/images/backtop.jpg");
   background-color: hsla(0, 0%, 0%, 85%);
   background-size: cover;
   background-position: center center;
@@ -87,12 +87,6 @@ img {
   margin: 0 auto;
 }
 
-#ggdosvg{
-  max-width: 22cm;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
 
 .centerframe {
   margin: 0 auto;
