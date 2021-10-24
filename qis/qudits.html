@@ -57,11 +57,11 @@
 
 
   <div id="home">
-    <a target="_blank" href="https://www.alexheilman.com"><img id="homeimg" src="../images/iconwhite/favicon-196x196.png" width="50"></a>
+    <a href="https://www.alexheilman.com"><img id="homeimg" src="../images/iconwhite/favicon-196x196.png" width="50"></a>
   </div>
 
   <div id="up">
-    <a target="_blank" id="upa" href="https://www.alexheilman.com/qis.html">QIS</a>
+    <a id="upa" href="https://www.alexheilman.com/qis.html">QIS</a>
   </div>
 <!--Here's some cool link things I'll open in the future -->
 
@@ -326,26 +326,38 @@
        </p>
 
     <h2>Basic \(d\)-ary Quantum Algorithms</h2>
-      Some basic quantum algorithms of the qubit paradigm have already been extended to
-      \(d\)-ary qudit circuits. The quantum phase estimation algorithm has been extended to
-      qudit circuits in several papers already, and has a pretty straight forward extension from
-      the qubit case. The quantum search algorithm has several possible extensions beyond the binary qubit realm,
-      one is to simply evaluate sparse binary functions over new dimensional spaces. The other
-      extension is to the evaluation of specific outcomes of \(d\)-ary functions. Some progress in this
-      direction has been made very recently.
-
+      <p>
+        Some basic quantum algorithms of the qubit paradigm have already been extended to
+        \(d\)-ary qudit circuits. The quantum phase estimation algorithm has been extended to
+        qudit circuits in several papers already, and has a pretty straight forward extension from
+        the qubit case. The quantum search algorithm has several possible extensions beyond the binary qubit realm,
+        one is to simply evaluate sparse binary functions over new dimensional spaces. The other
+        extension is to the evaluation of specific outcomes of \(d\)-ary functions. Some progress in this
+        direction has been made very recently.
+      </p>
       <h3>Qudit Phase Estimation</h3>
-        Phase estimation has a clean extentsion into the realm of qudits, as done by Vamsi Parasa
-        and Marek Perkowski in<a target="_blank" href="https://www.researchgate.net/publication/224247587_Quantum_Phase_Estimation_Using_Multivalued_Logic">
-        <em>Quantum Phase Estimation Using Multivalued Logic</em></a> (explained in the associated <a target="_blank" href="https://pdfs.semanticscholar.org/c006/ab26a26b8888e41ee3d0a5959fdfe333ca89.pdf">presentation</a>).
-        See also Ye Cao, et al.'s <a target="_blank" href="https://www.researchgate.net/publication/241299188_Quantum_Fourier_Transform_and_Phase_Estimation_in_Qudit_System"><em>Quantum Fourier Transform and Phase Estimation in Qudit System</em></a> 
-        and Hristo Tonchev and Nikolay V. Vitanov's <a target="_blank" href="https://www.researchgate.net/profile/Nikolay-Vitanov-2/publication/308939482_Quantum_phase_estimation_and_quantum_counting_with_qudits/links/59d9e781aca272e6096bc22a/Quantum-phase-estimation-and-quantum-counting-with-qudits.pdf"><em>Quantum phase estimation and quantum counting with qudits</em></a>.
-        
-      <h3>Multiple-Valued Grover Search Algorithm</h3>
-        Grover's search algorithm can only be used to evaluate sparse binary
-        functions, that is functions that can take one of two values over a range
-        of values.
+        <p>
+          Phase estimation has a clean extentsion into the realm of qudits, as done by Vamsi Parasa
+          and Marek Perkowski in<a target="_blank" href="https://www.researchgate.net/publication/224247587_Quantum_Phase_Estimation_Using_Multivalued_Logic">
+          <em>Quantum Phase Estimation Using Multivalued Logic</em></a> (explained in the associated <a target="_blank" href="https://pdfs.semanticscholar.org/c006/ab26a26b8888e41ee3d0a5959fdfe333ca89.pdf">presentation</a>).
+          See also Ye Cao, et al.'s <a target="_blank" href="https://www.researchgate.net/publication/241299188_Quantum_Fourier_Transform_and_Phase_Estimation_in_Qudit_System"><em>Quantum Fourier Transform and Phase Estimation in Qudit System</em></a> 
+          and Hristo Tonchev and Nikolay V. Vitanov's <a target="_blank" href="https://www.researchgate.net/profile/Nikolay-Vitanov-2/publication/308939482_Quantum_phase_estimation_and_quantum_counting_with_qudits/links/59d9e781aca272e6096bc22a/Quantum-phase-estimation-and-quantum-counting-with-qudits.pdf"><em>Quantum phase estimation and quantum counting with qudits</em></a>.
+          A general circuit for the multi-valued phase estimation algorithm, utilizing qudits and quantum multiplexers, is shown below.
+        </p>
+        <div id="mvpesvg">
+          <img width="100%" height="auto" id="mvpeimg" src="../images/qis/MVPEwhite.svg" alt="N-Qudit Multi-valued Phase Estimation circuit diagram">
+        </div> 
+        <p>
+          Notice the controlled \(\mathbf{U}\) gates here are multiplexers, signified by the circled \(\mathcal{M}\) on the control qudit.
+        </p>
 
+  
+      <h3>Multiple-Valued Grover Search Algorithm</h3>
+        <p>
+          Grover's search algorithm can only be used to evaluate sparse binary
+          functions, that is functions that can take one of two values over a range
+          of values.
+        </p>
       <h4>Finite-Function-Encoding States</h4>
         <p>
           Using qu\(d\)its and the \(d\)th roots of unity, we can actually encode

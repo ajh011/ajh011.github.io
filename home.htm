@@ -49,7 +49,11 @@
 
 <body onload="startTime()">
 <div id="body2">
-
+<div id="col2" class="flex">
+  <div id="crypto">
+  <!-- Cryptocurrency Price Widget --><script>!function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD,EUR,CNY",items:"BTC,ETH,LTC,XMR,BCH",backgroundColor:"676666",streaming:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CBCH",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();</script><a href="https://currencyrate.today/" rel="noopener" target="_blank">CurrencyRate.Today</a><!-- /Cryptocurrency Price Widget -->
+  </div>
+</div>
 
 <div id="col1" class="flex">
 <!-- Clock-->
@@ -90,7 +94,7 @@ function checkTime(i) {
     
 </div>
 
-<!--Search-->
+<!--Search
 <div id="search">
 <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
 <input name="sitesearch" type="hidden" value="alexheilman.com">
@@ -98,14 +102,10 @@ function checkTime(i) {
 <button class="button" type="submit">Search</button>
 </form>
 
-</div>
+</div>-->
 </div>
 
-<div id="col2" class="flex">
-  <div id="crypto">
-  <!-- Cryptocurrency Price Widget --><script>!function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD,EUR,CNY",items:"BTC,ETH,LTC,XMR,BCH",backgroundColor:"676666",streaming:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CBCH",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();</script><a href="https://currencyrate.today/" rel="noopener" target="_blank">CurrencyRate.Today</a><!-- /Cryptocurrency Price Widget -->
-  </div>
-</div>
+
 </div>
 </body>
 
