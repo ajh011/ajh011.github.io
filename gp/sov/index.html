@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Qudits</title>
+    <title>Separation of Variables</title>
     <link href="../../styles/qisstyle.css" rel="stylesheet">
     <link href="../../styles/qudits.css" rel="stylesheet">
 
@@ -45,9 +45,9 @@
 
 
     <meta charset="UTF-8">
-    <meta name="description" content="Resources and discussion relevant to Quantum Computational and Informational
-                                      Science. Topics include basic quantum algorithims and programming in Qiskit.">
-    <meta name="keywords" content=" ">
+    <meta name="description" content="A short overview of the PDE technique of separation of variables to the
+                                      Helmholtz equation in 3-dimensional cyclindrical and spherical coordinates.">
+    <meta name="keywords" content="separation of variables, helmholtz equation, solving helmholtz equation ">
     <meta name="author" content="Alexander J. Heilman">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
@@ -64,6 +64,59 @@
     <a id="upa" href="https://www.alexheilman.com/gp/index.html">GP</a>
   </div>
 
+  <h1 id="title">Separation of Variables</h1>
+    <p id="blurb">
+    
+    </p>
+    <h2>Helmholtz Equation</h2>
+      <p>
+        The Helmholtz equation is 
+       <div class="eq">
+        $$
+          \nabla^2\psi-k^2\hspace{.05cm}\psi=0
+        $$
+        </div>        
+      </p>
+      <h3>Cylindrical Coordinates</h3>
+        <p>
+          In cylindrical coordinates, the Helmholtz equation takes the form
+          <div class="eq">
+          $$
+            \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial \psi}{\partial r}\right) 
+            +\frac{1}{r^2}\frac{\partial^2 \psi}{\partial \phi^2}+\frac{\partial^2 \psi}{\partial z^2}-k^2\psi=0
+          $$
+          </div>
+        </p>
+        <p>          
+          The first assumption we always make in applying the technique of separation of variables is
+          to write out the overall function \(\psi\) as a product of functions solely dependant only on one variable.
+          In the context of cyclindrical coordinates then, we have the following,
+          <div class="eq">
+          $$
+            \psi(z,\phi,r)=\mathcal{Z}(z)\Phi(\phi)R(r)
+          $$
+          </div>          
+        </p>
 
+      <h3>Spherical Coordinates</h3>
+        <p>
+          In spherical coordinates, the Helmholtz equation takes the form
+          <div class="eq">
+          $$
+            \frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial \psi}{\partial r}\right) 
+            +\frac{1}{r^2\sin\theta }\left(\sin\theta\frac{\partial^2 \psi}{\partial \phi^2}\right)
+            +\frac{1}{r^2\sin^2\theta}\frac{\partial^2 \psi}{\partial z^2}-k^2\psi=0
+          $$
+          </div>
+        </p>
+        <p>          
+          Again, we write out the overall function \(\psi\) as a product of single variable functions.
+          In the context of spherical coordinates, we have the following,
+          <div class="eq">
+          $$
+            \psi(r,\phi,\theta)=R(r)\Phi(\phi)\Theta(\theta)
+          $$
+          </div>          
+        </p>
   </body>
 </html>

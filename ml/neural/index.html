@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Neural Networks</title>
-    <link href="./styles/neuralstyle.css" rel="stylesheet">
+    <link href="../../styles/neuralstyle.css" rel="stylesheet">
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -15,26 +15,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
 
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./images/iconwhite/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./images/iconwhite/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/iconwhite/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./images/iconwhite/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./images/iconwhite/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./images/iconwhite/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./images/iconwhite/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./images/iconwhite/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="./images/iconwhite/favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="./images/iconwhite/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="./images/iconwhite/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="./images/iconwhite/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="./images/iconwhite/favicon-128.png" sizes="128x128" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../assets/images/iconwhite/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/images/iconwhite/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/images/iconwhite/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/images/iconwhite/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../../assets/images/iconwhite/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../assets/images/iconwhite/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../assets/images/iconwhite/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../assets/images/iconwhite/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../../assets/images/iconwhite/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../../assets/images/iconwhite/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../../assets/images/iconwhite/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../../assets/images/iconwhite/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../../assets/images/iconwhite/favicon-128.png" sizes="128x128" />
     <meta name="application-name" content="&nbsp;"/>
     <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content="./images/iconwhite/mstile-144x144.png" />
-    <meta name="msapplication-square70x70logo" content="./images/iconwhite/mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="./images/iconwhite/mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="./images/iconwhite/mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="./images/iconwhite/mstile-310x310.png" />
+    <meta name="msapplication-TileImage" content="../../assets/images/iconwhite/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="../../assets/images/iconwhite/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="../../assets/images/iconwhite/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="../../assets/images/iconwhite/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="../../assets/images/iconwhite/mstile-310x310.png" />
 
 
 
@@ -59,7 +59,7 @@
       as well as their loose association with an idealized brain. They're easily implementable
       on pytorch and tensorflow, both python based machine learning modules.  
     </p>
-    <img class="center" src="./images/neural/ffnwhite.svg" alt="Example neural network" width="87%" height="auto" id="examplenn">
+    <img class="center" src="../../assets/images/neural/ffnwhite.svg" alt="Example neural network" width="87%" height="auto" id="examplenn">
     <section id="basics">
       <h1 id="basicstit"> Neural Network Components  </h1>
       <h2 id="neuronstit">Neurons</h2>
@@ -70,7 +70,7 @@
         simply multiplies all its inputs by a corresponding weight, sums up the products (it may add a bias as well),
         and then outputs this sum after applying some activation function.
         
-        <img src="./images/neural/neuronwbsmatwhite.svg" alt="Example neuron with weights and biases in matrix form" 
+        <img src="../../assets/images/neural/neuronwbsmatwhite.svg" alt="Example neuron with weights and biases in matrix form" 
            width="80%" height="auto" id="exneuron" class="center"> 
         </div>
       </p>
@@ -87,13 +87,13 @@
     <!--  <a href="https://commons.wikimedia.org/wiki/File:Sigmoid-function-2.svg" id="sigmoidlink" target="_blank" class="">    sigmoid     </a>
      -->
       <div id="actex">
-        <img src="./images/neural/sigmoid.svg" alt="Example Sigmoid function plot" width="45%" height="auto" class="margin5">
-        <img id="relu" src="./images/neural/relu.svg" alt="Example rectified linear unit function plot" width="45%" height="auto" class="margin5">
+        <img src="../../assets/images/neural/sigmoid.svg" alt="Example Sigmoid function plot" width="45%" height="auto" class="margin5">
+        <img id="relu" src="../../assets/images/neural/relu.svg" alt="Example rectified linear unit function plot" width="45%" height="auto" class="margin5">
       </div>
     </section>
       <p id="nnbp1">
         <h2> Layers </h2>
-        <img src="./images/neural/ffnwhiteinput.svg" alt="Basic computation done by a layer in a neural network" width="45%" height="auto"
+        <img src="../../assets/images/neural/ffnwhiteinput.svg" alt="Basic computation done by a layer in a neural network" width="45%" height="auto"
           id="ffninput"> 
         <div id="nnbpright" >
           In between each intermediate layer of the neural network, the aggregation of
@@ -106,7 +106,7 @@
       </p>
         <iframe src="https://www.desmos.com/calculator/wdipmg9s0q?embed" width="100%" height="400" invertedColors="true" style="border: 1px solid #ccc" id="softmaxinteractive" frameborder=0></iframe>
       <p id="bbnp2">
-      <!-- words wrap left--> <img src="./images/neural/ffnwhiteoutput.svg" alt="" >
+      <!-- words wrap left--> <img src="../../assets/images/neural/ffnwhiteoutput.svg" alt="" >
       </p>
     </section>
     <section id="training">
@@ -141,7 +141,7 @@
         <h2 id="bptit">
           Backpropogation
         </h2>
-        <img src="./images/neural/bbdiagtemp.svg" alt="Backpropogation path highlighted and annotated" width="87%" 
+        <img src="../../assets/images/neural/bbdiagtemp.svg" alt="Backpropogation path highlighted and annotated" width="87%" 
           height="auto" id="bppath">
     </section>
     <section id="resources">

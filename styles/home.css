@@ -24,8 +24,8 @@
 
 @font-face {
     font-family: 'Scribble';
-    src: url('../fonts/scribble-webfont.woff2') format('woff2'),
-         url('../fonts/scribble-webfont.woff') format('woff');
+    src: url('../assets/fonts/scribble-webfont.woff2') format('woff2'),
+         url('../assets/fonts/scribble-webfont.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -70,7 +70,7 @@ body {
 }
 
 body {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63),  rgba(0, 0, 0, 0.63)), url("../images/masson.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63),  rgba(0, 0, 0, 0.63)), url("../assets/images/masson.jpg");
   background-color: hsla(0, 0%, 0%, 85%);
   background-size: cover;
   background-position: center;
