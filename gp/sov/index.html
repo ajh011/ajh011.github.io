@@ -57,7 +57,7 @@
 
 
   <div id="home">
-    <a href="https://www.alexheilman.com"><img id="homeimg" src="../../images/iconwhite/favicon-196x196.png" width="50"></a>
+    <a href="https://www.alexheilman.com"><img id="homeimg" src="../../assets/images/iconwhite/favicon-196x196.png" width="50"></a>
   </div>
 
   <div id="up">
@@ -66,7 +66,17 @@
 
   <h1 id="title">Separation of Variables</h1>
     <p id="blurb">
-    
+      Separation of variables is a technique for solving certain partial differential equations. It assumes that the 
+      overall solution (a function of several variables) is simply a product of single variable functions, described mathmatically
+      below
+      <div class="eq">
+      $$
+        \psi(x,y,...,z)=\mathbb{X}(x)\mathbb{Y}(y)... \mathbb{Z}(z)
+      $$
+      </div>
+      It's generally favored by physicists as a choice technique for solving several common PDEs.
+      While it's criteria for applicability seems dense, if it provides a solution to the PDE the solution
+      still works.
     </p>
     <h2>Helmholtz Equation</h2>
       <p>
