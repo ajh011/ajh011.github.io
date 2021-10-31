@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Differential Forms</title>
+    <link href="../../styles/df.css" rel="stylesheet">
+    <link href="../../styles/qisstyle.css" rel="stylesheet">
+
+
+    <!--Geogebra Support-->
+    <script src="navigation.js"></script>
+
+
+    <!--MathJax Support-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}},
+                                  loader: {load: ['[tex]/ams']},
+                                  tex: {packages: {'[+]': ['ams']}});</script>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../assets/images/iconwhite/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/images/iconwhite/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/images/iconwhite/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/images/iconwhite/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../../assets/images/iconwhite/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../assets/images/iconwhite/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../assets/images/iconwhite/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../assets/images/iconwhite/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../../assets/images/iconwhite/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../../assets/images/iconwhite/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../../assets/images/iconwhite/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../../assets/images/iconwhite/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../../assets/images/iconwhite/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="../../assets/images/iconwhite/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="../../assets/images/iconwhite/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="../../assets/images/iconwhite/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="../../assets/images/iconwhite/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="../../assets/images/iconwhite/mstile-310x310.png" />
+
+
+
+    <meta charset="UTF-8">
+    <meta name="description" content="A small overview of diifferential forms and why
+                                     they're particularly relevant for physics.">
+    <meta name="keywords" content="Differential Forms, Physics, Differential, Forms,
+                                   1-forms">
+    <meta name="author" content="Alexander J. Heilman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+  </head>
+  
+  <body>
+
+
+  <div id="home">
+    <a href="https://www.alexheilman.com"><img id="homeimg" src="../../assets/images/iconwhite/favicon-196x196.png" width="50"></a>
+  </div>
+
+  <div id="up">
+    <a id="upa" href="https://www.alexheilman.com/cem/index.html">CM</a>
+  </div>
+
+  <h1 id="title">Differential Forms</h1>
+    <p id="blurb">
+      Differential forms are what you're actually integrating everytime you use an integral (i.e. every
+      integrand you've ever written). They're geometrically interpretable as oriented areas, of a dimension
+      equal to the order of the form. Equivalently, they're the restriction on the tensor product space of
+      some vector space to only antisymmetric components.
+      Given some function \(  f \) defined in some coordinate space \(  x_n \) the exterior derivative can
+      be taken as below:
+      <div class="eq">
+      $$
+      df(x_1,x_2,...x_n)=\sum_{n}\frac{\partial f}{\partial x_n}\wedge dx_n
+      $$
+      </div>     
+    </p>
+    <h2 >
+      Three Dimensions
+    </h2>
+      <p >
+        In three dimensions, the exterior derivative's relevance to physics is easily seen. In conjunction
+        with the relevant Hodge Star operator (here the unique 3-form \(  dx\wedge dy\wedge dz \)),
+        the gradient, the curl, the divergence, and the Laplacian are all aptly generalized by the
+        exterior derivative. 
+      </p>
+      <h3 >
+        1-forms
+      </h3>
+        <p >
+          In three dimensions, the gradient is generalized exactly by the exterior derivative. 
+          Gradients are effectively all exact 1-forms, but instead of unit vectors being associated
+          with the relevant partial derivative, unit 1-forms are associated with the relevant partial
+          derivatives.
+          <div class="eq">
+          $$
+            df(x,y,z) = \frac{\partial f}{\partial x}d\hat{x}+\frac{\partial f}{\partial y}d\hat{y}+\frac{\partial f}{\partial z}d\hat{z}
+          $$
+          </div>
+        </p>
+      <h3>
+        2-forms
+      </h3>
+        <p >
+          The divergence and
+        </p>
+  </body>
+</html>
