@@ -5,6 +5,10 @@
     <link href="../../styles/df.css" rel="stylesheet">
     <link href="../../styles/qisstyle.css" rel="stylesheet">
 
+    <!--Tikz Support-->
+    <link rel="stylesheet" type="text/css" href="http://tikzjax.com/v1/fonts.css">
+    <script src="http://tikzjax.com/v1/tikzjax.js"></script>
+
 
     <!--Geogebra Support-->
     <script src="navigation.js"></script>
@@ -17,6 +21,8 @@
                                   loader: {load: ['[tex]/ams']},
                                   tex: {packages: {'[+]': ['ams']}});</script>
     <meta charset="UTF-8">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
@@ -77,7 +83,7 @@
       $$
       df(x_1,x_2,...x_n)=\sum_{n}\frac{\partial f}{\partial x_n}\wedge dx_n
       $$
-      </div>     
+      </div>
     </p>
     <h2 >
       Three Dimensions
@@ -91,8 +97,17 @@
       <h3 >
         1-forms
       </h3>
+        <p>
+          In three dimensions, 1-forms may be though of intuitively as oriented planes.
+          <div class="eq">
+          $$
+            \omega:\mathbb{R}^3\rightarrow\mathbb{R}
+          $$
+          </div>
+          <img src="../../assets/images/cem/1formvec.svg" width="400" height="auto" id="1formsvg">
+        </p>
         <p >
-          In three dimensions, the gradient is generalized exactly by the exterior derivative. 
+          The gradient is generalized exactly by the exterior derivative. 
           Gradients are effectively all exact 1-forms, but instead of unit vectors being associated
           with the relevant partial derivative, unit 1-forms are associated with the relevant partial
           derivatives.
@@ -105,8 +120,22 @@
       <h3>
         2-forms
       </h3>
-        <p >
-          The divergence and
+        <p>
+          In three dimensions, 2-forms may be though of intuitively as oriented planes.
+          <div class="eq">
+          $$
+            \omega:\mathbb{R}^3\rightarrow\mathbb{R}
+          $$
+          </div>
+          <img src="../../assets/images/cem/2formvec.svg" width="400" height="auto" id="1formsvg">
         </p>
+        <p >
+          The divergence and curl can also be described
+        </p>
+
+    <h2>Resources</h2>
+      David Meltzer has a fantastic lecture on differential forms that can be found on youtube <a target="_blank" href="https://www.youtube.com/watch?v=M5wrnwlm8lw&list=PLB8F2D70E034E9C29">here</a>.
+      Terrance Tao has a nice <a href="https://www.math.ucla.edu/~tao/preprints/forms.pdf">introduction
+      </a>. 
   </body>
 </html>
