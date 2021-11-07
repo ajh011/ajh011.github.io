@@ -1,0 +1,116 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{appel2020}{article}{}
+    \name{author}{7}{}{%
+      {{hash=AP}{%
+         family={Appel},
+         familyi={A\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=HAJ}{%
+         family={Heilman},
+         familyi={H\bibinitperiod},
+         given={Alexander\bibnamedelima J},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=WEW}{%
+         family={Wertz},
+         familyi={W\bibinitperiod},
+         given={Ezekiel\bibnamedelima W},
+         giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=LDW}{%
+         family={Lyons},
+         familyi={L\bibinitperiod},
+         given={David\bibnamedelima W},
+         giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Huber},
+         familyi={H\bibinitperiod},
+         given={Marcus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Pivoluska},
+         familyi={P\bibinitperiod},
+         given={Matej},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=VG}{%
+         family={Vitagliano},
+         familyi={V\bibinitperiod},
+         given={Giuseppe},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{APHAJWEW+1}
+    \strng{fullhash}{APHAJWEWLDWHMPMVG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Finite-Function-Encoding Quantum States}
+    \field{journaltitle}{arXiv preprint arXiv:2012.00490}
+    \field{year}{2020}
+  \endentry
+
+  \entry{hunt2020}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HS}{%
+         family={Hunt},
+         familyi={H\bibinitperiod},
+         given={Samuel},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gadouleau},
+         familyi={G\bibinitperiod},
+         given={Maximilien},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HSGM1}
+    \strng{fullhash}{HSGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Grover's Algorithm and Many-Valued Quantum Logic}
+    \field{journaltitle}{arXiv preprint arXiv:2001.06316}
+    \field{year}{2020}
+  \endentry
+
+  \entry{fan2008}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FY}{%
+         family={Fan},
+         familyi={F\bibinitperiod},
+         given={Yale},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FY1}
+    \strng{fullhash}{FY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Applications of multi-valued quantum algorithms}
+    \field{journaltitle}{arXiv preprint arXiv:0809.0932}
+    \field{year}{2008}
+  \endentry
+\enddatalist
+\endinput
