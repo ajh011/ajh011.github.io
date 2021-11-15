@@ -75,8 +75,21 @@
     <p id="blurb">
       Differential forms are what you're actually integrating everytime you use an integral (i.e. every
       integrand you've ever written). They're geometrically interpretable as oriented areas, of a dimension
-      equal to the order of the form. Equivalently, they're the restriction on the tensor product space of
+      equal to the order of the form. They are the dual to well behaved vector fields on manifolds. 
+      Equivalently, they're the restriction on the tensor product space of
       some vector space to only antisymmetric components.
+    </p>
+
+   <h2>Imporant Concepts</h2>
+    <p>
+     Two basic ingredients of differential forms are the concept of the wedge product and of the exterior
+     derivative. The wedge product is something like a generalization of the cross product from \(\mathbb{R}^3\)
+     to arbitray dimension; it is antisymmetric and can form higher order blades. The exterior derivative is a way to make 
+     higher order forms from forms of one order lower.
+     <h3>Wedge Product</h3>
+      The wedge product is an antisymmetric product. Where the inner product is a measure of mutual projection, the wedge product
+      is effectively a measure of rejection, that is, it is a measure how orthogonal two lower degree blades are.
+     <h3>Exterior Derivative</h3>
       Given some function \(  f \) defined in some coordinate space \(  x_n \) the exterior derivative can
       be taken as below:
       <div class="eq">
@@ -88,26 +101,56 @@
     <h2 >
       Three Dimensions
     </h2>
+      <p>
+        As an explicit example, we now consider differential forms of three dimensional real space, with
+        an emphasis on geometrical intuition (perhaps at explicit loss of rigor and depth). First we consider
+        0-forms.
+      </p>
       <p >
         In three dimensions, the exterior derivative's relevance to physics is easily seen. In conjunction
         with the relevant Hodge Star operator (here the unique 3-form \(  dx\wedge dy\wedge dz \)),
         the gradient, the curl, the divergence, and the Laplacian are all aptly generalized by the
         exterior derivative. 
       </p>
+      <h3>
+        0-forms
+      </h3>
+        <p>
+          In \(\mathbb{R}^3\), 0-forms or forms of degree zero are just real-valued three dimensional functions.
+                    <div class="eq">
+          $$
+            \omega:\mathbb{R}^3\rightarrow\mathbb{R}
+          $$
+          $$
+            \omega_{\text{0-form}}=f(x,y,z)
+          $$
+          </div>
+        </p>
       <h3 >
         1-forms
       </h3>
         <p>
-          In three dimensions, 1-forms may be though of intuitively as oriented planes.
+          In three dimensions, 1-forms may be though of intuitively as oriented planes spaced throughout \(\mathbb{R}^3\) in 
+          some fashion dependant on functions of the three spatial coordinates.
           <div class="eq">
           $$
-            \omega:\mathbb{R}^3\rightarrow\mathbb{R}
+            \omega_{\text{1-form}}=f(x,y,z)dx + g(x,y,z)dy + h(x,y,z)dz
+          $$
+          </div>
+          Notice that the forms live in a three dimensional vector space and thus we can decompose the action of an arbitrary
+          form into it's action on the three basis elements \(dx,dy\) and \(dz\). Specfied as
+          <div class="eq">
+          $$
+            
           $$
           </div>
           <img src="../../assets/images/cem/1formvec.svg" width="400" height="auto" id="1formsvg">
+          Above, \(\omega\) could be just \(dx\) (given its equally spaced in a parallel fashion) and \(C\)
+          could be something like \( (4t, 0, 3t)^T \) from \(0\leq t \leq 1\) in which case \(dx=(1,0,0)\) which gives 
+          \(\int_C\omega=4\).
         </p>
-       <!-- <p >
-          The gradient is generalized exactly by the exterior derivative. 
+        <p >
+          The gradient of traditional vector calculus is generalized by the exterior derivative. 
           Gradients are effectively all exact 1-forms, but instead of unit vectors being associated
           with the relevant partial derivative, unit 1-forms are associated with the relevant partial
           derivatives.
@@ -116,17 +159,18 @@
             df(x,y,z) = \frac{\partial f}{\partial x}d\hat{x}+\frac{\partial f}{\partial y}d\hat{y}+\frac{\partial f}{\partial z}d\hat{z}
           $$
           </div>
-        </p>-->
+        </p>
       <h3>
         2-forms
       </h3>
         <p>
-          In three dimensions, 2-forms may be though of intuitively as oriented areas.
-          <div class="eq">
+          In three dimensions, 2-forms may be though of intuitively as oriented areas spaced throughout \(\mathbb{R}^3 \) in some continuous differentiable
+          fashion.
+         <!-- <div class="eq">
           $$
             \omega:\mathbb{R}^3\rightarrow\mathbb{R}
           $$
-          </div>
+          </div>-->
           <img src="../../assets/images/cem/2formvec.svg" width="400" height="auto" id="1formsvg">
         </p>
       <h3>
@@ -134,11 +178,11 @@
       </h3>
         <p>
           In three dimensions, 3-forms may be though of intuitively as volumes.
-          <div class="eq">
+          <!--<div class="eq">
           $$
             \omega:\mathbb{R}^3\rightarrow\mathbb{R}
           $$
-          </div>
+          </div>-->
           <img src="../../assets/images/cem/3form.svg" width="400" height="auto" id="1formsvg">
         </p>
 

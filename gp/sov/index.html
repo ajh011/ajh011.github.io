@@ -75,7 +75,7 @@
       $$
       </div>
       The whole goal of assuming an overall function of the above form is to separate, or isolate, all terms dependant 
-      on only one independant variable on one side of the equals sign in the equation. This allows us to exploit 
+      on only one independant variable on one side of the equality. This allows us to exploit 
       the theorem that states that equalities between differential relations of different independant variables requires 
       the relations equal some constant or zero; effectively 'separating' the PDE into the corresponding
       number of ODEs (which are generally easier to solve analytically).
@@ -87,20 +87,20 @@
     </p>
     <h2>Helmholtz Equation</h2>
       <p>
-        The Helmholtz equation is 
+        The Helmholtz equation for real values of \(k\) is given below.
        <div class="eq">
         $$
-          \nabla^2\psi-k^2\hspace{.05cm}\psi=0
+          \nabla^2\psi+k^2\hspace{.05cm}\psi=0
         $$
         </div>        
-      </p>
-      <h3>Cylindrical Coordinates</h3>
+      </p>       
+      <h3>Cylindrical Coordinates (Circular)</h3>
         <p>
           In cylindrical coordinates, the Helmholtz equation takes the form
           <div class="eq">
           $$
             \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial \psi}{\partial r}\right) 
-            +\frac{1}{r^2}\frac{\partial^2 \psi}{\partial \phi^2}+\frac{\partial^2 \psi}{\partial z^2}-k^2\psi=0
+            +\frac{1}{r^2}\frac{\partial^2 \psi}{\partial \phi^2}+\frac{\partial^2 \psi}{\partial z^2}+k^2\psi=0
           $$
           </div>
         </p>
@@ -112,28 +112,139 @@
           $$
             \psi(z,\phi,r)=\mathcal{Z}(z)\Phi(\phi)R(r)
           $$
-          </div>          
+          </div>      
         </p>
+        <p>
+          Substituting this into the defining differential equation and dividing through by \(\psi\) we get the following:
+          <div class="eq">
+          $$
+            \frac{1}{rR}\frac{\partial }{\partial r}\left(r\frac{\partial R}{\partial r}\right) 
+            +\frac{1}{r^2\Phi}\frac{\partial^2 \Phi}{\partial \phi^2}+\frac{1}{\mathcal{Z}}\frac{\partial^2 \mathcal{Z}}{\partial z^2}+k^2=0.
+          $$
+          </div>
+        </p>
+        <p>
+          The key now is to, one by one, single out all dependencies on one variable to one side of the equality. We can then
+          leverage the fact that all the coordinates are independent of each other. Thus, any isolated expression dependent solely
+          on one independent variable must equal some constant, else the choice of value for the parameter is no longer arbitrary and the 
+          expression is not satisfied. The three separated ODE's for each variable are now shown below.
+          <div class="eq">
+          $$\begin{split}
+            \frac{1}{\mathcal{Z}}\frac{\partial^2 \mathcal{Z}}{\partial z^2}&=-k^2-\frac{1}{rR}\frac{\partial }{\partial r}\left(r\frac{\partial R}{\partial r}\right) 
+            -\frac{1}{r^2\Phi}\frac{\partial^2 \Phi}{\partial \phi^2}\\
+             
+             & = l^2\\
+              \Rightarrow \ \ \mathcal{Z}(z)&=Ae^{\pm zl}\quad \text{(Exponential)}
+             \end{split}$$
+          <br>
+              $$\begin{split}
+              \frac{1}{\Phi}\frac{\partial^2\Phi}{\partial \phi^2}& =-\left[\frac{r}{R}\frac{\partial}{\partial r}\left(r\frac{\partial R}{\partial r} \right)+r^2(l^2+k^2)\right]\\
+              & = -m^2\\
+              \Rightarrow \ \ \Phi(\phi)&=Ae^{\pm iml}\quad \text{(Sinusoidal)}
+             \end{split}$$
+          <br>
+              $$\begin{split}
+              \frac{r}{R}\frac{\partial}{\partial r}\left(r\frac{\partial R}{\partial r} \right)+r^2n^2-m^2& = 0\\
+              \Rightarrow \ \ R(r)&=J_n(kr)\quad \text{(Cylindrical Bessel)}
+            \end{split}
+            $$
+          </div>
+          Notice here the sign of \(m^2\) and \(l^2\) are aribtrary. Here, assuming real constants, the conventional
+          signs are utlilized as they most often correspond to relevant phyiscal systems of interest.
+        </p>
+
 
       <h3>Spherical Coordinates</h3>
         <p>
-          In spherical coordinates, the Helmholtz equation takes the form
+          In spherical coordinates (with \(\phi\) set as the azimuthal angle and \(\theta\) the co-latitude)
+          the Helmholtz equation takes the form
           <div class="eq">
           $$
             \frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial \psi}{\partial r}\right) 
-            +\frac{1}{r^2\sin\theta }\left(\sin\theta\frac{\partial^2 \psi}{\partial \phi^2}\right)
-            +\frac{1}{r^2\sin^2\theta}\frac{\partial^2 \psi}{\partial z^2}-k^2\psi=0
+            +\frac{1}{r^2\sin\theta }\frac{\partial}{\partial \theta}\left( \sin\theta\frac{\partial \psi}{\partial \theta}\right)
+            +\frac{1}{r^2\sin^2\theta}\frac{\partial^2 \psi}{\partial \phi^2}+k^2\psi=0
           $$
           </div>
         </p>
         <p>          
           Again, we write out the overall function \(\psi\) as a product of single variable functions.
-          In the context of spherical coordinates, we have the following,
+          In the context of spherical coordinates, we have the following:
           <div class="eq">
           $$
-            \psi(r,\phi,\theta)=R(r)\Phi(\phi)\Theta(\theta)
+            \psi(r,\phi,\theta)=R(r)\Theta(\theta)\Phi(\phi).
           $$
           </div>          
         </p>
+        <p>
+          Substituing this into the spherical Helmholtz equation and then dividing by \(\psi\) results in the relation
+          below.
+          <div class="eq">
+          $$
+            \frac{1}{Rr^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial R}{\partial r}\right) 
+            +\frac{1}{\Theta r^2\sin\theta }\frac{\partial}{\partial \theta}\left( \sin\theta\frac{\partial \Theta}{\partial \theta}\right)
+            +\frac{1}{\Phi r^2\sin^2\theta}\frac{\partial^2 \Phi}{\partial \phi^2}+k^2\psi=0
+          $$
+          </div>
+        </p>
+        <p>
+          Below are the separated equations for the spherical Helmholtz equation.
+          <div class="eq">
+          $$
+          \begin{align} 
+            \frac{1}{\Phi}\frac{\partial^2\Phi}{\partial \phi^2}&=-\left[ \frac{\sin^2\theta}{R}\frac{\partial}{\partial r}\left(r^2\frac{\partial R}{\partial r}\right) 
+            +\frac{\sin\theta}{\Theta  }\frac{\partial}{\partial \theta}\left( \sin\theta\frac{\partial \Theta}{\partial \theta}\right)+kr^2\sin^2\theta\right]\\
+            & = -l^2\\
+            \Rightarrow \ \ \Phi(\phi)& =e^{il\phi}\quad\text{(Complex Exponential)}\\
+            \\
+            \\
+            \frac{1}{R}\frac{\partial}{\partial r}\left(r^2\frac{\partial R}{\partial r}\right)+k^2r^2 & = -\left[
+            \frac{1}{\Theta\sin\theta }\frac{\partial}{\partial \theta}\left( \sin\theta\frac{\partial \Theta}{\partial \theta}\right)
+            +\frac{1}{\Phi \sin^2\theta}\frac{\partial^2 \Phi}{\partial \phi^2}\right]\\
+            \frac{r^2}{R}\frac{\partial^2 R}{\partial r^2}+\frac{2r}{R}\frac{\partial R}{\partial r}+k^2r^2& = n^2\\
+            \Rightarrow \ \ R(r)& =J_n(kr) \quad\text{(Spherical Bessel)}\\
+            \end{align}$$
+         <br>
+           $$\begin{align}
+            \frac{\sin\theta}{\Theta }\frac{\partial}{\partial \theta}\left( \sin\theta\frac{\partial \Theta}{\partial \theta}\right)
+            + n^2\sin^2\theta
+            & = -\left[\frac{1}{\Phi}\frac{\partial^2 \Phi}{\partial \phi^2} 
+            \right] \\
+            & = l^2\\
+            \Rightarrow \ \ \Theta(\theta)& = P^m_{l}(\cos\theta ) \quad\text{(Associated Legendre Polynomials)}\\
+          \end{align}
+          $$
+          </div>
+        </p>
+
+     <h3>Cartesian Coordinates </h3>
+        <p>
+          In \(d\)-dimensional Cartesian coordinates, the Helmholtz equation takes the form
+          <div class="eq">
+          $$
+            \sum_{i=1}^{d}\frac{\partial^2\psi}{\partial x_i^2}+k^2\psi=0
+          $$
+          </div>
+        </p>
+        <p>
+          Our assumed solution form is then 
+          <div class="eq">
+          $$
+            \psi(x_1,...x_d)=X_1(x_1)X_2(x_2)...X_d(x_d).
+          $$
+          </div>
+        </p>
+        <p>
+          Hence, all coordinates can be easily and similarly decomposed into
+          <div class="eq">
+          $$\begin{split}
+            \frac{\partial^2X_i}{\partial x_i^2}&=l_i^2X_i\\
+            \Rightarrow\ \ X_{i}(x_i)& =e^{\pm l_ix_i} \quad \text{(Complex Exponential)}\\
+            \end{split}\\
+          $$
+          </div>   
+          Where \(\sum_dl_d^2=-k^2\).        
+        </p>     
+     <h2>Resources</h2>
+        Separation of variables is covered in Arfken, Weber, and Harris' <em>Mathematical Methods for Physicist's</em>.
   </body>
 </html>
