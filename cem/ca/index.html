@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clifford Algebra</title>
+    <link href="../../styles/ca.css" rel="stylesheet">
+    <link href="../../styles/qisstyle.css" rel="stylesheet">
+
+
+    <!--Geogebra Support-->
+    <script src="navigation.js"></script>
+
+
+    <!--MathJax Support-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}},
+                                  loader: {load: ['[tex]/ams']},
+                                  tex: {packages: {'[+]': ['ams']}});</script>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../assets/images/iconwhite/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/images/iconwhite/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/images/iconwhite/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/images/iconwhite/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../../assets/images/iconwhite/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../assets/images/iconwhite/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../assets/images/iconwhite/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../assets/images/iconwhite/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../../assets/images/iconwhite/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../../assets/images/iconwhite/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../../assets/images/iconwhite/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../../assets/images/iconwhite/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../../assets/images/iconwhite/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="../../assets/images/iconwhite/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="../../assets/images/iconwhite/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="../../assets/images/iconwhite/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="../../assets/images/iconwhite/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="../../assets/images/iconwhite/mstile-310x310.png" />
+
+
+
+    <meta charset="UTF-8">
+    <meta name="description" content="A brief motivation for the relevance of 
+    Cifford algebras to physics, as well as an overview of the basic operations
+    that solidify this relevance.">
+    <meta name="keywords" content="Clifford Algebra, physics, oriented area, oriented 
+    volume, rotors, rotation, reflection, geometric product, wedge product">
+    <meta name="author" content="Alexander J. Heilman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+  </head>
+  
+  <body>
+
+
+  <div id="home">
+    <a href="https://www.alexheilman.com"><img id="homeimg" src="../../assets/images/iconwhite/favicon-196x196.png" width="50"></a>
+  </div>
+
+  <div id="up">
+    <a id="upa" href="https://www.alexheilman.com/cem/index.html">CEM</a>
+  </div>
+
+  <h1 id="title">Clifford Algebras</h1>
+    <p id="blurb">
+      We all know areas and volumes can be given a scalar magnitude. Clifford alegbras
+      allow us to extend this magnitude and encode some orientation along with this magnitude 
+      much as we do for oriented lengths as vectors. Effectively it's the mathematical 
+      tool set that allows us to work with oriented n-dimensional slices of some space.
+      It introduces many concepts sometimes with several names for similar objects, so for 
+      those confused by these matters there is a small section here discussing, at large,
+      these nuances and synonyms.
+      <br>
+      The exterior product is also known as the wedge product and is an effective
+      generalization of the cross product sometimes encountered. Furthermore, the 
+      exterior product (which we shall henceforth call the wedge product) defines
+      an exterior algebra over some vector space. These exterior algebras are also known
+      as the Grassman algebras, but they only include specifically sums of k-blades.
+      Clifford algebras then allow us to define sums of arbitrary order blades (i.e. sums
+      of blades not neccesarily of the same order), known as multivectors; this is accomplished
+      with the introduction of a new product called the geometric product. Bivectors are effectively
+      2-blades, just as trivectors are 3-blades. include blade definitions      
+      Those interested in the topic of this paragraph may also benefit from this
+      <a href="https://math.stackexchange.com/questions/1991814/whats-the-difference-between-geometric-exterior-and-multilinear-algebra">
+      Stack Exchange Discussion</a>.
+    </p>
+    <h2 id="blades">
+      Blades
+    </h2>
+    <p id="bp">
+      
+    </p>
+    <h2 id="vptit">
+      Vector Products
+    </h2>   
+    <p id="vpp" >
+      For ease of transition, we first define two products that can be combined
+      to form the geometric product (however, both can be defined in terms only of the geometric
+      product, as is shown later). The first is the familiar dot product, which most physicists are
+      familiar with; the second is an antisymmetric product know as the wedge product 
+      (or exterior product), which may
+      not be encountered in a course of undergraduate classes. The wedge
+      product is related to the cross product but only as a special case for
+      three dimensions, which allows for an isomorphism between areas and spatial directions.
+    </p>
+      <h3 id="dptit">
+        Dot Product
+      </h3>
+      <p id="dpp">
+        The dot product is a multi-linear symmetric product that given two blades of
+        order \(k\) and \(l\) returns a blade of \(k-l\). It is something of a measure 
+        of orthogonality, or mutual projection, in that two blades of the same dimension return zero if all
+        the basis elements are orthogonal.        
+      </p>
+      <h3 id="wptit">
+        Wedge Product
+      </h3>
+      <p id="dpp">
+        The wedge product is a multi-linear antisymmetric product that given two blades of
+        order \(k\) and \(l\) returns a blade of \(k+l\). It is something of a measure 
+        of mutual rejection, in that two blades of the same dimension return zero if all
+        the basis elements are parallel.        
+      </p>
+
+      <iframe src="https://www.geogebra.org/classic/njwzycxs?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+    <h2 >
+      Resources 
+    </h2>
+     <p id="rp">
+       One decent quick and rough intro to working in Clifford algebras is John Denker's
+       short set of notes found <a href="http://www.av8n.com/physics/clifford-intro.pdf">here</a>.
+     </p>
+  </body>
+</html>
