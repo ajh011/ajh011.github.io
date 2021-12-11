@@ -67,11 +67,12 @@
             an operational quantum computer would immediatley render obsolete some
             forms of cryptography currently implemented (namely the application of Shor's Algorithim
             to the widely used RSA encryption scheme). The foray into basic quantum algorithms below focuses
-	    on the current paradigm of the qubit, inspired by classical computation, but a case can be made
-	    for a future of quantum computation based on the <a href="./qudits/index.html">qudit</a>.
+	        on the current paradigm of the qubit, inspired by classical computation, but a case can be made
+	        for a future of quantum computation based on the <a href="./qudits/index.html">qudit</a>.
           </p>
       </section>
-  <!--    <section id="gates">
+ 
+<!--    <section id="gates">
         <h2 id="gatestitle">
           Basic Quantum Gates
         </h2>
@@ -84,7 +85,7 @@
           Pauli Matrices
         </h3>
           <p>
-            The most basic qubit gates are also known as and can be represented by the Pauli
+            The most basic qubit gates are also known as the  and can be represented by the Pauli
             matrices, shown below.
             <div class="eq ib" id="pauli0">
               $$
@@ -115,14 +116,20 @@
           Hadamard Gate
         </h3>
           <p>
+            Perhaps the second most known gate is the Hadamard gete, generally depicted
+            in a circuit as a boxed \(H\). We will later see it's simply a low dimensional case
+            of the Quantum Fourier Transform.
            <div class="eq ib" id="Hgate">
               $$
               H=\frac{1}{\sqrt{2}}\begin{bmatrix} 1 &  1\\
-                                         1 & -1\\ \end{bmatrix}
+                                                  1 & -1\\ \end{bmatrix}
               $$
             </div>
           </p>
       </section> -->
+
+
+
       <section id="algorithims">
           <h2 id="algorithimstitle">
             Basic Quantum Algorithims
@@ -137,6 +144,8 @@
             incorporates the QFT, and amplitude amplification generally requires the use of phase
             estimation. Phase estimation is the quantum machinery in Shor's algorithim.
             Amplitude amplification can be seen as a generalization of Grover's search algorithim.
+            The story told below, packaged with example simulations, is also told in
+            the presentation found here: <a href="../products/notes/qa/qa.pdf" >Quantum Algorithms in Qiskit</a>
             </p>
 
 
