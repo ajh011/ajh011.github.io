@@ -66,15 +66,30 @@
 
 
 
-    <h1 id="title">Qudits</h1>
+    <h1 id="title">QuDits and D-Valued Quantum Logic</h1>
      <p>
-      A qudit is a generalization of a qubit in that it's a quantum state of
-      finite dimension. Where a qubit's state can be described by a linear combination
-      of two orthogonal states, a qudit can be described by a linear combination of 
-      \( d \)-many orthogonal states.
+       A qudit is a generalization of a qubit in that it's a quantum state of
+       finite dimension. Where a qubit's state can be described by a linear combination
+       of two orthogonal states, a qudit can be described by a linear combination of 
+       \( d \)-many orthogonal states. Perhaps this is best stated in the form of an
+       example, the extension of the well know plus state, \(\vert +\rangle = 
+       \frac{1}{\sqrt{2}}\left(\vert 0\rangle + \vert 1\rangle\right)\), to a qudit
+       of dimension d can be stated explicity as:
+       <div class="eq">
+       $$
+         \vert +_d\rangle=\frac{1}{\sqrt{d}}\left(\vert 0 \rangle + \vert 1\rangle + \vert 2\rangle + ...
+         + \vert d-1\rangle \right)
+       $$
+       </div>
      </p>
-
-    <h2>Qudit Gates</h2>
+     <div>
+       So why do we care about qudits when we have qubits? One good reason to consider
+       these d-dimensional spaces is that they facilitate d-valued quantum logic, which may 
+       be more computationally efficient for some tasks. To accomplish
+       a real implementation of this d-valued quantum logic we need to consider a certain set 
+       of common <span id="gengatbut" class="shim">Generalized Gates.</span>
+    <div class="content" id="gengates">
+     <h2 id="relqudgat">Relevant Qudit Gates</h2>
      <p>
       The most relevant gates for our considerations at the moment are the Quantum Fourier Transform (QFT), the 
       generalized \(X\) gate, the generalized \(Z\) gate and the idea of a multi-qudit controlled gate.
@@ -323,6 +338,8 @@
           Which is known as a<a target="_blank" href="https://pdfs.semanticscholar.org/c006/ab26a26b8888e41ee3d0a5959fdfe333ca89.pdf">
           quantum multiplexer</a>.
        </p>
+     </div>
+   </div>
 
     <h2>Basic \(d\)-ary Quantum Algorithms</h2>
       <p>
@@ -336,7 +353,7 @@
       </p>
       <h3>Qudit Phase Estimation</h3>
         <p>
-          Phase estimation has a clean extentsion into the realm of qudits, as done by Vamsi Parasa
+          Phase estimation has a clean extension into the realm of qudits, as done by Vamsi Parasa
           and Marek Perkowski in<a target="_blank" href="https://www.researchgate.net/publication/224247587_Quantum_Phase_Estimation_Using_Multivalued_Logic">
           <em>Quantum Phase Estimation Using Multivalued Logic</em></a> (explained in the associated <a target="_blank" href="https://pdfs.semanticscholar.org/c006/ab26a26b8888e41ee3d0a5959fdfe333ca89.pdf">presentation</a>).
           See also Ye Cao, et al.'s <a target="_blank" href="https://www.researchgate.net/publication/241299188_Quantum_Fourier_Transform_and_Phase_Estimation_in_Qudit_System"><em>Quantum Fourier Transform and Phase Estimation in Qudit System</em></a> 
@@ -354,8 +371,10 @@
       <h3>Multiple-Valued Grover Search Algorithm</h3>
         <p>
           Grover's search algorithm can only be used to evaluate sparse binary
-          functions, that is functions that can take one of two values over a range
-          of values.
+          functions, that is, multivariate functions where variables can take one of two values.
+          A natural question to ask then, is whether we may encode multivariate finite functions of
+          arbitrary input dimension. And, indeed we can in qudit spaces, but whether we can efficiently
+          evaluate these encodings is yet undecided.
         </p>
       <h4>Finite-Function-Encoding States</h4>
         <p>
@@ -414,7 +433,7 @@
 
       <p>
         This encoding can be physically realized by prescribed application
-        of generalized \(Z\) gates. For prime \(d\) we have that all finite-functions
+        of controlled generalized \(Z\) gates. For prime \(d\) we have that all finite-functions
         can be described by multivariate polynomials. For more detail, see <a target="_blank" href="https://arxiv.org/pdf/2012.00490.pdf">
         <em>Finite-Function-Encoding Quantum States</em></a>.
       </p>
@@ -425,12 +444,17 @@
           <a target="_blank" href="https://arxiv.org/pdf/2001.06316.pdf"><em>Grover’s Algorithm and Many-Valued Quantum Logic</em></a> is described in circuit form below.
           <div id="ggdosvg"><img width="100%" height="auto" id="ggdoimg" src="../../assets/images/qis/GGDOwhite.svg" alt="N-Qudit Generalized Grover Diffusion Operator"></div> 
 
-        <button type="button" class="collapsible">Two Qutrit Example</button>
+        <button type="button" class="collapsible">Three Qutrit Example</button>
         <div class="content">
-        Let's look  at a two qutrit example and see what the operator \(\Delta_3(2)\) explicitly looks like. The circuit is the one below:
-        <div id="2qtggdosvg"><img width="100%" height="auto" id="2qtggdoimg" src="../../assets/images/qis/2qtGGDOwhite.svg" alt="N-Qudit Generalized Grover Diffusion Operator"></div> 
-        Note that we now omit the subscripts for the gates as the context assures us they're all 3 dimensional (given we're
-        dealing with qutrits).<!--
+        Let's look  at a three qutrit example and see what the operator \(\Delta_3(3)\) explicitly looks like.
+        The circuit is the one below:
+        <div id="3qtggdosvg"><img width="100%" height="auto" id="2qtggdoimg" 
+        src="../../assets/images/qis/3qtGGDOwhite.svg" alt="3-Qudit Generalized Grover Diffusion Operator"></div> 
+        Note that we now omit the subscripts for the gates as the context assures us they're all 3 dimensional
+        (given we're dealing with qutrits).
+
+
+<!--
         Now, let's see what this circuit looks like as a matrix
         (And again, our \(\omega\) is \(\omega_3=e^{\frac{2\pi i}{3}}\) because we're 
         dealing with three dimensional quantum states).
@@ -466,7 +490,30 @@
       <!--<h3>Many-valued Quantum Counting</h3><a href="https://math.stackexchange.com/questions/3094203/number-of-roots-of-a-multilinear-polynomial-over-a-finite-field?rq=1">Upper bound on number of roots</a>
       -->
 
+    <h4>Generalized Grover Search</h4>
+      <p>
+        The principle part of the search algorithm is just the repeated application of a function encoding gate
+        and a generalized Grover diffusion operator, together termed a Grover iteration. After a prescribed 
+        number of applications of this Grover iteration (this number depends on the relative proportion of
+        the different values), we measure in the computational basis and expect a 
+        high amplitude in the sparsest value. After a few more iterations we expect a high amplitude in the 
+        two sparsest values and so on, until we return to high amplitude exclusively in the sparsest 
+        value again.
+<!-- Not jst yet
+        <div class="content">
 
+        </div>
+
+      	<button type="button" class="collapsible">Three Qutrit Example with \(f=x^2y + 2xz\)</button>
+        <div class="content">
+          <div id="3qtgssvg">
+            <img width="100%" height="auto" id="gsimg" src="../../assets/images/qis/3qtGSwhite.svg" 
+            alt="3-Qutrit Generalized Grover Search for Example Function State">
+          </div> 
+	</div>
+
+      </p>
+-->
 
     <h2>Simulating Qudits</h2>
       <p>
@@ -483,6 +530,24 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+<script>
+var coll = document.getElementsByClassName("shim");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("shimmed");
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";
