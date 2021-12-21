@@ -62,6 +62,12 @@
     <img class="center" src="../../assets/images/neural/ffnwhite.svg" alt="Example neural network" width="87%" height="auto" id="examplenn">
     <section id="basics">
       <h1 id="basicstit"> Neural Network Components  </h1>
+      <p>
+        Basic networks are really composed of rather simple objects. Like any
+        network, neural nets have nodes, or neurons, that tend to apply relatively
+        easy to compute function on a set of input data. Generally they apply some
+        weighted sum to the input vector and then apply some activation function.
+      </p>
       <h2 id="neuronstit">Neurons</h2>
       <p >
         <div id="nleft" class="">
@@ -94,7 +100,7 @@
       <p id="nnbp1">
         <h2> Layers </h2>
         <img src="../../assets/images/neural/ffnwhiteinput.svg" alt="Basic computation done by a layer in a neural network" width="45%" height="auto"
-          id="ffninput"> 
+          id="ffninput" class="center"> 
         <div id="nnbpright" >
           In between each intermediate layer of the neural network, the aggregation of
           inputs can be seen as a matrix acting
@@ -141,8 +147,34 @@
         <h2 id="bptit">
           Backpropogation
         </h2>
+          <p>
+            Backpropogation is a way to calculate how tweaking a certain parameter 
+            affects one of the model's output for a given input. It's really just
+            an application of the chain rule from standard calculus on an 
+            admittedly large system.
+          </p>
         <img src="../../assets/images/neural/bbdiagtemp.svg" alt="Backpropogation path highlighted and annotated" width="87%" 
           height="auto" id="bppath">
+
+         <h2 id="convtit">
+           Convolutional Neural Networks
+         </h2>
+           <p>
+             A convolutional network actually generates what are called feature
+             maps at each layer. These feature maps are the result of convoluting
+             hierarchical elements with either a lower order feature map; or at the
+             base layer, convolution of some basic elements with the input map.
+             The specific form of these elements are now the parameters under
+             flux in the training process. These elements are also known as 
+             filters.
+           </p>
+           <p>
+             Generally speaking, the convolutional layers of this form work best
+             for feature extraction; whereas, a regular 'fully connected' network
+             is better for the classification decision. Hence, many CNNs actually
+             are a combination of several convolutional layers attached to a 
+             regular neural network.
+           </p>
     </section>
     <section id="resources">
         <h1 id="restitle">
@@ -152,7 +184,9 @@
           Michael A. Nielsen has a great book on neural networks for free that can be
           found <a href="http://neuralnetworksanddeeplearning.com/">here</a>. Another
           good, free, online resource is Goodfellow, Bengio, and Courville's book which
-          can be found <a href="https://www.deeplearningbook.org/">here</a>.
+          can be found <a href="https://www.deeplearningbook.org/">here</a>. 
+          Coursera has plenty of wonderful interactive courses on neural 
+          networks and machine learning.          
         </p>
     </section>
   </body>
