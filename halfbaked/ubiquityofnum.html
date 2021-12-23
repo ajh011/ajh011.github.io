@@ -13,6 +13,13 @@
         document.documentElement.classList.add('js');
     </script>
 
+    <!--MathJax Support-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}},
+                                  loader: {load: ['[tex]/ams']},
+                                  tex: {packages: {'[+]': ['ams']}});</script>
+
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="../styles/halfbakedstyles.css">
@@ -167,7 +174,7 @@
                                         </svg>
                                           
                                         <span class="cat-links">
-                                            <a href="#0">Philosophy of Mathematics</a>
+                                            <a href="#0">Mathematical Philosophy</a>
                                         </span>
                                     </div>
                                 </div>
@@ -185,11 +192,66 @@
                                 <div class="entry__content">
                                     <p class="lead">
                                     Given that the reals are a unique set of objects defined by certain properties, anything that can be modeled by
-                                    them is neccessarily exhibiting those defining properties of the reals.</p> 
+                                    them is neccessarily exhibiting those defining properties.</p> 
 
                                     <p class="drop-cap">
-                                    Real numbers are the unique complete ordered field. Let's lay out exactly what this means, 
+                                    Real numbers are the unique complete ordered field. In the next section we'll formally lay out what 
+                                    this means; but, for now, we'll provide some motivation for our current considerations. If some physical
+                                    system can in some way be modeled by the real numbers, then we'll refer to said system as a <em>physical instance</em> of
+                                    the reals. These instances neccessarily exhibit the same properties as the reals, meaning they have some 
+                                    sense of order and completeness, as well as some operations between elements of the instance that behave nicely.
+                                    Furthermore, any theorem or mathematical machinery applicable to the reals should also apply to true physical
+                                    instances of them, namely the tools of calculus and other constructions on these basic elements. So do these 
+                                    instances really exhibit all the properties we would expect, and if not, where do they fail?
                                     </p>
+
+            
+            
+                                    <h2>Defining Properties of the Reals</h2>
+            
+                                    <p>
+                                    It's hard to talk about the reals without mentioning the operations between them. In fact,
+                                    they're probably useless without these operations. The reals can be defined as the unique complete
+                                    ordered abelian group, where the group action is simple addition. Then with multiplication 
+                                    (and it's discrete relation to addition), we get a field for free.
+                                    </p>
+
+                                    <p>
+                                    For the topic at hand, it's most advatageous to consider an axiomatization of the reals, as opposed to a 
+                                    construction of them, as this facilitates our discussion of properties.
+                                    </p>
+            
+                                    <blockquote>
+                                        <h3>Axioms of the Reals</h3>
+                                        <em>Field Axioms</em>
+                                        <ul>
+                                            <li>Associativity</li>
+                                            <li>Distributivity</li>
+                                            <li>
+                                        </ul>
+                                        <em>Order Axioms</em>
+                                        <ul>
+                                            <li>Order</li>
+                                        </ul>
+                                        <em>Completeness</em>
+                                        <ul>
+                                            <li>Any subset of the reals has a least upper bound and greatest lower bound that exists and is contained 
+                                            within the reals. (This is the axiomatic approach to Dedekind cuts)</li>
+                                        </ul>
+                                    </blockquote>
+
+                                    <h2>Proofs of Uniqueness</h2>
+                                    Prove unique object is defined as reals given above properties. 
+
+                                    Prove any achimedean field is a subfield of reals (so even if a few properties don't hold we can still use and inherit properties of numbers)
+                                    
+                                    <a href="https://math.stackexchange.com/questions/2964961/is-mathbbr-the-only-complete-ordered-abelian-group">Is R the only complete ordered abelian group?</a>,
+                                    <a href="https://math.stackexchange.com/questions/65867/is-mathbbr-the-only-ordered-field?rq=1">Is R the only ordered field</a>,
+                                    <a href="https://planetmath.org/archimedeanorderedfieldsarereal">Archimedean ordered fields are real.</a>
+                                    <a href="https://mathoverflow.net/questions/362991/who-first-characterized-the-real-numbers-as-the-unique-complete-ordered-field">first characterized</a>,
+                                    Wikipedia on ordered fields
+                                    <a href="https://sites.math.washington.edu/~hart/m524/realprop.pdf">Axioms1</a>
+                                    <a href="https://web.math.ucsb.edu/~moore/2axiomsforreals.pdf">Axioms2</a>
 
                                     <h2>Physical Instances of the Reals</h2>
             
@@ -203,37 +265,14 @@
                                         <img src="../assets/images/halfbaked/measure.jpg"  alt="A set of measuring tools that all utilize real numbers.">
                                     </figure>
             
-                                    <p>
-                                    Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor 
-                                    sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat 
-                                    enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco 
-                                    magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum 
-                                    adipisicing aliqua ea nisi sint ut quis proident ullamco ut dolore culpa occaecat ut 
-                                    laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat 
-                                    in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.
-                                    </p>
-            
-                                    <h2>Defining Properties of the Reals</h2>
-            
-                                    <p>
-                                    It's hard to talk about the reals without mentioning the operations between them. In fact,
-                                    they're probably useless without these operations. The reals can be defined as the unique complete
-                                    ordered abelian group, where the group action is simple addition. Then with multiplication 
-                                    (and it's discrete relation to addition), we get a field for free.
-                                    </p>
-            
-                                    <blockquote>
-                                        <ul>
-                                            <li></li>
-                                        </ul>
-                                    </blockquote>
-            
                                     <h2>Inherited Problems</h2>
             
                                     <p>
                                     Perhaps the most complex, and certainly the hardest to define, characteristic of the reals is that of completeness.
                                     In fact, one of the greatest challenges in axiomatic constructions for the numbers we know and love is the jump from 
-                                    algebraic numbers to the complete set of the reals. This jump requires, in one axiomatization, the use of Dedekind cuts.
+                                    algebraic numbers to the complete set of the reals. This jump requires, in some constructions, the use of Dedekind cuts.
+                                    Alternatively, in the form of an axiom, we can state this property in terms of Cauchy sequences; that is, for every Cauchy
+                                    sequence that is a subset of the reals, the limits of such sequences are also included in the reals.
                                     </p>
 
                                     <p>
@@ -246,46 +285,29 @@
                                     <p>
                                     If we consider again the idea of some volume of water, we know for certain (now) that there's some minimum 
                                     unit of water. Thus, we can't infinitely divide it and we certainly don't satisfy the completeness property
-                                    of the reals. Furthermore, even something as abstract as economics, in physical instances has a lowest unit, namely
-                                    for USD the penny.
-                                    </p>>
-            
-                                        
-<pre><code class="language-css">
-    code {
-        font-size: 1.4rem;
-        margin: 0 .2rem;
-        padding: .2rem .6rem;
-        white-space: nowrap;
-        background: #F1F1F1;
-        border: 1px solid #E1E1E1;	
-        border-radius: 3px;
-    }
-</code></pre>
-                                            
-                                    <p>
-                                    Odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores et 
-                                    quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa.</p>
-            
-                                    <ul>
-                                        <li>Donec nulla non metus auctor fringilla.
-                                            <ul>
-                                                <li>Lorem ipsum dolor sit amet.</li>
-                                                <li>Lorem ipsum dolor sit amet.</li>
-                                                <li>Lorem ipsum dolor sit amet.</li>
-                                            </ul>
-                                        </li>
-                                        <li>Donec nulla non metus auctor fringilla.</li>
-                                        <li>Donec nulla non metus auctor fringilla.</li>
-                                    </ul>
-            
-                                    <p>
-                                    Odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores et quas 
-                                    molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa. Aenean eu leo quam. 
-                                    Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue 
-                                    laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing 
-                                    in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.
+                                    of the reals. Even something as abstract as economics has a lowest unit, namely
+                                    for USD, the penny. And other, perhaps moral, problems may be found with the apparent linear ordering of the worth
+                                    of things, inherited from the monetary value of goods. For instance, a family heirloom may appear worthless if only 
+                                    because it's monetary value is near nothing.
                                     </p>
+
+                                    <figure class="alignwide">
+                                        <img src="../assets/images/halfbaked/stocks.jpeg"  alt="A set of measuring tools that all utilize real numbers.">
+                                    </figure>
+            
+
+                                    <p>
+                                    This completeness isn't as easily cast off as we might imagine, however. Completeness is a requirement for 
+                                    the applicability of calculus, a tool oft used in physical instances of the reals. So, then what ever could replace
+                                    such an indispensible tool? I'm not sure. 
+                                    </p>
+
+                                    <p>
+                                    These considerations of the deficieny of the reals are further explored in <a href="https://medium.com/@alex.lamb/the-real-numbers-arent-real-40fae6f4e2f9">
+                                    Alex Lamb's article</a>.
+                                    </p>
+                                      
+
 
                                     <p class="entry__tags">
                                         <strong>Tags:</strong>
@@ -306,13 +328,11 @@
                                         <div class="entry__author-info">
                                             <h5 class="entry__author-name">
                                                 <a href="#0">
-                                                    Naruto Uzumaki
+                                                    Alex Heilman
                                                 </a>
                                             </h5>
                                             <p>
-                                            Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, 
-                                            a pharetra augue laboris in sit minim cupidatat ut dolor voluptate enim veniam 
-                                            consequat occaecat.
+                                            A physics graduate student with a B.S. in physics from Lebanon Valley College. 
                                             </p>
                                         </div>
                                     </div>
@@ -320,16 +340,10 @@
                                 </div> <!-- end entry-content -->
 
                                 <div class="post-nav">
-                                    <div class="post-nav__prev">
-                                        <a href="single-standard.html" rel="prev">
-                                            <span>Prev</span>
-                                            The Pomodoro Technique Really Works. 
-                                        </a>
-                                    </div>
                                     <div class="post-nav__next">
-                                        <a href="single-standard.html" rel="next">
+                                        <a href="maxwellequation.html" rel="next">
                                             <span>Next</span>
-                                            How Imagery Drives User Experience.
+                                            Maxwell's Equation in Geometric Form.
                                         </a>
                                     </div>
                                 </div>
