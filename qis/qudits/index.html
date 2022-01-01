@@ -94,7 +94,10 @@
      <h2 id="relqudgat">Relevant Qudit Gates</h2>
      <p>
       The most relevant gates for our considerations at the moment are the Quantum Fourier Transform (QFT), the 
-      generalized \(X\) gate, the generalized \(Z\) gate and the idea of a multi-qudit controlled gate.
+      generalized \(X\) gate, the generalized \(Z\) gate and the idea of a multi-qudit controlled gate [see Muthukrishnan and
+      Stroud's 
+      <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.62.052309"><em>Multivalued logic gates for quantum computation
+      </em></a>].
       These gates are generalizations of the Pauli \(X\) and Pauli \(Z\) operators of two-dimensional
       complex Hilbert spaces. For greater detail and other possible generalizations of the Pauli's in higher
       dimensions, see <a target="_blank" href="https://en.wikipedia.org/wiki/Generalizations_of_Pauli_matrices#Construction:_The_clock_and_shift_matrices">here</a>.
@@ -501,6 +504,14 @@
         high amplitude in the sparsest value. After a few more iterations we expect a high amplitude in the 
         two sparsest values and so on, until we return to high amplitude exclusively in the sparsest 
         value again.
+      </p>
+      <p>
+        Qudit search algorithms can still evaluate binary functions (that is, search through items of two types) as 
+        is done in papers like Saha, et. al.'s <a href="https://arxiv.org/abs/2012.04447"><em>Asymptotically Improved Grover's Algorithm 
+        in Any Dimensional Quantum System with Novel Decomposed n-qudit Toffoli Gate</em></a>. But Grover's search can naturally be
+        extended to lists of items of \(d\) types, as is done in Wang, et. al.'s 
+        <a href="https://www.frontiersin.org/articles/10.3389/fphy.2020.589504/ful"><em>Qudits and High-Dimensional Quantum Computing</em></a>.
+      </p> 
 <!-- Not jst yet
         <div class="content">
 
@@ -514,7 +525,7 @@
           </div> 
 	</div>
 
-      </p>
+
 -->
 
     <h2>Simulating Qudits</h2>
