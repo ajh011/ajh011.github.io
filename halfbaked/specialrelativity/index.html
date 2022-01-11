@@ -149,7 +149,7 @@
                             <header class="entry__header">
     
                                 <h1 class="entry__title">
-                                    The Four Working Tenets of Special Relativity.
+                                    The Four Working Principles of Special Relativity.
                                 </h1>
 
                                 <div class="entry__meta">
@@ -182,8 +182,7 @@
 
                             <div class="entry__media"id="clock">
                                 <figure class="featured-image" >
-                                    <img src="../../assets/images/halfbaked/clock.jpg"   height="500px" alt="Clock utilizing numbers to 
-                                    tell time and describe other phenomena.">
+                                    <img src="../../assets/images/halfbaked/train-short.jpg"   height="500px" alt="Villagers boarding a train. (Photo credit to SenuScape)">
                                 </figure>
                             </div>
 
@@ -200,8 +199,8 @@
                                     <p class="drop-cap">
                                     Four things you likely think are granted immutable by the universe aren't. Things you've likely never 
                                     even considered due to their seemingly mundane existence as basic facts of the universe. These four things are:
-                                    the physically constant flow of time for all observers; the simple addition of relative velocities between
-                                    three or more relative motions; the length of objects no matter their state of motion; and, perhaps most shockingly, 
+                                    the constant flow of time for all observers; the simple addition of relative velocities between
+                                    several bodies; the length of objects no matter their state of motion; and, perhaps most shockingly, 
                                     the simulaneity of events for all observers. These conceptual shifts will be stated explicitly below and justified through 
                                     the single overarching theme of special relativity (and apparently the universe): that the speed of light is the same for 
                                     all observers, no matter their relative speed to each other.
@@ -216,19 +215,71 @@
                                     to you on a train, and they throw a ball, the speed of the ball relative to you should just be the sum of the velocity of the train 
                                     and the velocity of the ball relative to the train. This, however, turns out to be patently false.
                                     </p>
-
                                     <p>
-                                    While this is, in my opinion, the most boring 
+                                    If you can't quite follow what I mean, consider this question: Alice is standing by a train track and she sees Bob
+                                    throwing a ball. If the train is moving at some velocity we'll call \(v_t\), and Bob throws the ball at some speed denoted
+                                    \(v_b\) (as depicted below), how fast does alice see the ball travelling?
+                                    </p>
+
+                                    
+                                    <figure class="alignwide">
+                                        <img src="../../assets/images/halfbaked/trainva.svg"  alt="A train moving with a ball moving within it. Velocity vectors for
+                                        the train relative to Alice (the ground), and for the ball relative to the train, are drawn. (Credit for photo to Ryan Milier)">
+                                    </figure>
+
+                                    <div class="eq">
+                                    $$
+                                        v_{b_a}=\frac{v_{t_a}+v_{b_t}}{1+\frac{v_{t_a}v_{b_t}}{c^2}}
+                                    $$
+                                    </div>
+                                    <p>
+                                    This may seem counterintuitive, as it's hard coded into us that the sum of two velocities shouldn't be less than the two velocities; but 
+                                    it's neccesary to maintain the speed of light. For example, if somehow a train flashed by you at half the speed of light, and someone
+                                    on the train turned on their flash light, the speed of the light cannot be one and a half times the speed of light (though it's frequency
+                                    may be shifted).
                                     </p>
                                       
 
+                                    <h2>Length Contraction</h2>
+                                    <p>
+                                    The next basic intuition of the mind which we will call into question is that of the solid dimension of rigid objects. Now,
+                                    we intuitively expect that a meter stick will (granted it's not broken or otherwised changed) remain a meter long. And that's whether it's here, 
+                                    sitting across the room, or flying by us at any speed. But again, modern physics proclaims our intuition wrong; specifically, that when the meterstick's 
+                                    velocity relative to you changes, it's length (now specified as relative to you as well) changes.
+                                    </p>
+                                    <div class="eq">
+                                        $$
+                                            l_a=\frac{l_t}{\sqrt{1+\frac{v_{t_a}^2}{c^2}}}
+                                        $$
+                                    </div>
+
+                                    <h2>Time Dilation</h2>
+                                    <p>
+                                    The flow of time itself is also altered in the paradigm of special relativity. Again, our intuition expects
+                                    that the quartz watch on my wrist ticks while I sit at home at the same rate my friend's does while sitting on the 
+                                    train on his way to work (granted neither malfunction). But alas, things cannot be so simple. Indeed the faster he 
+                                    travels relative to me, the slower his watch ticks relative to mine. Of course, though, the speeds at which even the 
+                                    fastest trains travel, this effect is but a mere pittance. 
+                                    </p>
+                                    <div class="eq">
+                                        $$
+                                            \delta t_a=\frac{\delta t_t}{\sqrt{1+\frac{v_{t_a}^2}{c^2}}}
+                                        $$
+                                    </div>
+
+                                    <h2>Rear Clock Ahead Effect</h2>
+                                    <p>
+                                    This is perhaps the most jarring effect of all those in our discussion. It's equivalent to the loss of simultaneity,
+                                    though a more functional title in that it reminds you in which direction things are now favored. If a train goes passing by,
+                                    our brain suggests instinctively that all that is simultaneous in our view should also be simultaneous to a passenger on the train.
+                                    This, however, is not true. In fact, the events which are simultaneous to those on the train are offset so that events 
+                                    </p>
 
                                     <p class="entry__tags">
                                         <strong>Tags:</strong>
                     
                                         <span class="entry__tag-list">
                                             <a href="#0">Physics</a>
-                                            <a href="#0">Clifford Algebra</a>
                                         </span>
                         
                                     </p>
