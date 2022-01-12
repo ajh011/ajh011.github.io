@@ -192,8 +192,7 @@
                                     <p class="lead">
                                     Special relativity, while paradigm shifting, doesn't require much math outside of algebra to understand at
                                     it's most basic level: that of constant relative velocity between reference frames. In fact, at this level,
-                                    special relativity may be broken into four working concepts and relations between frames to fully describe
-                                    these effects.
+                                    special relativity may be fully specified by four working concepts.
                                     </p> 
 
                                     <p class="drop-cap">
@@ -216,27 +215,32 @@
                                     and the velocity of the ball relative to the train. This, however, turns out to be patently false.
                                     </p>
                                     <p>
-                                    If you can't quite follow what I mean, consider this question: Alice is standing by a train track and she sees Bob
-                                    throwing a ball. If the train is moving at some velocity we'll call \(v_t\), and Bob throws the ball at some speed denoted
-                                    \(v_b\) (as depicted below), how fast does alice see the ball travelling?
+                                    If you can't quite follow what I mean, consider this question: Alice is standing by a train track and she sees Bob, who's on the train,
+                                    throwing a ball. If the train is moving at some velocity we'll call \(v_{t_a}\), and Bob throws the ball at some speed denoted
+                                    \(v_{b_t}\) relative to the train (depicted below), how fast does alice see the ball travelling?
                                     </p>
 
                                     
                                     <figure class="alignwide">
                                         <img src="../../assets/images/halfbaked/trainva.svg"  alt="A train moving with a ball moving within it. Velocity vectors for
-                                        the train relative to Alice (the ground), and for the ball relative to the train, are drawn. (Credit for photo to Ryan Milier)">
+                                        the train relative to Alice (the ground), and for the ball relative to the train, are drawn. (Credit for photo to Ryan Milier, Markup by A.H.)">
                                     </figure>
+
+                                    <p>
+                                    Obviously, the ball is just traveling at the sum of the two velocities, that is \(v_{t_a}+v_{b_t}\), right? It turns out, as an empirically
+                                    verified fact, that this is incorrect. Alice will only see the ball traveling at the speed \(v_{b_a}\) given by the formula below:
+                                    </p>
 
                                     <div class="eq">
                                     $$
-                                        v_{b_a}=\frac{v_{t_a}+v_{b_t}}{1+\frac{v_{t_a}v_{b_t}}{c^2}}
+                                        v_{b_a}=\frac{v_{t_a}+v_{b_t}}{1-\frac{v_{t_a}v_{b_t}}{c^2}}.
                                     $$
                                     </div>
                                     <p>
                                     This may seem counterintuitive, as it's hard coded into us that the sum of two velocities shouldn't be less than the two velocities; but 
                                     it's neccesary to maintain the speed of light. For example, if somehow a train flashed by you at half the speed of light, and someone
                                     on the train turned on their flash light, the speed of the light cannot be one and a half times the speed of light (though it's frequency
-                                    may be shifted).
+                                    may be shifted), it must still be \(c\), the speed of light.
                                     </p>
                                       
 
@@ -244,15 +248,40 @@
                                     <p>
                                     The next basic intuition of the mind which we will call into question is that of the solid dimension of rigid objects. Now,
                                     we intuitively expect that a meter stick will (granted it's not broken or otherwised changed) remain a meter long. And that's whether it's here, 
-                                    sitting across the room, or flying by us at any speed. But again, modern physics proclaims our intuition wrong; specifically, that when the meterstick's 
-                                    velocity relative to you changes, it's length (now specified as relative to you as well) changes.
+                                    sitting in a moving vehicle, or flying by us at any speed. But again, modern physics proclaims our intuition wrong; specifically, that when the meterstick's 
+                                    velocity relative to you changes, it's length (now specified as relative to you) changes as well.
                                     </p>
+                                    <p>
+                                    Let us again consider a simple example to elucidate the topic at hand: An archer readys his bow with an arrow and in this moment
+                                    the arrow is stationary to him. Then he fires and watches the arrow fly to it's target. Does the arrow, if we futher suppose that it
+                                    is entirely rigid and thus is inelastic, change length at all through this process, relative to the archer?
+                                    </p>
+
+                                    <figure class="alignwide">
+                                        <img src="../../assets/images/halfbaked/arrowst.svg"  alt="An archer at the ready with an arrow that is at the moment
+                                        stationary relative to him, the length of the stationary arrow is depicted. (Credit for photo to Kampus Production, Markup by A.H.)">
+                                    </figure>
+
+                                    <p>
+                                    Of course, our instinct tells us this must be true, but special relativity contradicts this. The arrow relative to the archer actually is 
+                                    shorter the faster it travels relative to them. Though of course, at our ranges of motion this is imperceptible and unmeasurable. 
+                                    </p>
+
                                     <div class="eq">
                                         $$
-                                            l_a=\frac{l_t}{\sqrt{1+\frac{v_{t_a}^2}{c^2}}}
+                                            l_m=l_s\sqrt{1-\frac{v^2}{c^2}}
                                         $$
                                     </div>
-
+                                    <p>
+                                    
+                                    </p>
+                                    <figure class="alignwide">
+                                        <img src="../../assets/images/halfbaked/arrowmv.svg"  alt="A few moments after an archer looses an arrow, the length and velocity of
+                                        the moving arrow are denoted. (Credit for photo to Kampus Production, Markup by A.H.)">
+                                    </figure>
+                                    <!-- cool length contraction desmos
+                                    <iframe src="https://www.desmos.com/calculator/691rhvihfa?embed" width="100%" height="500" style="border: 1px solid #ccc; margin: 0 auto;" frameborder=0></iframe>
+                                    -->
                                     <h2>Time Dilation</h2>
                                     <p>
                                     The flow of time itself is also altered in the paradigm of special relativity. Again, our intuition expects
@@ -261,12 +290,20 @@
                                     travels relative to me, the slower his watch ticks relative to mine. Of course, though, the speeds at which even the 
                                     fastest trains travel, this effect is but a mere pittance. 
                                     </p>
+
+                                    <figure class="alignwide">
+                                        <img src="../../assets/images/halfbaked/clocks.svg"  alt="Clocks in a field with one pocket watch falling at some velocity. The one moving with 
+                                        relative velocity is behind the stationary ones. (Credit for photo to Pixabay (field) and David Bartus (stopwatch), Markup by A.H.)">
+                                    </figure>
+
                                     <div class="eq">
                                         $$
-                                            \delta t_a=\frac{\delta t_t}{\sqrt{1+\frac{v_{t_a}^2}{c^2}}}
+                                            \Delta t_s=\frac{\Delta t_t}{\sqrt{1-\frac{v^2}{c^2}}}
                                         $$
                                     </div>
 
+
+                                    
                                     <h2>Rear Clock Ahead Effect</h2>
                                     <p>
                                     This is perhaps the most jarring effect of all those in our discussion. It's equivalent to the loss of simultaneity,
