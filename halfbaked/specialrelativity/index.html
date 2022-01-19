@@ -201,7 +201,7 @@
                                     the constant flow of time for all observers; the simple addition of relative velocities between
                                     several bodies; the length of objects no matter their state of motion; and, perhaps most shockingly, 
                                     the simulaneity of events for all observers. These conceptual shifts will be stated explicitly below and justified through 
-                                    the single overarching theme of special relativity (and apparently the universe): that the speed of light is the same for 
+                                    the single overarching theme of special relativity (and apparently the universe): that the speed of light (denoted <em>c</em>) is the same for 
                                     all observers, no matter their relative speed to each other.
                                     </p>
 
@@ -210,9 +210,10 @@
                                     <h2>Velocity Addition</h2>
                                     <p>
                                     Our brains have basic Newtonian physics modules effectively baked in. And perhaps one of the most basic things
-                                    one would suppose about the motion of objects is that velocities can be added linearly. That is, if someone is traveling relative
-                                    to you on a train, and they throw a ball, the speed of the ball relative to you should just be the sum of the velocity of the train 
-                                    and the velocity of the ball relative to the train. This, however, turns out to be patently false.
+                                    one would suppose about the motion of objects is that velocities can be added linearly. Let's consider the motivation for a 
+                                    change in this concept: imagine a train somehow flashes past you at half the speed of light and you see someone on the train turn on a flashlight,
+                                    with a linear addition of velocities, the light from the flashlight should appear to travel with one and a half times <em>c</em> to you. This, however,
+                                    turns out to be patently false; the light must travel with <em>c</em> relative to you.
                                     </p>
                                     <p>
                                     If you can't quite follow what I mean, consider this question: Alice is standing by a train track and she sees Bob, who's on the train,
@@ -227,7 +228,7 @@
                                     </figure>
 
                                     <p>
-                                    Obviously, the ball is just traveling at the sum of the two velocities, that is \(v_{t_a}+v_{b_t}\), right? It turns out, as an empirically
+                                    Obviously, the ball is just traveling at the sum of the two velocities (i.e. \(v_{b_a}\) <em>should</em> equal \( v_{t_a}+v_{b_t}\) ) right? It turns out, as an empirically
                                     verified fact, that this is incorrect. Alice will only see the ball traveling at the speed \(v_{b_a}\) given by the formula below:
                                     </p>
 
@@ -237,16 +238,15 @@
                                     $$
                                     </div>
                                     <p>
-                                    This may seem counterintuitive, as it's hard coded into us that the sum of two velocities shouldn't be less than the two velocities; but 
-                                    it's neccesary to maintain the speed of light. For example, if somehow a train flashed by you at half the speed of light, and someone
-                                    on the train turned on their flash light, the speed of the light cannot be one and a half times the speed of light (though it's frequency
-                                    may be shifted), it must still be \(c\), the speed of light.
+                                    This should seem counterintuitive, as it's hard coded into us that the sum of two velocities should just be the sum of
+                                    the two velocities and certainly shouldn't be less than the two velocities; but 
+                                    it's neccesary to maintain the speed of light. This is hardly the most suprising relativistic effect however.
                                     </p>
                                       
 
                                     <h2>Length Contraction</h2>
                                     <p>
-                                    The next basic intuition of the mind which we will call into question is that of the solid dimension of rigid objects. Now,
+                                    Another basic intuition of the mind which we will call into question is that of the solid dimension of rigid objects. Now,
                                     we intuitively expect that a meter stick will (granted it's not broken or otherwised changed) remain a meter long. And that's whether it's here, 
                                     sitting in a moving vehicle, or flying by us at any speed. But again, modern physics proclaims our intuition wrong; specifically, that when the meterstick's 
                                     velocity relative to you changes, it's length (now specified as relative to you) changes as well.
@@ -263,32 +263,44 @@
                                     </figure>
 
                                     <p>
-                                    Of course, our instinct tells us this must be true, but special relativity contradicts this. The arrow relative to the archer actually is 
-                                    shorter the faster it travels relative to them. Though of course, at our ranges of motion this is imperceptible and unmeasurable. 
+                                    Of course, our instinct tells us it shouldn't (on the condition of inelastic rigidity), but special relativity again contradicts us. In fact, the arrow's length relative to the archer
+                                    actually is shorter the faster it travels (relative to him). This transformed length is described by the formula
                                     </p>
 
                                     <div class="eq">
                                         $$
-                                            l_m=l_s\sqrt{1-\frac{v^2}{c^2}}
+                                            l_m=l_s\sqrt{1-\frac{v^2}{c^2}}.
                                         $$
                                     </div>
                                     <p>
-                                    
+                                    This contraction only happens in the direction of travel, so the other dimensions of the rigid arrow are left unaltered to the archer. But this does hold for all objects. 
+                                    And of course, at our ranges of motion, this is again imperceptible and unmeasurable. The arrow's contraction below is exaggerated for effect.
                                     </p>
                                     <figure class="alignwide">
                                         <img src="../../assets/images/halfbaked/arrowmv.svg"  alt="A few moments after an archer looses an arrow, the length and velocity of
                                         the moving arrow are denoted. (Credit for photo to Kampus Production, Markup by A.H.)">
                                     </figure>
+                                    <p>
+                                    Even for a projectile fired by a rifle, moving at 3000 ft/s, the length of the bullet isn't even shortened by 0.000000001% its stationary length. However, lengths can be
+                                    contracted to arbitrarily small scales as they approach the speed of light. For example, if a train <em>did</em> flash by you at 
+                                    half of <em>c</em> (~\(4.4\times 10^8\) ft/s), the length of the train would be 86% its original length. For a train moving at nine tenths the speed of light,
+                                    the length would be contracted to only 46% it's stationary length relative to you. That's less than half it's original length! And even still,
+                                    this isn't yet the most astouding implication of special relativity. 
+                                    </p>
+
                                     <!-- cool length contraction desmos (Photo Credit Sami Anas)
                                     <iframe src="https://www.desmos.com/calculator/691rhvihfa?embed" width="100%" height="500" style="border: 1px solid #ccc; margin: 0 auto;" frameborder=0></iframe>
                                     -->
                                     <h2>Time Dilation</h2>
                                     <p>
                                     The flow of time itself is also altered in the paradigm of special relativity. Again, our intuition expects
-                                    that the quartz watch on my wrist ticks while I sit at home at the same rate my friend's does while sitting on the 
-                                    train on his way to work (granted neither malfunction). But alas, things cannot be so simple. Indeed the faster he 
-                                    travels relative to me, the slower his watch ticks relative to mine. Of course, though, at the speeds of even the 
-                                    fastest trains, this effect is but a mere pittance. 
+                                    that a perfect watch on my wrist would tick at the same rate as one on my friend's, regardless of what we were doing respective of each other. 
+                                    But alas, things cannot be so simple. Indeed the faster he travels relative to me, the slower his watch ticks relative to mine.
+                                    </p>
+                                    <p>
+                                    Let's consider a scenario in which we're sitting in a kitchen having coffee and some passerby 
+                                    on a train sees us. Now, we're busy professionals so we're trained to and do gulp down our coffee in exactly 30
+                                    seconds. How long does it take us to drink the tea according to the person sitting on the train? 
                                     </p>
 
                                     <figure class="alignwide">
@@ -302,12 +314,18 @@
                                         $$
                                     </div>
 
-
+                                    <p>
+                                    Amazingly, this allows one to effectively 'time travel' into the future of humanity. Since everyone on Earth is moving within a reasonably
+                                    bounded velocity with respect to one another, we can take humanity itself to have some decently inertial reference frame. Then, for an individual to 
+                                    travel into the future of humanity, they need only to move arbitrarily close to the speed of light for some proportional amount of time. (For a more detailed
+                                    explanation see resources on the "Twins Paradox" of special relativity. A real treatment of this topic would require acceleration for the individual moving to return 
+                                    to Earth and compare clocks again.)
+                                    </p>
                                     
                                     <h2>Rear Clock Ahead Effect</h2>
                                     <p>
-                                    This is perhaps the most jarring effect of all those in our discussion. It's equivalent to the loss of simultaneity,
-                                    though a more functional title in that it reminds you in which direction things are now favored. If a train goes passing by,
+                                    This is perhaps the most jarring effect of all those in our discussion. It's conceptually equivalent to the loss of simultaneity
+                                    (though a more functional title in that it reminds you in which direction things are now favored). If a train goes passing by,
                                     our brain suggests instinctively that all that is simultaneous in our view should also be simultaneous to a passenger on the train.
                                     This, however, is not true. In fact, the events which are simultaneous to those on the train are offset so that events 
                                     </p>
