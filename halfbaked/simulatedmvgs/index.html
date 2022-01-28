@@ -180,9 +180,9 @@
                                 </div>
                             </header>
 
-                            <div class="entry__media"id="clock">
-                                <figure class="featured-image" >
-                                    <img src="../../assets/images/halfbaked/mvgsscreen.svg"   height="500px" alt="Command prompt and histograms for ternary Grover simulation.">
+                            <div class="entry__media">
+                                <figure class="alignwide" >
+                                    <img src="../../assets/images/halfbaked/mvgsscreen.svg"   alt="Command prompt and histograms for ternary Grover simulation.">
                                 </figure>
                             </div>
 
@@ -190,34 +190,72 @@
 
                                 <div class="entry__content">
                                     <p class="lead">
-                                    Special relativity, while paradigm shifting, doesn't require much math outside of algebra to understand at
-                                    it's most basic level: that of constant relative velocity between reference frames. In fact, at this level,
-                                    special relativity may be fully specified by four working concepts.
+                                    Below we present simulated results for a three qutrit ternary quantum search. Preceding these results we give 
+                                    intuition for the binary Grover search algorithms and motivation for the subject at hand. 
                                     </p> 
 
                                     <p class="drop-cap">
-                                    Four things you likely think are granted immutable by the universe aren't. Things you've likely never 
-                                    even considered due to their seemingly mundane existence as basic facts of the universe. These four things are:
-                                    the constant flow of time for all observers; the simple addition of relative velocities between
-                                    several bodies; the length of objects no matter their state of motion; and, perhaps most shockingly, 
-                                    the simulaneity of events for all observers. These conceptual shifts will be stated explicitly below and justified through 
-                                    the single overarching theme of special relativity (and apparently the universe): that the speed of light is the same for 
-                                    all observers, no matter their relative speed to each other.
+                                    Qudits facilitate the implementation of quantum algorithms modeling multi-valued logic. This is especially
+                                    relevant in the realm of quantum search algorithms as it seems natural to encode multi-valued data in a
+                                    database, where the traditional binary Grover search is often pitched as an efficient 'unstructured database search.'
+                                    The specific case of qutrits allow for encodings and evaluation of ternary multivariate polynomials over the finite field of \(\mathbb{Z}_3\).
                                     </p>
 
             
             
-                                    <h2>Velocity Addition</h2>
+                                    <h2>Binary Grover Search</h2>
                                     <p>
-                                    Our brains have basic Newtonian physics modules effectively baked in. And perhaps one of the most basic things
-                                    one would suppose about the motion of objects is that velocities can be added linearly. That is, if someone is traveling relative
-                                    to you on a train, and they throw a ball, the speed of the ball relative to you should just be the sum of the velocity of the train 
-                                    and the velocity of the ball relative to the train. This, however, turns out to be patently false.
+                                    Grover's eponymous search algorithm searches a complete superposition \(\vert +\rangle^{\otimes n}\) for the states sparsely marked by an oracle
+                                    with negative relative phase. That is, Grover's search algorithm generally refers to a template for an algorithm that takes some oracle, which marks a sparse 
+                                    set of computational vectors with a phase of \(\pi\), and returns those marked elements with high probability. The purpose of Grover's search is demonstrated below as a visual heuristic.
+                                    </p>
+                                    <div class="eq">
+                                        $$
+                                            \vert + \rangle ^{\otimes 3}=
+                                            \begin{array}{c c c c c c c c c}
+                                            \vert 000 \rangle\\
+                                            \vert 001 \rangle \\
+                                            \vert 010\rangle \\ 
+                                            \vert 011\rangle\\
+                                            \vert 100\rangle\\
+                                            \vert 101 \rangle \\
+                                            \vert 110 \rangle \\
+                                            \vert 111\rangle \end{array}
+                                            \left[
+                                            \begin{array}{c}
+                                            1 \\
+                                            1 \\
+                                            1 \\
+                                            1 \\
+                                            1 \\
+                                            1 \\
+                                            1 \\
+                                            1 \\
+                                            \end{array}
+                                            \right]
+                                            \xrightarrow{\mathcal{O}}
+                                            \left[
+                                            \begin{array}{c}
+                                            1 \\
+                                            1 \\
+                                            -1 \\
+                                            1 \\
+                                            1 \\
+                                            1 \\
+                                            1 \\
+                                            1 \\
+                                            \end{array}
+                                            \right]
+                                            \xrightarrow[\text{search}]{\text{Grover}}\hspace{.3cm}
+                                            \vert 010\rangle                 
+                                    $$
+                                    </div>
+                                    <p>
+                                    This process can be extended to several values marked by a \(\pi\) phase as well as to arbitrary initial state, and in this form it is generally referred
+                                    to as amplitude amplification. Amplitude estimation is a neccesssary precursor to such operations however.
                                     </p>
                                     <p>
-                                    If you can't quite follow what I mean, consider this question: Alice is standing by a train track and she sees Bob, who's on the train,
-                                    throwing a ball. If the train is moving at some velocity we'll call \(v_{t_a}\), and Bob throws the ball at some speed denoted
-                                    \(v_{b_t}\) relative to the train (depicted below), how fast does alice see the ball travelling?
+                                    
                                     </p>
 
                                     
@@ -226,97 +264,61 @@
                                         the train relative to Alice (the ground), and for the ball relative to the train, are drawn. (Credit for photo to Ryan Milier, Markup by A.H.)">
                                     </figure>
 
+                                    <h2>Ternary Grover Search</h2>
                                     <p>
-                                    Obviously, the ball is just traveling at the sum of the two velocities, that is \(v_{t_a}+v_{b_t}\), right? It turns out, as an empirically
-                                    verified fact, that this is incorrect. Alice will only see the ball traveling at the speed \(v_{b_a}\) given by the formula below:
+                                    Now, what if we want to encode three types of values in a database? One way would be to package two qubits together and represent four 
+                                    values each pair. However, using qutrits, we may make this encoding explicitly. 
                                     </p>
-
-                                    <div class="eq">
-                                    $$
-                                        v_{b_a}=\frac{v_{t_a}+v_{b_t}}{1-\frac{v_{t_a}v_{b_t}}{c^2}}.
-                                    $$
-                                    </div>
-                                    <p>
-                                    This may seem counterintuitive, as it's hard coded into us that the sum of two velocities shouldn't be less than the two velocities; but 
-                                    it's neccesary to maintain the speed of light. For example, if somehow a train flashed by you at half the speed of light, and someone
-                                    on the train turned on their flash light, the speed of the light cannot be one and a half times the speed of light (though it's frequency
-                                    may be shifted), it must still be \(c\), the speed of light.
-                                    </p>
-                                      
-
-                                    <h2>Length Contraction</h2>
-                                    <p>
-                                    The next basic intuition of the mind which we will call into question is that of the solid dimension of rigid objects. Now,
-                                    we intuitively expect that a meter stick will (granted it's not broken or otherwised changed) remain a meter long. And that's whether it's here, 
-                                    sitting in a moving vehicle, or flying by us at any speed. But again, modern physics proclaims our intuition wrong; specifically, that when the meterstick's 
-                                    velocity relative to you changes, it's length (now specified as relative to you) changes as well.
-                                    </p>
-                                    <p>
-                                    Let us again consider a simple example to elucidate the topic at hand: An archer readys his bow with an arrow and in this moment
-                                    the arrow is stationary to him. Then he fires and watches the arrow fly to it's target. Does the arrow, if we futher suppose that it
-                                    is entirely rigid and thus is inelastic, change length at all through this process, relative to the archer?
-                                    </p>
-
-                                    <figure class="alignwide">
-                                        <img src="../../assets/images/halfbaked/arrowst.svg"  alt="An archer at the ready with an arrow that is at the moment
-                                        stationary relative to him, the length of the stationary arrow is depicted. (Credit for photo to Kampus Production, Markup by A.H.)">
-                                    </figure>
-
-                                    <p>
-                                    Of course, our instinct tells us this must be true, but special relativity contradicts this. The arrow relative to the archer actually is 
-                                    shorter the faster it travels relative to them. Though of course, at our ranges of motion this is imperceptible and unmeasurable. 
-                                    </p>
-
                                     <div class="eq">
                                         $$
-                                            l_m=l_s\sqrt{1-\frac{v^2}{c^2}}
+                                        \vert +_3 \rangle ^{\otimes 2}=
+                                        \begin{array}{c c c c c c c c c}
+                                        \vert 00 \rangle\\
+                                        \vert 01 \rangle \\
+                                        \vert 02\rangle \\ 
+                                        \vert 10\rangle\\
+                                        \vert 11\rangle\\
+                                        \vert 12 \rangle \\
+                                        \vert 20 \rangle \\
+                                        \vert 21\rangle \\
+                                        \vert 22 \rangle\\
+                                        \end{array}
+                                        \left[
+                                        \begin{array}{c}
+                                        1 \\
+                                        1 \\
+                                        1 \\
+                                        1 \\
+                                        1 \\
+                                        1 \\
+                                        1 \\
+                                        1 \\
+                                        1 \\
+                                        \end{array}
+                                        \right]
+                                        \xrightarrow{\mathcal{O}}
+                                        \left[
+                                        \begin{array}{c}
+                                        1 \\
+                                        \omega^2 \\
+                                        \omega^2 \\
+                                        \omega \\
+                                        \omega^2 \\
+                                        1 \\
+                                        1 \\
+                                        \omega^2 \\
+                                        1 \\
+                                        \end{array}
+                                        \right]
+                                        \xrightarrow[\text{search}]{\text{Generalized Grover}}\hspace{.3cm}
+                                        \vert 10\rangle   
                                         $$
                                     </div>
-                                    <p>
-                                    
-                                    </p>
-                                    <figure class="alignwide">
-                                        <img src="../../assets/images/halfbaked/arrowmv.svg"  alt="A few moments after an archer looses an arrow, the length and velocity of
-                                        the moving arrow are denoted. (Credit for photo to Kampus Production, Markup by A.H.)">
-                                    </figure>
-                                    <!-- cool length contraction desmos (Photo Credit Sami Anas)
-                                    <iframe src="https://www.desmos.com/calculator/691rhvihfa?embed" width="100%" height="500" style="border: 1px solid #ccc; margin: 0 auto;" frameborder=0></iframe>
-                                    -->
-                                    <h2>Time Dilation</h2>
-                                    <p>
-                                    The flow of time itself is also altered in the paradigm of special relativity. Again, our intuition expects
-                                    that the quartz watch on my wrist ticks while I sit at home at the same rate my friend's does while sitting on the 
-                                    train on his way to work (granted neither malfunction). But alas, things cannot be so simple. Indeed the faster he 
-                                    travels relative to me, the slower his watch ticks relative to mine. Of course, though, at the speeds of even the 
-                                    fastest trains, this effect is but a mere pittance. 
-                                    </p>
-
-                                    <figure class="alignwide">
-                                        <img src="../../assets/images/halfbaked/clocks.svg"  alt="Clocks in a field with one pocket watch falling at some velocity. The one moving with 
-                                        relative velocity is behind the stationary ones. (Credit for photo to Pixabay (field) and David Bartus (stopwatch), Markup by A.H.)">
-                                    </figure>
-
-                                    <div class="eq">
-                                        $$
-                                            \Delta t_s=\frac{\Delta t_t}{\sqrt{1-\frac{v^2}{c^2}}}
-                                        $$
-                                    </div>
-
-
-                                    
-                                    <h2>Rear Clock Ahead Effect</h2>
-                                    <p>
-                                    This is perhaps the most jarring effect of all those in our discussion. It's equivalent to the loss of simultaneity,
-                                    though a more functional title in that it reminds you in which direction things are now favored. If a train goes passing by,
-                                    our brain suggests instinctively that all that is simultaneous in our view should also be simultaneous to a passenger on the train.
-                                    This, however, is not true. In fact, the events which are simultaneous to those on the train are offset so that events 
-                                    </p>
-
                                     <p class="entry__tags">
                                         <strong>Tags:</strong>
                     
                                         <span class="entry__tag-list">
-                                            <a href="#0">Physics</a>
+                                           <a href="#0">Quantum Computation</a> <a href="#0">Physics</a>
                                         </span>
                         
                                     </p>
