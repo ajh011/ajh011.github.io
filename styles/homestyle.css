@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Scribble';
+    src: url('../assets/fonts/scribble-webfont.woff2') format('woff2'),
+         url('../assets/fonts/scribble-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.noline {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.fa-3res{
+    content: url("../assets/images/3res/mstile-70x70.png");
+}
+
+.fa-home{
+    content: url("../assets/images/iconwhite/mstile-70x70.png");
+}
+
+.fa-halfbaked{
+    content: url("../assets/images/halfbaked/icons/mstile-70x70.png");
+}
+
+
+.lineup{
+    width: 4em;
+    margin: 0 2em 1em 0;
+}
+
+.lineup.last{
+    margin-right: 0;
+}
+
+.longtrans{
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+}
+
+.lighthover:hover {
+    color: lightslategray;
+    opacity: 50%;
+}
+.brighthover{
+    transition: all .2s ease-in-out;
+}  
+
+.brighthover:hover{
+    -webkit-filter: brightness(125%);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 8in) {
+    #subtitle{
+        letter-spacing: .1em;
+        font-size: 1.8vw;
+    }    
+}
+  
+
+
+.blackback {
+    background-color: black;
+}
+
+#bannerdiv{
+	
+	position: sticky;
+	top: 0px;
+	opacity: .4;
+	margin: 4vh auto 1vh;
+	color:#d6d6d6;
+	z-index: 2;
+	padding: 15px 30px;
+	max-width: 90%;  
+}
+
+
+#title_name { 
+	font-family: 'Scribble';
+	font-size: 80px;
+	transform: scale(1.23, 1.67);
+	-webkit-font-smoothing: antialiased;
+	padding-bottom: 1%;
+	margin-bottom: 0;
+	font-weight: bolder;
+	letter-spacing: normal;
+	text-transform: capitalize;
+}
+
+
+.halfbakedicon {
+	background-image: url(../assets/images/halfbaked/icons/mstile-70x70.png);
+}
+
+
+
+.ftimage{
+    height: 400px;
+}
+
+.cover {
+    object-fit: cover;
+}
+
+#majorlead{
+    color: #f38370;
+}
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CGCNN</title>
+    <link href="../styles/cgcnn.css" rel="stylesheet">
+    <link href="../styles/jumper.css" rel="stylesheet">
+
+
+    <!--Geogebra Support-->
+    <script src="navigation.js"></script>
+
+
+    <!--MathJax Support-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}},
+                                  loader: {load: ['[tex]/ams']},
+                                  tex: {packages: {'[+]': ['ams']}}
+                                  TeX: {extensions: ["action.js"]});</script>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../assets/images/iconwhite/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/iconwhite/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/iconwhite/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/iconwhite/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../assets/images/iconwhite/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../assets/images/iconwhite/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../assets/images/iconwhite/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../assets/images/iconwhite/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../assets/images/iconwhite/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../assets/images/iconwhite/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../assets/images/iconwhite/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../assets/images/iconwhite/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../assets/images/iconwhite/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="../assets/images/iconwhite/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="../assets/images/iconwhite/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="../assets/images/iconwhite/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="../assets/images/iconwhite/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="../assets/images/iconwhite/mstile-310x310.png" />
+
+
+
+    <meta charset="UTF-8">
+    <meta name="description" content="A short overview of graph neural networks application to classification and .
+                                      discovery of new materials. Includes an example encoding of a crystal into a graph
+                                      and links to resources. ">
+    <meta name="keywords" content="crystal graph, crystal neural network, machine learning for materials discovery">
+    <meta name="author" content="Alexander J. Heilman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+  </head>
+  
+  <body>
+
+
+  <div id="home">
+    <a href="https://www.alexheilman.com"><img id="homeimg" src="../assets/images/iconwhite/favicon-196x196.png" width="50"></a>
+  </div>
+
+
+  <h1 id="title">Crystal Graph Convolutional Neural Networks</h1>
+    <p id="blurb">
+      Convolutional neural nets have demonstrated an amazing efficacy in the classification of 
+      highly correlated data with several layers of possible features (namely, in the application of
+      image classification). Graph neural networks or Message Passing Neural Networks (MPNN)
+      have recently shown promising preliminary results that hint at a potentially strong application for the discovery
+      and classification of new materials. Following notation in <a href="http://proceedings.mlr.press/v70/gilmer17a/gilmer17a.pdf">Gilmore</a>, we can 
+      describe the different forms of these general structures by the specific definiton of their update functions. Hover over specific variables and 
+      functions below to see their definition.
+      <div class="eq">
+      $$
+        \texttip{m^{t+1}_v}{Message to be passed to the update function with vertex v, for iteration t+1}
+        =\sum_{w\in \texttip{N(v)}{Set of vertices}}\texttip{M_t}{Message function for iteration t}(\texttip{h_v^t}{"Hidden" state associated with vertex v, for iteration t},
+        \texttip{h_w^t}{"Hidden" state associated with vertex w, for iteration t},\texttip{e_{vw}}{Edge vector associated with the connection between vertices v and w})
+      $$
+      $$
+        \texttip{h_v^{t+1}}{"Hidden" state associated with vertex v, for iteration t}=
+        \texttip{U_t}{Vertex update function for iteration t}(\texttip{h_v^t}{"Hidden" state associated with vertex v, for iteration t},
+         \texttip{m_v^{t+1}}{Message to be passed to the update function with vertex v, for iteration t+1})
+      $$
+      </div>
+
+      where \(M_t\) is the message function and \(U_t\) is the vertex update function, which are to be specified in specific implementations.
+    </p>
+
+
+    <h2>Defect Structures</h2>
+    <p>
+      Four common types of defects in crystalline solids are interstitial, vacancies, antisites, and substitution.
+    </p>
+
+    
+
+    <h2>Resources</h2>
+    <p>
+      A book on machine learning applied to the quantum mechanical structures of molecules: <a href="https://link.springer.com/content/pdf/10.1007%2F978-3-030-40245-7.pdf">Machine
+        Learning Meets
+        Quantum
+        Physics</a>.
+    </p>
+
+    <h3>Message Passing Neural Networks (MPNN)</h3>
+    <p>
+    This <a href="https://keras.io/examples/graph/mpnn-molecular-graphs/">guide</a> by Alexander Kensert to using keras to construct and implement 
+    an MPNN that predicts molecular properties.
+    </p>
+
+    
+    <h3>Graph Neural Networks (GNN)</h3>
+    <p>
+      Zonghan Wu, et al.'s <a href="https://arxiv.org/abs/1901.00596">A Comprehensive Survey on Graph Neural Networks</a>; and Jie Zhou, et al.'s <a href="https://arxiv.org/abs/1812.08434">
+        Graph Neural Networks: A Review of Methods and Applications</a>.
+    </p>
+    <p>
+      See this amazing <a href="https://distill.pub/2021/gnn-intro/">Intro to Graph Neural Networks</a>.
+    </p>
+    <p>
+      A relevant and recent implementation of a specfic architecture of a GCNN by Tian Xie and Jeffrey C. Grossman can be found at the following 
+      <a href="https://github.com/txie-93/cgcnn">github repository</a>, corresponding with this <a href="https://arxiv.org/abs/1710.10324">paper</a>.
+    </p>
+  
+    <h3>Pymatgen</h3>
+    <p>
+      A large python package for use in matrials research. Allows the creation of python objects representing unit cells of crystals and 
+      single molecules. A workshop for pymatgen is available on <a href="https://workshop.materialsproject.org/lessons/02_intro_pymatgen/1%20-%20pymatgen%20foundations/">
+      The Materials Project</a>. Pymatgen also has a <a href="https://pymatgen.org/pymatgen.symmetry.analyzer.html">Symmetry Analyzer Module</a>, which may be of
+      some relevance for defects.
+    </p>
+    
+  </body>
+</html>

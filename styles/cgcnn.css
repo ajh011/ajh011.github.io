@@ -1,0 +1,282 @@
+
+/* ------------------------------------------------------------------- 
+ * ## fonts 
+ * ------------------------------------------------------------------- */
+ @import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap");
+
+ :root {
+     --font-1    : "Inter", sans-serif;
+     --font-2    : "Castoro", serif;
+ 
+     /* monospace
+     */
+     --font-mono : Consolas, "Andale Mono", Courier, "Courier New", monospace;
+ }
+
+ @font-face {
+  font-family: 'Scribble';
+  src: url('../assets/fonts/scribble-webfont.woff2') format('woff2'),
+       url('../assets/fonts/scribble-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## END fonts 
+ * ------------------------------------------------------------------- */
+
+
+
+body {
+  color:#a1a0a0;
+  width: 76%;
+  margin: 25px auto;
+  text-align: left;
+  z-index: 0;
+  font-size: 27px;
+  font-family: 'Work Sans', Garamond, 'Times New Roman', serif;
+  font-weight: 350;
+  max-width: 37.6cm;
+  min-height: 100vh;
+}
+
+
+
+body {
+  background-image: linear-gradient( #19172470, #211e2f70,  #211e2f70), url("../assets/images/backmobius.jpg");
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+.center {
+  text-align: center;
+  display: block;
+  margin: 25px auto;
+}
+
+a img{
+  display: inline-block;
+}
+
+img {
+  display:  block;
+  margin: 25px auto;
+}
+
+#title{
+  text-align: center;
+}
+
+.eq {
+  overflow-x: auto;
+  margin: 0.8%;
+}
+
+#qfteq1 {
+  margin-top=-15px;
+}
+
+#QFT3qbcircuit {
+  max-width: 14.5cm;
+  margin: 3.5%;
+}
+
+#PEnqbcircuit {
+  max-width: 28.5cm;
+  margin: 0.5%;
+}
+
+#aavis1 {
+  max-width: 24.5cm;
+}
+
+#qftpoly {
+  max-width: 20cm;
+}
+
+
+
+#ggbGrover{
+  max-width: 19cm;
+  width: 90%;
+  height: auto;
+  min-height: 450px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.centerframe {
+  margin: 0 auto;
+}
+
+.margin5{
+  margin 15px;
+  padding-top: 20px;
+}
+
+a{
+  color: magenta;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.collapsible {
+  background-color: hsla(0,0%,50%,0.5);
+  color: white;
+  cursor: pointer;
+  padding: 18px 18px;
+  margin: 20px 20px 0px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: hsla(0,50%,26%,0.9);
+}
+
+.content {
+  padding: 20px 18px;
+  display: none;
+  overflow: hidden;
+  background-color: hsla(0,0%,26%,0.9);
+  margin: 0px 0px 20px;
+  z-index: 1;
+}
+
+.ralign {
+  position: absolute;
+  right: 12%;
+  z-index: 1;
+}
+
+#home{
+  position: fixed;
+  width: 3%;
+  top: 1%;
+  right: 4%;
+}
+
+#home:hover{
+ -webkit-filter: brightness(150%);
+}
+
+#ib{
+  display: inline-block;
+}
+
+
+#up{
+  color: hsla(0,0, 50%, 50%);
+  text-decoration: none;
+  font-family: scribble;
+  position: fixed;
+  left:2.7%;
+  opacity: 50%;  
+}
+
+#upa{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+#up:hover{
+  opacity: 100%;
+}
+
+
+a.white{
+  color: white;
+  font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 8in) {
+  body {
+    font-size: 18px;
+    padding-bottom: 3%;
+  }
+
+ #home{
+  position: fixed;
+  top: -.2%;
+  right: 5%;
+  }
+
+  #homeimg{
+    width: 35px;
+    height: auto;
+  }
+
+
+  #upa{
+    font-size: 1.65em;
+  }
+
+}
+
+@media (max-width: 4.8in) {
+  #upa{
+    font-size: 1.23em;
+    left:1.8%;
+    display: none;
+  }
+
+ #home{
+  top: -.2%;
+  right: 3em;
+  }
+
+ #homeimg{
+  max-width: 1.4dem;
+  display: none;
+ }
+
+  .ralign {
+    position: static;
+    display: block;
+  }
+
+}
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333333;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
