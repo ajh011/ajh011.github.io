@@ -3706,15 +3706,6 @@ input, select, textarea {
 					display: none;
 				}
 
-				
-			#banner .more:after {
-				background-image: url("../assets/images/arrow.svg");
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: contain;
-				bottom: 10em;
-
-
 
 		}
 

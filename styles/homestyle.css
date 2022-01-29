@@ -137,4 +137,14 @@
         max-width: 90%;  
     }
 }
+
+@media screen and (max-width: 5in) {
+			#banner .more:after {
+				background-image: url("../assets/images/arrow.svg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				bottom: 10em;
+
+}
   
