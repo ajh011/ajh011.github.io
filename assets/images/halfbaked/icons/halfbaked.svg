@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="96"
+   inkscape:export-xdpi="96"
+   inkscape:export-filename="C:\Users\ajh01\Desktop\iconwhite.png"
+   width="488"
+   height="488"
+   viewBox="0 0 129.11665 129.11665"
+   version="1.1"
+   id="svg997"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="halfbaked.svg">
+  <defs
+     id="defs991">
+    <filter
+       id="filter2323"
+       style="color-interpolation-filters:sRGB;"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       inkscape:menu="Overlays"
+       inkscape:label="Clouds">
+      <feTurbulence
+         id="feTurbulence2313"
+         type="fractalNoise"
+         baseFrequency="0.040 0.107"
+         numOctaves="3" />
+      <feColorMatrix
+         id="feColorMatrix2315"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         result="result0" />
+      <feFlood
+         id="feFlood2317"
+         flood-color="rgb(255,255,255)"
+         flood-opacity="1" />
+      <feComposite
+         id="feComposite2319"
+         in2="result0"
+         operator="in" />
+      <feComposite
+         id="feComposite2321"
+         in2="SourceGraphic"
+         operator="atop" />
+    </filter>
+    <filter
+       id="filter2335"
+       style="color-interpolation-filters:sRGB;"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       inkscape:menu="Overlays"
+       inkscape:label="Clouds">
+      <feTurbulence
+         id="feTurbulence2325"
+         type="fractalNoise"
+         baseFrequency="0.040 0.107"
+         numOctaves="3" />
+      <feColorMatrix
+         id="feColorMatrix2327"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         result="result0" />
+      <feFlood
+         id="feFlood2329"
+         flood-color="rgb(255,255,255)"
+         flood-opacity="1" />
+      <feComposite
+         id="feComposite2331"
+         in2="result0"
+         operator="in" />
+      <feComposite
+         id="feComposite2333"
+         in2="SourceGraphic"
+         operator="atop" />
+    </filter>
+    <filter
+       inkscape:label="Clouds"
+       inkscape:menu="Overlays"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       style="color-interpolation-filters:sRGB;"
+       id="filter2335-3">
+      <feTurbulence
+         numOctaves="3"
+         baseFrequency="0.040 0.107"
+         type="fractalNoise"
+         id="feTurbulence2325-7" />
+      <feColorMatrix
+         result="result0"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         id="feColorMatrix2327-2" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(255,255,255)"
+         id="feFlood2329-6" />
+      <feComposite
+         operator="in"
+         in2="result0"
+         id="feComposite2331-5" />
+      <feComposite
+         result="fbSourceGraphic"
+         operator="atop"
+         in2="SourceGraphic"
+         id="feComposite2333-3" />
+      <feColorMatrix
+         id="feColorMatrix2828"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphicAlpha" />
+      <feTurbulence
+         in="fbSourceGraphic"
+         type="fractalNoise"
+         baseFrequency="0.040 0.107"
+         numOctaves="3"
+         id="feTurbulence2830" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         result="result0"
+         id="feColorMatrix2832" />
+      <feFlood
+         result="result1"
+         flood-color="rgb(255,255,255)"
+         flood-opacity="1"
+         id="feFlood2834" />
+      <feComposite
+         result="result2"
+         operator="in"
+         id="feComposite2836"
+         in2="result0" />
+      <feComposite
+         operator="atop"
+         id="feComposite2838"
+         in2="fbSourceGraphic" />
+    </filter>
+    <filter
+       inkscape:label="Clouds"
+       inkscape:menu="Overlays"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       style="color-interpolation-filters:sRGB"
+       id="filter2335-35">
+      <feTurbulence
+         numOctaves="3"
+         baseFrequency="0.040 0.107"
+         type="fractalNoise"
+         id="feTurbulence2325-6" />
+      <feColorMatrix
+         result="result0"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         id="feColorMatrix2327-4" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(255,255,255)"
+         id="feFlood2329-1" />
+      <feComposite
+         operator="in"
+         in2="result0"
+         id="feComposite2331-7" />
+      <feComposite
+         operator="atop"
+         in2="SourceGraphic"
+         id="feComposite2333-2" />
+    </filter>
+    <filter
+       inkscape:label="Clouds"
+       inkscape:menu="Overlays"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       style="color-interpolation-filters:sRGB;"
+       id="filter2335-0">
+      <feTurbulence
+         numOctaves="3"
+         baseFrequency="0.040 0.107"
+         type="fractalNoise"
+         id="feTurbulence2325-62" />
+      <feColorMatrix
+         result="result0"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         id="feColorMatrix2327-45" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(255,255,255)"
+         id="feFlood2329-2" />
+      <feComposite
+         operator="in"
+         in2="result0"
+         id="feComposite2331-53" />
+      <feComposite
+         result="fbSourceGraphic"
+         operator="atop"
+         in2="SourceGraphic"
+         id="feComposite2333-20" />
+      <feColorMatrix
+         id="feColorMatrix2852"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphicAlpha" />
+      <feTurbulence
+         in="fbSourceGraphic"
+         type="fractalNoise"
+         baseFrequency="0.040 0.107"
+         numOctaves="3"
+         id="feTurbulence2854" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         result="result0"
+         id="feColorMatrix2856" />
+      <feFlood
+         result="result1"
+         flood-color="rgb(255,255,255)"
+         flood-opacity="1"
+         id="feFlood2858" />
+      <feComposite
+         result="result2"
+         operator="in"
+         id="feComposite2860"
+         in2="result0" />
+      <feComposite
+         operator="atop"
+         id="feComposite2862"
+         in2="fbSourceGraphic" />
+    </filter>
+    <filter
+       inkscape:label="Clouds"
+       inkscape:menu="Overlays"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       style="color-interpolation-filters:sRGB"
+       id="filter2335-1">
+      <feTurbulence
+         numOctaves="3"
+         baseFrequency="0.040 0.107"
+         type="fractalNoise"
+         id="feTurbulence2325-3" />
+      <feColorMatrix
+         result="result0"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         id="feColorMatrix2327-6" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(255,255,255)"
+         id="feFlood2329-3" />
+      <feComposite
+         operator="in"
+         in2="result0"
+         id="feComposite2331-57" />
+      <feComposite
+         operator="atop"
+         in2="SourceGraphic"
+         id="feComposite2333-6" />
+    </filter>
+    <filter
+       inkscape:label="Clouds"
+       inkscape:menu="Overlays"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       style="color-interpolation-filters:sRGB"
+       id="filter2335-14">
+      <feTurbulence
+         numOctaves="3"
+         baseFrequency="0.040 0.107"
+         type="fractalNoise"
+         id="feTurbulence2325-9" />
+      <feColorMatrix
+         result="result0"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         id="feColorMatrix2327-3" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(255,255,255)"
+         id="feFlood2329-4" />
+      <feComposite
+         operator="in"
+         in2="result0"
+         id="feComposite2331-4" />
+      <feComposite
+         operator="atop"
+         in2="SourceGraphic"
+         id="feComposite2333-29" />
+    </filter>
+    <filter
+       inkscape:label="Clouds"
+       inkscape:menu="Overlays"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       style="color-interpolation-filters:sRGB"
+       id="filter2335-7">
+      <feTurbulence
+         numOctaves="3"
+         baseFrequency="0.040 0.107"
+         type="fractalNoise"
+         id="feTurbulence2325-65" />
+      <feColorMatrix
+         result="result0"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         id="feColorMatrix2327-23" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(255,255,255)"
+         id="feFlood2329-8" />
+      <feComposite
+         operator="in"
+         in2="result0"
+         id="feComposite2331-9" />
+      <feComposite
+         operator="atop"
+         in2="SourceGraphic"
+         id="feComposite2333-1" />
+    </filter>
+    <filter
+       id="filter2593"
+       style="color-interpolation-filters:sRGB;"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       inkscape:menu="Overlays"
+       inkscape:label="Clouds">
+      <feTurbulence
+         id="feTurbulence2583"
+         type="fractalNoise"
+         baseFrequency="0.040 0.107"
+         numOctaves="3" />
+      <feColorMatrix
+         id="feColorMatrix2585"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         result="result0" />
+      <feFlood
+         id="feFlood2587"
+         flood-color="rgb(255,255,255)"
+         flood-opacity="1" />
+      <feComposite
+         id="feComposite2589"
+         in2="result0"
+         operator="in" />
+      <feComposite
+         id="feComposite2591"
+         in2="SourceGraphic"
+         operator="atop" />
+    </filter>
+    <filter
+       inkscape:label="Clouds"
+       inkscape:menu="Overlays"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       style="color-interpolation-filters:sRGB"
+       id="filter2593-9">
+      <feTurbulence
+         numOctaves="3"
+         baseFrequency="0.040 0.107"
+         type="fractalNoise"
+         id="feTurbulence2583-9" />
+      <feColorMatrix
+         result="result0"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         id="feColorMatrix2585-7" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(255,255,255)"
+         id="feFlood2587-6" />
+      <feComposite
+         operator="in"
+         in2="result0"
+         id="feComposite2589-2" />
+      <feComposite
+         operator="atop"
+         in2="SourceGraphic"
+         id="feComposite2591-7" />
+    </filter>
+    <filter
+       inkscape:label="Clouds"
+       inkscape:menu="Overlays"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       style="color-interpolation-filters:sRGB"
+       id="filter2593-1">
+      <feTurbulence
+         numOctaves="3"
+         baseFrequency="0.040 0.107"
+         type="fractalNoise"
+         id="feTurbulence2583-3" />
+      <feColorMatrix
+         result="result0"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         id="feColorMatrix2585-2" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(255,255,255)"
+         id="feFlood2587-5" />
+      <feComposite
+         operator="in"
+         in2="result0"
+         id="feComposite2589-9" />
+      <feComposite
+         operator="atop"
+         in2="SourceGraphic"
+         id="feComposite2591-4" />
+    </filter>
+    <filter
+       id="filter2593-1-2"
+       style="color-interpolation-filters:sRGB"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       inkscape:menu="Overlays"
+       inkscape:label="Clouds">
+      <feTurbulence
+         id="feTurbulence2583-3-2"
+         type="fractalNoise"
+         baseFrequency="0.040 0.107"
+         numOctaves="3" />
+      <feColorMatrix
+         id="feColorMatrix2585-2-8"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         result="result0" />
+      <feFlood
+         id="feFlood2587-5-7"
+         flood-color="rgb(255,255,255)"
+         flood-opacity="1" />
+      <feComposite
+         id="feComposite2589-9-4"
+         in2="result0"
+         operator="in" />
+      <feComposite
+         id="feComposite2591-4-2"
+         in2="SourceGraphic"
+         operator="atop" />
+    </filter>
+    <filter
+       id="filter2593-1-5"
+       style="color-interpolation-filters:sRGB"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       inkscape:menu="Overlays"
+       inkscape:label="Clouds">
+      <feTurbulence
+         id="feTurbulence2583-3-5"
+         type="fractalNoise"
+         baseFrequency="0.040 0.107"
+         numOctaves="3" />
+      <feColorMatrix
+         id="feColorMatrix2585-2-2"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         result="result0" />
+      <feFlood
+         id="feFlood2587-5-2"
+         flood-color="rgb(255,255,255)"
+         flood-opacity="1" />
+      <feComposite
+         id="feComposite2589-9-7"
+         in2="result0"
+         operator="in" />
+      <feComposite
+         id="feComposite2591-4-3"
+         in2="SourceGraphic"
+         operator="atop" />
+    </filter>
+    <filter
+       id="filter2593-1-8"
+       style="color-interpolation-filters:sRGB"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       inkscape:menu="Overlays"
+       inkscape:label="Clouds">
+      <feTurbulence
+         id="feTurbulence2583-3-8"
+         type="fractalNoise"
+         baseFrequency="0.040 0.107"
+         numOctaves="3" />
+      <feColorMatrix
+         id="feColorMatrix2585-2-25"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         result="result0" />
+      <feFlood
+         id="feFlood2587-5-3"
+         flood-color="rgb(255,255,255)"
+         flood-opacity="1" />
+      <feComposite
+         id="feComposite2589-9-72"
+         in2="result0"
+         operator="in" />
+      <feComposite
+         id="feComposite2591-4-8"
+         in2="SourceGraphic"
+         operator="atop" />
+    </filter>
+    <filter
+       id="filter2593-1-9"
+       style="color-interpolation-filters:sRGB"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       inkscape:menu="Overlays"
+       inkscape:label="Clouds">
+      <feTurbulence
+         id="feTurbulence2583-3-9"
+         type="fractalNoise"
+         baseFrequency="0.040 0.107"
+         numOctaves="3" />
+      <feColorMatrix
+         id="feColorMatrix2585-2-1"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         result="result0" />
+      <feFlood
+         id="feFlood2587-5-5"
+         flood-color="rgb(255,255,255)"
+         flood-opacity="1" />
+      <feComposite
+         id="feComposite2589-9-44"
+         in2="result0"
+         operator="in" />
+      <feComposite
+         id="feComposite2591-4-26"
+         in2="SourceGraphic"
+         operator="atop" />
+    </filter>
+    <filter
+       id="filter2593-1-3"
+       style="color-interpolation-filters:sRGB"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       inkscape:menu="Overlays"
+       inkscape:label="Clouds">
+      <feTurbulence
+         id="feTurbulence2583-3-20"
+         type="fractalNoise"
+         baseFrequency="0.040 0.107"
+         numOctaves="3" />
+      <feColorMatrix
+         id="feColorMatrix2585-2-6"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         result="result0" />
+      <feFlood
+         id="feFlood2587-5-6"
+         flood-color="rgb(255,255,255)"
+         flood-opacity="1" />
+      <feComposite
+         id="feComposite2589-9-8"
+         in2="result0"
+         operator="in" />
+      <feComposite
+         id="feComposite2591-4-7"
+         in2="SourceGraphic"
+         operator="atop" />
+    </filter>
+    <filter
+       id="filter2593-1-4"
+       style="color-interpolation-filters:sRGB"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       inkscape:menu="Overlays"
+       inkscape:label="Clouds">
+      <feTurbulence
+         id="feTurbulence2583-3-6"
+         type="fractalNoise"
+         baseFrequency="0.040 0.107"
+         numOctaves="3" />
+      <feColorMatrix
+         id="feColorMatrix2585-2-85"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         result="result0" />
+      <feFlood
+         id="feFlood2587-5-0"
+         flood-color="rgb(255,255,255)"
+         flood-opacity="1" />
+      <feComposite
+         id="feComposite2589-9-6"
+         in2="result0"
+         operator="in" />
+      <feComposite
+         id="feComposite2591-4-9"
+         in2="SourceGraphic"
+         operator="atop" />
+    </filter>
+    <filter
+       id="filter2793"
+       style="color-interpolation-filters:sRGB;"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       inkscape:menu="Overlays"
+       inkscape:label="Clouds">
+      <feTurbulence
+         id="feTurbulence2783"
+         type="fractalNoise"
+         baseFrequency="0.040 0.107"
+         numOctaves="3" />
+      <feColorMatrix
+         id="feColorMatrix2785"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         result="result0" />
+      <feFlood
+         id="feFlood2787"
+         flood-color="rgb(255,255,255)"
+         flood-opacity="1" />
+      <feComposite
+         id="feComposite2789"
+         in2="result0"
+         operator="in" />
+      <feComposite
+         result="fbSourceGraphic"
+         id="feComposite2791"
+         in2="SourceGraphic"
+         operator="atop" />
+      <feColorMatrix
+         id="feColorMatrix2840"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphicAlpha" />
+      <feTurbulence
+         in="fbSourceGraphic"
+         type="fractalNoise"
+         baseFrequency="0.040 0.107"
+         numOctaves="3"
+         id="feTurbulence2842" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         result="result0"
+         id="feColorMatrix2844" />
+      <feFlood
+         result="result1"
+         flood-color="rgb(255,255,255)"
+         flood-opacity="1"
+         id="feFlood2846" />
+      <feComposite
+         result="result2"
+         operator="in"
+         id="feComposite2848"
+         in2="result0" />
+      <feComposite
+         operator="atop"
+         id="feComposite2850"
+         in2="fbSourceGraphic" />
+    </filter>
+    <filter
+       inkscape:label="Clouds"
+       inkscape:menu="Overlays"
+       inkscape:menu-tooltip="Airy, fluffy, sparse white clouds"
+       style="color-interpolation-filters:sRGB"
+       id="filter2593-1-4-7">
+      <feTurbulence
+         numOctaves="3"
+         baseFrequency="0.040 0.107"
+         type="fractalNoise"
+         id="feTurbulence2583-3-6-7" />
+      <feColorMatrix
+         result="result0"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -2.7"
+         id="feColorMatrix2585-2-85-7" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(255,255,255)"
+         id="feFlood2587-5-0-4" />
+      <feComposite
+         operator="in"
+         in2="result0"
+         id="feComposite2589-9-6-8" />
+      <feComposite
+         operator="atop"
+         in2="SourceGraphic"
+         id="feComposite2591-4-9-6" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter990"
+       x="-7.5238849e-11"
+       width="1"
+       y="-9.3379454e-11"
+       height="1">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.6630492e-09"
+         id="feGaussianBlur992" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     inkscape:snap-global="true"
+     inkscape:pagecheckerboard="false"
+     showguides="true"
+     id="base"
+     pagecolor="#353535"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.061871843"
+     inkscape:cx="1519.9454"
+     inkscape:cy="4634.0514"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer3"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     showborder="true"
+     inkscape:window-width="960"
+     inkscape:window-height="1046"
+     inkscape:window-x="938"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata994">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1660-8"
+       style="opacity:0.5;fill:#ffffff;stroke:#6b6b6b;stroke-opacity:1"
+       transform="matrix(0.75768283,0,0,0.49543037,312.78032,139.177)" />
+    <path
+       d="M 0.57840734,64.277694 A 35.642419,33.273256 0.23856068 0 0 19.191791,94.551012 35.642419,33.273256 0.23856068 0 0 53.732452,127.38907 35.642419,33.273256 0.23856068 0 0 83.750663,113.59566 46.367847,43.285761 0.23856112 0 0 127.13185,71.755788 46.367847,43.285761 0.23856112 0 0 101.82418,31.834138 40.176456,33.267704 1.2158449 0 0 63.094635,2.679011 40.176456,33.267704 1.2158449 0 0 21.838433,34.751891 40.176456,33.267704 1.2158449 0 0 21.834713,34.864785 35.642419,33.273256 0.23856068 0 0 0.57841586,64.277698 Z"
+       style="font-variation-settings:normal;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.668805;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="path2902" />
+  </g>
+  <g
+     style="display:inline"
+     inkscape:label="Layer 3"
+     id="layer3"
+     inkscape:groupmode="layer">
+    <path
+       style="opacity:1;fill:#e7e7e7;fill-opacity:1;stroke:#343434;stroke-width:3.643;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter990)"
+       id="path1602"
+       d="m 10.861478,103.46923 c 0,0 7.589793,-7.08927 7.589793,-7.08927 0.41202,-0.23021 1.62658,-0.969785 1.23605,-0.690627 -1.54469,1.104164 -2.90724,3.087262 -4.70304,3.168862 -1.551041,0.07052 2.61274,-2.020478 3.86042,-3.130552 3.94432,-3.509308 6.83054,-6.548408 10.31351,-10.841898 1.85518,-2.286922 3.56055,-4.742843 5.34083,-7.114263 7.05079,-10.191074 12.54981,-21.782704 16.39766,-34.196677 1.97879,-6.383996 2.32401,-8.630823 3.6864,-14.994003 1.33163,-7.664745 0.69112,-3.570105 1.63268,-10.35055 0.14425,-1.038819 -0.24159,-2.452667 0.43942,-3.115111 2.57608,-2.505846 5.4363,-5.104577 8.70233,-5.7773934 1.13428,-0.233668 1.18403,2.3806204 1.65297,3.6441514 0.84623,2.280111 1.52374,4.645427 2.28562,6.96814 1.10028,3.138442 2.17815,6.288381 3.30086,9.415326 3.51241,9.7827 5.00989,13.794552 8.93164,23.465364 3.82557,9.433641 7.9123,18.703704 12.01182,27.967292 0.46009,1.06475 3.676,7.509254 3.39988,9.806924 -0.13181,1.09676 -0.87976,2.13814 -1.71435,2.6084 -3.83411,2.16038 -7.7998,4.239179 -11.97259,5.103653 -2.07746,0.43039 -13.12527,-3.663643 -14.16808,-4.017733 -12.27145,-4.63849 -24.25413,-10.247888 -36.23695,-15.844895 -12.90567,-6.028059 -2.0179,-0.890112 -13.34536,-6.254059 -0.21141,-0.111064 -6.188831,-2.923484 -6.853771,-4.219824 -0.35443,-0.690978 -0.27874,-1.955727 0.27968,-2.412104 3.541881,-2.894668 7.431871,-5.185642 11.397161,-7.13101 1.62725,-0.798328 14.3151,-2.974326 14.74283,-3.053016 16.19775,-2.827772 32.4157,-5.835241 48.29543,-10.692968 10.24467,-3.133922 13.367999,-4.571094 23.183429,-8.433566 12.04927,-5.640242 6.34138,-2.71245 17.15919,-8.682654 v 0 c 0,0 -5.02916,4.792648 -5.02916,4.792648 -10.19691,5.284771 -4.79881,2.682524 -16.22765,7.705943 -9.166729,3.380937 -13.062159,4.962886 -22.605489,7.840657 -16.36715,4.935476 -33.03558,8.050496 -49.59683,11.843104 -3.13683,0.78885 -6.29149,1.481417 -9.4105,2.36655 -2.28226,0.647675 -4.50834,2.900204 -6.78605,2.229807 -1.34914,-0.397089 2.05864,-2.244429 3.13117,-3.305541 0.43176,-0.427169 -1.3165,0.742161 -1.20643,1.401276 0.27296,1.634584 5.35066,4.802275 5.54188,4.94095 1.827,1.074693 3.64022,2.183963 5.48102,3.224075 5.19501,2.935355 9.81665,5.35146 15.17927,7.946588 5.66726,2.742559 12.66585,5.937545 18.48576,8.136063 3.18184,1.201966 6.41809,2.184886 9.62713,3.277326 2.83914,0.69341 5.65294,1.5588 8.51742,2.08023 2.22834,0.40564 5.11356,-1.18385 6.73634,0.69647 1.04253,1.20797 -2.34252,2.66316 -2.33452,4.403922 0.0049,1.125731 1.97294,-0.825417 2.34567,-1.858162 0.95321,-2.6411 -1.48371,-8.775117 -1.98347,-10.435011 -0.91858,-2.660285 -1.81022,-5.334246 -2.75575,-7.980849 -6.43658,-18.016452 -13.66155,-35.619692 -21.84625,-52.585394 -1.11625,-2.025275 -2.14069,-4.128192 -3.34875,-6.075829 -2.39282,-3.857716 -6.36872,-3.460054 4.83793,-7.600513 0.93055,-0.343804 -0.63468,2.214285 -0.8996,3.34054 -0.84847,3.607176 -1.40912,7.307818 -2.40861,10.866703 -1.47847,5.813925 -2.36377,9.658406 -4.23904,15.41896 -2.19061,6.729195 -3.96571,11.151351 -6.94445,17.480089 -1.42046,3.017984 -2.88128,6.013999 -4.48163,8.89892 -1.54297,2.781498 -3.29265,5.388978 -4.93898,8.083467 -3.89835,5.382694 -5.80005,8.284723 -10.0502,13.125747 -5.7134,6.50769 -12.56753,11.578261 -19.635693,15.635325 z" />
+    <path
+       d="m 10.861476,104.52757 c 0,0 7.589793,-7.089271 7.589793,-7.089271 0.41202,-0.23021 1.62658,-0.96979 1.23605,-0.69063 -1.54469,1.10417 -2.90724,3.087269 -4.70304,3.168869 -1.551041,0.0705 2.61274,-2.020479 3.86042,-3.130559 3.94432,-3.50931 6.83054,-6.54841 10.31351,-10.84189 1.85518,-2.28693 3.56055,-4.74285 5.340831,-7.11427 7.050789,-10.191072 12.549809,-21.782703 16.397661,-34.196675 1.978789,-6.383996 2.32401,-8.630825 3.6864,-14.994004 1.331629,-7.664745 0.691118,-3.570105 1.63268,-10.35055 0.144248,-1.038819 -0.241591,-2.452667 0.43942,-3.115111 2.576078,-2.505846 5.436298,-5.104577 8.702328,-5.777394 1.13428,-0.233668 1.184032,2.380621 1.652971,3.644152 0.84623,2.280111 1.523741,4.645427 2.285619,6.96814 1.100281,3.138442 2.178151,6.288381 3.30086,9.415326 3.51241,9.7827 5.009893,13.794553 8.931643,23.465365 3.82557,9.433642 7.9123,18.703703 12.01182,27.967291 0.46009,1.06475 3.676,7.50925 3.39988,9.80692 -0.13181,1.09677 -0.87976,2.13814 -1.71435,2.6084 -3.83411,2.16039 -7.7998,4.23918 -11.97259,5.103659 -2.07746,0.43039 -13.125272,-3.663639 -14.168083,-4.017739 -12.271449,-4.63849 -24.254129,-10.24788 -36.23695,-15.84489 -12.90567,-6.02806 -2.0179,-0.89011 -13.34536,-6.254059 -0.21141,-0.111064 -6.188831,-2.923484 -6.853771,-4.219823 -0.35443,-0.690978 -0.27874,-1.955729 0.27968,-2.412106 3.541881,-2.894666 7.431871,-5.18564 11.397161,-7.13101 1.62725,-0.798328 14.315099,-2.974325 14.74283,-3.053014 16.197749,-2.827774 32.4157,-5.835243 48.295433,-10.692969 10.24467,-3.133924 13.367998,-4.571095 23.183428,-8.433567 12.04927,-5.640242 6.34138,-2.71245 17.15919,-8.682654 v 0 c 0,0 -5.02916,4.792648 -5.02916,4.792648 -10.19691,5.284773 -4.79881,2.682524 -16.22765,7.705943 -9.166728,3.380938 -13.062158,4.962887 -22.605488,7.840657 -16.367152,4.935477 -33.035582,8.050496 -49.596833,11.843105 -3.13683,0.78885 -6.29149,1.481418 -9.4105,2.366549 -2.28226,0.647677 -4.50834,2.900204 -6.78605,2.229808 -1.34914,-0.397089 2.05864,-2.244428 3.13117,-3.305543 0.43176,-0.427167 -1.3165,0.742162 -1.20643,1.401279 0.27296,1.634582 5.35066,4.802275 5.54188,4.940948 1.827,1.074692 3.64022,2.183963 5.48102,3.224075 5.195012,2.935353 9.81665,5.351463 15.17927,7.946583 5.667261,2.74256 12.66585,5.93755 18.48576,8.13607 3.18184,1.20196 6.418091,2.18488 9.627132,3.27732 2.839141,0.69341 5.652941,1.5588 8.517421,2.08024 2.22834,0.40564 5.11356,-1.18386 6.73634,0.69647 1.04253,1.20796 -2.34252,2.66315 -2.33452,4.40392 0.005,1.125729 1.97294,-0.82542 2.34567,-1.85816 0.95321,-2.6411 -1.48371,-8.77512 -1.98347,-10.43502 -0.91858,-2.66028 -1.81022,-5.33424 -2.75575,-7.98085 C 78.380172,59.923103 71.155201,42.319863 62.970501,25.354159 61.85425,23.328884 60.82981,21.225967 59.621749,19.27833 c -2.39282,-3.857716 -6.368719,-3.460054 4.83793,-7.600513 0.93055,-0.343804 -0.63468,2.214285 -0.899599,3.34054 -0.848471,3.607176 -1.409121,7.307818 -2.408611,10.866703 -1.47847,5.813925 -2.363769,9.658406 -4.23904,15.418961 -2.19061,6.729193 -3.96571,11.151349 -6.94445,17.480087 -1.420458,3.017986 -2.881278,6.014001 -4.481629,8.898922 -1.542971,2.781499 -3.29265,5.388978 -4.93898,8.083469 -3.89835,5.38269 -5.80005,8.28472 -10.050201,13.12574 -5.7134,6.50769 -12.56753,11.578271 -19.635693,15.635331 z"
+       id="path1602-3"
+       style="display:inline;opacity:1;fill:#868686;fill-opacity:1;stroke:none;stroke-width:3.843;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.476027" />
+  </g>
+</svg>

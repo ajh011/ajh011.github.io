@@ -3599,7 +3599,7 @@ input, select, textarea {
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			display: inline-block;
 			opacity: 1;
-			padding: 0 1em;
+			padding: 0 0;
 			position: relative;
 			z-index: 1;
 		}
@@ -3621,10 +3621,10 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
 			-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
 			transition: transform 0.75s ease, opacity 0.75s ease;
-			-moz-transition-delay: 2.5s;
-			-webkit-transition-delay: 2.5s;
-			-ms-transition-delay: 2.5s;
-			transition-delay: 2.5s;
+			-moz-transition-delay: 1s;
+			-webkit-transition-delay: 1s;
+			-ms-transition-delay: 1s;
+			transition-delay: 1s;
 			-moz-transform: translateY(0);
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
@@ -3693,7 +3693,7 @@ input, select, textarea {
 		@media screen and (max-width: 8in) {
 
 			#banner {
-				padding: 7em 3em 5em 3em ;
+				padding: 7em 0 5em 0 ;
 				height: auto;
 				min-height: 0;
 			}
