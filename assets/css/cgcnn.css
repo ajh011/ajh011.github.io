@@ -15,8 +15,8 @@
 
  @font-face {
   font-family: 'Scribble';
-  src: url('../assets/fonts/scribble-webfont.woff2') format('woff2'),
-       url('../assets/fonts/scribble-webfont.woff') format('woff');
+  src: url('../fonts/scribble-webfont.woff2') format('woff2'),
+       url('../fonts/scribble-webfont.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
@@ -43,7 +43,7 @@ body {
 
 
 body {
-  background-image: linear-gradient( #19172470, #211e2f70,  #211e2f70), url("../assets/images/backmobius.jpg");
+  background-image: linear-gradient( #19172470, #211e2f70,  #211e2f70), url("../images/backmobius.jpg");
   background-color: rgb(0, 0, 0);
   background-size: cover;
   background-position: center center;
