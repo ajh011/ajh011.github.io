@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Qudits</title>
+    <title>Quantum Machine Learning</title>
     <link href="../../assets/css/qisstyle.css" rel="stylesheet">
-    <link href="../../assets/css/resources.css" rel="stylesheet">
-    <link href="../../assets/css/jumper.css" rel="stylesheet">
+    <link href="../../assets/css/qudits.css" rel="stylesheet">
 
 
     <!--Geogebra Support-->
@@ -17,6 +16,8 @@
     <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}},
                                   loader: {load: ['[tex]/ams']},
                                   tex: {packages: {'[+]': ['ams']}});</script>
+
+                                  
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,10 +47,7 @@
 
 
     <meta charset="UTF-8">
-    <meta name="description" content="A discussion of resources relevant to Quantum
-                                      Computational and Informational Science. Lists 
-                                      introductory and reference texts, as well as 
-                                      other available media relevant to the topic. ">
+    <meta name="description" content="Resources and discussion relevant to Quantum Machine Learning."">
     <meta name="keywords" content=" ">
     <meta name="author" content="Alexander J. Heilman">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,61 +62,28 @@
   </div>
 
   <div id="up">
-    <a id="upa" href="https://www.alexheilman.com/qis/index.html">QIS</a>
+    <a id="upa" href="https://www.alexheilman.com/res/qis/index.html">QIS</a>
   </div>
 
 
 
-    <h1 id="title">Resources for Quantum Computation and Quantum Information</h1>
-    <p>
-      Below is a list of resources for those interested in quantum computational and
-      information science. Generally ordered by media type, some resources have additional 
-      medias and problem sets associated with them.
-    </p>
-    <p>
-      Most assume a familiarity with basic linear algebra and 
-      eignedecomposition. Thus, background knowledge in such mathematics
-      is strongly recommended if not required. The unitary group is also 
-      of particular importance for these fields. 
-    </p>
-
-    <br>
-
-    <h2 id="texttit">Textbooks </h2>
-    <p>
-      Many good textbooks are now available for those interested in these fields, of
-      varying assumed background and difficulty. Hence, relevant texts are broken down
-      below into two subjective groups, reference texts and introductory texts. 
-    </p>
-    <h3>Introductory Texts</h3>
-    <p>
-      Several introductory texts are now available. One includes N. David Mermin's 
-      <em>Quantum Computer Science: An Introduction</em>.
-    </p>
-    <h3>Reference Texts</h3>
-    <p>
-      The classic reference text, at this point, for the field is Nielsen and Chuang's 
-      <em>Quantum Computation and Quantum Information</em>. 
-    </p>
-
-    <br>
-
-    <h2 id="lecturetit">Online Lectures </h2>
-    <p>
-       John Preskill's lecture series, which can be found on youtube here: 
-       <a href="https://www.youtube.com/playlist?list=PL0ojjrEqIyPy-1RRD8cTD_lF1hflo89Iu">Preskill Lectures</a>. Accompanying this wonderful lecture set is
-       a full set of <a href="http://theory.caltech.edu/~preskill/ph219/index.html#lecture">notes</a> by the lecturer as well as problem sets available
-       on the <a href="http://theory.caltech.edu/~preskill/ph219/ph219_2020-21.html">course website</a>.
-    </p>
-
-
-        <button type="button" class="collapsible">Two Qutrit Example</button>
-        <div class="content">
-          Put content here
-        </div>
+    <h1 id="title">Quantum Machine Learning</h1>
+     <p>
+       Quantum machine learning is a cutting edge field, with an as of yet undecided foundations. Currently implementable and 
+       effective models tend to utilize hybrid schemes, wherein classical machine learning techniques interact with quantum 
+       submodules to effectively get the best of both worlds.
+     </p>
+    
+     <h3>Resources</h3>
+     <p>
+    The late Peter Wittek's lecture series can be found on youtube <a href="https://www.youtube.com/playlist?list=PLmRxgFnCIhaMgvot-Xuym_hn69lmzIokg">here</a>. 
+    Originally produced for an EdX course, the accompanying coding exercises can be found in this <a href="https://gitlab.com/qosf/qml-mooc/-/tree/master/coding_assignments">github repository</a>.
+     </p>
 
 
 
+<!--Button collapsible-->
+<!--
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -135,6 +100,24 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
+
+
+<script>
+var coll = document.getElementsByClassName("shim");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("shimmed");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>-->
 
   </body>
 </html>
