@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Statistical Mechanics</title>
+    <link href="../../assets/css/qisstyle.css" rel="stylesheet">
+    <link href="../../assets/css/qudits.css" rel="stylesheet">
+
+
+    <!--Geogebra Support-->
+    <script src="navigation.js"></script>
+
+
+    <!--MathJax Support-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}},
+                                  loader: {load: ['[tex]/ams']},
+                                  tex: {packages: {'[+]': ['ams']}});</script>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../assets/images/res/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/images/res/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/images/res/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/images/res/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../../assets/images/res/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../assets/images/res/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../assets/images/res/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../assets/images/res/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="../../assets/images/res/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="../../assets/images/res/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="../../assets/images/res/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="../../assets/images/res/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="../../assets/images/res/mstile-310x310.png" />
+
+
+
+    <meta charset="UTF-8">
+    <meta name="description" content="A short overview of relevant relations for statistical mechanics.">
+    <meta name="keywords" content="statistical mechanics">
+    <meta name="author" content="Alexander J. Heilman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+  </head>
+  
+  <body>
+
+
+  <div id="home">
+    <a href="https://www.alexheilman.com"><img id="homeimg" src="../../assets/images/iconwhite/favicon-196x196.png" width="50"></a>
+  </div>
+
+  <div id="up">
+    <a id="upa" href="https://www.alexheilman.com/res/gp/index.html">GP</a>
+  </div>
+
+  <h1 id="title">Statistical Mechanics</h1>
+    <p id="blurb">
+      Statistical mechanics is the extrapolation of quantitative properties from systems of large numbers of particles (on the order of \(~10^{23}\) particles). 
+      Thermodynamics is a subset of this more general set of tools. 
+
+    </p>
+    <h2>Thermodynamic Relations</h2>
+    <p>
+      Perhaps the most intuitive thermodynamic function is the internal energy of a system. For a general
+      system, the internal energy is defined as a function of the entropy, volume, and number of particles.
+      Taking the exterior derivative of this then gives the relation
+      <div class="eq">
+    
+      \begin{align}
+        dU(S,V,N)&=\frac{\partial U}{\partial S}&dS & +&\frac{\partial U}{\partial V}&dV&+&\frac{\partial U}{\partial N}&dN&\\
+                 &=-T&dS&+&P&dV&+&\mu &N& \ \ \tiny{\text{(Euler Relation)}}
+      \end{align}
+      </div>
+      Immediatley, we see that the properties of temperature \(T\), pressure \(P\), and chemical potential \(\mu\) may
+      be defined in terms of derivatives of the internal energy of the system. Such properties that are derivatives
+      of the internal energy are termed intrinsic properties, as they are 'intrinsic' to any arbitrarily selection portion
+      of the overall system. However, the variables that determine the energy are all neccesarily extrinsic, in that 
+      volume \(V\), entropy \(S\), and the number of particles \(N\) are a measure of the total system,  and are not
+      properties inherent in any particular entity of those comprising the system. Particularly,
+      extrinsic properties all meet the scalability condition of \(U\) in that \( \lambda U(S,V,N)= U(\lambda S,\lambda V,\lambda N)\).
+    </p>
+    <h3>Intrinsic Properties</h3>
+    <p>
+      As discussed above, intrinsic properties are those that characterize not the total system but inherent properties of
+      any (adequately sized) subsystem contained within. As such, they're generally derivatives of state functions with respect to
+      extrinsic properties of the system. 
+      
+    </p>
+    <div class="eq">
+        \begin{align}
+          \frac{\partial U}{\partial S}&=&-T\\
+          \frac{\partial U}{\partial V}&=&P\\
+          \frac{\partial U}{\partial N}&=&\mu\\
+        \end{align}
+    </div>
+    
+    <h3>Extrinsic Properties</h3>
+    <p>
+      Extrinsic properties are those that only describe the collected system in it's entirety. That is,
+      they are not properties inherent in <em>any</em> subsystem contained within.      
+    </p>
+    <div class="eq">
+        \begin{align}
+          \frac{\partial U}{\partial S}&=&-T\\
+          \frac{\partial U}{\partial V}&=&P\\
+          \frac{\partial U}{\partial N}&=&\mu\\
+        \end{align}
+    </div>
+    <h2>Ensembles</h2>
+    <p>
+      Ensembles are effectively predetermined strategies for applying the methods of thermodynamics, and statistical mechanics at large,
+      to systems characterized by a certain set of properties.
+    </p>
+    <h3>Micro-canonical Ensemble \( (E,N,V)\)</h3>
+    <p>
+      An approach suited for isolated or entirely discernible systems that have a well-defined energy. From this relation for energy and 
+      the expectation that it is well defined for all potential arrangements of the system, we may calculate from it the number of accessible 
+      states \(N_{\Gamma_a}\) in it's phase space \(\Gamma\) for any total internal energy \(E\).
+      <div class="eq">
+        $$
+        N_{\Gamma_a}(E) = \int \frac{d\Gamma}{\Gamma_0} \delta (H(p_i,q_i)-E)
+        $$
+      </div>
+      From this number of accessible states, we may derive the entropy for the system via the relation below and
+      thence calculate arbitrary thermodynamic quantities.
+      <div class="eq">
+        $$
+        S=-k_B lnN_{\Gamma_a}
+        $$
+      </div>
+    </p>
+    
+    <h3>Canonical Ensemble \( (T,N,V)\)</h3>
+    <p>
+      The canonical ensemble is an approach suited for application to systems distinguishable from their surroundings, but that nonetheless, interact
+      with their surrounding 'environment'. Thus, the energy of our subsystem under analysis isn't entirely well-defined at an arbitrary time and thus
+      it is neccessary to depend on an intrinsic property of the system, namely temperature.
+    </p>
+    <p>
+      The general approach to modeling systems in the canonical ensemble is to solve for the particular partition function \(\mathcal{Z}\) of the system given by
+      
+      <div class="eq">
+        $$
+        \mathcal{Z}(\beta) = \int \frac{d\Gamma}{\Gamma_0} e^{-\beta H}
+        $$
+      </div>
+
+      From here the Helmholtz free energy of the system is easily found via
+      
+      <div class="eq">
+        $$
+        F(T,V,N) = -k_B T ln\mathcal{Z} 
+        $$
+      </div>
+    </p>
+    <h3>Grand Canonical Ensemble \( (T,\mu ,V)\)</h3>
+    <p>
+      An approach to statistical mechanics apt for application to subsystems that interchange particles with their surrounding environment, but are
+      chemically indistinguishable from those elements of it's environment. Essentially, we replace dependence on the number of particles \(N\)
+      with dependence on inherent chemical properties of these particles, namely their chemical potential \(\mu\).
+    </p>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Quantum Angular Momentum</title>
+    <title>Classical Electrodynamics</title>
     <link href="../../assets/css/qisstyle.css" rel="stylesheet">
     <link href="../../assets/css/qudits.css" rel="stylesheet">
 
@@ -45,8 +45,8 @@
 
 
     <meta charset="UTF-8">
-    <meta name="description" content="A short overview of relevant relations for quantum angular momentum.">
-    <meta name="keywords" content="quantum angular momentum">
+    <meta name="description" content="A short overview of relevant relations for classical electrodynamics.">
+    <meta name="keywords" content="classical electrodynamics">
     <meta name="author" content="Alexander J. Heilman">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
@@ -63,83 +63,48 @@
     <a id="upa" href="https://www.alexheilman.com/res/gp/index.html">GP</a>
   </div>
 
-  <h1 id="title">Quantum Angular Momentum Relations</h1>
+  <h1 id="title">Classical Electrodynamics</h1>
     <p id="blurb">
-      Angular momentum is defined as 
-      <div class="eq">
-      $$
-        L_k = \sum_{i,j,k}\epsilon_{ijk}x_i p_j
-      $$
-      </div>
-      Angular momentum in quantum mechanics cannot have simultaneous eigenvectors for all three 
-      spatial directions. That is, different components of angular momentum do not commute. However, 
-      the total angular momentum can be simultaneously described with one direction of angular momentum,
-      which generally is taken as \(L_z\). Explicitly, \(L^2\) and \(L_i\) commute. This simultaneous 
-      eigenstate is generally denoted in Dirac notation as \(\vert l m\rangle\), where \(l\) is the quantum number
-      corresponding to the \(L^2\equiv L_x^2+L_y^2+L_z^2 \) operator with eigenvalue \(l(l+1)\), and \(m\) is the quantum number associated with
-      \(L_z\) (we choose z here to adhere to the standard convention) with eigenvalue \( m\).
-    </p>
 
-    <p>
-      These relations are specified
-      explicitly below for referential convenience.
-      <div class="eq">
-        \begin{align}
-          [L_i,L_j]&=i\hbar \epsilon_{ijk}L_k\\
-          [L^2,L_i]&=0\\
-
-        \end{align}
-      </div>
-      
-      <div class="eq">
-        \begin{align}
-          L_z\vert l m\rangle&=m\vert l m\rangle\\
-          L^2\vert l m\rangle&=l(l+1)\vert l m\rangle\\
-
-        \end{align}
-      </div>
-    </p>
-
-    <h3>Ladder Operators</h3>
-    <p>
-      Ladder operators, or creation and annihilation operators, or raising and lowering operators
-      are useful in certain algebraic derivations and models of certain physical processes. They're defined for
-      vector operators as \(L_{z\pm}=L_x\pm iL_y\). In the context
-      of angular momentum, they lower or increase the magnetic quantum number, up to the minimum or maximum
-      possible values (\(-l\) or \(+l\) respectively), giving zero otherwise.
-      
-      <div class="eq">
-        \begin{align}
-          L_+\vert l m\rangle&=\sqrt{(j-m)(j+m+1))}\vert l (m+1)\rangle\\
-                             &=\sqrt{j(j+1)-m(m+1))}\vert l (m+1)\rangle\\
-          L_-\vert l m\rangle&=\sqrt{(j+m)(j-m+1))}\vert l (m-1)\rangle\\
-                             &=\sqrt{j(j+1)-m(m-1))}\vert l (m+1)\rangle
-        \end{align}
-      </div>
 
     </p>
-
     
-    <h3>Special Cases of Angular Momentum</h3>
+    <h3>Basic Relations</h3>
     <p>
-      Two special cases of quantum angular momentum are those of spin and total angular momentum.
-      The case of spin is generally described with the simultaneous operators \(S^2, S\). The
-      case of total angular momentum  is generally described with the simultaneous operators \(J^2,J_z\).
+      The electric field may be specified as the gradient of some scalar potential
+      <div class="eq">
+        $$
+          E=-\nabla \Phi
+        $$
+      </div>
     </p>
 
-    <h2>Total Angular Momentum</h2>
-    <p>
-      When a system is comprised of subsystems, each with their own angular momentum, 
-      the overall system can be described by a total coupled angular momentum. In this case, 
-      the new basis can be described as a linear combination of the subsystem's simultaneous 
-      angular momentum states. The coefficients in these expansions are the infamous Clebsch-Gordon 
-      coefficients.
-    </p><!--
-    <h3>Clebsch-Gordon Coefficients</h3>
-    <p>
 
+    <h3>Electrostatic Potential in Terms of Green's Functions</h3>
+    <p>
+      The most general procedure for calculating electrostatic potentials, given some boundary conditions, is achieved
+      through the use of Green's functions, which are effectively integral operators that invert the differntial operator
+      through which boundary conditions are specified. 
+      <div class="eq">
+      \begin{align}
+        \Phi(\vec{x})=\frac{1}{4\pi \epsilon_0}\int_V \rho (\vec{x}') &G(\vec{x},\vec{x}')d\vec{x}' \  \\
+                                                                      &+\oint\left( \frac{\Phi(\vec{x}')}{\partial \hat{n}}G(\vec{x},\vec{x}')
+                                                                      -\Phi(\vec{x}') \frac{\partial G(\vec{x},\vec{x}')}{\partial \hat{n}}\right)da'\\
+      \end{align}
+      </div>
     </p>
-    <h4>Algebraic Derivation</h4>
--->
+    <h4>Types of Boundary Conditions</h4>
+
+    <h5>Dirichlet</h5>
+    <p>
+      Dirichlet boundary condtions specify the potential along the boundary and hence specify \( \Phi\). Under 
+      these conditions, the Green's function along the boundary surface neccesarily vanished, that is \(G\vert_S=0\)
+    </p>
+
+    <h5>von Neumann</h5>
+    <p>
+      Neumann boundary condtions specify the electric field along the boundary and hence specify \(\frac{\partial \Phi}{\partial \hat{n}}\). Under 
+      these conditions, the Green's function derivative along the boundary surface neccesarily vanished, that is \(\frac{\partial G}{\partial \hat{n}}\vert_S=0\)
+    </p>
   </body>
 </html>
