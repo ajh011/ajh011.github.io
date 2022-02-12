@@ -71,7 +71,14 @@
     
     <h3>Basic Relations</h3>
     <p>
-      The electric field may be specified as the gradient of some scalar potential
+      The electric field is a non-rotational vector field that is postulated to permeate all space. The field uniques determines the
+      force on a charge particle via the relation
+      <div class="eq">
+        $$
+          F=qE
+        $$
+      </div>
+      The electric field (because of it's vanishing curl) may be specified as the gradient of some scalar potential
       <div class="eq">
         $$
           E=-\nabla \Phi
@@ -88,13 +95,16 @@
       <div class="eq">
       \begin{align}
         \Phi(\vec{x})=\frac{1}{4\pi \epsilon_0}\int_V \rho (\vec{x}') &G(\vec{x},\vec{x}')d\vec{x}' \  \\
-                                                                      &+\oint\left( \frac{\Phi(\vec{x}')}{\partial \hat{n}}G(\vec{x},\vec{x}')
-                                                                      -\Phi(\vec{x}') \frac{\partial G(\vec{x},\vec{x}')}{\partial \hat{n}}\right)da'\\
+                                                                      &+\oint\left[ \frac{\Phi(\vec{x}')}{\partial \hat{n}}G(\vec{x},\vec{x}')
+                                                                      -\Phi(\vec{x}') \frac{\partial G(\vec{x},\vec{x}')}{\partial \hat{n}}\right]da'\\
       \end{align}
       </div>
     </p>
     <h4>Types of Boundary Conditions</h4>
-
+    <p>
+      Boundary conditions are generally given as either one of two classes: Dirichlet or von Neumann. Both specify a certain equivalence
+      along some boundary, and have corresponding behaviour neccesarily exhibited in their corresponding Green's functions. 
+    </p>
     <h5>Dirichlet</h5>
     <p>
       Dirichlet boundary condtions specify the potential along the boundary and hence specify \( \Phi\). Under 

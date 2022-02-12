@@ -119,7 +119,8 @@
     <h2>Ensembles</h2>
     <p>
       Ensembles are effectively predetermined strategies for applying the methods of thermodynamics, and statistical mechanics at large,
-      to systems characterized by a certain set of properties.
+      to systems characterized by a certain set of properties. They can be thought of as the way in which we may distribute a certain 
+      set of properties across all the potential arrangements in phase space that satisfy such properties. 
     </p>
     <h3>Micro-canonical Ensemble \( (E,N,V)\)</h3>
     <p>
@@ -135,12 +136,12 @@
       thence calculate arbitrary thermodynamic quantities.
       <div class="eq">
         $$
-        S=-k_B lnN_{\Gamma_a}
+        S(U,V,N)=k_B lnN_{\Gamma_a}
         $$
       </div>
     </p>
     
-    <h3>Canonical Ensemble \( (T,N,V)\)</h3>
+    <h3>Canonical Ensemble \( (T,V,N)\)</h3>
     <p>
       The canonical ensemble is an approach suited for application to systems distinguishable from their surroundings, but that nonetheless, interact
       with their surrounding 'environment'. Thus, the energy of our subsystem under analysis isn't entirely well-defined at an arbitrary time and thus
@@ -151,7 +152,7 @@
       
       <div class="eq">
         $$
-        \mathcal{Z}(\beta) = \int \frac{d\Gamma}{\Gamma_0} e^{-\beta H}
+        Z(\beta) = \int \frac{d\Gamma}{\Gamma_0} e^{-\beta H}
         $$
       </div>
 
@@ -159,15 +160,33 @@
       
       <div class="eq">
         $$
-        F(T,V,N) = -k_B T ln\mathcal{Z} 
+        F(T,V,N) = -k_B T ln Z 
         $$
       </div>
     </p>
-    <h3>Grand Canonical Ensemble \( (T,\mu ,V)\)</h3>
+    <h3>Grand Canonical Ensemble \( (T ,V,\mu )\)</h3>
     <p>
       An approach to statistical mechanics apt for application to subsystems that interchange particles with their surrounding environment, but are
       chemically indistinguishable from those elements of it's environment. Essentially, we replace dependence on the number of particles \(N\)
       with dependence on inherent chemical properties of these particles, namely their chemical potential \(\mu\).
+    </p>
+    
+    <p>
+      The general approach in the grand canonical ensemble is to solve for the particular partition function \(\mathcal{Z}\) of the system given by
+      
+      <div class="eq">
+        $$
+        \mathcal{Z}(\beta) = \int \frac{d\Gamma}{\Gamma_0} e^{-\beta (H-\mu N)}
+        $$
+      </div>
+
+      From here the grand potential of the system is easily found via
+      
+      <div class="eq">
+        $$
+        \Omega(T,V,\mu ) = -k_B T ln\mathcal{Z} 
+        $$
+      </div>
     </p>
   </body>
 </html>
