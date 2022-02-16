@@ -67,7 +67,6 @@
     <p id="blurb">
       Statistical mechanics is the extrapolation of quantitative properties from systems of large numbers of particles (on the order of \(~10^{23}\) particles). 
       Thermodynamics is a subset of this more general set of tools. 
-
     </p>
     <h2>Thermodynamic Relations</h2>
     <p>
@@ -107,15 +106,15 @@
     <h3>Extrinsic Properties</h3>
     <p>
       Extrinsic properties are those that only describe the collected system in it's entirety. That is,
-      they are not properties inherent in <em>any</em> subsystem contained within.      
+      they are not properties inherent in <em>any</em> subsystem contained within.    
     </p>
-    <div class="eq">
+    <!--<div class="eq">
         \begin{align}
           \frac{\partial U}{\partial S}&=&-T\\
           \frac{\partial U}{\partial V}&=&P\\
           \frac{\partial U}{\partial N}&=&\mu\\
         \end{align}
-    </div>
+    </div>-->
     <h2>Ensembles</h2>
     <p>
       Ensembles are effectively predetermined strategies for applying the methods of thermodynamics, and statistical mechanics at large,
@@ -127,6 +126,9 @@
       An approach suited for isolated or entirely discernible systems that have a well-defined energy. From this relation for energy and 
       the expectation that it is well defined for all potential arrangements of the system, we may calculate from it the number of accessible 
       states \(N_{\Gamma_a}\) in it's phase space \(\Gamma\) for any total internal energy \(E\).
+      <div id="microdiag">
+        <img src="../../assets/images/res/gp/microdiag.svg" width="80%" max-width="5cm">
+      </div>
       <div class="eq">
         $$
         N_{\Gamma_a}(E) = \int \frac{d\Gamma}{\Gamma_0} \delta (H(p_i,q_i)-E)
@@ -148,7 +150,10 @@
       it is neccessary to depend on an intrinsic property of the system, namely temperature.
     </p>
     <p>
-      The general approach to modeling systems in the canonical ensemble is to solve for the particular partition function \(\mathcal{Z}\) of the system given by
+      <div id="canondiag">
+        <img src="../../assets/images/res/gp/canondiag.svg" width="80%" max-width="5cm">
+      </div>
+      The general approach to modeling systems in the canonical ensemble is to solve for the particular partition function \(Z\) of the system given by
       
       <div class="eq">
         $$
@@ -160,7 +165,7 @@
       
       <div class="eq">
         $$
-        F(T,V,N) = -k_B T ln Z 
+        F(T,V,N) = -k_B T ln Z = U - TS
         $$
       </div>
     </p>
@@ -184,7 +189,7 @@
       
       <div class="eq">
         $$
-        \Omega(T,V,\mu ) = -k_B T ln\mathcal{Z} 
+        \Omega(T,V,\mu ) = -k_B T ln\mathcal{Z} = U-TS-\mu N
         $$
       </div>
     </p>
