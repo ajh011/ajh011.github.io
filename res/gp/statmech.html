@@ -82,8 +82,8 @@
       </div>
       Immediatley, we see that the properties of temperature \(T\), pressure \(P\), and chemical potential \(\mu\) may
       be defined in terms of derivatives of the internal energy of the system. Such properties that are derivatives
-      of the internal energy are termed intrinsic properties, as they are 'intrinsic' to any arbitrarily selection portion
-      of the overall system. However, the variables that determine the energy are all neccesarily extrinsic, in that 
+      of the internal energy are termed intrinsic properties, as they are 'intrinsic' to any arbitrarily selected portion
+      of the overall system (i.e., any subsystem). However, the variables that determine the energy are all neccesarily extrinsic, in that 
       volume \(V\), entropy \(S\), and the number of particles \(N\) are a measure of the total system,  and are not
       properties inherent in any particular entity of those comprising the system. Particularly,
       extrinsic properties all meet the scalability condition of \(U\) in that \( \lambda U(S,V,N)= U(\lambda S,\lambda V,\lambda N)\).
@@ -97,8 +97,8 @@
     </p>
     <div class="eq">
         \begin{align}
-          \frac{\partial U}{\partial S}&=&-T\\
-          \frac{\partial U}{\partial V}&=&P\\
+          \frac{\partial U}{\partial S}&=&T\\
+          \frac{\partial U}{\partial V}&=&-P\\
           \frac{\partial U}{\partial N}&=&\mu\\
         \end{align}
     </div>
@@ -106,7 +106,10 @@
     <h3>Extrinsic Properties</h3>
     <p>
       Extrinsic properties are those that only describe the collected system in it's entirety. That is,
-      they are not properties inherent in <em>any</em> subsystem contained within.    
+      they are not properties inherent in any subsystem contained within. Rather, they're physical properties
+      that describe the system only in it's entirety. These properties generally include \(U\) (internal energy),  \(S\) (entropy), \(V\) (volume),
+      and \(N\) (the number of particles); as well as other
+      definable properties of this nature.
     </p>
     <!--<div class="eq">
         \begin{align}
@@ -115,17 +118,71 @@
           \frac{\partial U}{\partial N}&=&\mu\\
         \end{align}
     </div>-->
+
+    <h3>Other Common Properties</h3>
+    <p>
+      Some other common properties that may be defined for thermodynamic systems are expansion coefficients, compressibilities, and 
+      specific heats. Generally, they're specified with respect to some other state
+      variable that doesn't appear explicitly in the defining relation itself. This can be taken as a signal that this component is being held constant, but
+      it's more to specify that, in the relevant context, we're treating the relevant state function as a function of the variables referenced 
+      (i.e. the one being differentiated w.r.t. and the one specified externally). Defining relations for some of these properties are specified 
+      below for convenience.
+    </p>
+    <h5>Specific Heats</h5>
+    <p>
+      Specific heats describe the differential relationship between entropy and internal energy of the system.
+    <div class="eq">
+      \begin{align}
+        c_v&=T\left(\frac{\partial S}{\partial T}\right)_V=\left(\frac{\partial S}{\partial U}\right)_V\\
+        c_p&=T\left(\frac{\partial S}{\partial T}\right)_P=\left(\frac{\partial S}{\partial U}\right)_P
+      \end{align}
+    </div>
+    </p>
+    <h5>Compressibilities</h5>
+    <p>
+      Compressibilities describe how the volume of a system changes under changes in pressure.
+    <div class="eq">
+      \begin{align}
+        \kappa_T&=-\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_T
+      \end{align}
+    </div>
+    </p>
+    
+    <h5>Expansion Coefficients</h5>
+    <p>
+      Coefficients of volume expansion describe how volume changes under changes in temperature.
+    <div class="eq">
+      \begin{align}
+        \alpha&=\frac{1}{V}\left(\frac{\partial V}{\partial T}\right)_{P,N}
+      \end{align}
+    </div>
+    </p>
+
+<!--Maxwell Relations-->
+
+<!--Other State Functions// Legendre Transform-->
+
     <h2>Ensembles</h2>
     <p>
-      Ensembles are effectively predetermined strategies for applying the methods of thermodynamics, and statistical mechanics at large,
-      to systems characterized by a certain set of properties. They can be thought of as the way in which we may distribute a certain 
+      A statistical ensemble, or just ensemble, is a particular approach for applying the methods of statistical mechanics. Effectively,
+      ensembles are distributions in phase space, defined by a set of variables in a particular system completely specified by it's Hamiltonian.
+    </p>
+
+    <p>
+      To to that end, ensembles are predetermined strategies for applying the methods of thermodynamics, and statistical mechanics at large,
+      to systems characterized by a certain set of extrinsic or intrinsic properties. They can be thought of as the way in which we may distribute a certain 
       set of properties across all the potential arrangements in phase space that satisfy such properties. 
     </p>
     <h3>Micro-canonical Ensemble \( (E,N,V)\)</h3>
     <p>
-      An approach suited for isolated or entirely discernible systems that have a well-defined energy. From this relation for energy and 
+      The micro-canonical ensemble can be used to model isolated or completely contained systems. That is, systems in which
+      their total energy, number of particles, and volume can, at any instant, be completely specified.
+    </p>
+    <h4>General Approach in the Micro-Canonical Ensemble</h4>
+    <p>
+      Suppose you are given some macroscopic system, specified by it's Hamiltonian, and know the system's energy. From this relation for energy and 
       the expectation that it is well defined for all potential arrangements of the system, we may calculate from it the number of accessible 
-      states \(N_{\Gamma_a}\) in it's phase space \(\Gamma\) for any total internal energy \(E\).
+      states \(N_{\Gamma_a}\) in the relevant phase space \(\Gamma\) for any total internal energy \(E\).
       <div id="microdiag">
         <img src="../../assets/images/res/gp/microdiag.svg" width="80%" max-width="5cm">
       </div>
@@ -134,26 +191,48 @@
         N_{\Gamma_a}(E) = \int \frac{d\Gamma}{\Gamma_0} \delta (H(p_i,q_i)-E)
         $$
       </div>
-      From this number of accessible states, we may derive the entropy for the system via the relation below and
-      thence calculate arbitrary thermodynamic quantities.
+      where the number of accesible states is really the volume of accessible phase space partitioned into quantized packets
+      arbitrarily (though motivated by quantum mechanics). From this number of accessible states, we may derive the entropy for the
+      system via the relation below and thence calculate arbitrary thermodynamic quantities.
       <div class="eq">
         $$
         S(U,V,N)=k_B lnN_{\Gamma_a}
         $$
       </div>
     </p>
-    
+    <h5>Thermodynamic Relations Relevant to Micro-Canonical Ensemble</h5>
+    <p>
+      Since the entropy of the system is the only result of this treatment, we may only perform thermodynamics in the micro-canonical
+      ensemble. Nevertheless, it may be powerful for isolated systems. Relevant relations related to entropy \(S\) are specified below for convenience.
+      
+    <div class="eq">
+      \begin{align}
+        \frac{\partial S}{\partial U}&=&\frac{1}{T}\\
+        \frac{\partial S}{\partial V}&=&-\frac{P}{T}\\
+        \frac{\partial S}{\partial N}&=&\frac{\mu}{T}\\
+      \end{align}
+    </div>
+    </p>
+
     <h3>Canonical Ensemble \( (T,V,N)\)</h3>
     <p>
       The canonical ensemble is an approach suited for application to systems distinguishable from their surroundings, but that nonetheless, interact
-      with their surrounding 'environment'. Thus, the energy of our subsystem under analysis isn't entirely well-defined at an arbitrary time and thus
-      it is neccessary to depend on an intrinsic property of the system, namely temperature.
+      with their surrounding 'environment'. That is, this treatment may be applied to systems with a definite number of particles,
+      volume, and temperature, but may still exchange energy within a larger system. Thus, the energy of our subsystem under analysis isn't entirely
+      well-defined at an arbitrary time and it is neccessary to specifify, or depend on, an intrinsic property of the system when defining it, hence the relevance of temperature.
     </p>
+    
+    <h4>General Approach in the Canonical Ensemble</h4>
     <p>
+      The general approach to modeling systems in the canonical ensemble is to solve for the particular partition function \(Z\) of the system, from which we may perform
+      statistical mechanics. If one wishes to model such a system thermodynamically, the general approach then is to derive the Helmholtz free energy from \(Z\) and derive
+      other thermodynamical properties from there. 
+
       <div id="canondiag">
         <img src="../../assets/images/res/gp/canondiag.svg" width="80%" max-width="5cm">
       </div>
-      The general approach to modeling systems in the canonical ensemble is to solve for the particular partition function \(Z\) of the system given by
+      The partition function is defined for a system's Hamiltonian that may depend on the (specified) volume and number of particles of the system;
+      the partition function is then only a function of temperature. Explicity, the partition function in the canonical ensemble is given by
       
       <div class="eq">
         $$
@@ -161,28 +240,56 @@
         $$
       </div>
 
-      From here the Helmholtz free energy of the system is easily found via
+      and then from here, the Helmholtz free energy of the system is easily found via
       
       <div class="eq">
         $$
         F(T,V,N) = -k_B T ln Z = U - TS
         $$
       </div>
+ 
     </p>
+    
+    <h5>Statistical Relations Relevant to Canonical Ensemble</h5>
+    <p>
+      From the partition function, we may define the average value of energy (denoted by a bar above the operator) via
+      
+    <div class="eq">
+      $$
+        \overline{E}=\frac{1}{Z}\int d\Gamma H\left( {p_i,q_i}\right)\ e^{-\beta H}
+      $$
+    </div>
+    </p>
+
+    <h5>Thermodynamic Relations Relevant to Canonical Ensemble</h5>
+    <p>
+      Since the Helmholtz free energy is the system of state relevant to treatments in the canonical enesemble, relevant relations are specified below.
+    <div class="eq">
+      \begin{align}
+        \frac{\partial F}{\partial T}&=&-S\\
+        \frac{\partial F}{\partial V}&=&-P\\
+        \frac{\partial F}{\partial N}&=&\mu\\
+      \end{align}
+    </div>
+    </p>
+
     <h3>Grand Canonical Ensemble \( (T ,V,\mu )\)</h3>
     <p>
-      An approach to statistical mechanics apt for application to subsystems that interchange particles with their surrounding environment, but are
+      An approach to statistical mechanics apt for application to subsystems which further exchange particles with their surrounding environment, but are
       chemically indistinguishable from those elements of it's environment. Essentially, we replace dependence on the number of particles \(N\)
       with dependence on inherent chemical properties of these particles, namely their chemical potential \(\mu\).
     </p>
     
+    <h4>General Approach in the Grand-Canonical Ensemble</h4>
     <p>
       The general approach in the grand canonical ensemble is to solve for the particular partition function \(\mathcal{Z}\) of the system given by
       
       <div class="eq">
-        $$
-        \mathcal{Z}(\beta) = \int \frac{d\Gamma}{\Gamma_0} e^{-\beta (H-\mu N)}
-        $$
+        \begin{align}
+        \mathcal{Z}(\beta) & = \sum_{N_i=0}^{\infty}e^{\beta\mu N_i}\int \frac{d\Gamma}{\Gamma_0} e^{-\beta H}\\
+        \ \ \\
+                           & = \sum_{N_i=0}^{\infty}e^{\beta\mu N_i} Z_N(\beta)
+        \end{align}
       </div>
 
       From here the grand potential of the system is easily found via
@@ -193,5 +300,27 @@
         $$
       </div>
     </p>
+    
+    <h5>Statistical Relations Relevant to Grand-Canonical Ensemble</h5>
+    <p>
+      From the grand-canonical partition function, we may define the average value of an arbitrary operator via
+      
+    <div class="eq">
+      $$
+        \overline{A}=\frac{1}{\mathcal{Z}}\sum_{N=0}^{\infty}\int d\Gamma e^{-\beta(H_N-\mu N)}A_N
+      $$
+    </div>
+    </p>
+
+    <h5>Thermodynamic Relations Relevant to Grand-Canonical Ensemble</h5>
+    <p>
+      The grand potential \(\Omega \) is the system of state relevant to the  grand-canonical enesemble, and as such, relevant relations are specified below.
+    <div class="eq">
+      \begin{align}
+        \frac{\partial \Omega}{\partial T}&=&-S\\
+        \frac{\partial \Omega}{\partial V}&=&-P\\
+        \frac{\partial \Omega}{\partial \mu}&=&-N\\
+      \end{align}
+    </div>
   </body>
 </html>
