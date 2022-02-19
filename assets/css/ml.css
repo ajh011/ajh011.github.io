@@ -108,6 +108,28 @@ img {
   margin: 0 auto;
 }
 
+.flexbox{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex{
+  display: flex;
+}
+
+.sbox{
+  width: 80%;
+  max-width: 5cm;
+  margin: 5px 8px;
+}
+
+.sboxe{
+  width: 80%;
+  max-width: 5cm;
+  margin: 5px 0 auto 8px;
+}
 
 .centerframe {
   margin: 0 auto;
@@ -119,7 +141,7 @@ img {
 }
 
 a{
-  color: magenta;
+  color: rgb(142, 187, 209);
   text-decoration: none;
 }
 
@@ -156,6 +178,10 @@ a:hover{
   position: absolute;
   right: 12%;
   z-index: 1;
+}
+
+.calm{
+  color:#a1a0a0;
 }
 
 #home{

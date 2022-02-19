@@ -90,8 +90,16 @@
 
 
     <h2>Defect Structures</h2>
+    <div class="flexbox stack">
+      <img class="flex sbox" alt="Example substitution point defect" src="../../assets/images/res/ml/substitution.svg">
+      <img class="flex sbox" alt="Example vacancy point defect" src="../../assets/images/res/ml/vacancy.svg">
+      <img class="flex sbox" alt="Example antisite point defect" src="../../assets/images/res/ml/antisite.svg">
+      <img class="flex sboxe" alt="Example interstitial point defect" src="../../assets/images/res/ml/interstitial.svg">
+    </div>
+
     <p>
-      Four common types of defects in crystalline solids are interstitial, vacancies, antisites, and substitution.
+      Four common types of point defects in crystalline solids are interstitial, vacancy, antisite, and substitution defects. Point defects are specified at a single point
+      and as such may be isolated to one region of the structure.
     </p>
 
     
@@ -99,38 +107,46 @@
     <h2>Resources</h2>
     <p>
       A book on machine learning applied to the quantum mechanical structures of molecules: <a href="https://link.springer.com/content/pdf/10.1007%2F978-3-030-40245-7.pdf">Machine
-        Learning Meets
-        Quantum
-        Physics</a>.
+        Learning Meets Quantum Physics</a>.
     </p>
 
     <h3>Message Passing Neural Networks (MPNN)</h3>
     <p>
-    This <a href="https://keras.io/examples/graph/mpnn-molecular-graphs/">guide</a> by Alexander Kensert to using keras to construct and implement 
-    an MPNN that predicts molecular properties.
+    For an example project, see this <a href="https://keras.io/examples/graph/mpnn-molecular-graphs/">guide</a> by Alexander Kensert to using keras to construct and implement 
+    an MPNN that predicts molecular properties. Furthermore, message passing 
+    networks are easily implmentable in <a href="https://pytorch-geometric.readthedocs.io/en/latest/index.html">pytorch geometric</a>.
     </p>
 
-    
     <h3>Graph Neural Networks (GNN)</h3>
     <p>
-      Zonghan Wu, et al.'s <a href="https://arxiv.org/abs/1901.00596">A Comprehensive Survey on Graph Neural Networks</a>; and Jie Zhou, et al.'s <a href="https://arxiv.org/abs/1812.08434">
-        Graph Neural Networks: A Review of Methods and Applications</a>.
     </p>
-    <p>
-      See this amazing <a href="https://distill.pub/2021/gnn-intro/">Intro to Graph Neural Networks</a>.
+    <p> For a conceptual introduction to graph neural networks, see this amazing article: <a href="https://distill.pub/2021/gnn-intro/">Intro to Graph Neural Networks</a>.
+      And for an overview of current literature and methods, see Zonghan Wu, et al.'s <a href="https://arxiv.org/abs/1901.00596">A Comprehensive Survey on Graph Neural Networks</a>; 
+      or Jie Zhou, et al.'s <a href="https://arxiv.org/abs/1812.08434">Graph Neural Networks: A Review of Methods and Applications</a>.
     </p>
     <p>
       A relevant and recent implementation of a specfic architecture of a GCNN by Tian Xie and Jeffrey C. Grossman can be found at the following 
-      <a href="https://github.com/txie-93/cgcnn">github repository</a>, corresponding with this <a href="https://arxiv.org/abs/1710.10324">paper</a>.
+      <a href="https://github.com/txie-93/cgcnn">github repository</a>, corresponding with this <a href="https://arxiv.org/abs/1710.10324">paper</a>. 
     </p>
   
-    <h3>Pymatgen</h3>
+    <h2>Other Relevant Tools</h2>
+    <p>Below are, for reference, resources related to computational tools facilitating the digital handling of solid state structures.</p>
+    <h3>Pymatgen - File Support within Python</h3>
     <p>
       A large python package for use in matrials research. Allows the creation of python objects representing unit cells of crystals and 
       single molecules. A workshop for pymatgen is available on <a href="https://workshop.materialsproject.org/lessons/02_intro_pymatgen/1%20-%20pymatgen%20foundations/">
       The Materials Project</a>. Pymatgen also has a <a href="https://pymatgen.org/pymatgen.symmetry.analyzer.html">Symmetry Analyzer Module</a>, which may be of
       some relevance for defects.
     </p>
-    
+    <h3><a class="calm" href="https://www.vasp.at/">VASP</a> - Material Property Calculator</h3>
+    <p>
+      A fortran library that utilizes Density Functional Theory (DFT) to predict quantitative properties of solid state materials, namely band structures, wave functions, and
+      chemical properties. VASP generally requires High Performance Computers (HPC) to perform non-trivial tasks, and further requires a license to obtain. 
+    </p> 
+
+    <h3><a class = "calm" href="https://jp-minerals.org/vesta/en/">VESTA</a> - Visualization & File Support</h3>
+    <p>
+      VESTA may be used to view, create, and convert between file formats that represent solid state structures. It may be downloaded <a href="https://jp-minerals.org/vesta/en/download.html">here</a>.
+    </p>
   </body>
 </html>
