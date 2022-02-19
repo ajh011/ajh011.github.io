@@ -65,25 +65,29 @@
   </div>
 
   <h1 id="title">Statistical Mechanics</h1>
+  <div class="flex stack">
     <p id="blurb">
-      Statistical mechanics is the extrapolation of quantitative properties from systems of large numbers of particles (on the order of \(~10^{23}\) particles). 
+      Statistical mechanics is the extrapolation of quantitative properties from systems of large numbers of particles (on the order of \(~10^{23}\) particles). The 
+      general approach is to specify some system in terms of it's Hamiltonian, and then to apply some corresponding treatment
+      of the system as a statistical ensemble defined by a specific set of macroscopic properties. Thus, statistical mechanics allows us to model
+      macroscopic systems with large numbers of constituents quantitatively, by averaging over and modeling systems in terms of macroscopic properties. 
       Thermodynamics is a subset of this more general set of tools. 
     </p>
 
     <div id="toc_container">
       <p class="toc_title">Contents</p>
       <ul class="toc_list">
-        <li><a href="#First_Point_Header">1 First Point Header</a>
-        <ul>
-          <li><a href="#First_Sub_Point_1">1.1 First Sub Point 1</a></li>
-          <li><a href="#First_Sub_Point_2">1.2 First Sub Point 2</a></li>
-        </ul>
-      </li>
-      <li><a href="#Second_Point_Header">2 Second Point Header</a></li>
-      <li><a href="#Third_Point_Header">3 Third Point Header</a></li>
+        <li><a href="#thermo">1 Thermodynamic Relations</a></li>
+      <li><a href="#ensembles">2 Ensembles</a></li>
+      <ul>
+        <li><a href="#micro">2.1 Micro-Canonical</a></li>
+        <li><a href="#canon">2.2 Canonical</a></li>
+        <li><a href="#grand">2.3 Grand-Canonical</a></li>
+      </ul>
       </ul>
       </div>
-    <h2>Thermodynamic Relations</h2>
+    </div>
+    <h2 id="thermo">Thermodynamic Relations</h2>
     <p>
       Perhaps the most intuitive thermodynamic function is the internal energy of a system. For a general
       system, the internal energy is defined as a function of the entropy, volume, and number of particles.
@@ -177,7 +181,7 @@
 
 <!--Other State Functions// Legendre Transform-->
 
-    <h2>Ensembles</h2>
+    <h2 id="ensembles">Ensembles</h2>
     <p>
       A statistical ensemble, or just ensemble, is a particular approach for applying the methods of statistical mechanics. Effectively,
       ensembles are distributions in phase space, defined by a set of variables in a particular system completely specified by it's Hamiltonian.
@@ -188,7 +192,7 @@
       to systems characterized by a certain set of extrinsic or intrinsic properties. They can be thought of as the way in which we may distribute a certain 
       set of properties across all the potential arrangements in phase space that satisfy such properties. 
     </p>
-    <h3>Micro-canonical Ensemble \( (E,N,V)\)</h3>
+    <h3 id="micro">Micro-canonical Ensemble \( (E,N,V)\)</h3>
     <p>
       The micro-canonical ensemble can be used to model isolated or completely contained systems. That is, systems in which
       their total energy, number of particles, and volume can, at any instant, be completely specified.
@@ -229,12 +233,12 @@
     </div>
     </p>
 
-    <h3>Canonical Ensemble \( (T,V,N)\)</h3>
+    <h3 id="canon">Canonical Ensemble \( (T,V,N)\)</h3>
     <p>
-      The canonical ensemble is an approach suited for application to systems distinguishable from their surroundings, but that nonetheless, interact
+      The canonical ensemble is an approach suited for application to systems distinguishable from their surroundings, but which interact
       with their surrounding 'environment'. That is, this treatment may be applied to systems with a definite number of particles,
       volume, and temperature, but may still exchange energy within a larger system. Thus, the energy of our subsystem under analysis isn't entirely
-      well-defined at an arbitrary time and it is neccessary to specifify, or depend on, an intrinsic property of the system when defining it, hence the relevance of temperature.
+      well-defined at an arbitrary time and it is neccessary to specify, or depend on, an intrinsic property of the system when defining it, hence the relevance of temperature.
     </p>
     
     <h4>General Approach in the Canonical Ensemble</h4>
@@ -288,7 +292,7 @@
     </div>
     </p>
 
-    <h3>Grand Canonical Ensemble \( (T ,V,\mu )\)</h3>
+    <h3 id="grand">Grand Canonical Ensemble \( (T ,V,\mu )\)</h3>
     <p>
       An approach to statistical mechanics apt for application to subsystems which further exchange particles with their surrounding environment, but are
       chemically indistinguishable from those elements of it's environment. Essentially, we replace dependence on the number of particles \(N\)
