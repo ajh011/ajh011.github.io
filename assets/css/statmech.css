@@ -32,7 +32,6 @@
 }
 
 #blurb{
-    min-width: 12cm;
-    width: 70%;
+    max-width: 17.5cm;
     text-align: justify;
 }
