@@ -84,6 +84,7 @@
         <li><a href="#canon">2.2 Canonical</a></li>
         <li><a href="#grand">2.3 Grand-Canonical</a></li>
       </ul>
+      <li><a href="#equipartition">3 Equipartition Theorem</a></li>
       </ul>
       </div>
     </div>
@@ -96,7 +97,7 @@
     
       \begin{align}
         dU(S,V,N)&=\frac{\partial U}{\partial S}&dS & +&\frac{\partial U}{\partial V}&dV&+&\frac{\partial U}{\partial N}&dN&\\
-                 &=-T&dS&+&P&dV&+&\mu &N& \ \ \tiny{\text{(Euler Relation)}}
+                 &=T&dS&+&-P&dV&+&\mu &dN& \ \ \tiny{\text{(Euler Relation)}}
       \end{align}
       </div>
       Immediately, we see that the properties of temperature \(T\), pressure \(P\), and chemical potential \(\mu\) may
@@ -126,7 +127,7 @@
     <p>
       Extrinsic properties are those that only describe the collected system in it's entirety. That is,
       they are not properties inherent in any subsystem contained within. Rather, they're physical properties
-      that describe the system only in it's entirety. These properties generally include \(U\) (internal energy),  \(S\) (entropy), \(V\) (volume),
+      that only describe the system's overall extent and content. These properties generally include \(U\) (internal energy),  \(S\) (entropy), \(V\) (volume),
       and \(N\) (the number of particles); as well as other
       definable properties of this nature.
     </p>
@@ -274,9 +275,19 @@
       From the partition function, we may define the average value of energy (denoted by a bar above the operator) via
       
     <div class="eq">
-      $$
-        \overline{E}=\frac{1}{Z}\int d\Gamma H\left( {p_i,q_i}\right)\ e^{-\beta H}
-      $$
+      \begin{align}
+        \overline{E}&=\frac{1}{Z}\int d\Gamma H\left( {p_i,q_i}\right)\ e^{-\beta H}\\
+                    &=-\frac{\partial ln Z}{\partial \beta}\\
+                    &=-\frac{\partial (\beta F)}{\partial \beta}=U\\
+      \end{align}
+    </div>
+    Then, in the general case for cumulants:
+    <div class="eq">
+      \begin{align}
+        \overline{\Delta E^n}&=(-1)^n\frac{\partial ^n ln Z}{\partial \beta^n}\\
+                    &=(-1)^n\frac{\partial ^n(\beta F)}{\partial \beta^n}\\
+                    &=(-1)^{n-1}\left(\frac{\partial }{\partial \beta}\right)^{n-1}\overline{E}
+      \end{align}
     </div>
     </p>
 
@@ -289,6 +300,12 @@
         \frac{\partial F}{\partial V}&=&-P\\
         \frac{\partial F}{\partial N}&=&\mu\\
       \end{align}
+    </div>
+      Another important relation is that of specific heat, which is given below for the canonical ensemble.
+    <div class="eq">
+      $$
+        c_v=\frac{\partial \overline{E}}{\partial T}
+      $$
     </div>
     </p>
 
@@ -341,5 +358,16 @@
         \frac{\partial \Omega}{\partial \mu}&=&-N\\
       \end{align}
     </div>
+    <h2 id="equipartition">Equipartition Theorem</h2>
+    <p>
+      The equipartition theorem essentially states that the total energy of a system is, on average, distributed
+      equally among all the degrees of freedom of the system. Explicity, it states that for any coordinate or conjugate 
+      momentum \(x_i\) in some system defined by a Hamiltonian H, the average below is the same.
+      <div class="eq">
+        $$
+          \overline{x_i\frac{\partial H}{\partial x_j}}=k_BT\delta_{i,j}
+        $$
+      </div>
+    </p>
   </body>
 </html>
