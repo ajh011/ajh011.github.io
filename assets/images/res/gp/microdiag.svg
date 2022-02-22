@@ -8,58 +8,58 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="microdiag.svg"
-   id="svg8"
-   version="1.1"
-   viewBox="0 0 152.66168 102.00564"
+   width="134.66168mm"
    height="102.00565mm"
-   width="152.66168mm">
+   viewBox="0 0 134.66168 102.00563"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="microdiag.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
   <defs
      id="defs2">
     <path
-       id="MJX-17-TEX-I-4E"
-       d="m 234,637 q -3,0 -8,0 -25,0 -30,1 -5,1 -5,11 0,27 11,33 2,1 97,1 77,0 88,0 11,0 14,-6 211,-496 215,-509 l 54,213 q 53,211 53,225 0,27 -64,31 -24,0 -24,11 0,2 2,12 4,16 6,19 2,3 10,4 3,0 31,-1 28,-1 83,-2 50,0 76,1 26,1 30,1 15,0 15,-10 0,-22 -8,-30 -2,-5 -22,-5 -71,-4 -89,-40 L 620,7 Q 618,0 599,0 585,0 582,2 579,5 453,305 L 326,604 261,344 Q 196,88 196,79 201,46 268,46 h 10 q 6,-5 6,-8 0,-3 -2,-19 Q 278,6 272,0 H 259 Q 228,2 151,2 123,2 100,2 77,2 63,2 49,2 46,1 31,1 31,10 q 0,4 3,16 3,12 5,14 2,6 23,6 68,3 88,39 4,6 71,277 l 68,272 q -2,1 -55,3 z" />
+       d="m 234,637 q -3,0 -8,0 -25,0 -30,1 -5,1 -5,11 0,27 11,33 2,1 97,1 77,0 88,0 11,0 14,-6 211,-496 215,-509 l 54,213 q 53,211 53,225 0,27 -64,31 -24,0 -24,11 0,2 2,12 4,16 6,19 2,3 10,4 3,0 31,-1 28,-1 83,-2 50,0 76,1 26,1 30,1 15,0 15,-10 0,-22 -8,-30 -2,-5 -22,-5 -71,-4 -89,-40 L 620,7 Q 618,0 599,0 585,0 582,2 579,5 453,305 L 326,604 261,344 Q 196,88 196,79 201,46 268,46 h 10 q 6,-5 6,-8 0,-3 -2,-19 Q 278,6 272,0 H 259 Q 228,2 151,2 123,2 100,2 77,2 63,2 49,2 46,1 31,1 31,10 q 0,4 3,16 3,12 5,14 2,6 23,6 68,3 88,39 4,6 71,277 l 68,272 q -2,1 -55,3 z"
+       id="MJX-17-TEX-I-4E" />
     <path
-       id="MJX-17-TEX-N-393"
-       d="m 128,619 q -7,7 -11,9 -4,2 -16,3 -12,1 -43,3 H 25 v 46 h 529 v -4 q 2,-6 14,-116 12,-110 14,-116 v -4 h -40 v 4 q 0,1 -4,34 -4,33 -15,67 -11,34 -31,53 -38,36 -143,36 h -15 q -70,0 -85,-1 -15,-1 -16,-12 -1,-3 -1,-282 l 1,-278 q 7,-7 12,-9 5,-2 25,-4 20,-2 63,-2 h 27 V 0 H 348 Q 324,3 182,3 51,3 36,0 H 25 v 46 h 33 q 42,1 51,3 9,2 19,12 z" />
+       d="m 128,619 q -7,7 -11,9 -4,2 -16,3 -12,1 -43,3 H 25 v 46 h 529 v -4 q 2,-6 14,-116 12,-110 14,-116 v -4 h -40 v 4 q 0,1 -4,34 -4,33 -15,67 -11,34 -31,53 -38,36 -143,36 h -15 q -70,0 -85,-1 -15,-1 -16,-12 -1,-3 -1,-282 l 1,-278 q 7,-7 12,-9 5,-2 25,-4 20,-2 63,-2 h 27 V 0 H 348 Q 324,3 182,3 51,3 36,0 H 25 v 46 h 33 q 42,1 51,3 9,2 19,12 z"
+       id="MJX-17-TEX-N-393" />
     <path
-       id="MJX-17-TEX-I-61"
-       d="m 33,157 q 0,101 76,192 76,91 171,92 51,0 90,-49 16,30 46,30 13,0 23,-8 10,-8 10,-20 0,-13 -37,-160 -37,-147 -38,-166 0,-25 7,-33 7,-8 21,-9 9,1 20,9 21,20 41,96 6,20 10,21 2,1 10,1 h 4 q 19,0 19,-9 0,-6 -5,-27 Q 496,96 481,63 466,30 449,13 436,0 417,-8 q -8,-2 -24,-2 -34,0 -57,15 -23,15 -30,31 l -6,15 q -1,1 -4,-1 -2,-2 -4,-4 -59,-56 -120,-56 -55,0 -97,40 -42,40 -42,127 z m 318,171 q 0,6 -5,22 -5,16 -23,35 -18,19 -46,20 -35,0 -67,-31 -32,-31 -50,-81 -29,-79 -41,-164 0,-3 0,-11 0,-8 -1,-12 0,-45 18,-62 18,-17 43,-18 38,0 75,33 37,33 44,51 2,4 27,107 25,103 26,111 z" />
+       d="m 33,157 q 0,101 76,192 76,91 171,92 51,0 90,-49 16,30 46,30 13,0 23,-8 10,-8 10,-20 0,-13 -37,-160 -37,-147 -38,-166 0,-25 7,-33 7,-8 21,-9 9,1 20,9 21,20 41,96 6,20 10,21 2,1 10,1 h 4 q 19,0 19,-9 0,-6 -5,-27 Q 496,96 481,63 466,30 449,13 436,0 417,-8 q -8,-2 -24,-2 -34,0 -57,15 -23,15 -30,31 l -6,15 q -1,1 -4,-1 -2,-2 -4,-4 -59,-56 -120,-56 -55,0 -97,40 -42,40 -42,127 z m 318,171 q 0,6 -5,22 -5,16 -23,35 -18,19 -46,20 -35,0 -67,-31 -32,-31 -50,-81 -29,-79 -41,-164 0,-3 0,-11 0,-8 -1,-12 0,-45 18,-62 18,-17 43,-18 38,0 75,33 37,33 44,51 2,4 27,107 25,103 26,111 z"
+       id="MJX-17-TEX-I-61" />
     <path
-       id="MJX-17-TEX-N-28"
-       d="m 94,250 q 0,69 10,131 10,62 23,107 13,45 37,88 24,43 38,67 14,24 42,52 28,28 33,34 5,6 25,21 h 13 4 q 14,0 14,-9 0,-3 -17,-21 -17,-18 -41,-53 -24,-35 -49,-86 -25,-51 -42,-138 -17,-87 -17,-193 0,-106 17,-192 17,-86 41,-139 24,-53 49,-86 25,-33 42,-53 17,-20 17,-21 0,-9 -15,-9 h -3 -13 l -28,24 Q 180,-141 137,-14 94,113 94,250 Z" />
+       d="m 94,250 q 0,69 10,131 10,62 23,107 13,45 37,88 24,43 38,67 14,24 42,52 28,28 33,34 5,6 25,21 h 13 4 q 14,0 14,-9 0,-3 -17,-21 -17,-18 -41,-53 -24,-35 -49,-86 -25,-51 -42,-138 -17,-87 -17,-193 0,-106 17,-192 17,-86 41,-139 24,-53 49,-86 25,-33 42,-53 17,-20 17,-21 0,-9 -15,-9 h -3 -13 l -28,24 Q 180,-141 137,-14 94,113 94,250 Z"
+       id="MJX-17-TEX-N-28" />
     <path
-       id="MJX-17-TEX-I-45"
-       d="m 492,213 q -20,0 -20,13 0,4 5,24 5,20 5,35 0,31 -21,38 -21,7 -97,7 H 312 Q 311,328 277,192 243,56 243,52 q 0,-4 11,-4 11,0 80,-2 94,0 124,2 30,2 60,13 49,16 81,56 32,40 71,131 10,22 13,24 7,2 15,2 20,0 20,-13 Q 613,7 608,2 605,0 322,0 H 133 Q 31,0 31,11 q 0,2 3,14 4,16 8,18 4,2 23,3 27,0 60,3 14,3 19,12 2,5 71,281 69,276 70,280 0,7 -4,7 -8,3 -53,5 h -31 q -6,6 -6,8 0,2 2,17 4,17 10,21 h 554 q 7,-4 7,-11 0,-5 -13,-112 -13,-107 -14,-110 -2,-7 -20,-7 h -12 q -7,5 -7,13 l 3,23 q 3,24 3,52 0,30 -7,50 -7,20 -19,31 -12,11 -35,16 -23,5 -47,7 -24,2 -64,2 h -47 q -88,-1 -93,-3 -4,-2 -6,-9 -1,-3 -31,-123 -30,-120 -31,-122 23,-1 48,-1 h 26 q 66,0 91,15 25,15 45,81 4,16 6,18 2,2 17,3 5,0 8,0 3,0 5,-1 2,-1 2,-1 0,0 2,-4 2,-4 3,-4 L 544,351 q -33,-133 -36,-135 -3,-3 -16,-3 z" />
+       d="m 492,213 q -20,0 -20,13 0,4 5,24 5,20 5,35 0,31 -21,38 -21,7 -97,7 H 312 Q 311,328 277,192 243,56 243,52 q 0,-4 11,-4 11,0 80,-2 94,0 124,2 30,2 60,13 49,16 81,56 32,40 71,131 10,22 13,24 7,2 15,2 20,0 20,-13 Q 613,7 608,2 605,0 322,0 H 133 Q 31,0 31,11 q 0,2 3,14 4,16 8,18 4,2 23,3 27,0 60,3 14,3 19,12 2,5 71,281 69,276 70,280 0,7 -4,7 -8,3 -53,5 h -31 q -6,6 -6,8 0,2 2,17 4,17 10,21 h 554 q 7,-4 7,-11 0,-5 -13,-112 -13,-107 -14,-110 -2,-7 -20,-7 h -12 q -7,5 -7,13 l 3,23 q 3,24 3,52 0,30 -7,50 -7,20 -19,31 -12,11 -35,16 -23,5 -47,7 -24,2 -64,2 h -47 q -88,-1 -93,-3 -4,-2 -6,-9 -1,-3 -31,-123 -30,-120 -31,-122 23,-1 48,-1 h 26 q 66,0 91,15 25,15 45,81 4,16 6,18 2,2 17,3 5,0 8,0 3,0 5,-1 2,-1 2,-1 0,0 2,-4 2,-4 3,-4 L 544,351 q -33,-133 -36,-135 -3,-3 -16,-3 z"
+       id="MJX-17-TEX-I-45" />
     <path
-       id="MJX-17-TEX-N-29"
-       d="m 60,749 4,1 q 5,0 10,0 h 12 l 28,-24 q 94,-85 137,-212 43,-127 43,-264 0,-68 -10,-131 -10,-63 -23,-107 -13,-44 -37,-88 -24,-44 -38,-67 -14,-23 -41,-51 -27,-28 -32,-33 -5,-5 -23,-19 -3,-3 -4,-4 H 74 q -8,0 -11,0 -3,0 -5,3 -2,3 -3,9 1,1 11,13 155,161 155,475 0,314 -155,475 -10,12 -11,13 0,8 5,11 z" />
+       d="m 60,749 4,1 q 5,0 10,0 h 12 l 28,-24 q 94,-85 137,-212 43,-127 43,-264 0,-68 -10,-131 -10,-63 -23,-107 -13,-44 -37,-88 -24,-44 -38,-67 -14,-23 -41,-51 -27,-28 -32,-33 -5,-5 -23,-19 -3,-3 -4,-4 H 74 q -8,0 -11,0 -3,0 -5,3 -2,3 -3,9 1,1 11,13 155,161 155,475 0,314 -155,475 -10,12 -11,13 0,8 5,11 z"
+       id="MJX-17-TEX-N-29" />
   </defs>
   <sodipodi:namedview
-     fit-margin-bottom="2"
-     fit-margin-right="20"
-     fit-margin-left="2"
-     fit-margin-top="2"
-     inkscape:window-maximized="1"
-     inkscape:window-y="-11"
-     inkscape:window-x="-11"
-     inkscape:window-height="1046"
-     inkscape:window-width="1920"
-     lock-margins="false"
-     showgrid="false"
-     inkscape:document-rotation="0"
-     inkscape:current-layer="layer1"
-     inkscape:document-units="mm"
-     inkscape:cy="183.41771"
-     inkscape:cx="387.66598"
-     inkscape:zoom="1.4"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     borderopacity="1.0"
-     bordercolor="#666666"
+     id="base"
      pagecolor="#000000"
-     id="base" />
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="387.66598"
+     inkscape:cy="183.41771"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     lock-margins="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1046"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -73,166 +73,166 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-3.3507028,-58.402913)"
-     id="layer1"
+     inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1">
+     id="layer1"
+     transform="translate(-3.3507028,-58.402913)">
     <path
-       id="path833"
+       style="fill:none;stroke:#ffffff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 134.70384,145.92916 H 35.546847 V 60.402913"
-       style="fill:none;stroke:#ffffff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       id="path833" />
     <path
-       sodipodi:nodetypes="cssc"
-       id="path835"
+       style="fill:none;stroke:#ffffff;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 35.546847,145.92916 c 0,0 36.709129,-12.11829 55.610985,-27.77278 9.599078,-7.94995 14.938418,-12.55972 23.880158,-24.084125 10.78084,-13.894708 17.52769,-27.12124 17.52769,-27.12124"
-       style="fill:none;stroke:#ffffff;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       id="path835"
+       sodipodi:nodetypes="cssc" />
     <g
-       style="fill:#ffffff;stroke:#000000;stroke-width:0"
-       id="g955"
+       transform="matrix(0.00478767,0,0,-0.00478767,46.590678,109.83862)"
        data-mml-node="math"
-       transform="matrix(0.00478767,0,0,-0.00478767,46.590678,109.83862)">
+       id="g955"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0">
       <g
-         transform="matrix(1.7009239,0,0,1.7009239,-8666.5168,8395.4125)"
-         style="fill:#ffffff"
+         data-mml-node="msub"
          id="g925"
-         data-mml-node="msub">
+         style="fill:#ffffff"
+         transform="matrix(1.7009239,0,0,1.7009239,-8666.5168,8395.4125)">
         <g
-           style="fill:#ffffff"
+           data-mml-node="mi"
            id="g911"
-           data-mml-node="mi">
+           style="fill:#ffffff">
           <use
-             style="fill:#ffffff"
-             height="100%"
-             width="100%"
-             y="0"
-             x="0"
+             xlink:href="#MJX-17-TEX-I-4E"
              id="use909"
-             xlink:href="#MJX-17-TEX-I-4E" />
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="fill:#ffffff" />
         </g>
         <g
-           style="fill:#ffffff"
-           id="g923"
+           data-mml-node="TeXAtom"
            transform="matrix(0.707,0,0,0.707,803,-150)"
-           data-mml-node="TeXAtom">
+           id="g923"
+           style="fill:#ffffff">
           <g
-             style="fill:#ffffff"
+             data-mml-node="msub"
              id="g921"
-             data-mml-node="msub">
+             style="fill:#ffffff">
             <g
-               style="fill:#ffffff"
+               data-mml-node="mi"
                id="g915"
-               data-mml-node="mi">
+               style="fill:#ffffff">
               <use
-                 style="fill:#ffffff"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
+                 xlink:href="#MJX-17-TEX-N-393"
                  id="use913"
-                 xlink:href="#MJX-17-TEX-N-393" />
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#ffffff" />
             </g>
             <g
-               style="fill:#ffffff"
-               id="g919"
+               data-mml-node="mi"
                transform="matrix(0.707,0,0,0.707,625,-150)"
-               data-mml-node="mi">
+               id="g919"
+               style="fill:#ffffff">
               <use
-                 style="fill:#ffffff"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
+                 xlink:href="#MJX-17-TEX-I-61"
                  id="use917"
-                 xlink:href="#MJX-17-TEX-I-61" />
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#ffffff" />
             </g>
           </g>
         </g>
       </g>
       <g
-         style="fill:#ffffff"
-         id="g929"
+         data-mml-node="mo"
          transform="matrix(1.7009239,0,0,1.7009239,-5953.8834,8395.4125)"
-         data-mml-node="mo">
+         id="g929"
+         style="fill:#ffffff">
         <use
-           style="fill:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
+           xlink:href="#MJX-17-TEX-N-28"
            id="use927"
-           xlink:href="#MJX-17-TEX-N-28" />
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff" />
       </g>
       <g
-         style="fill:#ffffff"
-         id="g933"
+         data-mml-node="mi"
          transform="matrix(1.7009239,0,0,1.7009239,-5292.224,8395.4125)"
-         data-mml-node="mi">
+         id="g933"
+         style="fill:#ffffff">
         <use
-           style="fill:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
+           xlink:href="#MJX-17-TEX-I-45"
            id="use931"
-           xlink:href="#MJX-17-TEX-I-45" />
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff" />
       </g>
       <g
-         style="fill:#ffffff"
-         id="g937"
+         data-mml-node="mo"
          transform="matrix(1.7009239,0,0,1.7009239,-4036.9421,8395.4125)"
-         data-mml-node="mo">
+         id="g937"
+         style="fill:#ffffff">
         <use
-           style="fill:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
+           xlink:href="#MJX-17-TEX-N-29"
            id="use935"
-           xlink:href="#MJX-17-TEX-N-29" />
-      </g>
-      <g
-         style="fill:#ffffff"
-         id="g941"
-         transform="translate(3110.8)"
-         data-mml-node="mstyle">
-        <g
-           style="fill:#ffffff"
-           id="g939"
-           data-mml-node="mspace" />
-      </g>
-      <g
-         style="fill:#ffffff"
-         id="g945"
-         transform="translate(4110.8)"
-         data-mml-node="mstyle">
-        <g
-           style="fill:#ffffff"
-           id="g943"
-           data-mml-node="mspace" />
-      </g>
-      <g
-         style="fill:#ffffff"
-         id="g949"
-         transform="translate(5110.8)"
-         data-mml-node="mstyle">
-        <g
-           style="fill:#ffffff"
-           id="g947"
-           data-mml-node="mspace" />
-      </g>
-      <g
-         style="fill:#ffffff"
-         id="g953"
-         transform="matrix(2.0700818,0,0,2.0700818,17095.959,-10144.797)"
-         data-mml-node="mi">
-        <use
-           style="fill:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
            x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff" />
+      </g>
+      <g
+         data-mml-node="mstyle"
+         transform="translate(3110.8)"
+         id="g941"
+         style="fill:#ffffff">
+        <g
+           data-mml-node="mspace"
+           id="g939"
+           style="fill:#ffffff" />
+      </g>
+      <g
+         data-mml-node="mstyle"
+         transform="translate(4110.8)"
+         id="g945"
+         style="fill:#ffffff">
+        <g
+           data-mml-node="mspace"
+           id="g943"
+           style="fill:#ffffff" />
+      </g>
+      <g
+         data-mml-node="mstyle"
+         transform="translate(5110.8)"
+         id="g949"
+         style="fill:#ffffff">
+        <g
+           data-mml-node="mspace"
+           id="g947"
+           style="fill:#ffffff" />
+      </g>
+      <g
+         data-mml-node="mi"
+         transform="matrix(2.0700818,0,0,2.0700818,17095.959,-10144.797)"
+         id="g953"
+         style="fill:#ffffff">
+        <use
+           xlink:href="#MJX-17-TEX-I-45"
            id="use951"
-           xlink:href="#MJX-17-TEX-I-45" />
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff" />
       </g>
     </g>
   </g>

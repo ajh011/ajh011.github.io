@@ -203,9 +203,14 @@
       Suppose you are given some macroscopic system, specified by it's Hamiltonian, and know the system's energy. From this relation for energy and 
       the expectation that it is well defined for all potential arrangements of the system, we may calculate from it the number of accessible 
       states \(N_{\Gamma_a}\) in the relevant phase space \(\Gamma\) for any total internal energy \(E\).
-      <div id="microdiag">
-        <img src="../../assets/images/res/gp/microdiag.svg" width="80%" max-width="5cm">
-      </div>
+      <div class="flex flexcol">
+        <div id="microdiag">
+          <img src="../../assets/images/res/gp/microdiag.svg" width="80%" max-width="5cm">
+        </div>
+        <div id="microcd">
+          <img src="../../assets/images/res/gp/microcd.svg" width="100%">
+        </div>
+    </div>
       <div class="eq">
         $$
         N_{\Gamma_a}(E) = \int \frac{d\Gamma}{\Gamma_0} \delta (H(p_i,q_i)-E)
@@ -248,9 +253,15 @@
       statistical mechanics. If one wishes to model such a system thermodynamically, the general approach then is to derive the Helmholtz free energy from \(Z\) and derive
       other thermodynamical properties from there. 
 
-      <div id="canondiag">
-        <img src="../../assets/images/res/gp/canondiag.svg" width="80%" max-width="5cm">
-      </div>
+
+      <div class="flex flexcol">
+        <div id="canondiag">
+          <img src="../../assets/images/res/gp/canondiag.svg" width="80%" max-width="5cm">
+        </div>
+        <div id="canoncd">
+          <img src="../../assets/images/res/gp/canoncd.svg" width="100%">
+        </div>
+    </div>
       The partition function is defined for a system's Hamiltonian that may depend on the (specified) volume and number of particles of the system;
       the partition function is then only a function of temperature. Explicity, the partition function in the canonical ensemble is given by
       
@@ -311,23 +322,31 @@
 
     <h3 id="grand">Grand Canonical Ensemble \( (T ,V,\mu )\)</h3>
     <p>
-      An approach to statistical mechanics apt for application to subsystems which further exchange particles with their surrounding environment, but are
+      An approach to statistical mechanics apt for subsystems which further exchange particles with their surrounding environment, but are
       chemically indistinguishable from those elements of it's environment. Essentially, we replace dependence on the number of particles \(N\)
       with dependence on inherent chemical properties of these particles, namely their chemical potential \(\mu\).
     </p>
     
     <h4>General Approach in the Grand-Canonical Ensemble</h4>
-    <p>
-      The general approach in the grand canonical ensemble is to solve for the particular partition function \(\mathcal{Z}\) of the system given by
-      
-      <div class="eq">
-        \begin{align}
-        \mathcal{Z}(\beta) & = \sum_{N_i=0}^{\infty}e^{\beta\mu N_i}\int \frac{d\Gamma}{\Gamma_0} e^{-\beta H}\\
-        \ \ \\
-                           & = \sum_{N_i=0}^{\infty}e^{\beta\mu N_i} Z_N(\beta)
-        \end{align}
-      </div>
+    
 
+    <div class="flex flexcol between">
+      
+    <div class="eq">
+      \begin{align}
+      \mathcal{Z}(\beta) & = \sum_{N_i=0}^{\infty}e^{\beta\mu N_i}\int \frac{d\Gamma}{\Gamma_0} e^{-\beta H}\\
+      \ \ \\
+                         & = \sum_{N_i=0}^{\infty}e^{\beta\mu N_i} Z_N(\beta)
+      \end{align}
+    </div>
+      <div id="grandcd">
+        <img src="../../assets/images/res/gp/grandcd.svg" width="100%m" max-width="8cm">
+      </div>
+    </div>
+    <p>
+      The general approach in the grand canonical ensemble is to solve for the particular partition function \(\mathcal{Z}\) of the system given by 
+      the relation above.
+      
       From here the grand potential of the system is easily found via
       
       <div class="eq">
@@ -368,6 +387,16 @@
           \overline{x_i\frac{\partial H}{\partial x_j}}=k_BT\delta_{i,j}
         $$
       </div>
+    </p>
+    <h2>Moments & Cumulants of PDFs</h2>
+    <h3>Moments</h3>
+    <p>
+      Moments may be calculated via
+    <div class="eq">
+      $$
+        M_n=\int dx\ x^nP(x)
+      $$
+    </div>
     </p>
   </body>
 </html>

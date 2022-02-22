@@ -25,6 +25,17 @@
     display: flex;
 }
 
+.flexcol{
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.between{
+    justify-content: space-evenly;
+}
+
 .stack{
     flex-wrap: wrap;
     flex-direction: row;
