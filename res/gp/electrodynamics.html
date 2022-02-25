@@ -84,6 +84,13 @@
           E=-\nabla \Phi
         $$
       </div>
+      The energy of an arrangement of charges in an electric field is calculated via
+      <div class="eq">
+        $$
+          W=\frac{1}{2}\int_V \rho(\vec{x})\phi(\vec{x})d\vec{x}
+        $$
+      </div>
+      where \(\rho(\vec{x})\) is the charge density at point \(\vec{x}\).
     </p>
 
     <br>
@@ -95,11 +102,12 @@
       through which boundary conditions are specified. 
       <div class="eq">
       \begin{align}
-        \Phi(\vec{x})=\frac{1}{4\pi \epsilon_0}\int_V \rho (\vec{x}') &G(\vec{x},\vec{x}')d\vec{x}' \  \\
-                                                                      &+\oint_S\left[ \frac{\Phi(\vec{x}')}{\partial \hat{n}}G(\vec{x},\vec{x}')
+        \Phi(\vec{x})=\int_V \rho ( \vec{x}') &G(\vec{x},\vec{x}')d\vec{x}' \  \\
+                                                                      &+\frac{1}{4\pi} \oint_S\left[ \frac{\partial \Phi(\vec{x}')}{\partial \hat{n}}G(\vec{x},\vec{x}')
                                                                       -\Phi(\vec{x}') \frac{\partial G(\vec{x},\vec{x}')}{\partial \hat{n}}\right]da'\\
       \end{align}
       </div>
+      The above relation is given in Gaussian units. To convert to SI units, simply multiply the first integral above by \(k=\frac{1}{4\pi \epsilon_0}.\)
     </p>
     <h4>Types of Boundary Conditions</h4>
     <p>
@@ -108,15 +116,40 @@
     </p>
     <h5>Dirichlet</h5>
     <p>
-      Dirichlet boundary condtions specify the potential along the boundary and hence specify \( \Phi\). Under 
-      these conditions, the Green's function along the boundary surface neccesarily vanished, that is \(G\vert_S=0\)
+      Dirichlet boundary condtions specify the potential along the boundary and hence specify \( \Phi.\) Under 
+      these conditions, the Green's function along the boundary surface neccesarily vanishes, that is 
+      <div class="eq">
+        $$
+        G_D\vert_S=0.
+        $$
+      </div>
+      Leaving one with the general solution for an electrostatic potential with a specified potential along a boundary:
+      <div class="eq">
+        $$
+        \Phi(\vec{x})=\int_V \rho ( \vec{x}') G_D(\vec{x},\vec{x}')d\vec{x}'-\frac{1}{4\pi} \oint_S\Phi(\vec{x}') \frac{\partial G_D(\vec{x},\vec{x}')}{\partial \hat{n}} da'.
+        $$
+      </div>
     </p>
 
     <h5>von Neumann</h5>
     <p>
-      Neumann boundary condtions specify the electric field along the boundary and hence specify \(\frac{\partial \Phi}{\partial \hat{n}}\). Under 
-      these conditions, the Green's function derivative along the boundary surface neccesarily vanished, that is \(\frac{\partial G}{\partial \hat{n}}\vert_S=0\)
-    </p>
+      Neumann boundary condtions specify the electric field along the boundary and hence specify \(\frac{\partial \Phi}{\partial \hat{n}}.\) Under 
+      these conditions, the Green's function derivative along the boundary surface neccesarily equals \(-\frac{4\pi}{S}\), where \(S\) is the surface area
+      of the boundary. That is, 
+      
+      <div class="eq">
+        $$
+        \frac{\partial G_N}{\partial \hat{n}}\vert_S=-\frac{4\pi}{S}.
+        $$
+      </div>
+      Leaving one with the general solution for an electrostatic potential with a specified electric field along a boundary:
+      <div class="eq">
+        $$
+        \Phi(\vec{x})=\langle \Phi\rangle_S +\int_V \rho ( \vec{x}') G_D(\vec{x},\vec{x}')d\vec{x}'+\frac{1}{4\pi} \oint_S \frac{\partial \Phi(\vec{x}')}{\partial \hat{n}}G(\vec{x},\vec{x}') da'
+        $$
+      </div>
+       where \(\langle \Phi\rangle_S \) is the average potential over the boundary surface(s) \(S\).
+     </p>
 
     <br>
 
@@ -130,10 +163,11 @@
         $$
       </div>
     </p>
-
+<!--
     <h3>Multipole Expansions of Distant, Localized Charge Distributions</h3>
     <p>
-      
-    </p>
+
+    </p>      
+  <h3>Dipole Stuff</h3>-->
   </body>
 </html>
