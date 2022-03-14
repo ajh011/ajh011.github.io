@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Statistical Mechanics</title>
-    <link href="../../assets/css/qisstyle.css" rel="stylesheet">
+    <link href="../../assets/css/gp.css" rel="stylesheet">
     <link href="../../assets/css/qudits.css" rel="stylesheet">
     <link href="../../assets/css/toc.css" rel="stylesheet">
 
@@ -77,17 +77,41 @@
     <div id="toc_container">
       <p class="toc_title">Contents</p>
       <ul class="toc_list">
-        <li><a href="#thermo">1 Thermodynamic Relations</a></li>
+      <li><a href="#motive">0 Motivation</a></li>
+      <li><a href="#thermo">1 Thermodynamic Relations</a></li>
       <li><a href="#ensembles">2 Ensembles</a></li>
       <ul>
         <li><a href="#micro">2.1 Micro-Canonical</a></li>
         <li><a href="#canon">2.2 Canonical</a></li>
         <li><a href="#grand">2.3 Grand-Canonical</a></li>
       </ul>
-      <li><a href="#equipartition">3 Equipartition Theorem</a></li>
+      <li><a href="#mathref">4 Mathematical Reference</a></li>
+      <ul>
+        <li><a href="#exd">4.1 Exterior Derivative</a></li>
+        <li><a href="#pd">4.2 Probability Distribtions</a></li>
+        <li><a href="#grand">4.3 </a></li>
+      </ul>
       </ul>
       </div>
     </div>
+    <h2 id="motive">Motivation in Phase Space</h2>
+    <p>
+      Suppose you're modeling a system that is completely specified by it's Hamiltonian. In that case, the state of the system 
+      may be modeled in phase space, where each point in phase space is a unique orientation of the system itself. Suppose, however,
+      that you only know, or can only measure, the total energy of the system. Then our state of knowledge of the system can be modeled precisely
+      as a probability distribution in this phase space.
+    </p>
+    <h3 id="equipartition">Equipartition Theorem</h2>
+    <p>
+      The equipartition theorem essentially states that the total energy of a system is, on average, distributed
+      equally among all the degrees of freedom of the system. Explicity, it states that for any coordinate or conjugate 
+      momentum \(x_i\) in some system defined by a Hamiltonian H, the average below is the same.
+      <div class="eq">
+        $$
+          \overline{x_i\frac{\partial H}{\partial x_j}}=k_BT\delta_{i,j}
+        $$
+      </div>
+    </p>
     <h2 id="thermo">Thermodynamic Relations</h2>
     <p>
       Perhaps the most intuitive thermodynamic function is the internal energy of a system. For a general
@@ -108,6 +132,8 @@
       properties inherent in any particular entity of those comprising the system. Particularly,
       extensive properties all meet the scalability condition of \(U\) in that \( \lambda U(S,V,N)= U(\lambda S,\lambda V,\lambda N)\).
     </p>
+    
+
     <h3>Intrinsic Properties</h3>
     <p>
       As discussed above, intensive properties are those that characterize not the total system but inherent properties of
@@ -181,6 +207,8 @@
 <!--Maxwell Relations-->
 
 <!--Other State Functions// Legendre Transform-->
+<div class="hl"></div>
+
 
     <h2 id="ensembles">Ensembles</h2>
     <p>
@@ -238,6 +266,8 @@
       \end{align}
     </div>
     </p>
+
+    <br>
 
     <h3 id="canon">Canonical Ensemble \( (T,V,N)\)</h3>
     <p>
@@ -320,6 +350,8 @@
     </div>
     </p>
 
+    <br>
+
     <h3 id="grand">Grand Canonical Ensemble \( (T ,V,\mu )\)</h3>
     <p>
       An approach to statistical mechanics apt for subsystems which further exchange particles with their surrounding environment, but are
@@ -377,17 +409,15 @@
         \frac{\partial \Omega}{\partial \mu}&=&-N\\
       \end{align}
     </div>
-    <h2 id="equipartition">Equipartition Theorem</h2>
-    <p>
-      The equipartition theorem essentially states that the total energy of a system is, on average, distributed
-      equally among all the degrees of freedom of the system. Explicity, it states that for any coordinate or conjugate 
-      momentum \(x_i\) in some system defined by a Hamiltonian H, the average below is the same.
-      <div class="eq">
-        $$
-          \overline{x_i\frac{\partial H}{\partial x_j}}=k_BT\delta_{i,j}
-        $$
-      </div>
-    </p>
+
+
+    <div class="hl"></div>
+
+
+
+    
+    <div class="hl"></div>
+
     <h2>Moments & Cumulants of PDFs</h2>
     <h3>Moments</h3>
     <p>

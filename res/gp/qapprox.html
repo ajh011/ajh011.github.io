@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>Quantum Approximation Techniques</title>
-    <link href="../../assets/css/qisstyle.css" rel="stylesheet">
-    <link href="../../assets/css/qudits.css" rel="stylesheet">
+    <link href="../../assets/css/gp.css" rel="stylesheet">
+    <link href="../../assets/css/qapprox.css" rel="stylesheet">
 
 
     <!--Geogebra Support-->
@@ -60,7 +60,7 @@
   </div>
 
   <div id="up">
-    <a id="upa" href="https://www.alexheilman.com/res/gp/index.html">GP</a>
+    <a id="upa" href="https://www.alexheilman.com/res/index.html">GP</a>
   </div>
 
   <h1 id="title">Quantum Approximation Techniques</h1>
@@ -73,8 +73,128 @@
 
     <h3>Perturbation Theory</h3>
     <p>
-      Solving a quintic equation with perturbation theory//motivation.
+      Perturbation theory is an approximation technique suited to problems with some resemblance to an easier (already solved) problem. 
+      The technique is to Taylor expand about the known solution to the unperturbed problem in terms of the perturbation's coupling constant.
+      Then, for small values of this coupling constant, the series should converge rather nicely.
     </p>
+
+    <h4>Motivational Example</h4>
+    <p>
+      As an explicit example of general perturbation theory, we'll solve for a root of a quintic polynomial of the form below, which we'll denote \(\psi(x)\)
+      <div class="eq">
+        \begin{align}
+         \psi(x)&=x^5-x-1=0\\
+        \end{align}
+      </div>
+      The trick then is to slip a coupling constant in front of one of the terms to make the problem immediately soluble. Here, one option is to place a 
+      coupling constant, \(\epsilon\), in front of the first order term. Which, when this constant is turned to zero, yields a polynomial with a solution we already know. 
+      This already solved problem achieved when the constant is set to zero is called the unperturbed problem, which we label \(\psi_{0}(x)\). Hence, we get 
+      <div class="eq">
+        \begin{align}
+         \psi_c(x,\epsilon )&=x^5-\epsilon x-1=0\\
+         \\
+         \psi_c(x,1)&=\psi(x)\\
+         \psi_c(x_0,0)&=\psi_0(x_0)=0
+         \\
+        \end{align}
+      </div>
+      Where the unperturbed problem has a clear solution \(x_0=1\), since \(\psi_0(x)=x^5-1\). Now, the fundamental assumption of perturbation theory is that we can
+      expand the new solution to \(\psi(x)=0\) in terms of the coupling constant \(\epsilon \). This is a valid assumption in this case, though we must worry about
+      the convergence our resulting expansion. Explicity, we expand \(x\) in terms of \(\epsilon\) as
+      <div class="eq">
+        \begin{align}
+        x(\epsilon)&=\sum_{n=0}^{\infty}c_n \epsilon ^n\\
+                   &=x_0 + \sum_{n=1}^{\infty}c_n \epsilon ^n\\
+        \end{align}
+      </div>
+      which we may insert into the problem equation to achieve the series relation
+      <div class="eq">
+        \begin{align}
+        \psi_c(x,\epsilon)&=\left(\sum_{n=0}^{\infty}c_n \epsilon ^n\right)^5-\epsilon\left(\sum_{n=0}^{\infty}c_n \epsilon ^n\right)-1=0\\
+                          &=\sum_{n=0}^{\infty}\begin{pmatrix}5\\ n\end{pmatrix} c_n \epsilon ^n-\epsilon\left(\sum_{n=0}^{\infty}c_n \epsilon ^n\right)-1=0\\
+                          &=\sum_{n=0}^{\infty}\left[\begin{pmatrix}5\\ n\end{pmatrix} c_n-c_{n\small{-1}}-\delta(n)\right] \epsilon ^n=0\ .
+        \end{align}
+      </div>
+      Now, since Taylor series are unique, we may equate the coefficients of the powers of epsilon on both sides of the equation. Evidently, for each \(n\),
+      the coefficients above must vanish. Furthermore, this series just so happens to have a radius of convergence that contains our point of interest, that is 
+      when \(\epsilon=1\). Below we solve for the first few terms.
+      <div class="eq">
+        \begin{align}
+          5c_1x_0^4-x_0=0& \ \ \ & \rightarrow c_1&=\frac{1}{5}\\
+          5c_2x_0^4+10c_1^2x_0^3-c_1=0 &&\rightarrow c_2&=-\frac{1}{125}\\
+          5c_3x_0^4+20c_2c_1x_0^3+10c_1^3x_0^2-c_2=0 &&\rightarrow c_3 &=-\frac{7}{625}\\
+        \end{align}
+      </div>
+      Summing together these first few terms, we arrive at an approximate solution to \(\psi(x,1)=0.\)
+      <div class="eq">
+        $$
+        x\approx 1+\frac{1}{5}-\frac{1}{125}-\frac{7}{625}=1.1808
+        $$
+      </div>
+      Now Wolfram|Alpha gives a numerical result of \(x\approx 1.1673\), so we're a little off, but still in the right direction.
+    </p>
+    <h3>Quantum Framework</h3>
+    <p>
+      In the quantum case, we specify a Hamiltonian \(H\) with some similarity to a simpler problem with a Hamiltonian \(H_0\), 
+      and parametrize it such that at a certain value of the parameter \(\lambda\), the Hamiltonian simplifies to the simpler problem \(H_0\).
+      This simpler problem is termed the unperturbed problem, and it must be simple enough that we can solve for the form of it's eigenvalues.
+      The remaining portion of the original problem that deviates from the unperturbed Hamiltonian is termed the perturbation \(V\).
+      <div class="eq">
+        \begin{align}
+          H(\{p_i,q_i \},\lambda)&=H_0(\{p_i,q_i \})+\lambda V(\{p_i,q_i \})\\
+          \\
+          H_0 \vert\psi^{(0)}\rangle&=E^{(0)}\vert\psi^{(0)}\rangle\\
+        \end{align}
+      </div>
+      We then Taylor expand the energy of the full Hamiltonian in terms of the parameter, which
+      is sometimes called the coupling constant, and solve for the first few terms (provided it converges).
+      <div class="eq">
+        \begin{align}
+        \vert \psi(\lambda)\rangle&=\sum_{n=0}^{\infty}\lambda^n\vert \psi^{(n)}\rangle\\
+        E(\lambda)&=\sum_{n=0}^{\infty}\lambda^n E^{(n)}
+        \end{align}
+      </div>
+      Now, these forms provoke a certain equivalence in coefficients of \(\lambda\), achieved
+      by inserting these expansions into the Schrodinger equation, \( H\vert\psi\rangle = E\vert\psi\rangle\).
+      <div class="eq">
+        \begin{align}
+        \Big(H_0(\{p_i,q_i \})+\lambda V(\{p_i,q_i \})\Big)\left(\sum_{n=0}^{\infty}\lambda^n
+         \vert\psi^{(n)}\rangle\right)&=\left(\sum_{n=0}^{\infty}\lambda^n E^{(n)}\right)\left(\sum_{n=0}^{\infty}\lambda^n \vert\psi^{(n)}\rangle\right)\\
+        \end{align}
+      </div>
+      <div class="center">
+        Expanding the first few terms then,
+     </div>
+     <div class="eq">
+      \begin{align}
+      \Big(H_0+\lambda V\Big)&\left(\vert\psi^{(0)} \rangle+\lambda
+       \vert\psi^{(1)}\rangle+\lambda^2
+       \vert\psi^{(2)}\rangle+...\right)\\&=\left(
+        E^{(0)}+\lambda
+        E^{(1)}+\lambda^2
+        E^{(2)}+...\right)\left(
+          \vert\psi^{(0)}\rangle+\lambda
+          \vert\psi^{(1)}\rangle+\lambda^2
+          \vert\psi^{(2)}\rangle+...\right)\\
+
+      \end{align}
+    </div>
+    
+    <div class="eq">
+      \begin{align}
+      H_0\vert\psi^{(0)}\rangle
+       +\lambda\Big(&H_0\vert\psi^{(1)}\rangle+V\vert\psi^{(0)}\rangle\Big)+\lambda^2\Big(
+       H_0\vert\psi^{(2)}\rangle+V\vert\psi^{(1)}\rangle\Big)+...\\=
+        E^{(0)}\vert\psi^{(0)}\rangle &+\lambda\Big(
+        E^{(1)}\vert\psi^{(0)}\rangle+E^{(0)}\vert\psi^{(1)}\rangle\Big)+\lambda^2\Big(
+        E^{(2)}\vert\psi^{(0)}\rangle+E^{(1)}\vert\psi^{(1)}\rangle+E^{(0)}\vert\psi^{(2)}\rangle\Big)+...\\
+
+      \end{align}
+    </div>
+    From this, we may project onto arbitrary eigenstates \(\vert\psi^{n}\rangle\) to calculate relations for the perturbed energy states. 
+    Below, the relations for the first and second order corrections to the energy eigenvalues are given.
+    </p>
+    <h4>First Order Relations</h4>
     <p>
       The relation for first order perturbation theory is stated below
       <div class="eq">
@@ -82,12 +202,17 @@
           E^{(1)}&=\langle \psi^0 \vert V\vert \psi^0\rangle\\
         \end{align}
       </div>
-      
+      Which is achieved by projecting the expanded Schrodinger equation onto the unperturbed eigenstate.
     </p>
 
-    <h3>Variational Principle</h3>
+    <h2>Variational Principle</h2>
     <p>
-      The variational principle leverages the fact that the gorund state energy of a system is the lowest 
+      The variational principle is most often used to solve for upper bounds on ground state energies of systems defined by their Hamiltonians.
+    </p>
+
+    <h3>Motivation</h3>
+    <p>
+      The variational principle leverages the fact that the ground state energy of a system is the lowest 
       value of the Hamiltonian applied to some arbitrary state (given the arbitrary state satisfies the 
       boundary conditions specified in the relevant context). This can be seen in an eigenfunction
       expansion of the Hamiltonian. 
