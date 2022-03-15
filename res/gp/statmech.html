@@ -77,7 +77,7 @@
     <div id="toc_container">
       <p class="toc_title">Contents</p>
       <ul class="toc_list">
-      <li><a href="#motive">0 Motivation</a></li>
+      <!--<li><a href="#motive">0 Motivation</a></li>-->
       <li><a href="#thermo">1 Thermodynamic Relations</a></li>
       <li><a href="#ensembles">2 Ensembles</a></li>
       <ul>
@@ -85,16 +85,14 @@
         <li><a href="#canon">2.2 Canonical</a></li>
         <li><a href="#grand">2.3 Grand-Canonical</a></li>
       </ul>
-      <li><a href="#mathref">4 Mathematical Reference</a></li>
+      <li><a href="#mathref">3 Mathematical Reference</a></li>
       <ul>
-        <li><a href="#exd">4.1 Exterior Derivative</a></li>
-        <li><a href="#pd">4.2 Probability Distribtions</a></li>
-        <li><a href="#grand">4.3 </a></li>
+        <li><a href="#candm">3.1 PDF Characteristics</a></li>
       </ul>
       </ul>
       </div>
     </div>
-    <h2 id="motive">Motivation in Phase Space</h2>
+   <!-- <h2 id="motive">Motivation in Phase Space</h2>
     <p>
       Suppose you're modeling a system that is completely specified by it's Hamiltonian. In that case, the state of the system 
       may be modeled in phase space, where each point in phase space is a unique orientation of the system itself. Suppose, however,
@@ -111,7 +109,7 @@
           \overline{x_i\frac{\partial H}{\partial x_j}}=k_BT\delta_{i,j}
         $$
       </div>
-    </p>
+    </p>-->
     <h2 id="thermo">Thermodynamic Relations</h2>
     <p>
       Perhaps the most intuitive thermodynamic function is the internal energy of a system. For a general
@@ -418,15 +416,38 @@
     
     <div class="hl"></div>
 
-    <h2>Moments & Cumulants of PDFs</h2>
+    <h2 id="candm">Moments & Cumulants of PDFs</h2>
     <h3>Moments</h3>
     <p>
       Moments may be calculated via
     <div class="eq">
       $$
-        M_n=\int dx\ x^nP(x)
+        M_n=\int dx\ x^nP(x).
       $$
     </div>
+      The moment generating function may be derived as
+      <div class="eq">
+        \begin{align}
+          M(t)&=\int dx\ e^{xt}P(x)\\
+              &=\int dx\ \sum_{n=0}^{\infty}\frac{1}{n!}x^nt^nP(x)\\
+              &=\sum_{n=0}^{\infty}M_n\frac{t^n}{n!}
+        \end{align}
+      </div>
+    </p>
+    <h3>Cumulants</h3>
+    <p>
+      <!--Cumulants may be calculated via
+    <div class="eq">
+      $$
+        K_n=\int dx\ x^nP(x)(A-\overline{A})^n.
+      $$
+    </div>-->
+      The cumulant generating function may be evaluated as 
+      <div class="eq">
+        $$
+          K(t)=lnM(t).
+        $$
+      </div>
     </p>
   </body>
 </html>
