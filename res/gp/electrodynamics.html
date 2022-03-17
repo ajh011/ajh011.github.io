@@ -221,7 +221,7 @@
         Green's functions for unit point charges in spherical coordinates specified by spherical boundaries satisfy the relation
         <div class="eq">
           $$
-            \nabla^2_xG(\vec{x},\vec{x'})=\delta (r-r')\frac{\delta (r-r')}{r}\delta (\cos\phi-\cos\phi')\delta (\theta-\theta')
+            \nabla^2_xG(\vec{x},\vec{x'})=\delta (r-r')\frac{\delta (\cos\phi-\cos\phi')}{r}\frac{\delta (\theta-\theta')}{r\sin\theta}
           $$
         </div>
       </p>
@@ -241,11 +241,13 @@
             <div class="eq">
               \begin{align}
                 \frac{1}{\vert \vec{x}-\vec{x}'\vert'}&=\frac{1}{\sqrt{r^2+r'^2-2rr'(\cos\theta\cos\theta'+\sin\theta\sin\theta'\cos(\phi-\phi'))}}\\
-                                                      &=4\pi\sum_{l=-\infty}^{\infty}\sum_{m=-l}^{l}\frac{1}{2l+1}\frac{r_<^l}{r_>{l+1}Y^*_{lm}Y_{l'm'}
+                                                      &=4\pi\sum_{l=-\infty}^{\infty}\sum_{m=-l}^{l}\frac{1}{2l+1}\frac{r_{<}^l}{r_{>}^{l+1}}Y^*_{lm}(\theta',\phi')Y_{lm}(\theta,\phi)
               \end{align}
             </div> 
         </p>
-
+        <p>
+        </p>
+        
 <!--
     <h3>Multipole Expansions of Distant, Localized Charge Distributions</h3>
     <p>
