@@ -77,6 +77,7 @@
         <li><a href="#basic">1 Electrodynamic Relations</a></li>
         <li><a href="#green">2 Green's Functions</a></li>
         <li><a href="#dielectric">3 Dielectric Media</a></li>
+        <li><a href="#spf">4 Special Functions</a></li>
       </div>
     </div>
   </div>
@@ -104,13 +105,23 @@
       </div>
       where \(\rho(\vec{x})\) is the charge density at point \(\vec{x}\).
     </p>
+    <p>
+      Capacitance is generally defined as
+      <div class="eq">
+        $$
+          Q=CV.
+        $$
+      </div>
+      Jackson expands this definition to (with some paraphrasing): "the capacitance of a conductor is the total charge on a conducter when held 
+      at unit potential, with all other surrounding conductors at zero potential (or with the conductor in free space)".
 
+    </p>
     <br>
 
     <h3 id="green">Electrostatic Potential in Terms of Green's Functions</h3>
     <p>
       The most general procedure for calculating electrostatic potentials, given some boundary conditions, is achieved
-      through the use of Green's functions, which are effectively integral operators that invert the differntial operator
+      through the use of Green's functions. Green's functions are effectively used as integral operators that invert the differential operator
       through which boundary conditions are specified. 
       <div class="eq">
       \begin{align}
@@ -120,7 +131,14 @@
       \end{align}
       </div>
       The above relation is given in Gaussian units. To convert to SI units, simply multiply the first integral above by \(k=\frac{1}{4\pi \epsilon_0}.\)
+      Furthermore, Green's functions must generally satisfy the relation:
+      <div class="eq">
+        $$
+          \nabla^2G(\vec{x},\vec{x}')=-4\pi\delta(\vec{x}-\vec{x}')
+        $$
+      </div>
     </p>
+
     <h4>Types of Boundary Conditions</h4>
     <p>
       Boundary conditions are generally given as either one of two classes: Dirichlet or von Neumann. Both specify a certain equivalence
@@ -186,13 +204,24 @@
           \end{align}
         </div> 
       </p>
+      <h6>Expansions of Cylindrical Inverse Vector Differences</h6>
+      <p>        
+      Below are the point difference expansions in cylindrical coordinates.
+        <div class="eq">
+          \begin{align}
+            \frac{1}{\vert \vec{x}-\vec{x}'\vert'}&=\frac{1}{\sqrt{\rho^2+\rho'^2-2\rho\rho' \cos (\phi-\phi')+(z-z')^2}}\\
+                                                  &=\frac{2}{\pi}\sum_{m=-\infty}^{\infty}\int_0^{\infty}dk\ e^{im(\phi-\phi')}\cos [k(z-z')]
+                                                     I_m(k\rho_{<})K_m(k\rho_{>})
+          \end{align}
+        </div> 
+      </p>
 
       <h5>Green's Function for Spherical Regions</h5>
       <p>
         Green's functions for unit point charges in spherical coordinates specified by spherical boundaries satisfy the relation
         <div class="eq">
           $$
-            \nabla^2_xG(\vec{x},\vec{x'})=\frac{1}{r^2}\delta (r-r')\delta (\cos\phi-\cos\phi')\delta (\theta-\theta')
+            \nabla^2_xG(\vec{x},\vec{x'})=\delta (r-r')\frac{\delta (r-r')}{r}\delta (\cos\phi-\cos\phi')\delta (\theta-\theta')
           $$
         </div>
       </p>
@@ -204,6 +233,17 @@
             <!--  \frac{\delta(r-r')}{r'^2}&=\sum_{n=1}^{\infty}\frac{2}{a^2J_{m+1}^2(x_{mn})}J_m(x_{mn}\frac{\rho}{a})J_m(x_{mn}\frac{\rho'}{a}) \quad \forall m\\-->
             \end{align}
           </div> 
+        </p>
+        
+        <h6>Expansions of Spherical Point Differences</h6>
+        <p>        
+          Below are the point difference expansions in spherical coordinates.
+            <div class="eq">
+              \begin{align}
+                \frac{1}{\vert \vec{x}-\vec{x}'\vert'}&=\frac{1}{\sqrt{r^2+r'^2-2rr'(\cos\theta\cos\theta'+\sin\theta\sin\theta'\cos(\phi-\phi'))}}\\
+                                                      &=4\pi\sum_{l=-\infty}^{\infty}\sum_{m=-l}^{l}\frac{1}{2l+1}\frac{r_<^l}{r_>{l+1}Y^*_{lm}Y_{l'm'}
+              \end{align}
+            </div> 
         </p>
 
 <!--
@@ -236,7 +276,9 @@
     </p>
     <h3>Resources</h3>
     <p>
-      The classic reference text for the subject at hand is John David Jackson's <em>Classical Electrodynamics</em>.
+      The classic reference text for the subject at hand is John David Jackson's <em>Classical Electrodynamics</em>. A good 
+      introductory text is David J. Griffith's <em>Introduction to Electrodynamics</em> or Edward Purcell and David Morin's 
+      <em>Electricity and Magnetism</em>. Another good reference text is Andrew Zangwill's <em>Modern Electrodynamics</em>.
       Christopher Baird has a nice set of lecture notes that follow along with the Jackson text that can be found here:
       <a href="https://www.wtamu.edu/~cbaird/courses.html">Baird Notes</a>. Other sets of lecture notes include 
       <a href="https://www.phys.ksu.edu/personal/wysin/ED-I/index.html">Gary Wysin's Notes</a> and
