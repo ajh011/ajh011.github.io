@@ -85,9 +85,15 @@
         <li><a href="#canon">2.2 Canonical</a></li>
         <li><a href="#grand">2.3 Grand-Canonical</a></li>
       </ul>
-      <li><a href="#mathref">3 Mathematical Reference</a></li>
+      <li><a href="#distr">3 Distributions</a></li>
       <ul>
-        <li><a href="#candm">3.1 PDF Characteristics</a></li>
+        <li><a href="#maxbolt">3.1 Maxwell-Boltzmann</a></li>
+        <li><a href="#fermdir">3.2 Fermi-Dirac</a></li>
+        <li><a href="#bosein">3.3 Bose-Einstein</a></li>
+      </ul>
+      <li><a href="#mathref">4 Mathematical Reference</a></li>
+      <ul>
+        <li><a href="#candm">4.1 PDF Characteristics</a></li>
       </ul>
       </ul>
       </div>
@@ -219,6 +225,11 @@
       to systems characterized by a certain set of extensive or intensive properties. They can be thought of as the way in which we may distribute a certain 
       set of properties across all the potential arrangements in phase space that satisfy such properties. 
     </p>
+    
+    <br>
+    <div class="dl"></div>
+
+    
     <h3 id="micro">Micro-canonical Ensemble \( (E,N,V)\)</h3>
     <p>
       The micro-canonical ensemble can be used to model isolated or completely contained systems. That is, systems in which
@@ -265,6 +276,7 @@
     </div>
     </p>
 
+    <div class="dl"></div>
     <br>
 
     <h3 id="canon">Canonical Ensemble \( (T,V,N)\)</h3>
@@ -348,6 +360,7 @@
     </div>
     </p>
 
+    <div class="dl"></div>
     <br>
 
     <h3 id="grand">Grand Canonical Ensemble \( (T ,V,\mu )\)</h3>
@@ -407,12 +420,50 @@
         \frac{\partial \Omega}{\partial \mu}&=&-N\\
       \end{align}
     </div>
-
+    </p>
 
     <div class="hl"></div>
 
 
 
+    <h2 id="distr">Distributions</h2>
+    <p>
+      Several probability distributions are particularly relevant for statistical mechanics. These generally include: the Maxwell-Boltzmann Distribution, relevant for
+      classical thermal applications; the Fermi-Dirac Distribution, applicable to Fermionic quantum systems; and the Bose-Einstein Distribution, related to Bosonic quantum
+      systems.
+    </p>
+
+    <h3 id="maxbolt">Maxwell-Boltzmann</h2>
+      <p>
+        The Maxwell-Boltzmann distribution describes the thermal distribution of the velocity classical gasses. Note that it only applies in thermal equilibirium and
+        to gases that aren't exhibiting some macroscopic flow.
+        <div class="eq">
+          \begin{align}
+            f_{MB}(v)=\left(\frac{m}{2\pi k_BT}\right)^{3/2}e^{-\frac{mv^2}{2k_BT}}
+          \end{align}
+        </div>
+      </p>
+    
+    <h3 id="fermdir">Fermi-Dirac</h2>
+      <p>
+        Fermi-Dirac distributions are used to describe the probability of energy states being occupied for thermal Fermionic systems. Fermions obey the Pauli exclusion principle,
+        as they have non-integer spin, which immediately resolves all degeneracies.
+        <div class="eq">
+          \begin{align}
+            f_{FD}(\epsilon _i)=\frac{1}{e^{(\epsilon_i-\mu)/k_BT}+1}
+          \end{align}
+        </div>
+      </p>
+    
+    <h3 id="bosein">Bose-Einstein</h2>
+      <p>
+        Bose-Einstein distributions are used to describe the occupation of states of thermal Bosonic systems, which, in contrast to Fermions, can have several quanta occupying the same state.
+        <div class="eq">
+          \begin{align}
+            f_{BE}(\epsilon _i)=\frac{g_i}{e^{(\epsilon_i-\mu)/k_BT}-1}
+          \end{align}
+        </div>
+      </p>
     
     <div class="hl"></div>
 
