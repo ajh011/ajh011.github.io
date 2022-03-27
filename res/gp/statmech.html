@@ -236,6 +236,7 @@
       their total energy, number of particles, and volume can, at any instant, be completely specified.
     </p>
     <h4>General Approach in the Micro-Canonical Ensemble</h4>
+    <h5>Classical</h5>
     <p>
       Suppose you are given some macroscopic system, specified by it's Hamiltonian, and know the system's energy. From this relation for energy and 
       the expectation that it is well defined for all potential arrangements of the system, we may calculate from it the number of accessible 
@@ -261,6 +262,7 @@
         S(U,V,N)=k_B lnN_{\Gamma_a}
         $$
       </div>
+
     </p>
     <h5>Thermodynamic Relations Relevant to Micro-Canonical Ensemble</h5>
     <p>
@@ -275,6 +277,18 @@
       \end{align}
     </div>
     </p>
+    
+    <h5>Quantum Micro-Canonical Ensemble</h5>
+    <p>
+      In the quantum mechanical formalism, our micro-canonical ensemble is described as a density matrix of the form given below:
+      <div class="eq">
+        $$
+        \rho=\sum_n p_n \vert\psi_n\rangle\langle\psi_n\vert
+        $$
+      </div>
+      with \(p_n=1/D_n\) where \(D_n\) is the degeneracy of the nth energy level.
+    </p>
+
 
     <div class="dl"></div>
     <br>
@@ -288,6 +302,7 @@
     </p>
     
     <h4>General Approach in the Canonical Ensemble</h4>
+    <h5>Classical</h5>
     <p>
       The general approach to modeling systems in the canonical ensemble is to solve for the particular partition function \(Z\) of the system, from which we may perform
       statistical mechanics. If one wishes to model such a system thermodynamically, the general approach then is to derive the Helmholtz free energy from \(Z\) and derive
@@ -320,6 +335,7 @@
       </div>
  
     </p>
+    
     
     <h5>Statistical Relations Relevant to Canonical Ensemble</h5>
     <p>
@@ -358,8 +374,24 @@
         c_v=\frac{\partial \overline{E}}{\partial T}
       $$
     </div>
+    
     </p>
-
+    <h5>Quantum Canonical Ensemble</h5>
+    <p>
+      In the quantum mechanical formalism, our canonical ensemble is described as a density matrix of the form given as:
+      <div class="eq">
+        $$
+        \rho=\frac{1}{Z}\sum_n e^{-\beta E_n} \vert\psi_n\rangle\langle\psi_n\vert
+        $$
+      </div>
+      with the relevant partition function \(Z\) defined as
+      <div class="eq">
+        $$
+        Z=Tr(e^{-\beta H})
+        $$
+      </div>
+    </p>
+    
     <div class="dl"></div>
     <br>
 
@@ -433,36 +465,57 @@
       systems.
     </p>
 
+    <div class="dl"></div>
     <h3 id="maxbolt">Maxwell-Boltzmann</h2>
       <p>
-        The Maxwell-Boltzmann distribution describes the thermal distribution of the velocity classical gasses. Note that it only applies in thermal equilibirium and
+        The Maxwell-Boltzmann distribution describes the thermal distribution of the velocity of classical gasses. Note that it only applies in thermal equilibirium and
         to gases that aren't exhibiting some macroscopic flow.
         <div class="eq">
           \begin{align}
-            f_{MB}(v)=\left(\frac{m}{2\pi k_BT}\right)^{3/2}e^{-\frac{mv^2}{2k_BT}}
+            f(v)=\left(\frac{m}{2\pi k_BT}\right)^{3/2}e^{-\frac{mv^2}{2k_BT}}
           \end{align}
         </div>
+
       </p>
     
+    <div class="dl"></div>
     <h3 id="fermdir">Fermi-Dirac</h2>
       <p>
         Fermi-Dirac distributions are used to describe the probability of energy states being occupied for thermal Fermionic systems. Fermions obey the Pauli exclusion principle,
         as they have non-integer spin, which immediately resolves all degeneracies.
         <div class="eq">
           \begin{align}
-            f_{FD}(\epsilon _i)=\frac{1}{e^{(\epsilon_i-\mu)/k_BT}+1}
+            f(\epsilon _i)=\frac{1}{e^{(\epsilon_i-\mu)/k_BT}+1}
+          \end{align}
+        </div>
+      </p>
+      <h4>Sommerfeld Expansion</h4>
+      <p>
+        In the context of Fermi-Dirac statistics, we often come across integrals of the form:
+        <div class="eq">
+          \begin{align}
+            \int_{-\infty}^{\infty}f(\epsilon)\phi(\epsilon)d\epsilon.
+          \end{align}
+        </div>
+        These are, generally, hard to solve. However, a convenient asymptotic expansion of the above is available for small temperatures
+        and is known as the Sommerfeld expansion. The first few terms of the Sommerfeld expansion are given as:
+        <div class="eq">
+          \begin{align}
+            \int_{-\infty}^{\infty}f(\epsilon)\phi(\epsilon)d\epsilon\approx^{\text{low } T}\int_{-\infty}^{\mu}\phi(\epsilon)d\epsilon +\frac{\pi^2}{6}\left(\frac{1}{\beta}\right)^2\frac{d\phi}{d\epsilon}\big\vert_{\mu}+...
           \end{align}
         </div>
       </p>
     
+    <div class="dl"></div>
     <h3 id="bosein">Bose-Einstein</h2>
       <p>
         Bose-Einstein distributions are used to describe the occupation of states of thermal Bosonic systems, which, in contrast to Fermions, can have several quanta occupying the same state.
         <div class="eq">
           \begin{align}
-            f_{BE}(\epsilon _i)=\frac{g_i}{e^{(\epsilon_i-\mu)/k_BT}-1}
+            f(\epsilon _i)=\frac{g_i}{e^{(\epsilon_i-\mu)/k_BT}-1}
           \end{align}
         </div>
+        Here, it is important that the chemical potential \(\mu\) is always less than the ground state energy of the system.
       </p>
     
     <div class="hl"></div>

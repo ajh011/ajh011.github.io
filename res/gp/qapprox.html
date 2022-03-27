@@ -4,6 +4,7 @@
     <title>Quantum Approximation Techniques</title>
     <link href="../../assets/css/gp.css" rel="stylesheet">
     <link href="../../assets/css/qapprox.css" rel="stylesheet">
+    <link href="../../assets/css/toc.css" rel="stylesheet">
 
 
     <!--Geogebra Support-->
@@ -68,10 +69,26 @@
       Approximation techniques are methods through which approximate solutions to generally 
       hard to solve problems are generated systematically. Three common approximation methods 
       in quantum mechanics are: perturbation theory, applications of the variational principle,
-      and WKB approximations.
+      and the WKB approximation. All of these techniques, in so far as they're related to 
+      quantum mechanics, aer discussed below.
     </p>
-
-    <h3>Perturbation Theory</h3>
+    <div id="toc_container">
+      <p class="toc_title">Contents</p>
+      <ul class="toc_list">
+        <li><a href="#pert">1 Perturbation Theory</a></li>
+        <ul>
+          <li><a href="#pti">1.1 Time-Independent</a></li>
+            <ul><li><a href="#ptind">a. Non-Degenerate </a></li>
+              <li><a href="#ptid">b. Degenerate</a></li>
+            </ul>
+          <li><a href="#pt">1.2 Time-Dependent</a></li></ul>
+        <li><a href="#var">2 Variational Principle</a></li>
+        <li><a href="#wkb">3 WKB Approximation</a></li>
+        <li><a href="#resources">4 Resources</a></li>
+      </div>
+    </div>
+    
+    <h3 id="pert">Perturbation Theory</h3>
     <p>
       Perturbation theory is an approximation technique suited to problems with some resemblance to an easier (already solved) problem. 
       The technique is to Taylor expand about the known solution to the unperturbed problem in terms of the perturbation's coupling constant.
@@ -133,7 +150,9 @@
       </div>
       Now Wolfram|Alpha gives a numerical result of \(x\approx 1.1673\), so we're a little off, but still in the right direction.
     </p>
-    <h3>Quantum Framework</h3>
+    
+    <div class="dl"></div>
+    <h3 id="pti">Quantum Framework (Time Independent Perturbation)</h3>
     <p>
       In the quantum case, we specify a Hamiltonian \(H\) with some similarity to a simpler problem with a Hamiltonian \(H_0\), 
       and parametrize it such that at a certain value of the parameter \(\lambda\), the Hamiltonian simplifies to the simpler problem \(H_0\).
@@ -141,25 +160,25 @@
       The remaining portion of the original problem that deviates from the unperturbed Hamiltonian is termed the perturbation \(V\).
       <div class="eq">
         \begin{align}
-          H(\{p_i,q_i \},\lambda)&=H_0(\{p_i,q_i \})+\lambda V(\{p_i,q_i \})\\
+          H&=H_0+\lambda V\\
           \\
-          H_0 \vert\psi^{(0)}\rangle&=E^{(0)}\vert\psi^{(0)}\rangle\\
+          H_0 \vert\psi_n^{(0)}\rangle&=E_n^{(0)}\vert\psi_n^{(0)}\rangle\\
         \end{align}
       </div>
       We then Taylor expand the energy of the full Hamiltonian in terms of the parameter, which
       is sometimes called the coupling constant, and solve for the first few terms (provided it converges).
       <div class="eq">
         \begin{align}
-        \vert \psi(\lambda)\rangle&=\sum_{n=0}^{\infty}\lambda^n\vert \psi^{(n)}\rangle\\
-        E(\lambda)&=\sum_{n=0}^{\infty}\lambda^n E^{(n)}
+        \vert \psi_n(\lambda)\rangle&=\sum_{m=0}^{\infty}\lambda^m\vert \psi^{(m)}_n\rangle\\
+        E_n(\lambda)&=\sum_{m=0}^{\infty}\lambda^m E_n^{(m)}
         \end{align}
       </div>
       Now, these forms provoke a certain equivalence in coefficients of \(\lambda\), achieved
       by inserting these expansions into the Schrodinger equation, \( H\vert\psi\rangle = E\vert\psi\rangle\).
       <div class="eq">
         \begin{align}
-        \Big(H_0(\{p_i,q_i \})+\lambda V(\{p_i,q_i \})\Big)\left(\sum_{n=0}^{\infty}\lambda^n
-         \vert\psi^{(n)}\rangle\right)&=\left(\sum_{n=0}^{\infty}\lambda^n E^{(n)}\right)\left(\sum_{n=0}^{\infty}\lambda^n \vert\psi^{(n)}\rangle\right)\\
+        \Big(H_0+\lambda V\Big)\left(\sum_{m=0}^{\infty}\lambda^m
+         \vert\psi^{(m)}_n\rangle\right)&=\left(\sum_{m=0}^{\infty}\lambda^m E_n^{(m)}\right)\left(\sum_{m=0}^{\infty}\lambda^m \vert\psi_n^{(m)}\rangle\right)\\
         \end{align}
       </div>
       <div class="center">
@@ -194,25 +213,73 @@
     From this, we may project onto arbitrary eigenstates \(\vert\psi^{n}\rangle\) to calculate relations for the perturbed energy states. 
     Below, the relations for the first and second order corrections to the energy eigenvalues are given.
     </p>
-    <h4>First Order Relations</h4>
+    
+    <div class="dl2"></div>
+    <h3 id="ptind">Non-Degenerate Case</h3>
+    <p>
+      In the time independent case with no degeneracies, we may simply equate coefficients of lambda (in the expansion above) and project onto the 
+      eigenstates of the unperturbed Hamiltonian to get higher order energy corrections. This gives us rather simple relations (with increasing complexity for higher 
+      orders) for the first two corrections that may be written somewhat succintly.
+    </p>
+    <h4>First Order Correction</h4>
     <p>
       The relation for first order perturbation theory is stated below
       <div class="eq">
         \begin{align}
-          E^{(1)}&=\langle \psi^0 \vert V\vert \psi^0\rangle\\
+          E_n^{(1)}&=\langle \psi_n^0 \vert V\vert \psi_n^0\rangle\\
         \end{align}
       </div>
       Which is achieved by projecting the expanded Schrodinger equation onto the unperturbed eigenstate.
     </p>
-    <h3>Resources</h3>
+    <h4>Second Order Correction</h4>
     <p>
-      For further resources related to perturbation theory applied to quantum mechanics, see the Wikipedia article:
-       <a href="https://en.wikipedia.org/wiki/Perturbation_theory_(quantum_mechanics)#Difficult_computations">Perturbation theory (quantum mechanics)</a>.
-      Other resources include a nice introdcution in chapter 5 of Sakurai and Napolitano's <em>Modern Quantum Mechanics</em>, and chapter 6 of David Griffith's
-      <em>Introdcution to Quantum Mechanics</em>.
+      The relation for second order corrections in perturbation theory is given as
+      <div class="eq">
+        \begin{align}
+          E_n^{(2)}&=\sum_{k\neq n}\frac{\vert \langle \psi_k^0 \vert V\vert \psi_n^0\rangle\vert^2}{E_n^{(0)}-E_K^{(0)}}\\
+        \end{align}
+      </div>
+      Which is again achieved by projecting the expanded Schrodinger equation onto the unperturbed eigenstate and matching up coefficients
+      of lambda in the second order.
     </p>
+    
+    <div class="dl2"></div>
+    <h3 id="ptid">Degenerate Case</h3>
+    <p>
+      In the case of degeneracy, the perturbation may 'lift' such degeneracies. That is, the states that are degenerate in the unperturbed Hamiltonian may 
+      become non-degenerate in the case of the perturbation. Regardless of any lifting of degeneracies, a more nuanced treatment of such states is required (as is 
+      evidenced by the denominator of the second order non-degenerate relation). 
+    </p>
+    
+    <h4>First Order Corrections</h4>
+    <p>
+      For a system with an energy eigenvalue \(E_n\) exhibiting a \(D\)-fold degeneracy, we may construct the first order correction as a matrix of components, as below.
+      <div class="eq">
+        \[
+          E_n^{(1)}=\begin{Bmatrix}\langle \psi_{n,1}\vert V\vert\psi_{n,1}\rangle & \cdots &\langle\psi_{n,D}\vert V\vert\psi_{n,1}\rangle \\
+                                  \vdots & \ddots &\vdots \\
+                                  \langle \psi_{n,1}\vert V\vert\psi_{n,D}\rangle &\cdots & \langle \psi_{n,D}\vert V\vert\psi_{n,D}\rangle\\ \end{Bmatrix}
+        \]
+      </div>
+      This matrix may be diagonalized (provided it doesn't vanish) to find the new eigenvectors of the perturbed Hamiltonian. In it's diagonlized form, the diagonal entries will give the 
+      first order corrections to the relevant energy state of the perturbed eigenvectors (specified in an arbitrary order given their previous degeneracy). These new eigenvectors will also be
+      those of the higher order corrections, with which we may use the previous relations and expansion.
+    </p>
+    <div class="dl"></div>
+    <h3 id="pt">Quantum Framework (Time Dependent Perturbation)</h3>
+    <p>
+      Suppose now, we have some unperturbed Hamiltonian \(H_0\) that is independent of time that undergoes some perturbation \(V(t)\) coupled by \(\lambda\).
+      <div class="eq">
+        \begin{align}
+          H&=H_0+\lambda V(t)\\
+          \\
+          H_0 \vert\psi_n^{(0)}\rangle&=E_n^{(0)}\vert\psi_n^{(0)}\rangle\\
+        \end{align}
+      </div>
+    </p>
+    <div class="hl"></div>
 
-    <h2>Variational Principle</h2>
+    <h2 id="var">Variational Principle</h2>
     <p>
       The variational principle is most often used to solve for upper bounds on ground state energies of systems defined by their Hamiltonians.
     </p>
@@ -222,16 +289,221 @@
       The variational principle leverages the fact that the ground state energy of a system is the lowest 
       value of the Hamiltonian applied to some arbitrary state (given the arbitrary state satisfies the 
       boundary conditions specified in the relevant context). This can be seen in an eigenfunction
-      expansion of the Hamiltonian. 
-      
+      expansion of the Hamiltonian, done below.    
+    </p>
+    
+    <p>Since Hamiltonians are Hermitian operators, their eigenvectors are guaranteed to be orthogonal and span the entire space. These eigenvectors may further be normalized,
+      and, as such, we get a complete and well behaved basis of states from any relevant Hamiltonian. Explicity, for any Hamiltonian, we have:
       <div class="eq">
         \begin{align}
-          E_0 \leq \langle \psi \vert H\vert\psi\rangle
+          H\vert\psi_n\rangle &=\lambda_n\vert\psi_n\rangle\\
+          \langle \psi_m\vert\psi_n\rangle &=\delta_{mn}\\
         \end{align}
       </div>
+      This allows us to write an arbitrary vector \(\vert\phi\rangle\) within this space (one satisfying the boundary conditions of the Hamiltonian, such as continuity and convergence at infinity) as
+      an expansion in these eigenvectors. Thus, we may write:
+      <div class="eq">
+        \begin{align}
+          \vert\phi\rangle & =\sum_nc_n\vert\psi_n\rangle\\
+          H&=\sum_n\lambda_n\vert\psi_n\rangle\langle\psi_n\vert\\
+        \end{align}
+      </div>
+      with H expanded in the same basis. In this form, it is clear to see that the smallest value we may attain from the expectation value of H with respect to some arbitrary state \(\vert\psi\rangle\) will be
+      the lowest eigenvalue of H (which is the ground state energy of the Hamiltonian). Hence we have:
+      <div class="eq">
+        \begin{align}
+          E_0 \leq \langle \phi \vert H\vert\phi\rangle
+        \end{align}
+        Note that the above relation assumes \(\vert\psi\rangle\) is normalized, but the formula for application (below) omits this requirement and builds in a normalization factor.
+      </div>
+    </p>
+    <h3>Application</h3>
+    <p>As a result of the above considerations, any 'trial' wavefucntion we construct that satisfies
+      the relevant conditions of a specified Hamiltonian will yield an effective upper limit on the ground state energy. Hence, we may calculate
+      an upper bound \(\tilde{E}_0\) on the ground state energy \(E_0\) of some Hamiltonian \(H\) with an arbitrary trial wavefunction \(\vert\psi\rangle\)
+      via
+      <div class="eq">
+        \begin{align}
+          \tilde{E}_0[\psi] = \frac{\langle \psi \vert H\vert\psi\rangle}{\langle\psi\vert\psi\rangle}\geq E_0
+        \end{align}
+      </div>
+      where we divide by the inner product of our trial function with itself for normalization. The trial wavefunction may further be parametrized, such that
+      we may find a stationary value of the upper bound, with respect to the parameter, from which we may attain a tighter upper bound.
+    </p>
+    <p>
+      The variational principle may also be applied to solve for upper bounds on higher energy states. Though, this is only possible if we may construct a trial wavefunction
+      that is guaranteed to be orthogonal to the wave functions of all the lesser energies below that under consideration (so if we wanted to calculate an \(\tilde{E}_3\), for example, we would 
+      need a trial wavefunction orthogonal to \(\vert\psi_0\rangle,\vert\psi_1\rangle\) and \(\vert\psi_2\rangle\)).
+    </p>
+    <div class="hl"></div>
+
+    <h2 id="wkb">WKB Approximation (Semiclassical)</h2>
+    <p>
+      The WKB approximation is a method for finding approximate solutions to certain classes of linear differential equations. In the current context, we wish to find approximate solutions 
+      to the one-dimensional Schrodinger equation in appropriate circumstances. To define these circumstances succintly, and give some motivation, we first introduce some notation below and
+      then proceed to describe the general form of the approximate solution. 
+    </p>
+      <p>
+      
+      This approximate solution can then be used to calculate tunneling coefficients, that is, the probability that some quanta will tunnel through some potential barrier that exceeds it's energy.
+      Again, we restrict ourselves to one dimension, though the WKB approximation is also applicable in three dimensions for cases with certain symmetries.
+    </p>
+    <h3>Motivational Example</h3>
+    <p>
+      WKB theory is a class of perturbative approximations that may be used to solve for approximate solutions to ordinary differential equations of the form:
+       <div class="eq">
+        \begin{align}
+        \epsilon^2\frac{d^2}{dx^2}y(x) +Q(x)y(x)=0
+        \end{align}
+      </div>
+      Note that this a particularly peculiar perturbation as, in the limit of epsilon
+      approaching zero, the above turns from a differential equation into a algebraic equation.  However, 
+      we assume a series solution in \(\epsilon\) of the form given below, which turns \(y''(x)\) 
+      into something that scales with \(1/\epsilon^2\) and, in turn, avoids the aforementioned 
+      transition.
+      <div class="eq">
+        \begin{align}
+        y(x)\sim e^{\frac{1}{\epsilon}\sum_n S_n(x) \epsilon^n}
+        \end{align}
+      </div>
+    </p>
+    <p>
+      We now insert this form of perturbative expansion into the previous differential equation. This gives us the equality below, in which we may equate the 
+      coefficients of each order of \(\epsilon ,\) giving us a set of equations from which we may deduce arbitrary order coefficients.
+      <div class="eq">
+        \begin{align}
+            \epsilon^2\frac{d^2}{dx^2}e^{\frac{1}{\epsilon}\sum_n S_n(x) \epsilon^n} -Q(x)e^{\frac{1}{\epsilon}\sum_n S_n(x) \epsilon^n}&=0\\
+            \epsilon^2\frac{d}{dx}\left[\left( \frac{1}{\epsilon}\sum_n S_n'(x) \epsilon^n\right)e^{\frac{1}{\epsilon}\sum_n S_n(x) \epsilon^n}\right]
+            -Q(x)e^{\frac{1}{\epsilon}\sum_n S_n(x) \epsilon^n}&=0\\
+            \epsilon^2\left[ \frac{1}{\epsilon}\sum_n S_n''(x) \epsilon^n+\left(\frac{1}{\epsilon}\sum_n S_n'(x) \epsilon^n\right)^2\right]e^{\frac{1}{\epsilon}\sum_n S_n(x) \epsilon^n}
+            -Q(x)e^{\frac{1}{\epsilon}\sum_n S_n(x) \epsilon^n}&=0\\
+            \epsilon\sum_n S_n''(x) \epsilon^n+\left(\sum_n S_n'(x) \epsilon^n\right)^2-Q(x)&=0
+        \end{align}
+      </div>
+      The infinite series that is squared above may then be expanded into a series over a double summation, as below.
+      <div class="eq">
+        \begin{align}
+            \left(\sum_n S_n' \epsilon^n\right)^2&=\sum_{n=0}^{\infty}\sum_{j=0}^{n}S'_jS'_{n-j}\ \epsilon^n
+        \end{align}
+      </div>
+      Which gives us the following set of equations defining every coefficient of the series expansion we assumed for \(y(x)\):
+      <div class="eq">
+        \begin{align}
+            S_{n-1}''(x) +\sum_{j=0}^{n}S'_jS'_{n-j}-Q(x)\delta_{n}&=0
+        \end{align}
+      </div>
+    </p>
+    <p>
+        The first few terms of this series, explicity, are then given below. These may be used to solve for the 
+        coefficients of our expansion, term by term.
+        <div class="eq">
+          \begin{align}
+              \left(S'_{0}\right)^2&=Q(x)&\quad\ &\rightarrow&\ &S_0(x)=\pm\int_0^x \sqrt{Q(x)} dx \quad \tiny{\text{(Eikonal Equation)}}\\
+              S_0'' +2S_0'S_1'&=0&\quad&\rightarrow&&S_1(x)=-\frac{1}{4}\ln Q(x)\\
+              S_1''+2S'_0S'_2+\left(S'_1\right)^2&=0&\quad &\rightarrow&&S_2(x)=\pm \int_0^x\left[\frac{Q''}{8Q^{3/2}}-\frac{5(Q')^2}{32Q^{5/2}}\right]dx\\
+              \quad \quad &\ \ \vdots &\quad &&&\\
+          \end{align}
+        </div>
+      Now, this series is singular when \(Q(x)=0\), as can be seen in the solution for \(S_1(x)\). This is essentially our criteria of applicability for 
+      our approximate form then. That is, the above expansion for \(y(x)\) is well-defined for \(Q(x)\neq 0\).
+    </p>
+    <p>
+      Hence, to first order in \(\epsilon\), we have an approximate solution for the original differential equation (for regions where \(Q(x)\neq 0\)) of the following form.
+      \begin{align}
+      y^*(x)&=e^{\frac{1}{\epsilon}\left(S_0+\epsilon S_1\right)}= Q^{-\frac{1}{4}} \exp\left(\ \pm\frac{1}{\epsilon}\int\sqrt{Q}dx\right)
+      \end{align}
+      And, to reiterate, this solution fails near points where \(Q(x)\) vanishes, but we may patch together other asymptotic approximations near these points, a technique which
+      is discussed below.
+    </p>
+    <div class="dl"></div>
+    <h3>Quantum Framework (WKB Apprrox.)</h3>
+    <p>
+      Beginning with the Schrodinger equation, we first rearrange to get an effective momentum.
+      <div class="eq">
+        \begin{align}
+          \frac{d^2}{dx^2}\vert\psi(x)\rangle = \frac{2m}{\hbar^2}(V(x)-E)\vert\psi(x)\rangle=-\left[\frac{p(x)}{\hbar}\right]^2\vert\psi(x) \rangle
+        \end{align}
+      </div>
+      With this effective momentum \(p(x)\), we define a de Broglie wavelength for our particle.
+      <div class="eq">
+        \begin{align}
+          \lambda = \frac{\hbar}{p(x)}=\frac{\hbar}{\sqrt{2m(E-V(x))}}
+        \end{align}
+      </div>
+      Now, when this de Broglie wavelength is much smaller than a region through which E isn't close to V(x), we expect the quantum behaviour of our particle to be suppressed (this corresponds to 
+      our neglect of a certain contribution later). 
+    </p>
+    <p>
+      For further motivation, we consider the fact that when the potential is some constant less than the energy of the quanta, we have a simple solution to the differential equation. 
+      Explicity, with a simple constant potential of the form \(V(x)=C\), we have the Schrodinger equation:
+      <div class="eq">
+        \begin{align}
+          \frac{d^2}{dx^2}\vert\psi(x)\rangle +\left[\frac{p}{\hbar}\right]^2\vert\psi(x)\rangle=0
+        \end{align}
+      </div>
+      </p>
+      <p class="center">
+      with the simple solution 
+      <div class="eq">
+        \begin{align}
+          \vert\psi(x)\rangle\vert_{\tiny{V=C}}=e^{\pm i px/\hbar}
+        \end{align}
+      </div>
+    </p>
+    <p>
+      So, in the case where \(V(x)\) is non-trivial and does depend on \(x\), we adopt a solution of the form given for \(\psi\) below.
+      <div class="eq">
+        \begin{align}
+          \vert\psi(x)\rangle\equiv e^{ i W(x)/\hbar}
+        \end{align}
+      </div>
+      and insert this into the Schrodinger equation to (hopefully) solve for \(W(x)\). Substituting in this form for \(\psi\) then gives 
+      <div class="eq">
+        \begin{align}
+          \frac{d^2}{dx^2}e^{ i W(x)/\hbar} +\left[\frac{p(x)}{\hbar}\right]^2e^{ i W(x)/\hbar}&=0\\
+          i\hbar\frac{d^2W(x)}{dx^2}-\left(\frac{dW(x)}{dx}\right)^2+p(x)^2&=0\\
+        \end{align}
+      </div>
+      which is a non-linear differential equation, completely equivalent to the Schrodinger equation (that is, we have made no approximation in the above
+      equation; we have only chosen to write \(\psi\) in an exponential form). 
+      </p>
+      <p>The approximation we now make is that of the WKB method; we take the leading order
+      derivative's (which is coupled by \(\hbar\)) contribution to be negligible compared to the other derivative. Thus, if we want our approximation to be 
+      reasonably valid, we should only consider potentials that 'slowly vary' such that this is true. Explicity, we now take
+      <div class="eq">
+        \begin{align}
+          \hbar\frac{d^2W(x)}{dx^2}&\approx 0
+        \end{align}
+      </div>
+      which yields an approximate solution (in the region where this holds) of the form:
 
     </p>
-
-    
+    <div class="hl"></div>
+    <h2 id="resources">Resources</h2>
+    <h4>Perturbation Theory</h4>
+    <p>
+      For further resources related to perturbation theory's application in quantum mechanics, see the Wikipedia article:
+       <a href="https://en.wikipedia.org/wiki/Perturbation_theory_(quantum_mechanics)#Difficult_computations">Perturbation theory (quantum mechanics)</a>.
+      Other resources include a nice introdcution in chapter 5 of Sakurai and Napolitano's <em>Modern Quantum Mechanics</em>, and chapter 6 of David Griffith's
+      <em>Introdcution to Quantum Mechanics</em>.
+    </p>
+    <h4>Variational Principle</h4>
+    <p>
+      Applications of the variational principle are covered in chapter 7 of David Griffith's
+      <em>Introdcution to Quantum Mechanics</em>, section 5.4 of Sakurai and Napolitano's <em>Modern Quantum Mechanics</em>, and the Wikipedia article:
+       <a href="https://en.wikipedia.org/wiki/Variational_method_(quantum_mechanics)">Variational Method (quantum mechanics)</a>.
+    </p>
+    <h4>WKB Approximation</h4>
+    <p>
+      For a good introduction to the WKB approximation in quantum mechanics, see this <a href="https://www.youtube.com/watch?v=7Y5me3mwXpA">mini-lecture on Youtube</a> by Barton Zwiebach. The WKB 
+      approximation is also covered in chapter 8 of David Griffith's
+      <em>Introdcution to Quantum Mechanics</em>, the Wikipedia article:
+       <a href="https://en.wikipedia.org/wiki/WKB_Approximation">WKB Approximation</a>, and briefly in Section 2.5.4 of Sakurai and Napolitano's <em>Modern Quantum Mechanics</em>. 
+    </p>
+    <p>
+       This 
+       approach, in it's general form, is also covered in great detail in Chapter 10 of Carl Bender and Steven Orszag's <em>Advanced Mathematical Methods for Scientists and Engineers</em>, as well
+       as in lectures 12 and 13 of Carl Bender's Mathematical Physics lectures which can be found <a href="https://www.youtube.com/watch?v=clpHq5Rs8a4">here</a>.
+    </p>
   </body>
 </html>

@@ -36,7 +36,12 @@ body {
 }
 
 .dl{
-  border-bottom: 1px dashed white;
+  border-bottom: 1px dotted white;
+  width: 100%;
+}
+
+.dl2{
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.76);
   width: 100%;
 }
 
