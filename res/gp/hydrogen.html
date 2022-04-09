@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hydrogen Atom</title>
+    <link href="../../assets/css/gp.css" rel="stylesheet">
+    <link href="../../assets/css/qapprox.css" rel="stylesheet">
+    <link href="../../assets/css/toc.css" rel="stylesheet">
+
+
+    <!--Geogebra Support-->
+    <script src="navigation.js"></script>
+
+
+    <!--MathJax Support-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}},
+                                  loader: {load: ['[tex]/ams']},
+                                  tex: {packages: {'[+]': ['ams']}});</script>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../assets/images/res/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/images/res/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/images/res/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/images/res/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../../assets/images/res/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../assets/images/res/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../assets/images/res/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../assets/images/res/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="../../assets/images/res/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="../../assets/images/res/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="../../assets/images/res/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="../../assets/images/res/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="../../assets/images/res/mstile-310x310.png" />
+
+
+
+    <meta charset="UTF-8">
+    <meta name="description" content="A short overview of a non-relativistic, quantum treatment of the Hydrogen atom.">
+    <meta name="keywords" content="hydrogen atom solution">
+    <meta name="author" content="Alexander J. Heilman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+  </head>
+  
+  <body>
+
+
+  <div id="home">
+    <a href="https://www.alexheilman.com"><img id="homeimg" src="../../assets/images/iconwhite/favicon-196x196.png" width="50"></a>
+  </div>
+
+  <div id="up">
+    <a id="upa" href="https://www.alexheilman.com/res/index.html">GP</a>
+  </div>
+
+  <h1 id="title">The Hydrogen Atom</h1>
+    <p id="blurb">
+      One of the few solvable systems in quantum mechanics just so happens to be the non-relativistic model of the 
+      Hydrogen atom. That is, we may describe the quantum mechanical system due to the Coulombic interaction between a 
+      small particle and another taken to be immovable.
+    </p>
+    <div id="toc_container">
+      <p class="toc_title">Contents</p>
+      <ul class="toc_list">
+        <li><a href="#pert">Non-Rel. Hamiltonian</a></li>
+        
+          <li><a href="#app">Approach</a></li>
+          
+        <li><a href="#app">Energy Levels  </a></li>
+        <li><a href="#toe">Table of Energies (\(n< 3\))</a></li>
+          <li><a href="#wf">Wavefunction</a></li>
+          <ul><li><a href="#pt"> Radial</a></li>
+          <li><a href="#pt"> Azimuthal</a></li>
+          <li><a href="#pt"> Polar</a></li></ul>
+          <li><a href="#tow">Table of Wavefunctions (\(n< 3\))</a></li>
+        <li><a href="#resources">2 Resources</a></li>
+       
+        </ul>
+    </div>
+    
+    <h2 id="pert">Non-relativistic Hamiltonian</h2>
+    <p>
+     We take the basic interaction between the electron and proton to be Coulombic attraction, and model the proton as immovable (given its large mass
+     compared to the electron on the order of \(10^4\)). In this approach we then have only two terms in the Hamiltonian defining this model: one term 
+     accounting for the three dimensional momentum of the electron; and another accounting for this Coulombic force between the electron and the proton.
+     The Hamiltonian is then given explicitly as:
+     <div class="eq">
+      $$
+        \hat{H}=-\frac{\hbar^2}{2m_e}\nabla^2+\frac{-e^2}{4\pi\epsilon_0}\frac{1}{r}
+      $$
+     </div>
+     This, as stated in the introduction, has a nice closed form solution. This analytic solution may be given by a technique often used to solve Helmholtz-like
+     differential equations, which is discussed briefly below.
+    </p>
+
+    <h4 id="app">Approach</h4>
+    <p>
+      The technique most often used to solve the differential equation for our model of the Hydrogen atom is that of <a href="https://alexheilman.com/res/gp/sov.html">separation of variables</a>.
+      Given the above Hamiltonian, we have the corresponding differential equation given by the time-independent 
+      Schrodinger equation:
+      <div class="eq">
+        \begin{align}
+          \hat{H}\psi(r,\theta,\phi)-E\psi(r,\theta,\phi)&=0\\
+          \left[-\frac{\hbar^2}{2m_e}\nabla^2+\frac{-e^2}{4\pi\epsilon_0}\frac{1}{r}-E\right]\psi(r,\theta,\phi)&=0
+        \end{align}
+       </div>
+    </p>
+    <p>
+      We now apply separation of variables, in which we 'separate' the dependence of the function of three variables into three
+      functions depending on one variable, and assume our final solution (that dependent on three variables) to be a product of these 
+      independently dependent functions. Explicity, we write:
+      <div class="eq">
+        \begin{align}
+          \psi(r,\theta,\phi)&=R(r)\Theta(\theta)\Phi(\phi)
+        \end{align}
+       </div>
+       which we insert into our differential equation and divide through by the above form of \(\psi\), yielding 
+       three differential separated equations for each independent spherical variable (don't try this in Cartesian coordinates, due to the symmetry in
+       the Hamiltonian). 
+    </p>
+    <p>
+        <div class="eq">
+            \begin{align}
+              \frac{d}{dr}\left(r^2\frac{dR}{dr}\right) +\frac{2mr^2}{\hbar^2}\left(E+\frac{e^2}{4\pi \epsilon_0 r}\right)R-\alpha R&=0\\
+              \frac{\sin\theta}{\Theta}\frac{d}{d\theta}\left(\sin\theta\frac{d\Theta}{d\theta}\right)+\alpha\sin^2\theta-\beta&=0\\
+              \frac{1}{\Phi^2}\frac{d^2\Phi}{d\phi^2}+\beta=0
+
+            \end{align}
+           </div>
+        The solutions of these differential equations are described below.
+    </p>
+    
+    <div class="hl"></div>
+
+
+    <h4 id="toe">Energy Levels</h4>
+    <p>
+      The energy levels of the non-relativistic Hydrogen Hamiltonian can be shown to 
+      only depend on the principal quantum number \(n\). These energy levels may be given by the 
+      formula:
+      <div class="eq">
+        \begin{align}
+        E_n=-\left[\frac{m}{2\hbar^2}\left(\frac{e^2}{4\pi\epsilon_0}\right)^2\right]\frac{1}{n^2}
+        \end{align}
+       </div>
+       where \(m\) is the mass of an electron at rest, \(e\) is the charge of the electron, and \(\epsilon_0\)
+       the permitivity of free space.
+    </p>
+
+    <h4 id="toe">Table of Energies</h4>
+    <p>
+    <table>
+        <tr>
+          <th>Energy Level</th>
+          <th> eV</th>
+          <th> J</th>
+        </tr>
+        <tr>
+          <th>n=1</th>
+          <th>-13.6</th>
+          <th>2.18 *\(10^{-18}\) </th>
+        </tr>
+        <!--<tr>
+          <td>n=2</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+            <td>n=3</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>n=4</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>-->
+    </table>
+    Note that the ground state energy of the Hydrongen atom, \(E_0\) is also referred to
+    as the Rydberg unit of energy.
+    </p>
+
+    
+    <div class="hl"></div>
+
+    <h4 id="wf">Wavefunctions (Eigenfunctions of \(H\))</h4>
+    <p>
+        The total solution of the Hamiltonian defined above gives position space wavefunctions described by three indexes of the form:
+        <div class="eq">
+            \begin{align}
+            \psi_{nlm}(r,\theta,\phi)=\sqrt{\left(\frac{m_e e^2}{2\pi n \epsilon_0\hbar^2}\right)^3\frac{(n-l-1)!}{2n(n+l)!}}e^{-\frac{m_e e^2}{2\pi n \epsilon_0\hbar^2}r}\left(\frac{m_e e^2}{4\pi n \epsilon_0\hbar^2}r\right)^lL^{2l+1}_{n-l-1}\left(\frac{m_e e^2}{4\pi n \epsilon_0\hbar^2}r\right)Y_l^m(\theta,\phi)
+            \end{align}
+        </div>
+        Which are normalized over integrals of all space and which, over such intervals, are orthogonal for \(n,l,m\neq n',l',m'.\)
+    </p>
+    <h4 id="tow">Table of Wavefunctions</h4>
+
+    <p>
+        Below, the first few wavefunctions of the form above are explicitly shown.
+    </p>
+
+    <h5>n=0, l=0, m=0</h5>
+    <div class="eq">
+        \begin{align}
+        \psi_{100}(r,\theta,\phi)=\frac{1}{\sqrt{\pi}a_0^{3/2}}e^{-r/a_0}
+        \end{align}
+       </div>
+       
+
+    <div class="hl"></div>
+    <h2 id="resources">Resources</h2>
+    <p>
+      For further resources related to elemental Hydrogen in general, see the Wikipedia article:
+       <a href="https://en.wikipedia.org/wiki/Hydrogen_atom#Schrödinger_equation">Hydrogen atom</a>.
+      Other resources include a nice introduction in chapter 3 of Sakurai and Napolitano's <em>Modern Quantum Mechanics</em> (Third Edition), and Section 4.2 of David Griffith's
+      <em>Introduction to Quantum Mechanics</em> (Second Edition).
+    </p>
+  </body>
+</html>
