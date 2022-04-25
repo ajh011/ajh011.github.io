@@ -8,407 +8,74 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="qscatt.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   id="svg8"
+   width="193.87239mm"
+   height="78.231644mm"
+   viewBox="0 0 193.87239 78.231644"
    version="1.1"
-   viewBox="0 0 210 120"
-   height="120mm"
-   width="210mm">
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="qscatt.svg">
   <defs
      id="defs2">
     <inkscape:path-effect
        effect="bspline"
+       id="path-effect5384"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect5365"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
        id="path-effect2808"
-       is_visible="true"
-       lpeversion="1"
-       weight="33.333333"
-       steps="2"
-       helper_size="0"
-       apply_no_weight="true"
-       apply_with_weight="true"
-       only_selected="false" />
+       effect="bspline" />
     <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
+       effect="bspline"
        id="path-effect2665"
-       effect="bspline" />
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
     <inkscape:path-effect
-       effect="bspline"
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
        id="path-effect2509"
-       is_visible="true"
-       lpeversion="1"
-       weight="33.333333"
-       steps="2"
-       helper_size="0"
-       apply_no_weight="true"
-       apply_with_weight="true"
-       only_selected="false" />
+       effect="bspline" />
     <marker
-       inkscape:stockid="Arrow1Mend"
-       orient="auto"
-       refY="0.0"
-       refX="0.0"
+       inkscape:isstock="true"
+       style="overflow:visible"
        id="marker2400"
-       style="overflow:visible;"
-       inkscape:isstock="true">
-      <path
-         id="path2398"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
-         transform="scale(0.4) rotate(180) translate(10,0)" />
-    </marker>
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect2396"
-       effect="bspline" />
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible;"
-       id="Arrow1Lend"
-       refX="0.0"
-       refY="0.0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lend">
-      <path
-         transform="scale(0.8) rotate(180) translate(12.5,0)"
-         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path887" />
-    </marker>
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect2213"
-       effect="bspline" />
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect2209"
-       effect="bspline" />
-    <inkscape:path-effect
-       effect="bspline"
-       id="path-effect2207"
-       is_visible="true"
-       lpeversion="1"
-       weight="33.333333"
-       steps="2"
-       helper_size="0"
-       apply_no_weight="true"
-       apply_with_weight="true"
-       only_selected="false" />
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect2195"
-       effect="bspline" />
-    <inkscape:path-effect
-       effect="bspline"
-       id="path-effect2193"
-       is_visible="true"
-       lpeversion="1"
-       weight="33.333333"
-       steps="2"
-       helper_size="0"
-       apply_no_weight="true"
-       apply_with_weight="true"
-       only_selected="false" />
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect2181"
-       effect="bspline" />
-    <inkscape:path-effect
-       effect="bspline"
-       id="path-effect2179"
-       is_visible="true"
-       lpeversion="1"
-       weight="33.333333"
-       steps="2"
-       helper_size="0"
-       apply_no_weight="true"
-       apply_with_weight="true"
-       only_selected="false" />
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect2167"
-       effect="bspline" />
-    <inkscape:path-effect
-       effect="bspline"
-       id="path-effect2165"
-       is_visible="true"
-       lpeversion="1"
-       weight="33.333333"
-       steps="2"
-       helper_size="0"
-       apply_no_weight="true"
-       apply_with_weight="true"
-       only_selected="false" />
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect2141"
-       effect="bspline" />
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect2132"
-       effect="bspline" />
-    <inkscape:path-effect
-       effect="bspline"
-       id="path-effect2113"
-       is_visible="true"
-       lpeversion="1"
-       weight="33.333333"
-       steps="2"
-       helper_size="0"
-       apply_no_weight="true"
-       apply_with_weight="true"
-       only_selected="false" />
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect2094"
-       effect="bspline" />
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="StopM"
-       refX="0.0"
-       refY="0.0"
-       orient="auto"
-       inkscape:stockid="StopM">
-      <path
-         transform="scale(0.4)"
-         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
-         d="M 0.0,5.65 L 0.0,-5.65"
-         id="path1056" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       inkscape:stockid="DistanceStart"
-       orient="auto"
-       refY="0.0"
-       refX="0.0"
-       id="DistanceStart"
-       style="overflow:visible">
-      <g
-         style="stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         id="g2300">
-        <path
-           id="path2306"
-           d="M 0,0 L 2,0"
-           style="fill:#000000;stroke:#000000;stroke-width:1.15;stroke-linecap:square;stroke-opacity:1;fill-opacity:1" />
-        <path
-           id="path2302"
-           d="M 0,0 L 13,4 L 9,0 13,-4 L 0,0 z "
-           style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;fill-opacity:1" />
-        <path
-           id="path2304"
-           d="M 0,-4 L 0,40"
-           style="fill:#000000;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-opacity:1;fill-opacity:1" />
-      </g>
-    </marker>
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect1203"
-       effect="bspline" />
-    <inkscape:path-effect
-       end_linecap_type="round"
-       scale_width="1"
-       miter_limit="4"
-       linejoin_type="spiro"
-       start_linecap_type="round"
-       interpolator_beta="0.75"
-       interpolator_type="CentripetalCatmullRom"
-       sort_points="true"
-       offset_points="3.4525252,1.3593161"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect1195"
-       effect="powerstroke" />
-    <inkscape:path-effect
-       step="1"
-       simplify_just_coalesce="false"
-       simplify_individual_paths="false"
-       helper_size="0"
-       smooth_angles="0"
-       threshold="0.0042328942"
-       steps="1"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect1193"
-       effect="simplify" />
-    <inkscape:path-effect
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect1190"
-       effect="spiro" />
-    <inkscape:path-effect
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect1186"
-       effect="spiro" />
-    <marker
-       inkscape:collect="always"
-       inkscape:isstock="true"
-       style="overflow:visible;"
-       id="Arrow1Mend"
-       refX="0.0"
-       refY="0.0"
-       orient="auto"
-       inkscape:stockid="Arrow1Mend">
-      <path
-         transform="scale(0.4) rotate(180) translate(10,0)"
-         style="fill-rule:evenodd;stroke:#b3b3b3;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path893" />
-    </marker>
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect882"
-       effect="bspline" />
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect878"
-       effect="bspline" />
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect874"
-       effect="bspline" />
-    <inkscape:path-effect
-       effect="bspline"
-       id="path-effect866"
-       is_visible="true"
-       lpeversion="1"
-       weight="33.333333"
-       steps="2"
-       helper_size="0"
-       apply_no_weight="true"
-       apply_with_weight="true"
-       only_selected="false" />
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect847"
-       effect="bspline" />
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect843"
-       effect="bspline" />
-    <path
-       id="MJX-7-TEX-I-3B8"
-       d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z" />
-    <path
-       id="MJX-7-TEX-I-62"
-       d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z" />
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker2400-8"
        refX="0"
        refY="0"
        orient="auto"
@@ -417,18 +84,344 @@
          transform="matrix(-0.4,0,0,-0.4,-4,0)"
          style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
          d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="path2398-8" />
+         id="path2398" />
     </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2396"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path887"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2213"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2209"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect2207"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2195"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect2193"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2181"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect2179"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2167"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect2165"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2141"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2132"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect2113"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2094"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <marker
+       inkscape:stockid="StopM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="StopM"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1056"
+         d="M 0,5.65 V -5.65"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4)" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DistanceStart"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DistanceStart"
+       inkscape:isstock="true">
+      <g
+         id="g2300"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.15;stroke-linecap:square;stroke-opacity:1"
+           d="M 0,0 H 2"
+           id="path2306" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-opacity:1"
+           d="M 0,0 13,4 9,0 13,-4 Z"
+           id="path2302" />
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-opacity:1"
+           d="M 0,-4 V 40"
+           id="path2304" />
+      </g>
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1203"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect1195"
+       is_visible="true"
+       lpeversion="1"
+       offset_points="3.4525252,1.3593161"
+       sort_points="true"
+       interpolator_type="CentripetalCatmullRom"
+       interpolator_beta="0.75"
+       start_linecap_type="round"
+       linejoin_type="spiro"
+       miter_limit="4"
+       scale_width="1"
+       end_linecap_type="round" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect1193"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.0042328942"
+       smooth_angles="0"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false"
+       step="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1190"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1186"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect882"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect878"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect874"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect866"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect847"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect843"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <path
+       d="m 35,200 q 0,102 39,215 39,113 106,195 67,82 139,94 1,0 8,0 7,0 12,1 54,-4 84,-49 39,-60 39,-161 Q 462,380 417,261 372,142 302,66 232,-10 168,-10 h -7 q -36,0 -62,20 -26,20 -39,53 -13,33 -19,67 -6,34 -6,70 z m 348,366 q 0,102 -53,102 -36,0 -70,-45 -34,-45 -56,-102 -22,-57 -34,-100 -12,-43 -13,-50 49,-1 97,-1 l 97,1 q 1,1 8,33 7,32 16,80 9,48 8,82 z M 113,132 q 0,-106 53,-106 15,0 32,10 17,10 41,38 24,28 48,87 24,59 48,146 l 5,17 H 145 q 0,-3 -9,-38 -9,-35 -16,-78 -7,-43 -7,-76 z"
+       id="MJX-7-TEX-I-3B8" />
+    <path
+       d="m 73,647 q 0,10 4,23 4,13 12,13 1,0 72,5 71,5 73,6 12,0 12,-9 0,-9 -34,-143 -8,-34 -17,-70 -9,-36 -15,-54 l -4,-19 q 0,-3 6,3 49,40 101,40 62,0 100,-46 38,-46 39,-116 Q 422,169 343,79 264,-11 173,-11 123,-11 82,27 41,65 40,150 v 9 q 0,21 8,58 8,37 49,197 50,197 50,209 0,12 -38,14 -5,0 -8,0 h -5 q -10,0 -13,0 -3,0 -7,3 -4,3 -3,7 z M 336,325 v 6 q 0,74 -61,74 -17,0 -35,-8 -18,-8 -33,-21 -15,-13 -26,-24 -11,-11 -18,-22 l -6,-8 -21,-86 q -22,-86 -22,-122 0,-48 24,-72 16,-16 40,-16 33,0 67,32 25,23 40,56 15,33 33,105 18,72 18,106 z"
+       id="MJX-7-TEX-I-62" />
     <marker
        inkscape:stockid="Arrow1Mend"
        orient="auto"
        refY="0"
        refX="0"
-       id="marker2400-8-9"
+       id="marker2400-8"
        style="overflow:visible"
        inkscape:isstock="true">
       <path
-         id="path2398-8-2"
+         id="path2398-8"
          d="M 0,0 5,-5 -12.5,0 5,5 Z"
          style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
          transform="matrix(-0.4,0,0,-0.4,-4,0)" />
@@ -436,7 +429,7 @@
     <marker
        inkscape:isstock="true"
        style="overflow:visible"
-       id="marker2400-8-9-0"
+       id="marker2400-8-9"
        refX="0"
        refY="0"
        orient="auto"
@@ -445,128 +438,165 @@
          transform="matrix(-0.4,0,0,-0.4,-4,0)"
          style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
          d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="path2398-8-2-2" />
+         id="path2398-8-2" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker2400-8-9-0"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path2398-8-2-2"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
     </marker>
     <path
-       id="MJX-7-TEX-I-3B8-3"
+       d="m 35,200 q 0,102 39,215 39,113 106,195 67,82 139,94 1,0 8,0 7,0 12,1 54,-4 84,-49 39,-60 39,-161 Q 462,380 417,261 372,142 302,66 232,-10 168,-10 h -7 q -36,0 -62,20 -26,20 -39,53 -13,33 -19,67 -6,34 -6,70 z m 348,366 q 0,102 -53,102 -36,0 -70,-45 -34,-45 -56,-102 -22,-57 -34,-100 -12,-43 -13,-50 49,-1 97,-1 l 97,1 q 1,1 8,33 7,32 16,80 9,48 8,82 z M 113,132 q 0,-106 53,-106 15,0 32,10 17,10 41,38 24,28 48,87 24,59 48,146 l 5,17 H 145 q 0,-3 -9,-38 -9,-35 -16,-78 -7,-43 -7,-76 z"
+       id="MJX-7-TEX-I-3B8-3" />
+    <path
+       d="m 73,647 q 0,10 4,23 4,13 12,13 1,0 72,5 71,5 73,6 12,0 12,-9 0,-9 -34,-143 -8,-34 -17,-70 -9,-36 -15,-54 l -4,-19 q 0,-3 6,3 49,40 101,40 62,0 100,-46 38,-46 39,-116 Q 422,169 343,79 264,-11 173,-11 123,-11 82,27 41,65 40,150 v 9 q 0,21 8,58 8,37 49,197 50,197 50,209 0,12 -38,14 -5,0 -8,0 h -5 q -10,0 -13,0 -3,0 -7,3 -4,3 -3,7 z M 336,325 v 6 q 0,74 -61,74 -17,0 -35,-8 -18,-8 -33,-21 -15,-13 -26,-24 -11,-11 -18,-22 l -6,-8 -21,-86 q -22,-86 -22,-122 0,-48 24,-72 16,-16 40,-16 33,0 67,32 25,23 40,56 15,33 33,105 18,72 18,106 z"
+       id="MJX-7-TEX-I-62-4" />
+    <path
+       d="M 328,0 Q 307,3 180,3 53,3 32,0 H 21 v 46 h 22 q 49,0 63,3 14,3 20,11 2,3 2,282 0,278 -2,281 -4,5 -8,7 -4,2 -22,5 -18,3 -53,2 H 21 v 46 h 11 q 21,-3 148,-3 127,0 148,3 h 11 v -46 h -22 q -49,0 -63,-3 -14,-3 -20,-11 -2,-3 -2,-281 0,-279 2,-282 4,-5 8,-7 4,-2 22,-5 18,-3 53,-2 h 22 V 0 Z"
+       id="MJX-54-TEX-N-49" />
+    <path
+       d="m 41,46 h 14 q 39,0 47,14 v 8 q 0,9 0,23 0,14 0,31 0,17 1,39 1,22 0,42 0,31 0,66 0,35 -1,59 v 23 q -3,19 -14,25 -11,6 -45,9 H 25 v 23 q 0,23 2,23 l 10,1 q 10,1 28,2 18,1 37,2 17,1 36,2 19,1 29,3 10,2 11,1 h 3 v -40 q 0,-38 1,-38 1,0 5,5 4,5 12,15 8,10 19,18 11,8 29,19 18,11 38,16 20,5 51,5 114,-4 127,-113 1,-7 1,-139 v -86 q 0,-38 2,-45 2,-7 11,-10 21,-3 49,-3 h 16 V 0 h -8 L 510,1 Q 487,2 460,2 433,2 422,3 319,3 310,0 h -8 v 46 h 16 q 61,0 61,16 1,2 1,138 -1,135 -2,143 -6,28 -20,42 -14,14 -24,17 -10,3 -26,2 -45,0 -79,-34 -27,-27 -34,-55 -7,-28 -8,-83 v -64 -60 q 0,-30 1,-40 1,-10 3,-13 2,-3 9,-6 21,-3 49,-3 h 16 V 0 h -8 L 234,1 Q 210,2 183,2 156,2 145,3 42,3 33,0 h -8 v 46 z"
+       id="MJX-54-TEX-N-6E" />
+    <path
+       d="m 370,305 q 0,0 -21,0 -21,0 -36,15 -15,15 -16,38 0,23 15,38 5,5 5,6 0,1 -10,2 -26,4 -49,4 -49,0 -80,-32 -47,-47 -47,-157 0,-82 31,-129 41,-61 110,-61 41,0 66,26 25,26 36,62 2,8 5,10 3,2 16,2 h 14 q 6,-6 6,-9 0,-4 -4,-16 Q 407,92 395,71 383,50 366,33 349,16 318,2 287,-12 249,-11 163,-11 99,53 35,117 34,214 q 0,104 65,169 65,65 151,65 86,0 120,-27 34,-27 34,-64 0,-23 -17,-37 z"
+       id="MJX-54-TEX-N-63" />
+    <path
+       d="m 28,214 q 0,95 65,164 65,69 157,70 90,0 155,-68 65,-68 66,-165 Q 471,120 407,55 343,-10 250,-10 153,-10 91,57 29,124 28,214 Z M 250,30 q 122,0 122,163 v 32 25 q 0,22 -1,38 -1,16 -7,38 -6,22 -16,36 -10,14 -31,28 -21,14 -49,20 -5,1 -16,1 -30,0 -57,-12 -43,-22 -56,-61 -13,-39 -13,-92 v -20 q 0,-96 19,-135 32,-61 105,-61 z"
+       id="MJX-54-TEX-N-6F" />
+    <path
+       d="m 41,46 h 14 q 39,0 47,14 v 8 q 0,9 0,23 0,14 0,31 0,17 1,39 1,22 0,42 0,31 0,66 0,35 -1,59 v 23 q -3,19 -14,25 -11,6 -45,9 H 25 v 23 q 0,23 2,23 l 10,1 q 10,1 28,2 18,1 37,2 17,1 36,2 19,1 29,3 10,2 11,1 h 3 v -40 q 0,-38 1,-38 1,0 5,5 4,5 12,15 8,10 19,18 11,8 29,19 18,11 38,16 20,5 51,5 15,0 28,-2 13,-2 23,-6 10,-4 19,-8 9,-4 15,-9 6,-5 11,-11 5,-6 9,-11 4,-5 7,-11 3,-6 4,-10 1,-4 3,-8 l 2,-5 3,4 q 3,4 6,8 3,4 9,11 6,7 13,13 7,6 15,13 8,7 20,12 12,5 23,10 11,5 26,7 15,2 31,3 126,0 137,-113 1,-7 1,-139 v -86 q 0,-38 2,-45 2,-7 11,-10 21,-3 49,-3 h 16 V 0 h -8 L 788,1 Q 764,2 737,2 710,2 699,3 596,3 587,0 h -8 v 46 h 16 q 61,0 61,16 1,2 1,138 -1,135 -2,143 -6,28 -20,42 -14,14 -24,17 -10,3 -26,2 -45,0 -79,-34 -27,-27 -34,-55 -7,-28 -8,-83 v -64 -60 q 0,-30 1,-40 1,-10 3,-13 2,-3 9,-6 21,-3 49,-3 h 16 V 0 h -8 L 510,1 Q 487,2 460,2 433,2 422,3 319,3 310,0 h -8 v 46 h 16 q 61,0 61,16 1,2 1,138 -1,135 -2,143 -6,28 -20,42 -14,14 -24,17 -10,3 -26,2 -45,0 -79,-34 -27,-27 -34,-55 -7,-28 -8,-83 v -64 -60 q 0,-30 1,-40 1,-10 3,-13 2,-3 9,-6 21,-3 49,-3 h 16 V 0 h -8 L 234,1 Q 210,2 183,2 156,2 145,3 42,3 33,0 h -8 v 46 z"
+       id="MJX-54-TEX-N-6D" />
+    <path
+       d="m 69,609 q 0,28 18,44 18,16 44,16 23,-2 40,-17 17,-15 17,-43 0,-30 -17,-45 -17,-15 -42,-15 -25,0 -42,15 -17,15 -18,45 z M 247,0 Q 232,3 143,3 132,3 106,3 80,3 56,1 L 34,0 h -8 v 46 h 16 q 28,0 49,3 9,4 11,11 2,7 2,42 v 103 88 q 0,52 -2,66 -2,14 -14,19 -14,7 -47,7 H 30 v 23 q 0,23 2,23 l 10,1 q 10,1 28,2 18,1 36,2 17,1 36,2 19,1 29,3 10,2 11,1 h 3 V 62 q 5,-10 12,-12 7,-2 35,-4 h 23 V 0 Z"
+       id="MJX-54-TEX-N-69" />
+    <path
+       d="m 329,409 q 44,44 100,44 30,0 43,-19 13,-19 13,-38 0,-14 -9,-25 -9,-11 -27,-11 -33,0 -37,30 -2,14 3,21 0,1 1,3 v 1 q -28,-3 -53,-22 -8,-5 -8,-7 0,-1 4,-5 4,-4 9,-12 5,-8 11,-18 6,-10 9,-26 3,-16 4,-33 0,-62 -49,-105 -49,-43 -121,-44 -50,0 -99,28 -11,-18 -11,-38 0,-35 26,-52 9,-6 17,-6 8,0 72,-2 84,-1 108,-6 61,-9 96,-41 39,-39 39,-98 0,-67 -78,-103 -60,-31 -142,-31 -83,0 -143,31 -78,35 -78,100 0,36 21,60 21,24 42,33 l 11,6 q -36,31 -36,84 0,47 29,85 -44,44 -44,99 0,63 50,106 50,43 121,44 51,0 95,-26 z m -30,-66 q -5,28 -26,44 -21,16 -52,17 -29,0 -50,-16 -21,-16 -26,-45 -3,-17 -3,-51 0,-44 7,-65 7,-21 30,-35 17,-10 43,-10 22,0 38,7 16,7 23,18 7,11 11,20 4,9 5,15 3,16 3,50 0,34 -3,51 z M 403,-75 q 0,25 -14,41 -14,16 -41,23 -27,7 -49,9 -22,2 -54,2 h -27 q -67,0 -80,-6 -20,-9 -31,-28 -11,-19 -12,-40 0,-10 6,-23 6,-13 21,-30 15,-17 48,-28 33,-11 80,-12 69,0 111,28 42,28 42,64 z"
+       id="MJX-54-TEX-N-67" />
+    <path
+       d=""
+       id="MJX-54-TEX-N-20" />
+    <path
+       d="m 36,-148 h 14 q 39,0 47,14 v 8 q 0,7 0,19 0,12 0,30 0,18 1,39 1,21 0,44 -1,23 0,49 1,26 0,51 0,34 0,71 0,37 0,66 0,29 0,53 0,24 -1,39 -1,15 0,16 -3,19 -14,25 -11,6 -45,9 H 20 v 23 q 0,23 2,23 l 10,1 q 10,1 29,2 19,1 37,2 17,1 37,2 20,1 30,3 10,2 11,1 h 3 v -26 l 1,-26 8,7 q 59,44 138,44 81,0 138,-64 57,-64 58,-161 0,-101 -65,-164 -65,-63 -147,-63 -68,0 -120,44 l -8,7 v -85 -56 q 0,-27 2,-33 2,-6 11,-11 21,-3 49,-3 h 16 v -46 h -8 l -24,1 q -23,1 -50,1 -27,0 -38,1 -103,0 -112,-3 h -8 v 46 z m 388,366 q 0,74 -34,129 -34,55 -85,55 -71,0 -123,-65 V 98 q 40,-72 112,-72 51,0 90,54 39,54 40,138 z"
+       id="MJX-54-TEX-N-70" />
+    <path
+       d="m 42,46 h 14 q 39,0 47,14 v 8 q 0,9 0,23 0,14 0,33 0,19 1,43 1,24 0,50 -1,26 0,55 1,29 0,57 0,37 0,78 0,41 0,75 0,34 0,60 0,26 -1,44 -1,18 0,17 -3,19 -14,25 -11,6 -45,9 H 26 v 23 q 0,23 2,23 l 10,1 q 10,1 29,2 19,1 37,2 17,1 37,2 20,1 30,3 10,2 11,1 h 3 V 379 q 0,-317 1,-319 4,-8 12,-11 21,-3 49,-3 h 16 V 0 h -8 L 232,1 Q 209,2 183,2 157,2 145,3 133,4 107,3 81,2 57,1 L 34,0 h -8 v 46 z"
+       id="MJX-54-TEX-N-6C" />
+    <path
+       d="m 137,305 q 0,0 -22,0 -22,0 -37,15 -15,15 -15,39 0,35 34,62 34,27 121,27 73,0 118,-32 45,-32 60,-76 5,-14 5,-31 0,-17 1,-115 v -70 q 0,-48 5,-66 5,-18 21,-18 15,0 20,16 5,16 5,53 v 36 h 40 V 106 Q 492,66 490,59 481,29 455,12 429,-5 400,-6 371,-7 353,12 335,31 329,54 v 4 l -2,-3 q -2,-3 -5,-6 -3,-3 -8,-9 -5,-6 -12,-11 -7,-5 -15,-12 -8,-7 -18,-11 -10,-4 -22,-8 -12,-4 -26,-6 -14,-2 -31,-3 -60,0 -108,31 -48,31 -48,87 0,21 7,40 7,19 27,41 20,22 48,37 28,15 78,28 50,13 110,15 h 14 v 22 q 0,34 -6,50 -22,71 -97,71 -18,0 -34,-1 -16,-1 -25,-4 -9,-3 -8,-3 22,-15 22,-44 0,-25 -16,-39 z M 126,106 q 0,-31 24,-55 24,-24 59,-25 38,0 67,23 29,23 39,60 2,7 3,66 0,58 -1,58 -8,0 -21,-1 -13,-1 -45,-9 -32,-8 -58,-20 -26,-12 -46,-37 -20,-25 -21,-60 z"
+       id="MJX-54-TEX-N-61" />
+    <path
+       d="m 28,218 q 0,55 20,100 20,45 50,73 30,28 65,42 35,14 66,15 53,0 91,-18 38,-18 58,-50 20,-32 28,-64 8,-32 9,-71 0,-7 -7,-14 H 126 v -15 q 0,-148 100,-180 20,-6 44,-6 42,0 72,32 17,17 27,42 l 10,24 q 3,3 16,3 h 3 q 17,0 17,-10 0,-4 -3,-13 Q 393,53 349,21 305,-11 250,-11 155,-11 92,58 29,127 28,218 Z m 305,57 q -11,128 -95,136 h -2 q -8,0 -16,-1 -8,-1 -25,-8 -17,-7 -29,-21 -12,-14 -23,-41 -11,-27 -16,-66 v -7 h 206 z"
+       id="MJX-54-TEX-N-65" />
+    <path
+       d="m 90,368 q -6,10 -14,12 -8,2 -36,5 H 18 v 46 h 6 l 19,-1 q 19,0 41,-1 22,-1 32,-1 90,0 105,3 h 8 v -46 h -14 q -38,-2 -38,-17 0,-1 44,-129 l 44,-126 74,215 -6,17 q -10,29 -17,34 -8,5 -38,6 h -20 v 46 h 6 q 6,-3 84,-3 91,0 106,3 h 7 v -46 h -9 q -48,0 -48,-16 0,-3 14,-45 14,-42 31,-90 17,-48 32,-91 l 15,-43 41,119 q 42,122 42,128 0,16 -15,26 -15,10 -34,12 h -8 v 46 h 7 q 12,-3 95,-3 68,0 74,3 h 5 v -46 h -6 q -1,0 -6,0 -5,0 -9,-1 -47,-7 -63,-50 L 559,161 Q 546,124 528,71 508,12 503,1 498,-10 487,-11 h -8 q -19,0 -23,7 -1,1 -49,137 l -46,134 q -2,-4 -95,-271 -5,-7 -23,-7 h -5 q -13,0 -18,8 z"
+       id="MJX-54-TEX-N-77" />
+    <path
+       d="m 338,431 q 6,-2 84,-2 57,0 81,2 h 5 V 385 H 497 Q 439,381 423,345 421,341 356,172 291,3 288,-2 q -5,-9 -25,-9 -19,0 -24,9 -140,361 -141,366 -5,14 -16,17 -11,3 -39,4 H 19 v 46 h 6 l 8,-1 q 8,0 20,0 12,0 26,0 14,0 25,-1 11,-1 18,-1 95,0 110,3 h 8 v -46 h -14 q -39,-1 -42,-15 0,-4 51,-136 l 51,-132 91,239 v 8 q 0,14 -10,23 -10,9 -18,11 -8,2 -14,2 h -4 v 46 z"
+       id="MJX-54-TEX-N-76" />
+    <path
+       d="m 55,166 q 0,75 46,138 46,63 121,63 38,0 74,-18 36,-18 66,-45 30,-27 59,-52 29,-25 63,-44 34,-19 70,-19 62,0 101,47 39,47 39,102 0,12 4,20 4,8 10,9 14,0 14,-33 0,-74 -45,-137 -45,-63 -115,-63 h -8 q -37,0 -73,18 -36,18 -67,44 -31,26 -59,52 -28,26 -63,45 -35,19 -69,18 -44,0 -78,-25 Q 109,257 96,218 83,179 80,156 77,133 69,133 55,133 55,166 Z"
+       id="MJX-54-TEX-N-223C" />
+    <path
+       d="m 39,168 q 0,57 19,104 19,47 49,78 30,31 67,52 37,21 70,31 33,10 63,9 h 3 q 45,0 78,-22 33,-22 33,-65 0,-90 -111,-118 -49,-13 -134,-14 -37,0 -38,-2 0,-2 -6,-35 -6,-33 -7,-58 0,-47 21,-74 21,-27 63,-28 42,-1 93,19 51,20 92,66 9,10 12,10 4,0 13,-9 9,-9 10,-14 1,-5 -9,-16 Q 410,71 390,55 370,39 344,24 318,9 281,-1 244,-11 205,-11 126,-11 83,42 40,95 39,168 Z m 334,185 q -6,52 -68,52 -33,0 -61,-14 -28,-14 -45,-34 -17,-20 -29,-41 -12,-21 -16,-36 -4,-15 -5,-19 0,-1 20,-1 113,0 158,24 45,24 46,69 z"
+       id="MJX-54-TEX-I-65" />
+    <path
+       d="m 184,600 q 0,24 19,42 19,18 44,19 18,0 30,-12 12,-12 13,-30 0,-23 -20,-42 -20,-19 -44,-20 -15,0 -28,10 -13,10 -14,33 z M 21,287 q 0,8 9,31 9,23 24,51 15,28 44,51 29,23 60,22 39,0 65,-23 26,-23 27,-62 0,-17 -14,-56 -14,-39 -40,-105 -26,-66 -42,-113 -5,-22 -5,-32 0,-25 17,-25 9,0 19,3 10,3 23,14 13,11 27,35 14,24 25,59 3,12 5,14 2,2 17,2 20,0 20,-10 0,-8 -9,-31 -9,-23 -25,-51 -16,-28 -45,-50 -29,-22 -62,-22 -32,0 -59,21 -27,21 -28,64 0,17 5,32 5,15 43,114 38,101 44,121 6,20 7,39 0,24 -17,24 h -2 q -30,0 -55,-33 -25,-33 -38,-84 -1,-1 -2,-3 -1,-2 -1,-3 0,-1 -2,-2 -2,-1 -3,-1 -1,0 -4,0 -3,0 -8,0 H 27 q -6,6 -6,9 z"
+       id="MJX-54-TEX-I-69" />
+    <path
+       d="m 121,647 q 0,10 4,23 4,13 12,13 1,0 72,5 71,5 73,6 12,0 12,-8 0,-7 -50,-209 -50,-198 -50,-205 19,10 29,19 24,18 69,63 45,45 70,61 40,27 76,27 30,0 47,-19 17,-19 18,-54 0,-25 -7,-42 -7,-17 -19,-25 -12,-8 -21,-11 -9,-3 -18,-3 -20,0 -32,11 -12,11 -12,29 0,25 16,41 16,16 32,21 l 16,3 q -12,12 -24,12 h -4 q -32,-3 -63,-25 -31,-22 -73,-64 -42,-42 -66,-61 2,-1 15,-3 13,-2 24,-6 11,-4 26,-8 15,-4 27,-14 12,-10 22,-18 10,-8 17,-26 7,-18 6,-33 0,-17 -5,-41 -5,-24 -6,-40 0,-40 27,-40 48,0 78,119 2,8 20,8 h 4 q 16,0 16,-9 0,-5 -3,-14 -41,-141 -118,-141 -45,0 -73,26 -28,26 -28,75 0,18 3,31 3,13 3,24 0,22 -14,38 -14,16 -35,23 -21,7 -34,11 -13,4 -18,3 h -2 q -12,-42 -21,-81 -9,-39 -14,-58 -5,-19 -9,-37 -4,-18 -7,-24 -3,-6 -7,-13 -4,-7 -11,-9 -13,-9 -28,-9 -17,0 -26,10 -9,10 -9,17 0,10 37,160 37,150 73,295 l 37,145 q 1,13 -7,16 -8,3 -39,5 h -5 q -10,0 -13,0 -3,0 -7,3 -4,3 -3,7 z"
+       id="MJX-54-TEX-I-6B" />
+    <path
+       d="m 347,338 q -10,0 -53,11 -43,11 -63,11 -20,0 -34,-4 -14,-4 -23,-10 -9,-6 -12,-11 -3,-5 -7,-11 l -2,-4 q -3,-3 -15,-3 -21,0 -21,8 0,5 3,14 13,39 43,67 30,28 66,34 12,2 17,2 25,0 45,-17 20,-17 38,-33 18,-16 38,-17 22,0 44,33 22,33 23,33 1,1 15,1 h 13 q 6,-6 6,-8 0,-4 -5,-14 -5,-10 -14,-21 -9,-11 -17,-22 -8,-11 -14,-19 l -7,-9 Q 368,298 275,214 182,130 160,106 l -12,-12 15,-1 q 22,0 64,-11 42,-11 63,-11 38,0 70,19 32,19 42,50 4,9 7,11 3,2 15,2 19,0 19,-10 0,-5 -1,-9 Q 425,72 376,31 327,-10 278,-11 252,-11 232,6 212,23 193,40 174,57 155,57 111,57 76,-3 70,-11 59,-11 H 54 41 q -6,6 -6,9 0,15 58,86 39,45 132,130 93,85 115,108 12,16 7,16 z"
+       id="MJX-54-TEX-I-7A" />
+    <path
+       d="m 56,340 q 0,83 30,154 30,71 78,116 48,45 106,70 58,25 118,25 133,0 233,-104 Q 721,497 722,341 722,260 693,191 664,122 617,75 570,28 510,4 450,-20 388,-22 326,-24 267,3 208,30 160,74 112,118 85,189 58,260 56,340 Z m 411,307 q -41,18 -79,18 -28,0 -57,-11 -29,-11 -62,-34 -33,-23 -56,-71 -23,-48 -34,-110 -5,-28 -5,-85 0,-210 103,-293 50,-41 108,-41 h 4 2 q 83,0 146,79 66,89 66,255 0,57 -5,85 -21,153 -131,208 z"
+       id="MJX-54-TEX-N-4F" />
+    <path
+       d="M 383,58 Q 327,-10 256,-10 h -7 q -125,0 -144,99 -1,7 -2,137 -1,109 -1,122 0,13 -6,21 -10,16 -60,16 H 25 v 23 q 0,23 2,23 l 11,1 q 10,1 29,2 19,1 38,2 17,1 37,2 20,1 30,3 10,2 12,1 h 3 V 261 q 1,-184 3,-197 3,-15 14,-24 20,-14 60,-14 26,0 47,9 21,9 32,23 11,14 20,32 9,18 12,30 3,12 4,24 0,1 0,17 0,16 1,40 1,24 0,47 v 67 q 0,46 -10,57 -10,11 -50,13 h -18 v 46 q 2,0 76,5 74,5 79,6 h 7 V 264 q 0,-180 1,-183 3,-20 14,-26 11,-6 45,-9 h 18 V 0 q -2,0 -75,-5 -73,-5 -77,-6 h -7 z"
+       id="MJX-54-TEX-N-75" />
+    <path
+       d="m 27,422 q 53,4 82,56 29,52 32,122 v 15 h 40 V 431 H 316 V 385 H 181 V 241 q 1,-125 1,-141 0,-16 7,-32 14,-39 49,-39 44,0 54,71 1,8 1,46 v 35 h 40 v -35 -12 q 0,-77 -42,-117 -27,-27 -70,-27 -34,0 -59,12 -25,12 -38,31 -13,19 -19,35 -6,16 -7,32 -1,7 -1,148 V 385 H 18 v 37 z"
+       id="MJX-54-TEX-N-74" />
+    <path
+       d="m 295,316 q 0,40 -27,69 -27,29 -78,29 -36,0 -62,-13 -30,-19 -30,-52 -1,-5 0,-13 1,-8 16,-24 15,-16 43,-25 18,-5 44,-9 26,-4 44,-9 18,-5 32,-13 17,-8 33,-20 16,-12 32,-41 16,-29 17,-62 Q 359,71 321,31 283,-9 198,-10 h -8 q -52,0 -96,36 L 86,19 77,10 Q 71,4 65,-1 L 54,-11 h -8 -4 q -3,0 -9,6 v 79 58 q 0,21 2,25 2,4 10,5 h 9 q 12,0 16,-4 4,-4 5,-12 1,-8 7,-27 6,-19 19,-42 35,-51 97,-51 97,0 97,78 0,29 -18,47 -20,24 -83,36 -63,12 -83,23 -36,17 -57,46 -21,29 -21,62 0,39 17,66 17,27 43,40 26,13 50,18 24,5 44,5 h 11 q 40,0 70,-15 l 15,-8 9,7 q 10,9 22,17 h 8 4 q 3,0 9,-6 V 310 l -6,-6 h -28 q -6,6 -6,12 z"
+       id="MJX-54-TEX-N-73" />
+    <path
+       d="m 41,46 h 14 q 39,0 47,14 v 8 q 0,9 0,23 0,14 0,33 0,19 0,43 0,24 1,50 1,26 0,55 -1,29 0,57 0,37 0,78 0,41 0,75 0,34 -1,60 -1,26 0,44 1,18 0,17 -3,19 -14,25 -11,6 -45,9 H 25 v 23 q 0,23 2,23 l 10,1 q 10,1 29,2 19,1 37,2 17,1 37,2 20,1 30,3 10,2 11,1 h 3 V 367 q 60,75 144,75 123,0 135,-113 1,-7 1,-139 v -86 q 0,-38 2,-45 2,-7 11,-10 21,-3 49,-3 h 16 V 0 h -8 L 510,1 Q 487,2 460,2 433,2 422,3 319,3 310,0 h -8 v 46 h 16 q 61,0 61,16 1,2 1,138 -1,135 -2,143 -6,28 -20,42 -14,14 -24,17 -10,3 -26,2 -45,0 -79,-34 -27,-27 -34,-55 -7,-28 -8,-83 v -64 -60 q 0,-30 1,-40 1,-10 3,-13 2,-3 9,-6 21,-3 49,-3 h 16 V 0 h -8 L 234,1 Q 210,2 183,2 156,2 145,3 42,3 33,0 h -8 v 46 z"
+       id="MJX-54-TEX-N-68" />
+    <path
+       d="m 36,46 h 14 q 39,0 47,14 v 8 q 0,9 0,23 0,14 1,31 1,17 0,39 -1,22 0,42 0,31 0,66 0,35 0,59 l -1,23 q -3,19 -14,25 -11,6 -45,9 H 20 v 23 q 0,23 2,23 l 10,1 q 10,1 28,2 18,1 36,2 16,1 35,2 19,1 29,3 10,2 11,1 h 3 v -69 q 39,68 97,68 h 6 q 45,0 66,-22 21,-22 21,-46 0,-21 -13,-36 -13,-15 -38,-15 -25,0 -37,16 -12,16 -13,34 0,9 2,16 2,7 5,12 3,5 3,5 -2,2 -23,-4 -16,-8 -24,-15 -47,-45 -47,-179 v -53 q 0,-13 0,-27 0,-14 0,-26 0,-12 1,-20 1,-8 0,-15 v -5 q 1,-2 3,-4 2,-2 5,-3 3,-1 5,-3 2,-2 7,-2 5,0 7,-1 2,-1 9,-1 7,0 9,0 2,0 10,-1 8,-1 10,0 h 31 V 0 h -9 Q 249,3 140,3 37,3 28,0 h -8 v 46 z"
+       id="MJX-54-TEX-N-72" />
+    <path
+       d="m 21,287 q 1,3 2,8 1,5 5,22 4,17 10,31 6,14 15,33 9,19 20,30 11,11 26,22 15,11 33,9 29,0 51,-12 22,-12 31,-22 9,-10 11,-20 2,-6 3,-6 1,0 8,7 48,52 111,52 h 3 q 48,0 72,-41 8,-19 8,-37 0,-30 -13,-48 -13,-18 -26,-23 -13,-5 -25,-4 -20,0 -32,11 -12,11 -12,29 0,48 56,64 -22,13 -36,13 -56,0 -103,-74 Q 229,315 224,298 219,281 190,165 156,25 151,16 138,-11 108,-11 95,-11 87,-5 79,1 76,7 q -3,6 -2,10 0,13 40,172 40,159 40,177 0,39 -26,39 -21,0 -36,-28 Q 77,349 68,316 59,283 57,280 55,278 41,278 H 27 q -6,6 -6,9 z"
+       id="MJX-54-TEX-I-72" />
+    <path
+       id="MJX-11-TEX-I-66"
+       d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z" />
+    <path
+       id="MJX-11-TEX-N-28"
+       d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z" />
+    <path
+       id="MJX-11-TEX-I-3D5"
+       d="M409 688Q413 694 421 694H429H442Q448 688 448 686Q448 679 418 563Q411 535 404 504T392 458L388 442Q388 441 397 441T429 435T477 418Q521 397 550 357T579 260T548 151T471 65T374 11T279 -10H275L251 -105Q245 -128 238 -160Q230 -192 227 -198T215 -205H209Q189 -205 189 -198Q189 -193 211 -103L234 -11Q234 -10 226 -10Q221 -10 206 -8T161 6T107 36T62 89T43 171Q43 231 76 284T157 370T254 422T342 441Q347 441 348 445L378 567Q409 686 409 688ZM122 150Q122 116 134 91T167 53T203 35T237 27H244L337 404Q333 404 326 403T297 395T255 379T211 350T170 304Q152 276 137 237Q122 191 122 150ZM500 282Q500 320 484 347T444 385T405 400T381 404H378L332 217L284 29Q284 27 285 27Q293 27 317 33T357 47Q400 66 431 100T475 170T494 234T500 282Z" />
+    <path
+       id="MJX-11-TEX-N-2C"
+       d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z" />
+    <path
+       id="MJX-11-TEX-I-3B8"
        d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z" />
     <path
-       id="MJX-7-TEX-I-62-4"
-       d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z" />
-    <path
-       id="MJX-54-TEX-N-49"
-       d="M328 0Q307 3 180 3T32 0H21V46H43Q92 46 106 49T126 60Q128 63 128 342Q128 620 126 623Q122 628 118 630T96 635T43 637H21V683H32Q53 680 180 680T328 683H339V637H317Q268 637 254 634T234 623Q232 620 232 342Q232 63 234 60Q238 55 242 53T264 48T317 46H339V0H328Z" />
-    <path
-       id="MJX-54-TEX-N-6E"
-       d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" />
-    <path
-       id="MJX-54-TEX-N-63"
-       d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z" />
-    <path
-       id="MJX-54-TEX-N-6F"
-       d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z" />
-    <path
-       id="MJX-54-TEX-N-6D"
-       d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q351 442 364 440T387 434T406 426T421 417T432 406T441 395T448 384T452 374T455 366L457 361L460 365Q463 369 466 373T475 384T488 397T503 410T523 422T546 432T572 439T603 442Q729 442 740 329Q741 322 741 190V104Q741 66 743 59T754 49Q775 46 803 46H819V0H811L788 1Q764 2 737 2T699 3Q596 3 587 0H579V46H595Q656 46 656 62Q657 64 657 200Q656 335 655 343Q649 371 635 385T611 402T585 404Q540 404 506 370Q479 343 472 315T464 232V168V108Q464 78 465 68T468 55T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" />
-    <path
-       id="MJX-54-TEX-N-69"
-       d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z" />
-    <path
-       id="MJX-54-TEX-N-67"
-       d="M329 409Q373 453 429 453Q459 453 472 434T485 396Q485 382 476 371T449 360Q416 360 412 390Q410 404 415 411Q415 412 416 414V415Q388 412 363 393Q355 388 355 386Q355 385 359 381T368 369T379 351T388 325T392 292Q392 230 343 187T222 143Q172 143 123 171Q112 153 112 133Q112 98 138 81Q147 75 155 75T227 73Q311 72 335 67Q396 58 431 26Q470 -13 470 -72Q470 -139 392 -175Q332 -206 250 -206Q167 -206 107 -175Q29 -140 29 -75Q29 -39 50 -15T92 18L103 24Q67 55 67 108Q67 155 96 193Q52 237 52 292Q52 355 102 398T223 442Q274 442 318 416L329 409ZM299 343Q294 371 273 387T221 404Q192 404 171 388T145 343Q142 326 142 292Q142 248 149 227T179 192Q196 182 222 182Q244 182 260 189T283 207T294 227T299 242Q302 258 302 292T299 343ZM403 -75Q403 -50 389 -34T348 -11T299 -2T245 0H218Q151 0 138 -6Q118 -15 107 -34T95 -74Q95 -84 101 -97T122 -127T170 -155T250 -167Q319 -167 361 -139T403 -75Z" />
-    <path
-       id="MJX-54-TEX-N-20"
-       d="" />
-    <path
-       id="MJX-54-TEX-N-70"
-       d="M36 -148H50Q89 -148 97 -134V-126Q97 -119 97 -107T97 -77T98 -38T98 6T98 55T98 106Q98 140 98 177T98 243T98 296T97 335T97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 61 434T98 436Q115 437 135 438T165 441T176 442H179V416L180 390L188 397Q247 441 326 441Q407 441 464 377T522 216Q522 115 457 52T310 -11Q242 -11 190 33L182 40V-45V-101Q182 -128 184 -134T195 -145Q216 -148 244 -148H260V-194H252L228 -193Q205 -192 178 -192T140 -191Q37 -191 28 -194H20V-148H36ZM424 218Q424 292 390 347T305 402Q234 402 182 337V98Q222 26 294 26Q345 26 384 80T424 218Z" />
-    <path
-       id="MJX-54-TEX-N-6C"
-       d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z" />
-    <path
-       id="MJX-54-TEX-N-61"
-       d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" />
-    <path
-       id="MJX-54-TEX-N-65"
-       d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" />
-    <path
-       id="MJX-54-TEX-N-77"
-       d="M90 368Q84 378 76 380T40 385H18V431H24L43 430Q62 430 84 429T116 428Q206 428 221 431H229V385H215Q177 383 177 368Q177 367 221 239L265 113L339 328L333 345Q323 374 316 379Q308 384 278 385H258V431H264Q270 428 348 428Q439 428 454 431H461V385H452Q404 385 404 369Q404 366 418 324T449 234T481 143L496 100L537 219Q579 341 579 347Q579 363 564 373T530 385H522V431H529Q541 428 624 428Q692 428 698 431H703V385H697Q696 385 691 385T682 384Q635 377 619 334L559 161Q546 124 528 71Q508 12 503 1T487 -11H479Q460 -11 456 -4Q455 -3 407 133L361 267Q359 263 266 -4Q261 -11 243 -11H238Q225 -11 220 -3L90 368Z" />
-    <path
-       id="MJX-54-TEX-N-76"
-       d="M338 431Q344 429 422 429Q479 429 503 431H508V385H497Q439 381 423 345Q421 341 356 172T288 -2Q283 -11 263 -11Q244 -11 239 -2Q99 359 98 364Q93 378 82 381T43 385H19V431H25L33 430Q41 430 53 430T79 430T104 429T122 428Q217 428 232 431H240V385H226Q187 384 184 370Q184 366 235 234L286 102L377 341V349Q377 363 367 372T349 383T335 385H331V431H338Z" />
-    <path
-       id="MJX-54-TEX-N-223C"
-       d="M55 166Q55 241 101 304T222 367Q260 367 296 349T362 304T421 252T484 208T554 189Q616 189 655 236T694 338Q694 350 698 358T708 367Q722 367 722 334Q722 260 677 197T562 134H554Q517 134 481 152T414 196T355 248T292 293T223 311Q179 311 145 286Q109 257 96 218T80 156T69 133Q55 133 55 166Z" />
-    <path
-       id="MJX-54-TEX-I-65"
-       d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z" />
-    <path
-       id="MJX-54-TEX-I-69"
-       d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z" />
-    <path
-       id="MJX-54-TEX-I-6B"
-       d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z" />
-    <path
-       id="MJX-54-TEX-I-7A"
-       d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z" />
-    <path
-       id="MJX-54-TEX-N-4F"
-       d="M56 340Q56 423 86 494T164 610T270 680T388 705Q521 705 621 601T722 341Q722 260 693 191T617 75T510 4T388 -22T267 3T160 74T85 189T56 340ZM467 647Q426 665 388 665Q360 665 331 654T269 620T213 549T179 439Q174 411 174 354Q174 144 277 61Q327 20 385 20H389H391Q474 20 537 99Q603 188 603 354Q603 411 598 439Q577 592 467 647Z" />
-    <path
-       id="MJX-54-TEX-N-75"
-       d="M383 58Q327 -10 256 -10H249Q124 -10 105 89Q104 96 103 226Q102 335 102 348T96 369Q86 385 36 385H25V408Q25 431 27 431L38 432Q48 433 67 434T105 436Q122 437 142 438T172 441T184 442H187V261Q188 77 190 64Q193 49 204 40Q224 26 264 26Q290 26 311 35T343 58T363 90T375 120T379 144Q379 145 379 161T380 201T380 248V315Q380 361 370 372T320 385H302V431Q304 431 378 436T457 442H464V264Q464 84 465 81Q468 61 479 55T524 46H542V0Q540 0 467 -5T390 -11H383V58Z" />
-    <path
-       id="MJX-54-TEX-N-74"
-       d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" />
-    <path
-       id="MJX-54-TEX-N-73"
-       d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z" />
-    <path
-       id="MJX-54-TEX-N-68"
-       d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 124T102 167T103 217T103 272T103 329Q103 366 103 407T103 482T102 542T102 586T102 603Q99 622 88 628T43 637H25V660Q25 683 27 683L37 684Q47 685 66 686T103 688Q120 689 140 690T170 693T181 694H184V367Q244 442 328 442Q451 442 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" />
-    <path
-       id="MJX-54-TEX-N-72"
-       d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z" />
-    <path
-       id="MJX-54-TEX-I-72"
-       d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z" />
+       id="MJX-11-TEX-N-29"
+       d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z" />
   </defs>
   <sodipodi:namedview
-     inkscape:snap-global="false"
-     inkscape:object-paths="true"
-     inkscape:snap-object-midpoints="true"
-     inkscape:window-maximized="1"
-     inkscape:window-y="-11"
-     inkscape:window-x="-11"
-     inkscape:window-height="986"
-     inkscape:window-width="1920"
-     inkscape:snap-center="true"
-     inkscape:snap-bbox-midpoints="true"
-     inkscape:snap-bbox="true"
-     inkscape:guide-bbox="true"
-     showguides="false"
-     showgrid="false"
-     inkscape:document-rotation="0"
-     inkscape:current-layer="g3582"
-     inkscape:document-units="mm"
-     inkscape:cy="210.59458"
-     inkscape:cx="378.25535"
-     inkscape:zoom="1.4142136"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     borderopacity="1.0"
-     bordercolor="#666666"
+     fit-margin-bottom="5"
+     fit-margin-right="5"
+     fit-margin-left="5"
+     fit-margin-top="5"
+     lock-margins="true"
+     id="base"
      pagecolor="#000000"
-     id="base">
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="426.03886"
+     inkscape:cy="49.361385"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g3582"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:snap-object-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-global="true">
     <sodipodi:guide
-       id="guide833"
+       position="15.139958,95.759418"
        orientation="0,-1"
-       position="21.114292,62.269782" />
+       id="guide833" />
     <sodipodi:guide
-       id="guide835"
+       position="117.23692,76.783282"
        orientation="1,0"
-       position="123.21125,43.293646" />
+       id="guide835" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -581,813 +611,897 @@
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1"
+     transform="translate(-5.974334,-24.591419)"
+     inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1">
+     id="layer1">
+    <g
+       transform="matrix(0.82716058,0,0,0.82716058,17.313926,9.0684749)"
+       style="opacity:0.5"
+       id="g5388">
+      <path
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:1.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 92.596384,52.46763 c 5.051658,0 10.103056,0 15.154186,0"
+         id="path5363"
+         inkscape:path-effect="#path-effect5365"
+         inkscape:original-d="m 92.596384,52.46763 c 5.051658,2.65e-4 10.103056,2.65e-4 15.154186,0" />
+      <path
+         inkscape:original-d="m 100.17348,60.044724 c 2.6e-4,-5.051659 2.6e-4,-10.103059 0,-15.154189"
+         inkscape:path-effect="#path-effect5384"
+         id="path5363-8"
+         d="m 100.17348,60.044724 c 0,-5.051659 0,-10.103059 0,-15.154189"
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:1.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
     <path
-       sodipodi:open="true"
-       d="m 158.65436,52.492189 a 7.3977752,7.3977752 0 0 1 -7.44983,7.343947 7.3977752,7.3977752 0 0 1 -7.34536,-7.448431 7.3977752,7.3977752 0 0 1 7.44704,-7.34677 7.3977752,7.3977752 0 0 1 7.34818,7.445647"
-       sodipodi:arc-type="arc"
-       sodipodi:end="0.00649348"
-       sodipodi:start="0.007251421"
-       sodipodi:ry="7.3977752"
-       sodipodi:rx="7.3977752"
-       sodipodi:cy="52.438545"
-       sodipodi:cx="151.25677"
-       sodipodi:type="arc"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
        id="path837"
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
-    <path
-       inkscape:original-d="m 10.974334,52.438547 c 61.291052,2.65e-4 122.581846,2.65e-4 183.872386,0"
-       inkscape:path-effect="#path-effect847"
-       id="path845"
-       d="m 10.974334,52.438547 c 61.291052,0 122.581846,0 183.872386,0"
-       style="opacity:0.5;fill:none;stroke:#cccccc;stroke-width:0.260998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.04399, 1.04399;stroke-dashoffset:0;stroke-opacity:1" />
-    <path
-       inkscape:original-d="m 301.22749,62.932504 4.3657,-2.520541"
-       inkscape:path-effect="#path-effect1186"
-       id="path1184"
-       d="m 301.22749,62.932504 4.3657,-2.520541"
-       style="fill:#000000;stroke:none;stroke-opacity:1;stroke-linejoin:miter;stroke-linecap:butt;stroke-width:1px" />
-    <path
-       inkscape:original-d="M 339.41126,76.367532 344.361,65.053824"
-       inkscape:path-effect="#path-effect1190"
-       id="path1188"
-       d="M 339.41126,76.367532 344.361,65.053824"
-       style="fill:#000000;stroke:none;stroke-opacity:1;stroke-linejoin:miter;stroke-linecap:butt;stroke-width:1px" />
+       sodipodi:type="arc"
+       sodipodi:cx="151.25677"
+       sodipodi:cy="52.438545"
+       sodipodi:rx="7.3977752"
+       sodipodi:ry="7.3977752"
+       sodipodi:start="0.007251421"
+       sodipodi:end="0.00649348"
+       sodipodi:arc-type="arc"
+       d="m 158.65436,52.492189 a 7.3977752,7.3977752 0 0 1 -7.44983,7.343947 7.3977752,7.3977752 0 0 1 -7.34536,-7.448431 7.3977752,7.3977752 0 0 1 7.44704,-7.34677 7.3977752,7.3977752 0 0 1 7.34818,7.445647"
+       sodipodi:open="true" />
     <circle
-       r="0.42427349"
-       cy="52.438545"
-       cx="151.25677"
+       id="path1199"
        style="fill:#ffffff;stroke:#cccccc;stroke-width:0.339418"
-       id="path1199" />
+       cx="151.25677"
+       cy="52.438545"
+       r="0.42427349" />
     <path
-       style="fill:#cccccc;stroke:#808080;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 37.041682,31.27188 c 0,14.111374 0,28.222489 0,42.333334"
-       id="path2092-3"
+       inkscape:original-d="m 37.041682,31.27188 c 2.65e-4,14.111374 2.65e-4,28.222489 0,42.333334"
        inkscape:path-effect="#path-effect2113"
-       inkscape:original-d="m 37.041682,31.27188 c 2.65e-4,14.111374 2.65e-4,28.222489 0,42.333334" />
-    <path
-       inkscape:original-d="m 42.994807,31.27188 c 2.65e-4,14.111374 2.65e-4,28.22249 0,42.333333"
-       inkscape:path-effect="#path-effect2132"
-       id="path2092-3-8"
-       d="m 42.994807,31.27188 c 0,14.111374 0,28.22249 0,42.333333"
-       style="fill:#cccccc;stroke:#808080;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       inkscape:original-d="m 42.994807,31.27188 c 2.65e-4,14.111374 2.65e-4,28.22249 0,42.333333"
-       inkscape:path-effect="#path-effect2167"
-       id="path2092-3-0"
-       d="m 42.994807,31.27188 c 0,14.111374 0,28.22249 0,42.333333"
+       id="path2092-3"
+       d="m 37.041682,31.27188 c 0,14.111374 0,28.222489 0,42.333334"
        style="fill:#cccccc;stroke:#808080;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        style="fill:#cccccc;stroke:#808080;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 48.947932,31.27188 c 0,14.111374 0,28.22249 0,42.333333"
-       id="path2092-3-8-7"
-       inkscape:path-effect="#path-effect2165"
-       inkscape:original-d="m 48.947932,31.27188 c 2.65e-4,14.111374 2.65e-4,28.22249 0,42.333333" />
+       d="m 42.994807,31.27188 c 0,14.111374 0,28.22249 0,42.333333"
+       id="path2092-3-8"
+       inkscape:path-effect="#path-effect2132"
+       inkscape:original-d="m 42.994807,31.27188 c 2.65e-4,14.111374 2.65e-4,28.22249 0,42.333333" />
+    <path
+       style="fill:#cccccc;stroke:#808080;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 42.994807,31.27188 c 0,14.111374 0,28.22249 0,42.333333"
+       id="path2092-3-0"
+       inkscape:path-effect="#path-effect2167"
+       inkscape:original-d="m 42.994807,31.27188 c 2.65e-4,14.111374 2.65e-4,28.22249 0,42.333333" />
     <path
        inkscape:original-d="m 48.947932,31.27188 c 2.65e-4,14.111374 2.65e-4,28.22249 0,42.333333"
-       inkscape:path-effect="#path-effect2181"
-       id="path2092-3-1"
+       inkscape:path-effect="#path-effect2165"
+       id="path2092-3-8-7"
        d="m 48.947932,31.27188 c 0,14.111374 0,28.22249 0,42.333333"
        style="fill:#cccccc;stroke:#808080;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        style="fill:#cccccc;stroke:#808080;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 54.901057,31.27188 c 0,14.111374 0,28.22249 0,42.333333"
-       id="path2092-3-8-0"
+       d="m 48.947932,31.27188 c 0,14.111374 0,28.22249 0,42.333333"
+       id="path2092-3-1"
+       inkscape:path-effect="#path-effect2181"
+       inkscape:original-d="m 48.947932,31.27188 c 2.65e-4,14.111374 2.65e-4,28.22249 0,42.333333" />
+    <path
+       inkscape:original-d="m 54.901057,31.27188 c 2.64e-4,14.111374 2.64e-4,28.22249 0,42.333333"
        inkscape:path-effect="#path-effect2179"
-       inkscape:original-d="m 54.901057,31.27188 c 2.64e-4,14.111374 2.64e-4,28.22249 0,42.333333" />
-    <path
-       inkscape:original-d="m 54.901057,31.27188 c 2.65e-4,14.111374 2.65e-4,28.22249 0,42.333333"
-       inkscape:path-effect="#path-effect2195"
-       id="path2092-3-18"
+       id="path2092-3-8-0"
        d="m 54.901057,31.27188 c 0,14.111374 0,28.22249 0,42.333333"
        style="fill:#cccccc;stroke:#808080;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        style="fill:#cccccc;stroke:#808080;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 60.854182,31.27188 c 0,14.111374 0,28.22249 0,42.333333"
-       id="path2092-3-8-1"
-       inkscape:path-effect="#path-effect2193"
-       inkscape:original-d="m 60.854182,31.27188 c 2.64e-4,14.111374 2.64e-4,28.22249 0,42.333333" />
+       d="m 54.901057,31.27188 c 0,14.111374 0,28.22249 0,42.333333"
+       id="path2092-3-18"
+       inkscape:path-effect="#path-effect2195"
+       inkscape:original-d="m 54.901057,31.27188 c 2.65e-4,14.111374 2.65e-4,28.22249 0,42.333333" />
     <path
-       inkscape:original-d="m 60.854182,31.27188 c 2.65e-4,14.111374 2.65e-4,28.22249 0,42.333333"
-       inkscape:path-effect="#path-effect2209"
-       id="path2092-3-80"
+       inkscape:original-d="m 60.854182,31.27188 c 2.64e-4,14.111374 2.64e-4,28.22249 0,42.333333"
+       inkscape:path-effect="#path-effect2193"
+       id="path2092-3-8-1"
        d="m 60.854182,31.27188 c 0,14.111374 0,28.22249 0,42.333333"
        style="fill:#cccccc;stroke:#808080;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        style="fill:#cccccc;stroke:#808080;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 66.807307,31.27188 c 0,14.111374 0,28.22249 0,42.333333"
-       id="path2092-3-8-6"
+       d="m 60.854182,31.27188 c 0,14.111374 0,28.22249 0,42.333333"
+       id="path2092-3-80"
+       inkscape:path-effect="#path-effect2209"
+       inkscape:original-d="m 60.854182,31.27188 c 2.65e-4,14.111374 2.65e-4,28.22249 0,42.333333" />
+    <path
+       inkscape:original-d="m 66.807307,31.27188 c 2.64e-4,14.111374 2.64e-4,28.22249 0,42.333333"
        inkscape:path-effect="#path-effect2207"
-       inkscape:original-d="m 66.807307,31.27188 c 2.64e-4,14.111374 2.64e-4,28.22249 0,42.333333" />
+       id="path2092-3-8-6"
+       d="m 66.807307,31.27188 c 0,14.111374 0,28.22249 0,42.333333"
+       style="fill:#cccccc;stroke:#808080;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
-       inkscape:original-d="m 86.137791,52.438547 c 7.076415,2.65e-4 14.152509,2.65e-4 21.228309,0"
-       inkscape:path-effect="#path-effect2213"
-       id="path2211"
-       d="m 86.137791,52.438547 c 7.076415,0 14.152509,0 21.228309,0"
-       style="fill:#000000;stroke:#b3b3b3;stroke-width:0.803;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
-    <path
-       style="font-variation-settings:normal;opacity:0.5;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.318508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-       id="path837-4"
-       sodipodi:type="arc"
-       sodipodi:cx="151.25674"
-       sodipodi:cy="52.444153"
-       sodipodi:rx="11.311423"
+       sodipodi:open="true"
+       d="M 162.56787,52.526176 A 11.311423,11.311423 0 0 1 151.17686,63.755294 11.311423,11.311423 0 0 1 139.94559,52.366416 11.311423,11.311423 0 0 1 151.33234,41.132982 11.311423,11.311423 0 0 1 162.56793,52.517603"
+       sodipodi:arc-type="arc"
+       sodipodi:end="0.00649348"
+       sodipodi:start="0.007251421"
        sodipodi:ry="11.311423"
+       sodipodi:rx="11.311423"
+       sodipodi:cy="52.444153"
+       sodipodi:cx="151.25674"
+       sodipodi:type="arc"
+       id="path837-4"
+       style="font-variation-settings:normal;opacity:0.5;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.318508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+    <path
+       style="font-variation-settings:normal;opacity:0.5;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.418;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path837-4-2"
+       sodipodi:type="arc"
+       sodipodi:cx="151.25667"
+       sodipodi:cy="52.452431"
+       sodipodi:rx="14.833708"
+       sodipodi:ry="14.833708"
        sodipodi:start="0.007251421"
        sodipodi:end="0.00649348"
        sodipodi:arc-type="arc"
-       d="M 162.56787,52.526176 A 11.311423,11.311423 0 0 1 151.17686,63.755294 11.311423,11.311423 0 0 1 139.94559,52.366416 11.311423,11.311423 0 0 1 151.33234,41.132982 11.311423,11.311423 0 0 1 162.56793,52.517603"
+       d="M 166.08999,52.559995 A 14.833708,14.833708 0 0 1 151.15191,67.285769 14.833708,14.833708 0 0 1 136.42331,52.350488 14.833708,14.833708 0 0 1 151.3558,37.619054 14.833708,14.833708 0 0 1 166.09006,52.548752"
        sodipodi:open="true" />
     <path
-       sodipodi:open="true"
-       d="M 166.08999,52.559995 A 14.833708,14.833708 0 0 1 151.15191,67.285769 14.833708,14.833708 0 0 1 136.42331,52.350488 14.833708,14.833708 0 0 1 151.3558,37.619054 14.833708,14.833708 0 0 1 166.09006,52.548752"
-       sodipodi:arc-type="arc"
-       sodipodi:end="0.00649348"
-       sodipodi:start="0.007251421"
-       sodipodi:ry="14.833708"
-       sodipodi:rx="14.833708"
-       sodipodi:cy="52.452431"
-       sodipodi:cx="151.25667"
-       sodipodi:type="arc"
-       id="path837-4-2"
-       style="font-variation-settings:normal;opacity:0.5;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.418;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
-    <path
-       sodipodi:open="true"
-       d="M 169.6123,52.568981 A 18.355991,18.355991 0 0 1 151.12716,70.791409 18.355991,18.355991 0 0 1 132.90123,52.309725 18.355991,18.355991 0 0 1 151.37946,34.080293 18.355991,18.355991 0 0 1 169.61239,52.555068"
-       sodipodi:arc-type="arc"
-       sodipodi:end="0.00649348"
-       sodipodi:start="0.007251421"
-       sodipodi:ry="18.355991"
-       sodipodi:rx="18.355991"
-       sodipodi:cy="52.435875"
-       sodipodi:cx="151.25679"
-       sodipodi:type="arc"
+       style="font-variation-settings:normal;opacity:0.5;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
        id="path837-4-9"
-       style="font-variation-settings:normal;opacity:0.5;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
-    <path
-       sodipodi:open="true"
-       d="M 173.91707,52.616754 A 22.661001,22.661001 0 0 1 151.09664,75.112867 22.661001,22.661001 0 0 1 128.5962,52.296695 22.661001,22.661001 0 0 1 151.40811,29.791936 22.661001,22.661001 0 0 1 173.91719,52.599578"
-       sodipodi:arc-type="arc"
-       sodipodi:end="0.00649348"
-       sodipodi:start="0.007251421"
-       sodipodi:ry="22.661001"
-       sodipodi:rx="22.661001"
-       sodipodi:cy="52.452431"
-       sodipodi:cx="151.25667"
        sodipodi:type="arc"
+       sodipodi:cx="151.25679"
+       sodipodi:cy="52.435875"
+       sodipodi:rx="18.355991"
+       sodipodi:ry="18.355991"
+       sodipodi:start="0.007251421"
+       sodipodi:end="0.00649348"
+       sodipodi:arc-type="arc"
+       d="M 169.6123,52.568981 A 18.355991,18.355991 0 0 1 151.12716,70.791409 18.355991,18.355991 0 0 1 132.90123,52.309725 18.355991,18.355991 0 0 1 151.37946,34.080293 18.355991,18.355991 0 0 1 169.61239,52.555068"
+       sodipodi:open="true" />
+    <path
+       style="font-variation-settings:normal;opacity:0.5;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
        id="path837-4-3"
-       style="font-variation-settings:normal;opacity:0.5;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+       sodipodi:type="arc"
+       sodipodi:cx="151.25667"
+       sodipodi:cy="52.452431"
+       sodipodi:rx="22.661001"
+       sodipodi:ry="22.661001"
+       sodipodi:start="0.007251421"
+       sodipodi:end="0.00649348"
+       sodipodi:arc-type="arc"
+       d="M 173.91707,52.616754 A 22.661001,22.661001 0 0 1 151.09664,75.112867 22.661001,22.661001 0 0 1 128.5962,52.296695 22.661001,22.661001 0 0 1 151.40811,29.791936 22.661001,22.661001 0 0 1 173.91719,52.599578"
+       sodipodi:open="true" />
     <path
-       inkscape:original-d="m 156.81963,47.287771 c 5.11745,-5.319808 10.23477,-10.63976 15.35194,-15.959861"
-       inkscape:path-effect="#path-effect2396"
-       id="path2394"
+       style="opacity:0.9;fill:none;stroke:#ffffff;stroke-width:0.299521;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2400)"
        d="m 156.81963,47.287771 c 5.11731,-5.319946 10.23462,-10.639902 15.35194,-15.959861"
-       style="opacity:0.9;fill:none;stroke:#ffffff;stroke-width:0.299521;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2400)" />
+       id="path2394"
+       inkscape:path-effect="#path-effect2396"
+       inkscape:original-d="m 156.81963,47.287771 c 5.11745,-5.319808 10.23477,-10.63976 15.35194,-15.959861" />
     <path
-       inkscape:transform-center-y="-7.7643883"
-       inkscape:transform-center-x="7.9991147"
-       style="opacity:0.9;fill:none;stroke:#ffffff;stroke-width:0.302625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2400-8)"
-       d="M 145.97292,47.337074 C 140.61991,42.147967 135.26689,36.958864 129.91388,31.769759"
-       id="path2394-6"
+       inkscape:original-d="M 145.97292,47.337074 C 140.62005,42.147818 135.26704,36.958712 129.91388,31.769759"
        inkscape:path-effect="#path-effect2509"
-       inkscape:original-d="M 145.97292,47.337074 C 140.62005,42.147818 135.26704,36.958712 129.91388,31.769759" />
+       id="path2394-6"
+       d="M 145.97292,47.337074 C 140.61991,42.147967 135.26689,36.958864 129.91388,31.769759"
+       style="opacity:0.9;fill:none;stroke:#ffffff;stroke-width:0.302625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2400-8)"
+       inkscape:transform-center-x="7.9991147"
+       inkscape:transform-center-y="-7.7643883" />
     <path
-       inkscape:original-d="m 146.59261,57.907251 c -5.07369,5.595081 -10.14722,11.190301 -15.22059,16.78565"
-       inkscape:path-effect="#path-effect2665"
-       id="path2394-6-1"
-       d="m 146.59261,57.907251 c -5.07353,5.595222 -10.14707,11.19044 -15.22059,16.78565"
-       style="opacity:0.9;fill:none;stroke:#ffffff;stroke-width:0.306929;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2400-8-9)"
+       inkscape:transform-center-y="8.3614791"
        inkscape:transform-center-x="7.5919199"
-       inkscape:transform-center-y="8.3614791" />
+       style="opacity:0.9;fill:none;stroke:#ffffff;stroke-width:0.306929;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2400-8-9)"
+       d="m 146.59261,57.907251 c -5.07353,5.595222 -10.14707,11.19044 -15.22059,16.78565"
+       id="path2394-6-1"
+       inkscape:path-effect="#path-effect2665"
+       inkscape:original-d="m 146.59261,57.907251 c -5.07369,5.595081 -10.14722,11.190301 -15.22059,16.78565" />
     <path
-       inkscape:transform-center-y="8.0262603"
-       inkscape:transform-center-x="-7.5308145"
-       style="opacity:0.9;fill:none;stroke:#ffffff;stroke-width:0.298975;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2400-8-9-0)"
-       d="m 156.24283,58.006452 c 5.04002,5.364508 10.08004,10.729019 15.12005,16.093525"
-       id="path2394-6-1-8"
+       inkscape:original-d="m 156.24283,58.006452 c 5.03987,5.364646 10.07989,10.729156 15.12005,16.093525"
        inkscape:path-effect="#path-effect2808"
-       inkscape:original-d="m 156.24283,58.006452 c 5.03987,5.364646 10.07989,10.729156 15.12005,16.093525" />
+       id="path2394-6-1-8"
+       d="m 156.24283,58.006452 c 5.04002,5.364508 10.08004,10.729019 15.12005,16.093525"
+       style="opacity:0.9;fill:none;stroke:#ffffff;stroke-width:0.298975;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2400-8-9-0)"
+       inkscape:transform-center-x="-7.5308145"
+       inkscape:transform-center-y="8.0262603" />
     <g
-       style="fill:#ffffff;stroke:#ffffff;stroke-width:0"
-       id="g3582"
+       transform="matrix(0.00478882,0,0,-0.00478882,-15.746423,26.689429)"
        data-mml-node="math"
-       transform="matrix(0.00478882,0,0,-0.00478882,-15.217256,26.689429)">
+       id="g3582"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0">
       <g
-         transform="translate(9649.747,-12215.968)"
-         style="fill:#ffffff;stroke:#ffffff"
+         data-mml-node="mtext"
          id="g3460"
-         data-mml-node="mtext">
+         style="fill:#ffffff;stroke:#ffffff"
+         transform="translate(9649.747,-12215.968)">
         <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
+           xlink:href="#MJX-54-TEX-N-49"
            id="use3422"
-           xlink:href="#MJX-54-TEX-N-49" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
            x="0"
-           id="use3424"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-6E"
            transform="translate(361)"
-           xlink:href="#MJX-54-TEX-N-6E" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
+           id="use3424"
            x="0"
-           id="use3426"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-63"
            transform="translate(917)"
-           xlink:href="#MJX-54-TEX-N-63" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
+           id="use3426"
            x="0"
-           id="use3428"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-6F"
            transform="translate(1361)"
-           xlink:href="#MJX-54-TEX-N-6F" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
+           id="use3428"
            x="0"
-           id="use3430"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-6D"
            transform="translate(1861)"
-           xlink:href="#MJX-54-TEX-N-6D" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
+           id="use3430"
            x="0"
-           id="use3432"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-69"
            transform="translate(2694)"
-           xlink:href="#MJX-54-TEX-N-69" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
+           id="use3432"
            x="0"
-           id="use3434"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-6E"
            transform="translate(2972)"
-           xlink:href="#MJX-54-TEX-N-6E" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
+           id="use3434"
            x="0"
-           id="use3436"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-67"
            transform="translate(3528)"
-           xlink:href="#MJX-54-TEX-N-67" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
+           id="use3436"
            x="0"
-           id="use3438"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-20"
            transform="translate(4028)"
-           xlink:href="#MJX-54-TEX-N-20" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
+           id="use3438"
            x="0"
-           id="use3440"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-70"
            transform="translate(4278)"
-           xlink:href="#MJX-54-TEX-N-70" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
+           id="use3440"
            x="0"
-           id="use3442"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-6C"
            transform="translate(4834)"
-           xlink:href="#MJX-54-TEX-N-6C" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
+           id="use3442"
            x="0"
-           id="use3444"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-61"
            transform="translate(5112)"
-           xlink:href="#MJX-54-TEX-N-61" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
+           id="use3444"
            x="0"
-           id="use3446"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-6E"
            transform="translate(5612)"
-           xlink:href="#MJX-54-TEX-N-6E" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
+           id="use3446"
            x="0"
-           id="use3448"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-65"
            transform="translate(6168)"
-           xlink:href="#MJX-54-TEX-N-65" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
+           id="use3448"
            x="0"
-           id="use3450"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-20"
            transform="translate(6612)"
-           xlink:href="#MJX-54-TEX-N-20" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
+           id="use3450"
            x="0"
-           id="use3452"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-77"
            transform="translate(6862)"
-           xlink:href="#MJX-54-TEX-N-77" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
+           id="use3452"
            x="0"
-           id="use3454"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-61"
            transform="translate(7584)"
-           xlink:href="#MJX-54-TEX-N-61" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
+           id="use3454"
            x="0"
-           id="use3456"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-76"
            transform="translate(8084)"
-           xlink:href="#MJX-54-TEX-N-76" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
+           id="use3456"
            x="0"
-           id="use3458"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-65"
            transform="translate(8612)"
-           xlink:href="#MJX-54-TEX-N-65" />
+           id="use3458"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
       </g>
       <g
-         style="stroke:#ffffff;fill:#ffffff"
-         id="g3464"
+         data-mml-node="mstyle"
          transform="translate(9056)"
-         data-mml-node="mstyle">
+         id="g3464"
+         style="fill:#ffffff;stroke:#ffffff">
         <g
-           style="stroke:#ffffff;fill:#ffffff"
+           data-mml-node="mspace"
            id="g3462"
-           data-mml-node="mspace" />
+           style="fill:#ffffff;stroke:#ffffff" />
       </g>
       <g
-         style="fill:#ffffff;stroke:#ffffff"
-         id="g3468"
+         data-mml-node="mo"
          transform="translate(12834.139,-13955.061)"
-         data-mml-node="mo">
+         id="g3468"
+         style="fill:#ffffff;stroke:#ffffff">
         <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
+           xlink:href="#MJX-54-TEX-N-223C"
            id="use3466"
-           xlink:href="#MJX-54-TEX-N-223C" />
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
       </g>
       <g
-         style="fill:#ffffff;stroke:#ffffff"
-         id="g3488"
+         data-mml-node="msup"
          transform="translate(13889.939,-13955.061)"
-         data-mml-node="msup">
+         id="g3488"
+         style="fill:#ffffff;stroke:#ffffff">
         <g
-           style="fill:#ffffff;stroke:#ffffff"
+           data-mml-node="mi"
            id="g3472"
-           data-mml-node="mi">
+           style="fill:#ffffff;stroke:#ffffff">
           <use
-             style="fill:#ffffff;stroke:#ffffff"
-             height="100%"
-             width="100%"
-             y="0"
-             x="0"
+             xlink:href="#MJX-54-TEX-I-65"
              id="use3470"
-             xlink:href="#MJX-54-TEX-I-65" />
-        </g>
-        <g
-           style="fill:#ffffff;stroke:#ffffff"
-           id="g3486"
-           transform="matrix(0.707,0,0,0.707,466,413)"
-           data-mml-node="TeXAtom">
-          <g
-             style="fill:#ffffff;stroke:#ffffff"
-             id="g3476"
-             data-mml-node="mi">
-            <use
-               style="fill:#ffffff;stroke:#ffffff"
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use3474"
-               xlink:href="#MJX-54-TEX-I-69" />
-          </g>
-          <g
-             style="fill:#ffffff;stroke:#ffffff"
-             id="g3480"
-             transform="translate(345)"
-             data-mml-node="mi">
-            <use
-               style="fill:#ffffff;stroke:#ffffff"
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use3478"
-               xlink:href="#MJX-54-TEX-I-6B" />
-          </g>
-          <g
-             style="fill:#ffffff;stroke:#ffffff"
-             id="g3484"
-             transform="translate(866)"
-             data-mml-node="mi">
-            <use
-               style="fill:#ffffff;stroke:#ffffff"
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use3482"
-               xlink:href="#MJX-54-TEX-I-7A" />
-          </g>
-        </g>
-      </g>
-      <g
-         style="stroke:#ffffff;fill:#ffffff"
-         id="g3492"
-         transform="translate(12846.7)"
-         data-mml-node="mstyle">
-        <g
-           style="stroke:#ffffff;fill:#ffffff"
-           id="g3490"
-           data-mml-node="mspace" />
-      </g>
-      <g
-         style="stroke:#ffffff;fill:#ffffff"
-         id="g3496"
-         transform="translate(13846.7)"
-         data-mml-node="mstyle">
-        <g
-           style="stroke:#ffffff;fill:#ffffff"
-           id="g3494"
-           data-mml-node="mspace" />
-      </g>
-      <g
-         style="fill:#ffffff;stroke:#ffffff"
-         id="g3544"
-         transform="translate(29653.397,-11891.171)"
-         data-mml-node="mtext">
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3498"
-           xlink:href="#MJX-54-TEX-N-4F" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3500"
-           transform="translate(778)"
-           xlink:href="#MJX-54-TEX-N-75" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3502"
-           transform="translate(1334)"
-           xlink:href="#MJX-54-TEX-N-74" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3504"
-           transform="translate(1723)"
-           xlink:href="#MJX-54-TEX-N-67" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3506"
-           transform="translate(2223)"
-           xlink:href="#MJX-54-TEX-N-6F" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3508"
-           transform="translate(2723)"
-           xlink:href="#MJX-54-TEX-N-69" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3510"
-           transform="translate(3001)"
-           xlink:href="#MJX-54-TEX-N-6E" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3512"
-           transform="translate(3557)"
-           xlink:href="#MJX-54-TEX-N-67" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3514"
-           transform="translate(4057)"
-           xlink:href="#MJX-54-TEX-N-20" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3516"
-           transform="translate(4307)"
-           xlink:href="#MJX-54-TEX-N-73" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3518"
-           transform="translate(4701)"
-           xlink:href="#MJX-54-TEX-N-70" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3520"
-           transform="translate(5257)"
-           xlink:href="#MJX-54-TEX-N-68" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3522"
-           transform="translate(5813)"
-           xlink:href="#MJX-54-TEX-N-65" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3524"
-           transform="translate(6257)"
-           xlink:href="#MJX-54-TEX-N-72" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3526"
-           transform="translate(6649)"
-           xlink:href="#MJX-54-TEX-N-69" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3528"
-           transform="translate(6927)"
-           xlink:href="#MJX-54-TEX-N-63" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3530"
-           transform="translate(7371)"
-           xlink:href="#MJX-54-TEX-N-61" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3532"
-           transform="translate(7871)"
-           xlink:href="#MJX-54-TEX-N-6C" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3534"
-           transform="translate(8149)"
-           xlink:href="#MJX-54-TEX-N-20" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3536"
-           transform="translate(8399)"
-           xlink:href="#MJX-54-TEX-N-77" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3538"
-           transform="translate(9121)"
-           xlink:href="#MJX-54-TEX-N-61" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3540"
-           transform="translate(9621)"
-           xlink:href="#MJX-54-TEX-N-76" />
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3542"
-           transform="translate(10149)"
-           xlink:href="#MJX-54-TEX-N-65" />
-      </g>
-      <g
-         style="stroke:#ffffff;fill:#ffffff"
-         id="g3548"
-         transform="translate(25439.7)"
-         data-mml-node="mstyle">
-        <g
-           style="stroke:#ffffff;fill:#ffffff"
-           id="g3546"
-           data-mml-node="mspace" />
-      </g>
-      <g
-         style="fill:#ffffff;stroke:#ffffff"
-         id="g3552"
-         transform="translate(33066.594,-14157.104)"
-         data-mml-node="mo">
-        <use
-           style="fill:#ffffff;stroke:#ffffff"
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use3550"
-           xlink:href="#MJX-54-TEX-N-223C" />
-      </g>
-      <g
-         style="fill:#ffffff;stroke:#ffffff"
-         id="g3580"
-         transform="translate(34122.394,-14157.104)"
-         data-mml-node="mfrac">
-        <g
-           style="fill:#ffffff;stroke:#ffffff"
-           id="g3572"
-           transform="translate(220,676)"
-           data-mml-node="msup">
-          <g
-             style="fill:#ffffff;stroke:#ffffff"
-             id="g3556"
-             data-mml-node="mi">
-            <use
-               style="fill:#ffffff;stroke:#ffffff"
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use3554"
-               xlink:href="#MJX-54-TEX-I-65" />
-          </g>
-          <g
-             style="fill:#ffffff;stroke:#ffffff"
-             id="g3570"
-             transform="matrix(0.707,0,0,0.707,466,363)"
-             data-mml-node="TeXAtom">
-            <g
-               style="fill:#ffffff;stroke:#ffffff"
-               id="g3560"
-               data-mml-node="mi">
-              <use
-                 style="fill:#ffffff;stroke:#ffffff"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use3558"
-                 xlink:href="#MJX-54-TEX-I-69" />
-            </g>
-            <g
-               style="fill:#ffffff;stroke:#ffffff"
-               id="g3564"
-               transform="translate(345)"
-               data-mml-node="mi">
-              <use
-                 style="fill:#ffffff;stroke:#ffffff"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use3562"
-                 xlink:href="#MJX-54-TEX-I-6B" />
-            </g>
-            <g
-               style="fill:#ffffff;stroke:#ffffff"
-               id="g3568"
-               transform="translate(866)"
-               data-mml-node="mi">
-              <use
-                 style="fill:#ffffff;stroke:#ffffff"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use3566"
-                 xlink:href="#MJX-54-TEX-I-72" />
-            </g>
-          </g>
-        </g>
-        <g
-           style="fill:#ffffff;stroke:#ffffff"
-           id="g3576"
-           transform="translate(718.1,-686)"
-           data-mml-node="mi">
-          <use
-             style="fill:#ffffff;stroke:#ffffff"
-             height="100%"
-             width="100%"
-             y="0"
              x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="fill:#ffffff;stroke:#ffffff" />
+        </g>
+        <g
+           data-mml-node="TeXAtom"
+           transform="matrix(0.707,0,0,0.707,466,413)"
+           id="g3486"
+           style="fill:#ffffff;stroke:#ffffff">
+          <g
+             data-mml-node="mi"
+             id="g3476"
+             style="fill:#ffffff;stroke:#ffffff">
+            <use
+               xlink:href="#MJX-54-TEX-I-69"
+               id="use3474"
+               x="0"
+               y="0"
+               width="100%"
+               height="100%"
+               style="fill:#ffffff;stroke:#ffffff" />
+          </g>
+          <g
+             data-mml-node="mi"
+             transform="translate(345)"
+             id="g3480"
+             style="fill:#ffffff;stroke:#ffffff">
+            <use
+               xlink:href="#MJX-54-TEX-I-6B"
+               id="use3478"
+               x="0"
+               y="0"
+               width="100%"
+               height="100%"
+               style="fill:#ffffff;stroke:#ffffff" />
+          </g>
+          <g
+             data-mml-node="mi"
+             transform="translate(866)"
+             id="g3484"
+             style="fill:#ffffff;stroke:#ffffff">
+            <use
+               xlink:href="#MJX-54-TEX-I-7A"
+               id="use3482"
+               x="0"
+               y="0"
+               width="100%"
+               height="100%"
+               style="fill:#ffffff;stroke:#ffffff" />
+          </g>
+        </g>
+      </g>
+      <g
+         data-mml-node="mstyle"
+         transform="translate(12846.7)"
+         id="g3492"
+         style="fill:#ffffff;stroke:#ffffff">
+        <g
+           data-mml-node="mspace"
+           id="g3490"
+           style="fill:#ffffff;stroke:#ffffff" />
+      </g>
+      <g
+         data-mml-node="mstyle"
+         transform="translate(13846.7)"
+         id="g3496"
+         style="fill:#ffffff;stroke:#ffffff">
+        <g
+           data-mml-node="mspace"
+           id="g3494"
+           style="fill:#ffffff;stroke:#ffffff" />
+      </g>
+      <g
+         data-mml-node="mtext"
+         transform="translate(29763.897,-11891.171)"
+         id="g3544"
+         style="fill:#ffffff;stroke:#ffffff">
+        <use
+           xlink:href="#MJX-54-TEX-N-4F"
+           id="use3498"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-75"
+           transform="translate(778)"
+           id="use3500"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-74"
+           transform="translate(1334)"
+           id="use3502"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-67"
+           transform="translate(1723)"
+           id="use3504"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-6F"
+           transform="translate(2223)"
+           id="use3506"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-69"
+           transform="translate(2723)"
+           id="use3508"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-6E"
+           transform="translate(3001)"
+           id="use3510"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-67"
+           transform="translate(3557)"
+           id="use3512"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-20"
+           transform="translate(4057)"
+           id="use3514"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-73"
+           transform="translate(4307)"
+           id="use3516"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-70"
+           transform="translate(4701)"
+           id="use3518"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-68"
+           transform="translate(5257)"
+           id="use3520"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-65"
+           transform="translate(5813)"
+           id="use3522"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-72"
+           transform="translate(6257)"
+           id="use3524"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-69"
+           transform="translate(6649)"
+           id="use3526"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-63"
+           transform="translate(6927)"
+           id="use3528"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-61"
+           transform="translate(7371)"
+           id="use3530"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-6C"
+           transform="translate(7871)"
+           id="use3532"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-20"
+           transform="translate(8149)"
+           id="use3534"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-77"
+           transform="translate(8399)"
+           id="use3536"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-61"
+           transform="translate(9121)"
+           id="use3538"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-76"
+           transform="translate(9621)"
+           id="use3540"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+        <use
+           xlink:href="#MJX-54-TEX-N-65"
+           transform="translate(10149)"
+           id="use3542"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+      </g>
+      <g
+         data-mml-node="mstyle"
+         transform="translate(25439.7)"
+         id="g3548"
+         style="fill:#ffffff;stroke:#ffffff">
+        <g
+           data-mml-node="mspace"
+           id="g3546"
+           style="fill:#ffffff;stroke:#ffffff" />
+      </g>
+      <g
+         data-mml-node="mo"
+         transform="translate(31298.594,-14046.604)"
+         id="g3552"
+         style="fill:#ffffff;stroke:#ffffff">
+        <use
+           transform="translate(552.50215,110.50043)"
+           xlink:href="#MJX-54-TEX-N-223C"
+           id="use3550"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="fill:#ffffff;stroke:#ffffff" />
+      </g>
+      <g
+         data-mml-node="mfrac"
+         transform="translate(35779.894,-14046.604)"
+         id="g3580"
+         style="fill:#ffffff;stroke:#ffffff">
+        <g
+           data-mml-node="msup"
+           transform="translate(220,676)"
+           id="g3572"
+           style="fill:#ffffff;stroke:#ffffff">
+          <g
+             data-mml-node="mi"
+             id="g3556"
+             style="fill:#ffffff;stroke:#ffffff">
+            <use
+               xlink:href="#MJX-54-TEX-I-65"
+               id="use3554"
+               x="0"
+               y="0"
+               width="100%"
+               height="100%"
+               style="fill:#ffffff;stroke:#ffffff" />
+          </g>
+          <g
+             data-mml-node="TeXAtom"
+             transform="matrix(0.707,0,0,0.707,466,363)"
+             id="g3570"
+             style="fill:#ffffff;stroke:#ffffff">
+            <g
+               data-mml-node="mi"
+               id="g3560"
+               style="fill:#ffffff;stroke:#ffffff">
+              <use
+                 xlink:href="#MJX-54-TEX-I-69"
+                 id="use3558"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#ffffff;stroke:#ffffff" />
+            </g>
+            <g
+               data-mml-node="mi"
+               transform="translate(345)"
+               id="g3564"
+               style="fill:#ffffff;stroke:#ffffff">
+              <use
+                 xlink:href="#MJX-54-TEX-I-6B"
+                 id="use3562"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#ffffff;stroke:#ffffff" />
+            </g>
+            <g
+               data-mml-node="mi"
+               transform="translate(866)"
+               id="g3568"
+               style="fill:#ffffff;stroke:#ffffff">
+              <use
+                 xlink:href="#MJX-54-TEX-I-72"
+                 id="use3566"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#ffffff;stroke:#ffffff" />
+            </g>
+          </g>
+        </g>
+        <g
+           data-mml-node="mi"
+           transform="translate(718.1,-686)"
+           id="g3576"
+           style="fill:#ffffff;stroke:#ffffff">
+          <use
+             xlink:href="#MJX-54-TEX-I-72"
              id="use3574"
-             xlink:href="#MJX-54-TEX-I-72" />
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="fill:#ffffff;stroke:#ffffff" />
         </g>
         <rect
-           style="fill:#ffffff;stroke:#ffffff"
-           id="rect3578"
-           y="220"
-           x="120"
+           width="1647.3"
            height="60"
-           width="1647.3" />
+           x="120"
+           y="220"
+           id="rect3578"
+           style="fill:#ffffff;stroke:#ffffff" />
+      </g>
+      <g
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0"
+         id="g5464"
+         data-mml-node="math"
+         transform="matrix(0.99980792,0,0,0.99980792,32813.096,-14009.079)">
+        <g
+           style="fill:#ffffff;stroke:#ffffff"
+           id="g5442"
+           data-mml-node="mi">
+          <use
+             style="fill:#ffffff;stroke:#ffffff"
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use5440"
+             xlink:href="#MJX-11-TEX-I-66" />
+        </g>
+        <g
+           style="fill:#ffffff;stroke:#ffffff"
+           id="g5446"
+           transform="translate(550)"
+           data-mml-node="mo">
+          <use
+             style="fill:#ffffff;stroke:#ffffff"
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use5444"
+             xlink:href="#MJX-11-TEX-N-28" />
+        </g>
+        <g
+           style="fill:#ffffff;stroke:#ffffff"
+           id="g5450"
+           transform="translate(939)"
+           data-mml-node="mi">
+          <use
+             style="fill:#ffffff;stroke:#ffffff"
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use5448"
+             xlink:href="#MJX-11-TEX-I-3D5" />
+        </g>
+        <g
+           style="fill:#ffffff;stroke:#ffffff"
+           id="g5454"
+           transform="translate(1535)"
+           data-mml-node="mo">
+          <use
+             style="fill:#ffffff;stroke:#ffffff"
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use5452"
+             xlink:href="#MJX-11-TEX-N-2C" />
+        </g>
+        <g
+           style="fill:#ffffff;stroke:#ffffff"
+           id="g5458"
+           transform="translate(1979.7)"
+           data-mml-node="mi">
+          <use
+             style="fill:#ffffff;stroke:#ffffff"
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use5456"
+             xlink:href="#MJX-11-TEX-I-3B8" />
+        </g>
+        <g
+           style="fill:#ffffff;stroke:#ffffff"
+           id="g5462"
+           transform="translate(2448.7)"
+           data-mml-node="mo">
+          <use
+             style="fill:#ffffff;stroke:#ffffff"
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use5460"
+             xlink:href="#MJX-11-TEX-N-29" />
+        </g>
       </g>
     </g>
   </g>

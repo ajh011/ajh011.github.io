@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quantum Scattering</title>
+    <link href="../../assets/css/gp.css" rel="stylesheet">
+    <link href="../../assets/css/qscatt.css" rel="stylesheet">
+    <link href="../../assets/css/toc.css" rel="stylesheet">
+
+
+    <!--Geogebra Support-->
+    <script src="navigation.js"></script>
+
+
+    <!--MathJax Support-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}},
+                                  loader: {load: ['[tex]/ams']},
+                                  tex: {packages: {'[+]': ['ams']}});</script>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../assets/images/res/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/images/res/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/images/res/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/images/res/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../../assets/images/res/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../assets/images/res/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../assets/images/res/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../assets/images/res/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="../../assets/images/res/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="../../assets/images/res/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="../../assets/images/res/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="../../assets/images/res/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="../../assets/images/res/mstile-310x310.png" />
+
+
+
+    <meta charset="UTF-8">
+    <meta name="description" content="A short overview of common treatments of quantum scattering theory.">
+    <meta name="keywords" content="quantum scattering, born approximation, partial wave analysis">
+    <meta name="author" content="Alexander J. Heilman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+  </head>
+  
+  <body>
+
+
+  <div id="home">
+    <a href="https://www.alexheilman.com"><img id="homeimg" src="../../assets/images/iconwhite/favicon-196x196.png" width="50"></a>
+  </div>
+
+  <div id="up">
+    <a id="upa" href="https://www.alexheilman.com/res/index.html">GP</a>
+  </div>
+
+  <h1 id="title">Quantum Scattering</h1>
+    <p id="blurb">
+      Experimentalists often shoot particles (that are effectively plane waves) at material and
+      observe what comes out a relatively far distance away. Two common approaches for modeling 
+      such a scenario are the Born approximation and partial wave analysis. Below, we consider these 
+      techniques in the case of a stationary target with spherical symmetry.
+    </p>
+    <div id="toc_container">
+      <p class="toc_title">Contents</p>
+      <ul class="toc_list">
+        <li><a href="#terms">1 Cross Sections </a></li>
+        <li><a href="#bornapprox">2 Born Approximation </a></li>
+        <li><a href="#partialwave">3 Partial Wave Analysis  </a></li>
+        <li><a href="#res">4 Resources  </a></li>
+      </div>
+    </div>
+
+    <div id="cscatt">
+      <img width="100%" height="auto" id="mvpeimg" src="../../assets/images/res/gp/cscatt.svg" alt="Diagram for generic scattering setup.">
+    </div> 
+    <p>
+      Scattering is one of the key experimental techniques we have for probing the nature of matter. In most cases, we take the incident projectile to be a plane 
+      wave and the output wave is generally approximated in some way, as a means to infer material structure from scattering data. We consider the scattering center to
+      be some localized potential, so we have the following (time dependent) Schrodinger equation.
+      <div class="eq">
+        $$
+          i\hbar \frac{d}{dt}\psi = \left[-\frac{\hbar^2}{2m}\nabla^2 +V(r)\right]\psi
+        $$
+      </div>
+    </p>
+    <p>
+      We now consider a scenario in which we have an effectively stationary wave function in time. This may apply to scenarios where we
+      run our apparatus for an extended period of time, such that we have a superposition of incident plane waves and scattered waves. This 
+      gives us the relevant time independent Schrodinger equation defined below.
+      <div class="eq">
+        $$
+          E\psi = \left[-\frac{\hbar^2}{2m}\nabla^2 +V(r)\right]\psi
+        $$
+      </div>
+    </p>
+    <p>
+      We require that our solution for \(\psi\) includes an incident plane wave, which we will generally choose to align with 
+      the z axis for simplicity. And now, we further suppose that the outgoing wave, the result of the scattering, is a spherical wave, with an
+      amplitude potentially dependent on the solid angle (relative to the scattering center).
+    </p>
+    <div id="qscatt">
+      <img width="100%" height="auto" id="mvpeimg" src="../../assets/images/res/gp/qscatt.svg" alt="Expected forms of wave functions for incident plane wave and spherical scattering target.">
+    </div> 
+    <p>
+      <div class="eq">
+      $$
+      \psi(r,\phi,\theta) \sim Ae^{ikz}+Bf(\phi,\theta)\frac{e^{ikr}}{r}
+      $$
+      </div>
+    </p>
+    <p>
+      Note that this assumption only really works for observations made at a large radial distance from
+      the scattering center. With this assumption in mind, working with this form allows us to make some headway. 
+    </p>
+    <h3 id="terms">Cross Sections</h3>
+    <p>
+      There are two types of relevant cross sections in scattering experiments with one target: the total cross section, that is, the area of the target as seen
+      from the direction of the incident particle; and the differential cross section, which encodes how likely a scattered particle will be found in a certain range of
+      solid angle.
+    </p>
+    
+    <div id="cspic">
+      <img width="100%" height="auto" id="mvpeimg" src="../../assets/images/res/gp/cross_section.svg" alt="Diagram for generic scattering cross section.">
+    </div> 
+    <p>
+      The scattering amplitude of our model wave function is related to the differential cross section via the below relation.
+      
+      <div class="eq">
+        $$
+        \vert f(\phi,\theta)\vert^2=\frac{d\sigma}{d\Omega}
+        $$
+        </div>
+    </p>
+    
+
+    <h3 id="bornapprox">Born Approximation</h3>
+    <p>
+      The Born approximation is a truncation of terms in the expansion of the scattering amplitude. Effectively, it's an application of <a href="https://alexheilman.com/res/gp/qapprox.html">time-dependent perturbation theory</a> to
+      a central potential. It tends to work better for high energy scattering.
+    </p>
+    <p>
+      The first order correction to the scattering amplitude in the Born series is given below as a function of incident wave vector \(\vec{k}\) and
+      scattered wave vector \(\vec{k}'\).
+    <div class="eq">
+      $$
+      \begin{align}
+        f(\vec{k},\vec{k}')_B^{(1)}=-\frac{m}{2\pi \hbar^2}\int_V d\vec(x)' e^{i(\vec{k}-\vec{k}')\cdot \vec{x}'}V(\vec{x}')
+      \end{align}
+      $$
+    </div>
+    </p>
+
+    <h3 id="partialwave">Partial Wave Analysis</h3>
+    <p>
+      Our approach to partial wave here is to expand both the incident and scattered waves in terms of spherical harmonics, and 
+      then analyze coefficients in terms of the quantum numbers \(\ell\) and \(m\).
+    </p>
+    <p>
+      If we take the incident quantum projectile to be a plane wave aligned with the z-axis, we may expand it's wave function in terms of spherical harmonics as below.
+      <div class="eq">
+      $$
+        e^{ikz}=e^{ikr\cos\theta}=\sum_{\ell =0}^{\infty}(2\ell+1)i^{\ell} j_{\ell}(kr)P_{\ell}(\cos\theta )
+      $$
+      </div>
+    </p>
+    <div id="qscatt">
+      <img width="100%" height="auto" id="mvpeimg" src="../../assets/images/res/gp/qscatt.svg" alt="Expected forms of wave functions for incident plane wave and spherical scattering target.">
+    </div> 
+    <p>
+      <div class="eq">
+      $$
+      f(\phi,\theta)=\sum_{\ell =0}^{\infty}\sum_{m=-\ell}^{\ell}f_{\ell}^mY^m_{\ell}(\phi,\theta)
+      $$
+      </div>
+      Now, we further take the outgoing wave resulting from the collision with the target to be a spherical wave, given by the expansion above, with some amplitude dependent on the spherical angles (centered on the target).
+      Hence, we have the total wave function, as given below in spherical harmonics.
+      
+      <div class="eq">
+      $$
+      \begin{align}
+      \psi(r,\theta,\phi)&=e^{ikr\cos\theta}+f(\theta,\phi) \frac{e^{ikr}}{r}\\
+                         &=\sum_{\ell =0}^{\infty}\Big[(2\ell+1)i^{\ell} j_{\ell}(kr)P_{\ell}(\cos\theta )
+                           +
+                           f_{\ell} j_{\ell}(kr)P_{\ell}(\cos\theta )\Big]
+      \end{align}
+      $$
+      </div>
+    </p>
+    <h3 id="res">Resources</h3>
+    <p>
+      Further resources include chapter 6 of Sakurai and Napolitano's <em>Modern Quantum Mechanics</em> (Third Edition), and Chapter 11 of David Griffith's
+      <em>Introduction to Quantum Mechanics</em> (Second Edition). See also this <a href="https://projects.iq.harvard.edu/files/hellergroup/files/adam_lupu_sax_thesis.pdf">thesis</a> by Adam Lupu-Sax; 
+      and this set of <a href="https://www.tcm.phy.cam.ac.uk/~bds10/aqp/lec20-21_compressed.pdf">lecture slides</a> by Ben Simons which are accompanied by these <a href="https://www.tcm.phy.cam.ac.uk/~bds10/aqp/handout_scattering.pdf">notes</a>.
+    </p>
+  </body>
+</html>
