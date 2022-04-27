@@ -1,5 +1,5 @@
 functionPlot({
-    target: '#quadratic',
+    target: '#function1',
     data: [{
       fn: 'x^2'
     }]
