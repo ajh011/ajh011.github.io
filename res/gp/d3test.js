@@ -1,3 +1,12 @@
+import functionPlot from "function-plot";
+
+let contentsBounds = document.body.getBoundingClientRect();
+let width = 800;
+let height = 500;
+let ratio = contentsBounds.width / width;
+width *= ratio;
+height *= ratio;
+
 functionPlot({
     target: "#function1",
     width,
