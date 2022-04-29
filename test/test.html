@@ -20,6 +20,7 @@ circle {
 
 </style>
 <body>
+  <div style="height: 100vh; width:100vh;"></div>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
@@ -28,7 +29,7 @@ var width = Math.max(960, innerWidth),
 
 var i = 0;
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("div").append("svg")
     .attr("width", width)
     .attr("height", height);
 
@@ -56,5 +57,8 @@ function particle() {
   d3.event.preventDefault();
 }
 
+</script>
+<script>
+  
 </script>
 </body>
