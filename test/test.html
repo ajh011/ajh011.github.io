@@ -58,14 +58,18 @@ function particle() {
 }
 
 </script>
-<div id="observablehq-chart-e2048cd1"></div>
-<p>Credit: <a href="https://observablehq.com/@mbostock/hertzsprung-russell-diagram">Hertzsprung–Russell Diagram by Mike Bostock</a></p>
+<div id="observablehq-chart-94e052b1"></div>
+<div id="observablehq-Tree-94e052b1"></div>
+<div id="observablehq-flare-94e052b1"></div>
+<p>Credit: <a href="https://observablehq.com/@d3/tree">Tree, Tidy by D3</a></p>
 
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@mbostock/hertzsprung-russell-diagram.js?v=3";
+import define from "https://api.observablehq.com/@d3/tree.js?v=3";
 new Runtime().module(define, name => {
-  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-e2048cd1"));
+  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-94e052b1"));
+  if (name === "Tree") return new Inspector(document.querySelector("#observablehq-Tree-94e052b1"));
+  if (name === "flare") return new Inspector(document.querySelector("#observablehq-flare-94e052b1"));
 });
 </script>
 </body>
