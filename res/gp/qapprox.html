@@ -319,15 +319,6 @@
         \end{align}
       </div>
     </p>
-    <p>
-      For a time independent unperturbed Hamiltonian \(H_0\), with a potential \(V(t)\) that was zero before some time we'll take to be \(t=0\), we have a first order
-      correction for coeffients of the form:
-      <div class="eq">
-        \begin{align}
-         c_n^{(1)}(t)& = -\frac{i}{\hbar}\sum_k \int_0^t\langle n\vert V(t)\vert k \rangle\ c_k(0) \ e^{-i(E_k-E_n)t/\hbar} dt \\
-        \end{align}
-      </div>
-    </p>
 
     <div class="dl2"></div>
     <h3>Dyson Series</h3>
@@ -560,7 +551,7 @@
       <p>The approximation we now make is that of the WKB method; we take the leading order
       derivative's (which is coupled by \(\hbar\)) contribution to be negligible compared to the other derivative. Thus, if we want our approximation to be 
       reasonably valid, we should only consider potentials that 'slowly vary' such that this is true. Explicity, this
-      leaves us with an approximate solution (in the region where this holds, an to second order in \(\hbar\)) of the form:
+      leaves us with an approximate solution (in the region where this holds, and to second order in \(\hbar\)) of the form:
       <div class="eq">
         \begin{align}
           W(x) \approx \frac{1}{\sqrt{p(x)}}\exp \left( \pm\frac{i}{\hbar}\int_0^t p(x)dx\right)

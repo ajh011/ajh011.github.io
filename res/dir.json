@@ -1,0 +1,42 @@
+
+{
+    "name": "res",
+    "children": [
+       {
+           "name": "ml",
+           "children":[
+            {"name": "cgcnn", "size": 3534}
+           ]
+          },
+       {
+        "name": "statmech",
+        "children":[
+         {"name": "phasespace", "size": 3534},
+         {"name": "ensembles", "size": 5731},
+         {"name": "probability", "size": 7840}
+        ]
+       },
+       {
+        "name": "quantum",
+        "children": [
+         {"name": "qapprox", "size": 3534},
+         {"name": "qscatt", "size": 5731},
+         {"name": "angular", "size": 7840}
+        ]
+       },
+       {
+       "name": "electrodynamics",
+       "children": [
+           {"name": "estatic", "size": 3534},
+           {"name": "mstatic", "size": 3534},
+           {"name": "dynamic", "size": 3534}
+       ]    },
+      {
+      "name": "qis",
+      "children":[
+          {"name": "qudits"},
+          {"name": "qml"}
+      ]}
+    ]
+   }
+   
