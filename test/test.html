@@ -22,7 +22,7 @@ circle {
 
 </style>
 <body>
-  <div id="iv" style="height: 100vh; width:100vh;"></div>
+  <div style="height: 100vh; width:100vh;"></div>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
@@ -127,9 +127,9 @@ function plot() {
   functionPlot(parameters);
 }
 </script>
-
+<p></p>
 <script>
-flare = FileAttachment("../dir.json").json()
+flare = FileAttachment("dir.json").json()
 
   // Copyright 2021 Observable, Inc.
 // Released under the ISC license.
@@ -191,7 +191,7 @@ function TreeLin(data, { // data is either tabular (array of objects) or hierarc
   // Compute the default height.
   if (height === undefined) height = x1 - x0 + dx * 2;
 
-  const svg = d3.select("#iv").append("svg")
+  const svg = d3.select("p").append("svg")
       .attr("viewBox", [-dy * padding / 2, x0 - dx, width, height])
       .attr("width", width)
       .attr("height", height)
