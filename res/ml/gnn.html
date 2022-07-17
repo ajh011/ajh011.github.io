@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GNN</title>
+    <link href="../../assets/css/gnn.css" rel="stylesheet">
+    <link href="../../assets/css/ml.css" rel="stylesheet">
+    <link href="../../assets/css/jumper.css" rel="stylesheet">
+    <link href="../../assets/css/toc.css" rel="stylesheet">
+
+
+    <!--Geogebra Support-->
+    <script src="navigation.js"></script>
+
+
+    <!--MathJax Support-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}},
+                                  loader: {load: ['[tex]/ams']},
+                                  tex: {packages: {'[+]': ['ams']}},
+                                  TeX: {extensions: ["action.js"]});</script>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../assets/images/res/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/images/res/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/images/res/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/images/res/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../../assets/images/res/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../assets/images/res/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../assets/images/res/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../assets/images/res/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="../../assets/images/res/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="../../assets/images/res/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="../../assets/images/res/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="../../assets/images/res/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="../../assets/images/res/mstile-310x310.png" />
+
+
+
+    <meta charset="UTF-8">
+    <meta name="description" content="A short overview of graph neural networks application to classification and their 
+                                      possible implementations. ">
+    <meta name="keywords" content="graph neural network, pytorch geometric">
+    <meta name="author" content="Alexander J. Heilman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+  </head>
+  
+  <body>
+
+
+  <div id="home">
+    <a href="https://www.alexheilman.com"><img id="homeimg" src="../../assets/images/iconwhite/favicon-196x196.png" width="50"></a>
+  </div>
+
+
+  <h1 id="title">Graph Neural Networks</h1>
+    <div class="flex stack">
+      <p id="blurb">
+        Graph neural networks are machine learning models based on artificial neural networks that take graphs as input and, in their most 
+        basic arrangement, output graphs as well. Basic graph neural networks will only update graph features based on the input graph's 
+        connectivity, while preserving this connectivity in the output graph. Graph neural networks are the most basic tool in the larger 
+        field known as 'geometric deep learning'.
+      </p>
+      
+  
+      <div id="toc_container">
+        <p class="toc_title">Contents</p>
+        <ul class="toc_list">
+          <li><a href="#graphs">1 Graphs</a></li>
+          <ul><li><a href="#model">1.1 Models</a></li>
+            <li><a href="#sgt">1.2 Spectral Theory</a></li>
+            <li><a href="#extensions">1.3 Extensions</a></li></ul>
+          <li><a href="#gnn">2 Graph Neural Nets</a></li>
+          <ul><li><a href="#glay">2.1 Graph Layers</a></li>
+            <li><a href="#play">2.2 Pooling Layers</a></li></ul>
+          <li><a href="#res">3 Resources</a></li>
+         
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="hl"></div>
+    <h2 id="graphs">Graphs</h2>
+    <p>
+      Graphs are mathematical structures representing objects with simple connections between them. Thus, they can be specified
+      by two dimensional drawings of points (nodes) with lines (edges) between them, as below.
+    </p>
+    <div class="flexbox stack">
+      <img class="flex" width="40%" alt="Example drawing of undirected graph" src="../../assets/images/res/ml/undgraphex.svg">
+      <img class="flex" width="40%" alt="Example drawing of directed graph" src="../../assets/images/res/ml/dirgraphex.svg">
+    </div>
+    <p>
+      Note that edges may be either directed or undirected, but an undirected graph may always be represented by a directed graph 
+      with edges that all go in both directions.
+    </p>
+    <img class="flex smallimg" alt="Undirected edge is equivalent to bidirectional edge" src="../../assets/images/res/ml/und2dir.svg">
+    <p>
+      From a data perspective then, we may specify a basic graph with two sets: one of node labels, and one of ordered pairs between
+      nodes. Alternatively, we can specify a graph with an adjancency matrix or a graph Laplacian, but this may be inefficient for sparse graphs.
+    </p>
+    <p>
+      Further, while simple graphs in the mathematical sense require no extra structure than the above constructions, their application
+      in the field of machine learning almost always require the association of feature vectors to the elements of the vertex or edge sets.
+    </p>
+    <div class="dl"></div>
+    <h3 id="model">Mathematical Model</h3>
+    <p>
+      To be explicit, we now describe a common mathematical framework for graphs of the most elementary kind (those only with nodes and single edges betweeen them).
+      We may then define a simple graph \(\mathcal{G}\) as a set of two sets: \(\mathcal{G}=\{\mathcal{V},\mathcal{E}\}\), where \(\mathcal{V}=\{v_1,...,v_n\}\) is the set of nodes or 
+      vertices and \(\mathcal{E}=\{e_{ij}\}\) is the set of edges, which is a set of ordered pairs of nodes where each possible pair is either in the set or not (no repeats/multi-edges).
+    </p>
+
+    <h4>Common terminology</h4>
+    <p>
+      The <em>degree</em> \(\mathcal{D}(\mathcal{v})\) of a vertex \(\mathcal{v}\) in a graph is the number of edges, or equivalently the number of neighbors, connected to it. If all the vertices in a graph
+      have the same number of neighbors, the graph is termed <em>regular</em>, while a graph with all possible edges is termed <em>complete</em>.
+    </p>
+
+    <h4>Adjacency matrix</h4>
+    <p>
+      The adjacency matrix of a graph is a clean generalization of the edge set 
+      \(\mathcal{E}=\{e_{ij}\}\) to a matrix \(\mathbf{A}\) with elements
+
+       \[a_{ij}=\delta_{e_{ij}\in\mathcal{E}}.\]
+
+      This definition is best understood through example, as below.
+    </p>
+    <img class="flex smallimg" alt="Example graph with adjacency matrix" src="../../assets/images/res/ml/adjmatex.svg">
+    <p>
+      Adjacency matrices have several properties immediatley: they're always traceless (except in the case of hypergraphs) and they're always real. Further, undirected graphs always have real 
+      symmetric adjacency matrices.
+    </p>
+    
+    <h4>Graph Laplacian</h4>
+    <p>
+      The graph Laplacian is the discrete counterpart to the Laplacian of continuous spaces. It can be defined by introducing the vertex degree matrix \(\mathbf{D}\) with elements defined by
+      
+       <div class="flex valign">\[d_{ij}=\delta_{ij}\delta_{\mathcal{D}(\mathcal{v}_i)}.\]</div>
+        <img class="flex smallimg" alt="Example graph with vertex degree matrix" src="../../assets/images/res/ml/degmatex.svg">
+
+      
+
+      From which we may define the graph Laplacian matrix as:
+
+      \[\mathbf{L}=\mathbf{D}-\mathbf{A},\]
+
+      where \(\mathbf{A}\) is the adjacency matrix.
+
+      <img class="flex smallimg" alt="Example graph with Laplacian" src="../../assets/images/res/ml/glapex.svg">
+
+    </p>
+
+    <div class="dl"></div>
+    <h3 id="sgt">Spectral Graph Theory</h3>
+    <p>
+      Spectral graph theory studies the properties of graphs through analysis of the eigenvectors and eigenvalues of
+      a graph's adjacency matrix and it's graph Laplacian. For a nice overview of graphs and spectral graph theory, see
+      this <a href="https://csustan.csustan.edu/~tom/Clustering/GraphLaplacian-tutorial.pdf">presentation</a> by Radu Horaud. 
+    </p>
+    
+    <div class="dl"></div>
+    <h3 id="extensions">Extensions of Graphs</h3>
+    <p>
+      The above structure has several clear generalizations, including multigraphs and hypergraphs which allow for multiple edges 
+      in one direction between the same nodes and edges between any number of nodes, respectively. These generalizations may require
+      new structures to store information about graphs.
+    </p>
+
+    <h4>Multi-Graphs</h4>
+    <p>
+      Multigraphs allow for multiple edges in the same direction between the same set of nodes. Hence, they may be specified still with an
+      adjancency matrix (now with positive integer entries) and edge lists.
+    </p>
+
+    <h4>Hypergraphs</h4>
+    <p>
+      Hypergraphs allow for edges between any number of nodes. This requires we use adjacency tensors or edge sets with elements that aren't 
+      neccessarily just pairs of nodes. Directed edges also need to be reconsidered, since more than one permutation of edges is possible.
+    </p>
+    <p>
+      For an overview of hypergraph neural networks and their extensions, see this <a href="https://arxiv.org/pdf/1901.08150.pdf">paper</a> by Song Bai, et al.
+    </p>
+
+    <div class="hl"></div>
+
+    <h2 id="gnn">Graph Neural Networks</h2>
+    <p>
+      Graph Neural Networks (GNNs) operate on graph inputs, generally with associated feature vectors
+      and output graphs with similar connectivity but updated or 'learned' feature vectors. One layer of the simplest 
+      GNN of this form is depicted below, as an example.
+    </p>
+    <div class="dl"></div>
+    <h3 id="glay">
+      Simple graph layer
+    </h3>
+    <p>
+      The graph is taken as input as each separate feature is processed by some update function, which is generally differentiable 
+      (which may effectively be like an update function utilized in one node of an ANN). 
+    </p>
+    <div class="dl"></div>
+    <h3 id="play">
+      Pooling layer
+    </h3>
+    <p>
+      The graph is taken as input as each separate feature is processed by some update function, which is generally differentiable 
+      (which may effectively be like an update function utilized in one node of an ANN). 
+    </p>
+
+    <div class="hl"></div>
+
+    <h2 id="res">Resources</h2>
+    <p> For a conceptual introduction to graph neural networks, see this amazing article: <a href="https://distill.pub/2021/gnn-intro/">Intro to Graph Neural Networks</a>.
+      And for an overview of current literature and methods, see Zonghan Wu, et al.'s <a href="https://arxiv.org/abs/1901.00596">A Comprehensive Survey on Graph Neural Networks</a>; 
+      or Jie Zhou, et al.'s <a href="https://arxiv.org/abs/1812.08434">Graph Neural Networks: A Review of Methods and Applications</a>.
+    </p>  
+  </body>
+</html>

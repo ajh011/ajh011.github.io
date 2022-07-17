@@ -140,6 +140,11 @@ img {
   padding-top: 20px;
 }
 
+.valign{
+  justify-content: center;
+  align-items: center;
+}
+
 a{
   color: rgb(142, 187, 209);
   text-decoration: none;
@@ -284,7 +289,26 @@ a.white{
 }
 
 
+.hl{
+  border-bottom: 1px solid white;
+  width: 100%;
+}
 
+.dl{
+  border-bottom: 1px dotted white;
+  width: 100%;
+}
+
+.dl2{
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.76);
+  width: 100%;
+}
+
+.smallimg{
+  width: 80%;
+  max-width: 11cm;
+  padding: .2cm;
+}
 
 
 
