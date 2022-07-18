@@ -73,6 +73,11 @@ body {
   margin: 25px auto;
 }
 
+.centerobj{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 a img{
   display: inline-block;
 }
