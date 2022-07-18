@@ -1,0 +1,907 @@
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sc2S2-CH-NM']_ext-Int_Li_Voronoi3_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Cd2P2Te6-MnPSe3-NM']_int-Int_Cd_Voronoi1_mult6-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Tl2Se2-CH-NM']_ext-Int_H_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['PtTe2-GeS2-NM']_int-Int_Pt_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ReO2-CdI2-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ir2Cl2O2-FeOCl-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Bi2F2-CH-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hg2P2Te6-MnPSe3-NM']_int-Int_P_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ge2I2O2-FeOCl-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ga2Se2-GaSe-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AsCl2-CdI2-NM']_int-Int_As_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['P2Sb2Te6-ScPSe3-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf2Ti2S8-CrWS4-NM']_int-Int_Hf_Voronoi3_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf2Ti2S8-CrWS4-NM']_ext-Int_Li_Voronoi3_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['CoS2-CdI2-NM']_int-Int_Co_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ru2Cl2Se2-FeOCl-NM']_ext-Int_H_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ru2P2S6-MnPSe3-NM']_int-Int_Ru_Voronoi2_mult3-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BiCl2-MoS2-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['RbS2-GeS2-NM']_ext-Int_H_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BiBrS-BiTeI-NM']_ext-Int_Li_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['HgTe2-CdI2-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TaTe2-GeS2-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['RhSe2-CdI2-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['SrF2-GeS2-NM']_int-Int_Sr_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Tl2P2Se6-MnPSe3-NM']_int-Int_Tl_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AsS2-CdI2-NM']_int-Int_As_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Bi2S2-CH-NM']_int-Int_Bi_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ta2I2O2-FeOCl-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Zr2Br4-WTe2-NM']_ext-Int_Li_Voronoi4_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Os2Se6-VTe3-NM']_int-Int_Se_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ru2Te6-VTe3-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ta2Cl2S2-FeOCl-NM']_int-Int_S_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ISbSe-MoSSe-NM']_int-Int_Sb_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ir2S2-CH-NM']_int-Int_Ir_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BiS2-CdI2-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ru2Cl2S2-FeOCl-NM']_int-Int_Cl_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Mo2Se2-CH-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['MoClI-BiTeI-NM']_int-Int_Cl_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ga2S2-GaSe-NM']_int-Int_S_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ti2H2NO2-Ti2CH2O2-NM']_int-Int_Ti_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['KTe2-GeS2-NM']_int-Int_K_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ir2Br2-FeSe-NM']_int-Int_Br_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ti2P2S6-MnPSe3-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sn2Cl2-FeSe-NM']_int-Int_Sn_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf4Cl4O4-HfBrS-NM']_ext-Int_H_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sc2Cl2Se2-FeOCl-NM']_ext-Int_Li_Voronoi5_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TlF2-GeS2-NM']_ext-Int_H_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+Epoch: [0][0/12]	Time 27.891 (27.891)	Data 27.769 (27.769)	Loss 1.0374 (1.0374)	Accu 0.484 (0.484)	Precision 0.375 (0.375)	Recall 0.178 (0.178)	F1 0.241 (0.241)	AUC 0.432 (0.432)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TaSe2-CdI2-NM']_int-Int_Se_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BrSbTe-MoSSe-NM']_int-Int_Br_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TiZr3Se8-CrW3S8-NM']_int-Int_Se_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['HgF2-GeS2-NM']_int-Int_Hg_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Os2P2Se6-MnPSe3-NM']_int-Int_Os_Voronoi4_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['NbSeTe-MoSSe-NM']_int-Int_Te_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['F2Ge-GeS2-NM']_int-Int_Ge_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Bi2Cl2Se2-FeOCl-NM']_int-Int_Bi_Voronoi5_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Cl2Sb-CdI2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AuTe2-GeS2-NM']_int-Int_Au_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['HgTe2-GeS2-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ta2Cl2O2-FeOCl-NM']_ext-Int_Li_Voronoi6_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['In2Cl2N2-FeOCl-NM']_int-Int_Cl_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sc2I2N2-FeOCl-NM']_int-Int_Sc_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['SnF2-GeS2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['SnI2-GeS2-NM']_ext-Int_H_Voronoi5_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Pt2F2-FeSe-NM']_int-Int_F_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ga2I2O2-FeOCl-NM']_int-Int_I_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sc2Te2-GaSe-NM']_int-Int_Te_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TiSTe-MoSSe-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Mo2Te2-FeSe-NM']_int-Int_Mo_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['NbH2-MoS2-NM']_int-Int_Nb_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ga2P2Se6-MnPSe3-NM']_int-Int_Se_Voronoi1_mult3-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Pb2Se2-FeSe-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['SrBr2-MoS2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf2O2-GaS-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['HfBrI-BiTeI-NM']_ext-Int_H_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['HgS2-GeS2-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Nb2I2O2-FeOCl-NM']_ext-Int_Li_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['PdSe2-CdI2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AgBr2-GeS2-NM']_ext-Int_H_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Os2P2Se6-MnPSe3-NM']_int-Int_Os_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hg2Cl2-FeSe-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['W2O4-WTe2-NM']_ext-Int_Li_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ir2Te4-CdI2-NM']_int-Int_Ir_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Au2I2Se2-FeOCl-NM']_ext-Int_Li_Voronoi4_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AuTe2-GeS2-NM']_int-Int_Au_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ru2P2Se6-MnPSe3-NM']_int-Int_Se_Voronoi7_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Tl2Se2-CH-NM']_ext-Int_Li_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Pt2Se2-CH-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Y2I4-WTe2-NM']_ext-Int_H_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Fe2Te2-GaSe-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['NbAsSb-BiTeI-NM']_int-Int_Sb_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['NiTe2-GeS2-NM']_ext-Int_Li_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['P2Sb2Te6-ScPSe3-NM']_int-Int_P_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ti2Br2Se2-FeOCl-NM']_int-Int_Ti_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Cu2Se2-AuSe-NM']_int-Int_Se_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['InI2-CdI2-NM']_int-Int_In_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hg2Cl2-CH-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['SnCl2-MoS2-NM']_int-Int_Sn_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Nb2I2O2-FeOCl-NM']_int-Int_I_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['NbSeTe-BiTeI-NM']_ext-Int_H_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Pt2Se6-VTe3-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf2S6-TiS3-NM']_int-Int_S_Voronoi5_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['SbSe2-CdI2-NM']_int-Int_Sb_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Co2Cl2Se2-FeOCl-NM']_ext-Int_H_Voronoi4_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['SnBr2-CdI2-NM']_int-Int_Br_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['WTe2-CdI2-NM']_int-Int_W_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['SnO-GeSe-NM']_ext-Int_Li_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ag2Te2-AuSe-NM']_ext-Int_H_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['GeTe2-CdI2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Cd2Cl2-CH-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Si2Te2-SnS-NM']_ext-Int_H_Voronoi1_mult4-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf2Zr2Se8-CrWS4-NM']_int-Int_Se_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['S2Si2-PbSe-NM']_ext-Int_Li_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['RhSe2-MoS2-NM']_int-Int_Rh_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf3ZrS8-CrW3S8-NM']_int-Int_S_Voronoi5_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AsBrS-MoSSe-NM']_int-Int_S_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['HfTe2-CdI2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf2Cl2N2-FeOCl-NM']_int-Int_N_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['KSe2-GeS2-NM']_ext-Int_Li_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['CrMo3Se8-CrW3S8-NM']_ext-Int_H_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['WSTe-MoSSe-NM']_ext-Int_Li_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ir2O6-Undefined-NM']_int-Int_Ir_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ag2I2S2-FeOCl-NM']_int-Int_S_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TiS2-MoS2-NM']_ext-Int_H_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['IrTe2-GeS2-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['PdBr2-GeS2-NM']_ext-Int_H_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sr2Br2-FeSe-NM']_int-Int_Sr_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AgTe2-GeS2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['GeS2-MoS2-NM']_ext-Int_Li_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sn2I2S2-FeOCl-NM']_int-Int_I_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['RuS2-MoS2-NM']_int-Int_Ru_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['In2Te2-PbSe-NM']_ext-Int_Li_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sc2Se2-GaS-NM']_ext-Int_H_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Cr3MoSe8-CrW3S8-NM']_int-Int_Cr_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['PtI2-GeS2-NM']_int-Int_I_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['CsO2-GeS2-NM']_ext-Int_H_Voronoi4_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf4I4O4-HfBrS-NM']_int-Int_Hf_Voronoi5_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Re2Br2-FeSe-NM']_ext-Int_H_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['MoW3Se8-CrW3S8-NM']_ext-Int_Li_Voronoi6_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ge2P2Se6-MnPSe3-NM']_int-Int_Se_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Y2I4-WTe2-NM']_ext-Int_Li_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ru2Te4-MnS2-NM']_ext-Int_H_Voronoi1_mult4-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['GeTe2-MoS2-NM']_ext-Int_Li_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Cr3WSe8-CrW3S8-NM']_int-Int_Se_Voronoi3_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Mo2I4-WTe2-NM']_ext-Int_H_Voronoi5_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['HgSe2-GeS2-NM']_ext-Int_Li_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['MoW3Se8-CrW3S8-NM']_ext-Int_H_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['WSeTe-BiTeI-NM']_ext-Int_H_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Pd2Cl2N2-FeOCl-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ru2S2-GaS-NM']_ext-Int_H_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf2Ti2Te8-CrWS4-NM']_ext-Int_Li_Voronoi4_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Tl2Br2O2-FeOCl-NM']_int-Int_Tl_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['CdCl2-CdI2-NM']_int-Int_Cl_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ScSe2-CdI2-NM']_int-Int_Se_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['GeS2-GeS2-NM']_int-Int_Ge_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Al2S2-GaS-NM']_int-Int_S_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['SbTe2-MoS2-NM']_int-Int_Te_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Nb2Br2Se2-FeOCl-NM']_ext-Int_Li_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Y2I4-WTe2-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ir2I2-CH-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf2Ti2Se8-CrWS4-NM']_int-Int_Se_Voronoi3_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ReSe2-GeS2-NM']_ext-Int_Li_Voronoi4_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Mo2S4-WTe2-NM']_int-Int_S_Voronoi4_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['In2Se2-PbSe-NM']_int-Int_In_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TiSTe-MoSSe-NM']_ext-Int_Li_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Zr2I2-CH-NM']_int-Int_Zr_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BrSbTe-BiTeI-NM']_int-Int_Sb_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Al2I2O2-FeOCl-NM']_int-Int_I_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ru2I2S2-FeOCl-NM']_int-Int_I_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Pb2Br2Se2-FeOCl-NM']_int-Int_Br_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TlBr2-MoS2-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Zr2F2-FeSe-NM']_int-Int_F_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['CdCl2-GeS2-NM']_ext-Int_H_Voronoi5_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ZnI2-MoS2-NM']_int-Int_I_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ti2O2-GaS-NM']_int-Int_Ti_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Y2CF2-Ti2CO2-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['W2S2-AuSe-NM']_ext-Int_Li_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ag2Cl2-FeSe-NM']_ext-Int_H_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Rh2O2-RhO-NM']_int-Int_Rh_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['WS2-GeS2-NM']_int-Int_W_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Cr3WSe8-CrW3S8-NM']_int-Int_Se_Voronoi6_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['WSTe-MoSSe-NM']_int-Int_W_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BiBrS-MoSSe-NM']_int-Int_Br_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BiIS-BiTeI-NM']_int-Int_Bi_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Os2S2-GaS-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Zr2N-CdI2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['HfBrI-BiTeI-NM']_int-Int_Br_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Y2C-CdI2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Zr2I2-FeSe-NM']_ext-Int_Li_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['CaBr2-GeS2-NM']_ext-Int_H_Voronoi4_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['SbTe2-GeS2-NM']_ext-Int_Li_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ru2Cl2-FeSe-NM']_ext-Int_H_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hg2P2S6-MnPSe3-NM']_int-Int_S_Voronoi1_mult6-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TiCl2-CdI2-NM']_int-Int_Cl_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sc2P2Se6-ScPSe3-NM']_int-Int_Sc_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ZrClI-BiTeI-NM']_ext-Int_Li_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ru2Br2S2-FeOCl-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ZrSeTe-MoSSe-NM']_int-Int_Se_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AuI2-GeS2-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['PbI2-CdI2-NM']_int-Int_Pb_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Re2S4-WTe2-NM']_int-Int_Re_Voronoi4_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Pb2O2-FeSe-NM']_ext-Int_H_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['SrI2-CdI2-NM']_int-Int_Sr_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ir2Te4-PdS2-NM']_int-Int_Te_Voronoi2_mult4-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['V2Te2-GaS-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Br2Ge2O2-FeOCl-NM']_ext-Int_Li_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sc2S2-FeSe-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['PbTe-GeSe-NM']_ext-Int_Li_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['CaI2-GeS2-NM']_ext-Int_H_Voronoi4_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ir2S2-CH-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Zn2Se2-PbSe-NM']_ext-Int_Li_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Pt2Cl2S2-FeOCl-NM']_int-Int_Pt_Voronoi6_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['SnBr2-MoS2-NM']_ext-Int_H_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sc2Br2S2-FeOCl-NM']_int-Int_S_Voronoi5_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Nb2N-CdI2-NM']_int-Int_N_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BiIS-MoSSe-NM']_int-Int_I_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Zr2I2Se2-FeOCl-NM']_ext-Int_H_Voronoi5_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AsBrS-MoSSe-NM']_int-Int_S_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ag2Br2-CH-NM']_int-Int_Br_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['PbSe-GeSe-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Y2Cl4-CdI2-NM']_int-Int_Y_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sn2I2S2-FeOCl-NM']_int-Int_Sn_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['IrBr2-CdI2-NM']_int-Int_Ir_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ti2Se2-NiSe-NM']_ext-Int_Li_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf2Cl2O2-FeOCl-NM']_int-Int_Cl_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['CrMo3S8-CrW3S8-NM']_ext-Int_H_Voronoi5_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Pb2Cl2S2-FeOCl-NM']_int-Int_S_Voronoi5_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['HfBrI-BiTeI-NM']_ext-Int_H_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AsS2-MoS2-NM']_int-Int_S_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hg2Br2Se2-FeOCl-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ta2S2-GaSe-NM']_int-Int_S_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['PtI2-CdI2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['As2-C-NM']_int-Int_As_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ge2-C-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Re2Se2-FeSe-NM']_int-Int_Re_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Co2Br2Se2-FeOCl-NM']_int-Int_Br_Voronoi5_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['SnSe2-MoS2-NM']_ext-Int_Li_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ZrI2-MoS2-NM']_ext-Int_H_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Pd2Br2O2-FeOCl-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['MgBr2-CdI2-NM']_int-Int_Mg_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf2Br2S2-FeOCl-NM']_ext-Int_Li_Voronoi6_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Au2I2N2-FeOCl-NM']_int-Int_N_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Re2Br4-WTe2-NM']_int-Int_Br_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Y2CF2-Ti2CO2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['HfO2-MoS2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['W2Se2-FeSe-NM']_int-Int_W_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Rh2Te4-PdS2-NM']_ext-Int_Li_Voronoi5_mult4-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Nb2I2Se2-FeOCl-NM']_ext-Int_Li_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Bi2Se2-GaS-NM']_ext-Int_H_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Cr2W2S8-CrWS4-NM']_int-Int_S_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AsBrTe-MoSSe-NM']_int-Int_As_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ReSe2-CdI2-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Cr3MoSe8-CrW3S8-NM']_ext-Int_Li_Voronoi3_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ZnF2-GeS2-NM']_ext-Int_H_Voronoi5_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ni2S2-GaS-NM']_int-Int_S_Voronoi4_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Rh2Te4-WTe2-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ni2Te2-FeSe-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BiI2-CdI2-NM']_int-Int_I_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf2Cl2Se2-FeOCl-NM']_int-Int_Cl_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['CdS2-GeS2-NM']_int-Int_Cd_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Co2P2S6-MnPSe3-NM']_ext-Int_Li_Voronoi5_mult6-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Zr2S2-GaSe-NM']_int-Int_S_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf2Ti2S8-CrWS4-NM']_ext-Int_H_Voronoi3_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Re2O2-FeSe-NM']_int-Int_Re_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['RuBr2-GeS2-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ZrTe2-CdI2-NM']_int-Int_Zr_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['SnBr2-GeS2-NM']_ext-Int_H_Voronoi5_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ir2Se2-GaSe-NM']_int-Int_Ir_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AsITe-BiTeI-NM']_ext-Int_H_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Pt2Se2-FeSe-NM']_int-Int_Se_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AuTe2-CdI2-NM']_int-Int_Te_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ru2P2Se6-MnPSe3-NM']_int-Int_Ru_Voronoi6_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['PbF2-GeS2-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AsClS-BiTeI-NM']_int-Int_S_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Cr2Mo2S8-CrWS4-NM']_int-Int_Cr_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ga2Br6-BiI3-NM']_int-Int_Br_Voronoi3_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['PdSe2-CdI2-NM']_int-Int_Se_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['InI2-GeS2-NM']_ext-Int_Li_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BiCl2-CdI2-NM']_int-Int_Cl_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['InSb-GeSe-NM']_int-Int_Sb_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['In2Cl2-FeSe-NM']_int-Int_In_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ir2I2S2-FeOCl-NM']_ext-Int_Li_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BrSbTe-BiTeI-NM']_int-Int_Br_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ir2Cl2N2-FeOCl-NM']_int-Int_N_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['KS2-GeS2-NM']_int-Int_S_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AgI2-MoS2-NM']_int-Int_Ag_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['MoSb2-MoS2-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ta2O2-FeSe-NM']_int-Int_O_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ti2O2-AuSe-NM']_ext-Int_H_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Bi2I2O2-FeOCl-NM']_int-Int_Bi_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Tl2Cl2-FeSe-NM']_ext-Int_Li_Voronoi3_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Os2Te6-VTe3-NM']_int-Int_Os_Voronoi3_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['V2Se2-GaS-NM']_int-Int_Se_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Os2Br2Se2-FeOCl-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TaI2-GeS2-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['HgSe-GeSe-NM']_ext-Int_H_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ir2S6-Undefined-NM']_int-Int_Ir_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Pt2Se2-CH-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BiClSe-BiTeI-NM']_int-Int_Bi_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ZrAsSb-BiTeI-NM']_int-Int_Zr_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ru2Se2-GaS-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sc3F2N2-Ti3C2O2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf3TiSe8-CrW3S8-NM']_int-Int_Ti_Voronoi6_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['NbS2-MoS2-NM']_ext-Int_Li_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AgCl2-GeS2-NM']_int-Int_Ag_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TaAsSb-BiTeI-NM']_int-Int_As_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BiTiAs-BiTeI-NM']_ext-Int_H_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Pb2Br2O2-FeOCl-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ga2I2Se2-FeOCl-NM']_ext-Int_Li_Voronoi5_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['PtS2-CdI2-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['YCl2-GeS2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Os2Cl2-FeSe-NM']_int-Int_Cl_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ga2S2-PbSe-NM']_ext-Int_Li_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TaCl2-GeS2-NM']_ext-Int_H_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ag2Se4-PdS2-NM']_int-Int_Se_Voronoi4_mult4-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hg2I2N2-FeOCl-NM']_int-Int_N_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AuSe2-MoS2-NM']_int-Int_Se_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['PbF2-GeS2-NM']_int-Int_F_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['MoSeTe-BiTeI-NM']_ext-Int_Li_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['HgTe2-GeS2-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Bi2Cl2S2-FeOCl-NM']_int-Int_Cl_Voronoi4_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Pt2Se2-CH-NM']_int-Int_Pt_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BiBrSe-MoSSe-NM']_int-Int_Br_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['HfBr2-GeS2-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ga2Br2-FeSe-NM']_int-Int_Ga_Voronoi3_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ga2P2Te6-Undefined-NM']_int-Int_Ga_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Os2O2-RhO-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hg2Br2-FeSe-NM']_int-Int_Br_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ru2Te2-FeSe-NM']_int-Int_Te_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Zr4Br4Se4-HfBrS-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Rh2O2-FeSe-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Zr2I2O2-FeOCl-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ba2Cl2-FeSe-NM']_int-Int_Cl_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Os2P2Se6-MnPSe3-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['MoSTe-MoSSe-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TaBrCl-MoSSe-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['HgCl2-MoS2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AgBr2-CdI2-NM']_int-Int_Ag_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Os2S2-RhO-NM']_int-Int_S_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Mo2I4-WTe2-NM']_ext-Int_Li_Voronoi3_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sc2Cl2N2-FeOCl-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['GeI2-GeS2-NM']_ext-Int_H_Voronoi5_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ti2Br2S2-FeOCl-NM']_ext-Int_H_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ba2Cl2-FeSe-NM']_int-Int_Cl_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ir2Cl2N2-FeOCl-NM']_int-Int_Ir_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['SbSe2-MoS2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sn2Se2-SnS-NM']_int-Int_Se_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sc2I2N2-FeOCl-NM']_ext-Int_Li_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['SnSe2-MoS2-NM']_ext-Int_H_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['MoAs2-CdI2-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ti2CO2-Ti2CO2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Si2-C-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BiBr2-CdI2-NM']_int-Int_Bi_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ag2I2Se2-FeOCl-NM']_int-Int_Se_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Zn2Cl2-FeSe-NM']_int-Int_Zn_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['VAsSb-BiTeI-NM']_int-Int_As_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ZrBr2-CdI2-NM']_int-Int_Zr_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['SrSe2-GeS2-NM']_int-Int_Se_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Se2Si2-SnS-NM']_int-Int_Se_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ru2P2S6-MnPSe3-NM']_ext-Int_Li_Voronoi3_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ge2Se2-SnS-NM']_ext-Int_H_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['CrMo3S8-CrW3S8-NM']_ext-Int_H_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ti2F2-FeSe-NM']_int-Int_Ti_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Pt2Cl2S2-FeOCl-NM']_ext-Int_Li_Voronoi5_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ta2Br2S2-FeOCl-NM']_int-Int_Ta_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ReTe2-GeS2-NM']_ext-Int_Li_Voronoi4_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['PbCl2-GeS2-NM']_int-Int_Cl_Voronoi5_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BrSbTe-MoSSe-NM']_int-Int_Br_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['V2Br2-CH-NM']_int-Int_Br_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Co2Se4-CdI2-NM']_int-Int_Co_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TiZr3Se8-CrW3S8-NM']_int-Int_Ti_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ru2Se6-VTe3-NM']_int-Int_Ru_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf2Ti2Te8-CrWS4-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ir2Br2-FeSe-NM']_ext-Int_Li_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['WCl2-GeS2-NM']_int-Int_Cl_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Nb2Cl2-CH-NM']_int-Int_Cl_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Nb2I2-FeSe-NM']_int-Int_I_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['HfCl2-CdI2-NM']_int-Int_Hf_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TlBr2-GeS2-NM']_int-Int_Tl_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ta2Cl2N2-FeOCl-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ZrSeTe-BiTeI-NM']_int-Int_Zr_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['In2S2-GaS-NM']_int-Int_S_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ru2I2S2-FeOCl-NM']_ext-Int_Li_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ta2Br4-WTe2-NM']_int-Int_Ta_Voronoi3_mult4-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ga2P2Se6-MnPSe3-NM']_ext-Int_H_Voronoi1_mult3-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Rh2P2S6-MnPSe3-NM']_ext-Int_H_Voronoi6_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ScS2-CdI2-NM']_int-Int_S_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ScTe2-MoS2-NM']_ext-Int_H_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TaSe2-GeS2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BiClSe-BiTeI-NM']_int-Int_Cl_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sc2P2Se6-ScPSe3-NM']_int-Int_P_Voronoi3_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Cd2P2Se6-MnPSe3-NM']_ext-Int_H_Voronoi1_mult6-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Pt2Cl2N2-FeOCl-NM']_ext-Int_H_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AsITe-BiTeI-NM']_int-Int_Te_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Rh2P2Se6-MnPSe3-NM']_ext-Int_Li_Voronoi2_mult6-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Zr2Cl2-CH-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Mo2I4-WTe2-NM']_int-Int_Mo_Voronoi4_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TaBrI-BiTeI-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['GaBr2-GeS2-NM']_int-Int_Br_Voronoi5_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Cl2Ge2N2-FeOCl-NM']_int-Int_Ge_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ta2Br2N2-FeOCl-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['RuH2-MoS2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['CrTe2-MoS2-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['GaBr2-MoS2-NM']_int-Int_Ga_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TaS2-MoS2-NM']_int-Int_Ta_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Cu2Te4-WTe2-NM']_int-Int_Cu_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ba2Br2-FeSe-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf2Br6-BiI3-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['YF2-GeS2-NM']_int-Int_F_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BiS2-GeS2-NM']_ext-Int_H_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['AuTe2-MoS2-NM']_int-Int_Te_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Zn2P2Te6-MnPSe3-NM']_int-Int_Te_Voronoi2_mult6-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ga2Br6-BiI3-NM']_ext-Int_H_Voronoi2_mult6-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TaBrI-MoSSe-NM']_int-Int_I_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['HgBr2-GeS2-NM']_int-Int_Hg_Voronoi4_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Re2Se2-GaS-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Au2Br2O2-FeOCl-NM']_ext-Int_H_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Hf2Cl2S2-FeOCl-NM']_int-Int_S_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ag2Cl2O2-FeOCl-NM']_int-Int_Ag_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Sc2CF2-Ti2CO2-NM']_int-Int_C_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BiI2-CdI2-NM']_int-Int_Bi_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['In2Cl6-BiI3-NM']_int-Int_Cl_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['ZrAs2-CdI2-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ir2Se4-WTe2-NM']_ext-Int_H_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ta2S2-FeSe-NM']_int-Int_S_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Cr3WSe8-CrW3S8-NM']_int-Int_W_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['MgI2-CdI2-NM']_int-Int_Mg_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TiI2-MoS2-NM']_ext-Int_H_Voronoi2_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ti2F2-FeSe-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['BaI2-GeS2-NM']_ext-Int_Li_Voronoi3_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Au2Br4-WTe2-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Bi2Te2-PbSe-NM']_int-Int_Te_Voronoi1_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['HfAsSb-MoSSe-NM']_int-Int_As_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['WI2-CdI2-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['InP-GeSe-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Mo2Te6-VTe3-NM']_int-Int_Te_Voronoi3_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Br2Sb2-FeSe-NM']_ext-Int_Li_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Au2P2Te6-MnPSe3-NM']_ext-Int_H_Voronoi2_mult6-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Pd2Cl2S2-FeOCl-NM']_ext-Int_Li_Voronoi6_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TlCl2-CdI2-NM']_int-Int_Tl_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['GeO2-GeS2-NM']_ext-Int_Li_Voronoi4_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ta2Cl2Se2-FeOCl-NM']_int-Int_Se_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Ga2Br2N2-FeOCl-NM']_int-Int_Br_Voronoi2_mult2-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['Cl2Ge-MoS2-NM']_ext-Int_H_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '
+/home/qimin/Desktop/defect_cgcnn/cgcnn/cgcnn/data.py:333: UserWarning: ['TiTe2-MoS2-NM']_ext-Int_Li_Voronoi1_mult1-chg(0)_voronoi not find enough neighbors to build graph. If it happens frequently, consider increase radius.
+  warnings.warn('{} not find enough neighbors to build graph. '

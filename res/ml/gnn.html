@@ -84,7 +84,8 @@
           <li><a href="#gnn">2 Graph Neural Nets</a></li>
           <ul><li><a href="#glay">2.1 Graph Layers</a></li>
             <li><a href="#play">2.2 Pooling Layers</a></li></ul>
-          <li><a href="#res">3 Resources</a></li>
+          <li><a href="#pyg">3 Pytorch Geometric</a></li> 
+          <li><a href="#res">4 Resources</a></li>
          
         </div>
       </div>
@@ -200,25 +201,53 @@
       and output graphs with similar connectivity but updated or 'learned' feature vectors. One layer of the simplest 
       GNN of this form is depicted below, as an example.
     </p>
-    <div class="dl"></div>
-    <h3 id="glay">
+    <div class="dl2"></div>
+    <h4 id="glay">
       Simple graph layer
-    </h3>
+    </h4>
     <p>
       The graph is taken as input as each separate feature is processed by some update function, which is generally differentiable 
       (which may effectively be like an update function utilized in one node of an ANN). 
     </p>
-    <div class="dl"></div>
-    <h3 id="play">
+    <div class="dl2"></div>
+    <h4 id="play">
       Pooling layer
-    </h3>
+    </h4>
     <p>
       The graph is taken as input as each separate feature is processed by some update function, which is generally differentiable 
       (which may effectively be like an update function utilized in one node of an ANN). 
     </p>
 
+    <h3 id="mpnn">Message Passing Neural Networks</h3>
+    <p>
+      Following notation in <a href="http://proceedings.mlr.press/v70/gilmer17a/gilmer17a.pdf">Gilmore</a>, we can 
+      describe the different forms of these general structures by the specific definiton of their update functions. Hover over specific variables and 
+      functions below to see their definition.
+      <div class="eq">
+      $$
+        \texttip{m^{t+1}_v}{Message to be passed to the update function with vertex v, for iteration t+1}
+        =\sum_{w\in \texttip{N(v)}{Set of vertices}}\texttip{M_t}{Message function for iteration t}(\texttip{h_v^t}{"Hidden" state associated with vertex v, for iteration t},
+        \texttip{h_w^t}{"Hidden" state associated with vertex w, for iteration t},\texttip{e_{vw}}{Edge vector associated with the connection between vertices v and w})
+      $$
+      $$
+        \texttip{h_v^{t+1}}{"Hidden" state associated with vertex v, for iteration t}=
+        \texttip{U_t}{Vertex update function for iteration t}(\texttip{h_v^t}{"Hidden" state associated with vertex v, for iteration t},
+         \texttip{m_v^{t+1}}{Message to be passed to the update function with vertex v, for iteration t+1})
+      $$
+      </div>
+
+      where \(M_t\) is the message function and \(U_t\) is the vertex update function, which are to be specified in specific implementations.
+    </p>
     <div class="hl"></div>
 
+    <h2 id="pyg">Pytorch Geometric </h2>
+    <p>
+      Pytorch is a commonly used machine learning framework written in python. The relate module pytorch_geometric is based on pytorch and 
+      designed to facilitate the design and use of geometric machine learning (i.e. graph neural nets and their extensions). For a general
+      overview, see this <a href="https://pytorch-geometric.readthedocs.io/en/latest/notes/introduction.html">introduction</a> included in 
+      the docs.
+    </p>
+    <div class="hl"></div>
     <h2 id="res">Resources</h2>
     <p> For a conceptual introduction to graph neural networks, see this amazing article: <a href="https://distill.pub/2021/gnn-intro/">Intro to Graph Neural Networks</a>.
       And for an overview of current literature and methods, see Zonghan Wu, et al.'s <a href="https://arxiv.org/abs/1901.00596">A Comprehensive Survey on Graph Neural Networks</a>; 

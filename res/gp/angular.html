@@ -87,7 +87,6 @@
         \begin{align}
           [L_i,L_j]&=i\hbar \epsilon_{ijk}L_k\\
           [L^2,L_i]&=0\\
-
         \end{align}
       </div>
       
@@ -137,9 +136,35 @@
     </p>
     <h3>Clebsch-Gordon Coefficients</h3>
     <p>
-      The Clebsch-Gordon Coefficients are the relative amplitude of the 
+      The Clebsch-Gordon Coefficients are those that allow for conversion between the tensor product of
+      two separate angular momentum states, and the basis vectors for a coupled angular momentum state between the
+      independent angular momentums.
     </p>
     <h4>Algebraic Derivation</h4>
+    <p>
+      The Clebsch-Gordon coefficients for quantum angular momentum states may be derived through an iterative process
+      essentially consisting of three steps: start with the unique maximum or minimum state which will be equal to the 
+      maximum or minimum tensor product state; then apply the ladder operators (going up or down, after starting with the 
+      minimum or maximum, respectively); then, to transition to the next lower total angular momentum state, you apply the 
+      neccessary orthogonality between similar states.
+    </p>
+    <h5>Example (Singlet and Triplet)</h5>
+    <p>
+      As a simple example of the derivation of these coefficients, consider the coupled angular momentum state 
+      arising from an interaction between two spin 1/2 spin states. In this case, we have the four natural basis states
+      of the independent tensor space:
+
+      \[\text{Tensor Product Basis:}\ \ \vert \uparrow\uparrow\rangle, \vert \uparrow\downarrow\rangle, \vert \downarrow\uparrow\rangle, \vert \downarrow\downarrow\rangle\]
+
+      This notation can be further expanded in the basis of simultaneous quantum numbers \(j,m\) of the operators \(J_{1,2}^2, J_{z_{1,2}}\), as below:
+
+      \[\vert j_1,j_2;m_1,m_2\rangle\]
+      
+      where, in the case of our example, \(j_{1,2}=\frac{1}{2}\) and  \(m_{1,2}=\pm\frac{1}{2}.\)
+    </p>
+    <p>
+
+    </p>
 
   </body>
 </html>

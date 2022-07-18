@@ -2,8 +2,10 @@
 <html>
   <head>
     <title>CGCNN</title>
+    <link href="../../assets/css/cgcnn.css" rel="stylesheet">
     <link href="../../assets/css/ml.css" rel="stylesheet">
     <link href="../../assets/css/jumper.css" rel="stylesheet">
+    <link href="../../assets/css/toc.css" rel="stylesheet">
 
 
     <!--Geogebra Support-->
@@ -62,34 +64,154 @@
     <a href="https://www.alexheilman.com"><img id="homeimg" src="../../assets/images/iconwhite/favicon-196x196.png" width="50"></a>
   </div>
 
+<!--
+  Add defect classification section with results linked in table
+
+  Add model architecture
+
+  Add graph example from unit cell
+
+  Add python code for defect generators and graph generator
+
+  Structure as reference with presentation linked for first introduction?
+-->
 
   <h1 id="title">Crystal Graph Convolutional Neural Networks</h1>
-    <p id="blurb">
-      Convolutional neural nets have demonstrated an amazing efficacy in the classification of 
-      highly correlated data with several layers of possible features (namely, in the application of
-      image classification). Convolutional graph neural networks or Message Passing Neural Networks (MPNN)
-      have recently shown promising preliminary results that hint at a potentially strong application for the discovery
-      and classification of new materials. Following notation in <a href="http://proceedings.mlr.press/v70/gilmer17a/gilmer17a.pdf">Gilmore</a>, we can 
-      describe the different forms of these general structures by the specific definiton of their update functions. Hover over specific variables and 
-      functions below to see their definition.
-      <div class="eq">
-      $$
-        \texttip{m^{t+1}_v}{Message to be passed to the update function with vertex v, for iteration t+1}
-        =\sum_{w\in \texttip{N(v)}{Set of vertices}}\texttip{M_t}{Message function for iteration t}(\texttip{h_v^t}{"Hidden" state associated with vertex v, for iteration t},
-        \texttip{h_w^t}{"Hidden" state associated with vertex w, for iteration t},\texttip{e_{vw}}{Edge vector associated with the connection between vertices v and w})
-      $$
-      $$
-        \texttip{h_v^{t+1}}{"Hidden" state associated with vertex v, for iteration t}=
-        \texttip{U_t}{Vertex update function for iteration t}(\texttip{h_v^t}{"Hidden" state associated with vertex v, for iteration t},
-         \texttip{m_v^{t+1}}{Message to be passed to the update function with vertex v, for iteration t+1})
-      $$
-      </div>
 
-      where \(M_t\) is the message function and \(U_t\) is the vertex update function, which are to be specified in specific implementations.
+
+    <div class="flex stack">
+      <!--id="blurb"-->
+      <p>
+        Convolutional neural nets have demonstrated an amazing efficacy in the classification of 
+        highly correlated data with several layers of possible features (namely, in the application of
+        image classification). Convolutional <!--<a href="https://www.alexheilman.com/res/ml/gnn.html">graph neural networks</a>--> graph neural networks or Message Passing Neural Networks (MPNN)
+        have recently shown promising preliminary results that hint at a potentially strong application for the discovery
+        and classification of new materials. 
+      </p>
+      
+      <!--
+      <div id="toc_container">
+        <p class="toc_title">Contents</p>
+        <ul class="toc_list">
+          <li><a href="#graphs">1 Graphs</a></li>
+          <ul><li><a href="#model">1.1 Models</a></li>
+            <li><a href="#sgt">1.2 Spectral Theory</a></li>
+            <li><a href="#extensions">1.3 Extensions</a></li></ul>
+          <li><a href="#gnn">2 Graph Neural Nets</a></li>
+          <ul><li><a href="#glay">2.1 Graph Layers</a></li>
+            <li><a href="#play">2.2 Pooling Layers</a></li></ul>
+          <li><a href="#pyg">3 Pytorch Geometric</a></li> 
+          <li><a href="#res">4 Resources</a></li>
+         
+      </div>-->
+    </div>
+   
+    Following notation in <a href="http://proceedings.mlr.press/v70/gilmer17a/gilmer17a.pdf">Gilmore</a>, we can 
+    describe the different forms of these MPNNs by the specific definiton of their update functions. Hover over specific variables and 
+    functions below to see their definition.
+    <div class="eq">
+    $$
+      \texttip{m^{t+1}_v}{Message to be passed to the update function with vertex v, for iteration t+1}
+      =\sum_{w\in \texttip{N(v)}{Set of vertices}}\texttip{M_t}{Message function for iteration t}(\texttip{h_v^t}{"Hidden" state associated with vertex v, for iteration t},
+      \texttip{h_w^t}{"Hidden" state associated with vertex w, for iteration t},\texttip{e_{vw}}{Edge vector associated with the connection between vertices v and w})
+    $$
+    $$
+      \texttip{h_v^{t+1}}{"Hidden" state associated with vertex v, for iteration t}=
+      \texttip{U_t}{Vertex update function for iteration t}(\texttip{h_v^t}{"Hidden" state associated with vertex v, for iteration t},
+       \texttip{m_v^{t+1}}{Message to be passed to the update function with vertex v, for iteration t+1})
+    $$
+    </div>
+
+    where \(M_t\) is the message function and \(U_t\) is the vertex update function, which are to be specified in specific implementations.
+  </p>
+
+    <p>
+      A relevant and recent implementation of a specfic architecture of a GCNN by Tian Xie and Jeffrey C. Grossman can be found at the following 
+      <a href="https://github.com/txie-93/cgcnn">github repository</a>, corresponding with the paper  <em><a href="https://arxiv.org/abs/1710.10324">Crystal 
+      Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties</a></em>. Here, the authors designed and impelemented 
+      a graph convolutional neural network that could be trained to predict general properties of crystalline structures. This was achieved by converting input .cif files 
+      to graphs (in an internal format) and then passing these graphs off to the network with labels (relevant to the desired predictions) for training.
     </p>
 
+    <h2 id="crysgraph">Crystal Graphs</h2>
+    <p>
+      The first step in the application of GCNNs to crytalline structures is the conversion of such structures into 
+      relevant and unique graph representations. This step requires the designer to make several decisions including
+      what defines an edge in the crystal graph, as well as what feature vectors both edges and nodes should inherit.
+    </p>
+    <!--<p>
+      As a hueristic, one simplified example of a crystalline unit cell being converted into a graph is depicted below, though 
+      this example hides the complexity of the afforementioned decisions.
+    </p>
+    <img src="../../assets/images/res/ml/">-->
+    <p>
+      A common file format already used to work with crystalline structures is the
+      Crystallographic Information File standard, saved with the extension '.cif'. As such, the data handling portion of Xie and Grossman's 
+      CGCNN takes as input CIF files and outputs an internal graph structure (in relation to the recently implemented pytorch_geometric graph structure).
+    </p>
 
-    <h2>Defect Structures</h2>
+    <div class="defect boxed">
+      <h2 class="boxtitle">Ex: CIF to Graph Converter</h2>
+      <p>
+        A simple python function that converts '.cif' files to a torch_geometric graph can be found <a href="./cgcnn/cif2graph.py">here</a>.
+      </p>
+      <p>
+        This function utilizes the '.get_neighbor_list()' method inherent in pymatgen structure classes. Then, within a defined radius, edge tuples
+        using the index of the '.cif' file are created, with node positions automatically associated with these nodes and distances 
+        automatically associated with edges as features.
+      </p>
+      <p>
+        The function takes as input a '.cif' file's address as a string and returns a torch_geometric graph object with the attributes listed above.
+      </p>
+    </div>
+
+    <h2>CGCNN Architecture</h2>
+    <p>
+      The architecture of the CGCNN is relatively simple: it consists of an input layer that recieves the chosen graph representations; \(R\) convolutional layers;
+      a hidden layer \(L_1\)(fully connected); one pooling layer; and then another hidden layer \(L_2\); which feeds into the output layer, which is a single node. 
+    </p>
+    <h3>Convolutional Layers</h3>
+    <p>
+      The convolutional layers in the CGCNN model generally utilized one of two convolutional functions, described below. The equation numbering 
+      of the article is included below for reference.
+      <div class="eq">
+        \[\vec{v}^{(t+1)}_i=g\left[\left(\sum_{j,k}\vec{v}_j^{(t)}\oplus\vec{v}_{(i,j)_k}\right)\mathbf{W}^{(t)}_{c}
+        +\vec{v}^{(t)}_{s}\mathbf{W}^{(t)}_{s}+\vec{b}^{(t)}\right] \quad (4)\]
+        \[\vec{v}^{(t+1)}_i=\vec{v}^{(t)}_i+\sum_{j,k}\sigma\left[\vec{z}_{(i,j)_k}^{(t)}\mathbf{W}_f+\vec{b}_f^{(t)}\right]
+        \odot g\left[\vec{z}_{(i,j)_k}^{(t)}\mathbf{W}_s+\vec{b}^{(t)}_{s}\right]\quad (5)\]
+      </div>
+    </p>
+    <h3>Pooling Layers</h3>
+    <p>
+      The pooling layers in the CGCNN model then followed from the choice of convolutional function, with the two used variants described below.
+      However, both were forms of normalized summation. 
+      These normalized mean layers have the advantage of drawing information from the whole of the given cell, but comes with the disadvantage of 
+      effectively normalizing the infleunce of each site. 
+      <div class="eq">
+        \[\vec{v}_c=\sum_{i,t}\text{Softmax}(\mathbf{W}_t\vec{v}_i^{(t)}+\vec{b}_t)\quad\text{for}\ (4)\]
+        \[\vec{v}_c=\frac{1}{N}\sum_{i}\vec{v}_i^{(R)}\quad\quad\text{for}\ (5)\]
+      </div>
+      Note that the first pooling function sums over the output feature vectors from every convolutional layer,
+      whereas the second choice only need sum over the last convolutional layers learned vectors. 
+    </p>
+
+    <br>
+    <div class="defect boxed">
+    <h2 class="boxtitle">Classification of Point Defects</h2>
+    <p>
+      An interesting question in this avenue is whether these CGCNN models can distiguish and classify
+      defect structures from perfect crystalline structures.
+    </p>
+    <h3>Generating Data</h3>
+    <p>
+      Defect data was generated using certain utilities in the python package pymatgen, as well as modified versions of custom defined 
+      python functions created by Debajit Chakraborty.
+    </p>
+    <p>
+      For simplicity, we consider only point defects initially. These defects were created for randomly chosen cells of the C2DB materials 
+      database. The point defect structures considered are covered below.
+    </p>
+    <h4>Defect Structures</h4>
     <div class="flexbox stack">
       <img class="flex sbox" alt="Example substitution point defect" src="../../assets/images/res/ml/substitution.svg">
       <img class="flex sbox" alt="Example vacancy point defect" src="../../assets/images/res/ml/vacancy.svg">
@@ -99,10 +221,90 @@
 
     <p>
       Four common types of point defects in crystalline solids are interstitial, vacancy, antisite, and substitution defects. Point defects are specified at a single point
-      and as such may be isolated to one region of the structure.
+      and as such may be isolated to one point of the structure. Given their simple and localized nature, they are a natural starting point for training.
     </p>
+    <h4>Pooling Layer</h4>
+    <p>
+      Due to the localized nature of the point defects, the normalized sum function previously utilized in the CGCNN paper
+      proved very ineffective, as the contributing sites defining the defect were drowned out by the influence of the several other points.
+      To this end, a max pooling layer was implemented instead, defined below.
+      <!--<div class="eq">
+        \[\vec{v}_c=\text{Max}({\vec{v}_i})\]
+      </div>-->
+    </p>
+    <p>
+      A comparison of results for both the vanilla pooling layer (mean) and the new max pooling layer is provided in the test results below.
+    </p>
+    <h3>Test Results</h3>
+    <p>
+      Best test results for the CGCNN being trained as a classifier for single sets of defects (labelled with 1) and perfect 
+      supercells of the same size (labelled with 0) is reported in the table below. The data was partitioned into a 50/50 data set with as many defective supercells as
+      perfect supercells for testing.
+    </p>
+    <p>
+      Training was done for 30 epochs with a radius of 8 (units?) and a maximum number of considered neighbors of 12. Feature 
+      vectors for the atoms was inhereted from the 'atom_init.json' file of the sample data provided in the CGCNN github repository.
+    </p>
+    <table id="defectres">
+      <tr>
+        <th colspan="5" align="center">Best Test Results</th>
+      </tr>
+      <tr>
+        <th >
+          Defect
+        </th>
+        <th colspan="4" align="center"> Cell Size</th>
+      </tr>
+      <tr>
+        <td></td>
+        <th colspan="2"align="center">2x2</th>
+        <th colspan="2"align="center">6x6</th>
+      </tr>
+      <tr>
+        <th>Vacancy</th>
+        <td><a href="./cgcnn/vac_2x2_van.out" class="calm">62.5%</a></td>
+        <td><a href="./cgcnn/vac_2x2_max.out" class="calm">84%</a></td>
+        <td><a href="./cgcnn/vac_6x6_van.out" class="calm">49.2%</a></td>
+        <td><a href="./cgcnn/vac_6x6_max.out" class="calm">91.8%</a></td>
+      </tr>
+      
+      <tr>
+        <th>Antisite</th>
+        <td><a href="./cgcnn/antisite_2x2_van.out" class="calm">68.8%</a></td>
+        <td><a href="./cgcnn/antisite_2x2_max.out" class="calm">97.3%</a></td>
+        <td><a href="./cgcnn/antisite_6x6_van.out" class="calm">59.8%</a></td>
+        <td><a href="./cgcnn/antisite_6x6_max.out" class="calm">94.5%</a></td>
+      </tr>
 
-    
+      <tr>
+        <th>Substitution\(^{(H/Li)}\)</th>
+        <td><a href="./cgcnn/Sub_2x2_van.out" class="calm">99.2%</a></td>
+        <td><a href="./cgcnn/Sub_2x2_max.out" class="calm">99.6%</a></td>
+        <td><a href="./cgcnn/Sub_6x6_van.out" class="calm">53.5%</a></td>
+        <td><a href="./cgcnn/Sub_6x6_max.out" class="calm">96.5%</a></td>
+      </tr>
+      
+      <tr>
+        <th>Interstitial\(^{*(H/Li}_{\ Ag/Br)}\)</th>
+        <td>Na</td>
+        <td>Na</td>
+        <td><a href="./cgcnn/Int_6x6_van.out" class="calm">50.8%</a></td>
+        <td><a href="./cgcnn/Int_6x6_max.out" class="calm">96.9%</a></td>
+      </tr>
+
+      <tr id="poolhead" class="smalltext">
+        <th>Pooling Layer</th>
+        <td align="center">Mean</td>
+        <td align="center">Max</td>
+        <td align="center">Mean</td>
+        <td align="center">Max</td>
+      </tr>
+  </table>
+  <p>
+    Clearly, the CGCNN performed better with the replaced max pooling layer.
+  </p>
+
+  </div>
 
     <h2>Resources</h2>
     <p>
@@ -117,17 +319,6 @@
     networks are easily implmentable in <a href="https://pytorch-geometric.readthedocs.io/en/latest/index.html">pytorch geometric</a>.
     </p>
 
-    <h3>Graph Neural Networks (GNN)</h3>
-    <p>
-    </p>
-    <p> For a conceptual introduction to graph neural networks, see this amazing article: <a href="https://distill.pub/2021/gnn-intro/">Intro to Graph Neural Networks</a>.
-      And for an overview of current literature and methods, see Zonghan Wu, et al.'s <a href="https://arxiv.org/abs/1901.00596">A Comprehensive Survey on Graph Neural Networks</a>; 
-      or Jie Zhou, et al.'s <a href="https://arxiv.org/abs/1812.08434">Graph Neural Networks: A Review of Methods and Applications</a>.
-    </p>
-    <p>
-      A relevant and recent implementation of a specfic architecture of a GCNN by Tian Xie and Jeffrey C. Grossman can be found at the following 
-      <a href="https://github.com/txie-93/cgcnn">github repository</a>, corresponding with this <a href="https://arxiv.org/abs/1710.10324">paper</a>. 
-    </p>
   
     <h2>Other Relevant Tools</h2>
     <p>Below are, for reference, resources related to computational tools facilitating the digital handling of solid state structures.</p>

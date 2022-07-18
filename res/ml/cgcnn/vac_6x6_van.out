@@ -1,0 +1,189 @@
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+Epoch: [0][0/12]	Time 27.944 (27.944)	Data 27.828 (27.828)	Loss 0.8316 (0.8316)	Accu 0.520 (0.520)	Precision 0.528 (0.528)	Recall 0.222 (0.222)	F1 0.313 (0.313)	AUC 0.505 (0.505)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+Epoch: [0][10/12]	Time 26.320 (25.328)	Data 26.216 (25.220)	Loss 0.7614 (0.7761)	Accu 0.531 (0.512)	Precision 0.531 (0.493)	Recall 0.827 (0.499)	F1 0.647 (0.467)	AUC 0.477 (0.495)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Test: [0/2]	Time 25.261 (25.261)	Loss 0.7289 (0.7289)	Accu 0.484 (0.484)	Precision 0.000 (0.000)	Recall 0.000 (0.000)	F1 0.000 (0.000)	AUC 0.501 (0.501)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+ * AUC 0.499
+Epoch: [1][0/12]	Time 0.175 (0.175)	Data 0.079 (0.079)	Loss 0.7255 (0.7255)	Accu 0.535 (0.535)	Precision 0.529 (0.529)	Recall 0.293 (0.293)	F1 0.377 (0.377)	AUC 0.503 (0.503)
+Epoch: [1][10/12]	Time 0.166 (0.168)	Data 0.079 (0.079)	Loss 0.7461 (0.7561)	Accu 0.477 (0.497)	Precision 0.486 (0.498)	Recall 0.135 (0.380)	F1 0.212 (0.348)	AUC 0.470 (0.501)
+Test: [0/2]	Time 0.106 (0.106)	Loss 0.6939 (0.6939)	Accu 0.512 (0.512)	Precision 0.512 (0.512)	Recall 1.000 (1.000)	F1 0.677 (0.677)	AUC 0.488 (0.488)
+ * AUC 0.478
+Epoch: [2][0/12]	Time 0.143 (0.143)	Data 0.059 (0.059)	Loss 0.7259 (0.7259)	Accu 0.453 (0.453)	Precision 0.438 (0.438)	Recall 0.592 (0.592)	F1 0.504 (0.504)	AUC 0.469 (0.469)
+Epoch: [2][10/12]	Time 0.160 (0.153)	Data 0.074 (0.067)	Loss 0.7157 (0.7083)	Accu 0.488 (0.496)	Precision 0.471 (0.499)	Recall 0.528 (0.539)	F1 0.498 (0.511)	AUC 0.481 (0.513)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Test: [0/2]	Time 0.112 (0.112)	Loss 0.7281 (0.7281)	Accu 0.449 (0.449)	Precision 0.000 (0.000)	Recall 0.000 (0.000)	F1 0.000 (0.000)	AUC 0.489 (0.489)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+ * AUC 0.482
+Epoch: [3][0/12]	Time 0.160 (0.160)	Data 0.072 (0.072)	Loss 0.7168 (0.7168)	Accu 0.516 (0.516)	Precision 0.583 (0.583)	Recall 0.109 (0.109)	F1 0.184 (0.184)	AUC 0.545 (0.545)
+Epoch: [3][10/12]	Time 0.162 (0.161)	Data 0.077 (0.074)	Loss 0.7399 (0.7219)	Accu 0.453 (0.497)	Precision 0.409 (0.513)	Recall 0.066 (0.396)	F1 0.114 (0.365)	AUC 0.484 (0.516)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Test: [0/2]	Time 0.125 (0.125)	Loss 0.7077 (0.7077)	Accu 0.438 (0.438)	Precision 0.000 (0.000)	Recall 0.000 (0.000)	F1 0.000 (0.000)	AUC 0.451 (0.451)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+ * AUC 0.467
+Epoch: [4][0/12]	Time 0.153 (0.153)	Data 0.064 (0.064)	Loss 0.7028 (0.7028)	Accu 0.488 (0.488)	Precision 0.429 (0.429)	Recall 0.221 (0.221)	F1 0.292 (0.292)	AUC 0.488 (0.488)
+Epoch: [4][10/12]	Time 0.156 (0.153)	Data 0.068 (0.066)	Loss 0.7082 (0.7078)	Accu 0.508 (0.484)	Precision 0.514 (0.479)	Recall 0.297 (0.416)	F1 0.376 (0.423)	AUC 0.487 (0.486)
+Test: [0/2]	Time 0.109 (0.109)	Loss 0.6961 (0.6961)	Accu 0.520 (0.520)	Precision 0.520 (0.520)	Recall 1.000 (1.000)	F1 0.684 (0.684)	AUC 0.455 (0.455)
+ * AUC 0.451
+Epoch: [5][0/12]	Time 0.148 (0.148)	Data 0.062 (0.062)	Loss 0.7093 (0.7093)	Accu 0.477 (0.477)	Precision 0.467 (0.467)	Recall 0.760 (0.760)	F1 0.579 (0.579)	AUC 0.491 (0.491)
+Epoch: [5][10/12]	Time 0.154 (0.152)	Data 0.065 (0.065)	Loss 0.6828 (0.7014)	Accu 0.562 (0.516)	Precision 0.518 (0.518)	Recall 0.374 (0.536)	F1 0.434 (0.468)	AUC 0.566 (0.508)
+Test: [0/2]	Time 0.108 (0.108)	Loss 0.6954 (0.6954)	Accu 0.477 (0.477)	Precision 0.508 (0.508)	Recall 0.471 (0.471)	F1 0.489 (0.489)	AUC 0.462 (0.462)
+ * AUC 0.471
+Epoch: [6][0/12]	Time 0.148 (0.148)	Data 0.061 (0.061)	Loss 0.6870 (0.6870)	Accu 0.562 (0.562)	Precision 0.554 (0.554)	Recall 0.606 (0.606)	F1 0.579 (0.579)	AUC 0.566 (0.566)
+Epoch: [6][10/12]	Time 0.148 (0.151)	Data 0.063 (0.064)	Loss 0.6952 (0.6945)	Accu 0.527 (0.525)	Precision 0.537 (0.521)	Recall 0.346 (0.522)	F1 0.421 (0.517)	AUC 0.525 (0.527)
+Test: [0/2]	Time 0.111 (0.111)	Loss 0.7000 (0.7000)	Accu 0.480 (0.480)	Precision 1.000 (1.000)	Recall 0.007 (0.007)	F1 0.015 (0.015)	AUC 0.504 (0.504)
+ * AUC 0.482
+Epoch: [7][0/12]	Time 0.145 (0.145)	Data 0.060 (0.060)	Loss 0.6922 (0.6922)	Accu 0.523 (0.523)	Precision 0.566 (0.566)	Recall 0.233 (0.233)	F1 0.330 (0.330)	AUC 0.564 (0.564)
+Epoch: [7][10/12]	Time 0.147 (0.152)	Data 0.062 (0.065)	Loss 0.6992 (0.6983)	Accu 0.477 (0.497)	Precision 0.496 (0.491)	Recall 0.436 (0.464)	F1 0.464 (0.461)	AUC 0.495 (0.509)
+Test: [0/2]	Time 0.106 (0.106)	Loss 0.6999 (0.6999)	Accu 0.438 (0.438)	Precision 0.511 (0.511)	Recall 0.159 (0.159)	F1 0.242 (0.242)	AUC 0.485 (0.485)
+ * AUC 0.471
+Epoch: [8][0/12]	Time 0.147 (0.147)	Data 0.062 (0.062)	Loss 0.6823 (0.6823)	Accu 0.566 (0.566)	Precision 0.548 (0.548)	Recall 0.425 (0.425)	F1 0.479 (0.479)	AUC 0.584 (0.584)
+Epoch: [8][10/12]	Time 0.155 (0.153)	Data 0.068 (0.065)	Loss 0.6853 (0.6948)	Accu 0.551 (0.521)	Precision 0.367 (0.507)	Recall 0.103 (0.572)	F1 0.161 (0.512)	AUC 0.514 (0.522)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Test: [0/2]	Time 0.108 (0.108)	Loss 0.7438 (0.7438)	Accu 0.457 (0.457)	Precision 0.000 (0.000)	Recall 0.000 (0.000)	F1 0.000 (0.000)	AUC 0.472 (0.472)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+ * AUC 0.472
+Epoch: [9][0/12]	Time 0.158 (0.158)	Data 0.070 (0.070)	Loss 0.7079 (0.7079)	Accu 0.523 (0.523)	Precision 0.600 (0.600)	Recall 0.024 (0.024)	F1 0.047 (0.047)	AUC 0.564 (0.564)
+Epoch: [9][10/12]	Time 0.162 (0.159)	Data 0.075 (0.073)	Loss 0.6957 (0.7074)	Accu 0.531 (0.514)	Precision 0.733 (0.533)	Recall 0.087 (0.506)	F1 0.155 (0.417)	AUC 0.554 (0.514)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Test: [0/2]	Time 0.109 (0.109)	Loss 0.7625 (0.7625)	Accu 0.457 (0.457)	Precision 0.000 (0.000)	Recall 0.000 (0.000)	F1 0.000 (0.000)	AUC 0.450 (0.450)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+ * AUC 0.472
+Epoch: [10][0/12]	Time 0.154 (0.154)	Data 0.066 (0.066)	Loss 0.7068 (0.7068)	Accu 0.539 (0.539)	Precision 1.000 (1.000)	Recall 0.008 (0.008)	F1 0.017 (0.017)	AUC 0.526 (0.526)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch: [10][10/12]	Time 0.161 (0.155)	Data 0.072 (0.069)	Loss 0.6924 (0.7117)	Accu 0.508 (0.500)	Precision 0.537 (0.525)	Recall 0.223 (0.463)	F1 0.315 (0.379)	AUC 0.545 (0.530)
+Test: [0/2]	Time 0.122 (0.122)	Loss 0.7111 (0.7111)	Accu 0.461 (0.461)	Precision 0.000 (0.000)	Recall 0.000 (0.000)	F1 0.000 (0.000)	AUC 0.514 (0.514)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+ * AUC 0.469
+Epoch: [11][0/12]	Time 0.151 (0.151)	Data 0.062 (0.062)	Loss 0.6990 (0.6990)	Accu 0.480 (0.480)	Precision 0.452 (0.452)	Recall 0.108 (0.108)	F1 0.174 (0.174)	AUC 0.545 (0.545)
+Epoch: [11][10/12]	Time 0.147 (0.151)	Data 0.061 (0.064)	Loss 0.6936 (0.6969)	Accu 0.516 (0.505)	Precision 0.474 (0.505)	Recall 0.308 (0.478)	F1 0.374 (0.456)	AUC 0.509 (0.532)
+Test: [0/2]	Time 0.108 (0.108)	Loss 0.7090 (0.7090)	Accu 0.465 (0.465)	Precision 0.000 (0.000)	Recall 0.000 (0.000)	F1 0.000 (0.000)	AUC 0.449 (0.449)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+ * AUC 0.469
+Epoch: [12][0/12]	Time 0.152 (0.152)	Data 0.063 (0.063)	Loss 0.7015 (0.7015)	Accu 0.488 (0.488)	Precision 0.512 (0.512)	Recall 0.167 (0.167)	F1 0.251 (0.251)	AUC 0.519 (0.519)
+Epoch: [12][10/12]	Time 0.151 (0.150)	Data 0.063 (0.064)	Loss 0.6953 (0.6953)	Accu 0.555 (0.513)	Precision 0.514 (0.507)	Recall 0.627 (0.479)	F1 0.565 (0.469)	AUC 0.539 (0.527)
+Test: [0/2]	Time 0.110 (0.110)	Loss 0.7043 (0.7043)	Accu 0.395 (0.395)	Precision 0.443 (0.443)	Recall 0.211 (0.211)	F1 0.286 (0.286)	AUC 0.428 (0.428)
+ * AUC 0.468
+Epoch: [13][0/12]	Time 0.146 (0.146)	Data 0.061 (0.061)	Loss 0.7034 (0.7034)	Accu 0.500 (0.500)	Precision 0.525 (0.525)	Recall 0.463 (0.463)	F1 0.492 (0.492)	AUC 0.485 (0.485)
+Epoch: [13][10/12]	Time 0.154 (0.150)	Data 0.066 (0.063)	Loss 0.6917 (0.6951)	Accu 0.492 (0.510)	Precision 0.509 (0.501)	Recall 0.669 (0.384)	F1 0.578 (0.415)	AUC 0.527 (0.523)
+Test: [0/2]	Time 0.109 (0.109)	Loss 0.6950 (0.6950)	Accu 0.543 (0.543)	Precision 0.540 (0.540)	Recall 0.985 (0.985)	F1 0.698 (0.698)	AUC 0.475 (0.475)
+ * AUC 0.478
+Epoch: [14][0/12]	Time 0.145 (0.145)	Data 0.058 (0.058)	Loss 0.7075 (0.7075)	Accu 0.504 (0.504)	Precision 0.500 (0.500)	Recall 0.898 (0.898)	F1 0.642 (0.642)	AUC 0.500 (0.500)
+Epoch: [14][10/12]	Time 0.150 (0.150)	Data 0.063 (0.064)	Loss 0.6956 (0.6923)	Accu 0.520 (0.522)	Precision 0.586 (0.515)	Recall 0.256 (0.497)	F1 0.356 (0.471)	AUC 0.549 (0.540)
+Test: [0/2]	Time 0.109 (0.109)	Loss 0.7040 (0.7040)	Accu 0.477 (0.477)	Precision 0.541 (0.541)	Recall 0.146 (0.146)	F1 0.230 (0.230)	AUC 0.490 (0.490)
+ * AUC 0.476
+Epoch: [15][0/12]	Time 0.151 (0.151)	Data 0.061 (0.061)	Loss 0.6885 (0.6885)	Accu 0.547 (0.547)	Precision 0.525 (0.525)	Recall 0.350 (0.350)	F1 0.420 (0.420)	AUC 0.554 (0.554)
+Epoch: [15][10/12]	Time 0.151 (0.151)	Data 0.063 (0.064)	Loss 0.6915 (0.6978)	Accu 0.516 (0.509)	Precision 0.460 (0.503)	Recall 0.342 (0.539)	F1 0.392 (0.507)	AUC 0.519 (0.518)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Test: [0/2]	Time 0.106 (0.106)	Loss 0.7216 (0.7216)	Accu 0.469 (0.469)	Precision 0.000 (0.000)	Recall 0.000 (0.000)	F1 0.000 (0.000)	AUC 0.475 (0.475)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+ * AUC 0.479
+Epoch: [16][0/12]	Time 0.151 (0.151)	Data 0.062 (0.062)	Loss 0.7061 (0.7061)	Accu 0.527 (0.527)	Precision 0.733 (0.733)	Recall 0.086 (0.086)	F1 0.154 (0.154)	AUC 0.517 (0.517)
+Epoch: [16][10/12]	Time 0.152 (0.151)	Data 0.064 (0.064)	Loss 0.7076 (0.7015)	Accu 0.484 (0.504)	Precision 0.467 (0.544)	Recall 0.915 (0.484)	F1 0.618 (0.394)	AUC 0.554 (0.533)
+Test: [0/2]	Time 0.106 (0.106)	Loss 0.7050 (0.7050)	Accu 0.434 (0.434)	Precision 0.432 (0.432)	Recall 0.114 (0.114)	F1 0.181 (0.181)	AUC 0.461 (0.461)
+ * AUC 0.483
+Epoch: [17][0/12]	Time 0.150 (0.150)	Data 0.063 (0.063)	Loss 0.6940 (0.6940)	Accu 0.504 (0.504)	Precision 0.467 (0.467)	Recall 0.347 (0.347)	F1 0.398 (0.398)	AUC 0.500 (0.500)
+Epoch: [17][10/12]	Time 0.151 (0.152)	Data 0.065 (0.064)	Loss 0.7084 (0.7030)	Accu 0.473 (0.509)	Precision 0.481 (0.521)	Recall 0.803 (0.398)	F1 0.602 (0.363)	AUC 0.474 (0.522)
+Test: [0/2]	Time 0.110 (0.110)	Loss 0.6937 (0.6937)	Accu 0.520 (0.520)	Precision 0.552 (0.552)	Recall 0.704 (0.704)	F1 0.619 (0.619)	AUC 0.494 (0.494)
+ * AUC 0.467
+Epoch: [18][0/12]	Time 0.148 (0.148)	Data 0.061 (0.061)	Loss 0.6807 (0.6807)	Accu 0.566 (0.566)	Precision 0.546 (0.546)	Recall 0.706 (0.706)	F1 0.616 (0.616)	AUC 0.602 (0.602)
+Epoch: [18][10/12]	Time 0.159 (0.152)	Data 0.071 (0.065)	Loss 0.6844 (0.6913)	Accu 0.547 (0.532)	Precision 0.487 (0.530)	Recall 0.342 (0.470)	F1 0.402 (0.493)	AUC 0.544 (0.544)
+Test: [0/2]	Time 0.110 (0.110)	Loss 0.7065 (0.7065)	Accu 0.465 (0.465)	Precision 0.481 (0.481)	Recall 0.276 (0.276)	F1 0.351 (0.351)	AUC 0.457 (0.457)
+ * AUC 0.468
+Epoch: [19][0/12]	Time 0.160 (0.160)	Data 0.070 (0.070)	Loss 0.6962 (0.6962)	Accu 0.500 (0.500)	Precision 0.469 (0.469)	Recall 0.377 (0.377)	F1 0.418 (0.418)	AUC 0.514 (0.514)
+Epoch: [19][10/12]	Time 0.158 (0.161)	Data 0.074 (0.074)	Loss 0.6992 (0.6932)	Accu 0.504 (0.514)	Precision 0.486 (0.505)	Recall 0.272 (0.553)	F1 0.349 (0.517)	AUC 0.513 (0.535)
+Test: [0/2]	Time 0.130 (0.130)	Loss 0.7094 (0.7094)	Accu 0.434 (0.434)	Precision 0.456 (0.456)	Recall 0.223 (0.223)	F1 0.300 (0.300)	AUC 0.460 (0.460)
+ * AUC 0.457
+Epoch: [20][0/12]	Time 0.146 (0.146)	Data 0.066 (0.066)	Loss 0.6946 (0.6946)	Accu 0.539 (0.539)	Precision 0.484 (0.484)	Recall 0.400 (0.400)	F1 0.438 (0.438)	AUC 0.524 (0.524)
+Epoch: [20][10/12]	Time 0.152 (0.146)	Data 0.067 (0.066)	Loss 0.6779 (0.6901)	Accu 0.598 (0.530)	Precision 0.602 (0.524)	Recall 0.615 (0.559)	F1 0.608 (0.536)	AUC 0.608 (0.549)
+Test: [0/2]	Time 0.116 (0.116)	Loss 0.7051 (0.7051)	Accu 0.469 (0.469)	Precision 0.526 (0.526)	Recall 0.293 (0.293)	F1 0.376 (0.376)	AUC 0.483 (0.483)
+ * AUC 0.461
+Epoch: [21][0/12]	Time 0.150 (0.150)	Data 0.066 (0.066)	Loss 0.6883 (0.6883)	Accu 0.559 (0.559)	Precision 0.521 (0.521)	Recall 0.427 (0.427)	F1 0.469 (0.469)	AUC 0.557 (0.557)
+Epoch: [21][10/12]	Time 0.145 (0.148)	Data 0.062 (0.064)	Loss 0.6719 (0.6878)	Accu 0.594 (0.536)	Precision 0.596 (0.538)	Recall 0.520 (0.436)	F1 0.556 (0.476)	AUC 0.624 (0.558)
+Test: [0/2]	Time 0.109 (0.109)	Loss 0.6971 (0.6971)	Accu 0.539 (0.539)	Precision 0.577 (0.577)	Recall 0.719 (0.719)	F1 0.640 (0.640)	AUC 0.483 (0.483)
+ * AUC 0.461
+Epoch: [22][0/12]	Time 0.144 (0.144)	Data 0.061 (0.061)	Loss 0.6745 (0.6745)	Accu 0.590 (0.590)	Precision 0.577 (0.577)	Recall 0.723 (0.723)	F1 0.642 (0.642)	AUC 0.627 (0.627)
+Epoch: [22][10/12]	Time 0.148 (0.147)	Data 0.062 (0.063)	Loss 0.6783 (0.6909)	Accu 0.555 (0.540)	Precision 0.509 (0.530)	Recall 0.252 (0.611)	F1 0.337 (0.549)	AUC 0.570 (0.557)
+Test: [0/2]	Time 0.108 (0.108)	Loss 0.7138 (0.7138)	Accu 0.473 (0.473)	Precision 0.537 (0.537)	Recall 0.159 (0.159)	F1 0.246 (0.246)	AUC 0.499 (0.499)
+ * AUC 0.476
+Epoch: [23][0/12]	Time 0.148 (0.148)	Data 0.062 (0.062)	Loss 0.6802 (0.6802)	Accu 0.535 (0.535)	Precision 0.514 (0.514)	Recall 0.306 (0.306)	F1 0.383 (0.383)	AUC 0.582 (0.582)
+Epoch: [23][10/12]	Time 0.148 (0.148)	Data 0.064 (0.063)	Loss 0.6871 (0.6903)	Accu 0.559 (0.538)	Precision 0.516 (0.530)	Recall 0.669 (0.555)	F1 0.583 (0.534)	AUC 0.576 (0.552)
+Test: [0/2]	Time 0.106 (0.106)	Loss 0.7005 (0.7005)	Accu 0.465 (0.465)	Precision 0.483 (0.483)	Recall 0.429 (0.429)	F1 0.454 (0.454)	AUC 0.481 (0.481)
+ * AUC 0.478
+Epoch: [24][0/12]	Time 0.145 (0.145)	Data 0.061 (0.061)	Loss 0.6807 (0.6807)	Accu 0.543 (0.543)	Precision 0.540 (0.540)	Recall 0.578 (0.578)	F1 0.558 (0.558)	AUC 0.583 (0.583)
+Epoch: [24][10/12]	Time 0.147 (0.146)	Data 0.064 (0.063)	Loss 0.6923 (0.6861)	Accu 0.535 (0.543)	Precision 0.550 (0.544)	Recall 0.462 (0.507)	F1 0.502 (0.522)	AUC 0.555 (0.565)
+Test: [0/2]	Time 0.108 (0.108)	Loss 0.7024 (0.7024)	Accu 0.520 (0.520)	Precision 0.558 (0.558)	Recall 0.326 (0.326)	F1 0.411 (0.411)	AUC 0.499 (0.499)
+ * AUC 0.473
+Epoch: [25][0/12]	Time 0.144 (0.144)	Data 0.061 (0.061)	Loss 0.6938 (0.6938)	Accu 0.547 (0.547)	Precision 0.510 (0.510)	Recall 0.441 (0.441)	F1 0.473 (0.473)	AUC 0.525 (0.525)
+Epoch: [25][10/12]	Time 0.146 (0.148)	Data 0.063 (0.063)	Loss 0.6869 (0.6881)	Accu 0.523 (0.527)	Precision 0.476 (0.531)	Recall 0.702 (0.451)	F1 0.567 (0.469)	AUC 0.582 (0.559)
+Test: [0/2]	Time 0.105 (0.105)	Loss 0.7017 (0.7017)	Accu 0.473 (0.473)	Precision 0.519 (0.519)	Recall 0.589 (0.589)	F1 0.551 (0.551)	AUC 0.464 (0.464)
+ * AUC 0.467
+Epoch: [26][0/12]	Time 0.147 (0.147)	Data 0.061 (0.061)	Loss 0.6898 (0.6898)	Accu 0.523 (0.523)	Precision 0.539 (0.539)	Recall 0.619 (0.619)	F1 0.576 (0.576)	AUC 0.537 (0.537)
+Epoch: [26][10/12]	Time 0.145 (0.145)	Data 0.062 (0.062)	Loss 0.6887 (0.6851)	Accu 0.527 (0.554)	Precision 0.610 (0.561)	Recall 0.444 (0.484)	F1 0.514 (0.514)	AUC 0.573 (0.573)
+Test: [0/2]	Time 0.104 (0.104)	Loss 0.7042 (0.7042)	Accu 0.445 (0.445)	Precision 0.496 (0.496)	Recall 0.475 (0.475)	F1 0.486 (0.486)	AUC 0.460 (0.460)
+ * AUC 0.454
+Epoch: [27][0/12]	Time 0.144 (0.144)	Data 0.060 (0.060)	Loss 0.6830 (0.6830)	Accu 0.582 (0.582)	Precision 0.517 (0.517)	Recall 0.559 (0.559)	F1 0.537 (0.537)	AUC 0.579 (0.579)
+Epoch: [27][10/12]	Time 0.153 (0.147)	Data 0.065 (0.062)	Loss 0.6928 (0.6890)	Accu 0.516 (0.534)	Precision 0.494 (0.530)	Recall 0.730 (0.505)	F1 0.589 (0.510)	AUC 0.539 (0.553)
+Test: [0/2]	Time 0.107 (0.107)	Loss 0.7034 (0.7034)	Accu 0.500 (0.500)	Precision 0.513 (0.513)	Recall 0.767 (0.767)	F1 0.614 (0.614)	AUC 0.477 (0.477)
+ * AUC 0.464
+Epoch: [28][0/12]	Time 0.154 (0.154)	Data 0.070 (0.070)	Loss 0.6902 (0.6902)	Accu 0.516 (0.516)	Precision 0.508 (0.508)	Recall 0.724 (0.724)	F1 0.597 (0.597)	AUC 0.561 (0.561)
+Epoch: [28][10/12]	Time 0.162 (0.163)	Data 0.077 (0.078)	Loss 0.6798 (0.6858)	Accu 0.520 (0.542)	Precision 0.545 (0.545)	Recall 0.459 (0.487)	F1 0.498 (0.496)	AUC 0.584 (0.575)
+Test: [0/2]	Time 0.124 (0.124)	Loss 0.7085 (0.7085)	Accu 0.492 (0.492)	Precision 0.525 (0.525)	Recall 0.601 (0.601)	F1 0.561 (0.561)	AUC 0.462 (0.462)
+ * AUC 0.454
+Epoch: [29][0/12]	Time 0.147 (0.147)	Data 0.063 (0.063)	Loss 0.6802 (0.6802)	Accu 0.578 (0.578)	Precision 0.528 (0.528)	Recall 0.718 (0.718)	F1 0.609 (0.609)	AUC 0.594 (0.594)
+Epoch: [29][10/12]	Time 0.150 (0.149)	Data 0.065 (0.064)	Loss 0.6810 (0.6859)	Accu 0.586 (0.551)	Precision 0.559 (0.548)	Recall 0.587 (0.600)	F1 0.573 (0.563)	AUC 0.583 (0.578)
+Test: [0/2]	Time 0.107 (0.107)	Loss 0.7125 (0.7125)	Accu 0.477 (0.477)	Precision 0.534 (0.534)	Recall 0.542 (0.542)	F1 0.538 (0.538)	AUC 0.453 (0.453)
+ * AUC 0.454
+---------Evaluate Model on Test Set---------------
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Test: [0/2]	Time 27.747 (27.747)	Loss 0.7251 (0.7251)	Accu 0.492 (0.492)	Precision 0.000 (0.000)	Recall 0.000 (0.000)	F1 0.000 (0.000)	AUC 0.494 (0.494)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+ ** AUC 0.480

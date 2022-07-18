@@ -1,0 +1,165 @@
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+Epoch: [0][0/12]	Time 24.695 (24.695)	Data 24.580 (24.580)	Loss 0.9113 (0.9113)	Accu 0.492 (0.492)	Precision 0.470 (0.470)	Recall 0.312 (0.312)	F1 0.375 (0.375)	AUC 0.457 (0.457)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+Epoch: [0][10/12]	Time 25.240 (24.402)	Data 25.129 (24.289)	Loss 0.7529 (0.8009)	Accu 0.508 (0.502)	Precision 0.585 (0.504)	Recall 0.387 (0.502)	F1 0.466 (0.488)	AUC 0.483 (0.503)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Test: [0/2]	Time 25.267 (25.267)	Loss 0.6961 (0.6961)	Accu 0.469 (0.469)	Precision 0.000 (0.000)	Recall 0.000 (0.000)	F1 0.000 (0.000)	AUC 0.587 (0.587)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+ * AUC 0.571
+Epoch: [1][0/12]	Time 0.216 (0.216)	Data 0.120 (0.120)	Loss 0.7180 (0.7180)	Accu 0.512 (0.512)	Precision 0.553 (0.553)	Recall 0.557 (0.557)	F1 0.555 (0.555)	AUC 0.511 (0.511)
+Epoch: [1][10/12]	Time 0.193 (0.187)	Data 0.102 (0.098)	Loss 0.7276 (0.7323)	Accu 0.484 (0.501)	Precision 0.478 (0.501)	Recall 0.685 (0.573)	F1 0.563 (0.505)	AUC 0.489 (0.505)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Test: [0/2]	Time 0.108 (0.108)	Loss 0.7821 (0.7821)	Accu 0.480 (0.480)	Precision 0.000 (0.000)	Recall 0.000 (0.000)	F1 0.000 (0.000)	AUC 0.538 (0.538)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+ * AUC 0.551
+Epoch: [2][0/12]	Time 0.165 (0.165)	Data 0.075 (0.075)	Loss 0.7314 (0.7314)	Accu 0.527 (0.527)	Precision 0.500 (0.500)	Recall 0.017 (0.017)	F1 0.032 (0.032)	AUC 0.575 (0.575)
+Epoch: [2][10/12]	Time 0.170 (0.169)	Data 0.082 (0.080)	Loss 0.6872 (0.7348)	Accu 0.543 (0.511)	Precision 0.466 (0.577)	Recall 0.239 (0.388)	F1 0.316 (0.336)	AUC 0.534 (0.535)
+Test: [0/2]	Time 0.118 (0.118)	Loss 0.6930 (0.6930)	Accu 0.527 (0.527)	Precision 0.895 (0.895)	Recall 0.125 (0.125)	F1 0.219 (0.219)	AUC 0.562 (0.562)
+ * AUC 0.597
+Epoch: [3][0/12]	Time 0.146 (0.146)	Data 0.060 (0.060)	Loss 0.7034 (0.7034)	Accu 0.523 (0.523)	Precision 0.508 (0.508)	Recall 0.736 (0.736)	F1 0.601 (0.601)	AUC 0.521 (0.521)
+Epoch: [3][10/12]	Time 0.148 (0.152)	Data 0.062 (0.064)	Loss 0.7067 (0.6999)	Accu 0.527 (0.517)	Precision 0.539 (0.505)	Recall 0.664 (0.511)	F1 0.595 (0.481)	AUC 0.493 (0.538)
+Test: [0/2]	Time 0.105 (0.105)	Loss 0.6970 (0.6970)	Accu 0.484 (0.484)	Precision 0.778 (0.778)	Recall 0.051 (0.051)	F1 0.096 (0.096)	AUC 0.564 (0.564)
+ * AUC 0.579
+Epoch: [4][0/12]	Time 0.150 (0.150)	Data 0.061 (0.061)	Loss 0.6786 (0.6786)	Accu 0.559 (0.559)	Precision 0.557 (0.557)	Recall 0.472 (0.472)	F1 0.511 (0.511)	AUC 0.596 (0.596)
+Epoch: [4][10/12]	Time 0.156 (0.151)	Data 0.065 (0.063)	Loss 0.6925 (0.6920)	Accu 0.539 (0.534)	Precision 0.567 (0.541)	Recall 0.139 (0.514)	F1 0.224 (0.494)	AUC 0.555 (0.567)
+Test: [0/2]	Time 0.105 (0.105)	Loss 0.7224 (0.7224)	Accu 0.461 (0.461)	Precision 1.000 (1.000)	Recall 0.007 (0.007)	F1 0.014 (0.014)	AUC 0.573 (0.573)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1327: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+ * AUC 0.573
+Epoch: [5][0/12]	Time 0.150 (0.150)	Data 0.060 (0.060)	Loss 0.6871 (0.6871)	Accu 0.547 (0.547)	Precision 0.706 (0.706)	Recall 0.098 (0.098)	F1 0.171 (0.171)	AUC 0.597 (0.597)
+Epoch: [5][10/12]	Time 0.149 (0.150)	Data 0.062 (0.062)	Loss 0.6904 (0.6893)	Accu 0.535 (0.546)	Precision 0.536 (0.557)	Recall 0.244 (0.530)	F1 0.335 (0.502)	AUC 0.557 (0.567)
+Test: [0/2]	Time 0.104 (0.104)	Loss 0.7112 (0.7112)	Accu 0.461 (0.461)	Precision 0.700 (0.700)	Recall 0.049 (0.049)	F1 0.092 (0.092)	AUC 0.541 (0.541)
+ * AUC 0.547
+Epoch: [6][0/12]	Time 0.157 (0.157)	Data 0.069 (0.069)	Loss 0.6851 (0.6851)	Accu 0.531 (0.531)	Precision 0.471 (0.471)	Recall 0.276 (0.276)	F1 0.348 (0.348)	AUC 0.554 (0.554)
+Epoch: [6][10/12]	Time 0.184 (0.186)	Data 0.095 (0.094)	Loss 0.6880 (0.6966)	Accu 0.535 (0.524)	Precision 0.600 (0.527)	Recall 0.316 (0.475)	F1 0.414 (0.480)	AUC 0.592 (0.544)
+Test: [0/2]	Time 0.135 (0.135)	Loss 0.6988 (0.6988)	Accu 0.484 (0.484)	Precision 0.556 (0.556)	Recall 0.182 (0.182)	F1 0.275 (0.275)	AUC 0.539 (0.539)
+ * AUC 0.533
+Epoch: [7][0/12]	Time 0.155 (0.155)	Data 0.067 (0.067)	Loss 0.6747 (0.6747)	Accu 0.590 (0.590)	Precision 0.640 (0.640)	Recall 0.426 (0.426)	F1 0.512 (0.512)	AUC 0.606 (0.606)
+Epoch: [7][10/12]	Time 0.162 (0.161)	Data 0.069 (0.070)	Loss 0.6825 (0.6823)	Accu 0.535 (0.550)	Precision 0.522 (0.555)	Recall 0.390 (0.503)	F1 0.447 (0.517)	AUC 0.565 (0.580)
+Test: [0/2]	Time 0.112 (0.112)	Loss 0.6896 (0.6896)	Accu 0.539 (0.539)	Precision 0.587 (0.587)	Recall 0.587 (0.587)	F1 0.587 (0.587)	AUC 0.538 (0.538)
+ * AUC 0.540
+Epoch: [8][0/12]	Time 0.161 (0.161)	Data 0.066 (0.066)	Loss 0.6822 (0.6822)	Accu 0.566 (0.566)	Precision 0.573 (0.573)	Recall 0.696 (0.696)	F1 0.629 (0.629)	AUC 0.585 (0.585)
+Epoch: [8][10/12]	Time 0.155 (0.158)	Data 0.063 (0.065)	Loss 0.6820 (0.6847)	Accu 0.555 (0.554)	Precision 0.532 (0.572)	Recall 0.677 (0.561)	F1 0.596 (0.530)	AUC 0.591 (0.601)
+Test: [0/2]	Time 0.112 (0.112)	Loss 0.6828 (0.6828)	Accu 0.566 (0.566)	Precision 0.600 (0.600)	Recall 0.638 (0.638)	F1 0.619 (0.619)	AUC 0.577 (0.577)
+ * AUC 0.553
+Epoch: [9][0/12]	Time 0.160 (0.160)	Data 0.066 (0.066)	Loss 0.6890 (0.6890)	Accu 0.512 (0.512)	Precision 0.516 (0.516)	Recall 0.608 (0.608)	F1 0.558 (0.558)	AUC 0.548 (0.548)
+Epoch: [9][10/12]	Time 0.180 (0.167)	Data 0.086 (0.074)	Loss 0.7006 (0.6835)	Accu 0.516 (0.554)	Precision 0.498 (0.577)	Recall 0.813 (0.503)	F1 0.617 (0.503)	AUC 0.584 (0.595)
+Test: [0/2]	Time 0.110 (0.110)	Loss 0.6846 (0.6846)	Accu 0.535 (0.535)	Precision 0.553 (0.553)	Recall 0.481 (0.481)	F1 0.514 (0.514)	AUC 0.578 (0.578)
+ * AUC 0.562
+Epoch: [10][0/12]	Time 0.176 (0.176)	Data 0.082 (0.082)	Loss 0.6707 (0.6707)	Accu 0.613 (0.613)	Precision 0.632 (0.632)	Recall 0.598 (0.598)	F1 0.615 (0.615)	AUC 0.622 (0.622)
+Epoch: [10][10/12]	Time 0.195 (0.192)	Data 0.101 (0.097)	Loss 0.6605 (0.6756)	Accu 0.605 (0.574)	Precision 0.574 (0.606)	Recall 0.955 (0.474)	F1 0.717 (0.473)	AUC 0.668 (0.628)
+Test: [0/2]	Time 0.125 (0.125)	Loss 0.6893 (0.6893)	Accu 0.566 (0.566)	Precision 0.579 (0.579)	Recall 0.717 (0.717)	F1 0.641 (0.641)	AUC 0.544 (0.544)
+ * AUC 0.556
+Epoch: [11][0/12]	Time 0.159 (0.159)	Data 0.071 (0.071)	Loss 0.6721 (0.6721)	Accu 0.566 (0.566)	Precision 0.520 (0.520)	Recall 0.771 (0.771)	F1 0.621 (0.621)	AUC 0.660 (0.660)
+Epoch: [11][10/12]	Time 0.163 (0.160)	Data 0.073 (0.070)	Loss 0.6734 (0.6802)	Accu 0.559 (0.580)	Precision 0.564 (0.640)	Recall 0.879 (0.466)	F1 0.687 (0.465)	AUC 0.612 (0.635)
+Test: [0/2]	Time 0.108 (0.108)	Loss 0.7068 (0.7068)	Accu 0.535 (0.535)	Precision 0.534 (0.534)	Recall 0.978 (0.978)	F1 0.691 (0.691)	AUC 0.596 (0.596)
+ * AUC 0.565
+Epoch: [12][0/12]	Time 0.147 (0.147)	Data 0.058 (0.058)	Loss 0.7144 (0.7144)	Accu 0.547 (0.547)	Precision 0.525 (0.525)	Recall 0.921 (0.921)	F1 0.669 (0.669)	AUC 0.618 (0.618)
+Epoch: [12][10/12]	Time 0.154 (0.150)	Data 0.063 (0.060)	Loss 0.6650 (0.6615)	Accu 0.598 (0.601)	Precision 0.567 (0.626)	Recall 0.504 (0.569)	F1 0.534 (0.564)	AUC 0.631 (0.655)
+Test: [0/2]	Time 0.106 (0.106)	Loss 0.6907 (0.6907)	Accu 0.520 (0.520)	Precision 0.590 (0.590)	Recall 0.418 (0.418)	F1 0.490 (0.490)	AUC 0.576 (0.576)
+ * AUC 0.600
+Epoch: [13][0/12]	Time 0.161 (0.161)	Data 0.071 (0.071)	Loss 0.6478 (0.6478)	Accu 0.613 (0.613)	Precision 0.571 (0.571)	Recall 0.586 (0.586)	F1 0.579 (0.579)	AUC 0.667 (0.667)
+Epoch: [13][10/12]	Time 0.165 (0.162)	Data 0.076 (0.072)	Loss 0.6612 (0.6437)	Accu 0.609 (0.629)	Precision 0.660 (0.632)	Recall 0.522 (0.596)	F1 0.583 (0.612)	AUC 0.652 (0.680)
+Test: [0/2]	Time 0.117 (0.117)	Loss 0.6828 (0.6828)	Accu 0.531 (0.531)	Precision 0.615 (0.615)	Recall 0.462 (0.462)	F1 0.528 (0.528)	AUC 0.583 (0.583)
+ * AUC 0.590
+Epoch: [14][0/12]	Time 0.157 (0.157)	Data 0.066 (0.066)	Loss 0.6481 (0.6481)	Accu 0.609 (0.609)	Precision 0.576 (0.576)	Recall 0.576 (0.576)	F1 0.576 (0.576)	AUC 0.660 (0.660)
+Epoch: [14][10/12]	Time 0.160 (0.156)	Data 0.068 (0.066)	Loss 0.6345 (0.6345)	Accu 0.598 (0.635)	Precision 0.636 (0.649)	Recall 0.594 (0.576)	F1 0.614 (0.609)	AUC 0.667 (0.687)
+Test: [0/2]	Time 0.107 (0.107)	Loss 0.6768 (0.6768)	Accu 0.566 (0.566)	Precision 0.615 (0.615)	Recall 0.585 (0.585)	F1 0.599 (0.599)	AUC 0.597 (0.597)
+ * AUC 0.605
+Epoch: [15][0/12]	Time 0.148 (0.148)	Data 0.060 (0.060)	Loss 0.6295 (0.6295)	Accu 0.660 (0.660)	Precision 0.675 (0.675)	Recall 0.649 (0.649)	F1 0.661 (0.661)	AUC 0.702 (0.702)
+Epoch: [15][10/12]	Time 0.149 (0.152)	Data 0.061 (0.062)	Loss 0.5941 (0.6125)	Accu 0.695 (0.665)	Precision 0.703 (0.680)	Recall 0.634 (0.617)	F1 0.667 (0.643)	AUC 0.745 (0.727)
+Test: [0/2]	Time 0.105 (0.105)	Loss 0.6550 (0.6550)	Accu 0.621 (0.621)	Precision 0.718 (0.718)	Recall 0.545 (0.545)	F1 0.620 (0.620)	AUC 0.663 (0.663)
+ * AUC 0.658
+Epoch: [16][0/12]	Time 0.149 (0.149)	Data 0.060 (0.060)	Loss 0.6034 (0.6034)	Accu 0.664 (0.664)	Precision 0.616 (0.616)	Recall 0.670 (0.670)	F1 0.642 (0.642)	AUC 0.730 (0.730)
+Epoch: [16][10/12]	Time 0.164 (0.154)	Data 0.074 (0.064)	Loss 0.5804 (0.5897)	Accu 0.676 (0.686)	Precision 0.688 (0.710)	Recall 0.723 (0.629)	F1 0.705 (0.662)	AUC 0.756 (0.753)
+Test: [0/2]	Time 0.110 (0.110)	Loss 0.6519 (0.6519)	Accu 0.609 (0.609)	Precision 0.631 (0.631)	Recall 0.702 (0.702)	F1 0.664 (0.664)	AUC 0.687 (0.687)
+ * AUC 0.693
+Epoch: [17][0/12]	Time 0.175 (0.175)	Data 0.084 (0.084)	Loss 0.5711 (0.5711)	Accu 0.715 (0.715)	Precision 0.711 (0.711)	Recall 0.738 (0.738)	F1 0.725 (0.725)	AUC 0.786 (0.786)
+Epoch: [17][10/12]	Time 0.164 (0.167)	Data 0.074 (0.077)	Loss 0.5537 (0.5633)	Accu 0.668 (0.698)	Precision 0.698 (0.728)	Recall 0.652 (0.622)	F1 0.674 (0.669)	AUC 0.776 (0.783)
+Test: [0/2]	Time 0.132 (0.132)	Loss 0.6044 (0.6044)	Accu 0.652 (0.652)	Precision 0.669 (0.669)	Recall 0.712 (0.712)	F1 0.690 (0.690)	AUC 0.727 (0.727)
+ * AUC 0.708
+Epoch: [18][0/12]	Time 0.146 (0.146)	Data 0.058 (0.058)	Loss 0.5150 (0.5150)	Accu 0.762 (0.762)	Precision 0.684 (0.684)	Recall 0.769 (0.769)	F1 0.724 (0.724)	AUC 0.835 (0.835)
+Epoch: [18][10/12]	Time 0.157 (0.151)	Data 0.064 (0.061)	Loss 0.5062 (0.5330)	Accu 0.723 (0.736)	Precision 0.763 (0.761)	Recall 0.714 (0.684)	F1 0.738 (0.718)	AUC 0.825 (0.812)
+Test: [0/2]	Time 0.106 (0.106)	Loss 0.6024 (0.6024)	Accu 0.668 (0.668)	Precision 0.688 (0.688)	Recall 0.652 (0.652)	F1 0.669 (0.669)	AUC 0.733 (0.733)
+ * AUC 0.714
+Epoch: [19][0/12]	Time 0.159 (0.159)	Data 0.066 (0.066)	Loss 0.4978 (0.4978)	Accu 0.781 (0.781)	Precision 0.792 (0.792)	Recall 0.696 (0.696)	F1 0.741 (0.741)	AUC 0.843 (0.843)
+Epoch: [19][10/12]	Time 0.159 (0.164)	Data 0.070 (0.075)	Loss 0.4965 (0.5083)	Accu 0.766 (0.757)	Precision 0.785 (0.784)	Recall 0.736 (0.706)	F1 0.760 (0.740)	AUC 0.847 (0.837)
+Test: [0/2]	Time 0.113 (0.113)	Loss 0.5885 (0.5885)	Accu 0.688 (0.688)	Precision 0.806 (0.806)	Recall 0.596 (0.596)	F1 0.685 (0.685)	AUC 0.779 (0.779)
+ * AUC 0.768
+Epoch: [20][0/12]	Time 0.146 (0.146)	Data 0.059 (0.059)	Loss 0.4566 (0.4566)	Accu 0.805 (0.805)	Precision 0.819 (0.819)	Recall 0.766 (0.766)	F1 0.792 (0.792)	AUC 0.876 (0.876)
+Epoch: [20][10/12]	Time 0.152 (0.155)	Data 0.064 (0.065)	Loss 0.4419 (0.4605)	Accu 0.789 (0.792)	Precision 0.832 (0.803)	Recall 0.712 (0.768)	F1 0.767 (0.784)	AUC 0.880 (0.871)
+Test: [0/2]	Time 0.104 (0.104)	Loss 0.5252 (0.5252)	Accu 0.734 (0.734)	Precision 0.827 (0.827)	Recall 0.632 (0.632)	F1 0.717 (0.717)	AUC 0.833 (0.833)
+ * AUC 0.834
+Epoch: [21][0/12]	Time 0.147 (0.147)	Data 0.058 (0.058)	Loss 0.4521 (0.4521)	Accu 0.797 (0.797)	Precision 0.837 (0.837)	Recall 0.713 (0.713)	F1 0.770 (0.770)	AUC 0.873 (0.873)
+Epoch: [21][10/12]	Time 0.182 (0.172)	Data 0.093 (0.081)	Loss 0.4346 (0.4311)	Accu 0.812 (0.802)	Precision 0.893 (0.819)	Recall 0.735 (0.774)	F1 0.806 (0.793)	AUC 0.891 (0.890)
+Test: [0/2]	Time 0.140 (0.140)	Loss 0.6536 (0.6536)	Accu 0.676 (0.676)	Precision 0.913 (0.913)	Recall 0.450 (0.450)	F1 0.603 (0.603)	AUC 0.814 (0.814)
+ * AUC 0.819
+Epoch: [22][0/12]	Time 0.154 (0.154)	Data 0.065 (0.065)	Loss 0.3319 (0.3319)	Accu 0.852 (0.852)	Precision 0.931 (0.931)	Recall 0.754 (0.754)	F1 0.833 (0.833)	AUC 0.953 (0.953)
+Epoch: [22][10/12]	Time 0.167 (0.161)	Data 0.076 (0.071)	Loss 0.4037 (0.4017)	Accu 0.805 (0.825)	Precision 0.892 (0.859)	Recall 0.723 (0.780)	F1 0.798 (0.814)	AUC 0.905 (0.907)
+Test: [0/2]	Time 0.110 (0.110)	Loss 0.4636 (0.4636)	Accu 0.754 (0.754)	Precision 0.792 (0.792)	Recall 0.741 (0.741)	F1 0.766 (0.766)	AUC 0.864 (0.864)
+ * AUC 0.848
+Epoch: [23][0/12]	Time 0.161 (0.161)	Data 0.070 (0.070)	Loss 0.3800 (0.3800)	Accu 0.844 (0.844)	Precision 0.851 (0.851)	Recall 0.775 (0.775)	F1 0.811 (0.811)	AUC 0.903 (0.903)
+Epoch: [23][10/12]	Time 0.165 (0.162)	Data 0.074 (0.072)	Loss 0.3813 (0.3877)	Accu 0.816 (0.828)	Precision 0.843 (0.843)	Recall 0.770 (0.802)	F1 0.805 (0.821)	AUC 0.908 (0.910)
+Test: [0/2]	Time 0.126 (0.126)	Loss 0.5469 (0.5469)	Accu 0.727 (0.727)	Precision 0.938 (0.938)	Recall 0.536 (0.536)	F1 0.682 (0.682)	AUC 0.880 (0.880)
+ * AUC 0.883
+Epoch: [24][0/12]	Time 0.154 (0.154)	Data 0.064 (0.064)	Loss 0.2981 (0.2981)	Accu 0.871 (0.871)	Precision 0.903 (0.903)	Recall 0.823 (0.823)	F1 0.861 (0.861)	AUC 0.953 (0.953)
+Epoch: [24][10/12]	Time 0.154 (0.152)	Data 0.064 (0.062)	Loss 0.3040 (0.3479)	Accu 0.875 (0.855)	Precision 0.891 (0.882)	Recall 0.848 (0.818)	F1 0.869 (0.847)	AUC 0.946 (0.932)
+Test: [0/2]	Time 0.103 (0.103)	Loss 0.6013 (0.6013)	Accu 0.695 (0.695)	Precision 0.931 (0.931)	Recall 0.479 (0.479)	F1 0.632 (0.632)	AUC 0.885 (0.885)
+ * AUC 0.864
+Epoch: [25][0/12]	Time 0.144 (0.144)	Data 0.057 (0.057)	Loss 0.3228 (0.3228)	Accu 0.879 (0.879)	Precision 0.897 (0.897)	Recall 0.878 (0.878)	F1 0.887 (0.887)	AUC 0.943 (0.943)
+Epoch: [25][10/12]	Time 0.151 (0.150)	Data 0.063 (0.060)	Loss 0.3693 (0.3321)	Accu 0.836 (0.863)	Precision 0.892 (0.884)	Recall 0.767 (0.836)	F1 0.825 (0.857)	AUC 0.929 (0.940)
+Test: [0/2]	Time 0.105 (0.105)	Loss 0.4753 (0.4753)	Accu 0.746 (0.746)	Precision 0.920 (0.920)	Recall 0.580 (0.580)	F1 0.711 (0.711)	AUC 0.915 (0.915)
+ * AUC 0.911
+Epoch: [26][0/12]	Time 0.150 (0.150)	Data 0.061 (0.061)	Loss 0.2896 (0.2896)	Accu 0.910 (0.910)	Precision 0.910 (0.910)	Recall 0.886 (0.886)	F1 0.898 (0.898)	AUC 0.958 (0.958)
+Epoch: [26][10/12]	Time 0.180 (0.158)	Data 0.089 (0.068)	Loss 0.2696 (0.2907)	Accu 0.879 (0.884)	Precision 0.897 (0.899)	Recall 0.847 (0.860)	F1 0.871 (0.879)	AUC 0.957 (0.954)
+Test: [0/2]	Time 0.142 (0.142)	Loss 0.2730 (0.2730)	Accu 0.891 (0.891)	Precision 0.922 (0.922)	Recall 0.884 (0.884)	F1 0.903 (0.903)	AUC 0.957 (0.957)
+ * AUC 0.952
+Epoch: [27][0/12]	Time 0.168 (0.168)	Data 0.078 (0.078)	Loss 0.2055 (0.2055)	Accu 0.918 (0.918)	Precision 0.927 (0.927)	Recall 0.905 (0.905)	F1 0.916 (0.916)	AUC 0.978 (0.978)
+Epoch: [27][10/12]	Time 0.168 (0.175)	Data 0.077 (0.082)	Loss 0.2234 (0.2181)	Accu 0.941 (0.920)	Precision 0.927 (0.932)	Recall 0.950 (0.904)	F1 0.938 (0.917)	AUC 0.977 (0.975)
+Test: [0/2]	Time 0.112 (0.112)	Loss 0.3037 (0.3037)	Accu 0.898 (0.898)	Precision 0.894 (0.894)	Recall 0.920 (0.920)	F1 0.907 (0.907)	AUC 0.951 (0.951)
+ * AUC 0.953
+Epoch: [28][0/12]	Time 0.160 (0.160)	Data 0.067 (0.067)	Loss 0.1816 (0.1816)	Accu 0.926 (0.926)	Precision 0.931 (0.931)	Recall 0.908 (0.908)	F1 0.919 (0.919)	AUC 0.983 (0.983)
+Epoch: [28][10/12]	Time 0.205 (0.175)	Data 0.113 (0.082)	Loss 0.1533 (0.1792)	Accu 0.941 (0.934)	Precision 0.931 (0.943)	Recall 0.939 (0.921)	F1 0.935 (0.932)	AUC 0.988 (0.981)
+Test: [0/2]	Time 0.171 (0.171)	Loss 0.3951 (0.3951)	Accu 0.840 (0.840)	Precision 0.915 (0.915)	Recall 0.777 (0.777)	F1 0.840 (0.840)	AUC 0.937 (0.937)
+ * AUC 0.921
+Epoch: [29][0/12]	Time 0.162 (0.162)	Data 0.073 (0.073)	Loss 0.2799 (0.2799)	Accu 0.871 (0.871)	Precision 0.910 (0.910)	Recall 0.815 (0.815)	F1 0.860 (0.860)	AUC 0.956 (0.956)
+Epoch: [29][10/12]	Time 0.172 (0.164)	Data 0.079 (0.074)	Loss 0.2434 (0.2422)	Accu 0.910 (0.902)	Precision 0.922 (0.915)	Recall 0.902 (0.885)	F1 0.912 (0.899)	AUC 0.964 (0.966)
+Test: [0/2]	Time 0.111 (0.111)	Loss 0.2730 (0.2730)	Accu 0.906 (0.906)	Precision 0.905 (0.905)	Recall 0.919 (0.919)	F1 0.912 (0.912)	AUC 0.961 (0.961)
+ * AUC 0.940
+---------Evaluate Model on Test Set---------------
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+Test: [0/2]	Time 27.318 (27.318)	Loss 0.2196 (0.2196)	Accu 0.918 (0.918)	Precision 0.909 (0.909)	Recall 0.930 (0.930)	F1 0.920 (0.920)	AUC 0.971 (0.971)
+/home/qimin/anaconda3/envs/defect_cgcnn/lib/python3.8/site-packages/pymatgen/io/cif.py:1155: UserWarning: Issues encountered while parsing CIF: Some fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
+ ** AUC 0.957
