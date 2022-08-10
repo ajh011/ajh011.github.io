@@ -87,7 +87,6 @@
           <li><a href="#pyg">3 Pytorch Geometric</a></li> 
           <li><a href="#res">4 Resources</a></li>
          
-        </div>
       </div>
     </div>
     <br>
@@ -128,6 +127,11 @@
       have the same number of neighbors, the graph is termed <em>regular</em>, while a graph with all possible edges is termed <em>complete</em>.
     </p>
 
+    <p>
+      A <em>walk</em> on a graph is a sequence of connected edges that connects two vertices. A <em>path</em> is a distinct walk and considered a <em>closed path</em>
+      (or a <em>cycle</em>) if the intial and terminal vertices are the same. Vertices are considered <em>connected</em> if there exists a path between them.
+    </p>
+
     <h4>Adjacency matrix</h4>
     <p>
       The adjacency matrix of a graph is a clean generalization of the edge set 
@@ -156,9 +160,13 @@
 
       \[\mathbf{L}=\mathbf{D}-\mathbf{A},\]
 
-      where \(\mathbf{A}\) is the adjacency matrix.
+      where \(\mathbf{A}\) is the adjacency matrix. This gives us matrix elements \(l_{ij}\) of the form below for the graph Laplacian.
+
+      \[l_{ij}=\mathcal{D}(\mathcal{v}_i)\delta_{ij}-\delta_{e_{ij}\in\mathcal{E}}\]
 
       <img class="flex smallimg" alt="Example graph with Laplacian" src="../../assets/images/res/ml/glapex.svg">
+    </p>
+    <p>
 
     </p>
 
@@ -167,9 +175,13 @@
     <p>
       Spectral graph theory studies the properties of graphs through analysis of the eigenvectors and eigenvalues of
       a graph's adjacency matrix and it's graph Laplacian. For a nice overview of graphs and spectral graph theory, see
-      this <a href="https://csustan.csustan.edu/~tom/Clustering/GraphLaplacian-tutorial.pdf">presentation</a> by Radu Horaud. 
+      this <a href="https://csustan.csustan.edu/~tom/Clustering/GraphLaplacian-tutorial.pdf">presentation</a> by Radu Horaud; 
+      or this <a href="https://math.uchicago.edu/~may/REU2012/REUPapers/JiangJ.pdf">paper</a> by Jiaqi Jiang.
     </p>
-    
+    <p>
+
+    </p>
+
     <div class="dl"></div>
     <h3 id="extensions">Extensions of Graphs</h3>
     <p>
@@ -251,7 +263,11 @@
     <h2 id="res">Resources</h2>
     <p> For a conceptual introduction to graph neural networks, see this amazing article: <a href="https://distill.pub/2021/gnn-intro/">Intro to Graph Neural Networks</a>.
       And for an overview of current literature and methods, see Zonghan Wu, et al.'s <a href="https://arxiv.org/abs/1901.00596">A Comprehensive Survey on Graph Neural Networks</a>; 
-      or Jie Zhou, et al.'s <a href="https://arxiv.org/abs/1812.08434">Graph Neural Networks: A Review of Methods and Applications</a>.
+      or Jie Zhou, et al.'s <a href="https://arxiv.org/abs/1812.08434">Graph Neural Networks: A Review of Methods and Applications</a>. Also see Thomas Kipf's <a href="https://pure.uva.nl/ws/files/46900201/Thesis.pdf">thesis</a>.
+      </a>
     </p>  
+    <p>
+      For resources related more specifically to graph convolutional networksgraph, see this <a href="https://tkipf.github.io/graph-convolutional-networks/">introduction</a> by Thomas Kipf or 
+      this wonderful <a href="https://distill.pub/2021/understanding-gnns/">distill publication</a>.</p>
   </body>
 </html>

@@ -106,6 +106,7 @@
       </div>-->
     </div>
    
+    <p>
     Following notation in <a href="http://proceedings.mlr.press/v70/gilmer17a/gilmer17a.pdf">Gilmore</a>, we can 
     describe the different forms of these MPNNs by the specific definiton of their update functions. Hover over specific variables and 
     functions below to see their definition.
@@ -188,8 +189,12 @@
       These normalized mean layers have the advantage of drawing information from the whole of the given cell, but comes with the disadvantage of 
       effectively normalizing the infleunce of each site. 
       <div class="eq">
-        \[\vec{v}_c=\sum_{i,t}\text{Softmax}(\mathbf{W}_t\vec{v}_i^{(t)}+\vec{b}_t)\quad\text{for}\ (4)\]
-        \[\vec{v}_c=\frac{1}{N}\sum_{i}\vec{v}_i^{(R)}\quad\quad\text{for}\ (5)\]
+        \[\texttip{\vec{v}_c}{Learned crystal feature vector after pooling layer}=\texttip{\sum_{i,t}}{Sum over all atom feature vectors i and 
+          convolutional layers t}\text{Softmax}(\texttip{\mathbf{W}_t}{Learned weight matrix for t-th convolutional layer}
+          \texttip{\vec{v}_i^{(t)}}{Atom i feature vector for t-th convolutional layer}+\texttip{\vec{b}_t}{Learned bias vector for t-th convolutional layer})
+          \quad\text{for}\ (4)\]
+        \[\texttip{\vec{v}_c}{Learned crystal feature vector after pooling layer}=\frac{1}{\texttip{N}{Number of atoms in crystal}}\texttip{\sum_{i}}{Sum over i atoms in crystal}
+        \texttip{\vec{v}_i^{(R)}}{Final learned feature vector after R convolutional layers for atom i}\quad\quad\text{for}\ (5)\]
       </div>
       Note that the first pooling function sums over the output feature vectors from every convolutional layer,
       whereas the second choice only need sum over the last convolutional layers learned vectors. 

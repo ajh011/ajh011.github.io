@@ -72,6 +72,19 @@ img {
 
 
 
+.boxed{
+  border: 1px solid white;
+  padding: 0px 15px;
+}
+
+.boxtitle{
+  padding-top: 3px;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+
+
+
 .centerframe {
   margin: 0 auto;
 }

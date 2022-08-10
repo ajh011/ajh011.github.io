@@ -134,24 +134,33 @@
       angular momentum states. The coefficients in these expansions are the infamous Clebsch-Gordon 
       coefficients.
     </p>
+    <p>
+      A common and easily generalized example is the total angular momentum state of some particle,
+      resulting from the coupling of the particle's spin state and it's rotational angular momentum. In this case, the 
+      total angular operator may be described as below (though the explicit tensor product shown here is often
+      neglected and implied).
+
+      \[\vec{J}=\vec{L}\otimes 1+1\otimes\vec{S}\]
+
+      In such cases, it is often advantageous to then describe the total angular momentum state of the particle in terms of
+      this total angular momentum operator. In effect, we can describe the particle's total angular momentum state with four 
+      simultaneous eigenvalues \(j,j_z,l,s\)of the operators
+    </p>
+
     <h3>Clebsch-Gordon Coefficients</h3>
     <p>
       The Clebsch-Gordon Coefficients are those that allow for conversion between the tensor product of
-      two separate angular momentum states, and the basis vectors for a coupled angular momentum state between the
-      independent angular momentums.
+      two separate angular momentum states, and the basis vectors for a coupled total angular momentum state.
     </p>
-    <h4>Algebraic Derivation</h4>
+    <div class = "boxed">
+    <h5 class="boxtitle">Example (Singlet and Triplet)</h5>
     <p>
-      The Clebsch-Gordon coefficients for quantum angular momentum states may be derived through an iterative process
-      essentially consisting of three steps: start with the unique maximum or minimum state which will be equal to the 
-      maximum or minimum tensor product state; then apply the ladder operators (going up or down, after starting with the 
-      minimum or maximum, respectively); then, to transition to the next lower total angular momentum state, you apply the 
-      neccessary orthogonality between similar states.
-    </p>
-    <h5>Example (Singlet and Triplet)</h5>
+      As a simple example of the derivation of these coefficients, we consider the coupled angular momentum state 
+      arising from an interaction between two spin 1/2 spin states.</p>
+      
     <p>
-      As a simple example of the derivation of these coefficients, consider the coupled angular momentum state 
-      arising from an interaction between two spin 1/2 spin states. In this case, we have the four natural basis states
+      When the two spin states are considered as separate systems, we may describe the two spin states in terms of.
+      Hence, we may describe the total system in terms of the two individual states, yielding the the four natural basis states
       of the independent tensor space:
 
       \[\text{Tensor Product Basis:}\ \ \vert \uparrow\uparrow\rangle, \vert \uparrow\downarrow\rangle, \vert \downarrow\uparrow\rangle, \vert \downarrow\downarrow\rangle\]
@@ -160,10 +169,19 @@
 
       \[\vert j_1,j_2;m_1,m_2\rangle\]
       
-      where, in the case of our example, \(j_{1,2}=\frac{1}{2}\) and  \(m_{1,2}=\pm\frac{1}{2}.\)
+       where, in the case of our example, \(j_{1,2}=\frac{1}{2}\) and  \(m_{1,2}=\pm\frac{1}{2}.\)
     </p>
     <p>
 
+    </p>
+    </div>
+    <h4>Algebraic Derivation</h4>
+    <p>
+      The Clebsch-Gordon coefficients for quantum angular momentum states may be derived through an iterative process
+      essentially consisting of three steps: start with the unique maximum or minimum state which will be equal to the 
+      maximum or minimum tensor product state; then apply the ladder operators (going up or down, after starting with the 
+      minimum or maximum, respectively); then, to transition to the next lower total angular momentum state, you apply the 
+      neccessary orthogonality between similar states.
     </p>
 
   </body>

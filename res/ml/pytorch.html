@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pytorch</title>
+    <link href="../../assets/css/motif.css" rel="stylesheet">
+    <link href="../../assets/css/ml.css" rel="stylesheet">
+    <link href="../../assets/css/jumper.css" rel="stylesheet">
+    <link href="../../assets/css/toc.css" rel="stylesheet">
+
+
+    <!--Geogebra Support-->
+    <script src="navigation.js"></script>
+
+
+    <!--MathJax Support-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}},
+                                  loader: {load: ['[tex]/ams']},
+                                  tex: {packages: {'[+]': ['ams']}},
+                                  TeX: {extensions: ["action.js"]});</script>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../assets/images/res/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/images/res/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/images/res/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/images/res/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../../assets/images/res/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../assets/images/res/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../assets/images/res/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../assets/images/res/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="../../assets/images/res/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="../../assets/images/res/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="../../assets/images/res/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="../../assets/images/res/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="../../assets/images/res/mstile-310x310.png" />
+
+
+
+    <meta charset="UTF-8">
+    <meta name="description" content="A short overview of neural networks in pytorch.">
+    <meta name="keywords" content="pytorch, main, model, data">
+    <meta name="author" content="Alexander J. Heilman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+  </head>
+  
+  <body>
+
+
+  <div id="home">
+    <a href="https://www.alexheilman.com"><img id="homeimg" src="../../assets/images/iconwhite/favicon-196x196.png" width="50"></a>
+  </div>
+
+<!--
+  Add file structure for machine learning projects
+
+  Add install code line
+-->
+
+  <h1 id="title">Neural Networks in Pytorch</h1>
+
+    <div class="flex stack">
+      <p id="blurb">
+        Pytorch is a python module devoted to development of neural network architectures. Below is an overview of the absolute basics of 
+        pytorch as well as the general file structure employed in machine learning projects.
+      </p>
+      
+      
+      <div id="toc_container">
+        <p class="toc_title">Contents</p>
+        <ul class="toc_list">
+          <li><a href="#struc">1 Overview</a></li>
+          <ul><li><a href="#data">1.1 Install</a></li></ul>
+          <li><a href="#struc">2 File Structure</a></li>
+          <ul><li><a href="#data">2.1 Data</a></li>
+            <li><a href="#model">2.2 Model</a></li>
+            <li><a href="#train">2.3 Main</a></li></ul>     
+      </div>
+    </div>
+
+    <h2 id="struc">File Structure</h2>
+    <p>
+      A common approach to the structuring of pytorch models is to split the overall
+      model into three independent files. 
+    </p>
+    <p>
+      The first objective is always to define the 
+      type of data the model will take as input, and transform it into pytorch tensors.
+      This first task of data handling is handled in the 'data.py' file.
+
+      The next general task is then to define the network's architecture. This is 
+      done in the file 'model.py'.
+ 
+      Finally, the model must be trained, which is generally called as a script from 
+      the command line and defined in the file 'main.py'
+    </p>
+    <p>
+      These three files 'data.py', 'model.py', and 'main.py' can usually be defined independent enough
+      that changes in one requires no change to the other. For example, if the processing of input data in 
+      'data.py' were to be changed slightly, the model defined in 'model.py' should require no change.
+    </p>
+
+    <h3 id="data">data.py</h3>
+    <p>
+
+    </p>
+    <h3 id="model">model.py</h3>
+    <p>
+
+    </p>
+    <h3 id="train">main.py</h3>
+    <p>
+
+    </p>
+
+    <h2>Resources</h2>
+    <p>
+      
+    </p>
+
+  </body>
+</html>
