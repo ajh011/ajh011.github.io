@@ -50,6 +50,9 @@ body {
   background-repeat: no-repeat;
 }
 
+.transback50{
+  background-color: hsla(0, 80, 80, 50) !important;
+}
 
 
 .boxed{

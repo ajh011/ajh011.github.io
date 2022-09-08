@@ -2,11 +2,17 @@
 <html>
   <head>
     <title>Pytorch</title>
-    <link href="../../assets/css/motif.css" rel="stylesheet">
+    <link href="../../assets/css/pytorch.css" rel="stylesheet">
     <link href="../../assets/css/ml.css" rel="stylesheet">
     <link href="../../assets/css/jumper.css" rel="stylesheet">
     <link href="../../assets/css/toc.css" rel="stylesheet">
 
+    <!-- Highlight.js (Syntax Highlighting Display) Support-->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link class="codestyle" rel="stylesheet" href="../../assets/css/androidstudio.css">
 
     <!--Geogebra Support-->
     <script src="navigation.js"></script>
@@ -111,14 +117,36 @@
       'data.py' were to be changed slightly, the model defined in 'model.py' should require no change.
     </p>
 
+
     <h3 id="data">data.py</h3>
     <p>
-
+      The file 'data.py' should encompass all the handling of data, such as conversion of input files to relevant 
+      data structures (often torch tensors). An example that converts a set of grayscale JPEG files to a tensor 
+      is included below.
     </p>
+     
+    <pre>
+      <code class="python transback50" >
+        import 
+        
+        def fib(n):
+        a, b = 0, 1
+          while a < n:
+            print(a, end=' ')
+            a, b = b, a+b
+            print()
+        fib(1000)
+      </code>
+    </pre>
+
     <h3 id="model">model.py</h3>
     <p>
-
+      
     </p>
+    <p>
+      For more examples of pytorch models see <a href="https://github.com/pytorch/examples">https://github.com/pytorch/examples</a>.
+    </p>
+
     <h3 id="train">main.py</h3>
     <p>
 
