@@ -7,72 +7,30 @@
     {
         "name": "ml",
         "children":[
-         {"name": "cgcnn", "size": 3534}
+         {"name": "nn", "size": 3534},
+         {"name": "gnn", "size": 3534},
+         {"name": "cgcnn", "size": 3534},
+         {"name": "chgcnn", "size": 3534}
         ]
        },
     {
-     "name": "statmech",
+     "name": "gp",
      "children":[
-      {"name": "phasespace", "size": 3534},
-      {"name": "ensembles", "size": 5731},
-      {"name": "probability", "size": 7840}
+      {"name": "statmech", "size": 3534},
+      {"name": "electrodynamics", "size": 5731},
+      {"name": "qscatt", "size": 7840},
+      {"name": "qapprox", "size": 7840},
+      {"name": "angular", "size": 7840},
+      {"name": "sov", "size": 7840}
      ]
     },
-    {
-     "name": "quantum",
-     "children": [
-      {"name": "qapprox", "size": 3534},
-      {"name": "qscatt", "size": 5731},
-      {"name": "angular", "size": 7840}
-     ]
-    },
-    {
-    "name": "electrodynamics",
-    "children": [
-        {"name": "estatic", "size": 3534},
-        {"name": "mstatic", "size": 3534},
-        {"name": "dynamic", "size": 3534}
-    ]    },
    {
    "name": "qis",
    "children":[
+       {"name": "index"},
        {"name": "qudits"},
        {"name": "qml"}
    ]}
  ]
-},{
-    "name": "products",
-    "children": [
-       {
-        "name": "slides",
-        "children":[
-         {"name": "one.pdf", "size": 3534},
-         {"name": "two.pdf", "size": 5731},
-         {"name": "qft.pdf", "size": 7840},
-         {"name": "qiskit.pdf", "size": 7840}
-        ]
-       },
-       {
-        "name": "posters",
-        "children": [
-         {"name": "one.pdf", "size": 3534},
-         {"name": "two.pdf", "size": 5731}
-        ]
-       },
-       {
-       "name": "articles",
-       "children": [
-           {"name": "bay.pdf", "size": 3534},
-           {"name": "werner.pdf", "size": 3534},
-           {"name": "eoptick.pdf", "size": 3534}
-       ]    },
-       {
-       "name": "notes",
-       "children": [
-           {"name": "var.pdf", "size": 3534},
-           {"name": "sym.pdf", "size": 3534}
-       ]    }
-     
-    ]
-   }
+}
 ]}

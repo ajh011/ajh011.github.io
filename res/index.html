@@ -13,6 +13,8 @@
 		<link rel="stylesheet" href="../assets/css/homestyle.css">
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 
+
+
 		<!--MAthJAX support--><!--
 		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 		<script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}},
@@ -85,8 +87,24 @@
 							<h2>Research, Resources, and Reference</h2>
 							<p>Directory of pages that collate resources and references relevant to my research.</p>
 						</header>
+
+			
+
 						<section class="wrapper style5">
 							<div class="inner">
+								<div id="observablehq-chart-13b9b87c"></div>
+								
+								<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+								<script type="module">
+								import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+								import define from "https://api.observablehq.com/d/db5ecf24b7f810c1@456.js?v=3";
+								new Runtime().module(define, name => {
+								  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-13b9b87c"));
+								});
+								</script>
+		
+								<hr>
+
 								<p>Below are pages relevant to quantum information science.</p>
 								<div class="table-wrapper">
 									<table class="alt">
@@ -105,14 +123,14 @@
 												<td>Qudit (Multi-valued) Algorithms</td>
 												<td><a href="https://alexheilman.com/res/qis/qudits.html">https://alexheilman.com/res/qis/qudits.html</a></td>
 											</tr>
-											<tr>
+											<!--<tr>
 												<td>Resources</td>
 												<td><a href="https://alexheilman.com/res/qis/resources.html">https://alexheilman.com/res/qis/resources.html</a></td>
 											</tr>
 											<tr>
 												<td>Quantum Machine Learning</td>
 												<td><a href="https://alexheilman.com/res/qis/qml.html">https://alexheilman.com/res/qis/qml.html</a></td>
-											</tr>
+											</tr>-->
 										</tbody>
 									</table>
 									
@@ -225,6 +243,10 @@
 			<script src="../assets/js/breakpoints.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
+
+		<!-- D3 support
+		<script src="https://d3js.org/d3.v3.min.js"></script>-->
+		
 
 	</body>
 </html>
