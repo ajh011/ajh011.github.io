@@ -74,28 +74,34 @@
       <p>
         Basic networks are really composed of rather simple objects. Like any
         network, neural nets have nodes, or neurons, that tend to apply relatively
-        easy to compute function on a set of input data. Generally they apply some
-        weighted sum to the input vector and then apply some activation function.
+        easy to compute function on a set of input data. In most models, each neuron applies some
+        weighted sum to the input vector and then some non-linear activation function, which is then passed on to the 
+        next layer of neurons (or read as output on the final layer).
       </p>
       <h2 id="neuronstit">Neurons</h2>
       <p >
         <div id="nleft" class="">
-        The neuron is the basic building block of a neural network. Generally,
-        the mathematical functions it employs are relatively simple. The prototypical neuron
-        simply multiplies all its inputs by a corresponding weight, sums up the products (it may add a bias as well),
-        and then outputs this sum after applying some activation function.
+        The neuron is the basic building block of a neural network. The mathematical functions employed at each
+        neuron are relatively simple, but their trainable connections are what give the overall networks their 
+        computational power (much like a transistor in a computer is simple, or the neurons in our brains connect
+        to form a complex structure). The prototypical neuron simply applies some non-linear activation function to a 
+        weighted sum of it's inputs with some bias added, and passes this output to the next layer of neurons.
         
         <img src="../../assets/images/neural/neuronwbsmatwhite.svg" alt="Example neuron with weights and biases in matrix form" 
            width="80%" height="auto" id="exneuron" class="center"> 
         </div>
+        
+        Above, the example neuron \(j\) takes the inner product of a weight vector (learned through training, discussed below) with a vector 
+        formed of it's \(n\) inputs, adds some bias \(b_j\), and then applies some non-linear activation function \(\sigma\). This is shown as output along 
+        the departing connection.
       </p>
       <h3 id="activationfunctionstit">
         Activation Functions
       </h3>
       <p id="afp1">
-        The activation function employed by a neuron in a neural net is generally simple: both to aid
+        Much like the simple operations of linear algebra, the activation functions employed by neurons are generally simple: both to aid
         in computational complexity concerns when applying the model; and to streamline the 
-        process of backpropogation, described later. Perhaps the two most commonly seen activation
+        process of backpropogation, described later (and which is involved in the training process). Perhaps the two most commonly seen activation
         functions are the logarithmic Sigmoid function and the more modern and widely
         used rectified linear unit (ReLU).
       </p>
@@ -105,25 +111,97 @@
         <img src="../../assets/images/neural/sigmoid.svg" alt="Example Sigmoid function plot" width="45%" height="auto" class="margin5">
         <img id="relu" src="../../assets/images/neural/relu.svg" alt="Example rectified linear unit function plot" width="45%" height="auto" class="margin5">
       </div>
-    </section>
-      <p id="nnbp1">
-        <h2> Layers </h2>
-        <img src="../../assets/images/neural/ffnwhiteinput.svg" alt="Basic computation done by a layer in a neural network" width="45%" height="auto"
-          id="ffninput" class="center"> 
-        <div id="nnbpright" >
-          In between each intermediate layer of the neural network, the aggregation of
-          inputs can be seen as a matrix acting
-          on some input vector, as a natural extension of the single neuron case.
-          The activation function (assuming it's the same for all the neurons) 
-          can then simply act on this transformed vector via distribution.
-        </div>
-        <!--<iframe width="100%" height="400" src="https://www.desmos.com/calculator/qvltyv82p3" id="softmaxinteractive"></iframe>-->
+      <p>
+        It's important that the activation function of each layer is non-linear, since this introduced non-linearity makes the otherwise repeated matrix multiplication non-redundant
+        (since any product of matrices is itself a matrix). Thus, the use of such simple activation functions (such as the ReLU) is rational since we only require they introduce some 
+        non-linearity and not that they perform arbitrarily complex calculations.
       </p>
-        <iframe src="https://www.desmos.com/calculator/wdipmg9s0q?embed" width="100%" height="400" invertedColors="true" style="border: 1px solid #ccc" id="softmaxinteractive" frameborder=0></iframe>
+    
       <p id="bbnp2">
       <!-- words wrap left--> <img src="../../assets/images/neural/ffnwhiteoutput.svg" alt="" >
       </p>
+
+
+        <h2> Layers </h2>
+        <p>
+          As hinted at above, these neurons are then placed in parallel to one another to form layers, which are then connected in series 
+          to other layers. This layered structure is what gives neural networks their power to compute arbitrary functions (after training with
+          adequate quantities and quality of data).
+        </p>
+        <h3>Hidden Layers</h3>
+        <p>
+          Intermediate layers of networks (those not given as input or taken as output) are referred to as hidden layers. A given 
+          neural network will consist of an arbitrary number of hidden layers (in series) of arbitrary width (number of stacked/parallel neurons). 
+          The width may vary from hidden layer to hidden layer.
+        </p>
+        <img class="center" src="../../assets/images/neural/layersex.svg" alt="Example neural network with layers distinguished" width="65%" height="auto" id="examplennlayers" class="">
+        <p>
+          In each intermediate layer of the neural network, the aggregation of
+          inputs can be seen as a matrix acting
+          on some input vector, as a natural extension of the single neuron case.
+          The activation function (assuming it's the same for all the neurons) 
+          can then simply act on this transformed vector via element-wise distribution (though the parameters
+          of the activation function may vary for each element of the vector).
+        </p>
+        <p>
+          Below is a prototypical hidden layer of a neural network, with \(k\) parallel neurons and an \(n-\)dimensional input. Note that each neuron has it's own weight vector and bias associated 
+          with it, which are then packaged as a weight matrix and a bias vector. Again, \(\sigma\) is the activation 
+          function employed by this layer.
+        </p>
+        <img src="../../assets/images/neural/ffnwhiteinput.svg" alt="Basic computation done by a layer in a neural network" width="45%" height="auto"
+          id="ffninput" class="center"> 
+        <p>
+          An arbitrary number of these layers then may be concatenated to form an entire network. Often times, the final layer, or output
+          layer will employ a different function to normalize and ease interpretations of such outputs, though a distinction between different 
+          potential tasks the network is employed in performing is appropriate here.
+        </p>
+
+        <h3> Output Layers</h3>
+        <p>
+          Since different networks are employed to perform different types of tasks, the actions performed on the output layers are often dependent on this distinction. The two most 
+          common tasks are regression (numerical prediction) and classification (probabilistic prediction). Some common functions appplied in the output layer of networks designed for these tasks are discussed below.
+        </p>
+        <h4>Regression</h4>
+        <p>
+          A network tasked with regression is one that (in the simplest case) predicts a single numerical target. As such, the output layer is effectively just one node and a single, local activation funciton may 
+          be employed. This may be the same function as that used in the hidden layers.
+        </p>
+        <img class="center" src="../../assets/images/neural/regout.svg" alt="Example regression output node" width="65%" height="auto" id="exampleregout" class="">
+        <h4>Classification</h4>
+        <p>
+          A more interesting case is that of classification. A network designed for classification is tasked with determining which class a given input is in, and thus should, ideally, give a
+          one-hot encoded vector as output. This rarely is attainable and thus some non-local operation may be appropriate. One may simply choose the highest valued output node, but more Often
+          the network will incoporate a function that normalizes the output to allow for a probabilistic interpretation.
+        </p>
+        <img class="center" src="../../assets/images/neural/classout.svg" alt="Example classification output vector" width="65%" height="auto" id="exampleclassout" class="">
+
+        <p>
+          An example of this would be the SoftMax functon which takes the exponential of each 
+          output and normalizes these relative their exponentiated sum. This is described mathematically as the following:
+          \[
+          \text{SoftMax}_{z}(z_j)=\frac{e^{z_j}}{\sum_i e^{z_i}}
+          \]
+          This provides an advatange in that it is better at distinguishing otherwise closely valued outputs better, but still normalizes the output and thus allows for 
+          a probabilistic interpretation of the output vector. Below, the action of SoftMax is shown graphically as one output (before softmax, displayed along the x-axis) is varied.
+          Note that the sum of all the outputs (plotted on the y-axis) remains one as it is varied.
+        </p>
+        <iframe src="https://www.desmos.com/calculator/wdipmg9s0q?embed" width="100%" height="400" invertedColors="true" style="border: 1px solid #ccc" id="softmaxinteractive" frameborder=0></iframe>
+
+
+
+        <!--<iframe width="100%" height="400" src="https://www.desmos.com/calculator/qvltyv82p3" id="softmaxinteractive"></iframe>-->
+  
     </section>
+
+    <h2>Universal Approximation Theorems</h2>
+    <p>
+      A reasonable question one may have now is: 'is there any guarantee a given network is effective for some task?'. While a 'guarantee' is a strong condition,
+      there are some promising theorems that suggest certain sets of networks are general enough to approximate arbitrary tasks.
+    </p>
+    <p>
+      The class of universal approximation theorems are essentially trying to prove that certain tasks of interest can always be adequatley approximated
+      by some class of neural network. 
+    </p>
     <section id="training">
       <h1 id="traintit">Training</h1>
         <p id="trainp1"> 
