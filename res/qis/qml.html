@@ -76,34 +76,117 @@
       effective models tend to utilize hybrid schemes, wherein classical machine learning techniques interact with quantum 
       submodules to effectively get the best of both worlds (and as a result of limited QC hardware).
      </p>
-    
-   
 
      <h2>Quantum Neural Networks</h2>
      <p>
       One proposed framework for quantum neural networks is that discussed in Kerstin Beer, et al's <em><a href="https://www.nature.com/articles/s41467-020-14454-2">Training 
-      Deep Quantum Neural Networks</a></em>. 
+      Deep Quantum Neural Networks</a></em>, and the formalism described and discussed below.
      </p>
+ 
+     <h3>Overview of Framework</h3>
+     <p>
+      In analogy to the the classical case of neural networks, we essentially have to redefine four key components to define a working model: first, we must specify 
+      the appropriate form of data; then, some general architecture that can act and be trained on this data; some way to quantitatively judge a given model's performance
+      on the training data; and finally, some way to accomplish this training.
+     </p>
+
+     <h4>Data</h4>
      <p>
       The most general task a quantum circuit can do is perform some arbitrary unitary operation on an arbitrary dimensional space. Hence, an effective 
       quantum neural network should aim to approximate an arbitrary unitary given some set of data \( (\vert\psi_i\rangle, V \vert \psi_i\rangle) \) where 
       \(i\) ranges from 1 to \(N\) for \(N\) points of data. Effectively, then, our quantum network should be able to 'learn' to approximate what unitary operation is being performed
       given \(N\) 'snapshots' of it's action on some set of states.
      </p>
-     <h3>Simple Example</h3>
+
+     <h4>Architecture</h4>
      <p>
-      The formalism developed in the aforementioned paper works with states represented as density matrices (neccessarily since we intend to take partial traces over hidden layers).
-      Below, the basics of the framework are covered, closely following the <a href="https://www.youtube.com/watch?v=_M2GQAknykg">presentation</a> given by Ramona Wolf.
+      The overall action of the network is composed of layer-by-layer composition of the transition map \(\epsilon^{\ell}\) for each layer \(\ell\) s.t. \(in\leq \ell\leq out\).
+      
+      Each layer may have a different number of qubits \(M_{\ell}\). Explicitly, the \(\ell\)-th layer's transition map takes the form:
+      \[
+      \epsilon^{\ell}\left( \rho_{\ell-1} \right) = \text{Tr}_{\ell-1}\left[
+      \left(\prod_{m=1}^{M_{\ell}}U^{m-M_{\ell}}_{\ell}\right)\left(\left(\vert 0\rangle ^{\otimes M_{\ell}}\langle 0\vert^{\otimes M_{\ell}}\right)_{\ell}\otimes \rho_{\ell-1}\right) \left(\prod_{m=1}^{M_{\ell}}U^{m\dagger}_{\ell}\right)
+      \right]
+     = \rho_{\ell}
+      \]
+      And, hence, a total circuit of \(L\) layers returns \(\rho_{out}\), defined below, for some given input state \(\rho_{in}\).
+      \[
+      \rho_{out} = \epsilon^{out}\left(\epsilon^{L}\left(\epsilon^{L-1}\left( ... \epsilon^{1}\left(\rho_{in}\right) ...\right)\right)\right)
+      \]
+     </p>
+     <h5>Architecture: Step-by-step</h5>
+     <p>
+      For each layer \(\ell\),
+      </p>
+      <p>
+      1. The next layer's \(M\) qubits are prepared in the initial state \(\vert 0\rangle ^{\otimes m}\langle 0\vert^{\otimes m}_{\ell}\) and tensor producted with the previous layer's output \(\rho_{\ell-1}\).
+      
+      \[
+      \rho_{\ell}' = \left(\vert 0\rangle ^{\otimes M}\langle 0\vert^{\otimes M}\right)_{\ell}\otimes \rho_{\ell-1}
+      \]
+       
+      
+      2. The \(\ell\)-th layer's \(M\) associated unitary matrices \(U_{\ell}^m\) are applied to this tensor product state (from top to bottom).
+      \[
+      \rho_{\ell}'' = \left(\prod_{m=0}^{M-1}U^{M-m}_{\ell}\right)\rho_{\ell}'\left(\prod_{m=1}^{M}U^{m\dagger}_{\ell}\right) 
+      \]
+      
+      3. The partial trace over the \( (\ell-1)\)-th layer's Hilbert space is taken, resulting in the output state \(\rho_{\ell}\) of the \(\ell\)-th layer.
+      \[
+      \rho_{\ell} = \text{Tr}_{\ell-1} [\rho_{\ell}'']
+      \]
+     </p>
+     <h4>Cost</h4>
+     <p>
+      We now need a metric by which we may judge the performance of the network on the training data. 
      </p>
      <p>
+      The cost is then defined as the fidelity averaged over the output states and the corresponding training data states, as below:
+      \[C =\frac{1}{N}\sum_{i=1}^{N}\langle \psi_i\vert V^{\dagger} \rho_i^{out}V\vert\psi_i\rangle \]
+      Note that, since fidelity is one when two states correspond exactly, we wish to maximize this cost function (as opposed to the usual case in classical machine learning where we wish to minimize
+      the corresponding cost function). 
+     </p>
+     <p>
+      Further, note that this cost function is only applicable for training data based on pure states, for which the fidelity takes an especially nice form.
+      For data based on mixed states, we may replace the above with an averaged fidelity between output and target states. Explicitly  then, for this case,
+      we have the following:
+      \[
+      C=\frac{1}{N}\sum_{i=1}^{N}\left(\text{Tr}\left[\sqrt{\sqrt{\rho_i}\rho^{out}_i\sqrt{\rho_i}}\right]\right)^2
+      \]
+     </p>
+    
+
+     <h4>Training</h4>
+     <p>
+      The issue now is training, which can be done iteratively by updating the network's constituent unitaries via the following relation, parametrized by the step size \(\epsilon\):
+      \[U_{m}^{\ell} \rightarrow e^{i\epsilon K_{m}^{\ell}}U_{m}^{\ell}\]
+      <div class="center"> where </div>
+      <div class="eq">
+      \[K_{m}^{\ell}  = \eta \frac{2^{m_{\ell-1}}}{N}\sum_{i = 1}^{N}\text{Tr}_{\neg \ell} \Bigg[\left(\prod_{n=0}^{m-1} U^{\ell}_{m-n}\right) \left(\left(\vert 0\rangle ^{\otimes m_{\ell}}\langle 0\vert ^{\otimes m_{\ell}}\right)_{\ell}\otimes\rho_{i}^{\ell-1}\right)\left(\prod_{n=1}^{m} U^{\ell\dagger}_{m}\right),
+\left(\prod_{n=m+1}^{m_{\ell}} U^{\ell\dagger}_{n}\right) \left(\sigma_i^{\ell}\otimes\mathbb{I}_{\ell-1}\right)\left(\prod_{n=1}^{m_{\ell}-(m+1)} U^{\ell}_{m_{\ell}-n}\right)
+\Bigg]\]
+    </div>
+    where the square brackets denote a commutator and \(\sigma_i^{\ell} = \mathcal{F}^{\ell+1}(... \mathcal{F}^{out}(\rho_{i}^{out})...)\) is the adjoint channel to  the layer-to-layer transition map \(\epsilon^{\ell}\) for layer \(\ell\). 
+    This form for the training matrix may be derived from a first order approximation of the cost function's gradient; for more details of this derivation, see the paper's associated <a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-020-14454-2/MediaObjects/41467_2020_14454_MOESM1_ESM.pdf">supplementary
+    resources</a>.
+     </p>
+     <button type="button" class="collapsible"> Simple Example</button>
+     <div class="content eq">
+     <h3 class="notop">\(2\times 3\times 2\) Qubit QNN</h3>
+     <p>
+      The formalism developed in the aforementioned paper works with states represented as density matrices (neccessarily since we intend to take partial traces over hidden layers).
+      Below, the basics of the framework are covered in a simple example, closely following the <a href="https://www.youtube.com/watch?v=_M2GQAknykg">presentation</a> given by Ramona Wolf.
+     </p>
+     <p></p>
+     <p>
       Our simple example of the model will consist of a two-qubit input state, one three-qubit hidden layer, and a two-qubit output state. The action of the first step is to take the tensor product 
-      of the arbitrary input state \(\rho_{in}\) with a fiduciary (cleanly initialized) state \(\vert 000\rangle \langle 000 \vert \), and then apply three unitaries of dimension \(2^{2+1}\) which act on
+      of the arbitrary input state \(\rho_{in}\) with a fiduciary (cleanly initialized), three qubit ground state \(\vert 000\rangle \langle 000 \vert \), and then apply three unitaries of dimension \(2^{2+1}\) which act on
       the input state and the first, second, and third intermediate state vectors, respectively (with identity in the rest) and in that order (because unitaries won't neccessarily commute and the convention is to 
       apply from top to bottom for each layer). The partial trace is then taken over the input state's Hilbert space. This resulting state is then tensor producted with the output state, which is also initialized as 
       the ground state of a two-qubit Hilbert space. Two more \(2^{1+2}\) dimensional unitaries are then applied to the intermediate qubit's and the top and bottom, respectively (in order from top to bottom), and the 
       partial trace over the intermediate state space is then taken. The resulting \(2^{2}\) dimensional state is then the output of this simple model.
      </p>
-     <img src="../../assets/images/res/qis/QNNex.svg" alt="2x3x2 Example Quantum Neural Network">
+     <img src="../../assets/images/res/qis/QNNex.svg" width="95%" height="auto" alt="2x3x2 Example Quantum Neural Network">
      <p>
       The cost is then defined as the fidelity averaged over the output states and the corresponding training data states, as below:
       \[C =\frac{1}{N}\sum_{i=1}^{N}\langle \psi_i\vert V^{\dagger} \rho_i^{out}V\vert\psi_i\rangle \]
@@ -114,10 +197,14 @@
       The issue now is training, which can be done iteratively by updating the network's constituent unitaries via the following relation, parametrized by the step size \(\epsilon\):
       \[U_j^n \rightarrow e^{i\epsilon K^n_j}U^n_j\]
       <div class="center"> where </div>
-      \[K^n_j = \]
-      
+      <div class="eq">
+      \[K_{m}^{\ell}  = \eta \frac{2^{m_{\ell-1}}}{N}\sum_{i = 1}^{N}\text{Tr}_{\neg \ell} \Bigg[\left(\prod_{n=0}^{m-1} U^{\ell}_{m-n}\right) \left(\left(\vert 0\rangle ^{\otimes m_{\ell}}\langle 0\vert ^{\otimes m_{\ell}}\right)_{\ell}\otimes\rho_{i}^{\ell-1}\right)\left(\prod_{n=1}^{m} U^{\ell\dagger}_{m}\right),
+\left(\prod_{n=m+1}^{m_{\ell}} U^{\ell\dagger}_{n}\right) \left(\sigma_i^{\ell}\otimes\mathbb{I}_{\ell-1}\right)\left(\prod_{n=1}^{m_{\ell}-(m+1)} U^{\ell}_{m_{\ell}-n}\right)
+\Bigg]\]
+    </div>
+    where the square brackets denote a commutator and \(\sigma_i^{\ell} = \mathcal{F}^{\ell+1}(... \mathcal{F}^{out}(\rho_{i}^{out})...)\) is the adjoint channel to  the layer-to-layer transition map \(\epsilon^{\ell}\) for layer \(\ell\). 
      </p>
-
+     </div>
    <!--  <h3>Resources</h3>
      <p>
       Penny lane is a python library committed to higher level quantum computational programming with lots of introductory resources that can be found at 
@@ -133,7 +220,6 @@
 <a href="https://github.com/qigitphannover/DeepQuantumNeuralNetworks/blob/master/DQNN_basic.ipynb">Osbourne nb</a>
 -->
 <!--Button collapsible-->
-<!--
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -167,7 +253,7 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-</script>-->
+</script>
 
   </body>
 </html>
