@@ -8,154 +8,159 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="QNNex.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   id="svg8"
+   width="188.79073mm"
+   height="90.017006mm"
+   viewBox="0 0 188.79073 90.017006"
    version="1.1"
-   viewBox="0 0 210 297"
-   height="297mm"
-   width="210mm">
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="QNNex.svg">
   <defs
      id="defs2">
     <path
-       id="MJX-138-TEX-N-54"
-       d="M36 443Q37 448 46 558T55 671V677H666V671Q667 666 676 556T685 443V437H645V443Q645 445 642 478T631 544T610 593Q593 614 555 625Q534 630 478 630H451H443Q417 630 414 618Q413 616 413 339V63Q420 53 439 50T528 46H558V0H545L361 3Q186 1 177 0H164V46H194Q264 46 283 49T309 63V339V550Q309 620 304 625T271 630H244H224Q154 630 119 601Q101 585 93 554T81 486T76 443V437H36V443Z" />
+       d="m 36,443 q 1,5 10,115 9,110 9,113 v 6 h 611 v -6 q 1,-5 10,-115 9,-110 9,-113 v -6 h -40 v 6 q 0,2 -3,35 -3,33 -11,66 -8,33 -21,49 -17,21 -55,32 -21,5 -77,5 h -27 -8 q -26,0 -29,-12 -1,-2 -1,-279 V 63 q 7,-10 26,-13 19,-3 89,-4 h 30 V 0 H 545 L 361,3 Q 186,1 177,0 h -13 v 46 h 30 q 70,0 89,3 19,3 26,14 v 276 211 q 0,70 -5,75 -5,5 -33,5 H 244 224 Q 154,630 119,601 101,585 93,554 85,523 81,486 77,449 76,443 v -6 H 36 Z"
+       id="MJX-138-TEX-N-54" />
     <path
-       id="MJX-138-TEX-N-72"
-       d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z" />
+       d="m 36,46 h 14 q 39,0 47,14 v 8 q 0,9 0,23 0,14 1,31 1,17 0,39 -1,22 0,42 0,31 0,66 0,35 0,59 l -1,23 q -3,19 -14,25 -11,6 -45,9 H 20 v 23 q 0,23 2,23 l 10,1 q 10,1 28,2 18,1 36,2 16,1 35,2 19,1 29,3 10,2 11,1 h 3 v -69 q 39,68 97,68 h 6 q 45,0 66,-22 21,-22 21,-46 0,-21 -13,-36 -13,-15 -38,-15 -25,0 -37,16 -12,16 -13,34 0,9 2,16 2,7 5,12 3,5 3,5 -2,2 -23,-4 -16,-8 -24,-15 -47,-45 -47,-179 v -53 q 0,-13 0,-27 0,-14 0,-26 0,-12 1,-20 1,-8 0,-15 v -5 q 1,-2 3,-4 2,-2 5,-3 3,-1 5,-3 2,-2 7,-2 5,0 7,-1 2,-1 9,-1 7,0 9,0 2,0 10,-1 8,-1 10,0 h 31 V 0 h -9 Q 249,3 140,3 37,3 28,0 h -8 v 46 z"
+       id="MJX-138-TEX-N-72" />
     <path
-       id="MJX-138-TEX-N-31"
-       d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" />
+       d="m 213,578 -13,-5 q -14,-5 -40,-10 -26,-5 -58,-7 H 83 v 46 h 19 q 47,2 87,15 40,13 56,24 16,11 28,22 2,3 12,3 9,0 17,-6 V 361 l 1,-300 q 7,-7 12,-9 5,-2 24,-4 19,-2 62,-2 h 26 V 0 H 416 Q 395,3 257,3 121,3 100,0 H 88 v 46 h 26 q 22,0 38,0 16,0 25,1 9,1 16,3 7,2 8,2 1,0 6,5 5,5 6,4 z"
+       id="MJX-138-TEX-N-31" />
     <path
-       id="MJX-138-TEX-LO-5B"
-       d="M224 -649V1150H455V1099H275V-598H455V-649H224Z" />
+       d="m 224,-649 v 1799 h 231 v -51 H 275 V -598 h 180 v -51 z"
+       id="MJX-138-TEX-LO-5B" />
     <path
-       id="MJX-138-TEX-I-55"
-       d="M107 637Q73 637 71 641Q70 643 70 649Q70 673 81 682Q83 683 98 683Q139 681 234 681Q268 681 297 681T342 682T362 682Q378 682 378 672Q378 670 376 658Q371 641 366 638H364Q362 638 359 638T352 638T343 637T334 637Q295 636 284 634T266 623Q265 621 238 518T184 302T154 169Q152 155 152 140Q152 86 183 55T269 24Q336 24 403 69T501 205L552 406Q599 598 599 606Q599 633 535 637Q511 637 511 648Q511 650 513 660Q517 676 519 679T529 683Q532 683 561 682T645 680Q696 680 723 681T752 682Q767 682 767 672Q767 650 759 642Q756 637 737 637Q666 633 648 597Q646 592 598 404Q557 235 548 205Q515 105 433 42T263 -22Q171 -22 116 34T60 167V183Q60 201 115 421Q164 622 164 628Q164 635 107 637Z" />
+       d="m 107,637 q -34,0 -36,4 -1,2 -1,8 0,24 11,33 2,1 17,1 41,-2 136,-2 34,0 63,0 29,0 45,1 16,1 20,0 16,0 16,-10 0,-2 -2,-14 -5,-17 -10,-20 h -2 q -2,0 -5,0 -3,0 -7,0 -4,0 -9,-1 -5,-1 -9,0 -39,-1 -50,-3 -11,-2 -18,-11 -1,-2 -28,-105 -27,-103 -54,-216 -27,-113 -30,-133 -2,-14 -2,-29 0,-54 31,-85 31,-31 86,-31 67,0 134,45 67,45 98,136 l 51,201 q 47,192 47,200 0,27 -64,31 -24,0 -24,11 0,2 2,12 4,16 6,19 2,3 10,4 3,0 32,-1 29,-1 84,-2 51,0 78,1 27,1 29,1 15,0 15,-10 0,-22 -8,-30 -3,-5 -22,-5 -71,-4 -89,-40 -2,-5 -50,-193 Q 557,235 548,205 515,105 433,42 351,-21 263,-22 171,-22 116,34 61,90 60,167 v 16 q 0,18 55,238 49,201 49,207 0,7 -57,9 z"
+       id="MJX-138-TEX-I-55" />
     <path
-       id="MJX-138-TEX-I-6F"
-       d="M201 -11Q126 -11 80 38T34 156Q34 221 64 279T146 380Q222 441 301 441Q333 441 341 440Q354 437 367 433T402 417T438 387T464 338T476 268Q476 161 390 75T201 -11ZM121 120Q121 70 147 48T206 26Q250 26 289 58T351 142Q360 163 374 216T388 308Q388 352 370 375Q346 405 306 405Q243 405 195 347Q158 303 140 230T121 120Z" />
+       d="m 201,-11 q -75,0 -121,49 -46,49 -46,118 0,65 30,123 30,58 82,101 76,61 155,61 32,0 40,-1 13,-3 26,-7 13,-4 35,-16 22,-12 36,-30 14,-18 26,-49 12,-31 12,-70 0,-107 -86,-193 -86,-86 -189,-86 z m -80,131 q 0,-50 26,-72 26,-22 59,-22 44,0 83,32 39,32 62,84 9,21 23,74 14,53 14,92 0,44 -18,67 -24,30 -64,30 -63,0 -111,-58 -37,-44 -55,-117 -18,-73 -19,-110 z"
+       id="MJX-138-TEX-I-6F" />
     <path
-       id="MJX-138-TEX-I-75"
-       d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z" />
+       d="m 21,287 q 0,8 9,31 9,23 25,52 16,29 44,50 28,21 59,22 46,0 69,-25 23,-25 23,-59 0,-18 -34,-112 -34,-94 -34,-141 0,-43 14,-60 14,-17 42,-18 28,-1 53,17 25,18 37,34 l 11,17 q 2,4 38,152 30,120 36,140 6,20 14,29 17,15 36,15 17,0 25,-10 8,-10 8,-19 L 420,84 q -1,-5 -1,-16 0,-25 7,-33 7,-8 21,-9 22,3 35,31 13,28 30,88 2,8 20,8 19,0 19,-9 -1,-5 -2,-14 -1,-9 -9,-32 -8,-23 -17,-43 -9,-20 -25,-38 -16,-18 -36,-25 -8,-2 -24,-2 -66,0 -91,56 -2,-1 -11,-10 -9,-9 -18,-15 -9,-6 -22,-15 -13,-9 -29,-12 -16,-3 -34,-5 -44,0 -78,18 -52,31 -52,106 0,57 35,149 35,92 35,117 0,1 0,2 0,9 0,12 0,3 -4,7 -4,4 -11,4 h -4 Q 131,404 112,385 93,366 82,344 71,322 65,302 59,282 57,280 55,278 41,278 H 27 q -6,6 -6,9 z"
+       id="MJX-138-TEX-I-75" />
     <path
-       id="MJX-138-TEX-I-74"
-       d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z" />
+       d="m 26,385 q -7,7 -7,10 0,4 3,16 3,12 5,14 2,5 9,5 7,0 51,1 h 53 l 19,80 q 3,11 7,29 4,18 7,26 3,8 6,20 3,12 8,17 5,5 10,12 5,7 14,9 9,2 18,2 18,-1 25,-11 7,-10 7,-19 0,-7 -9,-47 -9,-40 -20,-79 l -10,-37 q 0,-2 50,-2 h 51 q 7,-7 7,-11 0,-22 -13,-35 H 210 L 174,240 Q 135,80 135,68 q 0,-42 27,-42 35,0 68,34 33,34 53,84 2,6 5,7 3,1 15,2 h 4 q 15,0 15,-8 0,-3 -3,-12 Q 314,117 301,95 288,73 267,48 246,23 216,6 186,-11 155,-11 125,-11 98,4 71,19 59,56 57,64 57,83 v 18 l 35,140 q 35,141 36,142 0,2 -51,2 z"
+       id="MJX-138-TEX-I-74" />
     <path
-       id="MJX-138-TEX-N-32"
-       d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" />
+       d="m 109,429 q -27,0 -43,18 -16,18 -16,44 0,71 53,123 53,52 132,52 91,0 152,-56 61,-56 62,-145 0,-43 -20,-82 -20,-39 -48,-68 -28,-29 -80,-74 -36,-31 -100,-92 l -59,-56 76,-1 q 157,0 167,5 7,2 24,89 v 3 h 40 v -3 Q 448,183 436,95 424,7 421,3 V 0 H 50 v 19 12 q 0,7 6,15 6,8 30,35 29,32 50,56 9,10 34,37 25,27 34,37 9,10 29,33 20,23 28,34 8,11 23,30 15,19 21,32 6,13 15,29 9,16 13,32 4,16 7,30 3,14 3,33 0,63 -34,109 -34,46 -97,46 -33,0 -58,-17 -25,-17 -35,-33 -10,-16 -10,-19 0,-1 5,-1 18,0 37,-14 19,-14 19,-46 0,-25 -16,-42 -16,-17 -45,-18 z"
+       id="MJX-138-TEX-N-32" />
     <path
-       id="MJX-138-TEX-LO-28"
-       d="M180 96T180 250T205 541T266 770T353 944T444 1069T527 1150H555Q561 1144 561 1141Q561 1137 545 1120T504 1072T447 995T386 878T330 721T288 513T272 251Q272 133 280 56Q293 -87 326 -209T399 -405T475 -531T536 -609T561 -640Q561 -643 555 -649H527Q483 -612 443 -568T353 -443T266 -270T205 -41Z" />
+       d="m 180,96 q 0,0 0,154 0,154 25,291 25,137 61,229 36,92 87,174 51,82 91,125 40,43 83,81 h 28 q 6,-6 6,-9 0,-4 -16,-21 -16,-17 -41,-48 -25,-31 -57,-77 Q 415,949 386,878 357,807 330,721 303,635 288,513 273,391 272,251 q 0,-118 8,-195 13,-143 46,-265 33,-122 73,-196 40,-74 76,-126 36,-52 61,-78 25,-26 25,-31 0,-3 -6,-9 h -28 q -44,37 -84,81 -40,44 -90,125 -50,81 -87,173 -37,92 -61,229 z"
+       id="MJX-138-TEX-LO-28" />
     <path
-       id="MJX-138-TEX-I-69"
-       d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z" />
+       d="m 184,600 q 0,24 19,42 19,18 44,19 18,0 30,-12 12,-12 13,-30 0,-23 -20,-42 -20,-19 -44,-20 -15,0 -28,10 -13,10 -14,33 z M 21,287 q 0,8 9,31 9,23 24,51 15,28 44,51 29,23 60,22 39,0 65,-23 26,-23 27,-62 0,-17 -14,-56 -14,-39 -40,-105 -26,-66 -42,-113 -5,-22 -5,-32 0,-25 17,-25 9,0 19,3 10,3 23,14 13,11 27,35 14,24 25,59 3,12 5,14 2,2 17,2 20,0 20,-10 0,-8 -9,-31 -9,-23 -25,-51 -16,-28 -45,-50 -29,-22 -62,-22 -32,0 -59,21 -27,21 -28,64 0,17 5,32 5,15 43,114 38,101 44,121 6,20 7,39 0,24 -17,24 h -2 q -30,0 -55,-33 -25,-33 -38,-84 -1,-1 -2,-3 -1,-2 -1,-3 0,-1 -2,-2 -2,-1 -3,-1 -1,0 -4,0 -3,0 -8,0 H 27 q -6,6 -6,9 z"
+       id="MJX-138-TEX-I-69" />
     <path
-       id="MJX-138-TEX-I-6E"
-       d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z" />
+       d="m 21,287 q 1,6 3,16 2,10 12,38 10,28 20,47 10,19 33,37 23,18 46,17 36,0 60,-18 24,-18 30,-34 6,-16 6,-21 0,-2 1,-2 l 11,11 q 61,64 139,64 54,0 87,-27 33,-27 34,-79 1,-52 -38,-157 -39,-105 -38,-127 0,-26 17,-26 6,0 9,1 29,5 52,38 23,33 35,80 2,8 20,8 20,0 20,-8 0,-1 -4,-15 -8,-29 -22,-57 -14,-28 -46,-56 -32,-28 -69,-27 -47,0 -68,27 -21,27 -21,56 0,19 36,120 36,101 37,152 0,59 -44,59 h -5 Q 288,404 229,303 L 222,291 189,157 Q 156,26 151,16 138,-11 108,-11 95,-11 87,-5 79,1 76,7 q -3,6 -2,10 0,13 38,163 38,150 40,163 1,5 1,23 0,39 -24,39 -38,0 -63,-100 -6,-20 -6,-21 -2,-6 -19,-6 H 27 q -6,6 -6,9 z"
+       id="MJX-138-TEX-I-6E" />
     <path
-       id="MJX-138-TEX-N-33"
-       d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z" />
+       d="m 127,463 q -27,0 -42,17 -15,17 -16,44 0,55 48,98 48,43 116,43 35,0 44,-1 74,-12 113,-53 39,-41 40,-89 0,-52 -34,-101 -34,-49 -94,-71 l -3,-2 q 0,-1 9,-3 9,-2 29,-9 20,-7 38,-21 82,-53 82,-140 0,-79 -62,-138 -62,-59 -157,-59 -80,0 -138,43 -58,43 -58,109 0,28 18,45 18,17 45,18 28,0 46,-18 18,-18 18,-45 0,-11 -3,-20 -3,-9 -7,-16 -4,-7 -11,-12 -7,-5 -12,-8 -5,-3 -10,-4 -5,-1 -8,-3 l -4,-1 q 51,-45 124,-45 55,0 83,53 17,33 17,101 v 20 q 0,95 -64,127 -15,6 -61,7 l -42,1 -3,2 q -2,3 -2,16 0,18 8,18 28,0 58,5 34,5 62,42 28,37 28,112 v 8 q 0,57 -35,79 -22,14 -47,14 -32,0 -59,-11 -27,-11 -38,-23 -11,-12 -11,-12 h 3 q 3,-1 8,-2 5,-1 10,-5 5,-4 12,-7 7,-3 10,-11 3,-8 8,-15 5,-7 3,-20 0,-22 -14,-39 -14,-17 -45,-18 z"
+       id="MJX-138-TEX-N-33" />
     <path
-       id="MJX-138-TEX-N-28"
-       d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z" />
+       d="m 94,250 q 0,69 10,131 10,62 23,107 13,45 37,88 24,43 38,67 14,24 42,52 28,28 33,34 5,6 25,21 h 13 4 q 14,0 14,-9 0,-3 -17,-21 -17,-18 -41,-53 -24,-35 -49,-86 -25,-51 -42,-138 -17,-87 -17,-193 0,-106 17,-192 17,-86 41,-139 24,-53 49,-86 25,-33 42,-53 17,-20 17,-21 0,-9 -15,-9 h -3 -13 l -28,24 Q 180,-141 137,-14 94,113 94,250 Z"
+       id="MJX-138-TEX-N-28" />
     <path
-       id="MJX-138-TEX-I-3C1"
-       d="M58 -216Q25 -216 23 -186Q23 -176 73 26T127 234Q143 289 182 341Q252 427 341 441Q343 441 349 441T359 442Q432 442 471 394T510 276Q510 219 486 165T425 74T345 13T266 -10H255H248Q197 -10 165 35L160 41L133 -71Q108 -168 104 -181T92 -202Q76 -216 58 -216ZM424 322Q424 359 407 382T357 405Q322 405 287 376T231 300Q217 269 193 170L176 102Q193 26 260 26Q298 26 334 62Q367 92 389 158T418 266T424 322Z" />
+       d="m 58,-216 q -33,0 -35,30 0,10 50,212 50,202 54,208 16,55 55,107 70,86 159,100 2,0 8,0 6,0 10,1 73,0 112,-48 39,-48 39,-118 0,-57 -24,-111 Q 462,111 425,74 388,37 345,13 302,-11 266,-10 h -11 -7 q -51,0 -83,45 l -5,6 -27,-112 q -25,-97 -29,-110 -4,-13 -12,-21 -16,-14 -34,-14 z m 366,538 q 0,37 -17,60 -17,23 -50,23 -35,0 -70,-29 -35,-29 -56,-76 -14,-31 -38,-130 l -17,-68 q 17,-76 84,-76 38,0 74,36 33,30 55,96 22,66 29,108 7,42 6,56 z"
+       id="MJX-138-TEX-I-3C1" />
     <path
-       id="MJX-138-TEX-N-2297"
-       d="M56 250Q56 394 156 488T384 583Q530 583 626 485T722 250Q722 110 625 14T390 -83Q249 -83 153 14T56 250ZM582 471Q531 510 496 523Q446 542 381 542Q324 542 272 519T196 471L389 278L485 375L582 471ZM167 442Q95 362 95 250Q95 137 167 58L359 250L167 442ZM610 58Q682 138 682 250Q682 363 610 442L418 250L610 58ZM196 29Q209 16 230 2T295 -27T388 -42Q409 -42 429 -40T465 -33T496 -23T522 -11T544 1T561 13T574 22T582 29L388 222L196 29Z" />
+       d="m 56,250 q 0,144 100,238 100,94 228,95 146,0 242,-98 96,-98 96,-235 Q 722,110 625,14 528,-82 390,-83 249,-83 153,14 57,111 56,250 Z m 526,221 q -51,39 -86,52 -50,19 -115,19 -57,0 -109,-23 -52,-23 -76,-48 l 193,-193 96,97 z M 167,442 Q 95,362 95,250 95,137 167,58 L 359,250 Z M 610,58 q 72,80 72,192 0,113 -72,192 L 418,250 Z M 196,29 q 13,-13 34,-27 21,-14 65,-29 44,-15 93,-15 21,0 41,2 20,2 36,7 16,5 31,10 15,5 26,12 11,7 22,12 11,5 17,12 6,7 13,9 7,2 8,7 L 388,222 Z"
+       id="MJX-138-TEX-N-2297" />
     <path
-       id="MJX-138-TEX-N-7C"
-       d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z" />
+       d="m 139,-249 h -2 q -12,0 -18,14 v 486 l 1,486 q 10,13 19,13 13,0 20,-15 v -970 q -8,-14 -18,-14 z"
+       id="MJX-138-TEX-N-7C" />
     <path
-       id="MJX-138-TEX-N-30"
-       d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" />
+       d="m 96,585 q 56,81 153,81 48,0 96,-26 48,-26 78,-92 37,-83 37,-228 0,-155 -43,-237 -20,-42 -55,-67 -35,-25 -61,-31 -26,-6 -51,-7 -26,0 -52,6 -26,6 -61,32 -35,26 -55,67 -43,82 -43,237 0,174 57,265 z m 225,12 q -30,32 -71,32 -42,0 -72,-32 -25,-26 -33,-72 -8,-46 -8,-192 0,-158 8,-208 8,-50 36,-79 28,-30 69,-30 40,0 68,30 29,30 36,84 7,54 8,203 0,145 -8,191 -8,46 -33,73 z"
+       id="MJX-138-TEX-N-30" />
     <path
-       id="MJX-138-TEX-N-27E9"
-       d="M55 732Q56 739 61 744T75 750Q85 750 92 740Q95 733 186 494T278 250T187 6T92 -240Q85 -250 75 -250Q67 -250 62 -245T55 -232Q55 -227 145 11Q236 248 236 250T145 489Q55 727 55 732Z" />
+       d="m 55,732 q 1,7 6,12 5,5 14,6 10,0 17,-10 3,-7 94,-246 91,-239 92,-244 1,-5 -91,-244 -92,-239 -95,-246 -7,-10 -17,-10 -8,0 -13,5 -5,5 -7,13 0,5 90,243 91,237 91,239 0,2 -91,239 -90,238 -90,243 z"
+       id="MJX-138-TEX-N-27E9" />
     <path
-       id="MJX-138-TEX-N-27E8"
-       d="M333 -232Q332 -239 327 -244T313 -250Q303 -250 296 -240Q293 -233 202 6T110 250T201 494T296 740Q299 745 306 749L309 750Q312 750 313 750Q331 750 333 732Q333 727 243 489Q152 252 152 250T243 11Q333 -227 333 -232Z" />
+       d="m 333,-232 q -1,-7 -6,-12 -5,-5 -14,-6 -10,0 -17,10 -3,7 -94,246 -91,239 -92,244 -1,5 91,244 92,239 95,246 3,5 10,9 l 3,1 q 3,0 4,0 18,0 20,-18 0,-5 -90,-243 -91,-237 -91,-239 0,-2 91,-239 90,-238 90,-243 z"
+       id="MJX-138-TEX-N-27E8" />
     <path
-       id="MJX-138-TEX-N-29"
-       d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z" />
+       d="m 60,749 4,1 q 5,0 10,0 h 12 l 28,-24 q 94,-85 137,-212 43,-127 43,-264 0,-68 -10,-131 -10,-63 -23,-107 -13,-44 -37,-88 -24,-44 -38,-67 -14,-23 -41,-51 -27,-28 -32,-33 -5,-5 -23,-19 -3,-3 -4,-4 H 74 q -8,0 -11,0 -3,0 -5,3 -2,3 -3,9 1,1 11,13 155,161 155,475 0,314 -155,475 -10,12 -11,13 0,8 5,11 z"
+       id="MJX-138-TEX-N-29" />
     <path
-       id="MJX-138-TEX-N-2020"
-       d="M182 675Q195 705 222 705Q234 705 243 700T253 691T263 675L262 655Q262 620 252 549T240 454V449Q250 451 288 461T346 472T377 461T389 431Q389 417 379 404T346 390Q327 390 288 401T243 412H240V405Q245 367 250 339T258 301T261 274T263 225Q263 124 255 -41T239 -213Q236 -216 222 -216H217Q206 -216 204 -212T200 -186Q199 -175 199 -168Q181 38 181 225Q181 265 182 280T191 327T204 405V412H201Q196 412 157 401T98 390Q76 390 66 403T55 431T65 458T98 472Q116 472 155 462T205 449Q204 452 204 460T201 490T193 547Q182 619 182 655V675Z" />
+       d="m 182,675 q 13,30 40,30 12,0 21,-5 9,-5 10,-9 1,-4 10,-16 l -1,-20 q 0,-35 -10,-106 -10,-71 -12,-95 v -5 q 10,2 48,12 38,10 58,11 20,1 31,-11 11,-12 12,-30 0,-14 -10,-27 -10,-13 -33,-14 -19,0 -58,11 -39,11 -45,11 h -3 v -7 q 5,-38 10,-66 5,-28 8,-38 3,-10 3,-27 0,-17 2,-49 0,-101 -8,-266 -8,-165 -16,-172 -3,-3 -17,-3 h -5 q -11,0 -13,4 -2,4 -4,26 -1,11 -1,18 -18,206 -18,393 0,40 1,55 1,15 9,47 8,32 13,78 v 7 h -3 q -5,0 -44,-11 -39,-11 -59,-11 -22,0 -32,13 -10,13 -11,28 -1,15 10,27 11,12 33,14 18,0 57,-10 39,-10 50,-13 -1,3 -1,11 0,8 -3,30 -3,22 -8,57 -11,72 -11,108 z"
+       id="MJX-138-TEX-N-2020" />
     <path
-       id="MJX-138-TEX-LO-5D"
-       d="M16 1099V1150H247V-649H16V-598H196V1099H16Z" />
+       d="m 16,1099 v 51 H 247 V -649 H 16 v 51 h 180 v 1697 z"
+       id="MJX-138-TEX-LO-5D" />
     <path
-       id="MJX-138-TEX-LO-29"
-       d="M35 1138Q35 1150 51 1150H56H69Q113 1113 153 1069T243 944T330 771T391 541T416 250T391 -40T330 -270T243 -443T152 -568T69 -649H56Q43 -649 39 -647T35 -637Q65 -607 110 -548Q283 -316 316 56Q324 133 324 251Q324 368 316 445Q278 877 48 1123Q36 1137 35 1138Z" />
+       d="m 35,1138 q 0,12 16,12 h 5 13 q 44,-37 84,-81 40,-44 90,-125 50,-81 87,-173 37,-92 61,-230 24,-138 25,-291 1,-153 -25,-290 -26,-137 -61,-230 -35,-93 -87,-173 -52,-80 -91,-125 -39,-45 -83,-81 H 56 q -13,0 -17,2 -4,2 -4,10 30,30 75,89 173,232 206,604 8,77 8,195 0,117 -8,194 -38,432 -268,678 -12,14 -13,15 z"
+       id="MJX-138-TEX-LO-29" />
     <path
-       id="MJX-138-TEX-N-3D"
-       d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z" />
+       d="m 56,347 q 0,13 14,20 h 637 q 15,-8 15,-20 0,-11 -14,-19 L 390,327 H 72 q -16,5 -16,20 z m 0,-194 q 0,15 16,20 h 636 q 14,-10 14,-20 0,-13 -15,-20 H 70 q -14,7 -14,20 z"
+       id="MJX-138-TEX-N-3D" />
   </defs>
   <sodipodi:namedview
-     inkscape:window-maximized="1"
-     inkscape:window-y="-11"
-     inkscape:window-x="-11"
-     inkscape:window-height="986"
-     inkscape:window-width="1920"
-     inkscape:snap-global="false"
-     inkscape:snap-center="true"
-     inkscape:guide-bbox="true"
-     showguides="false"
-     showgrid="false"
-     inkscape:document-rotation="0"
-     inkscape:current-layer="g2460-0"
-     inkscape:document-units="mm"
-     inkscape:cy="335.31948"
-     inkscape:cx="390.80488"
-     inkscape:zoom="1.4"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     borderopacity="1.0"
-     bordercolor="#666666"
+     fit-margin-bottom="3"
+     fit-margin-right="3"
+     fit-margin-left="3"
+     lock-margins="true"
+     fit-margin-top="3"
+     id="base"
      pagecolor="#ffffff"
-     id="base">
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="367.28906"
+     inkscape:cy="168.16073"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g2460-0"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:snap-center="true"
+     inkscape:snap-global="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1">
     <sodipodi:guide
-       id="guide833"
+       position="-3.8164693,76.611945"
        orientation="0,-1"
-       position="2.4054257,246.48607" />
+       id="guide833" />
     <sodipodi:guide
-       id="guide835"
+       position="-6.4891646,52.557684"
        orientation="0,-1"
-       position="-0.26726952,222.43181" />
+       id="guide835" />
     <sodipodi:guide
-       id="guide837"
+       position="-6.7564341,26.899803"
        orientation="0,-1"
-       position="-0.53453904,196.77393" />
+       id="guide837" />
     <sodipodi:guide
-       id="guide839"
+       position="43.757508,76.611955"
        orientation="1,0"
-       position="49.979401,246.48608" />
+       id="guide839" />
     <sodipodi:guide
-       id="guide841"
+       position="94.271449,76.611955"
        orientation="1,0"
-       position="100.49334,246.48608" />
+       id="guide841" />
     <sodipodi:guide
-       id="guide843"
+       position="-22.525337,89.440876"
        orientation="0,-1"
-       position="-16.303441,259.315" />
+       id="guide843" />
     <sodipodi:guide
-       id="guide845"
+       position="-11.567286,64.852085"
        orientation="0,-1"
-       position="-5.3453904,234.72621" />
+       id="guide845" />
     <sodipodi:guide
-       id="guide847"
+       position="4.2016163,39.728744"
        orientation="0,-1"
-       position="10.423511,209.60287" />
+       id="guide847" />
     <sodipodi:guide
-       id="guide849"
+       position="7.1415815,14.872673"
        orientation="0,-1"
-       position="13.363476,184.7468" />
+       id="guide849" />
     <sodipodi:guide
-       id="guide949"
+       position="143.64567,71.941355"
        orientation="1,0"
-       position="149.86756,241.81548" />
+       id="guide949" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -170,1593 +175,1544 @@
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1"
+     transform="translate(-6.2218948,-37.108867)"
+     inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1">
+     id="layer1">
     <path
-       style="fill:none;stroke:#751631;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.46000001, 0.36499999999999999;stroke-dashoffset:0;stroke-opacity:1"
+       id="path927-5"
        d="m 151.00729,87.397119 -50.51394,-36.8832"
-       id="path927-5" />
+       style="fill:none;stroke:#751631;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.46, 0.365;stroke-dashoffset:0;stroke-opacity:1" />
     <path
-       style="fill:none;stroke:#751631;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.46000001, 0.36499999999999999;stroke-dashoffset:0;stroke-opacity:1"
+       id="path929-8"
        d="m 100.49335,74.568179 50.51394,12.82894 -50.51394,12.828941"
-       id="path929-8" />
+       style="fill:none;stroke:#751631;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.46, 0.365;stroke-dashoffset:0;stroke-opacity:1" />
     <path
-       id="path925"
+       style="fill:none;stroke:#91287c;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.6, 0.3;stroke-dashoffset:0;stroke-opacity:1"
        d="m 49.979399,62.27379 50.513941,37.95228"
-       style="fill:none;stroke:#91287c;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:3.6, 0.29999999999999999;stroke-dashoffset:0" />
+       id="path925" />
     <path
-       id="path1003"
+       style="fill:none;stroke:#91287c;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.6, 0.3;stroke-dashoffset:0;stroke-opacity:1"
        d="M 100.49335,100.22606 49.979399,87.397131"
-       style="fill:none;stroke:#91287c;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:3.6, 0.29999999999999999;stroke-dashoffset:0" />
+       id="path1003" />
     <path
-       id="path923"
+       style="fill:none;stroke:#315db3;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.38, 0.365;stroke-dashoffset:0;stroke-opacity:1"
        d="M 49.979399,62.27379 100.49334,74.568189"
-       style="fill:none;stroke:#315db3;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:4.38000003,0.365;stroke-dashoffset:0" />
+       id="path923" />
     <path
-       id="path1001"
+       style="fill:none;stroke:#315db3;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.38, 0.365;stroke-dashoffset:0;stroke-opacity:1"
        d="M 49.979399,87.397131 100.49334,74.568189"
-       style="fill:none;stroke:#315db3;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:4.38,0.365;stroke-dashoffset:0" />
+       id="path1001" />
     <path
-       id="path927"
+       style="fill:#000000;stroke:#000000;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 49.979399,87.397129 50.513941,-36.8832"
-       style="fill:#000000;stroke:#000000;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
+       id="path927" />
     <path
-       style="fill:none;stroke:#1ab59f;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:2.19,0.365;stroke-dashoffset:0"
+       id="path921-6"
        d="M 151.00729,62.273779 100.49335,50.513919"
-       id="path921-6" />
+       style="fill:none;stroke:#1ab59f;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.19, 0.365;stroke-dashoffset:0;stroke-opacity:1" />
     <path
-       style="fill:none;stroke:#1ab59f;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:2.19,0.365;stroke-dashoffset:0"
+       id="path923-2"
        d="m 151.00729,62.273779 -50.51394,12.2944"
-       id="path923-2" />
+       style="fill:none;stroke:#1ab59f;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.19, 0.365;stroke-dashoffset:0;stroke-opacity:1" />
     <path
-       style="fill:none;stroke:#1ab59f;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:2.19,0.365;stroke-dashoffset:0"
+       id="path925-8"
        d="M 151.00729,62.273779 100.49335,100.22606"
-       id="path925-8" />
+       style="fill:none;stroke:#1ab59f;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.19, 0.365;stroke-dashoffset:0;stroke-opacity:1" />
+    <circle
+       r="4.3595834"
+       cy="62.273792"
+       cx="49.979401"
+       id="path851-7"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.198457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 49.979399,62.27379 100.49334,50.513929"
+       id="path921" />
+    <circle
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#636363;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.198457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path851-7-4"
+       cx="100.49334"
+       cy="100.22607"
+       r="4.3595834" />
+    <circle
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#636363;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.198457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path851-7-9"
+       cx="100.49334"
+       cy="74.568192"
+       r="4.3595834" />
+    <circle
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#636363;fill-opacity:1;fill-rule:evenodd;stroke:#696969;stroke-width:0.198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path851-7-3"
+       cx="100.49334"
+       cy="50.513931"
+       r="4.3595834" />
     <circle
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.198457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-       id="path851-7"
-       cx="49.979401"
-       cy="62.273792"
-       r="4.3595834" />
-    <path
-       id="path921"
-       d="M 49.979399,62.27379 100.49334,50.513929"
-       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <circle
-       r="4.3595834"
-       cy="100.22607"
-       cx="100.49334"
-       id="path851-7-4"
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#636363;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.198457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
-    <circle
-       r="4.3595834"
-       cy="74.568192"
-       cx="100.49334"
-       id="path851-7-9"
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#636363;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.198457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
-    <circle
-       r="4.3595834"
-       cy="50.513931"
-       cx="100.49334"
-       id="path851-7-3"
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#636363;fill-opacity:1;fill-rule:evenodd;stroke:#696969;stroke-width:0.198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
-    <circle
-       r="4.3595834"
-       cy="87.397133"
-       cx="49.979401"
        id="path851-7-8"
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.198457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
-    <circle
-       transform="scale(-1,1)"
-       r="4.3595834"
-       cy="62.273788"
-       cx="-151.00726"
-       id="path851-7-55"
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#a2a2a2;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.198457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
-    <circle
-       transform="scale(-1,1)"
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#a2a2a2;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.198457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-       id="path851-7-8-68"
-       cx="-151.00726"
+       cx="49.979401"
        cy="87.397133"
        r="4.3595834" />
+    <circle
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#a2a2a2;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.198457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path851-7-55"
+       cx="-151.00726"
+       cy="62.273788"
+       r="4.3595834"
+       transform="scale(-1,1)" />
+    <circle
+       r="4.3595834"
+       cy="87.397133"
+       cx="-151.00726"
+       id="path851-7-8-68"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#a2a2a2;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.198457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       transform="scale(-1,1)" />
     <g
-       style="fill:#000000;stroke:#000000;stroke-width:0"
-       id="g2464"
+       transform="matrix(0.00478868,0,0,-0.00478868,11.166169,121.01802)"
        data-mml-node="math"
-       transform="matrix(0.00478868,0,0,-0.00478868,11.166169,121.01802)">
+       id="g2464"
+       style="fill:#000000;stroke:#000000;stroke-width:0">
       <g
-         transform="translate(-442.01464)"
-         style="fill:#636363;fill-opacity:1"
+         data-mml-node="msub"
          id="g2050"
-         data-mml-node="msub">
+         style="fill:#636363;fill-opacity:1"
+         transform="translate(-442.01464)">
         <g
-           style="fill:#636363;fill-opacity:1"
+           data-mml-node="mtext"
            id="g2042"
-           data-mml-node="mtext">
+           style="fill:#636363;fill-opacity:1">
           <use
-             style="fill:#636363;fill-opacity:1"
-             height="100%"
-             width="100%"
-             y="0"
-             x="0"
+             xlink:href="#MJX-138-TEX-N-54"
              id="use2038"
-             xlink:href="#MJX-138-TEX-N-54" />
-          <use
-             style="fill:#636363;fill-opacity:1"
-             height="100%"
-             width="100%"
-             y="0"
              x="0"
-             id="use2040"
+             y="0"
+             width="100%"
+             height="100%"
+             style="fill:#636363;fill-opacity:1" />
+          <use
+             xlink:href="#MJX-138-TEX-N-72"
              transform="translate(722)"
-             xlink:href="#MJX-138-TEX-N-72" />
+             id="use2040"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="fill:#636363;fill-opacity:1" />
         </g>
       </g>
       <g
-         id="g2438"
+         data-mml-node="mrow"
          transform="translate(1517.6)"
-         data-mml-node="mrow">
+         id="g2438">
         <g
-           style="fill:#636363;fill-opacity:1"
+           data-mml-node="mo"
            id="g2054"
-           data-mml-node="mo">
+           style="fill:#636363;fill-opacity:1">
           <use
-             style="fill:#636363;fill-opacity:1"
-             height="100%"
-             width="100%"
-             y="0"
-             x="0"
+             xlink:href="#MJX-138-TEX-LO-5B"
              id="use2052"
-             xlink:href="#MJX-138-TEX-LO-5B" />
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="fill:#636363;fill-opacity:1" />
         </g>
         <g
-           style="fill:#751631;fill-opacity:0.93725491"
-           id="g2078"
+           data-mml-node="msubsup"
            transform="translate(472)"
-           data-mml-node="msubsup">
+           id="g2078"
+           style="fill:#751631;fill-opacity:0.937255">
           <g
-             style="fill:#751631;fill-opacity:0.93725491"
-             id="g2058"
-             data-mml-node="mi">
-            <use
-               style="fill:#751631;fill-opacity:0.93725491"
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use2056"
-               xlink:href="#MJX-138-TEX-I-55" />
-          </g>
-          <g
-             style="fill:#751631;fill-opacity:0.93725491"
-             id="g2072"
-             transform="matrix(0.707,0,0,0.707,833.8,413)"
-             data-mml-node="TeXAtom">
-            <g
-               style="fill:#751631;fill-opacity:0.93725491"
-               id="g2062"
-               data-mml-node="mi">
-              <use
-                 style="fill:#751631;fill-opacity:0.93725491"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2060"
-                 xlink:href="#MJX-138-TEX-I-6F" />
-            </g>
-            <g
-               style="fill:#751631;fill-opacity:0.93725491"
-               id="g2066"
-               transform="translate(485)"
-               data-mml-node="mi">
-              <use
-                 style="fill:#751631;fill-opacity:0.93725491"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2064"
-                 xlink:href="#MJX-138-TEX-I-75" />
-            </g>
-            <g
-               style="fill:#751631;fill-opacity:0.93725491"
-               id="g2070"
-               transform="translate(1057)"
-               data-mml-node="mi">
-              <use
-                 style="fill:#751631;fill-opacity:0.93725491"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2068"
-                 xlink:href="#MJX-138-TEX-I-74" />
-            </g>
-          </g>
-          <g
-             style="fill:#751631;fill-opacity:0.93725491"
-             id="g2076"
-             transform="matrix(0.707,0,0,0.707,683,-247)"
-             data-mml-node="mn">
-            <use
-               style="fill:#751631;fill-opacity:0.93725491"
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use2074"
-               xlink:href="#MJX-138-TEX-N-32" />
-          </g>
-        </g>
-        <g
-           style="fill:#1ab59f;fill-opacity:1"
-           id="g2102"
-           transform="translate(2358.5)"
-           data-mml-node="msubsup">
-          <g
-             style="fill:#1ab59f;fill-opacity:1"
-             id="g2082"
-             data-mml-node="mi">
-            <use
-               style="fill:#1ab59f;fill-opacity:1"
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use2080"
-               xlink:href="#MJX-138-TEX-I-55" />
-          </g>
-          <g
-             style="fill:#1ab59f;fill-opacity:1"
-             id="g2096"
-             transform="matrix(0.707,0,0,0.707,833.8,413)"
-             data-mml-node="TeXAtom">
-            <g
-               style="fill:#1ab59f;fill-opacity:1"
-               id="g2086"
-               data-mml-node="mi">
-              <use
-                 style="fill:#1ab59f;fill-opacity:1"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2084"
-                 xlink:href="#MJX-138-TEX-I-6F" />
-            </g>
-            <g
-               style="fill:#1ab59f;fill-opacity:1"
-               id="g2090"
-               transform="translate(485)"
-               data-mml-node="mi">
-              <use
-                 style="fill:#1ab59f;fill-opacity:1"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2088"
-                 xlink:href="#MJX-138-TEX-I-75" />
-            </g>
-            <g
-               style="fill:#1ab59f;fill-opacity:1"
-               id="g2094"
-               transform="translate(1057)"
-               data-mml-node="mi">
-              <use
-                 style="fill:#1ab59f;fill-opacity:1"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2092"
-                 xlink:href="#MJX-138-TEX-I-74" />
-            </g>
-          </g>
-          <g
-             style="fill:#1ab59f;fill-opacity:1"
-             id="g2100"
-             transform="matrix(0.707,0,0,0.707,683,-247)"
-             data-mml-node="mn">
-            <use
-               style="fill:#1ab59f;fill-opacity:1"
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use2098"
-               xlink:href="#MJX-138-TEX-N-31" />
-          </g>
-        </g>
-        <g
-           id="g2376"
-           transform="translate(4245)"
-           data-mml-node="mrow">
-          <g
-             id="g2106"
-             data-mml-node="mo">
-            <use
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use2104"
-               xlink:href="#MJX-138-TEX-LO-28" />
-          </g>
-          <g
-             id="g2124"
-             transform="translate(597)"
-             data-mml-node="msub">
-            <g
-               id="g2112"
-               data-mml-node="mtext">
-              <use
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2108"
-                 xlink:href="#MJX-138-TEX-N-54" />
-              <use
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2110"
-                 transform="translate(722)"
-                 xlink:href="#MJX-138-TEX-N-72" />
-            </g>
-            <g
-               id="g2122"
-               transform="matrix(0.707,0,0,0.707,1114,-150)"
-               data-mml-node="TeXAtom">
-              <g
-                 id="g2116"
-                 data-mml-node="mi">
-                <use
-                   height="100%"
-                   width="100%"
-                   y="0"
-                   x="0"
-                   id="use2114"
-                   xlink:href="#MJX-138-TEX-I-69" />
-              </g>
-              <g
-                 id="g2120"
-                 transform="translate(345)"
-                 data-mml-node="mi">
-                <use
-                   height="100%"
-                   width="100%"
-                   y="0"
-                   x="0"
-                   id="use2118"
-                   xlink:href="#MJX-138-TEX-I-6E" />
-              </g>
-            </g>
-          </g>
-          <g
-             id="g2370"
-             transform="translate(2429.2)"
-             data-mml-node="mrow">
-            <g
-               style="fill:#000000;fill-opacity:0.92156863"
-               id="g2128"
-               data-mml-node="mo">
-              <use
-                 style="fill:#000000;fill-opacity:0.92156863"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2126"
-                 xlink:href="#MJX-138-TEX-LO-5B" />
-            </g>
-            <g
-               style="fill:#91287c;fill-opacity:0.92156863"
-               id="g2152"
-               transform="translate(472)"
-               data-mml-node="msubsup">
-              <g
-                 style="fill:#91287c;fill-opacity:0.92156863"
-                 id="g2132"
-                 data-mml-node="mi">
-                <use
-                   style="fill:#91287c;fill-opacity:0.92156863"
-                   height="100%"
-                   width="100%"
-                   y="0"
-                   x="0"
-                   id="use2130"
-                   xlink:href="#MJX-138-TEX-I-55" />
-              </g>
-              <g
-                 style="fill:#91287c;fill-opacity:0.92156863"
-                 id="g2146"
-                 transform="matrix(0.707,0,0,0.707,833.8,413)"
-                 data-mml-node="TeXAtom">
-                <g
-                   style="fill:#91287c;fill-opacity:0.92156863"
-                   id="g2136"
-                   data-mml-node="mi">
-                  <use
-                     style="fill:#91287c;fill-opacity:0.92156863"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2134"
-                     xlink:href="#MJX-138-TEX-I-69" />
-                </g>
-                <g
-                   style="fill:#91287c;fill-opacity:0.92156863"
-                   id="g2140"
-                   transform="translate(345)"
-                   data-mml-node="mi">
-                  <use
-                     style="fill:#91287c;fill-opacity:0.92156863"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2138"
-                     xlink:href="#MJX-138-TEX-I-6E" />
-                </g>
-                <g
-                   style="fill:#91287c;fill-opacity:0.92156863"
-                   id="g2144"
-                   transform="translate(945)"
-                   data-mml-node="mi">
-                  <use
-                     style="fill:#91287c;fill-opacity:0.92156863"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2142"
-                     xlink:href="#MJX-138-TEX-I-74" />
-                </g>
-              </g>
-              <g
-                 style="fill:#91287c;fill-opacity:0.92156863"
-                 id="g2150"
-                 transform="matrix(0.707,0,0,0.707,683,-247)"
-                 data-mml-node="mn">
-                <use
-                   style="fill:#91287c;fill-opacity:0.92156863"
-                   height="100%"
-                   width="100%"
-                   y="0"
-                   x="0"
-                   id="use2148"
-                   xlink:href="#MJX-138-TEX-N-33" />
-              </g>
-              <g
-                 data-mml-node="TeXAtom"
-                 transform="matrix(0.70700021,0,0,0.70700021,-7985.8065,-277.13378)"
-                 id="g2146-1"
-                 style="fill:#636363;fill-opacity:1;stroke:#000000;stroke-width:0">
-                <g
-                   data-mml-node="mi"
-                   id="g2136-0"
-                   style="fill:#636363;fill-opacity:1">
-                  <use
-                     xlink:href="#MJX-138-TEX-I-69"
-                     id="use2134-7"
-                     x="0"
-                     y="0"
-                     width="100%"
-                     height="100%"
-                     style="fill:#636363;fill-opacity:1" />
-                </g>
-                <g
-                   data-mml-node="mi"
-                   transform="translate(345)"
-                   id="g2140-8"
-                   style="fill:#636363;fill-opacity:1">
-                  <use
-                     xlink:href="#MJX-138-TEX-I-6E"
-                     id="use2138-7"
-                     x="0"
-                     y="0"
-                     width="100%"
-                     height="100%"
-                     style="fill:#636363;fill-opacity:1" />
-                </g>
-                <g
-                   data-mml-node="mi"
-                   transform="translate(945)"
-                   id="g2144-2"
-                   style="fill:#636363;fill-opacity:1">
-                  <use
-                     xlink:href="#MJX-138-TEX-I-74"
-                     id="use2142-1"
-                     x="0"
-                     y="0"
-                     width="100%"
-                     height="100%"
-                     style="fill:#636363;fill-opacity:1" />
-                </g>
-              </g>
-              <g
-                 data-mml-node="TeXAtom"
-                 transform="matrix(1.1476049,0,0,1.1476049,9256.4632,16137.353)"
-                 id="g2146-8"
-                 style="fill:#636363;fill-opacity:1;stroke:#000000;stroke-width:0">
-                <g
-                   data-mml-node="mi"
-                   id="g2136-1"
-                   style="fill:#636363;fill-opacity:1">
-                  <use
-                     xlink:href="#MJX-138-TEX-I-69"
-                     id="use2134-4"
-                     x="0"
-                     y="0"
-                     width="100%"
-                     height="100%"
-                     style="fill:#636363;fill-opacity:1" />
-                </g>
-                <g
-                   data-mml-node="mi"
-                   transform="translate(345)"
-                   id="g2140-5"
-                   style="fill:#636363;fill-opacity:1">
-                  <use
-                     xlink:href="#MJX-138-TEX-I-6E"
-                     id="use2138-1"
-                     x="0"
-                     y="0"
-                     width="100%"
-                     height="100%"
-                     style="fill:#636363;fill-opacity:1" />
-                </g>
-                <g
-                   data-mml-node="mi"
-                   transform="translate(945)"
-                   id="g2144-6"
-                   style="fill:#636363;fill-opacity:1">
-                  <use
-                     xlink:href="#MJX-138-TEX-I-74"
-                     id="use2142-5"
-                     x="0"
-                     y="0"
-                     width="100%"
-                     height="100%"
-                     style="fill:#636363;fill-opacity:1" />
-                </g>
-              </g>
-            </g>
-            <g
-               style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-               id="g2176"
-               transform="translate(2279.3)"
-               data-mml-node="msubsup">
-              <g
-                 style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                 id="g2156"
-                 data-mml-node="mi">
-                <use
-                   style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                   height="100%"
-                   width="100%"
-                   y="0"
-                   x="0"
-                   id="use2154"
-                   xlink:href="#MJX-138-TEX-I-55" />
-              </g>
-              <g
-                 style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                 id="g2170"
-                 transform="matrix(0.707,0,0,0.707,833.8,413)"
-                 data-mml-node="TeXAtom">
-                <g
-                   style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                   id="g2160"
-                   data-mml-node="mi">
-                  <use
-                     style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2158"
-                     xlink:href="#MJX-138-TEX-I-69" />
-                </g>
-                <g
-                   style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                   id="g2164"
-                   transform="translate(345)"
-                   data-mml-node="mi">
-                  <use
-                     style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2162"
-                     xlink:href="#MJX-138-TEX-I-6E" />
-                </g>
-                <g
-                   style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                   id="g2168"
-                   transform="translate(945)"
-                   data-mml-node="mi">
-                  <use
-                     style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2166"
-                     xlink:href="#MJX-138-TEX-I-74" />
-                </g>
-              </g>
-              <g
-                 style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                 id="g2174"
-                 transform="matrix(0.707,0,0,0.707,683,-247)"
-                 data-mml-node="mn">
-                <use
-                   style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                   height="100%"
-                   width="100%"
-                   y="0"
-                   x="0"
-                   id="use2172"
-                   xlink:href="#MJX-138-TEX-N-32" />
-              </g>
-            </g>
-            <g
-               id="g2200"
-               transform="translate(4086.6)"
-               data-mml-node="msubsup">
-              <g
-                 id="g2180"
-                 data-mml-node="mi">
-                <use
-                   height="100%"
-                   width="100%"
-                   y="0"
-                   x="0"
-                   id="use2178"
-                   xlink:href="#MJX-138-TEX-I-55" />
-              </g>
-              <g
-                 id="g2194"
-                 transform="matrix(0.707,0,0,0.707,833.8,413)"
-                 data-mml-node="TeXAtom">
-                <g
-                   id="g2184"
-                   data-mml-node="mi">
-                  <use
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2182"
-                     xlink:href="#MJX-138-TEX-I-69" />
-                </g>
-                <g
-                   id="g2188"
-                   transform="translate(345)"
-                   data-mml-node="mi">
-                  <use
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2186"
-                     xlink:href="#MJX-138-TEX-I-6E" />
-                </g>
-                <g
-                   id="g2192"
-                   transform="translate(945)"
-                   data-mml-node="mi">
-                  <use
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2190"
-                     xlink:href="#MJX-138-TEX-I-74" />
-                </g>
-              </g>
-              <g
-                 id="g2198"
-                 transform="matrix(0.707,0,0,0.707,683,-247)"
-                 data-mml-node="mn">
-                <use
-                   height="100%"
-                   width="100%"
-                   y="0"
-                   x="0"
-                   id="use2196"
-                   xlink:href="#MJX-138-TEX-N-31" />
-              </g>
-            </g>
-            <g
-               id="g2204"
-               transform="translate(5893.8)"
-               data-mml-node="mo">
-              <use
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2202"
-                 xlink:href="#MJX-138-TEX-N-28" />
-            </g>
-            <g
-               id="g2220"
-               transform="translate(6282.8)"
-               data-mml-node="msub">
-              <g
-                 id="g2208"
-                 data-mml-node="mi">
-                <use
-                   height="100%"
-                   width="100%"
-                   y="0"
-                   x="0"
-                   id="use2206"
-                   xlink:href="#MJX-138-TEX-I-3C1" />
-              </g>
-              <g
-                 id="g2218"
-                 transform="matrix(0.707,0,0,0.707,517,-150)"
-                 data-mml-node="TeXAtom">
-                <g
-                   id="g2212"
-                   data-mml-node="mi">
-                  <use
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2210"
-                     xlink:href="#MJX-138-TEX-I-69" />
-                </g>
-                <g
-                   id="g2216"
-                   transform="translate(345)"
-                   data-mml-node="mi">
-                  <use
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2214"
-                     xlink:href="#MJX-138-TEX-I-6E" />
-                </g>
-              </g>
-              <g
-                 style="fill:#000000;stroke:#000000;stroke-width:0"
-                 data-mml-node="TeXAtom"
-                 transform="matrix(1.4117429,0,0,1.4117429,-7173.619,15696.319)"
-                 id="g2218-0">
-                <g
-                   data-mml-node="mi"
-                   id="g2212-6">
-                  <use
-                     xlink:href="#MJX-138-TEX-I-69"
-                     id="use2210-0"
-                     x="0"
-                     y="0"
-                     width="100%"
-                     height="100%" />
-                </g>
-                <g
-                   data-mml-node="mi"
-                   transform="translate(345)"
-                   id="g2216-0">
-                  <use
-                     xlink:href="#MJX-138-TEX-I-6E"
-                     id="use2214-5"
-                     x="0"
-                     y="0"
-                     width="100%"
-                     height="100%" />
-                </g>
-              </g>
-            </g>
-            <g
-               id="g2224"
-               transform="translate(7740.3)"
-               data-mml-node="mo">
-              <use
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2222"
-                 xlink:href="#MJX-138-TEX-N-2297" />
-            </g>
-            <g
-               style="fill:#636363;fill-opacity:1"
-               id="g2230"
-               transform="translate(8740.5)"
-               data-mml-node="TeXAtom">
-              <g
-                 style="fill:#636363;fill-opacity:1"
-                 id="g2228"
-                 data-mml-node="mo">
-                <use
-                   style="fill:#636363;fill-opacity:1"
-                   height="100%"
-                   width="100%"
-                   y="0"
-                   x="0"
-                   id="use2226"
-                   xlink:href="#MJX-138-TEX-N-7C" />
-              </g>
-            </g>
-            <g
-               style="fill:#636363;fill-opacity:1"
-               id="g2238"
-               transform="translate(9018.5)"
-               data-mml-node="mn">
-              <use
-                 style="fill:#636363;fill-opacity:1"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2232"
-                 xlink:href="#MJX-138-TEX-N-30" />
-              <use
-                 style="fill:#636363;fill-opacity:1"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2234"
-                 transform="translate(500)"
-                 xlink:href="#MJX-138-TEX-N-30" />
-              <use
-                 style="fill:#636363;fill-opacity:1"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2236"
-                 transform="translate(1000)"
-                 xlink:href="#MJX-138-TEX-N-30" />
-            </g>
-            <g
-               style="fill:#636363;fill-opacity:1"
-               id="g2242"
-               transform="translate(10518.5)"
-               data-mml-node="mo">
-              <use
-                 style="fill:#636363;fill-opacity:1"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2240"
-                 xlink:href="#MJX-138-TEX-N-27E9" />
-            </g>
-            <g
-               style="fill:#636363;fill-opacity:1"
-               id="g2246"
-               transform="translate(10907.5)"
-               data-mml-node="mo">
-              <use
-                 style="fill:#636363;fill-opacity:1"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2244"
-                 xlink:href="#MJX-138-TEX-N-27E8" />
-            </g>
-            <g
-               style="fill:#636363;fill-opacity:1"
-               id="g2254"
-               transform="translate(11296.5)"
-               data-mml-node="mn">
-              <use
-                 style="fill:#636363;fill-opacity:1"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2248"
-                 xlink:href="#MJX-138-TEX-N-30" />
-              <use
-                 style="fill:#636363;fill-opacity:1"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2250"
-                 transform="translate(500)"
-                 xlink:href="#MJX-138-TEX-N-30" />
-              <use
-                 style="fill:#636363;fill-opacity:1"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2252"
-                 transform="translate(1000)"
-                 xlink:href="#MJX-138-TEX-N-30" />
-            </g>
-            <g
-               style="fill:#636363;fill-opacity:1"
-               id="g2276"
-               transform="translate(12796.5)"
-               data-mml-node="msub">
-              <g
-                 style="fill:#636363;fill-opacity:1"
-                 id="g2260"
-                 data-mml-node="TeXAtom">
-                <g
-                   style="fill:#636363;fill-opacity:1"
-                   id="g2258"
-                   data-mml-node="mo">
-                  <use
-                     style="fill:#636363;fill-opacity:1"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2256"
-                     xlink:href="#MJX-138-TEX-N-7C" />
-                </g>
-              </g>
-              <g
-                 style="fill:#636363;fill-opacity:1"
-                 id="g2274"
-                 transform="matrix(0.707,0,0,0.707,278,-284.9)"
-                 data-mml-node="TeXAtom">
-                <g
-                   style="fill:#636363;fill-opacity:1"
-                   id="g2264"
-                   data-mml-node="mi">
-                  <use
-                     style="fill:#636363;fill-opacity:1"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2262"
-                     xlink:href="#MJX-138-TEX-I-69" />
-                </g>
-                <g
-                   style="fill:#636363;fill-opacity:1"
-                   id="g2268"
-                   transform="translate(345)"
-                   data-mml-node="mi">
-                  <use
-                     style="fill:#636363;fill-opacity:1"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2266"
-                     xlink:href="#MJX-138-TEX-I-6E" />
-                </g>
-                <g
-                   style="fill:#636363;fill-opacity:1"
-                   id="g2272"
-                   transform="translate(945)"
-                   data-mml-node="mi">
-                  <use
-                     style="fill:#636363;fill-opacity:1"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2270"
-                     xlink:href="#MJX-138-TEX-I-74" />
-                </g>
-              </g>
-            </g>
-            <g
-               id="g2280"
-               transform="translate(14048)"
-               data-mml-node="mo">
-              <use
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2278"
-                 xlink:href="#MJX-138-TEX-N-29" />
-            </g>
-            <g
-               id="g2308"
-               transform="translate(14437)"
-               data-mml-node="msubsup">
-              <g
-                 id="g2284"
-                 data-mml-node="mi">
-                <use
-                   height="100%"
-                   width="100%"
-                   y="0"
-                   x="0"
-                   id="use2282"
-                   xlink:href="#MJX-138-TEX-I-55" />
-              </g>
-              <g
-                 id="g2302"
-                 transform="matrix(0.707,0,0,0.707,833.8,506.3)"
-                 data-mml-node="TeXAtom">
-                <g
-                   id="g2288"
-                   data-mml-node="mi">
-                  <use
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2286"
-                     xlink:href="#MJX-138-TEX-I-69" />
-                </g>
-                <g
-                   id="g2292"
-                   transform="translate(345)"
-                   data-mml-node="mi">
-                  <use
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2290"
-                     xlink:href="#MJX-138-TEX-I-6E" />
-                </g>
-                <g
-                   id="g2296"
-                   transform="translate(945)"
-                   data-mml-node="mi">
-                  <use
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2294"
-                     xlink:href="#MJX-138-TEX-I-74" />
-                </g>
-                <g
-                   id="g2300"
-                   transform="translate(1306)"
-                   data-mml-node="mo">
-                  <use
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2298"
-                     xlink:href="#MJX-138-TEX-N-2020" />
-                </g>
-              </g>
-              <g
-                 id="g2306"
-                 transform="matrix(0.707,0,0,0.707,683,-297.3)"
-                 data-mml-node="mn">
-                <use
-                   height="100%"
-                   width="100%"
-                   y="0"
-                   x="0"
-                   id="use2304"
-                   xlink:href="#MJX-138-TEX-N-31" />
-              </g>
-            </g>
-            <g
-               style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-               id="g2336"
-               transform="translate(16558.2)"
-               data-mml-node="msubsup">
-              <g
-                 style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                 id="g2312"
-                 data-mml-node="mi">
-                <use
-                   style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                   height="100%"
-                   width="100%"
-                   y="0"
-                   x="0"
-                   id="use2310"
-                   xlink:href="#MJX-138-TEX-I-55" />
-              </g>
-              <g
-                 style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                 id="g2330"
-                 transform="matrix(0.707,0,0,0.707,833.8,506.3)"
-                 data-mml-node="TeXAtom">
-                <g
-                   style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                   id="g2316"
-                   data-mml-node="mi">
-                  <use
-                     style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2314"
-                     xlink:href="#MJX-138-TEX-I-69" />
-                </g>
-                <g
-                   style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                   id="g2320"
-                   transform="translate(345)"
-                   data-mml-node="mi">
-                  <use
-                     style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2318"
-                     xlink:href="#MJX-138-TEX-I-6E" />
-                </g>
-                <g
-                   style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                   id="g2324"
-                   transform="translate(945)"
-                   data-mml-node="mi">
-                  <use
-                     style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2322"
-                     xlink:href="#MJX-138-TEX-I-74" />
-                </g>
-                <g
-                   style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                   id="g2328"
-                   transform="translate(1306)"
-                   data-mml-node="mo">
-                  <use
-                     style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2326"
-                     xlink:href="#MJX-138-TEX-N-2020" />
-                </g>
-              </g>
-              <g
-                 style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                 id="g2334"
-                 transform="matrix(0.707,0,0,0.707,683,-297.3)"
-                 data-mml-node="mn">
-                <use
-                   style="stroke:#000000;stroke-opacity:1;fill:#315db3;fill-opacity:1"
-                   height="100%"
-                   width="100%"
-                   y="0"
-                   x="0"
-                   id="use2332"
-                   xlink:href="#MJX-138-TEX-N-32" />
-              </g>
-            </g>
-            <g
-               style="fill:#91287c;fill-opacity:0.92156863"
-               id="g2364"
-               transform="translate(18679.5)"
-               data-mml-node="msubsup">
-              <g
-                 style="fill:#91287c;fill-opacity:0.92156863"
-                 id="g2340"
-                 data-mml-node="mi">
-                <use
-                   style="fill:#91287c;fill-opacity:0.92156863"
-                   height="100%"
-                   width="100%"
-                   y="0"
-                   x="0"
-                   id="use2338"
-                   xlink:href="#MJX-138-TEX-I-55" />
-              </g>
-              <g
-                 style="fill:#91287c;fill-opacity:0.92156863"
-                 id="g2358"
-                 transform="matrix(0.707,0,0,0.707,833.8,506.3)"
-                 data-mml-node="TeXAtom">
-                <g
-                   style="fill:#91287c;fill-opacity:0.92156863"
-                   id="g2344"
-                   data-mml-node="mi">
-                  <use
-                     style="fill:#91287c;fill-opacity:0.92156863"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2342"
-                     xlink:href="#MJX-138-TEX-I-69" />
-                </g>
-                <g
-                   style="fill:#91287c;fill-opacity:0.92156863"
-                   id="g2348"
-                   transform="translate(345)"
-                   data-mml-node="mi">
-                  <use
-                     style="fill:#91287c;fill-opacity:0.92156863"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2346"
-                     xlink:href="#MJX-138-TEX-I-6E" />
-                </g>
-                <g
-                   style="fill:#91287c;fill-opacity:0.92156863"
-                   id="g2352"
-                   transform="translate(945)"
-                   data-mml-node="mi">
-                  <use
-                     style="fill:#91287c;fill-opacity:0.92156863"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2350"
-                     xlink:href="#MJX-138-TEX-I-74" />
-                </g>
-                <g
-                   style="fill:#91287c;fill-opacity:0.92156863"
-                   id="g2356"
-                   transform="translate(1306)"
-                   data-mml-node="mo">
-                  <use
-                     style="fill:#91287c;fill-opacity:0.92156863"
-                     height="100%"
-                     width="100%"
-                     y="0"
-                     x="0"
-                     id="use2354"
-                     xlink:href="#MJX-138-TEX-N-2020" />
-                </g>
-              </g>
-              <g
-                 style="fill:#91287c;fill-opacity:0.92156863"
-                 id="g2362"
-                 transform="matrix(0.707,0,0,0.707,683,-296.6)"
-                 data-mml-node="mn">
-                <use
-                   style="fill:#91287c;fill-opacity:0.92156863"
-                   height="100%"
-                   width="100%"
-                   y="0"
-                   x="0"
-                   id="use2360"
-                   xlink:href="#MJX-138-TEX-N-33" />
-              </g>
-            </g>
-            <g
-               id="g2368"
-               transform="translate(20800.7)"
-               data-mml-node="mo">
-              <use
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2366"
-                 xlink:href="#MJX-138-TEX-LO-5D" />
-            </g>
-          </g>
-          <g
-             id="g2374"
-             transform="translate(23701.9)"
-             data-mml-node="mo">
-            <use
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use2372"
-               xlink:href="#MJX-138-TEX-LO-29" />
-          </g>
-        </g>
-        <g
-           style="fill:#1ab59f;fill-opacity:1"
-           id="g2404"
-           transform="translate(28543.9)"
-           data-mml-node="msubsup">
-          <g
-             style="fill:#1ab59f;fill-opacity:1"
-             id="g2380"
-             data-mml-node="mi">
-            <use
-               style="fill:#1ab59f;fill-opacity:1"
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use2378"
-               xlink:href="#MJX-138-TEX-I-55" />
-          </g>
-          <g
-             style="fill:#1ab59f;fill-opacity:1"
-             id="g2398"
-             transform="matrix(0.707,0,0,0.707,833.8,506.3)"
-             data-mml-node="TeXAtom">
-            <g
-               style="fill:#1ab59f;fill-opacity:1"
-               id="g2384"
-               data-mml-node="mi">
-              <use
-                 style="fill:#1ab59f;fill-opacity:1"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2382"
-                 xlink:href="#MJX-138-TEX-I-6F" />
-            </g>
-            <g
-               style="fill:#1ab59f;fill-opacity:1"
-               id="g2388"
-               transform="translate(485)"
-               data-mml-node="mi">
-              <use
-                 style="fill:#1ab59f;fill-opacity:1"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2386"
-                 xlink:href="#MJX-138-TEX-I-75" />
-            </g>
-            <g
-               style="fill:#1ab59f;fill-opacity:1"
-               id="g2392"
-               transform="translate(1057)"
-               data-mml-node="mi">
-              <use
-                 style="fill:#1ab59f;fill-opacity:1"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2390"
-                 xlink:href="#MJX-138-TEX-I-74" />
-            </g>
-            <g
-               style="fill:#1ab59f;fill-opacity:1"
-               id="g2396"
-               transform="translate(1418)"
-               data-mml-node="mo">
-              <use
-                 style="fill:#1ab59f;fill-opacity:1"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2394"
-                 xlink:href="#MJX-138-TEX-N-2020" />
-            </g>
-          </g>
-          <g
-             style="fill:#1ab59f;fill-opacity:1"
-             id="g2402"
-             transform="matrix(0.707,0,0,0.707,683,-297.3)"
-             data-mml-node="mn">
-            <use
-               style="fill:#1ab59f;fill-opacity:1"
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use2400"
-               xlink:href="#MJX-138-TEX-N-31" />
-          </g>
-        </g>
-        <g
-           style="fill:#751631;fill-opacity:0.93725491"
-           id="g2432"
-           transform="translate(30744.3)"
-           data-mml-node="msubsup">
-          <g
-             style="fill:#751631;fill-opacity:0.93725491"
-             id="g2408"
-             data-mml-node="mi">
-            <use
-               style="fill:#751631;fill-opacity:0.93725491"
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use2406"
-               xlink:href="#MJX-138-TEX-I-55" />
-          </g>
-          <g
-             style="fill:#751631;fill-opacity:0.93725491"
-             id="g2426"
-             transform="matrix(0.707,0,0,0.707,833.8,506.3)"
-             data-mml-node="TeXAtom">
-            <g
-               style="fill:#751631;fill-opacity:0.93725491"
-               id="g2412"
-               data-mml-node="mi">
-              <use
-                 style="fill:#751631;fill-opacity:0.93725491"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2410"
-                 xlink:href="#MJX-138-TEX-I-6F" />
-            </g>
-            <g
-               style="fill:#751631;fill-opacity:0.93725491"
-               id="g2416"
-               transform="translate(485)"
-               data-mml-node="mi">
-              <use
-                 style="fill:#751631;fill-opacity:0.93725491"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2414"
-                 xlink:href="#MJX-138-TEX-I-75" />
-            </g>
-            <g
-               style="fill:#751631;fill-opacity:0.93725491"
-               id="g2420"
-               transform="translate(1057)"
-               data-mml-node="mi">
-              <use
-                 style="fill:#751631;fill-opacity:0.93725491"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2418"
-                 xlink:href="#MJX-138-TEX-I-74" />
-            </g>
-            <g
-               style="fill:#751631;fill-opacity:0.93725491"
-               id="g2424"
-               transform="translate(1418)"
-               data-mml-node="mo">
-              <use
-                 style="fill:#751631;fill-opacity:0.93725491"
-                 height="100%"
-                 width="100%"
-                 y="0"
-                 x="0"
-                 id="use2422"
-                 xlink:href="#MJX-138-TEX-N-2020" />
-            </g>
-          </g>
-          <g
-             style="fill:#751631;fill-opacity:0.93725491"
-             id="g2430"
-             transform="matrix(0.707,0,0,0.707,683,-297.3)"
-             data-mml-node="mn">
-            <use
-               style="fill:#751631;fill-opacity:0.93725491"
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use2428"
-               xlink:href="#MJX-138-TEX-N-32" />
-          </g>
-        </g>
-        <g
-           style="fill:#636363;fill-opacity:1"
-           id="g2436"
-           transform="translate(32944.7)"
-           data-mml-node="mo">
-          <use
-             style="fill:#636363;fill-opacity:1"
-             height="100%"
-             width="100%"
-             y="0"
-             x="0"
-             id="use2434"
-             xlink:href="#MJX-138-TEX-LO-5D" />
-        </g>
-      </g>
-      <g
-         id="g2442"
-         transform="translate(35212.1)"
-         data-mml-node="mo">
-        <use
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           id="use2440"
-           xlink:href="#MJX-138-TEX-N-3D" />
-      </g>
-      <g
-         style="fill:#070707;fill-opacity:0.58039218"
-         id="g2462"
-         transform="translate(36267.8)"
-         data-mml-node="msub">
-        <g
-           style="fill:#070707;fill-opacity:0.58039218"
-           id="g2446"
-           data-mml-node="mi">
-          <use
-             style="fill:#070707;fill-opacity:0.58039218"
-             height="100%"
-             width="100%"
-             y="0"
-             x="0"
-             id="use2444"
-             xlink:href="#MJX-138-TEX-I-3C1" />
-        </g>
-        <g
-           style="fill:#070707;fill-opacity:0.58039218"
-           id="g2460"
-           transform="matrix(0.707,0,0,0.707,517,-150)"
-           data-mml-node="TeXAtom">
-          <g
-             style="fill:#070707;fill-opacity:0.58039218"
-             id="g2450"
-             data-mml-node="mi">
-            <use
-               style="fill:#070707;fill-opacity:0.58039218"
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use2448"
-               xlink:href="#MJX-138-TEX-I-6F" />
-          </g>
-          <g
-             style="fill:#070707;fill-opacity:0.58039218"
-             id="g2454"
-             transform="translate(485)"
-             data-mml-node="mi">
-            <use
-               style="fill:#070707;fill-opacity:0.58039218"
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use2452"
-               xlink:href="#MJX-138-TEX-I-75" />
-          </g>
-          <g
-             style="fill:#070707;fill-opacity:0.58039218"
-             id="g2458"
-             transform="translate(1057)"
-             data-mml-node="mi">
-            <use
-               style="fill:#070707;fill-opacity:0.58039218"
-               height="100%"
-               width="100%"
-               y="0"
-               x="0"
-               id="use2456"
-               xlink:href="#MJX-138-TEX-I-74" />
-          </g>
-        </g>
-        <g
-           inkscape:transform-center-y="2.2678571"
-           inkscape:transform-center-x="-0.56696429"
-           data-mml-node="TeXAtom"
-           transform="matrix(0.70700021,0,0,0.70700021,-7687.2961,16174.525)"
-           id="g2460-0"
-           style="fill:#070707;fill-opacity:0.580392;stroke:#000000;stroke-width:0">
-          <g
-             transform="matrix(1.8758685,0,0,1.8758685,-622.30456,-269.32956)"
              data-mml-node="mi"
-             id="g2450-6"
+             id="g2058"
+             style="fill:#751631;fill-opacity:0.937255">
+            <use
+               xlink:href="#MJX-138-TEX-I-55"
+               id="use2056"
+               x="0"
+               y="0"
+               width="100%"
+               height="100%"
+               style="fill:#751631;fill-opacity:0.937255" />
+          </g>
+          <g
+             data-mml-node="TeXAtom"
+             transform="matrix(0.707,0,0,0.707,833.8,413)"
+             id="g2072"
+             style="fill:#751631;fill-opacity:0.937255">
+            <g
+               data-mml-node="mi"
+               id="g2062"
+               style="fill:#751631;fill-opacity:0.937255">
+              <use
+                 xlink:href="#MJX-138-TEX-I-6F"
+                 id="use2060"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#751631;fill-opacity:0.937255" />
+            </g>
+            <g
+               data-mml-node="mi"
+               transform="translate(485)"
+               id="g2066"
+               style="fill:#751631;fill-opacity:0.937255">
+              <use
+                 xlink:href="#MJX-138-TEX-I-75"
+                 id="use2064"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#751631;fill-opacity:0.937255" />
+            </g>
+            <g
+               data-mml-node="mi"
+               transform="translate(1057)"
+               id="g2070"
+               style="fill:#751631;fill-opacity:0.937255">
+              <use
+                 xlink:href="#MJX-138-TEX-I-74"
+                 id="use2068"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#751631;fill-opacity:0.937255" />
+            </g>
+          </g>
+          <g
+             data-mml-node="mn"
+             transform="matrix(0.707,0,0,0.707,683,-247)"
+             id="g2076"
+             style="fill:#751631;fill-opacity:0.937255">
+            <use
+               xlink:href="#MJX-138-TEX-N-32"
+               id="use2074"
+               x="0"
+               y="0"
+               width="100%"
+               height="100%"
+               style="fill:#751631;fill-opacity:0.937255" />
+          </g>
+        </g>
+        <g
+           data-mml-node="msubsup"
+           transform="translate(2358.5)"
+           id="g2102"
+           style="fill:#1ab59f;fill-opacity:1">
+          <g
+             data-mml-node="mi"
+             id="g2082"
+             style="fill:#1ab59f;fill-opacity:1">
+            <use
+               xlink:href="#MJX-138-TEX-I-55"
+               id="use2080"
+               x="0"
+               y="0"
+               width="100%"
+               height="100%"
+               style="fill:#1ab59f;fill-opacity:1" />
+          </g>
+          <g
+             data-mml-node="TeXAtom"
+             transform="matrix(0.707,0,0,0.707,833.8,413)"
+             id="g2096"
+             style="fill:#1ab59f;fill-opacity:1">
+            <g
+               data-mml-node="mi"
+               id="g2086"
+               style="fill:#1ab59f;fill-opacity:1">
+              <use
+                 xlink:href="#MJX-138-TEX-I-6F"
+                 id="use2084"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#1ab59f;fill-opacity:1" />
+            </g>
+            <g
+               data-mml-node="mi"
+               transform="translate(485)"
+               id="g2090"
+               style="fill:#1ab59f;fill-opacity:1">
+              <use
+                 xlink:href="#MJX-138-TEX-I-75"
+                 id="use2088"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#1ab59f;fill-opacity:1" />
+            </g>
+            <g
+               data-mml-node="mi"
+               transform="translate(1057)"
+               id="g2094"
+               style="fill:#1ab59f;fill-opacity:1">
+              <use
+                 xlink:href="#MJX-138-TEX-I-74"
+                 id="use2092"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#1ab59f;fill-opacity:1" />
+            </g>
+          </g>
+          <g
+             data-mml-node="mn"
+             transform="matrix(0.707,0,0,0.707,683,-247)"
+             id="g2100"
+             style="fill:#1ab59f;fill-opacity:1">
+            <use
+               xlink:href="#MJX-138-TEX-N-31"
+               id="use2098"
+               x="0"
+               y="0"
+               width="100%"
+               height="100%"
+               style="fill:#1ab59f;fill-opacity:1" />
+          </g>
+        </g>
+        <g
+           data-mml-node="mrow"
+           transform="translate(4245)"
+           id="g2376">
+          <g
+             data-mml-node="mo"
+             id="g2106">
+            <use
+               xlink:href="#MJX-138-TEX-LO-28"
+               id="use2104"
+               x="0"
+               y="0"
+               width="100%"
+               height="100%" />
+          </g>
+          <g
+             data-mml-node="msub"
+             transform="translate(597)"
+             id="g2124">
+            <g
+               data-mml-node="mtext"
+               id="g2112">
+              <use
+                 xlink:href="#MJX-138-TEX-N-54"
+                 id="use2108"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%" />
+              <use
+                 xlink:href="#MJX-138-TEX-N-72"
+                 transform="translate(722)"
+                 id="use2110"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%" />
+            </g>
+            <g
+               data-mml-node="TeXAtom"
+               transform="matrix(0.707,0,0,0.707,1114,-150)"
+               id="g2122">
+              <g
+                 data-mml-node="mi"
+                 id="g2116">
+                <use
+                   xlink:href="#MJX-138-TEX-I-69"
+                   id="use2114"
+                   x="0"
+                   y="0"
+                   width="100%"
+                   height="100%" />
+              </g>
+              <g
+                 data-mml-node="mi"
+                 transform="translate(345)"
+                 id="g2120">
+                <use
+                   xlink:href="#MJX-138-TEX-I-6E"
+                   id="use2118"
+                   x="0"
+                   y="0"
+                   width="100%"
+                   height="100%" />
+              </g>
+            </g>
+          </g>
+          <g
+             data-mml-node="mrow"
+             transform="translate(2429.2)"
+             id="g2370">
+            <g
+               data-mml-node="mo"
+               id="g2128"
+               style="fill:#000000;fill-opacity:0.921569">
+              <use
+                 xlink:href="#MJX-138-TEX-LO-5B"
+                 id="use2126"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#000000;fill-opacity:0.921569" />
+            </g>
+            <g
+               data-mml-node="msubsup"
+               transform="translate(472)"
+               id="g2152"
+               style="fill:#91287c;fill-opacity:0.921569">
+              <g
+                 data-mml-node="mi"
+                 id="g2132"
+                 style="fill:#91287c;fill-opacity:0.921569">
+                <use
+                   xlink:href="#MJX-138-TEX-I-55"
+                   id="use2130"
+                   x="0"
+                   y="0"
+                   width="100%"
+                   height="100%"
+                   style="fill:#91287c;fill-opacity:0.921569" />
+              </g>
+              <g
+                 data-mml-node="TeXAtom"
+                 transform="matrix(0.707,0,0,0.707,833.8,413)"
+                 id="g2146"
+                 style="fill:#91287c;fill-opacity:0.921569">
+                <g
+                   data-mml-node="mi"
+                   id="g2136"
+                   style="fill:#91287c;fill-opacity:0.921569">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-69"
+                     id="use2134"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#91287c;fill-opacity:0.921569" />
+                </g>
+                <g
+                   data-mml-node="mi"
+                   transform="translate(345)"
+                   id="g2140"
+                   style="fill:#91287c;fill-opacity:0.921569">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-6E"
+                     id="use2138"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#91287c;fill-opacity:0.921569" />
+                </g>
+                <g
+                   data-mml-node="mi"
+                   transform="translate(945)"
+                   id="g2144"
+                   style="fill:#91287c;fill-opacity:0.921569">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-74"
+                     id="use2142"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#91287c;fill-opacity:0.921569" />
+                </g>
+              </g>
+              <g
+                 data-mml-node="mn"
+                 transform="matrix(0.707,0,0,0.707,683,-247)"
+                 id="g2150"
+                 style="fill:#91287c;fill-opacity:0.921569">
+                <use
+                   xlink:href="#MJX-138-TEX-N-33"
+                   id="use2148"
+                   x="0"
+                   y="0"
+                   width="100%"
+                   height="100%"
+                   style="fill:#91287c;fill-opacity:0.921569" />
+              </g>
+              <g
+                 style="fill:#636363;fill-opacity:1;stroke:#000000;stroke-width:0"
+                 id="g2146-1"
+                 transform="matrix(0.70700021,0,0,0.70700021,-7985.8065,-277.13378)"
+                 data-mml-node="TeXAtom">
+                <g
+                   style="fill:#636363;fill-opacity:1"
+                   id="g2136-0"
+                   data-mml-node="mi">
+                  <use
+                     style="fill:#636363;fill-opacity:1"
+                     height="100%"
+                     width="100%"
+                     y="0"
+                     x="0"
+                     id="use2134-7"
+                     xlink:href="#MJX-138-TEX-I-69" />
+                </g>
+                <g
+                   style="fill:#636363;fill-opacity:1"
+                   id="g2140-8"
+                   transform="translate(345)"
+                   data-mml-node="mi">
+                  <use
+                     style="fill:#636363;fill-opacity:1"
+                     height="100%"
+                     width="100%"
+                     y="0"
+                     x="0"
+                     id="use2138-7"
+                     xlink:href="#MJX-138-TEX-I-6E" />
+                </g>
+                <g
+                   style="fill:#636363;fill-opacity:1"
+                   id="g2144-2"
+                   transform="translate(945)"
+                   data-mml-node="mi">
+                  <use
+                     style="fill:#636363;fill-opacity:1"
+                     height="100%"
+                     width="100%"
+                     y="0"
+                     x="0"
+                     id="use2142-1"
+                     xlink:href="#MJX-138-TEX-I-74" />
+                </g>
+              </g>
+              <g
+                 style="fill:#636363;fill-opacity:1;stroke:#000000;stroke-width:0"
+                 id="g2146-8"
+                 transform="matrix(1.1476049,0,0,1.1476049,9256.4632,16137.353)"
+                 data-mml-node="TeXAtom">
+                <g
+                   style="fill:#636363;fill-opacity:1"
+                   id="g2136-1"
+                   data-mml-node="mi">
+                  <use
+                     style="fill:#636363;fill-opacity:1"
+                     height="100%"
+                     width="100%"
+                     y="0"
+                     x="0"
+                     id="use2134-4"
+                     xlink:href="#MJX-138-TEX-I-69" />
+                </g>
+                <g
+                   style="fill:#636363;fill-opacity:1"
+                   id="g2140-5"
+                   transform="translate(345)"
+                   data-mml-node="mi">
+                  <use
+                     style="fill:#636363;fill-opacity:1"
+                     height="100%"
+                     width="100%"
+                     y="0"
+                     x="0"
+                     id="use2138-1"
+                     xlink:href="#MJX-138-TEX-I-6E" />
+                </g>
+                <g
+                   style="fill:#636363;fill-opacity:1"
+                   id="g2144-6"
+                   transform="translate(945)"
+                   data-mml-node="mi">
+                  <use
+                     style="fill:#636363;fill-opacity:1"
+                     height="100%"
+                     width="100%"
+                     y="0"
+                     x="0"
+                     id="use2142-5"
+                     xlink:href="#MJX-138-TEX-I-74" />
+                </g>
+              </g>
+            </g>
+            <g
+               data-mml-node="msubsup"
+               transform="translate(2279.3)"
+               id="g2176"
+               style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+              <g
+                 data-mml-node="mi"
+                 id="g2156"
+                 style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+                <use
+                   xlink:href="#MJX-138-TEX-I-55"
+                   id="use2154"
+                   x="0"
+                   y="0"
+                   width="100%"
+                   height="100%"
+                   style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+              </g>
+              <g
+                 data-mml-node="TeXAtom"
+                 transform="matrix(0.707,0,0,0.707,833.8,413)"
+                 id="g2170"
+                 style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+                <g
+                   data-mml-node="mi"
+                   id="g2160"
+                   style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-69"
+                     id="use2158"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+                </g>
+                <g
+                   data-mml-node="mi"
+                   transform="translate(345)"
+                   id="g2164"
+                   style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-6E"
+                     id="use2162"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+                </g>
+                <g
+                   data-mml-node="mi"
+                   transform="translate(945)"
+                   id="g2168"
+                   style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-74"
+                     id="use2166"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+                </g>
+              </g>
+              <g
+                 data-mml-node="mn"
+                 transform="matrix(0.707,0,0,0.707,683,-247)"
+                 id="g2174"
+                 style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+                <use
+                   xlink:href="#MJX-138-TEX-N-32"
+                   id="use2172"
+                   x="0"
+                   y="0"
+                   width="100%"
+                   height="100%"
+                   style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+              </g>
+            </g>
+            <g
+               data-mml-node="msubsup"
+               transform="translate(4086.6)"
+               id="g2200">
+              <g
+                 data-mml-node="mi"
+                 id="g2180">
+                <use
+                   xlink:href="#MJX-138-TEX-I-55"
+                   id="use2178"
+                   x="0"
+                   y="0"
+                   width="100%"
+                   height="100%" />
+              </g>
+              <g
+                 data-mml-node="TeXAtom"
+                 transform="matrix(0.707,0,0,0.707,833.8,413)"
+                 id="g2194">
+                <g
+                   data-mml-node="mi"
+                   id="g2184">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-69"
+                     id="use2182"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%" />
+                </g>
+                <g
+                   data-mml-node="mi"
+                   transform="translate(345)"
+                   id="g2188">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-6E"
+                     id="use2186"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%" />
+                </g>
+                <g
+                   data-mml-node="mi"
+                   transform="translate(945)"
+                   id="g2192">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-74"
+                     id="use2190"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%" />
+                </g>
+              </g>
+              <g
+                 data-mml-node="mn"
+                 transform="matrix(0.707,0,0,0.707,683,-247)"
+                 id="g2198">
+                <use
+                   xlink:href="#MJX-138-TEX-N-31"
+                   id="use2196"
+                   x="0"
+                   y="0"
+                   width="100%"
+                   height="100%" />
+              </g>
+            </g>
+            <g
+               data-mml-node="mo"
+               transform="translate(5893.8)"
+               id="g2204">
+              <use
+                 xlink:href="#MJX-138-TEX-N-28"
+                 id="use2202"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%" />
+            </g>
+            <g
+               data-mml-node="msub"
+               transform="translate(6282.8)"
+               id="g2220">
+              <g
+                 data-mml-node="mi"
+                 id="g2208">
+                <use
+                   xlink:href="#MJX-138-TEX-I-3C1"
+                   id="use2206"
+                   x="0"
+                   y="0"
+                   width="100%"
+                   height="100%" />
+              </g>
+              <g
+                 data-mml-node="TeXAtom"
+                 transform="matrix(0.707,0,0,0.707,517,-150)"
+                 id="g2218">
+                <g
+                   data-mml-node="mi"
+                   id="g2212">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-69"
+                     id="use2210"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%" />
+                </g>
+                <g
+                   data-mml-node="mi"
+                   transform="translate(345)"
+                   id="g2216">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-6E"
+                     id="use2214"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%" />
+                </g>
+              </g>
+              <g
+                 id="g2218-0"
+                 transform="matrix(1.4117429,0,0,1.4117429,-7173.619,15696.319)"
+                 data-mml-node="TeXAtom"
+                 style="fill:#000000;stroke:#000000;stroke-width:0">
+                <g
+                   id="g2212-6"
+                   data-mml-node="mi">
+                  <use
+                     height="100%"
+                     width="100%"
+                     y="0"
+                     x="0"
+                     id="use2210-0"
+                     xlink:href="#MJX-138-TEX-I-69" />
+                </g>
+                <g
+                   id="g2216-0"
+                   transform="translate(345)"
+                   data-mml-node="mi">
+                  <use
+                     height="100%"
+                     width="100%"
+                     y="0"
+                     x="0"
+                     id="use2214-5"
+                     xlink:href="#MJX-138-TEX-I-6E" />
+                </g>
+              </g>
+            </g>
+            <g
+               data-mml-node="mo"
+               transform="translate(7740.3)"
+               id="g2224">
+              <use
+                 xlink:href="#MJX-138-TEX-N-2297"
+                 id="use2222"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%" />
+            </g>
+            <g
+               data-mml-node="TeXAtom"
+               transform="translate(8740.5)"
+               id="g2230"
+               style="fill:#636363;fill-opacity:1">
+              <g
+                 data-mml-node="mo"
+                 id="g2228"
+                 style="fill:#636363;fill-opacity:1">
+                <use
+                   xlink:href="#MJX-138-TEX-N-7C"
+                   id="use2226"
+                   x="0"
+                   y="0"
+                   width="100%"
+                   height="100%"
+                   style="fill:#636363;fill-opacity:1" />
+              </g>
+            </g>
+            <g
+               data-mml-node="mn"
+               transform="translate(9018.5)"
+               id="g2238"
+               style="fill:#636363;fill-opacity:1">
+              <use
+                 xlink:href="#MJX-138-TEX-N-30"
+                 id="use2232"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#636363;fill-opacity:1" />
+              <use
+                 xlink:href="#MJX-138-TEX-N-30"
+                 transform="translate(500)"
+                 id="use2234"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#636363;fill-opacity:1" />
+              <use
+                 xlink:href="#MJX-138-TEX-N-30"
+                 transform="translate(1000)"
+                 id="use2236"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#636363;fill-opacity:1" />
+            </g>
+            <g
+               data-mml-node="mo"
+               transform="translate(10518.5)"
+               id="g2242"
+               style="fill:#636363;fill-opacity:1">
+              <use
+                 xlink:href="#MJX-138-TEX-N-27E9"
+                 id="use2240"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#636363;fill-opacity:1" />
+            </g>
+            <g
+               data-mml-node="mo"
+               transform="translate(10907.5)"
+               id="g2246"
+               style="fill:#636363;fill-opacity:1">
+              <use
+                 xlink:href="#MJX-138-TEX-N-27E8"
+                 id="use2244"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#636363;fill-opacity:1" />
+            </g>
+            <g
+               data-mml-node="mn"
+               transform="translate(11296.5)"
+               id="g2254"
+               style="fill:#636363;fill-opacity:1">
+              <use
+                 xlink:href="#MJX-138-TEX-N-30"
+                 id="use2248"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#636363;fill-opacity:1" />
+              <use
+                 xlink:href="#MJX-138-TEX-N-30"
+                 transform="translate(500)"
+                 id="use2250"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#636363;fill-opacity:1" />
+              <use
+                 xlink:href="#MJX-138-TEX-N-30"
+                 transform="translate(1000)"
+                 id="use2252"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#636363;fill-opacity:1" />
+            </g>
+            <g
+               data-mml-node="msub"
+               transform="translate(12796.5)"
+               id="g2276"
+               style="fill:#636363;fill-opacity:1">
+              <g
+                 data-mml-node="TeXAtom"
+                 id="g2260"
+                 style="fill:#636363;fill-opacity:1">
+                <g
+                   data-mml-node="mo"
+                   id="g2258"
+                   style="fill:#636363;fill-opacity:1">
+                  <use
+                     xlink:href="#MJX-138-TEX-N-7C"
+                     id="use2256"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#636363;fill-opacity:1" />
+                </g>
+              </g>
+              <g
+                 data-mml-node="TeXAtom"
+                 transform="matrix(0.707,0,0,0.707,278,-284.9)"
+                 id="g2274"
+                 style="fill:#636363;fill-opacity:1">
+                <g
+                   data-mml-node="mi"
+                   id="g2264"
+                   style="fill:#636363;fill-opacity:1">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-69"
+                     id="use2262"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#636363;fill-opacity:1" />
+                </g>
+                <g
+                   data-mml-node="mi"
+                   transform="translate(345)"
+                   id="g2268"
+                   style="fill:#636363;fill-opacity:1">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-6E"
+                     id="use2266"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#636363;fill-opacity:1" />
+                </g>
+                <g
+                   data-mml-node="mi"
+                   transform="translate(945)"
+                   id="g2272"
+                   style="fill:#636363;fill-opacity:1">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-74"
+                     id="use2270"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#636363;fill-opacity:1" />
+                </g>
+              </g>
+            </g>
+            <g
+               data-mml-node="mo"
+               transform="translate(14048)"
+               id="g2280">
+              <use
+                 xlink:href="#MJX-138-TEX-N-29"
+                 id="use2278"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%" />
+            </g>
+            <g
+               data-mml-node="msubsup"
+               transform="translate(14437)"
+               id="g2308">
+              <g
+                 data-mml-node="mi"
+                 id="g2284">
+                <use
+                   xlink:href="#MJX-138-TEX-I-55"
+                   id="use2282"
+                   x="0"
+                   y="0"
+                   width="100%"
+                   height="100%" />
+              </g>
+              <g
+                 data-mml-node="TeXAtom"
+                 transform="matrix(0.707,0,0,0.707,833.8,506.3)"
+                 id="g2302">
+                <g
+                   data-mml-node="mi"
+                   id="g2288">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-69"
+                     id="use2286"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%" />
+                </g>
+                <g
+                   data-mml-node="mi"
+                   transform="translate(345)"
+                   id="g2292">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-6E"
+                     id="use2290"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%" />
+                </g>
+                <g
+                   data-mml-node="mi"
+                   transform="translate(945)"
+                   id="g2296">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-74"
+                     id="use2294"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%" />
+                </g>
+                <g
+                   data-mml-node="mo"
+                   transform="translate(1306)"
+                   id="g2300">
+                  <use
+                     xlink:href="#MJX-138-TEX-N-2020"
+                     id="use2298"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%" />
+                </g>
+              </g>
+              <g
+                 data-mml-node="mn"
+                 transform="matrix(0.707,0,0,0.707,683,-297.3)"
+                 id="g2306">
+                <use
+                   xlink:href="#MJX-138-TEX-N-31"
+                   id="use2304"
+                   x="0"
+                   y="0"
+                   width="100%"
+                   height="100%" />
+              </g>
+            </g>
+            <g
+               data-mml-node="msubsup"
+               transform="translate(16558.2)"
+               id="g2336"
+               style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+              <g
+                 data-mml-node="mi"
+                 id="g2312"
+                 style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+                <use
+                   xlink:href="#MJX-138-TEX-I-55"
+                   id="use2310"
+                   x="0"
+                   y="0"
+                   width="100%"
+                   height="100%"
+                   style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+              </g>
+              <g
+                 data-mml-node="TeXAtom"
+                 transform="matrix(0.707,0,0,0.707,833.8,506.3)"
+                 id="g2330"
+                 style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+                <g
+                   data-mml-node="mi"
+                   id="g2316"
+                   style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-69"
+                     id="use2314"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+                </g>
+                <g
+                   data-mml-node="mi"
+                   transform="translate(345)"
+                   id="g2320"
+                   style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-6E"
+                     id="use2318"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+                </g>
+                <g
+                   data-mml-node="mi"
+                   transform="translate(945)"
+                   id="g2324"
+                   style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-74"
+                     id="use2322"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+                </g>
+                <g
+                   data-mml-node="mo"
+                   transform="translate(1306)"
+                   id="g2328"
+                   style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+                  <use
+                     xlink:href="#MJX-138-TEX-N-2020"
+                     id="use2326"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+                </g>
+              </g>
+              <g
+                 data-mml-node="mn"
+                 transform="matrix(0.707,0,0,0.707,683,-297.3)"
+                 id="g2334"
+                 style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+                <use
+                   xlink:href="#MJX-138-TEX-N-32"
+                   id="use2332"
+                   x="0"
+                   y="0"
+                   width="100%"
+                   height="100%"
+                   style="fill:#315db3;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+              </g>
+            </g>
+            <g
+               data-mml-node="msubsup"
+               transform="translate(18679.5)"
+               id="g2364"
+               style="fill:#91287c;fill-opacity:0.921569">
+              <g
+                 data-mml-node="mi"
+                 id="g2340"
+                 style="fill:#91287c;fill-opacity:0.921569">
+                <use
+                   xlink:href="#MJX-138-TEX-I-55"
+                   id="use2338"
+                   x="0"
+                   y="0"
+                   width="100%"
+                   height="100%"
+                   style="fill:#91287c;fill-opacity:0.921569" />
+              </g>
+              <g
+                 data-mml-node="TeXAtom"
+                 transform="matrix(0.707,0,0,0.707,833.8,506.3)"
+                 id="g2358"
+                 style="fill:#91287c;fill-opacity:0.921569">
+                <g
+                   data-mml-node="mi"
+                   id="g2344"
+                   style="fill:#91287c;fill-opacity:0.921569">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-69"
+                     id="use2342"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#91287c;fill-opacity:0.921569" />
+                </g>
+                <g
+                   data-mml-node="mi"
+                   transform="translate(345)"
+                   id="g2348"
+                   style="fill:#91287c;fill-opacity:0.921569">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-6E"
+                     id="use2346"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#91287c;fill-opacity:0.921569" />
+                </g>
+                <g
+                   data-mml-node="mi"
+                   transform="translate(945)"
+                   id="g2352"
+                   style="fill:#91287c;fill-opacity:0.921569">
+                  <use
+                     xlink:href="#MJX-138-TEX-I-74"
+                     id="use2350"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#91287c;fill-opacity:0.921569" />
+                </g>
+                <g
+                   data-mml-node="mo"
+                   transform="translate(1306)"
+                   id="g2356"
+                   style="fill:#91287c;fill-opacity:0.921569">
+                  <use
+                     xlink:href="#MJX-138-TEX-N-2020"
+                     id="use2354"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%"
+                     style="fill:#91287c;fill-opacity:0.921569" />
+                </g>
+              </g>
+              <g
+                 data-mml-node="mn"
+                 transform="matrix(0.707,0,0,0.707,683,-296.6)"
+                 id="g2362"
+                 style="fill:#91287c;fill-opacity:0.921569">
+                <use
+                   xlink:href="#MJX-138-TEX-N-33"
+                   id="use2360"
+                   x="0"
+                   y="0"
+                   width="100%"
+                   height="100%"
+                   style="fill:#91287c;fill-opacity:0.921569" />
+              </g>
+            </g>
+            <g
+               data-mml-node="mo"
+               transform="translate(20800.7)"
+               id="g2368">
+              <use
+                 xlink:href="#MJX-138-TEX-LO-5D"
+                 id="use2366"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%" />
+            </g>
+          </g>
+          <g
+             data-mml-node="mo"
+             transform="translate(23701.9)"
+             id="g2374">
+            <use
+               xlink:href="#MJX-138-TEX-LO-29"
+               id="use2372"
+               x="0"
+               y="0"
+               width="100%"
+               height="100%" />
+          </g>
+        </g>
+        <g
+           data-mml-node="msubsup"
+           transform="translate(28543.9)"
+           id="g2404"
+           style="fill:#1ab59f;fill-opacity:1">
+          <g
+             data-mml-node="mi"
+             id="g2380"
+             style="fill:#1ab59f;fill-opacity:1">
+            <use
+               xlink:href="#MJX-138-TEX-I-55"
+               id="use2378"
+               x="0"
+               y="0"
+               width="100%"
+               height="100%"
+               style="fill:#1ab59f;fill-opacity:1" />
+          </g>
+          <g
+             data-mml-node="TeXAtom"
+             transform="matrix(0.707,0,0,0.707,833.8,506.3)"
+             id="g2398"
+             style="fill:#1ab59f;fill-opacity:1">
+            <g
+               data-mml-node="mi"
+               id="g2384"
+               style="fill:#1ab59f;fill-opacity:1">
+              <use
+                 xlink:href="#MJX-138-TEX-I-6F"
+                 id="use2382"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#1ab59f;fill-opacity:1" />
+            </g>
+            <g
+               data-mml-node="mi"
+               transform="translate(485)"
+               id="g2388"
+               style="fill:#1ab59f;fill-opacity:1">
+              <use
+                 xlink:href="#MJX-138-TEX-I-75"
+                 id="use2386"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#1ab59f;fill-opacity:1" />
+            </g>
+            <g
+               data-mml-node="mi"
+               transform="translate(1057)"
+               id="g2392"
+               style="fill:#1ab59f;fill-opacity:1">
+              <use
+                 xlink:href="#MJX-138-TEX-I-74"
+                 id="use2390"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#1ab59f;fill-opacity:1" />
+            </g>
+            <g
+               data-mml-node="mo"
+               transform="translate(1418)"
+               id="g2396"
+               style="fill:#1ab59f;fill-opacity:1">
+              <use
+                 xlink:href="#MJX-138-TEX-N-2020"
+                 id="use2394"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#1ab59f;fill-opacity:1" />
+            </g>
+          </g>
+          <g
+             data-mml-node="mn"
+             transform="matrix(0.707,0,0,0.707,683,-297.3)"
+             id="g2402"
+             style="fill:#1ab59f;fill-opacity:1">
+            <use
+               xlink:href="#MJX-138-TEX-N-31"
+               id="use2400"
+               x="0"
+               y="0"
+               width="100%"
+               height="100%"
+               style="fill:#1ab59f;fill-opacity:1" />
+          </g>
+        </g>
+        <g
+           data-mml-node="msubsup"
+           transform="translate(30744.3)"
+           id="g2432"
+           style="fill:#751631;fill-opacity:0.937255">
+          <g
+             data-mml-node="mi"
+             id="g2408"
+             style="fill:#751631;fill-opacity:0.937255">
+            <use
+               xlink:href="#MJX-138-TEX-I-55"
+               id="use2406"
+               x="0"
+               y="0"
+               width="100%"
+               height="100%"
+               style="fill:#751631;fill-opacity:0.937255" />
+          </g>
+          <g
+             data-mml-node="TeXAtom"
+             transform="matrix(0.707,0,0,0.707,833.8,506.3)"
+             id="g2426"
+             style="fill:#751631;fill-opacity:0.937255">
+            <g
+               data-mml-node="mi"
+               id="g2412"
+               style="fill:#751631;fill-opacity:0.937255">
+              <use
+                 xlink:href="#MJX-138-TEX-I-6F"
+                 id="use2410"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#751631;fill-opacity:0.937255" />
+            </g>
+            <g
+               data-mml-node="mi"
+               transform="translate(485)"
+               id="g2416"
+               style="fill:#751631;fill-opacity:0.937255">
+              <use
+                 xlink:href="#MJX-138-TEX-I-75"
+                 id="use2414"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#751631;fill-opacity:0.937255" />
+            </g>
+            <g
+               data-mml-node="mi"
+               transform="translate(1057)"
+               id="g2420"
+               style="fill:#751631;fill-opacity:0.937255">
+              <use
+                 xlink:href="#MJX-138-TEX-I-74"
+                 id="use2418"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#751631;fill-opacity:0.937255" />
+            </g>
+            <g
+               data-mml-node="mo"
+               transform="translate(1418)"
+               id="g2424"
+               style="fill:#751631;fill-opacity:0.937255">
+              <use
+                 xlink:href="#MJX-138-TEX-N-2020"
+                 id="use2422"
+                 x="0"
+                 y="0"
+                 width="100%"
+                 height="100%"
+                 style="fill:#751631;fill-opacity:0.937255" />
+            </g>
+          </g>
+          <g
+             data-mml-node="mn"
+             transform="matrix(0.707,0,0,0.707,683,-297.3)"
+             id="g2430"
+             style="fill:#751631;fill-opacity:0.937255">
+            <use
+               xlink:href="#MJX-138-TEX-N-32"
+               id="use2428"
+               x="0"
+               y="0"
+               width="100%"
+               height="100%"
+               style="fill:#751631;fill-opacity:0.937255" />
+          </g>
+        </g>
+        <g
+           data-mml-node="mo"
+           transform="translate(32944.7)"
+           id="g2436"
+           style="fill:#636363;fill-opacity:1">
+          <use
+             xlink:href="#MJX-138-TEX-LO-5D"
+             id="use2434"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="fill:#636363;fill-opacity:1" />
+        </g>
+      </g>
+      <g
+         data-mml-node="mo"
+         transform="translate(35212.1)"
+         id="g2442">
+        <use
+           xlink:href="#MJX-138-TEX-N-3D"
+           id="use2440"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+      </g>
+      <g
+         data-mml-node="msub"
+         transform="translate(36267.8)"
+         id="g2462"
+         style="fill:#070707;fill-opacity:0.580392">
+        <g
+           data-mml-node="mi"
+           id="g2446"
+           style="fill:#070707;fill-opacity:0.580392">
+          <use
+             xlink:href="#MJX-138-TEX-I-3C1"
+             id="use2444"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="fill:#070707;fill-opacity:0.580392" />
+        </g>
+        <g
+           data-mml-node="TeXAtom"
+           transform="matrix(0.707,0,0,0.707,517,-150)"
+           id="g2460"
+           style="fill:#070707;fill-opacity:0.580392">
+          <g
+             data-mml-node="mi"
+             id="g2450"
              style="fill:#070707;fill-opacity:0.580392">
             <use
                xlink:href="#MJX-138-TEX-I-6F"
-               id="use2448-4"
+               id="use2448"
                x="0"
                y="0"
                width="100%"
@@ -1765,12 +1721,12 @@
           </g>
           <g
              data-mml-node="mi"
-             transform="matrix(1.8758685,0,0,1.8758685,287.49166,-269.32956)"
-             id="g2454-3"
+             transform="translate(485)"
+             id="g2454"
              style="fill:#070707;fill-opacity:0.580392">
             <use
                xlink:href="#MJX-138-TEX-I-75"
-               id="use2452-4"
+               id="use2452"
                x="0"
                y="0"
                width="100%"
@@ -1779,17 +1735,67 @@
           </g>
           <g
              data-mml-node="mi"
-             transform="matrix(1.8758685,0,0,1.8758685,1360.4884,-269.32956)"
-             id="g2458-5"
+             transform="translate(1057)"
+             id="g2458"
              style="fill:#070707;fill-opacity:0.580392">
             <use
                xlink:href="#MJX-138-TEX-I-74"
-               id="use2456-9"
+               id="use2456"
                x="0"
                y="0"
                width="100%"
                height="100%"
                style="fill:#070707;fill-opacity:0.580392" />
+          </g>
+        </g>
+        <g
+           style="fill:#070707;fill-opacity:0.580392;stroke:#000000;stroke-width:0"
+           id="g2460-0"
+           transform="matrix(0.70700021,0,0,0.70700021,-7687.2961,16174.525)"
+           data-mml-node="TeXAtom"
+           inkscape:transform-center-x="-0.56696429"
+           inkscape:transform-center-y="2.2678571">
+          <g
+             style="fill:#070707;fill-opacity:0.580392"
+             id="g2450-6"
+             data-mml-node="mi"
+             transform="matrix(1.8758685,0,0,1.8758685,-622.30456,-269.32956)">
+            <use
+               style="fill:#070707;fill-opacity:0.580392"
+               height="100%"
+               width="100%"
+               y="0"
+               x="0"
+               id="use2448-4"
+               xlink:href="#MJX-138-TEX-I-6F" />
+          </g>
+          <g
+             style="fill:#070707;fill-opacity:0.580392"
+             id="g2454-3"
+             transform="matrix(1.8758685,0,0,1.8758685,287.49166,-269.32956)"
+             data-mml-node="mi">
+            <use
+               style="fill:#070707;fill-opacity:0.580392"
+               height="100%"
+               width="100%"
+               y="0"
+               x="0"
+               id="use2452-4"
+               xlink:href="#MJX-138-TEX-I-75" />
+          </g>
+          <g
+             style="fill:#070707;fill-opacity:0.580392"
+             id="g2458-5"
+             transform="matrix(1.8758685,0,0,1.8758685,1360.4884,-269.32956)"
+             data-mml-node="mi">
+            <use
+               style="fill:#070707;fill-opacity:0.580392"
+               height="100%"
+               width="100%"
+               y="0"
+               x="0"
+               id="use2456-9"
+               xlink:href="#MJX-138-TEX-I-74" />
           </g>
         </g>
       </g>
