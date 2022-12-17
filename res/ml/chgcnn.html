@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GNN</title>
+    <title>CHGCNN</title>
     <link href="../../assets/css/gnn.css" rel="stylesheet">
     <link href="../../assets/css/ml.css" rel="stylesheet">
     <link href="../../assets/css/jumper.css" rel="stylesheet">
@@ -48,9 +48,9 @@
 
 
     <meta charset="UTF-8">
-    <meta name="description" content="A short overview of graph neural networks application to classification and their 
-                                      possible implementations. ">
-    <meta name="keywords" content="graph neural network, pytorch geometric">
+    <meta name="description" content="A short overview of the novel application of hypergraph convolutional networks to 
+                                      the predition of crystalline material properties. ">
+    <meta name="keywords" content="hypergraph neural network, crystal hypergraphs">
     <meta name="author" content="Alexander J. Heilman">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
@@ -64,34 +64,37 @@
   </div>
 
 
-  <h1 id="title">Graph Neural Networks</h1>
+  <h1 id="title">Crystal Hypergraph Networks</h1>
     <div class="flex stack">
       <p id="blurb">
-        Graph neural networks are machine learning models based on artificial neural networks that take graphs as input and, in their most 
-        basic arrangement, output graphs as well. Basic graph neural networks will only update graph features based on the input graph's 
-        connectivity, while preserving this connectivity in the output graph. Graph neural networks are the most basic tool in the larger 
-        field known as 'geometric deep learning'.
+        Crystal graph convolutional networks (CGCNNs) have shown promising results in the prediction of material properties, but their
+        structures used to model the crystalline solid are generally restricted exculsively to pair-wise correlations. Hypergraphs relax 
+        the constraint of pair-wise edges to allow for arbitrary-order structure correlations.
       </p>
-      
+
   
       <div id="toc_container">
         <p class="toc_title">Contents</p>
         <ul class="toc_list">
-          <li><a href="#graphs">1 Graphs</a></li>
+          <li><a href="#graphs">1 Hypergraphs</a></li>
           <ul><li><a href="#model">1.1 Models</a></li>
             <li><a href="#sgt">1.2 Spectral Theory</a></li>
-            <li><a href="#extensions">1.3 Extensions</a></li></ul>
-          <li><a href="#gnn">2 Graph Neural Nets</a></li>
+          <li><a href="#gnn">2 Hypergraph Neural Nets</a></li>
           <ul><li><a href="#glay">2.1 Graph Layers</a></li>
-            <li><a href="#play">2.2 Pooling Layers</a></li></ul>
-          <li><a href="#pyg">3 Pytorch Geometric</a></li> 
+            <li><a href="#play">2.2 Convolutional Layers</a></li></ul>
+          <li><a href="#pyg">3 Crystal Hypergraphs</a></li> 
           <li><a href="#res">4 Resources</a></li>
          
       </div>
+      <p>
+        Thus, a natural application of such networks would be to crystalline structures with known higher order structures, such as motifs
+        in metal oxides.
+      </p>
+      
     </div>
     <br>
     <div class="hl"></div>
-    <h2 id="graphs">Graphs</h2>
+    <h2 id="graphs">Graphs \(\rightarrow \) Hypergraphs</h2>
     <p>
       Graphs are mathematical structures representing objects with simple connections between them. Thus, they can be specified
       by two dimensional drawings of points (nodes) with lines (edges) between them, as below.
@@ -110,7 +113,7 @@
       nodes. Alternatively, we can specify a graph with an adjancency matrix or a graph Laplacian, but this may be inefficient for sparse graphs.
     </p>
     <p>
-      Further, while simple graphs in the mathematical sense require no extra structure beyond the above constructions, their application
+      Further, while simple graphs in the mathematical sense require no extra structure than the above constructions, their application
       in the field of machine learning almost always require the association of feature vectors to the elements of the vertex or edge sets.
     </p>
     <div class="dl"></div>

@@ -23,6 +23,7 @@
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="../../assets/css/halfbakedstyles.css">
+    <link rel="stylesheet" href="../../assets/css/general.css">
     <link rel="stylesheet" href="../../assets/css/vendor.css">
     <link rel="stylesheet" href="../../assets/css/ubiquityofnum.css">
 
@@ -182,7 +183,7 @@
 
                             <div class="entry__media">
                                 <figure class="alignwide" >
-                                    <img src="../../assets/images/halfbaked/remoteserv.svg"   alt="Depiction of remote server and the connection to a local machine.">
+                                    <img src="../../assets/images/halfbaked/sshtop.svg"   alt="Artistic rendition of relevant situation. (Seagull Image Credit: Athena on Pexels) ">
                                 </figure>
                             </div>
 
@@ -194,132 +195,119 @@
                                     </p> 
 
                                     <p class="drop-cap">
-                                        Often times in computational work it's neccesssary to communicate with, or through, remote servers from some local machine. Perhaps the most
-                                        common protocol through which such communication is done is the Secure SHell or SSH protocol.
+                                        Often times in computational work it's neccesssary to communicate with, or through, and control remote servers from some local machine. Perhaps the most
+                                        common protocol through which such remote control and communication is done is the Secure SHell or (as it's more commonly refered to as) the SSH protocol. SSH 
+                                        also has an associated protocol specifically for secure file transfer over untrusted networks, termed the Secure Copy Protocol or SCP (see also SFTP). Below,
+                                        a brief overview of the cryptographic methods are given, as well as a working minimum of code in the cases of most common usage.
                                     </p>
 
             
             
-                                    <h2>Binary Grover Search</h2>
+                                    <h2>SSH Protocol: Overview</h2>
                                     <p>
-                                    Grover's eponymous search algorithm searches a complete superposition \(\vert +\rangle^{\otimes n}\) for the states sparsely marked by an oracle
-                                    with negative relative phase. That is, Grover's search algorithm generally refers to a template for an algorithm that takes some oracle, which marks a sparse 
-                                    set of computational vectors with a phase of \(\pi\), and returns those marked elements with high probability. The purpose of Grover's search is demonstrated below as a visual heuristic.
-                                    </p>
-                                    <div class="eq">
-                                        $$
-                                            \vert + \rangle ^{\otimes 3}=
-                                            \begin{array}{c c c c c c c c c}
-                                            \vert 000 \rangle\\
-                                            \vert 001 \rangle \\
-                                            \vert 010\rangle \\ 
-                                            \vert 011\rangle\\
-                                            \vert 100\rangle\\
-                                            \vert 101 \rangle \\
-                                            \vert 110 \rangle \\
-                                            \vert 111\rangle \end{array}
-                                            \left[
-                                            \begin{array}{c}
-                                            1 \\
-                                            1 \\
-                                            1 \\
-                                            1 \\
-                                            1 \\
-                                            1 \\
-                                            1 \\
-                                            1 \\
-                                            \end{array}
-                                            \right]
-                                            \xrightarrow{\mathcal{O}}
-                                            \left[
-                                            \begin{array}{c}
-                                            1 \\
-                                            1 \\
-                                            -1 \\
-                                            1 \\
-                                            1 \\
-                                            1 \\
-                                            1 \\
-                                            1 \\
-                                            \end{array}
-                                            \right]
-                                            \xrightarrow[\text{search}]{\text{Grover}}\hspace{.3cm}
-                                            \vert 010\rangle                 
-                                    $$
-                                    </div>
-                                    <p>
-                                    This process can be extended to several values marked by a \(\pi\) phase as well as to arbitrary initial state, and in this form it is generally referred
-                                    to as amplitude amplification. Amplitude estimation is a neccesssary precursor to such operations however.
+                                        If one wishes to communicate in private with some other entity over an untrusted network, it's best to assume anyone can see everything you send. The 
+                                        problem then is to encode your information such that, to someone without privileges, you're sending complete gibberish, or completely random messages
+                                        (of course this is the ideal case). We may substantiate these privileges in the form of another bit of information, termed a <em>key</em>, that allows
+                                        the recipient or key holder to decode the message into something coherent. Of course, a common problem with such a simple method is how one may initially 
+                                        distribute said key to an remote recipient, since we assume the same available channels are untrusted. 
                                     </p>
                                     <p>
+                                        The SSH protocol works around this by providing a secure means of transfer, specifically for the key to be used in symmetric communication (since symm. encryption 
+                                        is generally cheaper computationally). 
+                                    </p>
+                               
                                     
-                                    </p>
-
-                                    
-                                    <figure class="alignwide">
-                                        <img src="../../assets/images/halfbaked/trainva.svg"  alt="A train moving with a ball moving within it. Velocity vectors for
-                                        the train relative to Alice (the ground), and for the ball relative to the train, are drawn. (Credit for photo to Ryan Milier, Markup by A.H.)">
+                                    <figure class="align center">
+                                        <img src="../../assets/images/halfbaked/SSH_diag.png"  alt="SSH diagram from Wikimedia Commons (License:https://creativecommons.org/licenses/by-sa/4.0/deed.en)">
                                     </figure>
-
-                                    <h2>Ternary Grover Search</h2>
+                                    <h2>SSH Protocol: Usage</h2>
                                     <p>
-                                    Now, what if we want to encode three types of values in a database? One way would be to package two qubits together and represent four 
-                                    values each pair. However, using qutrits, we may make this encoding explicitly. 
+                                        To utilize the SSH protocol, both entities must have some SSH client installed (the most common being OpenSSH, available for most OS distros), and 
+                                        visible on the same network. Mac and Linux distributions have an SSH client (OpenSSH) by default installed and ready for use in terminal; Windows 10 and onward generally do as 
+                                        well (OpenSSH; PuTTy also works well for older versions). Below, the most common use of SSH, as the client trying to connect to a remote server (with OpenSSH)
+                                        is covered. Then, a few things on the server side needed to allow for such connections are discussed.
                                     </p>
-                                    <div class="eq">
-                                        $$
-                                        \vert +_3 \rangle ^{\otimes 2}=
-                                        \begin{array}{c c c c c c c c c}
-                                        \vert 00 \rangle\\
-                                        \vert 01 \rangle \\
-                                        \vert 02\rangle \\ 
-                                        \vert 10\rangle\\
-                                        \vert 11\rangle\\
-                                        \vert 12 \rangle \\
-                                        \vert 20 \rangle \\
-                                        \vert 21\rangle \\
-                                        \vert 22 \rangle\\
-                                        \end{array}
-                                        \left[
-                                        \begin{array}{c}
-                                        1 \\
-                                        1 \\
-                                        1 \\
-                                        1 \\
-                                        1 \\
-                                        1 \\
-                                        1 \\
-                                        1 \\
-                                        1 \\
-                                        \end{array}
-                                        \right]
-                                        \xrightarrow{\mathcal{O}}
-                                        \left[
-                                        \begin{array}{c}
-                                        1 \\
-                                        \omega^2 \\
-                                        \omega^2 \\
-                                        \omega \\
-                                        \omega^2 \\
-                                        1 \\
-                                        1 \\
-                                        \omega^2 \\
-                                        1 \\
-                                        \end{array}
-                                        \right]
-                                        \xrightarrow[\text{search}]{\text{Generalized Grover}}\hspace{.3cm}
-                                        \vert 10\rangle   
-                                        $$
+                                    <p>
+                                        If both devices are not on the same network, SSH tunneling may be further be required to establish a connection.
+                                    </p>
+                                    <h3>Client Side (OpenSSH)</h3>
+                                    <p>
+                                        The most common usage of SSH is to connect from client-side to some user account on the server-side and act on that remote 
+                                        server as the logged in user. This can be accomplished by entering the following into the appropriate local terminal:
+                                        <code class="center">
+                                            ssh <<em>username</em>>@<<em>ip.address</em>>
+                                        </code>
+                                        Here username field should be filled in with the user account on the remote server one is trying to sign in as, and the ip address should
+                                        be replaced with any unique and recognized identifier for the remote server on the network. 
+                                    </p>
+                                    <div class="boxed">
+                                        <h4 class="boxtitle">First Time Connecting: Trust</h4>
+                                        <p>
+                                            The first time one connects to a unique server, one must take a small leap of faith and assume that you may trust the initial 
+                                            message of the intended partner. Hence, the first connection to a unique server from some client will (or atleast should) be prefaced by a prompt 
+                                            as to whether you are willing to trust this first transaction. 
+                                        </p>
+                                        <figure class="align">
+                                            <img src="../../assets/images/halfbaked/firsttrustssh.png"  alt="An example prompt for intial trust of an SSH server's authenticity">
+                                        </figure>
+                                        <p>
+                                            After this initial contact, the host's key is saved so this prompt shouldn't appear again for an equivalent connection. If a similar prompt, or one 
+                                            asking about a change in the host's key, appears after this initial instance, suspicions should be raised as to the authenticity of connection.
+                                        </p>
                                     </div>
+                                    <h4>Additional Fields</h4>
+                                    <p>
+                                        Some optional fields are also commonly used with the SSH command in terminal, these include specfiying the port number with -p to connect via (which is 22 by default),
+                                        whether or not to show extra data about the connection (which is supressed by default) with -v. The usual -h can also be used to display additional options, as usual.
+                                    </p>
+                                    <h3>Server Side</h3>
+                                    <p>
+                                        As mentioned above, the remote server one is attempting to connect to and control requires that it is acting as an SSH server. The method of initiating this 
+                                        service is varied depending on the SSH client chosen, but the a common case (OpenSSH in Arch Linux terminal) is covered <a href="https://wiki.archlinux.org/title/OpenSSH#Server_usage">here</a>.
+                                    </p>
+                                    <h4>Server Initialization</h4>
+                                    <p>
+                                        Regardless of the specifics, setting up an SSH server generally requires the intended server to treat an SSH event listener, such as SSHD, as a service that runs constantly in the 
+                                        background, listening for requests through the network for SSH connections. Starting this service thus constitutes the intitialization of a device as an SSH server 
+                                        and is all one needs to do to set it up as such.
+                                    </p>
+                                    <h2>SCP Protocol: Overview</h2>
+                                    <p>
+                                        Another common operation one often encounters is that of secure transfer of files from one device to another over an untrusted network. 
+                                        This may be accomplished with the use of a transfer protocol based on SSH such as the Secure File Transfer Protocol (SFTP) or Secure Copy
+                                        Protocol (SCP), which is discussed here.
+                                    </p>
+                                    <h2>SCP Protocol: Usage</h2>
+                                    <p>
+                                        The most basic usage of SCP is to copy a file from a local device to a remote server, or vice versa. This may be specficied in the addresses of the files.
+                                        SCP takes as the first argument the address of the file to be copied and then takes the last argument as the address for the file to be copied to. 
+                                        <code class="center">
+                                            scp <<em>current file address</em>> <<em>copy destination</em>>
+                                        </code>
+                                        Note that one may include several files to be copied, which will be read as all but the last argument given to scp (where the last is always the destination). 
+                                        Hence, to copy multiple files simultaneously to the same directory, the following structure of command should be given.
+                                        <code class="center eq">
+                                            scp <<em>current file address 1</em>> ... <<em>current file address n</em>> <<em>copy destination</em>>
+                                        </code>
+                                        The above will then copy files from <<em>file address 1</em>> to  <<em>file address n</em>> to the directory specified at the address <<em>copy destination</em>>.
+                                    </p>
+                                    <p>
+                                        A common problem encountered when using SCP is when one wishes to copy whole directories from one location to another. This case may be handled by 
+                                        applying the additional, optional argument -r (for recursive) letting SCP know you wish to copy those directories recursively to the destination.
+                                    </p>
+                                    <h2>Further Resources</h2>
+                                    <p>
+                                        A good introduction to the SSH protocol can be found in this <a href="https://www.netburner.com/learn/introduction-to-the-ssh-protocol/">netburner article</a>.
+                                    </p>
+
                                     <p class="entry__tags">
                                         <strong>Tags:</strong>
                     
                                         <span class="entry__tag-list">
-                                           <a href="#0">Quantum Computation</a> <a href="#0">Physics</a>
+                                           <a href="#0">Computer</a> <a href="#0">Intro</a>
                                         </span>
                         
-                                    </p>
-    
+                               
                                     <div class="entry__author-box">
                                         <figure class="entry__author-avatar">
                                             <img alt="" src="images/avatars/user-06.jpg" class="avatar">

@@ -171,6 +171,21 @@
     This form for the training matrix may be derived from a first order approximation of the cost function's gradient; for more details of this derivation, see the paper's associated <a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-020-14454-2/MediaObjects/41467_2020_14454_MOESM1_ESM.pdf">supplementary
     resources</a>.
      </p>
+
+     <h5>Adjoint Layer</h5>
+     <p>
+      The adjoint layer is analagous to the backward pass of a classical neural network, and is neccessary for the computation of the training matrix (atleast for the form given above). 
+      <div class="eq">
+        \[ \mathcal{F}^{\ell+1}(\rho_{\ell+1}) =\text{Tr}_{\ell+1}\left[\left(\left(\vert 0\rangle ^{\otimes m_{\ell+1}}\langle 0\vert^{\otimes m_{\ell+1}}\right)_{\ell+1}\otimes \mathbb{I}_{\ell}\right) \left(\prod_{m=1}^{m_{\ell+1}}U^{m\dagger}_{\ell+1}\right)\left(\rho_{\ell+1}\otimes\mathbb{I}_{\ell} \right) 
+        \left(\prod_{m=1}^{m_{\ell+1}}U^{m-m_{\ell+1}}_{\ell+1}\right)
+        \right]
+        = \rho_{\ell} \]
+      </div>
+     </p>
+
+
+
+
      <button type="button" class="collapsible"> Simple Example</button>
      <div class="content eq">
      <h3 class="notop">\(2\times 3\times 2\) Qubit QNN</h3>

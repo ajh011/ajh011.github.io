@@ -6,6 +6,7 @@
     margin-bottom: 5px;
     padding: 5px;
     width: auto;
+    float: right;
 }
 
 .toc_title {
@@ -43,6 +44,6 @@
 }
 
 #blurb{
-    max-width: 17.5cm;
     text-align: justify;
+    max-width: 17.5cm;
 }
