@@ -10,12 +10,17 @@
     border: 1px solid black;
     padding: 0px 15px;
   }
+
+  .boxedwhite{
+    border: 1px solid white;
+    padding: 0px 15px;
+  }
   
   .boxtitle{
     padding-top: 8px;
     margin-top: 8px;
   }
-  
+
   .eq {
     overflow-x: auto;
     margin: 0.8%;

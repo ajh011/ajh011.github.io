@@ -4,6 +4,8 @@
     <title>Quantum Machine Learning</title>
     <link href="../../assets/css/qisstyle.css" rel="stylesheet">
     <link href="../../assets/css/qudits.css" rel="stylesheet">
+    <link href="../../assets/css/general.css" rel="stylesheet">
+
 
 
     <!--Geogebra Support-->
@@ -103,10 +105,11 @@
      <p>
       The overall action of the network is composed of layer-by-layer composition of the transition map \(\epsilon^{\ell}\) for each layer \(\ell\) s.t. \(in\leq \ell\leq out\).
       
-      Each layer may have a different number of qubits \(M_{\ell}\). Explicitly, the \(\ell\)-th layer's transition map takes the form:
+      Each layer may have a different number of qubits \(m_{\ell}\). Explicitly, the \(\ell\)-th layer's transition map takes the form:
       \[
-      \epsilon^{\ell}\left( \rho_{\ell-1} \right) = \text{Tr}_{\ell-1}\left[
-      \left(\prod_{m=1}^{M_{\ell}}U^{m-M_{\ell}}_{\ell}\right)\left(\left(\vert 0\rangle ^{\otimes M_{\ell}}\langle 0\vert^{\otimes M_{\ell}}\right)_{\ell}\otimes \rho_{\ell-1}\right) \left(\prod_{m=1}^{M_{\ell}}U^{m\dagger}_{\ell}\right)
+      \epsilon^{\ell-1}(\rho_{\ell-1})=
+      \text{Tr}_{\ell-1}\left[
+      \left(\prod_{m=1}^{m_{\ell}}U^{\ell}_{m}\right)\left(\left(\vert 0\rangle ^{\otimes m_{\ell}}\langle 0\vert^{\otimes m_{\ell}}\right)_{\ell}\otimes \rho_{\ell-1}\right) \left(\prod_{m=m_{\ell}}^{1}U^{\ell\dagger}_{m}\right)
       \right]
      = \rho_{\ell}
       \]
@@ -120,16 +123,16 @@
       For each layer \(\ell\),
       </p>
       <p>
-      1. The next layer's \(M\) qubits are prepared in the initial state \(\vert 0\rangle ^{\otimes m}\langle 0\vert^{\otimes m}_{\ell}\) and tensor producted with the previous layer's output \(\rho_{\ell-1}\).
+      1. The next layer's \(m_{\ell}\) qubits are prepared in the initial state \(\vert 0\rangle ^{\otimes m_{\ell}}\langle 0\vert^{\otimes m_{\ell}}_{\ell}\) and tensor producted with the previous layer's output \(\rho_{\ell-1}\).
       
       \[
-      \rho_{\ell}' = \left(\vert 0\rangle ^{\otimes M}\langle 0\vert^{\otimes M}\right)_{\ell}\otimes \rho_{\ell-1}
+        \rho_{\ell}' = \left(\vert 0\rangle ^{\otimes m_{\ell}}\langle 0\vert^{\otimes m_{\ell}}\right)_{\ell}\otimes \rho_{\ell-1}
       \]
        
       
-      2. The \(\ell\)-th layer's \(M\) associated unitary matrices \(U_{\ell}^m\) are applied to this tensor product state (from top to bottom).
+      2. The \(\ell\)-th layer's \(m_{\ell}\) associated unitary matrices \(U^{\ell}_m\) are applied to this tensor product state (from top to bottom).
       \[
-      \rho_{\ell}'' = \left(\prod_{m=0}^{M-1}U^{M-m}_{\ell}\right)\rho_{\ell}'\left(\prod_{m=1}^{M}U^{m\dagger}_{\ell}\right) 
+      \rho_{\ell}'' = \left(\prod_{m=1}^{m_{\ell}}U^{\ell}_{m}\right)\left(\rho_{\ell}'\right) \left(\prod_{m=m_{\ell}}^{1}U^{\ell\dagger}_{m}\right)
       \]
       
       3. The partial trace over the \( (\ell-1)\)-th layer's Hilbert space is taken, resulting in the output state \(\rho_{\ell}\) of the \(\ell\)-th layer.
@@ -160,17 +163,43 @@
      <h4>Training</h4>
      <p>
       The issue now is training, which can be done iteratively by updating the network's constituent unitaries via the following relation, parametrized by the step size \(\epsilon\):
-      \[U_{m}^{\ell} \rightarrow e^{i\epsilon K_{m}^{\ell}}U_{m}^{\ell}\]
+      \[U_{m}^{\ell} \rightarrow e^{-\epsilon K_{m}^{\ell}}U_{m}^{\ell}\]
       <div class="center"> where </div>
       <div class="eq">
-      \[K_{m}^{\ell}  = \eta \frac{2^{m_{\ell-1}}}{N}\sum_{i = 1}^{N}\text{Tr}_{\neg \ell} \Bigg[\left(\prod_{n=0}^{m-1} U^{\ell}_{m-n}\right) \left(\left(\vert 0\rangle ^{\otimes m_{\ell}}\langle 0\vert ^{\otimes m_{\ell}}\right)_{\ell}\otimes\rho_{i}^{\ell-1}\right)\left(\prod_{n=1}^{m} U^{\ell\dagger}_{m}\right),
-\left(\prod_{n=m+1}^{m_{\ell}} U^{\ell\dagger}_{n}\right) \left(\sigma_i^{\ell}\otimes\mathbb{I}_{\ell-1}\right)\left(\prod_{n=1}^{m_{\ell}-(m+1)} U^{\ell}_{m_{\ell}-n}\right)
-\Bigg]\]
-    </div>
-    where the square brackets denote a commutator and \(\sigma_i^{\ell} = \mathcal{F}^{\ell+1}(... \mathcal{F}^{out}(\rho_{i}^{out})...)\) is the adjoint channel to  the layer-to-layer transition map \(\epsilon^{\ell}\) for layer \(\ell\). 
-    This form for the training matrix may be derived from a first order approximation of the cost function's gradient; for more details of this derivation, see the paper's associated <a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-020-14454-2/MediaObjects/41467_2020_14454_MOESM1_ESM.pdf">supplementary
-    resources</a>.
+      \[
+        K_{m}^{\ell}  = \eta \frac{2^{m_{\ell-1}}}{N}\sum_{i = 1}^{N}\text{Tr}_{\neg \ell,m} \Bigg[\left(\prod_{n=1}^{m} U^{\ell}_{n}\right) \left(\left(\vert 0\rangle ^{\otimes m_{\ell}}\langle 0\vert ^{\otimes m_{\ell}}\right)_{\ell}\otimes\rho_{i}^{\ell-1}\right)\left(\prod_{n=m}^{1} U^{\ell\dagger}_{n}\right),
+        \left(\prod_{n=m_{\ell}}^{m+1} U^{\ell\dagger}_{n}\right) \left(\sigma_i^{\ell}\otimes\mathbb{I}_{\ell-1}\right)\left(\prod_{n=m+1}^{m_{\ell}} U^{\ell}_{n}\right)
+        \Bigg]
+      \]
+      </div>
+      where the square brackets denote a commutator and \(\sigma_i^{\ell} = \mathcal{F}^{\ell+1}(... \mathcal{F}^{out}(\rho_{i}^{out})...)\) is the adjoint channel to  the layer-to-layer transition map \(\epsilon^{\ell}\) for layer \(\ell\). 
+      This form for the training matrix may be derived from a first order approximation of the cost function's gradient; for more details of this derivation, see the paper's associated <a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-020-14454-2/MediaObjects/41467_2020_14454_MOESM1_ESM.pdf">supplementary
+      resources</a>.
      </p>
+
+     <div class="boxedwhite">
+     <h4 class="boxtitle">Note: Discrepancy with Original Paper</h4>
+     <p>
+     In the original paper, the update matrix acts on it's unitary, much as a generator of a Lie algebra acts on it's associated group elements, as below:
+     \[
+     U \rightarrow e^{iK}U
+     \]
+     a convention which we've neglected to adopted here. However, by this definition \(K\) must be Hermitian for \(U\) to remain unitary; and in the original paper, \(K\), as defined,
+     is skew-Hermitian. This requires us to either add a complex factor of \(i\) to \(K\) or to remove the factor of \(i\) from the map. We choose to do the latter here. In fact, upon
+     analysis of their associated code, the authors neglect both factors of \(i\) and hence update according to the map \(U\rightarrow e^{-K} U\) as well.
+     </p>
+
+      <p>
+      <em>Proof</em> It is well known that products of unitaries are unitary and that the generators of unitaries are Hermitian. However, by the construction of \(K\) (according to the same authors) \(K\) is the commutator of two density matrices, which are Hermitian. However the commutator of two Hermitians is skew-Hermitian.
+      <div class="eq">
+      \[
+      [A,B]^{\dagger}=(AB-BA)^{\dagger}=B^{\dagger}A^{\dagger}-A^{\dagger}B^{\dagger}=-[A,B] 
+      \]
+      </div>
+      and hence, by the defined map, \(K\) must also be multiplied by an extra factor of the complex unit \(i\) to make it Hermitian.
+      </p>
+
+     </div>
 
      <h5>Adjoint Layer</h5>
      <p>
@@ -203,7 +232,79 @@
      </p>
      <img src="../../assets/images/res/qis/QNNex.svg" width="95%" height="auto" alt="2x3x2 Example Quantum Neural Network">
      <p>
+
+      Since there are \(3_{(int)} + 2_{(out)} = 5\) qubits beyond the input layer, there are 5 constituent unitaries composing the QNN: with \(U^1_1\), \(U^1_2\), and \(U^1_3\)
+      for the intermediate layer;  and with \(U^{out}_1\) and  \(U^{out}_2\) for the final layer. Unitaries for the intermediate layer \(U^1_m\) then act non-trivially on a 
+      state space of dimension \(2^{2+1}\times2^{2+1}\) but are tensored with identity in the rest, resulting in a matrix of dimension \(2^{2+3}\times2^{2+3}\).
+      Similarly, unitaries for the output layer \(U^1_m\) then act on a state space of dimension \(2^{3+1}\times2^{3+1}\) but are tensored with identity in the rest,
+      resulting in a matrix of dimension \(2^{3+2}\times2^{3+2}\).
+
      </p>
+
+     <p>
+      These 5 unitaries then require us to construct 5 training matrices \(K_m^{\ell}\), each corresponding uniquely to one of the above unitaries.
+     </p>
+     <h4>Forward Pass</h4>
+     <p>
+     <div class="eq">
+      \[
+      \rho_{in} \rightarrow \rho_{out}= \text{Tr}_{1}\Big[ U^{2}_2U^{2}_1\Big(\text{Tr}_{in}\left[U^1_3U^{1}_2U^{1}_1\left(\rho_{in}\otimes \vert 000\rangle\langle000\vert_{1}\right)U^{1\dagger}_1U^{1\dagger}_2U^{1\dagger}_3\right]\otimes \vert 00\rangle\langle00\vert_{2}\Big)U^{2\dagger}_1U^{2\dagger}_2 \Big]
+      \]
+     </div>
+     </p>
+     <h4>Training Matrices</h4>
+     <p>
+      For the intermediate layer's unitaries, we have the corresponding training matrices:
+     <div class="eq">
+      \[
+        K^1_1 =\eta\frac{2^2}{N}\sum_{i=1}^N \text{Tr}_{2,3_{int}}\left[U_1^1\left(\rho^{in}_i\otimes \vert 000\rangle\langle000\vert_1\right)U^{1\dagger}_1,U^{1\dagger}_2U^{1\dagger}_3\left(\mathbb{I}_{2^2}\otimes\sigma_i^1\right)U^{1}_3U^{1}_2\right]
+      \]
+      \[
+        K^1_2 = \eta\frac{2^2}{N}\sum_{i=1}^N \text{Tr}_{1,3_{int}}\left[U_2^1U_1^1\left(\rho^{in}_i\otimes \vert 000\rangle\langle000\vert_1\right)U^{1\dagger}_1U^{1\dagger}_2,U^{1\dagger}_3\left(\mathbb{I}_{2^2}\otimes\sigma_i^1\right)U_3^1\right]
+      \]
+      \[
+        K^1_3 = \eta\frac{2^2}{N}\sum_{i=1}^N \text{Tr}_{1,2_{int}}\left[U_3^1U_2^1U_1^1\left(\rho^{in}_i\otimes \vert 000\rangle\langle000\vert_1\right)U^{1\dagger}_1U^{1\dagger}_2U^{1\dagger}_3,\left(\mathbb{I}_{2^2}\otimes\sigma_i^1\right)\right]
+      \]
+     </div>
+     </p>
+     <p>
+      And then for the output layer's unitaries, we have the corresponding training matrices:
+
+      <div class="eq">
+        \[
+        K^{out}_1 =\eta\frac{2^3}{N}\sum_{i=1}^N \text{Tr}_{2_{out}}\left[U_1^{out}\left(\rho^{int}_i\otimes \vert 00\rangle\langle00\vert_{out}\right)U^{out\dagger}_1,U^{out\dagger}_2\left(\mathbb{I}_{2^3}\otimes\rho_i^{out}\right)U^{out}_2\right]
+        \]
+        \[
+        K^{out}_1 =\eta\frac{2^3}{N}\sum_{i=1}^N \text{Tr}_{1_{out}}\left[U^{out}_2U_1^{out}\left(\rho^{int}_i\otimes \vert 00\rangle\langle00\vert_{out}\right)U^{out\dagger}_1U^{out\dagger}_2,\left(\mathbb{I}_{2^3}\otimes\rho_i^{out}\right)\right]
+        \]
+      </div>
+      
+      where \(\rho^{int}_i = \varepsilon^{1}(\rho^{in}_i)\),  \(\rho^{out}_i = \varepsilon^{out}(\varepsilon^{1}(\rho^{in}_i))\),
+       and \(\sigma_i^1=\mathcal{F}^{out}(\rho^{out}_i)\), with \(\rho^{out}_i\)
+       again being from  the training data. 
+        
+     </p>
+     
+     <h5>Adjoint Layer</h5>
+     <p>
+      Since there is only one intermediate layer for the given structure, there is only one relevant adjoint map, analogous to a backward pass 
+      from the output layer to the intermediate layer. We now define this adjoint map as follows:
+     <div class="eq">
+      \[
+      \mathcal{F}^{out}(\rho_{out}) = 
+      
+      \text{Tr}_{out}\left[ \left(\vert 00\rangle\langle 00 \vert_{out} \otimes \mathbb{I}_{2^3} \right) U^{out\dagger}_1 U^{out\dagger}_2 (\rho_{out}\otimes\mathbb{I}_{2^3})U^{out}_2 U^{out}_1 \right]
+      
+      =\rho_{int}
+      \]
+     </div>
+
+     <h3>Simulation \& Resources</h3>
+     <p>
+      For a simulated version of this example network in QuTip, download this <a href="../../products/projects/qnn/qnn_232.ipynb">jupyter notebook</a> or see this <a href="../../products/projects/qnn/qnn_232.pdf">report</a>.
+     </p>
+     </p>
+     
      </div>
    <!--  <h3>Resources</h3>
      <p>
