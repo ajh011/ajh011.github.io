@@ -53,7 +53,7 @@
     <meta name="keywords" content=" ">
     <meta name="author" content="Alexander J. Heilman">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="all">
   </head>
   
   <body>
@@ -218,32 +218,13 @@
      <button type="button" class="collapsible"> Simple Example</button>
      <div class="content eq">
      <h3 class="notop">\(2\times 3\times 2\) Qubit QNN</h3>
+     
      <p>
-      Below, the basics of the framework are covered in a simple example, closely following the <a href="https://www.youtube.com/watch?v=_M2GQAknykg">presentation</a> given by Ramona Wolf.
-     </p>
-     <p></p>
-     <p>
-      Our simple example of the model will consist of a two-qubit input state, one three-qubit hidden layer, and a two-qubit output state. The action of the first step is to take the tensor product 
-      of the arbitrary input state \(\rho_{in}\) with a fiduciary (cleanly initialized), three qubit ground state \(\vert 000\rangle \langle 000 \vert \), and then apply three unitaries of dimension \(2^{2+1}\) which act on
-      the input state and the first, second, and third intermediate state vectors, respectively (with identity in the rest) and in that order (because unitaries won't neccessarily commute and the convention is to 
-      apply from top to bottom for each layer). The partial trace is then taken over the input state's Hilbert space. This resulting state is then tensor producted with the output state, which is also initialized as 
-      the ground state of a two-qubit Hilbert space. Two more \(2^{1+2}\) dimensional unitaries are then applied to the intermediate qubit's and the top and bottom, respectively (in order from top to bottom), and the 
-      partial trace over the intermediate state space is then taken. The resulting \(2^{2}\) dimensional state \(\rho_{out}\) is then the output of this simple model.
+      Our simple example of the model will consist of a two-qubit input state, one three-qubit hidden layer, and a two-qubit output state, closely following the <a href="https://www.youtube.com/watch?v=_M2GQAknykg">presentation</a> given by Ramona Wolf.
      </p>
      <img src="../../assets/images/res/qis/QNNex.svg" width="95%" height="auto" alt="2x3x2 Example Quantum Neural Network">
-     <p>
+    
 
-      Since there are \(3_{(int)} + 2_{(out)} = 5\) qubits beyond the input layer, there are 5 constituent unitaries composing the QNN: with \(U^1_1\), \(U^1_2\), and \(U^1_3\)
-      for the intermediate layer;  and with \(U^{out}_1\) and  \(U^{out}_2\) for the final layer. Unitaries for the intermediate layer \(U^1_m\) then act non-trivially on a 
-      state space of dimension \(2^{2+1}\times2^{2+1}\) but are tensored with identity in the rest, resulting in a matrix of dimension \(2^{2+3}\times2^{2+3}\).
-      Similarly, unitaries for the output layer \(U^1_m\) then act on a state space of dimension \(2^{3+1}\times2^{3+1}\) but are tensored with identity in the rest,
-      resulting in a matrix of dimension \(2^{3+2}\times2^{3+2}\).
-
-     </p>
-
-     <p>
-      These 5 unitaries then require us to construct 5 training matrices \(K_m^{\ell}\), each corresponding uniquely to one of the above unitaries.
-     </p>
      <h4>Forward Pass</h4>
      <p>
      <div class="eq">
@@ -254,7 +235,6 @@
      </p>
      <h4>Training Matrices</h4>
      <p>
-      For the intermediate layer's unitaries, we have the corresponding training matrices:
      <div class="eq">
       \[
         K^1_1 =\eta\frac{2^2}{N}\sum_{i=1}^N \text{Tr}_{2,3_{int}}\left[U_1^1\left(\rho^{in}_i\otimes \vert 000\rangle\langle000\vert_1\right)U^{1\dagger}_1,U^{1\dagger}_2U^{1\dagger}_3\left(\mathbb{I}_{2^2}\otimes\sigma_i^1\right)U^{1}_3U^{1}_2\right]
@@ -268,14 +248,13 @@
      </div>
      </p>
      <p>
-      And then for the output layer's unitaries, we have the corresponding training matrices:
 
       <div class="eq">
         \[
         K^{out}_1 =\eta\frac{2^3}{N}\sum_{i=1}^N \text{Tr}_{2_{out}}\left[U_1^{out}\left(\rho^{int}_i\otimes \vert 00\rangle\langle00\vert_{out}\right)U^{out\dagger}_1,U^{out\dagger}_2\left(\mathbb{I}_{2^3}\otimes\rho_i^{out}\right)U^{out}_2\right]
         \]
         \[
-        K^{out}_1 =\eta\frac{2^3}{N}\sum_{i=1}^N \text{Tr}_{1_{out}}\left[U^{out}_2U_1^{out}\left(\rho^{int}_i\otimes \vert 00\rangle\langle00\vert_{out}\right)U^{out\dagger}_1U^{out\dagger}_2,\left(\mathbb{I}_{2^3}\otimes\rho_i^{out}\right)\right]
+        K^{out}_2 =\eta\frac{2^3}{N}\sum_{i=1}^N \text{Tr}_{1_{out}}\left[U^{out}_2U_1^{out}\left(\rho^{int}_i\otimes \vert 00\rangle\langle00\vert_{out}\right)U^{out\dagger}_1U^{out\dagger}_2,\left(\mathbb{I}_{2^3}\otimes\rho_i^{out}\right)\right]
         \]
       </div>
       
@@ -287,9 +266,7 @@
      
      <h5>Adjoint Layer</h5>
      <p>
-      Since there is only one intermediate layer for the given structure, there is only one relevant adjoint map, analogous to a backward pass 
-      from the output layer to the intermediate layer. We now define this adjoint map as follows:
-     <div class="eq">
+      <div class="eq">
       \[
       \mathcal{F}^{out}(\rho_{out}) = 
       
@@ -298,6 +275,7 @@
       =\rho_{int}
       \]
      </div>
+     </p>
 
      <h3>Simulation & Resources</h3>
      <p>
