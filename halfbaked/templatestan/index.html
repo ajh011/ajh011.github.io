@@ -197,10 +197,132 @@
                                     Nice intro paragraph
                                     </p>
 
-            
-            
-                                    <h2>First heading</h2>
-            
+                                    <h1 id="title">Quantum Angular Momentum Relations</h1>
+                                    <p id="blurb">
+                                      Angular momentum is defined as 
+                                      <div class="eq">
+                                      $$
+                                        L_k = \sum_{i,j,k}\epsilon_{ijk}x_i p_j
+                                      $$
+                                      </div>
+                                      Angular momentum in quantum mechanics cannot have simultaneous eigenvectors for all three 
+                                      spatial directions. That is, different components of angular momentum do not commute. However, 
+                                      the total angular momentum can be simultaneously described with one direction of angular momentum,
+                                      which generally is taken as \(L_z\). Explicitly, \(L^2\) and \(L_i\) commute. This simultaneous 
+                                      eigenstate is generally denoted in Dirac notation as \(\vert l m\rangle\), where \(l\) is the quantum number
+                                      corresponding to the \(L^2\equiv L_x^2+L_y^2+L_z^2 \) operator with eigenvalue \(l(l+1)\), and \(m\) is the quantum number associated with
+                                      \(L_z\) (we choose z here to adhere to the standard convention) with eigenvalue \( m\).
+                                    </p>
+                                
+                                    <p>
+                                      These relations are specified
+                                      explicitly below for referential convenience.
+                                      <div class="eq">
+                                        \begin{align}
+                                          [L_i,L_j]&=i\hbar \epsilon_{ijk}L_k\\
+                                          [L^2,L_i]&=0\\
+                                        \end{align}
+                                      </div>
+                                      
+                                      <div class="eq">
+                                        \begin{align}
+                                          L_z\vert l m\rangle&=m\vert l m\rangle\\
+                                          L^2\vert l m\rangle&=l(l+1)\vert l m\rangle\\
+                                
+                                        \end{align}
+                                      </div>
+                                    </p>
+                                
+                                    <h3>Ladder Operators</h3>
+                                    <p>
+                                      Ladder operators, or creation and annihilation operators, or raising and lowering operators
+                                      are useful in certain algebraic derivations and models of certain physical processes. They're defined for
+                                      vector operators as \(L_{z\pm}=L_x\pm iL_y\). In the context
+                                      of angular momentum, they lower or increase the magnetic quantum number, up to the minimum or maximum
+                                      possible values (\(-l\) or \(+l\) respectively), giving zero otherwise.
+                                      
+                                      <div class="eq">
+                                        \begin{align}
+                                          L_+\vert l m\rangle&=\sqrt{(j-m)(j+m+1))}\vert l (m+1)\rangle\\
+                                                             &=\sqrt{j(j+1)-m(m+1))}\vert l (m+1)\rangle\\
+                                          L_-\vert l m\rangle&=\sqrt{(j+m)(j-m+1))}\vert l (m-1)\rangle\\
+                                                             &=\sqrt{j(j+1)-m(m-1))}\vert l (m+1)\rangle
+                                        \end{align}
+                                      </div>
+                                
+                                    </p>
+                                
+                                    
+                                    <h3>Special Cases of Angular Momentum</h3>
+                                    <p>
+                                      Two special cases of quantum angular momentum are those of spin and total angular momentum.
+                                      The case of spin is generally described with the simultaneous operators \(S^2, S\). The
+                                      case of total angular momentum  is generally described with the simultaneous operators \(J^2,J_z\).
+                                    </p>
+                                
+                                    <h2>Total Angular Momentum</h2>
+                                    <p>
+                                      When a system is comprised of subsystems, each with their own angular momentum, 
+                                      the overall system can be described by a total coupled angular momentum. In this case, 
+                                      the new basis can be described as a linear combination of the subsystem's simultaneous 
+                                      angular momentum states. The coefficients in these expansions are the infamous Clebsch-Gordon 
+                                      coefficients.
+                                    </p>
+                                    <p>
+                                      A common and easily generalized example is the total angular momentum state of some particle,
+                                      resulting from the coupling of the particle's spin state and it's rotational angular momentum. In this case, the 
+                                      total angular operator may be described as below (though the explicit tensor product shown here is often
+                                      neglected and implied).
+                                
+                                      \[\vec{J}=\vec{L}\otimes 1+1\otimes\vec{S}\]
+                                
+                                      In such cases, it is often advantageous to then describe the total angular momentum state of the particle in terms of
+                                      this total angular momentum operator. In effect, we can describe the particle's total angular momentum state with four 
+                                      simultaneous eigenvalues \(j,j_z,l,s\) of the operators
+                                    </p>
+                                
+                                    <h3>Clebsch-Gordon Coefficients</h3>
+                                    <p>
+                                      The Clebsch-Gordon Coefficients are those that allow for conversion between the tensor product of
+                                      two separate angular momentum states, and the basis vectors for a coupled total angular momentum state.
+                                    </p>
+                                    <div class = "boxed">
+                                    <h5 class="boxtitle">Example (Singlet and Triplet)</h5>
+                                    <p>
+                                      As a simple example of the derivation of these coefficients, we consider the coupled angular momentum state 
+                                      arising from an interaction between two spin 1/2 spin states.</p>
+                                      
+                                    <p>
+                                      When the two spin states are considered as separate systems, we may describe the two spin states in terms of.
+                                      Hence, we may describe the total system in terms of the two individual states, yielding the the four natural basis states
+                                      of the independent tensor space:
+                                
+                                      \[\text{Tensor Product Basis:}\ \ \vert \uparrow\uparrow\rangle, \vert \uparrow\downarrow\rangle, \vert \downarrow\uparrow\rangle, \vert \downarrow\downarrow\rangle\]
+                                
+                                      This notation can be further expanded in the basis of simultaneous quantum numbers \(j,m\) of the operators \(J_{1,2}^2, J_{z_{1,2}}\), as below:
+                                
+                                      \[\vert j_1,j_2;m_1,m_2\rangle\]
+                                      
+                                       where, in the case of our example, \(j_{1,2}=\frac{1}{2}\) and  \(m_{1,2}=\pm\frac{1}{2}.\)
+                                    </p>
+                                    <p>
+                                
+                                    </p>
+                                    </div>
+                                
+                                    <br>
+                                
+                                    <h4>Algebraic Derivation</h4>
+                                    <p>
+                                      The Clebsch-Gordon coefficients for quantum angular momentum states may be derived through an iterative process
+                                      essentially consisting of three steps: start with the unique maximum or minimum state which will be equal to the 
+                                      maximum or minimum tensor product state; then apply the ladder operators (going up or down, after starting with the 
+                                      minimum or maximum, respectively); then, to transition to the next lower total angular momentum state, you apply the 
+                                      neccessary orthogonality between similar states.
+                                    </p>
+                                
+                                  </section>
+                                  </div> 
                                       
 
 
