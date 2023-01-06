@@ -6,7 +6,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Remote Servers</title>
+    <title>Git & GitHub Usage</title>
 
     <script>
         document.documentElement.classList.remove('no-js');
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../../assets/css/halfbakedstyles.css">
     <link rel="stylesheet" href="../../assets/css/general.css">
     <link rel="stylesheet" href="../../assets/css/vendor.css">
-    <link rel="stylesheet" href="../../assets/css/ubiquityofnum.css">
+    <link rel="stylesheet" href="../../assets/css/gitusage.css">
 
 
     <!-- favicons
@@ -150,7 +150,7 @@
                             <header class="entry__header">
     
                                 <h1 class="entry__title">
-                                    Working with remote servers with SSH and SCP.
+                                    Using Git & GitHub in Linux Terminals and Desktops.
                                 </h1>
 
                                 <div class="entry__meta">
@@ -166,7 +166,7 @@
                                             <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
                                             <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
                                         </svg>
-                                        August 12, 2022
+                                        January 4, 2023
                                     </div>
                                     <div class="entry__meta-cat">
                                         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -182,8 +182,8 @@
                             </header>
 
                             <div class="entry__media">
-                                <figure class="alignwide" >
-                                    <img src="../../assets/images/halfbaked/sshtop.svg"   alt="Artistic rendition of relevant situation. (Seagull Image Credit: Athena on Pexels) ">
+                                <figure class="alignwide center" >
+                                    <img src="../../assets/images/halfbaked/github-mark.svg" style="width: 60%;"  alt="Github Logo.">
                                 </figure>
                             </div>
 
@@ -191,67 +191,92 @@
 
                                 <div class="entry__content">
                                     <p class="lead">
-                                        SSH is a secure connection method between servers or computers over untrusted networks.
+                                        Git is a popular version control system; in which any contributor mirrors the entire relevant code-base
+                                        on their own respective device. GitHub is their assocated internet hosting service, where remote repositories
+                                        may be shared.
                                     </p> 
 
                                     <p class="drop-cap">
-                                        Often times in computational work it's neccesssary to communicate with, or through, and control remote servers from some local machine. Perhaps the most
-                                        common protocol through which such remote control and communication is done is the Secure SHell or (as it's more commonly refered to as) the SSH protocol. SSH 
-                                        also has an associated protocol specifically for secure file transfer over untrusted networks, termed the Secure Copy Protocol or SCP (see also SFTP). Below,
-                                        a brief overview of the cryptographic methods are given, as well as a working minimum of code in the cases of most common usage.
+                                        In software development, it is generally advantageous to have some means by which to track changes and 
+                                        previous versions of the software through development. By far, the most popular version control software is 
+                                        git, which is available as both a desktop client (on Windows and MacOS) and an in-terminal program (on all platforms).
+                                        Along with this version control software is git's native internet hosting service GitHub, which is a convenient place 
+                                        to store repositories remotely for common access by different developers and devices.
+                                    </p>
+                                    <p>
+                                        Below, a brief overview of git's structure and usage, specfically in concert with remote repositories on GitHub, is given for the most 
+                                        common use cases. For a better overview/reference of usage see <a href="https://rogerdudler.github.io/git-guide/">Roger Dudler's Guide</a>.
                                     </p>
 
             
             
-                                    <h2>SSH Protocol: Overview</h2>
+                                    <h2>Git Operations: Overview</h2>
                                     <p>
-                                        If one wishes to communicate in private with some other entity over an untrusted network, it's best to assume anyone can see everything you send. The 
-                                        problem then is to encode your information such that, to someone without privileges, you're sending complete gibberish, or completely random messages
-                                        (of course this is the ideal case). We may substantiate these privileges in the form of another bit of information, termed a <em>key</em>, that allows
-                                        the recipient or key holder to decode the message into something coherent. Of course, a common problem with such a simple method is how one may initially 
-                                        distribute said key to an remote recipient, since we assume the same available channels for key distribution are untrusted. 
+                                        The current version of some program is deemed the <em>main branch</em>, where the current main branch is effectively the current version of
+                                        whatever software is being developed or built on. 
                                     </p>
-                                    <p>
-                                        The SSH protocol works around this by providing a secure means of transfer, specifically for the symmetric key to be used in further transactions.
-                                         <!--(since symm. encryption is generally cheaper computationally)?--> The common analogy is that two (physically) separated people each have 
-                                         their own key and padlock, and they'd like to communicate securely through some courier they don't trust. So, they first agree to use some
-                                         briefcase or box through which they will pass their written message. Then, the one first sends the box with the message in it and locked with his 
-                                         own padlock. The intended recipient receives this package and places his own padlock, locked, onto it (since he doesn't have the key to the other 
-                                         padlock). This doubly locked package is then returned to the sender, who removes his padlock; and returns it to the recipient, now locked only 
-                                         with the recipient's padlock. This is effectively done once to communicate the means/key by which all further communication will be encrypted, in
-                                         essence opening a secure channel between the two parties.
-                                    </p>
-                               
                                     
                                     <figure class="align center">
                                         <img src="../../assets/images/halfbaked/SSH_diag.png"  alt="SSH diagram from Wikimedia Commons (License:https://creativecommons.org/licenses/by-sa/4.0/deed.en)">
                                     </figure>
-                                    <h2>SSH Protocol: Usage</h2>
+
+                                    <h2>Git Operations: Usage</h2>
                                     <p>
-                                        To utilize the SSH protocol, both entities must have some SSH client installed (the most common being OpenSSH, available for most OS distros), and 
-                                        visible on the same network. Mac and Linux distributions have an SSH client (OpenSSH) by default installed and ready for use in terminal; Windows 10 and onward generally do as 
-                                        well (OpenSSH; PuTTy also works well for older versions). Below, the most common use of SSH, as the client trying to connect to a remote server (with OpenSSH)
-                                        is covered. Then, a few things on the server side needed to allow for such connections are discussed.
+                                        The most basic usage of git occurs when there is only the main branch and no new files are being added, only changed. 
+                                        In this case, one first need to <em>commit</em> their changes, and then <em>push</em> them to the main branch. 
                                     </p>
+                                    <h3>Updating the Local Repository</h3>
                                     <p>
-                                        If both devices are not on the same network, SSH tunneling may be further be required to establish a connection.
-                                    </p>
-                                    <h3>Client Side (OpenSSH)</h3>
-                                    <p>
-                                        The most common usage of SSH is to connect from client-side to some user account on the server-side and act on that remote 
-                                        server as the logged in user. This can be accomplished by entering the following into the appropriate local terminal:
+                                        To first initialize a current directory as a git repository, give the following command in the desired directory:
                                         <code class="center">
-                                            ssh <<em>username</em>>@<<em>ip.address</em>>
+                                            git init
                                         </code>
-                                        Here username field should be filled in with the user account on the remote server one is trying to sign in as, and the ip address should
-                                        be replaced with any unique and recognized identifier for the remote server on the network. 
+                                        If you instead wish to clone a current git repository on your local device, use the following:
+                                        <code class="center">
+                                            git clone <<em>uri</em>>
+                                        </code>
+                                        where <<em>uri</em>> should be replaced with the unique identifier pointing to the desired git repository 
+                                        (such as the https address of github repository). Note you may also clone a local repository via the same 
+                                        command by replacing the uri with a local directory that contains a git repository.
+                                    </p>
+                                    <p>
+                                        If you wish to pull new changes on the remote repository associated with the local one, give the following command 
+                                        in the local directory containing the repository:
+                                        <code class="center">
+                                            git pull
+                                        </code>
+                                        If you have local changes that conflict with these remote changes, the simple form above may return an error. 
+                                    </p>
+
+                                    
+                                    <h3>Updating the Main Repository</h3>
+                                    
+                                    <p>
+                                        The very first thing that needs to be done before updating anything is to add the local changes to the index.
+                                        <code class="center">
+                                            git add *
+                                        </code>
+                                        where the asterisk denotes to add all changes to the index. This asterisk may be replaced with a list of file names to specify 
+                                        which changed files should be added to the index.
+                                    </p>
+                                    <p>
+                                        To commit these changes to the local HEAD, you must then use the command below (note that a messsage associated with the changes
+                                        detailing those made in the new commit is mandatory).
+                                        <code class="center">
+                                            git commit -m "<<em>commit message</em>>"
+                                        </code>
+                                    </p>
+                                    <p>
+                                        These changes may then be pushed to the remote data-base and established as the new version of the current branch (by default main)
+                                        via the command below.
+                                        <code class="center">
+                                            git push origin master
+                                        </code>
                                     </p>
                                     <div class="boxed">
-                                        <h4 class="boxtitle">First Time Connecting: Trust</h4>
+                                        <h4 class="boxtitle">GitHub Pages</h4>
                                         <p>
-                                            The first time one connects to a unique server, one must take a small leap of faith and assume that you may trust the initial 
-                                            message of the intended partner. Hence, the first connection to a unique server from some client will (or atleast should) be prefaced by a prompt 
-                                            as to whether you are willing to trust this first transaction. 
+                                            GitHub allows one to host a public website for free via GitHub Pages.
                                         </p>
                                         <figure class="align">
                                             <img src="../../assets/images/halfbaked/firsttrustssh.png"  alt="An example prompt for intial trust of an SSH server's authenticity">
@@ -264,12 +289,12 @@
                                     <h4>Additional Fields</h4>
                                     <p>
                                         Some optional fields are also commonly used with the SSH command in terminal, these include specfiying the port number with -p to connect via (which is 22 by default),
-                                        and whether or not to show extra data about the connection (which is supressed by default) with -v. The usual -h can also be used to display additional options, as always.
+                                        whether or not to show extra data about the connection (which is supressed by default) with -v. The usual -h can also be used to display additional options, as usual.
                                     </p>
                                     <h3>Server Side</h3>
                                     <p>
                                         As mentioned above, the remote server one is attempting to connect to and control requires that it is acting as an SSH server. The method of initiating this 
-                                        service is varied depending on the SSH client chosen, but a common case (OpenSSH in Arch Linux terminal) is covered <a href="https://wiki.archlinux.org/title/OpenSSH#Server_usage">here</a>.
+                                        service is varied depending on the SSH client chosen, but the a common case (OpenSSH in Arch Linux terminal) is covered <a href="https://wiki.archlinux.org/title/OpenSSH#Server_usage">here</a>.
                                     </p>
                                     <h4>Server Initialization</h4>
                                     <p>
@@ -335,15 +360,15 @@
                                 <div class="post-nav">
                                     
                                     <div class="post-nav__prev">
-                                        <a href="../torquebivector/index.html" rel="prev">
+                                        <a href="../remoteservers/" rel="prev">
                                             <span>Prev</span>
-                                            Torque as a Bivector. 
+                                            Using SSH and SCP. 
                                         </a>
                                     </div>
                                     <div class="post-nav__next">
-                                        <a href="../ubiquityofnum/index.html" rel="next">
+                                        <a href="../axiomsofmath/index.html" rel="next">
                                             <span>Next</span>
-                                            On the Ubiquity of Numbers.                                            
+                                            Axioms of Mathematics.                                         
                                         </a>
                                     </div>
                                 </div>
