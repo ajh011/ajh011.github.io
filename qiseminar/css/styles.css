@@ -1,3 +1,16 @@
+
+
+
+@media (max-width: 8in) {
+    .small-center{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+}
+
+
 @charset "UTF-8";
 /* =================================================================== 
  * Mueller Main Stylesheet
@@ -1126,6 +1139,12 @@ textarea {
 
     .hide-on-sm {
         display : none;
+    }
+
+    .small-center{
+        display: flexbox !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
 }
 
