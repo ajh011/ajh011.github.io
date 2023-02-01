@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../../assets/css/halfbakedstyles.css">
     <link rel="stylesheet" href="../../assets/css/general.css">
     <link rel="stylesheet" href="../../assets/css/vendor.css">
-    <link rel="stylesheet" href="../../assets/css/axiomsofmath.css">
+    <link rel="stylesheet" href="../../assets/css/harmonics.css">
 
 
     <!-- favicons
@@ -150,7 +150,7 @@
                             <header class="entry__header">
     
                                 <h1 class="entry__title">
-                                    Axioms of Mathematics
+                                    Simple Harmonic Motion: Or How I Learned to Love Quadratic Approximations
                                 </h1>
 
                                 <div class="entry__meta">
@@ -175,7 +175,7 @@
                                         </svg>
                                           
                                         <span class="cat-links">
-                                            <a href="#0">Philosophy of Mathematics</a>
+                                            <a href="#0">Mathematics of Physics</a>
                                         </span>
                                     </div>
                                 </div>
@@ -191,147 +191,47 @@
 
                                 <div class="entry__content">
                                     <p class="lead">
-                                        All structures studied in mathematics should be effectively contained within some universal, total formal system through which 
-                                        we may construct arbitrary mathematical structures.
+                                        The simple harmonic approximation is perhaps one of the most applied concepts in physics. This is 
+                                        essentially due to the structure of Taylor series expansions around equilibrium points.
                                     </p> 
 
                                     <p class="drop-cap">
-                                       Mathematics is a field of the most formal and sure nature, so naturally we hope to define mathematics itself formally (that is, by some formal 
-                                       language). The subfield of mathematics concerned with such basic, underlying commonalities between all mathematical structures is termed 
-                                       <em>foundational mathematics</em>, and the modern landscape of the field is divided into several different camps with different foundational 
-                                       structures (and strengths).
+                                       Phyisicists often use approximations to reduce systems to something more mathematically modelable. One of the most understood and 
+                                       often applied models is that of simple harmonic motion (SHM). This type of system results from a purely quadratic force term. This is 
+                                       the basic model of an ideal spring.
                                     </p>
                                     <p>
-                                        For the most part, these foundational considerations are nearly inconsequential for working mathematicians and completely irrelevant for those 
-                                        working in applied math (such as engineering). However, certain frameworks 
+                                        But why would a seemingly random object provide insight into many systems at equilibrium? This may be answered by a simple consideration of the 
+                                        Taylor series of a given system.
                                     </p>
-                                    <h3>Structuralism</h3>
                                     <p>
-                                        The viewpoint that mathematics is the study of well-defined structures is a school of thought termed <em>structuralism</em>. This point of view 
-                                        allows us to consider all relevant mathematical objects to be contained within some universal structure. The form of this universal structure is 
-                                        essentially the topic at hand in this article, with three modern approaches covered here (in very brief detail). These include the historical favorite
-                                        of ZFC set theory (and most uninterested mathematician's default answer); the relatively new, but seemingly powerful homotopy type theory (which is 
-                                        perhaps vaguely familiar to a computer scientist); and the more top-down approach of category theory applied to foundations (as in Lawvere's category of 
-                                        categories).
+                                        We (should) know that the force of an object subject to a conservative force (and thus one modelable with a scalar potential field) is equal to the 
+                                        <div class="eq">\[F(x)=-\frac{dV(x)}{dx}\]</div>
+                                        and furthermore, at equilibrium position \(x=x_0\) we (should) expect a vanishing force, that is \(F(x_0)=0\) and in which case \(\frac{dV(x)}{dx}=0\).
+                                        Hence, at points of equilibrium, the first derivative of the potential vanishes, since these are exactly the stationary points of the field.
                                     </p>
-                                    
                                     <p>
-                                        But first, we should consider what pure logical languages look like.
+                                        Now, considering the Taylor expansion of an arbitrary (well-behaved) scalar potential, we get the following:
+                                        <div class="eq">\[V(x)=V_0(x_0)+\frac{dV(x)}{dx}\vert_{x=x_0}(x-x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}(x-x_0)^2+...\]</div>
+                                        However, at points of equilibrium we have:
+                                        <div class="eq">\[V(x)=V_0(x_0)+\frac{dV(x)}{dx}\vert_{x=x_0}(x-x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}(x-x_0)^2+...\]</div>
+                                        And for ranges where \(x-x_0\) is small, the higher order terms should be neglibible (as long as the deriavtives don't grow faster than the power series).
+                                        And, hence:
+                                        <div class="eq">\[V(x)\approx V_0(x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}\frac{(x-x_0)^2}{2}\]</div>
+                                        where we may further neglect the constant \(V_0\) since it is simply a constant term that will not contribute to dynamics to get
+                                        the common form for an approximation for a small distance about an equilibrium position
+                                        <div class="eq">\[V(x)=\frac{1}{2}k(\delta x)^2\]</div>
                                     </p>
-                                    
-                                    <h2>Underlying Logic</h2>
                                     <p>
-                                        Formal logic consists of a formal language with a set of rules of deduction. These allow us to make statements about the truth value of 
-                                        formal statements about mathematical structures. Hence, most all foundational mathematical theories rely on 
-                                        some form of elementary logic, the most common being classical first order logic, which is discussed briefly below.
-                                    </p>
-                                    <h3>First-Order Logic</h3>
-                                    <p>
-                                       First order logic adds to the basic constructions of zero-th order logic the additional quantifiers. 
+                                        Note that this is the expression for the potential energy of a spring! And, indeed taking the negative derivative of this 
+                                        potential gives you Hooke's Law:
+                                        <div class="eq">\[F(x)=-\frac{d}{d(\delta x)}\left(\frac{1}{2}k(\delta x)^2\right)=-k\delta x\]</div>
                                     </p>
 
-                                    <h2>Set Theory</h2>
                                     <p>
-                                        Set theory was originally developed by Georg Cantor in the late 19th century as a means to investigate the nature of infinity, or more specifically, infinitely large sets. 
-                                        This formal setting was later taken by some mathematicians, in the simplest way possible, to be the underlying language of all mathematics. These mathematicians 
-                                        essentially asserted that all mathematical structures were definable as a set satisfying some logical or mathematical property. Furthermore, they took any 
-                                        set definable by such means to be well-defined and contained within mathematics. Some time later, however, this <em>naive set theory</em> ran into a 
-                                        seemingly simple problem: some logically defined sets led to apparent contradictions.
+                                        Shortcomings: Some systems will actually have a vanishing second derivative of potential about equilibrium points and thus 
+                                        require us to model systems about such points with higher order terms.
                                     </p>
-                                    <div class="boxed">
-                                        <h2 class="boxtitle"><em>History: Set Theory's Origin</em></h2>
-                                        <p>
-                                           For a good, brief introduction to this history and some 
-                                           background justifying a more thoroughly defined set theory (as well as a wonderful discussion of 
-                                           the history leading up to Kurt Godel's famous incompleteness theorems) see the Veritasium video 
-                                           below.
-                                        </p>
-                                        <div class="center">
-                                            <iframe width="95%" height="400px" src="https://www.youtube.com/embed/HeQX2HjkcNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-
-                                    <br>
-
-                                    <p>
-                                        Over time then, this naive set theory was developed again and again into more and more rigorous and complete systems of set theory. 
-                                    </p>
-                                    <h3>Zermelo-Frankel Set Theory</h3>
-                                    <p>
-                                        The standard answer to the question of a foundational language of mathematics is generally set theory with a first 
-                                        order deductive apparatus and the Zermelo-Frankel axioms (ZF), also often with the additional axiom of choice (ZFC).
-                                    </p>
-                                    <p>
-                                        First order logic and set theory generally lend themselves well to the 
-                                    </p>
-                                    <p>
-                                        The ZFC axioms essentially do one thing: they define the concept of membership of sets such that all 
-                                        relevant logical discourse is only about sets, while avoiding any admittance of self-referential 
-                                        objects, such as those found in the Liar's paradox and Russel's paradox.
-                                    </p>
-
-                                    <div class="hline"></div>
-
-                                    <h2><em>Interlude: Intuitionism vs. Constructivism & the Law of the Excluded Middle</em></h2>
-                                    <p>
-                                        An often used proof technique in ZFC set theory is the proof of non-existence by contradiction, and consequently,
-                                        the existence of things via contradictions derivable from their non-existence.
-                                    </p>
-                                    <p>
-                                        Constructivist's tend to deny the law of the excluded middle. They say that to prove something exists isn't sufficient;
-                                        and that, in fact, to prove an object exists is to construct it as some well-defined structure from the foundational 
-                                        structure.
-                                    </p>
-                                    <p>
-                                        'Univalent foundations' is the phrase used to refer to a new approach to the formal foundations of mathematics that seeks 
-                                        to avoid invoking first-order logic and hence doesn't use sets built on top of this formal apparatus (or sets at all 
-                                        for that matter).
-                                    </p>
-                                    
-                                    <div class="hline"></div>
-
-                                    <h2>Type Theory</h2>
-                                    <p>
-                                       Typically a more constructive approach, intuitionistic type theory, is another, set-independant approach to
-                                       a formal axiomatization of mathematical foundations.
-                                    </p>
-                                    <p>
-                                        Martin-Lof type theory was a set of deductive apparatus developed by the Swedish mathematician 
-                                        
-                                    </p>
-                                    <p>
-                                        <a href="https://www.youtube.com/watch?v=Ft8R3-kPDdk">homotopy type theory discussion</a>
-
-                                    </p>
-
-                                    <h3>Homotopy Type Theory</h3>
-                                    <p>
-                                        Vovoedsky Univalent axiom
-                                    </p>
-
-
-                                    <div class="hline"></div>
-
-                                    <h2><em>Interlude: Programming Languages & Proof Checkers</em></h2>
-                                    <p>
-                                    Agda and Coq
-                                    </p>
-                                    <p>
-                                        Curry Howard
-                                    </p>
-                                    
-                                    <div class="hline"></div>
-                                    <h2>Category Theory</h2>
-                                    <p>
-                                        Category theory is generally a more top-down approach in it's use as an axiomatic 
-                                        system. 
-                                    </p>
-                                    <h3>Lawvere's Category of Categories</h3>
-                                    <p>
-                                        The Elementary Theory of the Category of Sets (ETCS) is an axiomatic formulation of set theory in the language of category-theory, developed by 
-                                        William Lawvere. 
-                                    </p>
-
 
                                     <h2>Further Resources</h2>
                                     <p>

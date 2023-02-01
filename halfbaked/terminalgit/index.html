@@ -286,46 +286,6 @@
                                             asking about a change in the host's key, appears after this initial instance, suspicions should be raised as to the authenticity of connection.
                                         </p>
                                     </div>
-                                    <h4>Additional Fields</h4>
-                                    <p>
-                                        Some optional fields are also commonly used with the SSH command in terminal, these include specfiying the port number with -p to connect via (which is 22 by default),
-                                        whether or not to show extra data about the connection (which is supressed by default) with -v. The usual -h can also be used to display additional options, as usual.
-                                    </p>
-                                    <h3>Server Side</h3>
-                                    <p>
-                                        As mentioned above, the remote server one is attempting to connect to and control requires that it is acting as an SSH server. The method of initiating this 
-                                        service is varied depending on the SSH client chosen, but the a common case (OpenSSH in Arch Linux terminal) is covered <a href="https://wiki.archlinux.org/title/OpenSSH#Server_usage">here</a>.
-                                    </p>
-                                    <h4>Server Initialization</h4>
-                                    <p>
-                                        Regardless of the specifics, setting up an SSH server generally requires the intended server to treat an SSH event listener, such as SSHD, as a service that runs constantly in the 
-                                        background, listening for requests through the network for SSH connections. Starting this service thus constitutes the intitialization of a device as an SSH server 
-                                        and is all one needs to do to set it up as such.
-                                    </p>
-                                    <h2>SCP Protocol: Overview</h2>
-                                    <p>
-                                        Another common operation one often encounters is that of secure transfer of files from one device to another over an untrusted network. 
-                                        This may be accomplished with the use of a transfer protocol based on SSH such as the Secure File Transfer Protocol (SFTP) or Secure Copy
-                                        Protocol (SCP), which is discussed here.
-                                    </p>
-                                    <h2>SCP Protocol: Usage</h2>
-                                    <p>
-                                        The most basic usage of SCP is to copy a file from a local device to a remote server, or vice versa. This may be specficied in the addresses of the files.
-                                        SCP takes as the first argument the address of the file to be copied and then takes the last argument as the address for the file to be copied to. 
-                                        <code class="center">
-                                            scp <<em>current file address</em>> <<em>copy destination</em>>
-                                        </code>
-                                        Note that one may include several files to be copied, which will be read as all but the last argument given to scp (where the last is always the destination). 
-                                        Hence, to copy multiple files simultaneously to the same directory, the following structure of command should be given.
-                                        <code class="center eq">
-                                            scp <<em>current file address 1</em>> ... <<em>current file address n</em>> <<em>copy destination</em>>
-                                        </code>
-                                        The above will then copy files from <<em>file address 1</em>> to  <<em>file address n</em>> to the directory specified at the address <<em>copy destination</em>>.
-                                    </p>
-                                    <p>
-                                        A common problem encountered when using SCP is when one wishes to copy whole directories from one location to another. This case may be handled by 
-                                        applying the additional, optional argument -r (for recursive) letting SCP know you wish to copy those directories recursively to the destination.
-                                    </p>
                                     <h2>Further Resources</h2>
                                     <p>
                                         A good introduction to the SSH protocol can be found in this <a href="https://www.netburner.com/learn/introduction-to-the-ssh-protocol/">netburner article</a>.
