@@ -188,7 +188,7 @@ input, select, textarea {
 
 			h2 {
 				font-size: 1.1em;
-				line-height: 1.65em;
+				line-height: 1em;
 			}
 
 		}
@@ -3657,6 +3657,7 @@ input, select, textarea {
 				display: block;
 				height: 1.5em;
 				left: 50%;
+				top: 0;
 				margin: 0 0 0 -0.75em;
 				position: absolute;
 				width: 1.5em;
@@ -3693,7 +3694,7 @@ input, select, textarea {
 		@media screen and (max-width: 8in) {
 
 			#banner {
-				padding: 7em 0 5em 0 ;
+				padding: 6em 0 10em 0 ;
 				height: 100vh;
 				min-height: 0;
 			}
