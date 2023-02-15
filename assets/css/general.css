@@ -31,3 +31,12 @@
     width: 100%;
   }
   
+  .hl{
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+
+  .dl{
+    border-bottom: 1px dashed black;
+    width: 100%;
+  }
