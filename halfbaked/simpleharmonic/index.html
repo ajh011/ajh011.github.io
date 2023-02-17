@@ -6,7 +6,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Axioms of Mathematics</title>
+    <title>Simple Harmonic Approximation</title>
 
     <script>
         document.documentElement.classList.remove('no-js');
@@ -166,7 +166,7 @@
                                             <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
                                             <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
                                         </svg>
-                                        December 18, 2022
+                                        February 16, 2023
                                     </div>
                                     <div class="entry__meta-cat">
                                         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -181,9 +181,9 @@
                                 </div>
                             </header>
 
-                            <div class="entry__media">
+                            <div class="entry__media center">
                                 <figure class="alignwide" >
-                                    <img src="../../assets/images/halfbaked/palm.jpg"   alt="Palm over black background. (Image Credit: Spurgeon stock photo) ">
+                                    <img src="../../assets/images/halfbaked/harmonic.svg"   alt="Palm over black background. (Image Credit: Spurgeon stock photo) ">
                                 </figure>
                             </div>
 
@@ -197,52 +197,85 @@
 
                                     <p class="drop-cap">
                                        Phyisicists often use approximations to reduce systems to something more mathematically modelable. One of the most understood and 
-                                       often applied models is that of simple harmonic motion (SHM). This type of system results from a purely quadratic force term. This is 
-                                       the basic model of an ideal spring.
+                                       often applied models is that of simple harmonic motion (SHM). This type of system results from a purely quadratic force term. And, in fact,
+                                       this is the basic model of an ideal spring.
                                     </p>
                                     <p>
-                                        But why would a seemingly random object provide insight into many systems at equilibrium? This may be answered by a simple consideration of the 
+                                        But why would a seemingly random object provide insight into so many systems at equilibrium? This may be answered by a simple consideration of the 
                                         Taylor series of a given system.
                                     </p>
+                                    <h2>Springs and Hooke's Law</h2>
                                     <p>
-                                        We (should) know that the force of an object subject to a conservative force (and thus one modelable with a scalar potential field) is equal to the 
+                                        Every intro physics student (should) know that the force of a spring is directly proportional to it's displacement from equilibrium. 
+                                        Explicitly, for a spring stretched a distance \(\Delta x\) from it's equilibrium point along it's axis, the corresponding force is that below:
+                                        <div class="eq">
+                                            \[
+                                                F=-k\Delta x
+                                            \]
+                                        </div>
+                                        where \(k\) is termed the spring constant, which is a charachteristic of the spring itself. This relation for the force of a spring 
+                                        is known as Hooke's law and results in simple harmonic motion about the point of equilibrium, \(\Delta x=0\).
+                                    </p>
+                                    <p>
+                                        As a simple exercise we may also calculate the form of the spring's potential energy by equating it to the work required to stretch the 
+                                        spring a distance \(x\):
+                                        <div class="eq">
+                                            \[
+                                                W=-\int\vec{F}(\vec{r})\cdot\vec{r}=\int_0^x kx'\ dx'= \frac{1}{2}kx^2
+                                            \]
+                                        </div>
+                                        Now that we have the basic relations for a spring in mind, we consider a more general approach to any system in equilibrium.
+                                    </p>
+                                    <h2>Systems Around Equilibrium Points</h2>
+                                    <p>
+                                        The force of an object subject to a conservative force (and thus one modelable with a scalar potential field) is equal to the derivative (gradient) of this 
+                                        potential with respect to displacement.
                                         <div class="eq">\[F(x)=-\frac{dV(x)}{dx}\]</div>
-                                        and furthermore, at equilibrium position \(x=x_0\) we (should) expect a vanishing force, that is \(F(x_0)=0\) and in which case \(\frac{dV(x)}{dx}=0\).
+                                        Furthermore, at equilibrium position \(x=x_0\) we (should) expect a vanishing force, that is \(F(x_0)=0\) and in which case \(\frac{dV(x)}{dx}=0\).
                                         Hence, at points of equilibrium, the first derivative of the potential vanishes, since these are exactly the stationary points of the field.
                                     </p>
                                     <p>
                                         Now, considering the Taylor expansion of an arbitrary (well-behaved) scalar potential, we get the following:
-                                        <div class="eq">\[V(x)=V_0(x_0)+\frac{dV(x)}{dx}\vert_{x=x_0}(x-x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}(x-x_0)^2+...\]</div>
-                                        However, at points of equilibrium we have:
-                                        <div class="eq">\[V(x)=V_0(x_0)+\frac{dV(x)}{dx}\vert_{x=x_0}(x-x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}(x-x_0)^2+...\]</div>
+                                        <div class="eq">\[V(x)=V(x_0)+\frac{dV(x)}{dx}\vert_{x=x_0}(x-x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}(x-x_0)^2+...\]</div>
+                                        However, at points of equilibrium we have a vanishing first derivative and thus:
+                                        <div class="eq">\[V(x)=V_0(x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}(x-x_0)^2+...\]</div>
                                         And for ranges where \(x-x_0\) is small, the higher order terms should be neglibible (as long as the deriavtives don't grow faster than the power series).
                                         And, hence:
-                                        <div class="eq">\[V(x)\approx V_0(x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}\frac{(x-x_0)^2}{2}\]</div>
-                                        where we may further neglect the constant \(V_0\) since it is simply a constant term that will not contribute to dynamics to get
-                                        the common form for an approximation for a small distance about an equilibrium position
-                                        <div class="eq">\[V(x)=\frac{1}{2}k(\delta x)^2\]</div>
+                                        <div class="eq">\[V(x)\approx V(x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}\frac{(x-x_0)^2}{2}\]</div>
+                                        where we may further neglect the constant \(V_0\) since it is simply a constant term that will not contribute to dynamics. 
+                                        We also now may consider the form of the resulting potential field if we rename the coefficient of the second order 
+                                        expansion \(k\).
+                                        <div class="eq">\[V(x)=\frac{1}{2}k(\Delta x)^2\]</div>
                                     </p>
                                     <p>
                                         Note that this is the expression for the potential energy of a spring! And, indeed taking the negative derivative of this 
                                         potential gives you Hooke's Law:
-                                        <div class="eq">\[F(x)=-\frac{d}{d(\delta x)}\left(\frac{1}{2}k(\delta x)^2\right)=-k\delta x\]</div>
+                                        <div class="eq">\[F(x)=-\frac{d}{d(\Delta x)}\left(\frac{1}{2}k(\Delta x)^2\right)=-k\Delta x\]</div>
+                                    </p>
+                                    <p>
+                                        This essentially tells us that we can describe many systems in equilibrium as springs!
+                                    </p>
+                                    <h2>Conclusion</h2>
+                                    <p>
+                                        The above considerations are particularly abstract (though they only rely on basic calculus). While it may be less enlightening,
+                                        the generality we gain by such abstract considerations are in large part their utility.
+                                    </p>
+                                    <p>
+                                        Note that this presentation was a little backwards from a certain perspective. In fact, it's not that we can model systems about equilibrium as springs, 
+                                        it's more that the spring is a model system around equilibrium and hence our approximation applies.
+                                    </p>
+                                    <p>
+                                        Also, the above approximation does have it's shortcomings; SHM generally only works well on sufficiently small neighborhoods of equilibrium points.
+                                        As such, we can't describe dynamical behaviour for non-equilbrium states. Some systems will even have a vanishing second derivative of potential 
+                                        about certain equilibrium points. This would render the approximation above entirely useless, and require us to model systems about such points with higher order terms.
                                     </p>
 
-                                    <p>
-                                        Shortcomings: Some systems will actually have a vanishing second derivative of potential about equilibrium points and thus 
-                                        require us to model systems about such points with higher order terms.
-                                    </p>
-
-                                    <h2>Further Resources</h2>
-                                    <p>
-                                        <a href="https://philosophy.stackexchange.com/questions/87027/set-theory-vs-type-theory-vs-category-theory">SE Post</a>
-                                    </p>
 
                                     <p class="entry__tags">
                                         <strong>Tags:</strong>
                     
                                         <span class="entry__tag-list">
-                                           <a href="#0">Computer</a> <a href="#0">Intro</a>
+                                           <a href="#0">Physics</a>
                                         </span>
                         
                                

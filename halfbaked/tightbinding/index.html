@@ -191,15 +191,15 @@
 
                                 <div class="entry__content">
                                     <p class="lead">
-                                        Creation and annihilation operators may be utilized in tight-binding models of crystalline Hamiltonians. This form is 
-                                        built up from basic steps to facilitate conceptual understanding.
+                                        Creation and annihilation operators may be used to state succinctly various tight-binding models of crystalline Hamiltonians. Below, this form is 
+                                        constructed intuitively in an attempt to facilitate conceptual understanding.
                                     </p> 
 
                                     <p class="drop-cap">
                                        The Hamiltonian is the mathematical object that completely defines the time evolution of a physical system.
                                        For closed systems, it also gives us the total energy of a state. Assuming that the system is closed and that
-                                       all forces acting on the system are conservative (and thus energy is conserved), we may then generally assume 
-                                       the Hamiltonian to be the sum of kinetic and potential energies of all constituent particles.
+                                       all forces acting on the system are conservative, we may then assume 
+                                       the Hamiltonian is simply the sum of the kinetic and potential energies of all constituent particles.
                                     </p>
                                     <p>
                                         Recalling the form of classical kinetic energy for a particle of mass \(m\), and momentum \(p=mv\)
@@ -209,12 +209,12 @@
                                             H=T+V = \frac{1}{2}mv^2 + V(r) = \frac{p^2}{2m}+V(r)
                                             \]
                                         </div>
-                                        where \(V(r)\) represents a potential field, depending on position, corresponding to an arbitrary conservative
+                                        where \(V(r)\) represents a potential field which depends on position, and corresponds to an arbitrary (conservative)
                                         force or set of forces acting on the system.
                                     </p>
                                     <p>
-                                        Now that we have a general form in mind, we'll first consider what we need to consider in the modeling of crystalline 
-                                        systems. Then, we'll build a useful form of a Hamiltonian describing crystalline systems in which 
+                                        Now that we have a general form in mind, we'll first consider what we care about in the modeling of crystalline 
+                                        systems. Then, we'll build a useful form for a Hamiltonian describing crystalline systems in which 
                                         electrons are effectively confined to the lattice sites and only interact with their nearest neighbors.
                                     </p>
                                     <h2>Simplifications</h2>
@@ -226,8 +226,8 @@
                                     <p>
                                         In solid state, the most interesting steady-state dynamical properties, such as electrical and 
                                         thermal conductivity, tend to depend mostly on the electrons. In fact,
-                                        in many systems, we need only consider the behaviour of the electrons under the effect of some 
-                                        underlying lattice (that itself accounts for ions/nucleus' contributions to dynamics). [Disclaimer: Other factors may also
+                                        in many systems, we need only consider the behaviour of the electrons to 
+                                        decribe these phenomena to a good approximation. [Disclaimer: Other factors may also
                                         have large influence, but here we intend to simplify matters and approximate; see e.g. quasi-particles]
                                     </p>
                                     <p>
@@ -241,11 +241,11 @@
 
                                     <h2>Free Electron Hamiltonian</h2>
                                     <p>
-                                        In the case of the free-electron, we have no potential energy and essentially have only kinetic 
+                                        In the case of the free-electron, we have no potential energy and essentially have only a kinetic 
                                         term in the Hamiltonian:
                                         <div class="eq">
                                             \[
-                                                H=\frac{1}{2}mv^2
+                                                H=\frac{1}{2}mv^2=\frac{p^2}{2m}
                                             \]
                                         </div>
                                         This is the classical form of the free electron's Hamiltonian. However, in modern considerations,
@@ -300,6 +300,12 @@
                                             \Rightarrow \quad E_k & = \frac{\hbar^2k^2}{2m}
                                             \end{align}
                                         </div>
+                                    </p>
+                                    <p>
+                                        Now we have a nice form for the dispersion relation of a free electron. But, we still have a somewhat ugly 
+                                        Hamiltonian that requires us to take derivatives with respect to position (though these are admittedly easy 
+                                        in the basis we've presented). We now seek a more sophisticated form of the Hamiltonian which simply 
+                                        'counts' the energy of the system, piece by piece.
                                     </p>
                                     <h3>Second-Quantization</h3>
                                     <p>
@@ -357,6 +363,33 @@
                                         In the free-electron picture, we didn't account for any interactions between electrons or even transitions between states.
                                         Thus, from a certain perspective, the electrons were 'constrained' to their respective \(\vec{k}\) states.
                                     </p>
+                                    <!--
+                                    <div class="boxed">
+                                        <h4 class="boxtitle">Bloch States</h4>
+                                        <p>
+                                            Recall, from Bloch's theorem, that the wavefunction of an electron constrained to a periodic lattice 
+                                            satisfying certain boundary conditions (Periodic/Bloch-Karman) may be decomposed into a product of 
+                                            a plane wave and a periodic function (with a period corresponding to the lattice spacing). Explicity, 
+                                            Bloch states guarantee we have the following form of wavefunctions in (perfect/ideal) crystalline systems:
+                                            <div class="eq">
+                                                \[
+                                                   \psi(\vec{R}+\vec{r})=e^{-i\vec{p}\cdot\vec{R}}\psi(\vec{r})
+                                                \]
+                                            </div>
+                                            where \(\vec{R}\) is a Bravais lattice vector. Note that the periodic boundary conditions also constrain the possible values 
+                                            of \(\vec{p}\) to be reciprocal lattice vectors.
+                                        </p>
+                                        <p>
+                                            In the case of completely delocalized electrons, we need only sum up 
+                                            <div class="eq">
+                                                \[
+                                                \hat{H}_{metal} = \sum_{k}^{_{R.L.V.}}E_{k}\hat{a}^{\dagger}_{k}\hat{a}_{k}
+                                                \]
+                                            </div>
+                                        </p>
+
+                                        </div>
+                                        <br>-->
                                     <p>
                                         Now, for electrons tightly bound to their positions on the underlying lattice, we may imagine these electrons are no longer constrained
                                         in \(k\)-space, but now are constrained to certain lattice sites (or one of several orbitals localized at each lattice site) in real space.
@@ -421,7 +454,7 @@
                                     <p>
                                         For more detail pertaining to the mathematics, see these
                                         <a href="https://bpb-us-w2.wpmucdn.com/u.osu.edu/dist/3/67057/files/2018/09/tight-binding_model_in_the_second_quantization_formalism-1egl8n3.pdf">notes</a> 
-                                        on second-quantized tight-binding models.
+                                        on second-quantized tight-binding models. Also, see these more in-depth <a href="http://www.fmt.if.usp.br/~gtlandi/courses/second-quantization-4.pdf">lecture notes</a>.
                                     </p>
                                     <p>
                                         The second-quantized tight-binding model is often a first example for more contemporary treatments such as 
