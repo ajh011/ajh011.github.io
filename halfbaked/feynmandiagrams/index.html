@@ -6,7 +6,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ubiquity of Numbers</title>
+    <title>Feynman Diagrams</title>
 
     <script>
         document.documentElement.classList.remove('no-js');
@@ -23,8 +23,8 @@
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="../../assets/css/halfbakedstyles.css">
+    <link rel="stylesheet" href="../../assets/css/general.css">
     <link rel="stylesheet" href="../../assets/css/vendor.css">
-    <link rel="stylesheet" href="../../assets/css/ubiquityofnum.css">
 
 
     <!-- favicons
@@ -149,7 +149,7 @@
                             <header class="entry__header">
     
                                 <h1 class="entry__title">
-                                    On the Ubiquity of Real Numbers.
+                                    The Origin of Feynman Diagrams
                                 </h1>
 
                                 <div class="entry__meta">
@@ -165,7 +165,7 @@
                                             <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
                                             <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
                                         </svg>
-                                        December 22, 2021
+                                        February 24, 2023
                                     </div>
                                     <div class="entry__meta-cat">
                                         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -174,16 +174,15 @@
                                         </svg>
                                           
                                         <span class="cat-links">
-                                            <a href="#0">Mathematical Philosophy</a>
+                                            <a href="#0">Mathematics of Physics</a>
                                         </span>
                                     </div>
                                 </div>
                             </header>
 
-                            <div class="entry__media"id="clock">
-                                <figure class="featured-image" >
-                                    <img src="../../assets/images/halfbaked/clock-min.jpg"   height="500px" alt="Clock utilizing numbers to 
-                                    tell time and describe other phenomena. (Photo Credit to Andrea Piacquadio)">
+                            <div class="entry__media">
+                                <figure class="alignwide center" >
+                                    <img src="../../assets/images/halfbaked/qtform.svg"   alt="Variational path for Lagrangian mechanics">
                                 </figure>
                             </div>
 
@@ -191,197 +190,121 @@
 
                                 <div class="entry__content">
                                     <p class="lead">
-                                    Given that the reals are a unique set of objects defined by certain properties, anything that can be modeled by
-                                    them is neccessarily exhibiting those defining properties.</p> 
+                                        Feynman diagrams are a diagrammatic representation of the terms of a Dyson series expansion. This relationship is 
+                                        elucidated in the article below
+                                    </p> 
 
                                     <p class="drop-cap">
-                                    Real numbers are the unique complete ordered field. Often times, it is advantageous for us to adopt some model of a 
-                                    system that utilizes this unique mathematical object.
+                                       Feynman diagrams are a somewhat useful tool in the calculation of transition amplitudes. More simply, they 
+                                       generally allow us to depict a process in particle physics visually, and then calculate it's probability of occuring.
                                     </p>
                                     <p>
-                                    If some physical
-                                    system can in some way be modeled by the real numbers, then we'll refer to said system as a <em>physical instance</em> of
-                                    the reals. And, these instances neccessarily exhibit the same properties as the reals, meaning they have some 
-                                    sense of order and completeness, as well as some operations between elements of the instance that behave nicely.
+                                        They are so (relatively) approachable that sometimes they are taught first, or just given, in a particle physics class. 
+                                        However, they really originate as terms in an expansion of the time evolution operator of some system, namely the Dyson 
+                                        series.
                                     </p>
                                     <p>
-                                    Furthermore, any theorem or mathematical machinery applicable to the reals should also apply to true physical
-                                    instances of them, namely the tools of calculus and other constructions on these basic elements. So do these 
-                                    instances really exhibit all the properties we would expect, and if not, where do they fail?
+                                        Below, we discuss the series expansion origin of such diagrams. Though, there are some mathematical details that we must at least
+                                        mention; like propogators, Wick's theorem, and the concept of time ordering. 
                                     </p>
                                     <p>
-                                    Below, we'll take a high-level view of these properties, and then look at some instances of the reals.
+                                        We assume a familiarity with the concepts of quantum mechanics in the interaction (or Dirac) picture of time evolution.
                                     </p>
-
-                                    <h2>Defining Properties of the Reals</h2>
-            
+                                    <h3>Particle Processes</h3>
                                     <p>
-                                    It's hard to talk about the reals without mentioning the operations between them. In fact,
-                                    they're essentially useless without these operations (except for ordering perhaps). The reals can be defined as the unique complete
-                                    ordered abelian group, where the group action is simple addition. Then with multiplication 
-                                    (and it's discrete relation to addition), we get a field for free.
+                                        Many (if not all) particle physics scenarios leave us with two snapshots of the process: a set of ingoing particles, and a set of outgoing particles.
                                     </p>
-
                                     <p>
-                                    Of course, the reals may also be constructed as a mathematical object. This is often done in the form of Dedekind cuts of rational numbers.
-                                    For the topic at hand, however, it's most advatageous to consider an axiomatization of the reals; as this facilitates our discussion of properties.
+                                        So, say we know we have some set of particles that are sufficiently far away from each other that they're not interacting (some initial state consisting of free particles \(\vert \psi_{in}\rangle\)).
+                                        Then, at a later time, we see this set of initially free particles have interacted; and, now, we have a different set of particles that are again far apart from one another 
+                                        (some final state of free particles \(\vert \psi_{out}\rangle\)).
+                                    <div class="eq">
+                                        \[
+                                        \vert \psi_{in}\rangle=\vert \psi(t)\rangle\Big\vert_{t=-\infty} \quad \rightarrow\quad\vert \psi_{out}\rangle=\vert \psi(t)\rangle \Big\vert_{t=\infty}
+                                        \]
+                                    </div>
+                                        What we'd like then, is an apparatus that allows us to predict the relevant likelihoods of possible events. That is, since all we can 
+                                        really observe is ingoing and outgoing particles, we'd like some way to predict the possibility, and even probability, that a certain process 
+                                        can and does/did occur.
                                     </p>
-            
-                                    <blockquote>
-                                        <h3 style="margin-top: 0.5em;">Axioms of the Reals</h3>
+                                    <p>
+                                        This probability of 'transitioning' from one state of particles to another state of particles is described by the transition amplitude discussed below; though 
+                                        it's really just a fancy way of treating the overlap of two quantum states: \(\langle \phi \vert\psi\rangle\).
+                                    </p>
+                                    <div class="boxed">
+                                        <div class="boxedtitle"><h6 style="margin-top: 1.3em;"> \(G_F(x-y\ )\ \): Feynman Propogators</h6> </div>
+                                        <p>
+                                            Feynman propogators represent particles 'propogating' from one point to another.
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <h3>Transition Amplitudes</h3>         
+                                    <p>
+                                        In the interaction picture, we can take the initial and final states to be eigenvalues of some free-particle Hamiltonian (with definite particle number at some 
+                                        time infinitely far in the past and infinitley far in the future). Then, their interaction in the intermediate time range
+                                        occurs according to some interaction Hamiltonian \(H_I\).
+                                    </p>
+                                    <p>
+                                        As such, the initial state evolves according to the unitary evolution \(U\) (often called the scattering or \(S\)-matrix), of the form below:
+                                        <div class="eq">
+                                            \[
+                                            U=Te^{-\int_{\infty}^{\infty}H_I dt}
+                                            \]
+                                        </div>
+                                        <div class="boxed">
+                                            <div class="boxedtitle"><h6 style="margin-top: 1.3em;"> \(T\): Time-ordered Product</h6> </div>
+                                            <p>
+                                                The time-ordered product included in the operator is a necessity; it 
+                                                enforces the concept of causality. It only gives us terms ordered properly in time.
+                                            </p>
+                                        </div>
                                         <br>
-                                        <em>Field Axioms</em>
-                                        <ul>
-                                            <li>Addition - <em>closed, associative, commutative, identity, inverse, distributive</em></li>
-                                            <li>Multiplication - <em>closed, associative, commutative, identity, inverse (exclude 0), distributive</em></li>
-                                        </ul>
-                                        <em>Order Axioms</em>
-                                        <ul>
-                                            <li>All numbers satisfy \(a\leq b\) or \(a\geq b\).</li>
-                                        </ul>
-                                        <em>Completeness</em>
-                                        <ul>
-                                            <li>Any subset of the reals has a least upper bound and greatest lower bound that exists and is contained 
-                                            within the reals. (This is the axiomatic approach to Dedekind cuts)</li>
-                                        </ul>
-                                        <br>
-                                        <em>See <a href="https://sites.math.washington.edu/~hart/m524/realprop.pdf">this overview</a> for a more formal statement</em>
-                                    </blockquote>
-                                    <p>
-                                        Here, the field axioms just guarantee that addition and multiplication act in the nice ways we expect: I can add numbers in any order I like,
-                                        multiply distributively over addition, etc.
+                                        And hence, our later state, evolved from the known initial state \(\vert \psi_{in }\rangle\), is given by the following:
+                                        <div class="eq">
+                                            \[
+                                            \vert\psi\rangle \rightarrow U\vert\psi\rangle=Te^{-\int_{\infty}^{\infty}H_I dt}\vert\psi\rangle
+                                            \]
+                                        </div>
+                                        We may then expand this operator in terms of a Dyson series, where we essentially apply the Volterra 
+                                        expansion of the exponential term. 
+                                        <div class="eq">
+                                            \[
+                                             U(t)=1+\sum_{n=1}^{\infty} \left(\frac{-i}{n}\right)^n\int_0^{t}dt_1 \int_0^{t_1}dt_2...\int_{0}^{t_{n-1}}dt_n H(t_1)H(t_2)...H(t_n)
+                                            \]
+                                        </div>
+                                        The important thing to note here is that the interaction Hamiltonian will effectively just be some product of 
+                                        field operators. Hence, while the above expansion is large and unwieldy looking, we've essentially just expanded 
+                                        the exponential term into a sum of integrals over products of field operators.
                                     </p>
+                                    <div class="boxed">
+                                        <div class="boxedtitle"><h6 style="margin-top: 1.3em;"> Wick's Theorem</h6> </div>
+                                        <p>
+                                            Wick's theorem guarantees that we may always expand time ordered products of 
+                                            field operators into terms that vanish under conjugation by the vacuum state,
+                                            and products of propogators.
+                                        </p>
+                                    </div>
+                                    <br>
                                     <p>
-                                        The order axioms just make explicit that these objects have a definite, global order. That is, any set of elements 
-                                        are mutually comparable with a definite answer. We may then order all these elements according to their mutual order.
-                                    </p>
-                                    <p>
-                                        The requirement of completeness is then, perhaps, the least intuitive. A good heuristic is to think of it this way: if I keep
-                                        dividing a real number in half, I should always get a real number back, and, in fact, I should be able to do this an infinite number of times (this is 
-                                        the conceptual baggage) and still have a real number in the end. This is a rough example of a Cauchy sequence, and the completeness 
-                                        condition guarantees that all Cauchy sequences (those that converge) yield points within the space in which they're formed.
-                                    </p>
-                                    <h2>Proofs of Uniqueness</h2>
-                                    <p>
-                                        The reals are, in fact, the unique (that is, only) mathematical object satisfying the above properties.
-                                        This is guaranteed by a proof of uniqueness.
-                                    </p>
-                                    <p>
-                                        This is rather nice though; as it means we may then represent any instance of the reals in whatever other representation we may choose.
-                                        Consider this: the concept of Arabic numerals (1, 2, 3, ....) actually are an instance of the reals themselves. They're essentially a
-                                        specific set of objects that just so happen to satisfy all the properties of the reals. And, because of this, we can model every other instance 
-                                        of the reals with numbers alone.
-                                    </p>
-                                    <p>
-                                        As an example; I can also represent real numbers as lines of certain lengths. I can choose some length, call it one, and then linearly scale the 
-                                        length of all other lines relative that one-long line. So for example, instead of an arabic numeral for the concept of three, I would simply have a line of 
-                                        length three times that of the line of length one. 
-                                        I can also define addition: lining up the lines and adjoining them; and multiplication: stretching lines by a certain factor.
-                                    </p>
-                                    <p>
-                                        So, lines of certain length are an instance of the reals; and I, consequentley, could model all other instance of the reals 
-                                        as lines. But, this would likely be unwieldy, and human eyes are better at distinguishing characters as opposed to 
-                                        discriminating lengths. Hence, we more often choose to represent real numbers as characters, i.e. Arabic numerals.
-                                    </p>
-                                    <!--
-                                    Prove unique object is defined as reals given above properties. 
+                                        In the second-quantized form of these states, we may extract the particles from the vacuum state. In this case, 
+                                        the states may be decomposed into a product of creation operators and the vacuum state:
 
-                                    Prove any achimedean field is a subfield of reals (so even if a few properties don't hold we can still use and inherit properties of numbers)
-                                    
-                                    <a href="https://math.stackexchange.com/questions/2964961/is-mathbbr-the-only-complete-ordered-abelian-group">Is R the only complete ordered abelian group?</a>,
-                                    <a href="https://math.stackexchange.com/questions/65867/is-mathbbr-the-only-ordered-field?rq=1">Is R the only ordered field</a>,
-                                    <a href="https://planetmath.org/archimedeanorderedfieldsarereal">Archimedean ordered fields are real.</a>
-                                    <a href="https://mathoverflow.net/questions/362991/who-first-characterized-the-real-numbers-as-the-unique-complete-ordered-field">first characterized</a>,
-                                    Wikipedia on ordered fields
-                                    <a href="https://sites.math.washington.edu/~hart/m524/realprop.pdf">Axioms1</a>
-                                    <a href="https://web.math.ucsb.edu/~moore/2axiomsforreals.pdf">Axioms2</a>-->
-
-                                    <h2>Physical Instances of the Reals</h2>
-                                    
-            
-                                    <p>
-                                    Let's now consider some scenarios where the reals are often used in real life. 
                                     </p>
-                                    
+                                    <h2>Further Resources</h2>
                                     <p>
-                                        A classic example is
-                                        measuring time for some duration or computing volumes of liquids: in both cases, I can add elements and multiply or divide 
-                                        the quantities to my leisure. I can also always say for certain whether one period of time was longer than another, or one reseviour has more 
-                                        liquid than another.
+                                        Wikipedia has a nice, but brief, overview of this derivation. A classic reference for the above considerations is Peskin & Schroder's 
+                                        <em>An Introduction to Quantum Field Theory</em>. Also, see these <a href="https://web2.ph.utexas.edu/~vadim/Classes/2022f/dyson.pdf">notes</a>.
                                     </p>
-                                    <p>
-                                        Perhaps the most impactful implementation of a model of the reals is monetary value. Via monetary value, objects have an implicit ordering in terms of worth.
-                                        And I can add up currency, and divide (split bills) and multiply it (per hour wage). 
-                                        From a certain perspective, the cash that an object is worth is a material substantiation (or representation like Arabic numerals) of the real number value of 
-                                        the object.
-                                    </p>
-                                    <figure class="alignwide">
-                                        <img src="../../assets/images/halfbaked/measure.jpg"  alt="A set of measuring tools that all utilize real numbers.">
-                                    </figure>
-
-                                    <p>
-                                        The reals also have obvious applications in probability and speculative economics, as well as a myriad of other subjects. 
-                                    </p>
-            
-                                    <h2>Inherited Problems</h2>
-            
-                                    <p>
-                                    Perhaps the most complex, and certainly the hardest to define, characteristic of the reals is that of completeness.
-                                    In fact, one of the greatest challenges in axiomatic constructions for the numbers we know and love is the jump from 
-                                    algebraic numbers to the complete set of the reals. This jump requires, in some constructions, the use of Dedekind cuts.
-                                    Alternatively, in the form of an axiom, we can state this property in terms of Cauchy sequences; that is, for every Cauchy
-                                    sequence that is a subset of the reals, the limits of such sequences are also included in the reals.
-                                    </p>
-
-                                    <p>
-                                    With this complexity, we also get a good bit of what one may call continuity baggage. Uncomputable numbers raise a particular problem
-                                    for our physical instance of the reals: if we can never compute certain numbers (such as infinitesimals), then we surely
-                                    can never measure such a number in our physical apparatus. This seems to imply we have some more structure in our mathematical 
-                                    model than may be warranted. In other words, it seems we can't have any real instances of the reals.
-                                    </p>
-
-                                    <p>
-                                    If we consider again the idea of some volume of water, we know for certain (now) that there's some minimum 
-                                    unit of water. Thus, we can't infinitely divide it and we certainly don't satisfy the completeness property
-                                    of the reals. Even something as abstract as economics has a lowest unit, namely
-                                    for USD, the penny. And other, perhaps moral, problems may be found with the apparent linear ordering of the worth
-                                    of things, inherited from the monetary value of goods. For instance, a family heirloom may appear worthless if only 
-                                    because it's monetary value is near nothing.
-                                    </p>
-
-                                    <figure class="alignwide">
-                                        <img src="../../assets/images/halfbaked/stocks.jpeg"  alt="A set of measuring tools that all utilize real numbers.">
-                                    </figure>
-            
-
-                                    <p>
-                                    This completeness isn't as easily cast off as we might imagine, however. Completeness is a requirement for 
-                                    the applicability of calculus, a tool oft used in physical instances of the reals. So, then what ever could replace
-                                    such an indispensible tool? I'm not sure. 
-                                    </p>
-                                    <p>
-                                    Furthermore, the algebraic numbers famously lack some useful and common numbers, such as pi and e (see transcendental numbers).
-                                    </p>
-
-                                    <p>
-                                    These considerations of the deficieny of the reals are further explored in <a href="https://medium.com/@alex.lamb/the-real-numbers-arent-real-40fae6f4e2f9">
-                                    Alex Lamb's article</a>.
-                                    </p>
-                                      
-
+                                        
 
                                     <p class="entry__tags">
                                         <strong>Tags:</strong>
                     
                                         <span class="entry__tag-list">
-                                            <a href="#0">orci</a>
-                                            <a href="#0">lectus</a>
-                                            <a href="#0">varius</a>
-                                            <a href="#0">turpis</a>
+                                            <a href="#0">Physics</a> <a href="#0">Intro</a>
                                         </span>
                         
-                                    </p>
-    
+                               
                                     <div class="entry__author-box">
                                         <figure class="entry__author-avatar">
                                             <img alt="" src="images/avatars/user-06.jpg" class="avatar">
@@ -401,10 +324,17 @@
                                 </div> <!-- end entry-content -->
 
                                 <div class="post-nav">
+                                    
+                                    <div class="post-nav__prev">
+                                        <a href="../torquebivector/index.html" rel="prev">
+                                            <span>Prev</span>
+                                            Torque as a Bivector. 
+                                        </a>
+                                    </div>
                                     <div class="post-nav__next">
-                                        <a href="maxwellequation.html" rel="next">
+                                        <a href="../ubiquityofnum/index.html" rel="next">
                                             <span>Next</span>
-                                            Maxwell's Equation in Geometric Form.
+                                            On the Ubiquity of Numbers.                                            
                                         </a>
                                     </div>
                                 </div>
