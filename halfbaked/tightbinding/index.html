@@ -191,7 +191,7 @@
 
                                 <div class="entry__content">
                                     <p class="lead">
-                                        Creation and annihilation operators may be used to state succinctly various tight-binding models of crystalline Hamiltonians. Below, this form is 
+                                        Creation and annihilation operators may be used to construct tight-binding models of crystalline systems. Below, this form is 
                                         constructed intuitively in an attempt to facilitate conceptual understanding.
                                     </p> 
 
@@ -219,7 +219,7 @@
                                     </p>
                                     <h2>Simplifications</h2>
                                     <p>
-                                        In the modeling of crystalline physical systems, we need to determine what exactly 
+                                        When modeling material systems, we first need to determine what, exactly, 
                                         we need to consider to capture the material properties of the system. Put more simply:
                                         what do we really care about when considering solid state systems?
                                     </p>
@@ -361,7 +361,8 @@
                                     <h2>Lattice Hamiltonian</h2>
                                     <p>
                                         In the free-electron picture, we didn't account for any interactions between electrons or even transitions between states.
-                                        Thus, from a certain perspective, the electrons were 'constrained' to their respective \(\vec{k}\) states.
+                                        Thus, from a certain perspective, the electrons were 'constrained' to their respective \(\vec{k}\) states (since they couldn't 
+                                        transition).
                                     </p>
                                     <!--
                                     <div class="boxed">
@@ -392,42 +393,151 @@
                                         <br>-->
                                     <p>
                                         Now, for electrons tightly bound to their positions on the underlying lattice, we may imagine these electrons are no longer constrained
-                                        in \(k\)-space, but now are constrained to certain lattice sites (or one of several orbitals localized at each lattice site) in real space.
+                                        in \(k\)-space, but now are constrained to certain lattice sites (or one of several orbitals localized at each lattice site) in real space. 
                                     </p>
                                     <p>
-                                        In a particularly localized situation (where electron's position-space wavefucntions may be 
-                                        taken to be tightly-bound to lattice positions), the interaction between electrons can then be modeled to 
-                                        some approximation to only interact with their nearest neighbors. This tends to be a better approach for insulating 
-                                        systems, as they tend to have more localized electrons.
+                                        In this scenario, momentum is no longer a good quantum number. However, the lattice position \(i\) (where \(\vec{r}_i\) is a lattice vector) now is a good quantum 
+                                        number, since each electron has a unique lattice position or orbital in real space.
                                     </p>
                                     <p>
-                                        Now, using the intuition gained from the construction of the second-quantized free-electron Hamiltonian, we may then consider
-                                        the form of such a tight-binding model's Hamiltonian, which naturally acts on a particle number representation corresponding 
-                                        to specfic lattice sites.
+                                        In the most extreme case of localization (where electron's position-space wavefunctions, or Wannier functions, may be 
+                                        taken to not overlap at all between lattice positions), there will be no interaction between different sites. And hence, if all lattice sites are equivalent, 
+                                        and each site has a bond strength of \( u_{site} \), the Hamiltonian takes the following form:
                                         <div class="eq">
                                             \[
-                                               \hat{H}_{tight-binding} = -t\sum_{\langle i, j \rangle}\big(\hat{a}^{\dagger}_{j}\hat{a}_{i}+\hat{a}^{\dagger}_{i}\hat{a}_{j}\big)
+                                               \hat{H}_{sites} = -u_{site}\sum_{i}\hat{a}^{\dagger}_{i}\hat{a}_{i}
                                             \]
                                         </div>
-                                        where subscript \(i\) denotes a particle located at lattice position \(\vec{R}_i\), and \(\langle i,j\rangle\) denotes 
-                                        the set of nearest neighbor sites \(i,j\). Also note that \(t\) is often termed the hopping parameter.
+                                        where each lattice site \( i \) with lattice vector \(\vec{r}_i\), has it's own set of creation and annihilation operators (\(\hat{a}^{\dagger}_{i}, \hat{a}_{i}\)). This Hamiltonian is now 
+                                        just counting the number of electrons (either 0 or 1) at every site \(i\) and adding it's contributed energy \(u_{site}\) if there's one at that site.
+                                    </p>
+                                    <h3>Nearest Neighbors</h3>
+                                    <p>
+                                        In a somewhat less localized situation then, the interaction between electrons can be modeled, to 
+                                        some approximation, to only involve nearest neighbors. 
                                     </p>
                                     <p>
-                                        This Hamiltonian accounts only for the energy of the exchange of particles between 
-                                        nearest neighbor sites. That is, we've assumed that each real-space lattice site has a unique state 
+                                        Again, using the intuition gained from the construction of the second-quantized free-electron Hamiltonian, we may then consider
+                                        the form of such a nearest neighbors term of the Hamiltonian, which naturally acts on a particle number representation corresponding 
+                                        to specfic lattice sites, as below. 
+                                        <div class="eq">
+                                            \[
+                                               \hat{H}_{n.n.} = -t\sum_{\langle i, j \rangle}\big(\hat{a}^{\dagger}_{j}\hat{a}_{i}+\hat{a}^{\dagger}_{i}\hat{a}_{j}\big)
+                                            \]
+                                        </div>
+                                        Here, \(n.n.\) denotes nearest neighbors, subscript \(i\) denotes a particle located at lattice position \(\vec{R}_i\), and \(\langle i,j\rangle\) denotes 
+                                        the set of nearest neighbor sites \(i,j\). Then, \(t\), often termed the hopping parameter, corresponds to the interaction energy 
+                                        between nearest neighbors. Note that here we've assumed interactions are isotropic and uniform (such that all sites are equivalent).
+                                    </p>
+                                    <p>
+                                        To understand this form further, let's consider the first term above, \(-t\hat{a}^{\dagger}_{j}\hat{a}_{i}\). This term corresponds to a particle at 
+                                        site \(i\) being destroyed and one at site \(j\) being created, effectively accounting for an electron that 'hops' from site 
+                                        \(i \) to site \(j\) and gaining energy \(t\). However, if one electron is already at site \(j\ (n_j=1)\), this cannot happen and the contribution 
+                                        from the term will be zero.
+                                    </p>
+
+                                    <div class="boxed">
+                                        <h4 class="boxtitle">Guarantee of Hermiticity</h4>
+                                        <p>
+                                            One may wonder why we need to include the second term (\(\hat{a}^{\dagger}_{i}\hat{a}_{j}\)) when we have the first (\(\hat{a}^{\dagger}_{j}\hat{a}_{i}\)). 
+                                            Recall that Hamiltonians must be Hermitian. Also recall that any non-Hermitian operator may be transformed into 
+                                            a Hermitian operator by defining a new operator that is the sum of itself and it's Hermitian conjugate:
+                                            <div class="eq">
+                                                \[
+                                                  A \neq A^{\dagger} \ \ \ \ \Rightarrow \quad \text{Define:} \ \   C = C^{\dagger}=A+A^{\dagger}
+                                                \]
+                                            </div>
+                                            Hence, if we simply include, always, the Hermitian conjugate of the form of the term we care to model, we 
+                                            are guaranteed to have a Hermitian Hamiltonian. To be explicit, for the case of nearest neightbors, the term 
+                                            <div class="eq">
+                                                \[
+                                                \hat{a}^{\dagger}_{j}\hat{a}_{i}
+                                                \]
+                                            </div>
+                                            is not Hermitian. But if we add it's Hermitian conjugate, \(h.c. \), to the term, 
+                                            the resulting operator is guaranteed to be Hermitian. The addition of just the 
+                                            term \(h.c.\) to denote this scheme is standard practice in applications of the models 
+                                            discussed here.
+                                        </p>
+                                       
+
+                                        </div>
+                                        <br>
+                                    <p>
+                                        \(H_{n.n.}\) accounts only for the energy of the exchange of particles between 
+                                        nearest neighbor sites. That is, we've assumed that each real-space lattice site has a unique state \(i\)
                                         and that the only interaction is between states directly next to each other, where the likelihood of transition/energy 
                                         relevant to each interaction is parameterized by \(t\).
                                     </p>
                                     <p>
-                                        If \(t\) is large, the hopping becomes less likely and the sites becomes more isolated in terms of interaction.
+                                        If \(t\) is large, the hopping becomes less likely and the sites become more isolated in terms of interaction.
                                         Conversely, if \(t\) is small, hopping is more likely and neighbors tend to interact more.
                                     </p>
+                                    <h3>Tight-Binding Hamiltonian</h3>
                                     <p>
+                                        For a tightly-bound system of electrons constrained to some underlying lattice, we may then approximate the Hamiltonian 
+                                        to be the sum of the two Hamiltonians considered above.
+                                        <div class="eq">
+                                            \[
+                                            \hat{H}_{tight-binding} = \hat{H}_{sites}+\hat{H}_{n.n.}
+                                            \]
+                                        </div>
                                         Thus, we can intuit that this tight-binding model succintly describes the energy and dynamics of a situation in which 
-                                        neighboring electrons interact by switching between each other's orbital and lattice positions, or transition into 
-                                        another, unoccupied, state.
+                                        neighboring electrons interact by  transitioning into other states or lattice sites. It also accounts for the site's energies themselves.
                                     </p>
-                                    
+                                    <p>
+                                        For isotropic cases, where all site are equivalent, the on-site term (\(\hat{H}_{sites}\)) just acts as an additive constant, and may
+                                        be neglected in considerations of dynamics.
+                                    </p>
+                                    <!--<div class="boxed">
+                                        <h4 class="boxtitle">Example: Square Lattice</h4>
+                                        <p>
+                                            One may wonder why we need to include the second term (\(\hat{a}^{\dagger}_{i}\hat{a}_{j}\)) when we have the first (\(\hat{a}^{\dagger}_{j}\hat{a}_{i}\)). 
+                                            Recall that Hamiltonians must be Hermitian. Also recall that any non-Hermitian operator may be transformed into 
+                                            a Hermitian operator by defining a new operator that is the sum of itself and it's Hermitian conjugate:
+                                            <div class="eq">
+                                                \[
+                                                  A \neq A^{\dagger} \ \ \ \ \Rightarrow \quad \text{Define:} \ \   C = C^{\dagger}=A+A^{\dagger}
+                                                \]
+                                            </div>
+                                            Hence, if we simply include, always, the Hermitian conjugate of the form of the term we care to model, we 
+                                            are guaranteed to have a Hermitian Hamiltonian. To be explicit, for the case of nearest neightbors, the term 
+                                            <div class="eq">
+                                                \[
+                                                \hat{a}^{\dagger}_{j}\hat{a}_{i}
+                                                \]
+                                            </div>
+                                            is not Hermitian. But if we add it's Hermitian conjugate, \(h.c. \), to the term, 
+                                            the resulting operator is guaranteed to be Hermitian. The addition of just the 
+                                            term \(h.c.\) to denote this scheme is standard practice in applications of the models 
+                                            discussed here.
+                                        </p>
+                                       
+
+                                        </div>
+                                        <br>-->
+
+                                    <p>
+                                        Of course this truncation to nearest neighbor interactions is usually just an approximation (it's not impossible that the Wannier functions don't overlap 
+                                        on a larger scale). Some materials require us to include further range terms;
+                                        we could also add a term representing next-nearest-neighbor interactions of the form below:
+                                        <div class="eq">
+                                            \[
+                                               \hat{H}_{n.n.n.} = -v\sum_{\langle\langle i, j \rangle\rangle}\big(\hat{a}^{\dagger}_{j}\hat{a}_{i}+\hat{a}^{\dagger}_{i}\hat{a}_{j}\big)
+                                            \]
+                                        </div>
+                                        (where now \(\langle\langle i, j \rangle\rangle\) denotes the set of next nearest neighbors) 
+                                        but the essential concept is the same: each lattice site has a unique set of creation and annihilation operators; and these 
+                                        allow us to write the corresponding Hamiltonian succinctly in a form with an obvious interpretation.
+                                    </p>
+                                    <p>
+                                        We also haven't really accounted for interactions between electrons themselves. But, since we're considering a system that's localized, this 
+                                        may be a reasonable interaction to neglect.
+                                    </p>
+                                    <p>
+                                        The form of the tight-binding Hamiltonian given above tends to be a more appropriate model for insulating 
+                                        systems, as they tend to have more localized electrons.
+                                    </p>
                                     <!--<div class="boxed">
                                     <h4 class="boxtitle">Bloch States</h4>
                                     <p>
@@ -449,7 +559,14 @@
                                         Note that the point of this article was only to provide some rationale and justification of the real-space form 
                                         of the tight-binding Hamiltonian in a second-quantized form. This real-space force can be converted into a 
                                         momentum-space form, from which we may extract a dispersion relation, by inserting the Fourier transform of 
-                                        the creation and annihilation operators.
+                                        the creation and annihilation operators. In this case we would end up with a diagonal form in \(k\)-space of \(H\):
+                                        <div class="eq">
+                                            \[
+                                            \vec{H} = \sum_{\vec{k}}^{B.Z.}\epsilon (\vec{k})\hat{a}^{\dagger}_{\vec{k}}\hat{a}_{\vec{k}}
+                                            \]
+                                        </div>
+                                        where \(\epsilon(\vec{k})\) is the dispersion relation, and details the band structure of the system (the sum is over Bloch 
+                                        wave vectors in the first Brillouin Zone). 
                                     </p>
                                     <p>
                                         For more detail pertaining to the mathematics, see these
@@ -458,9 +575,8 @@
                                     </p>
                                     <p>
                                         The second-quantized tight-binding model is often a first example for more contemporary treatments such as 
-                                        the t-J and Hubbard model, as well as the Hofstadter model. Interactions between further sets of neighbors is also
-                                        possible, such as next-nearest neighbors \(\langle\langle i,j\rangle\rangle\); generally these new shells of neighbors 
-                                        will have differing hopping parameters.
+                                        the t-J and Hubbard model, as well as the Hofstadter model. Interactions between more than two sites at a time, with terms of the 
+                                        form \(a^{\dagger}_ja^{\dagger}_ka_ia_j\) and larger, are also possible but neglected here.
                                     </p>
 
                                     <p class="entry__tags">
