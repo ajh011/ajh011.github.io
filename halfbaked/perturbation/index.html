@@ -6,7 +6,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simple Harmonic Approximation</title>
+    <title>Simple Perturabtion</title>
 
     <script>
         document.documentElement.classList.remove('no-js');
@@ -150,7 +150,7 @@
                             <header class="entry__header">
     
                                 <h1 class="entry__title">
-                                    Simple Harmonic Motion: Or How I Learned to Love Quadratic Approximations
+                                    A Simple Perturbation Theory Example: Solving the Quintic with Power Series.
                                 </h1>
 
                                 <div class="entry__meta">
@@ -166,7 +166,7 @@
                                             <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
                                             <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
                                         </svg>
-                                        February 16, 2023
+                                        February 25, 2023
                                     </div>
                                     <div class="entry__meta-cat">
                                         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -183,7 +183,7 @@
 
                             <div class="entry__media center">
                                 <figure class="alignwide" >
-                                    <img src="../../assets/images/halfbaked/harmonic.svg"   alt="Palm over black background. (Image Credit: Spurgeon stock photo) ">
+                                    <img src="../../assets/images/halfbaked/perturbation.svg"   alt="Palm over black background. (Image Credit: Spurgeon stock photo) ">
                                 </figure>
                             </div>
 
@@ -191,84 +191,105 @@
 
                                 <div class="entry__content">
                                     <p class="lead">
-                                        The simple harmonic approximation is perhaps one of the most applied concepts in physics. This is 
-                                        essentially due to the structure of Taylor series expansions around equilibrium points.
+                                        Perturbation theory can be applied to many systems, including certain polynomial solutions. Below, we discuss a specific 
+                                        application to a certain quintic polynomial.
                                     </p> 
 
                                     <p class="drop-cap">
-                                       Phyisicists often use approximations to reduce systems to something more mathematically modelable. One of the most understood and 
-                                       often applied models is that of simple harmonic motion (SHM). This type of system results from a purely quadratic force term. And, in fact,
-                                       this is the basic model of an ideal spring.
+                                       Perturbation theory often takes on a rather scary reputation, since it's generally only called out by name late in one's academic career, and 
+                                       has a somewhat strong association with particle physics (see Feynman diagrams and Dyson series). However, the essential concepts are ubiquitous 
+                                       and it's applications are more broad than they may first seem.
                                     </p>
                                     <p>
-                                        But why would a seemingly random object provide insight into so many systems at equilibrium? This may be answered by a simple consideration of the 
-                                        Taylor series of a given system.
+                                        Quintic polynomials, famously, have no general formula for their solution. Below, as an example of the simple and powerful concepts of perturbation theory,
+                                        we solve a specific quintic polynomial, giving a Taylor series expansion that approximates the solution after truncation.
                                     </p>
-                                    <h2>Springs and Hooke's Law</h2>
                                     <p>
-                                        Every intro physics student (should) know that the force of a spring is directly proportional to it's displacement from equilibrium. 
-                                        Explicitly, for a spring stretched a distance \(\Delta x\) from it's equilibrium point along it's axis, the corresponding force is that below:
+
+                                    </p>
+                                    <h2>The Approach</h2>
+                                    <p>
+                                        Suppose we'd like to solve the polynomial below for \(x\).
                                         <div class="eq">
                                             \[
-                                                F=-k\Delta x
+                                                x^5+x-1=0
                                             \]
                                         </div>
-                                        where \(k\) is termed the spring constant, which is a characteristic of the spring itself. This relation for the force of a spring 
-                                        is known as Hooke's law and results in simple harmonic motion about the point of equilibrium, \(\Delta x=0\).
-                                    </p>
-                                    <p>
-                                        As a simple exercise we may also calculate the form of the spring's potential energy by equating it to the work required to stretch the 
-                                        spring a distance \(x\):
+                                        Of course, we can't apply a general formula for x since there is no quintic equation. However, we may effectively solve for 
+                                        an expansion of x in terms of some parameter. But what parameter?
                                         <div class="eq">
                                             \[
-                                                W=-\int\vec{F}(\vec{r})\cdot\vec{r}=\int_0^x kx'\ dx'= \frac{1}{2}kx^2
+                                             x^5+ \epsilon x-1=0
                                             \]
                                         </div>
-                                        Now that we have the basic relations for a spring in mind, we consider a more general approach to any system in equilibrium.
-                                    </p>
-                                    <h2>Systems Around Equilibrium Points</h2>
-                                    <p>
-                                        The force of an object subject to a conservative force (and thus one modelable with a scalar potential field) is equal to the derivative (gradient) of this 
-                                        potential with respect to displacement.
-                                        <div class="eq">\[F(x)=-\frac{dV(x)}{dx}\]</div>
-                                        Furthermore, at equilibrium position \(x=x_0\) we (should) expect a vanishing force, that is \(F(x_0)=0\) and in which case \(\frac{dV(x)}{dx}=0\).
-                                        Hence, at points of equilibrium, the first derivative of the potential vanishes, since these are exactly the stationary points of the field.
+                                        It turns out, our polynomial just so happens to coincide with the above equation when \(\epsilon = 1\). And, since the value of
+                                        \(x\) itself now depends on \(\epsilon\), we can assume it has a Taylor expansion in \(\epsilon\) of the form:
+                                        <div class="eq">
+                                            \[
+                                               x(\epsilon) = x_0 + \frac{\partial x}{\partial \epsilon}\epsilon + \frac{1}{2} \frac{\partial^2 x}{\partial \epsilon^2}\epsilon^2 + ... = \sum_{n=0}^{\infty}\frac{1}{n!}\frac{\partial^n x}{\partial \epsilon^n}\epsilon^n
+                                            \]
+                                        </div>
                                     </p>
                                     <p>
-                                        Now, considering the Taylor expansion of an arbitrary (well-behaved) scalar potential, we get the following:
-                                        <div class="eq">\[V(x)=V(x_0)+\frac{dV(x)}{dx}\vert_{x=x_0}(x-x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}(x-x_0)^2+...\]</div>
-                                        However, at points of equilibrium we have a vanishing first derivative and thus:
-                                        <div class="eq">\[V(x)=V_0(x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}(x-x_0)^2+...\]</div>
-                                        And for ranges where \(x-x_0\) is small, the higher order terms should be neglibible (as long as the deriavtives don't grow faster than the power series).
-                                        And, hence:
-                                        <div class="eq">\[V(x)\approx V(x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}\frac{(x-x_0)^2}{2}\]</div>
-                                        where we may further neglect the constant \(V_0\) since it is simply a constant term that will not contribute to dynamics. 
-                                        We also now may consider the form of the resulting potential field if we rename the coefficient of the second order 
-                                        expansion \(k\).
-                                        <div class="eq">\[V(x)=\frac{1}{2}k(\Delta x)^2\]</div>
+                                        We can then substitute this form of \(x(\epsilon)\) into the polynomial (with the parameter), and collect terms according 
+                                        to order in \(\epsilon\), as below.
+                                        <div class="eq">
+                                            \begin{align}
+                                            \left[x(\epsilon)\right]^5+ \epsilon x(\epsilon)-1&=\left[\sum_{n=0}^{\infty}\frac{1}{n!}\frac{\partial^n x}{\partial \epsilon^n}\epsilon^n\right]^5+\sum_{n=0}^{\infty}\frac{1}{n!}\frac{\partial^n x}{\partial \epsilon^n}\epsilon^{n+1}-1\\
+                                            \\
+                                            & = \left[\sum_{n=0}^{\infty}x_n\epsilon^n\right]^5+\sum_{n=0}^{\infty}x_n\epsilon^{n+1}-1\\
+                                            \\
+                                            & = \big(x_0^5 + 5x_0^4x_1\epsilon + (10x_0^3x_1^2+5x_0^4x_2)\epsilon^2+...\big)\\
+                                            &+\epsilon\big( x_0 + x_1 \epsilon +  x_2 \epsilon^2 + \quad x_3 \epsilon^3 \quad +\ ...\big)-1\\
+                                            \\
+                                            & = (x_0^5 - 1)\epsilon^0 + (5x_0^4x_1+x_0)\epsilon^1 + (10x_0^3x_1^2+5x_0^4x_2 +x_1) \epsilon^2 + ...\\
+                                            \\
+                                            & = 0\\
+                                            \end{align}
+                                        </div>
+                                        Now, since we expect the above to be satisfied regardless of the value of \(\epsilon\), the series above must vanish term by term.
+                                        That is, each coefficient of the expansion in \(\epsilon\) above must vanish independently, and hence, we may solve
+                                        for the expansion of \(x\), term by term.
+                                        <div class="eq">
+                                            \begin{align}
+                                            (x_0^5 - 1)=0 &\ \ \quad\Rightarrow x_0 =1 \\
+                                            (5x_0^4x_1+x_0)=0&\ \ \quad\Rightarrow x_1 =-1/5 \ \\
+                                            (10x_0^3x_1^2+5x_0^4x_2 +x_1)=0&\ \ \quad\Rightarrow x_2 =-1/25 \\
+                                            \quad\vdots\quad\quad\quad
+                                            \\
+                                            \end{align}
+                                        </div>
+                                        So, to second order in \(\epsilon\), \(x\) has the following expansion:
+                                        <div class="eq">
+                                            \begin{align}
+                                            x(\epsilon) & = x_0 + x_1\epsilon + x_2\epsilon^2+...\\
+                                            & = 1\ +\ -\frac{1}{5}\epsilon \ +\ -\frac{22}{10}\epsilon^2+...\\
+                                            \end{align}
+                                        </div>
+                                        And so, at our point of interest, when \(\epsilon =0\), we then have the approximate solution for \(x\) below:
+                                        <div class="eq">
+                                            \[
+                                            x(1)\approx 1-\frac{1}{5}-\frac{1}{25} = .76
+                                            \]
+                                        </div>
+                                        Wolfram|Alpha gives a (real) solution of approximately \(~.788\), so we're not too far off!
+                                    </p>
+                                    <h2>Further Resources</h2>
+                                    <p>
+                                        This example was meant to be short but informative enough to show the general power of perturbative approaches.
+                                        Many details have been neglected here such as the choice of placement of the parameter \(\epsilon\), and the 
+                                        assumption that the power series of \(x\) in \(\epsilon\) converges.
                                     </p>
                                     <p>
-                                        Note that this is the expression for the potential energy of a spring! And, indeed taking the negative derivative of this 
-                                        potential gives you Hooke's Law:
-                                        <div class="eq">\[F(x)=-\frac{d}{d(\Delta x)}\left(\frac{1}{2}k(\Delta x)^2\right)=-k\Delta x\]</div>
+                                        The same proble is given as an introduction in Carl Bender's wonderful 
+                                        <a href="https://www.youtube.com/watch?v=LYNOGk3ZjFM&list=PLzcd6SoIscwjHuWRE38UXWG92uq0Sy4UF">lecture series</a>.
+                                        It's also used in his book, <em><a href="https://www.amazon.com/Advanced-Mathematical-Methods-Scientists-Engineers/dp/0387989315">Advanced 
+                                        Mathematical Methods for Scientists and Engineers: Asymptotic Methods and Perturbation Theory</a></em>. For more detail, see these resources.
                                     </p>
                                     <p>
-                                        This essentially tells us that we can describe many systems in equilibrium as springs!
+                                        
                                     </p>
-                                    <h2>Conclusion</h2>
-                                    <p>
-                                        The above considerations are particularly abstract (though they only rely on basic calculus). While it may be less enlightening,
-                                        the generality we gain by such abstract considerations are in large part their utility.
-                                    </p>
-                                    <p>
-                                        Note that this presentation was a little backwards from a certain perspective. In fact, it's not that we can model systems about equilibrium as springs, 
-                                        it's more that the spring is a model system around equilibrium and hence our approximation applies.
-                                    </p>
-                                    <p>
-                                        Also, the above approximation does have it's shortcomings; SHM generally only works well on sufficiently small neighborhoods of equilibrium points.
-                                        As such, we can't describe dynamical behaviour for non-equilbrium states. Some systems will even have a vanishing second derivative of potential 
-                                        about certain equilibrium points. This would render the approximation above entirely useless, and require us to model systems about such points with higher order terms.
-                                    </p>
+                                    
 
 
                                     <p class="entry__tags">
