@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Classical Electrodynamics</title>
+    <link href="../../assets/css/gp_test.css" rel="stylesheet">
+    <link href="../../assets/css/qudits.css" rel="stylesheet">
+    <link href="../../assets/css/toc.css" rel="stylesheet">
+
+
+    <!--Geogebra Support-->
+    <script src="navigation.js"></script>
+
+
+    <!--MathJax Support-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}},
+                                  loader: {load: ['[tex]/ams']},
+                                  tex: {packages: {'[+]': ['ams']}});</script>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../assets/images/res/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/images/res/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/images/res/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/images/res/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../../assets/images/res/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../assets/images/res/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../assets/images/res/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../assets/images/res/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../../assets/images/res/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="../../assets/images/res/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="../../assets/images/res/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="../../assets/images/res/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="../../assets/images/res/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="../../assets/images/res/mstile-310x310.png" />
+
+
+
+    <meta charset="UTF-8">
+    <meta name="description" content="A short overview of relevant relations for classical electrodynamics.">
+    <meta name="keywords" content="classical electrodynamics">
+    <meta name="author" content="Alexander J. Heilman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+  </head>
+  
+  <body>
+
+
+  <div id="home">
+    <a href="https://www.alexheilman.com"><img id="homeimg" src="../../assets/images/iconwhite/favicon-196x196.png" width="50"></a>
+  </div>
+
+  <div id="up">
+    <a id="upa" href="https://www.alexheilman.com/res/index.html">GP</a>
+  </div>  
+  <h1 id="title">Classical Electrodynamics</h1>
+  <div class="flex stack">
+    <p id="blurb">
+      Classical electrodynamics is the study of macroscopic electromagnetic behaviour. The classical formalism
+      generally employs vector calculus. 
+    </p>
+    
+
+    <div id="toc_container">
+      <p class="toc_title">Contents</p>
+      <ul class="toc_list">
+        <li><a href="#basic">1 Basic Relations</a></li>
+        <li><a href="#estatics">2 Electrostatics</a></li>
+        <ul><li><a href="#esdiff">2.1 Differential Equations</a></li>
+          <li><a href="#esint">2.2 Integral Equations</a></li>
+          <li><a href="#spotential">2.3 Scalar Potential</a></li>
+          <li><a href="#esgreen">2.4 Green's Functions</a></li></ul>
+        <li><a href="#dielectric">3 Dielectric Media</a></li>
+        <li><a href="#mstatics">4 Magnetostatics</a></li>
+        <ul><li><a href="#msdiff">4.1 Differential Equations</a></li>
+          <li><a href="#msint">4.2 Integral Equations</a></li>
+          <li><a href="#vpotential">4.3 Vector Potential</a></li></ul>
+        <li><a href="#spf">5 Special Functions</a></li>
+        <li><a href="#resources">6 Resources</a></li>
+      </div>
+    </div>
+  </div>
+    <div class="hl"></div>
+    <h3 id="basic">Basic Relations</h3>
+    <p>
+      The electric field is a non-rotational vector field that is postulated to permeate all space. The field uniquely determines the
+      force on a charge particle via the relation
+      <div class="eq">
+        $$
+          F=qE
+        $$
+      </div>
+      The energy of an arrangement of charges in an electric field is calculated via
+      <div class="eq">
+        $$
+          W=\frac{1}{2}\int_V \rho(\vec{x})\phi(\vec{x})d\vec{x}
+        $$
+      </div>
+      where \(\rho(\vec{x})\) is the charge density at point \(\vec{x}\).
+    </p>
+    <p>
+      Capacitance is generally defined as
+      <div class="eq">
+        $$
+          Q=CV.
+        $$
+      </div>
+      Jackson expands this definition to (with some paraphrasing): "the capacitance of a conductor is the total charge on a conducter when held 
+      at unit potential, with all other surrounding conductors at zero potential (or with the conductor in free space)".
+
+    </p>
+    <br>
+    <div class="hl"></div>
+    <h2 id="estatics">Electrostatics</h2>
+    <p>
+      Electrostatics is the description of static electric charge configurations. That is, scenarios in which 
+      time dependence is eliminated and, thus, we only consider the form of electric fields over space. 
+    </p>
+    <div class="dl"></div>
+    <h3 id="esdiff">Electrostatic Differential Equations</h3>
+    <p>
+      In electrostatic configurations, the electric field is entirely defined by it's two vector derivatives:
+      <div class="eq">
+        \begin{align}
+          \nabla \cdot \vec{E}&=\frac{\rho}{\epsilon_0}\\
+          \nabla \times\vec{E}&=0\\
+        \end{align}
+      </div>
+      Note that the electric field does have a curl (i.e. the electric field may be rotational) in dynamical scenarios, specifically
+      those with changing magnetic field<!-- (see <a href="#maxeq">Maxwell's Equations</a>)-->. This curl-less property allows us to define
+      a (not neccesarily unique) scalar potential that may be used to completely specify the electric field.
+    </p>
+    <div class="dl"></div>
+    <h3 id="esint">Electrostatic Integral Equations</h3>
+    <p>
+      Equivalently, we may specify the field associated with an electrostatic configuration by the two vector integrals:
+      <div class="eq">
+        \begin{align}
+          \oint_{\partial V} \vec{E}\cdot d\vec{a}&=\int_V\frac{\rho(\vec{r})}{\epsilon_0}d\vec{r}\\
+          \oint_{\partial a} \vec{E}\cdot d\vec{\mathcal{l}}&=0\\
+        \end{align}
+     </div>
+      Once, again, the electric field does have a curl (i.e. the electric field may be rotational) in dynamical scenarios, specifically
+      those with changing magnetic field<!-- (see <a href="#maxeq">Maxwell's Equations</a>)-->. The first integral above is often termed 
+      Gauss' Law<!--and has a nice visualization as the pieercing of the boudary of some volume containing charge-->.
+    </p>
+    <div class="dl"></div>
+    <h3 id="spotential">Scalar Potential</h3>
+    <p>
+      The electric field of electrostatic configurations (because of it's vanishing curl) may be specified as the gradient or exterior product
+      of some scalar potential. 
+      <div class="eq">
+        $$
+          \vec{E}(\vec{r})=-\nabla \Phi(\vec{r})
+        $$
+      </div>
+      The potential is unique only up to the addition of some function with a gradient of zero divergence, which includes constant variations in the field
+      (except in the case of Dirichlet boundary conditions). This means that, at the least, the scalar potential's specfic value at any point in space is meaningless. Rather,
+      it's relative difference between points in space is what defines the behaviour of charges.
+      </p>
+      <p>
+        We may now define a volume integral that can be used to calculate a suitable scalar potential \(\Phi\) for a configuration of charge specified
+        by \(\rho(\vec{r}\)).
+      <div class="eq">
+        $$
+          \Phi(\vec{r})=\int_{V}\frac{\rho(\vec{r'})}{\vert \vec{r}-\vec{r}'\vert}d\vec{r}'
+        $$
+      </div>
+      Note that to calculate the potential at some point \(\vec{r}\), we are required to integrate over all of space; hence, the dummy variable
+      \(\vec{r}'\) appearing in the integral. As a result of this requirement, we can only really reasonably apply the above relation to configurations of 
+      localized charge in otherwise free space (so we need not consider ALL space). Alternatively, we may specify boundary conditions on some surface
+      bounding a region of interest (addressed below).
+    </p>
+    <div class="dl"></div>
+    <h3 id="esgreen">Electrostatic Potential in Terms of Green's Functions</h3>
+    <p>
+      The most general procedure for calculating electrostatic potentials, given some boundary conditions, is achieved
+      through the use of Green's functions. Green's functions are effectively used as integral operators that invert the differential operator
+      through which boundary conditions are specified. 
+      <div class="eq">
+      \begin{align}
+        \Phi(\vec{x})=\int_V \rho ( \vec{x}') &G(\vec{x},\vec{x}')d\vec{x}' \  \\
+                                                                      &+\frac{1}{4\pi} \oint_S\left[ \frac{\partial \Phi(\vec{x}')}{\partial \hat{n}}G(\vec{x},\vec{x}')
+                                                                      -\Phi(\vec{x}') \frac{\partial G(\vec{x},\vec{x}')}{\partial \hat{n}}\right]da'\\
+      \end{align}
+      </div>
+      The above relation is given in Gaussian units. To convert to SI units, simply multiply the first integral above by \(k=\frac{1}{4\pi \epsilon_0}.\)
+      Furthermore, Green's functions must generally satisfy the relation:
+      <div class="eq">
+        $$
+          \nabla^2G(\vec{x},\vec{x}')=-4\pi\delta(\vec{x}-\vec{x}')
+        $$
+      </div>
+    </p>
+
+    <h4>Types of Boundary Conditions</h4>
+    <p>
+      Boundary conditions are generally given as either one of two classes: Dirichlet or von Neumann. Both specify a certain equivalence
+      along some boundary, and have some corresponding behaviour neccesarily exhibited in their respective Green's functions. 
+    </p>
+    <h5>Dirichlet</h5>
+    <p>
+      Dirichlet boundary condtions specify the potential along the boundary and hence specify \( \Phi.\) Under 
+      these conditions, the Green's function along the boundary surface neccesarily vanishes, that is 
+      <div class="eq">
+        $$
+        G_D\vert_S=0.
+        $$
+      </div>
+      Leaving one with the general solution for an electrostatic potential with a specified potential along a boundary:
+      <div class="eq">
+        $$
+        \Phi(\vec{x})=\int_V \rho ( \vec{x}') G_D(\vec{x},\vec{x}')d\vec{x}'-\frac{1}{4\pi} \oint_S\Phi(\vec{x}') \frac{\partial G_D(\vec{x},\vec{x}')}{\partial \hat{n}} da'.
+        $$
+      </div>
+    </p>
+
+    <h5>von Neumann</h5>
+    <p>
+      Neumann boundary condtions specify the electric field along the boundary and hence specify \(\frac{\partial \Phi}{\partial \hat{n}}.\) Under 
+      these conditions, the Green's function derivative along the boundary surface neccesarily equals \(-\frac{4\pi}{S}\), where \(S\) is the surface area
+      of the boundary. That is, 
+      
+      <div class="eq">
+        $$
+        \frac{\partial G_N}{\partial \hat{n}}\vert_S=-\frac{4\pi}{S}.
+        $$
+      </div>
+      Leaving one with the general solution for an electrostatic potential with a specified electric field along a boundary:
+      <div class="eq">
+        $$
+        \Phi(\vec{x})=\langle \Phi\rangle_S +\int_V \rho ( \vec{x}') G_D(\vec{x},\vec{x}')d\vec{x}'+\frac{1}{4\pi} \oint_S \frac{\partial \Phi(\vec{x}')}{\partial \hat{n}}G(\vec{x},\vec{x}') da'
+        $$
+      </div>
+       where \(\langle \Phi\rangle_S \) is the average potential over the boundary surface(s) \(S\) (which results from the neccessary behaviour of the corresponding Green's function, discussed above).
+     </p>
+
+    <br>
+
+    <h4>Green's Functions for Common Coordinate Systems</h4>
+    <h5>Green's Function for Cylindrical Regions</h5>
+    <p>
+      Green's functions for unit point charges in cylindrical coordinates satisfy the relation
+      <div class="eq">
+        $$
+          \nabla^2_xG(\vec{x},\vec{x'})=-\frac{4\pi}{\rho}\delta (\rho-\rho')\delta (\phi-\phi')\delta (z-z')
+        $$
+      </div>
+    </p>
+      <h6>Expansions of Cylindrical Delta Functions</h6>
+      <p>        
+      Generally termed the completeness relations, and traditionally normalized.
+        <div class="eq">
+          \begin{align}
+            \delta(z-z')&=\frac{2}{L}\sum_{n=1}^{\infty}\sin \left(\frac{n\pi z}{L}\right)\sin\left( \frac{n\pi z'}{L}\right)\\
+            \delta(\phi-\phi')&=\frac{1}{2\pi}\sum_{m=-\infty}^{\infty}e^{-im\phi'}e^{im\phi}\\
+            \frac{\delta(\rho-\rho')}{\rho'}&=\sum_{n=1}^{\infty}\frac{2}{a^2J_{m+1}^2(x_{mn})}J_m(x_{mn}\frac{\rho}{a})J_m(x_{mn}\frac{\rho'}{a}) \quad \forall m\\
+          \end{align}
+        </div> 
+      </p>
+      <h6>Expansions of Cylindrical Inverse Vector Differences</h6>
+      <p>        
+      Below are the point difference expansions in cylindrical coordinates.
+        <div class="eq">
+          \begin{align}
+            \frac{1}{\vert \vec{x}-\vec{x}'\vert}&=\frac{1}{\sqrt{\rho^2+\rho'^2-2\rho\rho' \cos (\phi-\phi')+(z-z')^2}}\\
+                                                  &=\frac{2}{\pi}\sum_{m=-\infty}^{\infty}\int_0^{\infty}dk\ e^{im(\phi-\phi')}\cos [k(z-z')]
+                                                     I_m(k\rho_{<})K_m(k\rho_{>})
+          \end{align}
+        </div> 
+      </p>
+
+      <h5>Green's Function for Spherical Regions</h5>
+      <p>
+        Green's functions for unit point charges in spherical coordinates specified by spherical boundaries satisfy the relation
+        <div class="eq">
+          $$
+            \nabla^2_xG(\vec{x},\vec{x'})=\delta (r-r')\frac{\delta (\cos\phi-\cos\phi')}{r}\frac{\delta (\theta-\theta')}{r\sin\theta}
+          $$
+        </div>
+      </p>
+        <h6>Expansions of Spherical Delta Functions</h6>
+        <p>
+          <div class="eq">
+            \begin{align}
+              \delta(\cos\phi-\cos\phi')\delta(\theta -\theta')&=\sum_{l=0}^{l=\infty}\sum_{m=-l}^{l} Y^*_{lm}(\phi',\theta')Y_{lm}(\phi,\theta)\\
+            <!--  \frac{\delta(r-r')}{r'^2}&=\sum_{n=1}^{\infty}\frac{2}{a^2J_{m+1}^2(x_{mn})}J_m(x_{mn}\frac{\rho}{a})J_m(x_{mn}\frac{\rho'}{a}) \quad \forall m\\-->
+            \end{align}
+          </div> 
+        </p>
+        
+        <h6>Expansions of Spherical Point Differences</h6>
+        <p>        
+          Below are the point difference expansions in spherical coordinates.
+            <div class="eq">
+              \begin{align}
+                \frac{1}{\vert \vec{x}-\vec{x}'\vert}&=\frac{1}{\sqrt{r^2+r'^2-2rr'(\cos\theta\cos\theta'+\sin\theta\sin\theta'\cos(\phi-\phi'))}}\\
+                                                      &=4\pi\sum_{l=-\infty}^{\infty}\sum_{m=-l}^{l}\frac{1}{2l+1}\frac{r_{<}^l}{r_{>}^{l+1}}Y^*_{lm}(\theta',\phi')Y_{lm}(\theta,\phi)
+              \end{align}
+            </div> 
+        </p>
+        
+<!--
+    <h3>Multipole Expansions of Distant, Localized Charge Distributions</h3>
+    <p>
+
+    </p>      
+  <h3>Dipole Stuff</h3>-->
+  <div class="hl"></div>
+    <h3 id="dielectric">Dielectric Media</h3>
+    <p>
+      In insulating material, the particles composing the material react to the electric and magnetic fields such that 
+      they decrease the overall applied external field. This reaction by dielectric material may be modeled by the relations below.
+    </p>  
+    <h4>Dielectric Relations</h4>      
+    <p>
+      Dielectric materials may be charachterized by their electric susceptibility \(\chi_e\), which measures the material's polarization 
+      in response to an external electric field. As a special case, free space has a susceptibility of 0.
+      <div class="eq">
+        $$
+          \vec{P}=\chi_e \vec{E}
+        $$
+      </div>
+      We then may define the electric displacement \(\vec{D}\), which is suited for dealing
+      with the electric field in regions of non-zero susceptibility.
+      <div class="eq">
+        $$
+          \vec{D}=\vec{E}+\vec{P}
+        $$
+      </div>
+    </p>
+    <div class="hl"></div>
+    <h2 id="mstatics">Magnetostatics</h2>
+    <p>
+      Magnetoostatics is the description of static current configurations. That is, scenarios in which 
+      time dependence is eliminated and, thus, we may only consider the form of magnetic fields over space. 
+    </p>
+    <div class="dl"></div>
+    <h3 id="msdiff">Magnetostatic Differential Equations</h3>
+    <p>
+      In magnetostatic configurations, the magnetic field is entirely defined by it's two vector derivatives:
+      <div class="eq">
+        \begin{align}
+          \nabla \cdot \vec{B}&=0\\
+          \nabla \times\vec{B}&=\mu_0\vec{J}\\
+        \end{align}
+      </div>
+      The first derivative specified above, that of divergence being equal to zero, is equivalent to the statement that there are 
+      no magnetic monopoles in all of reality. This has been experimentally tested to the limits of current technology, and allows us 
+      to specify the magentic field as the curl of some vector potential.
+    </p>
+    <div class="dl"></div>
+    <h3 id="msint">Magnetostatic Integral Equations</h3>
+    <p>
+      Equivalently, we may specify the field associated with a magnetostatic configuration by the two vector integrals:
+      <div class="eq">
+        \begin{align}
+          \oint_{\partial V} \vec{B}\cdot d\vec{a}&=0\\
+          \oint_{\partial a} \vec{B}\cdot d\vec{\mathcal{l}}&=\mu_0 \int_{a} \vec{J}\cdot d\vec{a}\\
+        \end{align}
+      </div>
+    </p>
+    <div class="dl"></div>
+    <h3 id="vpotential">Vector Potential</h3>
+    <p>
+      Due to the curl-less nature of time independent magnetic fields, we may specify their behaviour entirely in terms of some
+      vector potential. 
+      <div class="eq">
+        $$
+          \vec{B}(\vec{r})=-\nabla\times\vec{A}(\vec{r})
+        $$
+      </div>
+      The potential is unique only up to the addition of some function with a curl of zero. This additional function, added to the 
+      vector potential, is termed the gauge. The gauge we choose may be used to satisfy certain appealing properties that may sinplify
+      or aid in calculations.  Some common gauges include: the Coulomb gauge, which guarantees
+      \(\nabla\cdot\vec{A}=0\); the Lorentz gauge; and the Landau gauge.
+    </p>
+    <p>
+      We may now define a volume integral that can be used to calculate a suitable vector potential \(\vec{A}\) for a configuration of currents specified
+      by \(\vec{J}(\vec{r}\)).
+      <div class="eq">
+        $$
+          \vec{A}(\vec{r})=\int_{V}\frac{\vec{J}(\vec{r'})}{\vert \vec{r}-\vec{r}'\vert}d\vec{r}'
+        $$
+      </div>
+      Note that to calculate the potential at some point \(\vec{r}\), we are required to integrate over all of space; hence, the dummy variable
+      \(\vec{r}'\) appearing in the integral. As a result of this requirement, we can only really reasonably apply the above relation to configurations of 
+      localized charge in otherwise free space (so we need not consider ALL space). Alternatively, we may specify boundary conditions on some surface
+      bounding a region of interest (addressed below).
+    </p>
+    
+    <div class="hl"></div>
+    <h3 id="spf">Special Functions</h3>
+    <p>
+      Some common functions that arise in the above considerations (particularly in systems with certain symmetries) are discussed 
+      below. These include the functions relevant to spherical cylindrical symmetries: namely bessel functions, spherical harmonics and legendre polynomials.
+    </p>
+    <h4>Bessel Functions</h4>
+    <p>
+      Bessel functions \(J_{\nu}(x)\) are one dimensional functions that satisfy their defining differential equation:
+      <div class="eq">
+        $$
+          x^2\frac{d^2J_{\nu}}{dx^2}+x\frac{dJ_{\nu}}{dx}+(x^2-\nu^2)J_{\nu}=0
+        $$
+      </div>
+    </p>
+    <p>
+      They often appear in the solution of spherical and cylindrical Laplace and Helmholtz equations.
+    </p>
+    <h4>Legendre Polynomials</h4>
+    
+    <p>
+      Legendre polynomials \(P_{l}(x)\) are one dimensional functions that satisfy their defining differential equation:
+      <div class="eq">
+        $$
+          (1-x^2)\frac{d^2P_l}{dx^2}-2x\frac{dP_l}{dx}+l(l+1)P_l=0
+        $$
+      </div>
+    </p>
+    <p>
+      Legendre polynomials are often specified by Rodrigues' formula, given below:
+      <div class="eq">
+        $$
+          P_l(x)=\frac{1}{2^l l!}\frac{d^l}{dx^l}(x^2-1)^l
+        $$
+      </div>
+    </p>
+    <p>The above polynomials are actually just a special case of a more general set, known as the associated Legendre polynomials. The associated
+      Legendre polynomials are one dimensional functions that are solutions of the two parameter differential equation:
+      <div class="eq">
+        $$
+          (1-x^2)\frac{d^2P^m_l}{dx^2}-2x\frac{dP^m_l}{dx}+\left[l(l+1)-\frac{m^2}{1-x^2}\right]P^m_l=0
+        $$
+      </div>
+    </p>
+    <h4>Spherical Harmonics</h4>
+    <p>Spherical harmonics are two dimensional functions specified as a product of two one-dimensional functions and, often, some normalization constant.
+      A general form with traditional normalization (integrated over all space equals one) is given as:
+      <div class="eq">
+        $$
+        Y_m^l(\theta,\phi)=\sqrt{\frac{(2l+1)}{4\pi}\frac{(l-m)!}{(l+m)!}}P_l^m(\cos\theta)e^{im\phi}
+        $$
+      </div>
+      They're defined as above due to their close relationship in the solution of certain differential equations (see <a href="https://alexheilman.com/res/gp/sov.html">Separation of Variables for Helmholtz Equation</a>).</p>
+    <div class="hl"></div>
+    <h3 id="resources">Resources</h3>
+    <p>
+      The classic reference text for the subject at hand is John David Jackson's <em>Classical Electrodynamics</em>. A good 
+      introductory text is David J. Griffith's <em>Introduction to Electrodynamics</em> or Edward Purcell and David Morin's 
+      <em>Electricity and Magnetism</em>. Another good reference text is Andrew Zangwill's <em>Modern Electrodynamics</em>.
+      Christopher Baird has a nice set of lecture notes that follow along with the Jackson text that can be found here:
+      <a href="https://www.wtamu.edu/~cbaird/courses.html">Baird Notes</a>. Other sets of lecture notes include 
+      <a href="https://www.phys.ksu.edu/personal/wysin/ED-I/index.html">Gary Wysin's Notes</a> and
+       <a href="https://physics.uwo.ca/~mhoude2/courses/astronomy_9620aphysics_9302a.html">Martin Houde's Notes</a>.
+    </p>
+  </body>
+</html>
