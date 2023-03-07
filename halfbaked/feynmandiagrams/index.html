@@ -6,7 +6,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simple Harmonic Approximation</title>
+    <title>Feynman Diagrams</title>
 
     <script>
         document.documentElement.classList.remove('no-js');
@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="../../assets/css/halfbakedstyles.css">
     <link rel="stylesheet" href="../../assets/css/general.css">
     <link rel="stylesheet" href="../../assets/css/vendor.css">
-    <link rel="stylesheet" href="../../assets/css/harmonics.css">
 
 
     <!-- favicons
@@ -150,7 +149,7 @@
                             <header class="entry__header">
     
                                 <h1 class="entry__title">
-                                    Simple Harmonic Motion: Or How I Learned to Love Quadratic Approximations
+                                    The Origin of Feynman Diagrams
                                 </h1>
 
                                 <div class="entry__meta">
@@ -166,7 +165,7 @@
                                             <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
                                             <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
                                         </svg>
-                                        February 16, 2023
+                                        February 24, 2023
                                     </div>
                                     <div class="entry__meta-cat">
                                         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -181,9 +180,9 @@
                                 </div>
                             </header>
 
-                            <div class="entry__media center">
-                                <figure class="alignwide" >
-                                    <img src="../../assets/images/halfbaked/harmonic.svg"   alt="Palm over black background. (Image Credit: Spurgeon stock photo) ">
+                            <div class="entry__media">
+                                <figure class="alignwide center" >
+                                    <img src="../../assets/images/halfbaked/qtform.svg"   alt="Variational path for Lagrangian mechanics">
                                 </figure>
                             </div>
 
@@ -191,91 +190,118 @@
 
                                 <div class="entry__content">
                                     <p class="lead">
-                                        The simple harmonic approximation is perhaps one of the most applied concepts in physics. This is 
-                                        essentially due to the structure of Taylor series expansions around equilibrium points.
+                                        Feynman diagrams are a diagrammatic representation of the terms of a Dyson series expansion. This relationship is 
+                                        elucidated in the article below
                                     </p> 
 
                                     <p class="drop-cap">
-                                       Phyisicists often use approximations to reduce systems to something more mathematically modelable. One of the most understood and 
-                                       often applied models is that of simple harmonic motion (SHM). This type of system results from a purely quadratic force term. And, in fact,
-                                       this is the basic model of an ideal spring.
+                                       Feynman diagrams are a somewhat useful tool in the calculation of transition amplitudes. More simply, they 
+                                       generally allow us to depict a process in particle physics visually, and then calculate it's probability of occuring.
                                     </p>
                                     <p>
-                                        But why would a seemingly random object provide insight into so many systems at equilibrium? This may be answered by a simple consideration of the 
-                                        Taylor series of a given system.
+                                        They are so (relatively) approachable that sometimes they are taught first, or just given, in a particle physics class. 
+                                        However, they really originate as terms in an expansion of the time evolution operator of some system, namely the Dyson 
+                                        series.
                                     </p>
-                                    <h2>Springs and Hooke's Law</h2>
                                     <p>
-                                        Every intro physics student (should) know that the force of a spring is directly proportional to it's displacement from equilibrium. 
-                                        Explicitly, for a spring stretched a distance \(\Delta x\) from it's equilibrium point along it's axis, the corresponding force is that below:
+                                        Below, we discuss the series expansion origin of such diagrams. Though, there are some mathematical details that we must at least
+                                        mention; like propogators, Wick's theorem, and the concept of time ordering. 
+                                    </p>
+                                    <p>
+                                        We assume a familiarity with the concepts of quantum mechanics in the interaction (or Dirac) picture of time evolution.
+                                    </p>
+                                    <h3>Particle Processes</h3>
+                                    <p>
+                                        Many (if not all) particle physics scenarios leave us with two snapshots of the process: a set of ingoing particles, and a set of outgoing particles.
+                                    </p>
+                                    <p>
+                                        So, say we know we have some set of particles that are sufficiently far away from each other that they're not interacting (some initial state consisting of free particles \(\vert \psi_{in}\rangle\)).
+                                        Then, at a later time, we see this set of initially free particles have interacted; and, now, we have a different set of particles that are again far apart from one another 
+                                        (some final state of free particles \(\vert \psi_{out}\rangle\)).
+                                    <div class="eq">
+                                        \[
+                                        \vert \psi_{in}\rangle=\vert \psi(t)\rangle\Big\vert_{t=-\infty} \quad \rightarrow\quad\vert \psi_{out}\rangle=\vert \psi(t)\rangle \Big\vert_{t=\infty}
+                                        \]
+                                    </div>
+                                        What we'd like then, is an apparatus that allows us to predict the relevant likelihoods of possible events. That is, since all we can 
+                                        really observe is ingoing and outgoing particles, we'd like some way to predict the possibility, and even probability, that a certain process 
+                                        can and does/did occur.
+                                    </p>
+                                    <p>
+                                        This probability of 'transitioning' from one state of particles to another state of particles is described by the transition amplitude discussed below; though 
+                                        it's really just a fancy way of treating the overlap of two quantum states: \(\langle \phi \vert\psi\rangle\).
+                                    </p>
+                                    <div class="boxed">
+                                        <div class="boxedtitle"><h6 style="margin-top: 1.3em;"> \(G_F(x-y\ )\ \): Feynman Propogators</h6> </div>
+                                        <p>
+                                            Feynman propogators represent particles 'propogating' from one point to another.
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <h3>Transition Amplitudes</h3>         
+                                    <p>
+                                        In the interaction picture, we can take the initial and final states to be eigenvalues of some free-particle Hamiltonian (with definite particle number at some 
+                                        time infinitely far in the past and infinitley far in the future). Then, their interaction in the intermediate time range
+                                        occurs according to some interaction Hamiltonian \(H_I\).
+                                    </p>
+                                    <p>
+                                        As such, the initial state evolves according to the unitary evolution \(U\) (often called the scattering or \(S\)-matrix), of the form below:
                                         <div class="eq">
                                             \[
-                                                F=-k\Delta x
+                                            U=Te^{-\int_{\infty}^{\infty}H_I dt}
                                             \]
                                         </div>
-                                        where \(k\) is termed the spring constant, which is a characteristic of the spring itself. This relation for the force of a spring 
-                                        is known as Hooke's law and results in simple harmonic motion about the point of equilibrium, \(\Delta x=0\).
-                                    </p>
-                                    <p>
-                                        As a simple exercise we may also calculate the form of the spring's potential energy by equating it to the work required to stretch the 
-                                        spring a distance \(x\):
+                                        <div class="boxed">
+                                            <div class="boxedtitle"><h6 style="margin-top: 1.3em;"> \(T\): Time-ordered Product</h6> </div>
+                                            <p>
+                                                The time-ordered product included in the operator is a necessity; it 
+                                                enforces the concept of causality. It only gives us terms ordered properly in time.
+                                            </p>
+                                        </div>
+                                        <br>
+                                        And hence, our later state, evolved from the known initial state \(\vert \psi_{in }\rangle\), is given by the following:
                                         <div class="eq">
                                             \[
-                                                W=-\int\vec{F}(\vec{r})\cdot\vec{r}=\int_0^x kx'\ dx'= \frac{1}{2}kx^2
+                                            \vert\psi\rangle \rightarrow U\vert\psi\rangle=Te^{-\int_{\infty}^{\infty}H_I dt}\vert\psi\rangle
                                             \]
                                         </div>
-                                        Now that we have the basic relations for a spring in mind, we consider a more general approach to any system in equilibrium.
+                                        We may then expand this operator in terms of a Dyson series, where we essentially apply the Volterra 
+                                        expansion of the exponential term. 
+                                        <div class="eq">
+                                            \[
+                                             U(t)=1+\sum_{n=1}^{\infty} \left(\frac{-i}{n}\right)^n\int_0^{t}dt_1 \int_0^{t_1}dt_2...\int_{0}^{t_{n-1}}dt_n H(t_1)H(t_2)...H(t_n)
+                                            \]
+                                        </div>
+                                        The important thing to note here is that the interaction Hamiltonian will effectively just be some product of 
+                                        field operators. Hence, while the above expansion is large and unwieldy looking, we've essentially just expanded 
+                                        the exponential term into a sum of integrals over products of field operators.
                                     </p>
-                                    <h2>Systems Around Equilibrium Points</h2>
+                                    <div class="boxed">
+                                        <div class="boxedtitle"><h6 style="margin-top: 1.3em;"> Wick's Theorem</h6> </div>
+                                        <p>
+                                            Wick's theorem guarantees that we may always expand time ordered products of 
+                                            field operators into terms that vanish under conjugation by the vacuum state,
+                                            and products of propogators.
+                                        </p>
+                                    </div>
+                                    <br>
                                     <p>
-                                        The force of an object subject to a conservative force (and thus one modelable with a scalar potential field) is equal to the derivative (gradient) of this 
-                                        potential with respect to displacement.
-                                        <div class="eq">\[F(x)=-\frac{dV(x)}{dx}\]</div>
-                                        Furthermore, at equilibrium position \(x=x_0\) we (should) expect a vanishing force, that is \(F(x_0)=0\) and in which case \(\frac{dV(x)}{dx}=0\).
-                                        Hence, at points of equilibrium, the first derivative of the potential vanishes, since these are exactly the stationary points of the field.
-                                    </p>
-                                    <p>
-                                        Now, considering the Taylor expansion of an arbitrary (well-behaved) scalar potential, we get the following:
-                                        <div class="eq">\[V(x)=V(x_0)+\frac{dV(x)}{dx}\vert_{x=x_0}(x-x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}(x-x_0)^2+...\]</div>
-                                        However, at points of equilibrium we have a vanishing first derivative and thus:
-                                        <div class="eq">\[V(x)=V_0(x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}(x-x_0)^2+...\]</div>
-                                        And for ranges where \(x-x_0\) is small, the higher order terms should be neglibible (as long as the deriavtives don't grow faster than the power series).
-                                        And, hence:
-                                        <div class="eq">\[V(x)\approx V(x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}\frac{(x-x_0)^2}{2}\]</div>
-                                        where we may further neglect the constant \(V_0\) since it is simply a constant term that will not contribute to dynamics. 
-                                        We also now may consider the form of the resulting potential field if we rename the coefficient of the second order 
-                                        expansion \(k\).
-                                        <div class="eq">\[V(x)=\frac{1}{2}k(\Delta x)^2\]</div>
-                                    </p>
-                                    <p>
-                                        Note that this is the expression for the potential energy of a spring! And, indeed taking the negative derivative of this 
-                                        potential gives you Hooke's Law:
-                                        <div class="eq">\[F(x)=-\frac{d}{d(\Delta x)}\left(\frac{1}{2}k(\Delta x)^2\right)=-k\Delta x\]</div>
-                                    </p>
-                                    <p>
-                                        This essentially tells us that we can describe many systems in equilibrium as springs!
-                                    </p>
-                                    <h2>Conclusion</h2>
-                                    <p>
-                                        The above considerations are particularly abstract (though they only rely on basic calculus). While it may be less enlightening,
-                                        the generality we gain by such abstract considerations are in large part their utility.
-                                    </p>
-                                    <p>
-                                        Note that this presentation was a little backwards from a certain perspective. In fact, it's not that we can model systems about equilibrium as springs, 
-                                        it's more that the spring is a model system around equilibrium and hence our approximation applies.
-                                    </p>
-                                    <p>
-                                        Also, the above approximation does have it's shortcomings; SHM generally only works well on sufficiently small neighborhoods of equilibrium points.
-                                        As such, we can't describe dynamical behaviour for non-equilbrium states. Some systems will even have a vanishing second derivative of potential 
-                                        about certain equilibrium points. This would render the approximation above entirely useless, and require us to model systems about such points with higher order terms.
-                                    </p>
+                                        In the second-quantized form of these states, we may extract the particles from the vacuum state. In this case, 
+                                        the states may be decomposed into a product of creation operators and the vacuum state:
 
+                                    </p>
+                                    <h2>Further Resources</h2>
+                                    <p>
+                                        Wikipedia has a nice, but brief, overview of this derivation. A classic reference for the above considerations is Peskin & Schroder's 
+                                        <em>An Introduction to Quantum Field Theory</em>. Also, see these <a href="https://web2.ph.utexas.edu/~vadim/Classes/2022f/dyson.pdf">notes</a>.
+                                    </p>
+                                        
 
                                     <p class="entry__tags">
                                         <strong>Tags:</strong>
                     
                                         <span class="entry__tag-list">
-                                           <a href="#0">Physics</a>
+                                            <a href="#0">Physics</a> <a href="#0">Intro</a>
                                         </span>
                         
                                

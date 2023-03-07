@@ -6,7 +6,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simple Harmonic Approximation</title>
+    <title>Klein-Gordon Eqs.</title>
 
     <script>
         document.documentElement.classList.remove('no-js');
@@ -150,7 +150,8 @@
                             <header class="entry__header">
     
                                 <h1 class="entry__title">
-                                    Simple Harmonic Motion: Or How I Learned to Love Quadratic Approximations
+                                    Deriving the Klein-Gordon Equations: and, Why They 
+                                    Don't Matter.
                                 </h1>
 
                                 <div class="entry__meta">
@@ -166,7 +167,7 @@
                                             <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
                                             <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
                                         </svg>
-                                        February 16, 2023
+                                        February 27, 2023
                                     </div>
                                     <div class="entry__meta-cat">
                                         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -181,9 +182,9 @@
                                 </div>
                             </header>
 
-                            <div class="entry__media center">
-                                <figure class="alignwide" >
-                                    <img src="../../assets/images/halfbaked/harmonic.svg"   alt="Palm over black background. (Image Credit: Spurgeon stock photo) ">
+                            <div class="entry__media">
+                                <figure class="alignwide center" >
+                                    <img src="../../assets/images/halfbaked/kleingordon.svg"   alt="Tight-binding Hamiltonian heuristic diagram.">
                                 </figure>
                             </div>
 
@@ -191,91 +192,140 @@
 
                                 <div class="entry__content">
                                     <p class="lead">
-                                        The simple harmonic approximation is perhaps one of the most applied concepts in physics. This is 
-                                        essentially due to the structure of Taylor series expansions around equilibrium points.
+                                        The Klein-Gordon equations are equations of motion that can be derived from the first quantization of 
+                                        the energy-mass relation. Below, this derivation is made explicit, and it's sparse applicability is discussed.
                                     </p> 
 
                                     <p class="drop-cap">
-                                       Phyisicists often use approximations to reduce systems to something more mathematically modelable. One of the most understood and 
-                                       often applied models is that of simple harmonic motion (SHM). This type of system results from a purely quadratic force term. And, in fact,
-                                       this is the basic model of an ideal spring.
+                                        Klein-Gordon usually isn't even mentioned in the canonical physicists' education until one discusses the derivation of the Dirac equation, and then it's usually 
+                                        passed over and forgotten about. Later, one might encounter the Klein-Gordon field in a (typical) introductory quantum field theory class as a first example.
+                                        But, why is a seemingly good equation so often passed over and never treated in detail? And where does it even come from?
                                     </p>
                                     <p>
-                                        But why would a seemingly random object provide insight into so many systems at equilibrium? This may be answered by a simple consideration of the 
-                                        Taylor series of a given system.
-                                    </p>
-                                    <h2>Springs and Hooke's Law</h2>
-                                    <p>
-                                        Every intro physics student (should) know that the force of a spring is directly proportional to it's displacement from equilibrium. 
-                                        Explicitly, for a spring stretched a distance \(\Delta x\) from it's equilibrium point along it's axis, the corresponding force is that below:
+                                        The Klein-Gordon equations can be easily be derived from an attempt at first quantization of Einstein's famous mass energy relation:
                                         <div class="eq">
-                                            \[
-                                                F=-k\Delta x
+                                            \[ 
+                                            E^2 = p^2 + m^2
                                             \]
                                         </div>
-                                        where \(k\) is termed the spring constant, which is a characteristic of the spring itself. This relation for the force of a spring 
-                                        is known as Hooke's law and results in simple harmonic motion about the point of equilibrium, \(\Delta x=0\).
+                                        but they can also be derived from a free (non-interacting) scalar field Lagrangian density as the respective Euler-Lagrange equation. Below, both of these 
+                                        approaches are discussed. After, we examine it's limited scope of applicability; as well as present a short discussion of it's historical significance. 
                                     </p>
+                                    <h2>Deriving Klein-Gordon</h2>
+                                    <h3>Quantizing Einstein's Energy-Momentum Relation</h3>
                                     <p>
-                                        As a simple exercise we may also calculate the form of the spring's potential energy by equating it to the work required to stretch the 
-                                        spring a distance \(x\):
+                                        Say you're an early 20th century physicist and you have two things at the forefront of your mind (and you're not Dirac): Einstein says 
+                                        everything satisfies the E-M relation; 
                                         <div class="eq">
-                                            \[
-                                                W=-\int\vec{F}(\vec{r})\cdot\vec{r}=\int_0^x kx'\ dx'= \frac{1}{2}kx^2
-                                            \]
+                                            \begin{align}
+                                            E^2 & = p^2 + m^2\\
+                                            \end{align}
                                         </div>
-                                        Now that we have the basic relations for a spring in mind, we consider a more general approach to any system in equilibrium.
-                                    </p>
-                                    <h2>Systems Around Equilibrium Points</h2>
-                                    <p>
-                                        The force of an object subject to a conservative force (and thus one modelable with a scalar potential field) is equal to the derivative (gradient) of this 
-                                        potential with respect to displacement.
-                                        <div class="eq">\[F(x)=-\frac{dV(x)}{dx}\]</div>
-                                        Furthermore, at equilibrium position \(x=x_0\) we (should) expect a vanishing force, that is \(F(x_0)=0\) and in which case \(\frac{dV(x)}{dx}=0\).
-                                        Hence, at points of equilibrium, the first derivative of the potential vanishes, since these are exactly the stationary points of the field.
-                                    </p>
-                                    <p>
-                                        Now, considering the Taylor expansion of an arbitrary (well-behaved) scalar potential, we get the following:
-                                        <div class="eq">\[V(x)=V(x_0)+\frac{dV(x)}{dx}\vert_{x=x_0}(x-x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}(x-x_0)^2+...\]</div>
-                                        However, at points of equilibrium we have a vanishing first derivative and thus:
-                                        <div class="eq">\[V(x)=V_0(x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}(x-x_0)^2+...\]</div>
-                                        And for ranges where \(x-x_0\) is small, the higher order terms should be neglibible (as long as the deriavtives don't grow faster than the power series).
-                                        And, hence:
-                                        <div class="eq">\[V(x)\approx V(x_0)+\frac{d^2V(x)}{dx^2}\vert_{x=x_0}\frac{(x-x_0)^2}{2}\]</div>
-                                        where we may further neglect the constant \(V_0\) since it is simply a constant term that will not contribute to dynamics. 
-                                        We also now may consider the form of the resulting potential field if we rename the coefficient of the second order 
-                                        expansion \(k\).
-                                        <div class="eq">\[V(x)=\frac{1}{2}k(\Delta x)^2\]</div>
-                                    </p>
-                                    <p>
-                                        Note that this is the expression for the potential energy of a spring! And, indeed taking the negative derivative of this 
-                                        potential gives you Hooke's Law:
-                                        <div class="eq">\[F(x)=-\frac{d}{d(\Delta x)}\left(\frac{1}{2}k(\Delta x)^2\right)=-k\Delta x\]</div>
-                                    </p>
-                                    <p>
-                                        This essentially tells us that we can describe many systems in equilibrium as springs!
-                                    </p>
-                                    <h2>Conclusion</h2>
-                                    <p>
-                                        The above considerations are particularly abstract (though they only rely on basic calculus). While it may be less enlightening,
-                                        the generality we gain by such abstract considerations are in large part their utility.
-                                    </p>
-                                    <p>
-                                        Note that this presentation was a little backwards from a certain perspective. In fact, it's not that we can model systems about equilibrium as springs, 
-                                        it's more that the spring is a model system around equilibrium and hence our approximation applies.
-                                    </p>
-                                    <p>
-                                        Also, the above approximation does have it's shortcomings; SHM generally only works well on sufficiently small neighborhoods of equilibrium points.
-                                        As such, we can't describe dynamical behaviour for non-equilbrium states. Some systems will even have a vanishing second derivative of potential 
-                                        about certain equilibrium points. This would render the approximation above entirely useless, and require us to model systems about such points with higher order terms.
-                                    </p>
+                                        and the hot new thing is to (first) quantize systems, by assuming the following equalities.
+                                        <div class="eq">
+                                            \begin{align}
+                                            p\rightarrow -i\vec{\nabla} &\quad\quad\quad E\rightarrow i\frac{\partial }{\partial t}\\
+                                            \end{align}
+                                        </div>
+                                        Now, you're seeking a quantized, relativistic equation, so you naturally subsitute to arrive at the Klein-Gordon Equations:
+                                        <div class="eq">
 
+                                            \begin{align}
+                                            -\frac{\partial^2 }{\partial t^2} &= -\nabla^2 +m^2
+                                            \end{align}
+                                        </div>
+                                        which we may multiply by a 'prospective' wavefunction \(\phi\) (we will soon, after the next section,
+                                        explain why this cannot be a wavefunction but instead must represent something else):
+                                        <div class="eq">
+
+                                            \begin{align}
+                                            -\frac{\partial^2 \phi}{\partial t^2} &= -\nabla^2\phi +m^2\phi
+                                            \end{align}
+                                        </div>
+                                        
+                                    </p>
+                                    <h3>A Scalar Free Field's Action</h3>
+                                    <p>
+                                        Now let's take an entirely different approach. Imagine we'd like to model the dynamics of a massive, scalar free field variable. 
+                                        Since it's a free field, we can take the potential energy to be zero and hence we should only have kinetic terms. 
+                                    </p>
+                                    <p>
+                                        Recall again 
+                                        from the E-M relation that the kinetic energy is equal to the difference of the total energy and the 
+                                        rest energy (\(E_k = E^2-m^2\)). Hence, for a field of mass density \(m\), the rest 
+                                        energy density squared is \(m^2\phi^2/2\) (assuming a real field) and the total energy
+                                        density is (in terms of a four-vector derivative with implicit Minkowski metric) \(\partial^{\mu}\phi\partial _{\mu}\phi/2\). 
+                                        This leaves us with a Lagrangian density that is essentially just this kinetic energy density of the field, as below.
+                                        <div class="eq">
+                                            \[
+                                            {\large \mathscr{L}_{\scriptsize KG}}=\frac{1}{2}\partial ^{\mu}\phi^*\partial_{\mu}\phi - \frac{1}{2}m^2 \phi^*\phi
+                                            \]
+                                        </div>
+                                        Of course, this Lagrangian density should be integrated over all points of the field (that is, all of time and space), to give us the 
+                                        corresponding action.
+                                        <div class="eq">
+                                            \[
+                                            \large \mathcal{S}_{\scriptsize KG}={\scriptsize \frac{1}{2}}\int\Big[\partial ^{\mu}\phi^*\partial_{\mu}\phi - m^2 \phi^*\phi\Big]\ dx_{\mu}
+                                            \]
+                                        </div>
+                                        Of course, to get a handle on the dynamics of the system, we then solve for the Euler-Lagrange (field) equations according to:
+                                        <div class="eq">
+                                            \[
+                                            \partial_{\mu}\Bigg(\frac{\partial \mathscr{L}}{\partial\big(\partial_{\mu}\phi\big)}\Bigg)=\frac{\partial\mathscr{L}}{\partial \phi}
+                                            \]
+                                        </div>
+                                        Which again yield the now familiar Klein-Gordon equations:
+                                        <div class="eq">
+                                            \[
+                                            \partial_{\mu}\phi\partial^{\mu}\phi -m^2\phi=0
+                                            \]
+                                        </div>
+                                    </p>
+                                    <h2>Applicability</h2>
+                                    <p>
+                                        While the Klein-Gordon equations are easy to derive and seem to promise covariance, their applicability is 
+                                        empirically tested and proven false in most scenarios. It simply doesn't work for most matter we interact with (like electrons, 
+                                        photons, protons, etc.).
+                                    </p>
+                                    <p>
+                                        However, it can be applicable to spin-less quantum systems. This is especially relevant 
+                                        now with the supposed existence of the Higgs Boson, which correpsonds to a scalar field and thus would be/is 
+                                        an elementary particle governed by the Klein-Gordon equations.
+                                    </p>
+                                    <p>
+                                        The problem really is that the conserved quantity admitted by the continuous U(1) symmetry doesn't allow 
+                                        for a Noether current that can be interpreted as a probability density since it's non-positive definite.
+                                        It simply can't account for the dynamics of Fermionic systems, which require to be modelled as spinors.
+                                    </p>
+                                    <h2>Historical Significance</h2>
+                                    <p>
+                                        The Klein-Gordon approach was essentially the first attempt at a relativistic wave equation for quantum wavefunctions. 
+                                        Apparently, Schrodinger even derived it before the Schrodinger equation, but discarded it due to empirical failures (didn't work 
+                                        applied to hydrogen).
+                                    </p>
+                                    <!--<div class="boxed">
+                                        <h4 class="boxtitle"></h4>
+                                        <p>
+
+                                            <div class="eq">
+                                                \[
+                                                  A \neq A^{\dagger} \ \ \ \ \Rightarrow \quad \text{Define:} \ \   C = C^{\dagger}=A+A^{\dagger}
+                                                \]
+                                            </div>
+                                        </p>
+                                        </div>
+                                        <br>-->
+                                    <h2>Further Resources</h2>
+                                    <p>
+                                        For more detail pertaining to these equation's history, see this article:
+                                        <a href="https://aapt.scitation.org/doi/10.1119/1.13782">Equation with the many fathers. The Klein–Gordon equation in 1926</a>.
+                                    </p>
 
                                     <p class="entry__tags">
                                         <strong>Tags:</strong>
                     
                                         <span class="entry__tag-list">
-                                           <a href="#0">Physics</a>
+                                            <a href="#0">Solid State</a><a href="#0">Physics</a> <a href="#0">Intro</a>
                                         </span>
                         
                                
