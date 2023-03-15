@@ -150,7 +150,7 @@
                             <header class="entry__header">
     
                                 <h1 class="entry__title">
-                                    Representing Crystalline Structures as Graphs with Features.
+                                    Representing Crystalline Structures as Graphs (with Feature Vectors).
                                 </h1>
 
                                 <div class="entry__meta">
@@ -191,49 +191,68 @@
 
                                 <div class="entry__content">
                                     <p class="lead">
-                                        The description of crystalline strucutres as graphs, often for input into 
-                                        material property prediction networks, is discussed. We neglect treatment of the networks 
-                                        themselves here to focus on the schemes of graph encoding. 
+                                        Below, the representation of crystalline structures as graphs, a model often for input into networks trained for
+                                        material property prediction, is discussed. We neglect treatment of the networks 
+                                        themselves to focus on the schemes of graph encoding.
                                     </p> 
 
                                     <p class="drop-cap">
-                                       Many modern machine learning models applied to the prediction of material property prediction from crystalline structure 
-                                       depict crystalline structures as mathematical graphs. In these graphs, edges represent chemical bonds and nodes represent
-                                       atoms. Often, the edges are just made for the 12 nearest neigbors; or based upon some distance cut-off.
+                                       Modern machine learning models applied to the prediction of material properties from crystalline structures 
+                                       depict such crystalline structures as graphs. In these graphs, nodes represent
+                                       atoms and edges represent some general bond between or pairing of atoms. The construction of these graphs 
+                                       then requires us to define, at minimum, some criteria for the construction of edges. 
+                                       Often, the edges are just made for the 12 nearest neigbors; or based upon some distance cut-off.
                                     </p>
                                     <p>
-                                        Both nodes and edges in this graph then each have some additional hidden feature vector or 'representation' that 
-                                        describes the state of the respective element of the graph. Generally, these initial features are derived from known properties 
+                                        Such a basic model of these crystalline structures obviously includes no substantial atomic information, and hence 
+                                        doesn't have enough physical information for any downstream model to perform well in most predictive tasks.
+                                    </p>
+                                    <p>
+                                        To resolve this, both nodes and edges in these graphs then each have some additional 'hidden' feature vector or 'representation' that 
+                                        describes the physical characteristics of it's corresponding graph element. Generally, these initial features are derived from known properties 
                                         of the element's corresponding physical state; and then updated via some graph convolutional network. The output of the network 
                                         then is some 'learned representation' of the crystal structure (generally after the pooling of node features). This learned representation 
                                         is then used as input for some (trained) predictive neural network.
                                     </p>
                                     <p>
-                                        Below, we discuss the usual schemes of graph encoding, along with their included feature schemes, employed in some famous crystal graph convolutional networks (CGCNNs). Then, 
-                                        we consider limitations of the models and discuss a possible extension of the framework.
+                                        Below, we discuss the usual schemes of graph encoding, along with their included feature schemes, employed in some famous crystal graph convolutional networks 
+                                        (CGCNNs). Then, we consider limitations of the models and discuss a possible extension of the framework.
                                     </p>
                                     <h2>Crystal Graphs</h2>
                                     <p>
-                                        The mathematical object, known generally as a <em>graph</em> is just a set of nodes (or vertices) and a set of edges between them.
+                                        The mathematical object known generally as a <em>graph</em> is just a set of nodes (or vertices) and a set of edges between them.
                                         They may be represented diagrammatically rather nicely, with one displayed below:
 
+
+                                        They also may be decribed explicitly as a set of two sets: one set of nodes \(\mathcal{V}\); and one set of tuples \(\mathcal{E}\), denoting an edge between two nodes in the previous set.
                                     </p>
                                     <p>
-                                        We'd now like to represent crystalline strucutres as graphs. And then, attach some sort of representation to the constituent elements 
-                                        in a way that describes the physical information of the system.
+                                        For the matter at hand, we'll use this basic structure as a framework for the mathematical representation of crystalline strucutres. 
+                                        And then, we attach some sort of representation to the constituent elements in a way that encodes the physical information of the system.
                                     </p>
                                     <p>
                                         For the underlying graph we can simply take the atoms to be the nodes, but then edges must be constructed according to some 
-                                        critertia. Below, some of these criteria are discussed.
+                                        criteria. That is, the nodes obviously can be taken as the atomic sites of the lattice, but we need to define explicitly what
+                                        an edge between two nodes represents. Below, some of these criteria for edge construction are discussed, with specific criteria from 
+                                        previous works being used as examples.
                                     </p>
                                     <h3>Edge Criteria</h3>
+                                    <p>
+
+                                    </p>
                                     <p>
                                         Most of the edge criteria employed are very basic, and consider only distance. This is to effectively maintain 
                                         generality of task and to minimize computational complexity (perhaps as well as intellectual). These criteria are crude, 
                                         but proven to work with modern CGCNNs rather well.
                                     </p>
+                                    <p>
+                                        While these methods are particularly 
+                                    </p>
 
                                     <h4>Distance Cut-off</h4>
+                                    <p>
+
+                                    </p>
                                     <p>
                                         Distance cut-off is one of the most common approaches. The interatomic cut-off is often in the range of 5-10 Angstroms. 
                                         The difference in distance is then accounted for in the associated edge features.
