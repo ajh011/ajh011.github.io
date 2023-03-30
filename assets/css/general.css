@@ -17,8 +17,8 @@
   }
   
   .boxtitle{
-    padding-top: 8px;
-    margin-top: 8px;
+    padding-top: 8px !important;
+    margin-top: 8px !important;
   }
 
   .eq {
