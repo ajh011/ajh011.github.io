@@ -183,7 +183,7 @@
 
                             <div class="entry__media center">
                                 <figure class="alignwide" >
-                                    <img src="../../assets/images/halfbaked/crystalgraphs.svg"   alt="Cover for crystal graphs.">
+                                    <img src="../../assets/images/halfbaked/crystalcover.svg"   alt="Cover for crystal graphs.">
                                 </figure>
                             </div>
 
@@ -191,9 +191,8 @@
 
                                 <div class="entry__content">
                                     <p class="lead">
-                                        Below, the representation of crystalline structures as graphs, a model often for input into networks trained for
-                                        material property prediction, is discussed. We neglect treatment of the networks 
-                                        themselves to focus on the schemes of graph encoding.
+                                        Below, the representation of crystalline structures as graphs is discussed. This is a framework 
+                                        often used in machine-learning models (see graph neural networks) applied to materials science.
                                     </p> 
 
                                     <p class="drop-cap">
@@ -222,7 +221,9 @@
                                     <p>
                                         The mathematical object known generally as a <em>graph</em> is just a set of nodes (or vertices) and a set of edges between them.
                                         They may be represented diagrammatically rather nicely, with one displayed below:
-
+                                        <figure class="align">
+                                            <img src="../../assets/images/halfbaked/undgraphex.svg"  alt="An example undirected graph with node and edge sets labelled. Note that we assume the edge tuples are order independent here.">
+                                        </figure>
 
                                         They also may be decribed explicitly as a set of two sets: one set of nodes \(\mathcal{V}\); and one set of tuples \(\mathcal{E}\), denoting an edge between two nodes in the previous set.
                                     </p>
@@ -230,6 +231,12 @@
                                         For the matter at hand, we'll use this basic structure as a framework for the mathematical representation of crystalline strucutres. 
                                         And then, we attach some sort of representation to the constituent elements in a way that encodes the physical information of the system.
                                     </p>
+                                    
+                                    
+                                    <figure class="align center">
+                                        <img src="../../assets/images/halfbaked/ex_struc.svg"  alt="An example of a (diatomic simple cubic) crystal structure">
+                                    </figure>
+
                                     <p>
                                         For the underlying graph we can simply take the atoms to be the nodes, but then edges must be constructed according to some 
                                         criteria. That is, the nodes obviously can be taken as the atomic sites of the lattice, but we need to define explicitly what
@@ -237,22 +244,18 @@
                                         previous works being used as examples.
                                     </p>
                                     <h3>Edge Criteria</h3>
-                                    <p>
-
-                                    </p>
+                                   
                                     <p>
                                         Most of the edge criteria employed are very basic, and consider only distance. This is to effectively maintain 
                                         generality of task and to minimize computational complexity (perhaps as well as intellectual). These criteria are crude, 
                                         but proven to work with modern CGCNNs rather well.
                                     </p>
-                                    <p>
-                                        While these methods are particularly 
-                                    </p>
+                                    
+                                    <figure class="align">
+                                        <img src="../../assets/images/halfbaked/ex_bondcriteria.svg"  alt="An example of maximum distance cut-off and max # of neighbor cutoff for crystal graph edge criteria">
+                                    </figure>
 
                                     <h4>Distance Cut-off</h4>
-                                    <p>
-
-                                    </p>
                                     <p>
                                         Distance cut-off is one of the most common approaches. The interatomic cut-off is often in the range of 5-10 Angstroms. 
                                         The difference in distance is then accounted for in the associated edge features.
@@ -261,9 +264,20 @@
                                     <p>
                                         Sometimes a protocol calls for a certain number of neighbors for every node. This may always be accomplished in crystalline 
                                         structures by assuming periodicity and including those within neighboring cells (if there aren't enough in a single unit cell).
-                                        <div class="center">
-                                            
-                                        </div>
+                                    </p>
+                                    <p>
+                                        Often, both a maximum number of neighbors and a maximum distance cut-off are used in conjunction with each other to minimize the total 
+                                        number of edges but still capture relevant neighborhoods of each site.
+                                    </p>
+                                    <h4>Other Criteria</h4>
+                                    <p>
+                                        More sophisticated criteria are rarely used in modern models, but more rigorous means by which we may determine 
+                                        the set of relevant site neighbors are possible. Some other commonly used criteria (in the general determination of
+                                        nearest neighbors) are solid angle cut-offs, Voronoii tesselations, and scaled cut-offs (that depend on the site's closest neighbor). 
+                                    </p>
+                                    <p>
+                                        These more sophisticated criteria are more often applied in physical applications, such as the determination of a site's local 
+                                        symmetry or motif.
                                     </p>
                                     <h2>Initial Features</h2>
                                     <p>
@@ -272,12 +286,10 @@
                                         are intended to encode the relevant physical data for the chosen predictive task.
                                     </p>
                                     <p>
-                                        Note that we term these initial features, since they are usually as input for some machine learning model. 
-                                        Having acknowledged this, we now drop the term initial in the following 
-                                        discussions.
-                                    </p>
-                                    <p>
-                                        We now consider the features of the two objects: the atoms or nodes; and the edges.
+                                        Note that we term these initial features, since they are usually taken as input for some machine learning model, which will 
+                                        consequently update the features layer-by-layer. 
+                                        Having acknowledged this, we drop the term initial in the following 
+                                        discussions and consider the features of these two objects: the atoms or nodes; and the edges.
                                     </p>
                                     <h3>Node/Atom Features</h3>
                                     <p>
@@ -288,14 +300,17 @@
                                         Of course, atoms have corresponding valence charges, differing orbital structures, and groups. A common 
                                         scheme for atom representation vectors is that employed in the classic CGCNN by Xie & Grossman. This is described
                                         succinctly in the diagram below:
-                                        <img src="." alt="CGCNN inspired atom feature vector">
+                                        
+                                    <figure class="align">
+                                        <img src="../../assets/images/halfbaked/atom_feat.svg" alt="CGCNN inspired atom feature vector">
+                                    </figure>
                                         Note that some values are one-hot encoded; others are expansions, etc. The implementation of the scheme above can be found as
                                         atom_init.json here, organized by proton number.
                                     </p>
 
                                     <div class="boxed">
                                         <p>
-                                            <div class="boxtitle">One Hot Encoding:</div> When we need to describe something that's a true or false property, we may 
+                                            <div class="boxedtitle">One Hot Encoding:</div> When we need to describe something that's a true or false property, we may 
                                             place a zero or one to describe this true-false relationship. Alternatively, to increase the dimensionality, we could have an
                                             inefficient two-dimensional space where either of the two must be one, with the first being one and the other zero (denoting true) and 
                                             then vice versa (denoting false) being the only two options.
@@ -313,8 +328,7 @@
                                     <h3>Edge/"Bond" Features</h3>
                                     <p>
                                         Apparently, due to their simple criteria for construction, the feature vector of most crystal graph edges 
-                                        is only based upon distance. One could also conceivably include other information about the bond, such as the combined charge or combined electrostatic valency of the 
-                                        neighbors, but this then wouldn't apply to next nearest neighbors very well, or the next next etc. which may have been included in the edge construction.
+                                        is only based upon distance.
                                     </p>
                                     <p>
                                         We can always describe a distance as a scalar distance, but we may also 
@@ -322,19 +336,38 @@
                                         More frequently, the scalar distance corresponding to the edge is expanded in a so-called Gaussian distance expansion, or Radial-Basis Function 
                                         expansion (RBF). This gives us a larger dimensional representation vector based only on the distance.
                                     </p>
+                                    <figure class="align">
+                                        <img src="../../assets/images/halfbaked/bond_feat.svg" alt="Gaussian expansion of distance as bond feature vector">
+                                    </figure>
                                     <p>
-                                        Of course, the loose definition of an edge also requires us to drop the interpretation of the edges as direct bonds 
-                                        between graph neighbors.
+                                        One could also conceivably include other information about the bond, such as the combined charge or combined electrostatic valency of the 
+                                        neighbors, but this then wouldn't apply to next nearest neighbors very well, or the next next etc. which may have been included in the edge construction.
+                                        Of course, the loose definition of an edge requires us to drop any interpretation of the edges as 'chemical bonds' 
+                                        between graph neighbors; 
+                                        but other bond-specific attributes may also be incorporated, such as displacement vectors (in terms of components) and the like. 
+                                    </p>
+                                    
+                                    <h2>Conclusion</h2>
+                                    <p>
+                                        Modern models utilizing the basic constructions discussed above have shown suprisingly good performance on a multitude of 
+                                        training tasks such as: formation energy per atom, minimum band-gap, metal/non-metal classification, etc. This suggests that the 
+                                        information packaged in such a structure, as above, is an intrinsically useful representation of the corresponding physical structures.
+                                    </p>
+                                    <p>
+                                        Greater performance and more robust representations are almost certainly intertwined, however. To that end, it's useful 
+                                        to consider what flaws such models may have, in hopes we may improve them.
                                     </p>
                                     <h3>Flaws</h3>
-                                    
                                     <p>
-                                        The major flaw with these techniques is their lack of inclusion of larger geometrical information. Then again, the high performance of 
+                                        One major flaw with these techniques is their lack of inclusion of larger geometrical information. Then again, the high performance of 
                                         such models without this geometrical information may be a testament to it's neglible effect on the chosen targets.
                                     </p>
-                                    <h2>Further Resources</h2>
+                                    <h3>Extensions</h3>
                                     <p>
-
+                                        The above graph constructions have been extended to some extent in more modern models; two notable examples being the atomistic line graph, 
+                                        and the state vector of the megnet model. The atomistic line graph approach associated a secondary, 'line' graph to each crystal, in which 
+                                        nodes represented edges of the crystal graph and connections between these 'edge' nodes describe the angle made between connected bonds. Megnet's 
+                                        approach associated an additional state-level vector with each crystal graph as a sort of graph-level feature.
                                     </p>
 
 
