@@ -192,7 +192,7 @@
                                 <div class="entry__content">
                                     <p class="lead">
                                         Below, the representation of crystalline structures as graphs is discussed. This is a framework 
-                                        often used in machine-learning models (see graph neural networks) applied to materials science.
+                                        often used in machine-learning models (i.e. graph neural networks) applied to materials science.
                                     </p> 
 
                                     <p class="drop-cap">
@@ -213,9 +213,26 @@
                                         then is some 'learned representation' of the crystal structure (generally after the pooling of node features). This learned representation 
                                         is then used as input for some (trained) predictive neural network.
                                     </p>
+                                    <div class="boxed">
+                                        <h6 class="boxtitle">Example Graph Network:</h6>
+                                        <p>
+                                             As an example of the use of these graph encodings, consider the 
+                                            graph convolutional network architecture below:
+                                            
+                                        <figure class="align center">
+                                            <img src="../../assets/images/halfbaked/workingarch.svg"  alt="An example of a crystal graph convolutional network (CGCNN)">
+                                        </figure>
+                                            which is generally trained on the order of tens of thousands of crystals to predict specfic physical properties (such as formation energy 
+                                            per atom, total energy, minimum band gaps, etc.).
+                                        </p>
+                                        <p>
+                                            The architecture displayed here is heavily inspired by the model utilized in this  <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.145301">paper</a>, and which we refer to as CGCNN.
+                                        </p>
+                                    </div>
+                                    <br>
                                     <p>
-                                        Below, we discuss the usual schemes of graph encoding, along with their included feature schemes, employed in some famous crystal graph convolutional networks 
-                                        (CGCNNs). Then, we consider limitations of the models and discuss a possible extension of the framework.
+                                        Below, we discuss the usual schemes of graph encoding, along with their included feature schemes, employed in some famous crystal graph convolutional 
+                                        networks. Then, we consider limitations of the models and discuss a possible extension of the framework.
                                     </p>
                                     <h2>Crystal Graphs</h2>
                                     <p>
@@ -281,7 +298,7 @@
                                     </p>
                                     <h2>Initial Features</h2>
                                     <p>
-                                        With a graph in hand, we now need a way to associate the important phyiscal information of the crystal with the graph. 
+                                        With a graph in hand, we now need a way to associate the important physical information of the crystal with the graph. 
                                         This is done by associating a vector, termed the feature vector, with each node, and often edge, of the graph. The feature vectors 
                                         are intended to encode the relevant physical data for the chosen predictive task.
                                     </p>
@@ -298,32 +315,46 @@
                                     </p>
                                     <p>
                                         Of course, atoms have corresponding valence charges, differing orbital structures, and groups. A common 
-                                        scheme for atom representation vectors is that employed in the classic CGCNN by Xie & Grossman. This is described
+                                        scheme for atom representation vectors is that employed in the classic <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.145301">CGCNN</a> by Xie & Grossman. This is described
                                         succinctly in the diagram below:
                                         
                                     <figure class="align">
                                         <img src="../../assets/images/halfbaked/atom_feat.svg" alt="CGCNN inspired atom feature vector">
                                     </figure>
                                         Note that some values are one-hot encoded; others are expansions, etc. The implementation of the scheme above can be found as
-                                        atom_init.json here, organized by proton number.
+                                        atom_init.json <a href="https://github.com/txie-93/cgcnn/blob/master/data/sample-classification/atom_init.json">here</a>,
+                                        organized by proton number.
                                     </p>
 
                                     <div class="boxed">
+                                        <h6 class="boxtitle">One Hot Encoding:</h6>
                                         <p>
-                                            <div class="boxedtitle">One Hot Encoding:</div> When we need to describe something that's a true or false property, we may 
+                                             When we need to describe something that's a true or false property, we may 
                                             place a zero or one to describe this true-false relationship. Alternatively, to increase the dimensionality, we could have an
                                             inefficient two-dimensional space where either of the two must be one, with the first being one and the other zero (denoting true) and 
                                             then vice versa (denoting false) being the only two options.
                                         </p>
+                                           
+                                    <figure class="align center">
+                                        <img src="../../assets/images/halfbaked/onehot.svg"  alt="An 2-D example of a one-hot encoding of two mutually exclusive categories">
+                                    </figure>
                                         <p>
-                                            This also may be used to describe a set of mutually-exclusive categories.
+                                            This padded representation that extends the dimensionality is termed <em>one-hot encoding</em>;
+                                            where the example above for true or false may naturally be extended to describe a larger set (>2) of mutually-exclusive categories 
+                                            (such as an elements group number).
                                         </p>
                                         <p>
                                             One-hot encoding is inefficient, but, it may help communicate better the 
-                                            different classes to the model it's input in to. This is especially true, considering that the first layers
-                                            may act just as linear maps.
+                                            different classes to the model it's input in to. This is especially true in models for which the first layers
+                                            act effectively as linear maps.
                                         </p>
                                     </div>
+                                    <br>
+                                    <p>
+                                        Sometimes no atomic information is provided with the graph (or some randomly initialized set of orthogonal vectors may be chosen).
+                                        The workflow defined in this <a href="https://pubs.acs.org/doi/10.1021/acs.chemmater.9b01294">paper</a>, and which we will refer to as MEGNet, implemented random
+                                        feature vectors for the atoms. Suprisingly, negligible difference in performance of the model for certain tasks was observed (compared to the previously discussed physical atom vectors). 
+                                    </p>
 
                                     <h3>Edge/"Bond" Features</h3>
                                     <p>
@@ -364,8 +395,8 @@
                                     </p>
                                     <h3>Extensions</h3>
                                     <p>
-                                        The above graph constructions have been extended to some extent in more modern models; two notable examples being the atomistic line graph, 
-                                        and the state vector of the megnet model. The atomistic line graph approach associated a secondary, 'line' graph to each crystal, in which 
+                                        The above graph constructions have been extended to some extent in more modern models; two notable examples being the <a href="https://www.nature.com/articles/s41524-021-00650-1">atomistic LINE graph</a>, 
+                                        and the state vector of the <a href="https://pubs.acs.org/doi/10.1021/acs.chemmater.9b01294">MEGNet model</a>. The atomistic LINE graph approach associated a secondary, 'line' graph to each crystal, in which 
                                         nodes represented edges of the crystal graph and connections between these 'edge' nodes describe the angle made between connected bonds. Megnet's 
                                         approach associated an additional state-level vector with each crystal graph as a sort of graph-level feature.
                                     </p>
