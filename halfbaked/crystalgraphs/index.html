@@ -202,10 +202,17 @@
                                        then requires us to define, at minimum, some criteria for the construction of edges. 
                                        Often, the edges are just made for the 12 nearest neigbors; or based upon some distance cut-off.
                                     </p>
+                                    <figure class="align center">
+                                        <img src="../../assets/images/halfbaked/crystalgraphintro.svg"  alt="An example of a crystal graph">
+                                    </figure>
                                     <p>
                                         Such a basic model of these crystalline structures obviously includes no substantial atomic information, and hence 
                                         doesn't have enough physical information for any downstream model to perform well in most predictive tasks.
                                     </p>
+                                    
+                                    <figure class="align center">
+                                        <img src="../../assets/images/halfbaked/crystalgraphintro2.svg"  alt="An example of a crystal graph with features">
+                                    </figure>
                                     <p>
                                         To resolve this, both nodes and edges in these graphs then each have some additional 'hidden' feature vector or 'representation' that 
                                         describes the physical characteristics of it's corresponding graph element. Generally, these initial features are derived from known properties 
@@ -275,8 +282,11 @@
                                     <h4>Distance Cut-off</h4>
                                     <p>
                                         Distance cut-off is one of the most common approaches. The interatomic cut-off is often in the range of 5-10 Angstroms. 
-                                        The difference in distance is then accounted for in the associated edge features.
+                                        So, for every given atomic site (or node), the edges are determined to be those sites around it within the cut-off distance.
                                     </p>
+                                    <figure class="align center">
+                                        <img src="../../assets/images/halfbaked/ex_crystalgraph.svg"  alt="An example crystal graph">
+                                    </figure>
                                     <h4>Set Number of Neighbors</h4>
                                     <p>
                                         Sometimes a protocol calls for a certain number of neighbors for every node. This may always be accomplished in crystalline 
@@ -286,15 +296,19 @@
                                         Often, both a maximum number of neighbors and a maximum distance cut-off are used in conjunction with each other to minimize the total 
                                         number of edges but still capture relevant neighborhoods of each site.
                                     </p>
+                                    <p>
+                                        To avoid treating all of these neighbors (with varying distance) exactly the same, the difference in distance will be accounted 
+                                        for in the associated edge features, as discussed later.
+                                    </p>
                                     <h4>Other Criteria</h4>
                                     <p>
                                         More sophisticated criteria are rarely used in modern models, but more rigorous means by which we may determine 
                                         the set of relevant site neighbors are possible. Some other commonly used criteria (in the general determination of
-                                        nearest neighbors) are solid angle cut-offs, Voronoii tesselations, and scaled cut-offs (that depend on the site's closest neighbor). 
+                                        nearest neighbors) are solid angle cut-offs, Voronoii tesselation neighbors, and scaled cut-offs (that depend on the site's closest neighbor). 
                                     </p>
                                     <p>
                                         These more sophisticated criteria are more often applied in physical applications, such as the determination of a site's local 
-                                        symmetry or motif.
+                                        symmetry or motif structure.
                                     </p>
                                     <h2>Initial Features</h2>
                                     <p>
