@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BCS Model</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!--MathJax Support-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}},
+                                  loader: {load: ['[tex]/ams']},
+                                  tex: {packages: {'[+]': ['ams']}});</script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../../assets/css/halfbakedstyles.css">
+    <link rel="stylesheet" href="../../assets/css/general.css">
+    <link rel="stylesheet" href="../../assets/css/vendor.css">
+    <link rel="stylesheet" href="../../assets/css/harmonics.css">
+
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../assets/images/halfbaked/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/images/halfbaked/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/images/halfbaked/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/images/halfbaked/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../../assets/images/halfbaked/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../assets/images/halfbaked/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../assets/images/halfbaked/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../assets/images/halfbaked/icons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../../assets/images/halfbaked/icons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../../assets/images/halfbaked/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../../assets/images/halfbaked/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../../assets/images/halfbaked/icons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../../assets/images/halfbaked/icons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="../../assets/images/halfbaked/icons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="../../assets/images/halfbaked/icons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="../../assets/images/halfbaked/icons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="../../assets/images/halfbaked/icons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="../../assets/images/halfbaked/icons/mstile-310x310.png" />
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header id="masthead" class="s-header">
+
+            <div class="s-header__branding">
+                <p class="site-title">
+                    <a href="../index.html" rel="home">half-baked.</a>
+                </p>
+            </div>
+
+            <div class="row s-header__navigation">
+
+                <nav class="s-header__nav-wrap">
+    
+                    <h3 class="s-header__nav-heading">Navigate to</h3>
+    
+                    <ul class="s-header__nav">
+                        <li><a href="../index.html" title="">Home</a></li>
+                        <li class="has-children">
+                            <a href="#0" title="" class="">Categories</a>
+                            <ul class="sub-menu">
+                                <li><a href="../category.html">Mathematical Philosophy</a></li>
+                                <li><a href="../category.html">Mathematics of Physics</a></li>
+                                <li><a href="../category.html">Literature</a></li>
+                                <li><a href="../category.html">Life</a></li>
+                            </ul>
+                        </li>
+                        <li class="current-menu-item">
+                            <a href="#0" title="" class="">Article</a>
+                        </li>
+                        <li><a href="https://www.alexheilman.com" title="">About</a></li>
+                    </ul> <!-- end s-header__nav -->
+
+                </nav> <!-- end s-header__nav-wrap -->
+    
+            </div> <!-- end s-header__navigation -->
+
+            <div class="s-header__search">
+
+                <div class="s-header__search-inner">
+                    <div class="row">
+    
+                        <form role="search" method="get" class="s-header__search-form" action="#">
+                            <label>
+                                <span class="u-screen-reader-text">Search for:</span>
+                                <input type="search" class="s-header__search-field" placeholder="Search for..." value="" name="s" title="Search for:" autocomplete="off">
+                            </label>
+                            <input type="submit" class="s-header__search-submit" value="Search"> 
+                        </form>
+    
+                        <a href="#0" title="Close Search" class="s-header__search-close">Close</a>
+    
+                    </div> <!-- end row -->
+                </div> <!-- s-header__search-inner -->
+    
+            </div> <!-- end s-header__search -->
+
+            <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+            <a class="s-header__search-trigger" href="#">
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.25 19.25L15.5 15.5M4.75 11C4.75 7.54822 7.54822 4.75 11 4.75C14.4518 4.75 17.25 7.54822 17.25 11C17.25 14.4518 14.4518 17.25 11 17.25C7.54822 17.25 4.75 14.4518 4.75 11Z"></path>
+                </svg>
+            </a>
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # site-content
+        ================================================== -->
+        <div id="content" class="s-content s-content--articles">
+
+                <div class="row entry-wrap">
+                    <div class="column lg-12">
+
+                        <article class="entry format-standard">
+
+                            <header class="entry__header">
+    
+                                <h1 class="entry__title">
+                                    The BCS Model of Superconductivity: The Origin of Cooper Pairs.
+                                </h1>
+
+                                <div class="entry__meta">
+                                    <div class="entry__meta-author">
+                                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <circle cx="12" cy="8" r="3.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.8475 19.25H17.1525C18.2944 19.25 19.174 18.2681 18.6408 17.2584C17.8563 15.7731 16.068 14 12 14C7.93201 14 6.14367 15.7731 5.35924 17.2584C4.82597 18.2681 5.70558 19.25 6.8475 19.25Z"></path>
+                                        </svg>
+                                        <a href="https://alexheilman.com">Alex Heilman</a> 
+                                    </div>
+                                    <div class="entry__meta-date">
+                                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
+                                            <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
+                                        </svg>
+                                        April 5, 2023
+                                    </div>
+                                    <div class="entry__meta-cat">
+                                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.25 17.25V9.75C19.25 8.64543 18.3546 7.75 17.25 7.75H4.75V17.25C4.75 18.3546 5.64543 19.25 6.75 19.25H17.25C18.3546 19.25 19.25 18.3546 19.25 17.25Z"></path>
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.5 7.5L12.5685 5.7923C12.2181 5.14977 11.5446 4.75 10.8127 4.75H6.75C5.64543 4.75 4.75 5.64543 4.75 6.75V11"></path>
+                                        </svg>
+                                          
+                                        <span class="cat-links">
+                                            <a href="#0">Solid State</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </header>
+
+                            <div class="entry__media">
+                                <figure class="alignwide center" >
+                                    <img src="../../assets/images/halfbaked/bcscover.svg"   alt="Tight-binding Hamiltonian heuristic diagram.">
+                                </figure>
+                            </div>
+
+                            <div class="content-primary">
+
+                                <div class="entry__content">
+                                    <p class="lead">
+                                        The Bardeen-Cooper-Schrieffer (BCS) model of superconductivity was the first microscopic theory 
+                                        explaining the origin of superconducting states in conventional superconductors. This model is presented 
+                                        in brief below.
+                                    </p> 
+
+                                    <p class="drop-cap">
+                                       Famously, the first superconducting state was discovered experimentally in the early 1900s; but 
+                                       a microscopic theory explaining such phenomena eluded researchers until the late 1950s, when Bardeen-Cooper-Schrieffer published 
+                                       this article on the <em><a href="https://doi.org/10.1103/PhysRev.108.1175">Theory of Superconductivity</a></em>. Preceding the BCS model, phenomenological 
+                                       models (that is, macroscopic models developed from trends in data) were developed, namely the London equations, and 
+                                       later, the Landau-Ginzburg free energy.
+                                    </p>
+                                    <p>
+                                        The intuition for the model is that as electrons travel through the underlying lattice, at low enough temperatures, the 
+                                        ions behind the moving electrons form squeezed channels, that result in a higher local concentration of positive charge, attracting
+                                        other electrons. This happens such that the electrons tend to form 'Cooper pairs' that condensate below a certain temperature and 
+                                        then contribute to the superconducting state.
+                                    </p>
+                                    <div class="boxed">
+                                        <h4 class="boxtitle">History of Superconductors</h4>
+                                        <p>
+                                            In 1911, Heike Kamerlingh Onnes discovered the superconducting state of super-cooled Mercury at a 
+                                            temperature of 4.19 Kelvin. He published this finding in a paper of the same year titled <em>The Superconductivity of Mercury</em>.
+                                        </p>
+                                        <p>
+                                            Largely for this work, he recieved the 1913 Nobel prize in physics
+                                            "for his investigations on the properties of matter at low temperatures which led, 
+                                            inter alia, to the production of liquid helium".
+                                        </p><!--
+                                        <div class="hl"></div>
+                                        <h4 class="boxtitle">The Meissner Effect</h4>-->
+                                        </div>
+                                        <br>
+                                    <h3>What we're looking for...</h3>
+                                    <p>
+                                        Before showing the results, it's important to give some intuition for the model considered. And, atleast two concepts should be explicitly considered 
+                                        to motivate what follows: the resistivity of superconductors drops to zero discontinuously at a certain temperature (as opposed to some smooth
+                                        transition), which hints at a <em>phase transition</em> that should be characterizable by some order parameter; and, furthermore, the behaviour of these states 
+                                        depends on the underlying ionic lattice (shown experimentally).
+                                    </p>
+                                    <p>
+                                        The order parameter we're looking for turns out to be a so-called <em>gap function</em> which corresponds to a certain singularity in the two-particle 
+                                        correlation function. And the lattice dependence points towards a phonon-mediated effect on the electrons.
+                                    </p>
+                                    <h2>BCS Hamiltonian</h2>
+                                    <p>
+                                        The BCS Hamiltonian essentially gives a mechanism by which electrons may pair and form a new set of quasi-particles that experience no resistance but still 
+                                        may transport charge (and more fundamentally, screen out entirely any external magnetic field).
+                                    </p>
+                                    <p> 
+                                        Below, we start with an <em>effective</em> electron Hamiltonian, termed as such 
+                                        since it's additional term arises from an underlying electron-phonon interaction (which we neglect to treat in detail here). The derivation of a similar effective Hamiltonian,
+                                        as an averaging over phonon modes can be seen in the second section of this <a href="../../products/notes/tss/matsubara/matsubara.pdf">article</a> (as well as the derivation of a 
+                                        result for the correlation function's form, which we will use later).
+                                    </p>
+                                    <p>
+                                        The effective BCS Hamiltonian (for electrons) can be given in the second-quantized form: 
+                                        <div class="eq">
+                                            \[
+                                               \hat{H}_{\text{BCS}} = \sum_{k, \ \sigma}\xi_k \hat{a}^{\dagger}_{k\sigma}\hat{a}_{k\sigma} - \frac{g}{V}\sum_{k,k',q}\hat{a}^{\dagger}_{k+q, \uparrow}\hat{a}^{\dagger}_{-k,\downarrow}\hat{a}_{-k'+q,\downarrow} \hat{a}_{k', \uparrow} 
+                                            \]
+                                        </div>
+                                        where the summation is over all wave vectors \(k\) in the Brillouin zone, and over all spin states \(\sigma\) (up or down 
+                                        along some axis); \(\epsilon_k\) is then energy  at some wave vector \(k\); and \(V\) is the volume of the system. The coupling constant \(g\), is assumed to be positive (for the case with 
+                                        a negative sign in front) and only to be non-zero in a width above of below the Debye frequency \(\omega_{D}\) from the Fermi energy \(\epsilon_F\).
+
+                                    </p>
+                                    <p>
+                                        The second term above, shown again below, actually encourages electrons to 'pair up'. 
+                                        <div class="eq">
+                                            \[
+                                               \underbrace{- \frac{g}{V}\sum_{k,k',q}\hat{a}^{\dagger}_{k+q, \uparrow}\hat{a}^{\dagger}_{-k,\downarrow}\hat{a}_{-k'+q,\downarrow} \hat{a}_{k', \uparrow}}_{\text{Encourages electron 'pairing'}}
+                                            \]
+                                        </div>
+                                        This can be shown explicity by considering the behaviour of the two-particle 
+                                        correlation function as temperature is varied. 
+                                    </p>
+                                    <div class="boxed">
+                                        <h4 class="boxtitle">4-Point Correlation Function & The Cooper Instability</h4>
+                                    <p>
+                                        The 4-point or 2-particle correlation function \(C(\vec{q},\tau)\) describes the scattering amplitude of pairs of electrons with related momenta.
+                                        <div class="eq">
+                                            \[
+                                                C(\vec{q},\tau) =\frac{1}{V^2}\sum_{k,k'}\langle \bar{\psi}_{k+q,\uparrow}(\tau) \bar{\psi}_{-k,\downarrow}(\tau)
+                                                \psi_{-k'+q,\downarrow}(\tau) \psi_{k',\uparrow}(0)\rangle
+                                            \]
+                                        </div>
+                                        It's form can be shown (via the Bethe-Salpeter equation) to depend on a vertex function \(\Gamma\):
+                                        <div class="eq">
+                                            \[
+                                                \Gamma_q = \frac{g}{1-\frac{gk_B T}{V}\sum_p G_{p+q}G_{-p}}
+                                            \]
+                                        </div>
+                                        Making a few assumptions (and applying the expanded correlation function derived in the first section of this  
+                                        <a href="../../products/notes/tss/matsubara/matsubara.pdf">article</a>) this can be shown to have the approximate form:
+                                        <div class="eq">
+                                            \[
+                                                \Gamma_{(0,0)} = \frac{g}{1-g\nu \ln (\frac{\omega_D}{T})}
+                                            \]
+                                        </div>
+                                        which has singular behaviour at the critical temperature \(T_c = \omega_D e^{-\frac{1}{g\nu}}\). Due to the vertex's 
+                                        relation to the two-particle correlation function, this also implies a singularity in it's behaviour as well; indicating 
+                                        a phase transition of some sort, in which 'Cooper pairs' have a relatively strong bond or tendency to condensate.
+                                    </p>
+                                    </div>
+                                    <br>
+                                    <h3>Mean-Field Transition</h3>
+                                    <p>
+                                        This phase transition hints at a new normal or 'mean-field' behaviour in the new regime (that is, below the critical temperature). To explore this transition, we 
+                                        define the <em>order parameters</em> (we will not derive them here) below:
+                                        <div class="eq">
+                                            \begin{align}
+                                            \Delta &= \frac{g}{V}\sum_k \langle \Omega_s\vert \hat{a}_{-k,\downarrow} \hat{a}_{k,\uparrow}\vert\Omega_s\rangle\\
+                                            \\
+                                            \bar{\Delta} &= \frac{g}{V}\sum_k \langle \Omega_s\vert \hat{a}_{k,\uparrow}^{\dagger} \hat{a}_{-k,\downarrow}^{\dagger}\vert\Omega_s\rangle\\
+                                            \end{align}
+                                        </div>
+                                        where \(\vert\Omega_s\rangle\) is introduced as the new ground state (of the new regime). As the order parameters of the transition, these 
+                                        functions are only non-zero in the range \(T < T_c \).
+                                    </p>
+                                    <p>
+                                        In our new regime, we now expect fluctuations about the order parameter to be small. That is, we make the substitution:
+                                        <div class="eq">
+                                            \[
+                                                \sum_k \hat{c}_{-k,\downarrow}\hat{c}_{k,\uparrow} = \frac{V}{q}\Delta +(\underbrace{\sum_k \hat{c}_{-k,\downarrow}\hat{c}_{k,\uparrow} - \frac{V}{q}\Delta}_{=\delta})
+                                            \]
+                                        </div>
+                                        and assuming \(\delta\) to be small enough that we may ignore it's second order terms, we may expand as below to yield our new mean-field Hamiltonian:
+                                        <div class="eq">
+                                            \begin{align}
+                                                \hat{H}_{\text{BCS}}&= \sum_{k,\sigma}\Big[\epsilon_{k} \hat{a}^{\dagger}_{k\sigma}\hat{a}_{k\sigma}-\big(\bar{\Delta}\hat{a}_{-k,\downarrow}\hat{a}_{k,\uparrow}+\Delta\hat{a}^{\dagger}_{k,\uparrow}\hat{a}^{\dagger}_{-k,\downarrow}+\frac{v}{g}\vert\Delta\vert^2+\mathcal{O}(\delta^2)\big)\Big]\\
+                                                \hat{H}_{\text{BDG}}=\big(\hat{H}_{\text{BCS}}\big)_{\text{MF}} & =\sum_{k,\sigma}\Big[\epsilon_{k} \hat{a}^{\dagger}_{k\sigma}\hat{a}_{k\sigma}-\big(\bar{\Delta}\hat{a}_{-k,\downarrow}\hat{a}_{k,\uparrow}+\Delta\hat{a}^{\dagger}_{k,\uparrow}\hat{a}^{\dagger}_{-k,\downarrow}+\frac{v}{g}\vert\Delta\vert^2\big)\Big]
+                                            \end{align}
+                                        </div>
+                                        this is sometimes termed the <em>Bogoliubov de-Gennes (BDG) Hamiltonian</em>. The benefit of this form is that now the Hamiltonian is again 
+                                        quadratic in operators, which guarantees we'll be able to diagonalize it in some basis to extract, analytically, information about it's behaviour.
+                                    </p><!--
+                                    <p>
+                                        where \(\xi_{k} = \epsilon_k - \mu\) is defined as the difference between the energy \(\epsilon_k\)  at some wave vector \(k\)
+                                        and the chemical potential \(\mu\).
+                                    </p>-->
+                                    <p>
+                                        Also note that this effective mean-field Hamiltonian is Hermitian (necessarily), but doesn't conserve the number of particles!
+                                    </p>
+                                    <div class="boxed">
+                                        <h4 class="boxtitle">Nambu Spinors & The Bogoliubov Transformation</h4>
+                                    <p>
+                                        We may package the annihilation and creation operators of the up and down spin states of particles into a spinor
+                                        \(\Psi_k\), termed a Nambu Spinor, which is defined as below.
+                                        <div class="eq">
+                                            \[
+                                            \Psi_k = \begin{bmatrix} \hat{a}_{k,\uparrow} \\ \hat{a}^{\dagger}_{-k,\downarrow}\end{bmatrix} \\
+                                            \]
+                                        </div>
+                                        Now, this spinor may be used to transform to another basis of creation and annihilation operators via any unitary 
+                                        transformation. This allows us to perform a so-called <em>Bogoliubov Transformation</em>, of the following form:
+                                        <div class="eq">
+                                            \[
+                                            \Phi_k = U \Psi_k
+                                            \]
+                                        </div>
+                                        Where we now have a new set of ladder operators that are linear combinations of the previous set.
+                                    </p>
+                                    </div>
+                                    <br>
+                                    <p>
+                                        We now rewrite the BDG Hamiltonian in terms of Nambu Spinors, below. And rewrite the 
+                                        <div class="eq">
+                                            \[
+                                            \hat{H}_{\text{BDG}}-\mu\hat{N} = \sum_k \Psi^{\dagger}_k\begin{bmatrix} \xi_k & -\Delta \\ -\bar{\Delta} & -\xi_{-k}\end{bmatrix}\Psi_k + \sum_k \xi_k +\frac{V}{g}\vert \Delta \vert^2
+                                            \]
+                                        </div>
+                                        where \(\xi_{k} = \epsilon_k - \mu\) is defined as the difference between the energy \(\epsilon_k\)  at some wave vector \(k\)
+                                        and the chemical potential \(\mu\). We now perform the Bogoliubov transformation below, to diagonalize this Hamiltonian.
+
+                                        <div class="eq">
+                                        \[
+                                        \begin{bmatrix} \hat{c}_{k,\uparrow} \\ \hat{c}^{\dagger}_{-k,\downarrow}\end{bmatrix} = \begin{bmatrix} \cos\theta_k & \sin\theta_k\\ \sin \theta_k &-\cos\theta_k\end{bmatrix}
+                                        \begin{bmatrix} \hat{a}_{k,\uparrow} \\ \hat{a}^{\dagger}_{-k,\downarrow}\end{bmatrix} \\
+                                        \]
+                                        \[
+                                        \Rightarrow \ \ \ 
+                                        \hat{H}_{\text{BDG}}-\mu\hat{N} = \sum_{k,\sigma}(\pm\lambda_k)\hat{c}^{\dagger}_{k\sigma}\hat{c}_{k\sigma}+\sum_k(\xi_k-\lambda_k)+\frac{\Delta^2 V}{g}
+                                        \]
+                                        </div>
+                                        where we now can read off the dispersion relation as \(\lambda_k\), defined as below:
+                                        <div class="eq">
+                                            \[
+                                            \lambda_k = \sqrt{\Delta^2+\xi_k^2}
+                                            \]
+                                        </div>
+                                        Note that particle number here is conserved again, but now the Hamiltonian is written in terms of creation and annihilation operators for 
+                                        different particles entirely (linear combinations of operators for electrons and holes), these new 'particles' are termed <em>Bogoliubons</em> or 
+                                        Bogoliubov quasi-particles.
+
+                                    </p>
+                                    <h2>Further Resources</h2>
+                                    <p>
+                                        The approaches taken here are really just to give a rough heuristic for the behaviour of typical superconductors. A more refined 
+                                        treatement may utilize the functional field integral approach. 
+                                    </p>
+                                    <p>
+                                        Much of the discussion here is covered (arguably better, and in more detail) in Altland and Simmons <em>Condensed Matter Field 
+                                        Theory</em> in section 6.5; as well as in this set of <a href="https://portal.ifi.unicamp.br/images/files/graduacao/aulas-on-line/fen-emerg/lecture_notes_BCS.pdf">
+                                        lecture notes</a>.
+                                    </p>
+
+                                    <p class="entry__tags">
+                                        <strong>Tags:</strong>
+                    
+                                        <span class="entry__tag-list">
+                                            <a href="#0">Solid State</a><a href="#0">Physics</a> <a href="#0">Intro</a>
+                                        </span>
+                        
+                               
+                                    <div class="entry__author-box">
+                                        <figure class="entry__author-avatar">
+                                            <img alt="" src="images/avatars/user-06.jpg" class="avatar">
+                                        </figure>
+                                        <div class="entry__author-info">
+                                            <h5 class="entry__author-name">
+                                                <a href="#0">
+                                                    Alex Heilman
+                                                </a>
+                                            </h5>
+                                            <p>
+                                            A physics graduate student with a B.S. in physics from Lebanon Valley College. 
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div> <!-- end entry-content -->
+
+                                <div class="post-nav">
+                                    
+                                    <div class="post-nav__prev">
+                                        <a href="../tightbinding/index.html" rel="prev">
+                                            <span>Prev</span>
+                                            Second-Quantized Tight-Binding Hamiltonian
+                                        </a>
+                                    </div>
+                                    <div class="post-nav__next">
+                                        <a href="../crystalgraphs/index.html" rel="next">
+                                            <span>Next</span>
+                                            Crystal Graphs for Machine Learning                                          
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div> <!-- end content-primary -->
+
+                        </article> <!-- end entry -->
+
+                        <!-- comments -->
+                        <div class="comments-wrap">
+
+                            <div id="comments">
+                                <div class="large-12">
+
+
+                                    <!-- START commentlist --><!--
+                                    <ol class="commentlist">
+
+                                        <li class="depth-1 comment">
+
+                                            <div class="comment__avatar">
+                                                <img class="avatar" src="images/avatars/user-01.jpg" alt="" width="50" height="50">
+                                            </div>
+
+                                            <div class="comment__content">
+
+                                                <div class="comment__info">
+                                                    <div class="comment__author">Itachi Uchiha</div>
+
+                                                    <div class="comment__meta">
+                                                        <div class="comment__time">Aug 15, 2021</div>
+                                                        <div class="comment__reply">
+                                                            <a class="comment-reply-link" href="#0">Reply</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="comment__text">
+                                                <p>Adhuc quaerendum est ne, vis ut harum tantas noluisse, id suas iisque mei. Nec te inani ponderum vulputate,
+                                                facilisi expetenda has et. Iudico dictas scriptorem an vim, ei alia mentitum est, ne has voluptua praesent.</p>
+                                                </div>
+
+                                            </div>
+
+                                        </li> 1comment ends here
+
+                                        <li class="thread-alt depth-1 comment">
+
+                                            <div class="comment__avatar">
+                                                <img class="avatar" src="images/avatars/user-04.jpg" alt="" width="50" height="50">
+                                            </div>
+
+                                            <div class="comment__content">
+
+                                                <div class="comment__info">
+                                                    <div class="comment__author">John Doe</div>
+
+                                                    <div class="comment__meta">
+                                                        <div class="comment__time">Aug 14, 2021</div>
+                                                        <div class="comment__reply">
+                                                            <a class="comment-reply-link" href="#0">Reply</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="comment__text">
+                                                <p>Sumo euismod dissentiunt ne sit, ad eos iudico qualisque adversarium, tota falli et mei. Esse euismod
+                                                urbanitas ut sed, et duo scaevola pericula splendide. Primis veritus contentiones nec ad, nec et
+                                                tantas semper delicatissimi.</p>
+                                                </div>
+
+                                            </div>
+
+                                            <ul class="children">
+
+                                                <li class="depth-2 comment">
+
+                                                    <div class="comment__avatar">
+                                                        <img class="avatar" src="images/avatars/user-03.jpg" alt="" width="50" height="50">
+                                                    </div>
+
+                                                    <div class="comment__content">
+
+                                                        <div class="comment__info">
+                                                            <div class="comment__author">Kakashi Hatake</div>
+
+                                                            <div class="comment__meta">
+                                                                <div class="comment__time">Aug 14, 2021</div>
+                                                                <div class="comment__reply">
+                                                                    <a class="comment-reply-link" href="#0">Reply</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="comment__text">
+                                                            <p>Duis sed odio sit amet nibh vulputate
+                                                            cursus a sit amet mauris. Morbi accumsan ipsum velit. Duis sed odio sit amet nibh vulputate
+                                                            cursus a sit amet mauris</p>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <ul class="children">
+
+                                                        <li class="depth-3 comment">
+
+                                                            <div class="comment__avatar">
+                                                                <img class="avatar" src="images/avatars/user-04.jpg" alt="" width="50" height="50">
+                                                            </div>
+
+                                                            <div class="comment__content">
+
+                                                                <div class="comment__info">
+                                                                    <div class="comment__author">John Doe</div>
+
+                                                                    <div class="comment__meta">
+                                                                        <div class="comment__time">Aug 14, 2021</div>
+                                                                        <div class="comment__reply">
+                                                                            <a class="comment-reply-link" href="#0">Reply</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="comment__text">
+                                                                <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
+                                                                etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </li>
+
+                                            </ul>
+
+                                        </li> --><!-- end comment level 1 -->
+
+
+                                    </ol>
+                                    <!-- END commentlist -->
+
+                                </div> <!-- end col-full -->
+                            </div> <!-- end comments -->
+
+
+                            <div class="comment-respond">
+
+                                <!-- START respond -->
+                                <!--<div id="respond">
+
+                                    <h3>
+                                    Add Comment 
+                                    <span>Your email address will not be published.</span>
+                                    </h3>
+
+                                    <form name="contactForm" id="contactForm" method="post" action="" autocomplete="off">
+                                        <fieldset class="row">
+
+                                            <div class="column lg-6 tab-12 form-field">
+                                                <input name="cName" id="cName" class="u-fullwidth h-remove-bottom" placeholder="Your Name" value="" type="text">
+                                            </div>
+
+                                            <div class="column lg-6 tab-12 form-field">
+                                                <input name="cEmail" id="cEmail" class="u-fullwidth h-remove-bottom" placeholder="Your Email" value="" type="text">
+                                            </div>
+
+                                            <div class="column lg-12 form-field">
+                                                <input name="cWebsite" id="cWebsite" class="u-fullwidth h-remove-bottom" placeholder="Website" value="" type="text">
+                                            </div>
+
+                                            <div class="column lg-12 message form-field">
+                                                <textarea name="cMessage" id="cMessage" class="u-fullwidth" placeholder="Your Message"></textarea>
+                                            </div>
+
+                                            <div class="column lg-12">
+                                                <input name="submit" id="submit" class="btn btn--primary btn-wide btn--large u-fullwidth" value="Add Comment" type="submit">
+                                            </div>
+
+                                        </fieldset>
+                                    </form>--> <!-- end form -->
+
+                                <!--</div>-->
+                                <!-- END respond-->
+
+                            </div> <!-- end comment-respond -->
+
+                        </div> <!-- end comments-wrap -->
+
+                    </div>
+                </div> <!-- end entry-wrap -->
+        </section> <!-- end s-content -->
+
+
+        <footer id="colophon" class="s-footer">
+
+            <div class="row s-footer__main">
+
+                <div class="column lg-5 md-6 tab-12 s-footer__about">
+                    <h4>half-baked.</h4>
+
+                    <p>
+                    <!--An outlet for the neuroticism of an aspiring Physicist.-->
+                    Semi-serious philosophical musings of an aspiring theoretical physicist.
+                    </p>
+                </div> <!-- end s-footer__about -->
+
+                <div class="column lg-5 md-6 tab-12">
+                    <div class="row">
+                        <div class="column lg-6">
+                            <h4>Categories</h4>
+                            <ul class="link-list">
+                                <li><a href="category.html">Physics</a></li>
+                                <li><a href="category.html">Philosophy</a></li>
+                                <li><a href="category.html">Literature</a></li>
+                                <li><a href="category.html">Life</a></li>
+                            </ul>
+                        </div>
+                        <div class="column lg-6">
+                            <h4>Site Links</h4>
+                            <ul class="link-list">
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="category.html">Categories</a></li>
+                                <li><a href="../category.html">Articles</a></li>
+                                <li><a href="../about.html">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- end s-footer__main -->
+            <div class="row s-footer__bottom">
+                <div class="column lg-5 md-6 tab-12">
+                    <div class="ss-copyright">
+                        <span>© Copyright Spurgeon 2021</span> 
+                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                    </div>
+                </div>
+
+            </div> <!-- end s-footer__bottom -->
+        
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 10.25L12 4.75L6.75 10.25"/>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19.25V5.75"/>
+                    </svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+
+
+        </footer><!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="../../assets/js/halfbaked/plugins.js"></script>
+    <script src="../../assets/js/halfbaked/main.js"></script>
+
+</body>
+</html>

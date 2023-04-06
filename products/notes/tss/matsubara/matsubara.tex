@@ -1,0 +1,151 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{fullpage}
+\usepackage{svg}
+\usepackage{titling}
+\usepackage{tikz}
+\usepackage{physics}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{multicol}
+
+\title{Matsubara Summations \& An Effective Electron-Phonon Action }
+\author{Alexander Heilman}
+
+\setlength{\droptitle}{-8em}   % This is your set screw
+%\setlength{\parindent}{0pt}
+\begin{document}
+
+\vspace{-3cm}
+ 
+\maketitle
+
+\begin{multicols}{2}
+
+\section{Matsubara Sums}
+Summations over Matsubara frequencies are often more easily evaluated as contour integrals in the complex domain. 
+
+This is done by introducing an auxiliary function, here denoted $g(z)$, that has simple poles at each Matsubara frequency $\omega_n$; such that integration over a suitable contour returns the sum of interest as a sum of residues, as below.
+\begin{align*}
+\sum_{n}h(\omega_n)&=\frac{\xi}{2\pi i }\oint dz \ g(z)h(-iz)\\
+& = \xi \sum_n \text{Res}\big[ g(z) h(-iz) \big]\big\vert_{z=i\omega_n}
+\end{align*}
+Typical choices for $g(z)$ thus include the following (where the choice depends on whether the frequencies correspond to Fermions or Bosons):
+$$
+g(z)=
+    \begin{cases}
+        \frac{\beta}{e^{\beta z}-1} & \text{(boson)}\\
+        \frac{\beta}{e^{\beta z}+1} & \text{(fermion)}\\
+    \end{cases}
+$$
+
+\subsection{Evaluation of Pair Correlation Function}
+We now apply this formalism to the specific example of the \textit{pair correlation function} $\chi_{n,\mathbf{q}}^c$, defined below.\small
+$$
+\chi_{n,\mathbf{q}}^c = -\frac{k_BT}{V}\sum_{m,\mathbf{p}}G_{0}(\mathbf{p},i\omega_m)G_0(-\mathbf{p}+\mathbf{q},-i\omega_m+i\omega_n)
+$$\normalsize
+\begin{center}
+where
+\end{center}
+$$
+G_0(\mathbf{p},i\omega_n)=\frac{1}{i\omega_m-\xi_{\mathbf{p}}}
+$$
+is the relevant Green's function; and the convention here is that $i\omega_m=(2m+1)\pi/\beta$ are Fermionic Matsubara frequencies and $i\omega_n=2n\pi/\beta$ are Bosonic Matsubara frequencies.
+
+To garner a simpler form of the pair correlation function, we wish evaluate the sum over the Fermionic Matsubara frequencies. The means to evaluate this sum is made explicit by identifying $h(z)$, discussed in the previous section, to be $G_{0}(\mathbf{p},z)G_0(-\mathbf{p}+\mathbf{q},-z+i\omega_n)$ in this case. Expanding the Green's functions, it's then clear that $h(z)$ has (simple) poles for arguments $z=\xi_{\mathbf{p}}$ and $z=i\omega_n-\xi_{-\mathbf{p}+\mathbf{q}}$.
+
+Then, choosing $g(z)=\beta/(e^{\beta z}+1)$, we may simply sum over all the residues of the product $g(z)h(-iz)$, as specified in the introduction. This yields the following equality:
+$$
+\chi_{n,\mathbf{q}}^c = -\frac{1}{V}\sum_{\mathbf{p}}\frac{-n(\xi_{p})+n(-\xi_{p-q}+i\omega_n)}{i\omega_n - \xi_{p}-\xi_{-p+q}}
+$$
+where $n(x)$ is the Fermi-Dirac distribution function, defined as below.
+$$
+n(x)=\frac{1}{e^{\beta x}+1}
+$$
+With the expression of $n(x)$ in sight, it's easy to verify then that  $n(x+2\pi i n  )=n(x)$ and $n(-x)=1-n(x)$, allowing us to simplify further, so that we have the final expression for the pair correlation function given below.
+$$
+\chi_{n,\mathbf{q}}^c = -\frac{1}{V}\sum_{\mathbf{p}}\frac{1-n(\xi_{p})-n(\xi_{-p+q})}{i\omega_n - \xi_{p}-\xi_{-p+q}}
+$$
+\subsection{Evaluation of Density Correlation Function}
+Now we apply this formalism to the \textit{density correlation function} $\chi_{n,\mathbf{q}}^d$, defined below.\small
+$$
+\chi_{n,\mathbf{q}}^d = -\frac{k_BT}{V}\sum_{m,\mathbf{p}}G_{0}(\mathbf{p},i\omega_m)G_0(\mathbf{p}+\mathbf{q},i\omega_m+i\omega_n)
+$$\normalsize
+Similar to the previous case of the pair correlation function, we now identify $h(z)=G_{0}(\mathbf{p},z)G_0(\mathbf{p}+\mathbf{q},z+i\omega_n)$ which has (simple) poles at $z=\xi_{\mathbf{p}}$ and $z=-i\omega_n+\xi_{\mathbf{p}+\mathbf{q}}$. Again summing over the residues of these poles, we arrive at a form for our considered correlation function:
+\begin{align*}
+\chi_{n,\mathbf{q}}^d &= \frac{1}{V}\sum_{\mathbf{p}}\frac{-n(\xi_p)+n(\xi_{-p-q}-i\omega_n)}{i\omega_n - \xi_p + \xi_{p+q}}\\
+&= \frac{1}{V}\sum_{\mathbf{p}}\frac{-n(\xi_p)+n(\xi_{-p-q})}{i\omega_n - \xi_p + \xi_{p+q}}
+\end{align*}
+where we've again used $n(x+2\pi i n  )=n(x)$.
+
+\section{Electron-Phonon Coupling}
+The total action of a material in which electrons and phonons exist and interact can be decomposed into a sum of three terms, corresponding to the electron free field, phonon free field, and interaction term between the two; as below:\small
+$$
+S[\bar{\phi},\phi,\bar{\psi},\psi]=S_{el}[\bar{\psi},\psi]+S_{ph}[\bar{\phi},\phi]+S_{el-ph}[\bar{\phi},\phi,\bar{\psi},\psi]
+$$\normalsize
+where $\bar{\psi},\psi$ are (independent) Grassman fields corresponding to the electrons and $\bar{\phi},\phi$ are complex fields corresponding to the phonons. The phonon and interaction terms then have the following forms:
+\begin{align*}
+S_{ph}[\bar{\phi},\phi]&=\sum_{q,j}\bar{\phi}_{qj}(-i\omega_n + \omega_q)\phi_{qj}\\
+S_{el-ph}[\bar{\psi},\psi,\bar{\phi},\phi]&=\gamma\sum_{q,j}\frac{i q_j}{\sqrt{2m\omega_q}}(\bar{\phi}_{-qj}+\phi_{qj})\rho_q\\
+\end{align*}
+where we've used the shorthand notation $q=(\mathbf{q},\omega_n)$ and summation over $n$ is implied.
+
+Now, to obtain an effective action, we can exponentiate the action, integrate over the fields we'd like to ignore (here the complex fields $\bar{\phi},\phi$), and then take the natural logarithm of the result, as below.\scriptsize
+\begin{align*}
+S_{\text{ef}}[\bar{\psi},\psi] & = -\ln\Big( \int D[\bar{\phi},\phi] \ e^{-S[\bar{\phi},\phi,\bar{\psi},\psi]} \Big)\\
+& = S_{el}[\bar{\psi},\psi]-\ln\Big( \int D[\bar{\phi},\phi] \ e^{-(S_{p}[\bar{\phi},\phi]+S_{e-p}[\bar{\phi},\phi,\bar{\psi},\psi])} \Big)
+\end{align*}\normalsize
+where the electron term of the action is unaffected due to it's independence of $\bar{\phi},\phi$. Let us now consider the integral over the remaining exponential term:\small
+$$
+\int D[\bar{\phi},\phi] \ e^{-\sum_{q,j}\Big(\bar{\phi}_{qj}(-i\omega_n + \omega_q)\phi_{qj}+\gamma\frac{i q_j}{\sqrt{2m\omega_q}}(\bar{\phi}_{-qj}+\phi_{qj})\rho_q\Big)}
+$$\normalsize
+The argument of the exponential then may be rewritten such that it resembles a Gaussian integral, as below:\small
+\begin{align*}
+&
+\sum_{q,j}\Big(\bar{\phi}_{qj}(-i\omega_n + \omega_q)\phi_{qj}+\gamma\frac{i q_j}{\sqrt{2m\omega_q}}(\bar{\phi}_{-qj}+\phi_{qj})\rho_q\Big)\\
+&= \frac{1}{2}\sum_{q,j}\Bigg(\begin{bmatrix}
+\bar{\phi}_{qj} & \phi_{qj}
+\end{bmatrix}\begin{bmatrix}
+-i\omega_n + \omega_q & 0 \\
+0 & -i\omega_n + \omega_q \\
+\end{bmatrix}\begin{bmatrix}
+\bar{\phi}_{qj} \\ \phi_{qj}
+\end{bmatrix}\\
+& \ \ \ \ \ \ + \gamma \frac{i q_j}{\sqrt{2m \omega_q}}\Big(\begin{bmatrix}
+\bar{\phi}_{-qj} & \phi_{qj}
+\end{bmatrix}\begin{bmatrix}
+1 \\ 1 
+\end{bmatrix}+\begin{bmatrix}
+1 & 1 
+\end{bmatrix}\begin{bmatrix}
+\bar{\phi}_{-qj} \\ \phi_{qj}
+\end{bmatrix} \Big)\rho_q \Bigg)\\
+\end{align*}\normalsize
+Now making the identifications below,
+$$
+A=\begin{bmatrix}
+-i\omega_n + \omega_q & 0 \\
+0 & -i\omega_n + \omega_q \\
+\end{bmatrix}
+$$
+$$
+b=\begin{bmatrix}
+1 \\ 1 
+\end{bmatrix}
+$$
+we may apply the general Gaussian integral formula:
+\begin{align*}
+&\int D(x) \exp\Big(-\frac{1}{2}v^{T}A v + b\cdot x  \Big)\\
+&=\sqrt{\frac{(2\pi)^2}{\vert A\vert}}\exp\Big(\frac{1}{2}b^T  A^{-1}b\Big)
+\end{align*}
+After applying the logarithm, we then arrive at the desired form for the effective action of the electrons below.
+$$
+S_{eff}[\bar{\psi},\psi]=S_{el}[\bar{\psi},\psi]-\frac{\gamma}{2m}\sum_{q}\frac{q^2}{\omega_n^2+\omega_q^2}\rho_q\rho_{-q}
+$$
+\end{multicols}
+
+\end{document}

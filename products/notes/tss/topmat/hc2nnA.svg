@@ -1,0 +1,2069 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="99.125443mm"
+   height="91.392212mm"
+   viewBox="0 0 99.125442 91.39221"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="hc2nnA.svg">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect2644"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect2457"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect2230"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect2113"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2094"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker15058"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart">
+      <path
+         transform="scale(0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path15056" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker14731"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart">
+      <path
+         transform="scale(0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path14729" />
+    </marker>
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect14723"
+       is_visible="true"
+       lpeversion="1"
+       offset_points="7,0.5"
+       sort_points="true"
+       interpolator_type="CentripetalCatmullRom"
+       interpolator_beta="0.75"
+       start_linecap_type="round"
+       linejoin_type="spiro"
+       miter_limit="4"
+       scale_width="1"
+       end_linecap_type="round" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect14721"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.0042328942"
+       smooth_angles="0"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false"
+       step="1" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect14718"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect14394"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect14390"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect14386"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect14382"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect14357"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect14306"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect13966"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect13964"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect13962"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker10842"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path10840" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9574"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9570"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9560"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect7396"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect7392"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect7388"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect7384"
+       effect="bspline" />
+    <marker
+       inkscape:stockid="StopL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="StopL"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1465"
+         d="M 0,5.65 V -5.65"
+         style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.8)" />
+    </marker>
+    <marker
+       inkscape:stockid="StopM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="StopM"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1468"
+         d="M 0,5.65 V -5.65"
+         style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4)" />
+    </marker>
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect5255"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5236"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5232"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5230"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect5206"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5187"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect5168"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5166"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect5164"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect5162"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect5122"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect5120"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5090"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect5088"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5086"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5048"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect5046"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5044"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect4967"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect4965"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect4963"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect4844"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect4793"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect4774"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect4671"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect4627"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect4608"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker3669"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart">
+      <path
+         transform="scale(0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path3667" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect3665"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2310"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker2222"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path2220"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1317"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1302"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1305"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker1746"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path1744" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1299"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker1624"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1622"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1296"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="ExperimentalArrow"
+       orient="auto-start-reverse"
+       refY="3"
+       refX="5"
+       id="ExperimentalArrow"
+       inkscape:isstock="true">
+      <path
+         id="path1549"
+         d="M 10,3 0,6 V 0 Z"
+         style="fill:context-stroke;stroke:#000000;stroke-opacity:1" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1294"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1275"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1273"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1271"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1242"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1240"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1238"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1209"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1207"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1205"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1176"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1167"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1148"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1129"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1127"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1113"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1111"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1058"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1054"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1050"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1048"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1046"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1008"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect999"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect980"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect839"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect835"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <path
+       d="m 132,-11 q -34,0 -34,33 v 11 l 13,28 q 75,158 109,273 l 8,24 h -32 q -38,0 -54,-3 -16,-3 -39,-19 -11,-7 -22,-18 -11,-11 -19,-21 -8,-10 -9,-12 -2,-1 -15,-1 -19,0 -19,10 0,6 19,35 19,29 55,62 36,33 71,38 7,2 225,2 160,0 164,-1 20,-7 20,-28 0,-31 -32,-42 -6,-2 -69,-2 h -64 l -3,-17 q -12,-72 -12,-119 0,-52 9,-93 9,-41 19,-64 10,-23 10,-28 0,-17 -14,-32 -14,-15 -36,-15 -11,0 -18,3 -7,3 -16,24 -9,21 -16,60 -1,9 -1,44 0,49 9,105 9,56 18,92 9,36 10,40 h -98 l -1,-4 q 0,-3 -19,-79 Q 230,199 206,114 182,29 175,17 164,-11 132,-11 Z"
+       id="MJX-97-TEX-I-3C0" />
+    <path
+       d=""
+       id="MJX-97-TEX-N-A0" />
+    <path
+       d="m 64,349 q 0,50 43,77 43,27 148,27 91,0 147,-30 56,-30 71,-82 5,-14 5,-31 0,-17 1,-114 V 77 q 14,-14 50,-15 20,0 24,-5 4,-5 5,-26 Q 558,9 552,5 546,1 514,0 H 497 481 Q 375,0 367,56 L 356,46 Q 300,-6 210,-6 130,-6 81,30 32,66 32,121 q 0,67 79,105 79,38 221,46 h 18 v 20 q 0,21 -2,35 -2,14 -11,34 -9,20 -31,30 -22,10 -58,11 -36,1 -54,-3 h -5 q 15,-23 15,-45 0,-27 -17,-48 -17,-21 -53,-22 -37,0 -53,21 -16,21 -17,44 z M 164,121 q 0,-32 22,-54 22,-22 52,-22 36,0 69,18 33,18 39,45 l 4,9 v 109 h -3 q -99,-8 -141,-37 -42,-29 -42,-68 z"
+       id="MJX-97-TEX-B-61" />
+    <path
+       d="m 213,578 -13,-5 q -14,-5 -40,-10 -26,-5 -58,-7 H 83 v 46 h 19 q 47,2 87,15 40,13 56,24 16,11 28,22 2,3 12,3 9,0 17,-6 V 361 l 1,-300 q 7,-7 12,-9 5,-2 24,-4 19,-2 62,-2 h 26 V 0 H 416 Q 395,3 257,3 121,3 100,0 H 88 v 46 h 26 q 22,0 38,0 16,0 25,1 9,1 16,3 7,2 8,2 1,0 6,5 5,5 6,4 z"
+       id="MJX-97-TEX-N-31" />
+    <path
+       d="m 56,347 q 0,13 14,20 h 637 q 15,-8 15,-20 0,-11 -14,-19 L 390,327 H 72 q -16,5 -16,20 z m 0,-194 q 0,15 16,20 h 636 q 14,-10 14,-20 0,-13 -15,-20 H 70 q -14,7 -14,20 z"
+       id="MJX-97-TEX-N-3D" />
+    <path
+       d="m 33,157 q 0,101 76,192 76,91 171,92 51,0 90,-49 16,30 46,30 13,0 23,-8 10,-8 10,-20 0,-13 -37,-160 -37,-147 -38,-166 0,-25 7,-33 7,-8 21,-9 9,1 20,9 21,20 41,96 6,20 10,21 2,1 10,1 h 4 q 19,0 19,-9 0,-6 -5,-27 Q 496,96 481,63 466,30 449,13 436,0 417,-8 q -8,-2 -24,-2 -34,0 -57,15 -23,15 -30,31 l -6,15 q -1,1 -4,-1 -2,-2 -4,-4 -59,-56 -120,-56 -55,0 -97,40 -42,40 -42,127 z m 318,171 q 0,6 -5,22 -5,16 -23,35 -18,19 -46,20 -35,0 -67,-31 -32,-31 -50,-81 -29,-79 -41,-164 0,-3 0,-11 0,-8 -1,-12 0,-45 18,-62 18,-17 43,-18 38,0 75,33 37,33 44,51 2,4 27,107 25,103 26,111 z"
+       id="MJX-97-TEX-I-61" />
+    <path
+       d="M 227,0 Q 212,3 121,3 40,3 28,0 h -7 v 62 h 96 L 245,213 109,382 H 26 v 62 h 8 q 15,-3 109,-3 104,0 122,3 h 9 v -62 h -28 l 35,-43 q 34,-42 35,-42 4,0 38,44 l 35,41 h -37 v 62 h 8 q 15,-3 106,-3 81,0 93,3 h 7 V 382 H 471 L 355,246 504,63 545,62 h 41 V 0 h -8 Q 563,3 469,3 365,3 347,0 h -9 v 62 h 28 q 0,1 -40,50 -40,49 -41,51 L 198,63 217,62 h 18 V 0 Z"
+       id="MJX-97-TEX-B-78" />
+    <path
+       d="m 112,560 137,134 8,-8 Q 387,562 387,560 l -26,-29 q -2,1 -58,50 l -53,46 -55,-47 q -13,-11 -26,-23 -13,-12 -21,-19 l -8,-6 q -2,-2 -15,14 z"
+       id="MJX-97-TEX-N-5E" />
+    <path
+       d="m 109,429 q -27,0 -43,18 -16,18 -16,44 0,71 53,123 53,52 132,52 91,0 152,-56 61,-56 62,-145 0,-43 -20,-82 -20,-39 -48,-68 -28,-29 -80,-74 -36,-31 -100,-92 l -59,-56 76,-1 q 157,0 167,5 7,2 24,89 v 3 h 40 v -3 Q 448,183 436,95 424,7 421,3 V 0 H 50 v 19 12 q 0,7 6,15 6,8 30,35 29,32 50,56 9,10 34,37 25,27 34,37 9,10 29,33 20,23 28,34 8,11 23,30 15,19 21,32 6,13 15,29 9,16 13,32 4,16 7,30 3,14 3,33 0,63 -34,109 -34,46 -97,46 -33,0 -58,-17 -25,-17 -35,-33 -10,-16 -10,-19 0,-1 5,-1 18,0 37,-14 19,-14 19,-46 0,-25 -16,-42 -16,-17 -45,-18 z"
+       id="MJX-97-TEX-N-32" />
+    <path
+       d="m 84,-102 q 0,-8 3,-17 3,-9 15,-19 12,-10 31,-11 15,1 29,6 14,5 24,12 10,7 20,17 10,10 16,19 6,9 12,19 6,10 9,17 3,7 6,14 3,7 3,8 L 269,0 96,382 H 26 v 62 h 8 q 15,-3 112,-3 106,0 124,3 h 9 v -62 h -24 q -23,0 -23,-2 L 337,151 442,382 h -48 v 62 h 7 q 12,-3 94,-3 73,0 79,3 h 6 V 382 H 510 L 406,152 Q 298,-84 297,-87 q -28,-52 -72,-82 -44,-30 -94,-31 -46,0 -77,28 -31,28 -31,72 0,36 21,50 21,14 43,15 24,0 43,-15 19,-15 22,-42 v -8 H 84 Z"
+       id="MJX-97-TEX-B-79" />
+    <path
+       d="m 228,637 q -34,0 -36,4 -1,2 -1,8 0,24 11,33 2,1 17,1 41,-2 136,-2 34,0 63,0 29,0 45,1 16,1 20,0 16,0 16,-10 0,-2 -2,-14 -5,-17 -10,-20 h -2 q -2,0 -5,0 -3,0 -7,0 -4,0 -9,-1 -5,-1 -9,0 -39,-1 -50,-3 -11,-2 -18,-11 -3,-4 -32,-123 -7,-26 -15,-58 -8,-32 -12,-47 l -4,-15 q 0,-2 145,-2 h 145 l 1,3 q 0,3 31,123 28,115 28,123 0,8 -57,10 -23,0 -30,2 -7,2 -7,9 0,2 2,12 4,17 6,19 2,2 16,3 5,0 42,-1 37,-1 94,-1 62,0 95,1 33,1 36,1 17,0 17,-10 0,-27 -12,-34 h -2 q -2,0 -5,0 -3,0 -7,0 -4,0 -9,-1 -5,-1 -9,0 -39,-1 -50,-3 -11,-2 -18,-11 -3,-5 -72,-283 -69,-278 -70,-282 0,-7 4,-7 8,-3 54,-5 h 31 q 6,-8 6,-9 0,-1 -3,-18 Q 722,6 716,0 h -15 q -37,2 -134,2 -34,0 -63,0 -29,0 -46,0 -17,0 -21,-1 -17,0 -17,9 0,5 3,14 5,19 10,21 4,1 15,1 h 6 q 27,0 60,3 6,1 8,1 2,0 6,5 4,5 6,9 2,4 6,18 4,14 7,28 3,14 11,43 7,28 11,45 33,132 33,133 0,1 -145,1 H 312 L 279,197 Q 245,63 245,58 q 0,-7 8,-9 8,-2 50,-3 h 31 q 6,-8 6,-9 0,-1 -3,-18 Q 333,6 327,0 H 312 Q 275,2 178,2 144,2 115,2 86,2 69,2 52,2 48,1 31,1 31,10 q 0,2 3,14 5,19 10,21 4,1 15,1 h 6 q 27,0 60,3 14,3 19,12 3,4 72,278 69,274 69,289 0,7 -57,9 z"
+       id="MJX-97-TEX-I-48" />
+    <path
+       d="m 21,287 q 1,3 2,8 1,5 5,22 4,17 10,31 6,14 15,33 9,19 20,30 11,11 26,22 15,11 33,9 29,0 51,-12 22,-12 31,-22 9,-10 11,-20 2,-6 3,-6 1,0 8,7 48,52 111,52 h 3 q 48,0 72,-41 8,-19 8,-37 0,-30 -13,-48 -13,-18 -26,-23 -13,-5 -25,-4 -20,0 -32,11 -12,11 -12,29 0,48 56,64 -22,13 -36,13 -56,0 -103,-74 Q 229,315 224,298 219,281 190,165 156,25 151,16 138,-11 108,-11 95,-11 87,-5 79,1 76,7 q -3,6 -2,10 0,13 40,172 40,159 40,177 0,39 -26,39 -21,0 -36,-28 Q 77,349 68,316 59,283 57,280 55,278 41,278 H 27 q -6,6 -6,9 z"
+       id="MJX-97-TEX-I-72" />
+    <path
+       d="m 60,948 q 3,2 605,2 h 602 l 58,-135 q 59,-138 63,-146 h -40 l -7,14 q -21,41 -56,78 -50,48 -111,77 -61,29 -141,43 -80,14 -151,17 -71,3 -183,4 H 574 543 251 l 8,-11 q 463,-633 465,-639 1,-2 0,-6 -3,-3 -264,-302 L 196,-356 q 0,-1 211,-1 52,0 141,0 89,0 128,-1 136,0 220,5 84,5 167,21 83,16 141,49 58,33 103,87 21,26 41,72 h 40 q 0,-1 -7,-21 -7,-20 -25,-65 -18,-45 -31,-84 l -58,-155 -601,-1 q -602,0 -605,2 -6,2 -6,9 0,2 2,6 l 533,610 q 0,1 -33,45 -33,44 -105,144 -72,100 -130,178 L 56,909 55,924 q 0,21 5,24 z"
+       id="MJX-97-TEX-LO-2211" />
+    <path
+       d="m 694,-11 q 0,0 0,-8 0,-8 -6,-14 -6,-6 -10,-7 -7,0 -154,69 Q 377,98 234,166 L 90,235 q -7,5 -7,15 0,11 8,16 573,274 587,274 3,0 9,-6 6,-6 7,-15 1,-9 -7,-14 -1,-1 -270,-129 L 151,250 417,124 Q 686,-4 687,-5 q 7,-6 7,-14 z"
+       id="MJX-97-TEX-N-3C" />
+    <path
+       d="m 184,600 q 0,24 19,42 19,18 44,19 18,0 30,-12 12,-12 13,-30 0,-23 -20,-42 -20,-19 -44,-20 -15,0 -28,10 -13,10 -14,33 z M 21,287 q 0,8 9,31 9,23 24,51 15,28 44,51 29,23 60,22 39,0 65,-23 26,-23 27,-62 0,-17 -14,-56 -14,-39 -40,-105 -26,-66 -42,-113 -5,-22 -5,-32 0,-25 17,-25 9,0 19,3 10,3 23,14 13,11 27,35 14,24 25,59 3,12 5,14 2,2 17,2 20,0 20,-10 0,-8 -9,-31 -9,-23 -25,-51 -16,-28 -45,-50 -29,-22 -62,-22 -32,0 -59,21 -27,21 -28,64 0,17 5,32 5,15 43,114 38,101 44,121 6,20 7,39 0,24 -17,24 h -2 q -30,0 -55,-33 -25,-33 -38,-84 -1,-1 -2,-3 -1,-2 -1,-3 0,-1 -2,-2 -2,-1 -3,-1 -1,0 -4,0 -3,0 -8,0 H 27 q -6,6 -6,9 z"
+       id="MJX-97-TEX-I-69" />
+    <path
+       d="m 297,596 q 0,31 21,48 21,17 43,17 17,0 28,-10 11,-10 14,-28 0,-28 -19,-47 -19,-19 -44,-19 -18,0 -30,10 -12,10 -13,29 z m -9,-220 q 0,29 -26,29 -22,0 -42,-12 -20,-12 -35,-31 -15,-19 -24,-37 -9,-18 -17,-32 l -7,-14 q -2,-1 -16,-1 h -14 q -6,6 -6,8 0,2 4,13 21,49 59,92 38,43 88,50 1,0 8,0 7,0 12,1 24,-1 44,-10 25,-14 38,-31 13,-17 13,-53 V 332 L 318,133 q -51,-200 -54,-208 -18,-50 -70,-89 -52,-39 -119,-40 -50,0 -68,21 -18,21 -19,46 0,27 19,46 19,19 46,20 17,0 29,-10 12,-10 13,-31 0,-36 -32,-55 6,-1 14,-1 34,0 62,28 28,28 43,66 l 11,42 q 11,43 26,104 15,61 32,125 17,64 27,111 10,47 11,57 0,7 -1,11 z"
+       id="MJX-97-TEX-I-6A" />
+    <path
+       d="m 84,520 q 0,8 4,13 4,5 8,6 l 3,1 q 7,0 154,-69 147,-69 291,-137 l 143,-69 q 7,-5 7,-15 0,-10 -7,-15 -2,-2 -292,-139 L 107,-40 h -6 q -18,2 -18,20 0,1 0,3 -1,7 15,16 19,10 150,72 78,37 130,61 L 626,250 378,368 Q 90,504 86,509 q -2,4 -2,11 z"
+       id="MJX-97-TEX-N-3E" />
+    <path
+       d="m 224,-649 v 1799 h 231 v -51 H 275 V -598 h 180 v -51 z"
+       id="MJX-97-TEX-LO-5B" />
+    <path
+       d="m 182,675 q 13,30 40,30 12,0 21,-5 9,-5 10,-9 1,-4 10,-16 l -1,-20 q 0,-35 -10,-106 -10,-71 -12,-95 v -5 q 10,2 48,12 38,10 58,11 20,1 31,-11 11,-12 12,-30 0,-14 -10,-27 -10,-13 -33,-14 -19,0 -58,11 -39,11 -45,11 h -3 v -7 q 5,-38 10,-66 5,-28 8,-38 3,-10 3,-27 0,-17 2,-49 0,-101 -8,-266 -8,-165 -16,-172 -3,-3 -17,-3 h -5 q -11,0 -13,4 -2,4 -4,26 -1,11 -1,18 -18,206 -18,393 0,40 1,55 1,15 9,47 8,32 13,78 v 7 h -3 q -5,0 -44,-11 -39,-11 -59,-11 -22,0 -32,13 -10,13 -11,28 -1,15 10,27 11,12 33,14 18,0 57,-10 39,-10 50,-13 -1,3 -1,11 0,8 -3,30 -3,22 -8,57 -11,72 -11,108 z"
+       id="MJX-97-TEX-N-2020" />
+    <path
+       d="m 73,647 q 0,10 4,23 4,13 12,13 1,0 72,5 71,5 73,6 12,0 12,-9 0,-9 -34,-143 -8,-34 -17,-70 -9,-36 -15,-54 l -4,-19 q 0,-3 6,3 49,40 101,40 62,0 100,-46 38,-46 39,-116 Q 422,169 343,79 264,-11 173,-11 123,-11 82,27 41,65 40,150 v 9 q 0,21 8,58 8,37 49,197 50,197 50,209 0,12 -38,14 -5,0 -8,0 h -5 q -10,0 -13,0 -3,0 -7,3 -4,3 -3,7 z M 336,325 v 6 q 0,74 -61,74 -17,0 -35,-8 -18,-8 -33,-21 -15,-13 -26,-24 -11,-11 -18,-22 l -6,-8 -21,-86 q -22,-86 -22,-122 0,-48 24,-72 16,-16 40,-16 33,0 67,32 25,23 40,56 15,33 33,105 18,72 18,106 z"
+       id="MJX-97-TEX-I-62" />
+    <path
+       d="m 16,1099 v 51 H 247 V -649 H 16 v 51 h 180 v 1697 z"
+       id="MJX-97-TEX-LO-5D" />
+    <path
+       d="m 247,-949 v 2399 h 269 v -62 H 309 V -887 h 207 v -62 z"
+       id="MJX-97-TEX-S3-5B" />
+    <path
+       d="m 84,237 q 0,0 0,13 0,13 14,20 h 581 q 15,-8 15,-20 0,-12 -15,-20 H 98 q -14,7 -14,20 z"
+       id="MJX-97-TEX-N-2212" />
+    <path
+       d="m 26,385 q -7,7 -7,10 0,4 3,16 3,12 5,14 2,5 9,5 7,0 51,1 h 53 l 19,80 q 3,11 7,29 4,18 7,26 3,8 6,20 3,12 8,17 5,5 10,12 5,7 14,9 9,2 18,2 18,-1 25,-11 7,-10 7,-19 0,-7 -9,-47 -9,-40 -20,-79 l -10,-37 q 0,-2 50,-2 h 51 q 7,-7 7,-11 0,-22 -13,-35 H 210 L 174,240 Q 135,80 135,68 q 0,-42 27,-42 35,0 68,34 33,34 53,84 2,6 5,7 3,1 15,2 h 4 q 15,0 15,-8 0,-3 -3,-12 Q 314,117 301,95 288,73 267,48 246,23 216,6 186,-11 155,-11 125,-11 98,4 71,19 59,56 57,64 57,83 v 18 l 35,140 q 35,141 36,142 0,2 -51,2 z"
+       id="MJX-97-TEX-I-74" />
+    <path
+       d="m 11,1388 v 62 H 280 V -949 H 11 v 62 h 207 v 2275 z"
+       id="MJX-97-TEX-S3-5D" />
+    <path
+       d="m 208,74 q 0,-24 46,-28 18,0 18,-11 0,-1 -2,-13 Q 267,8 264,4 261,0 251,0 249,0 239,0 229,0 205,1 181,2 141,2 70,2 50,0 h -8 q -7,7 -7,11 2,27 13,35 h 14 q 70,3 102,50 6,6 181,305 175,299 178,303 7,12 24,12 h 8 17 q 6,-9 6,-10 l 28,-323 q 28,-323 30,-326 5,-11 65,-11 25,0 25,-10 0,-2 -3,-14 Q 720,7 718,4 716,1 704,0 701,0 690,0 679,0 651,1 623,2 578,2 484,2 455,0 h -12 q -6,6 -6,9 0,3 2,18 4,13 6,16 l 4,3 h 20 q 54,3 64,17 L 521,213 H 283 L 249,155 Q 208,86 208,74 Z m 308,186 q 0,11 -12,156 -12,145 -14,146 L 463,519 Q 447,492 400,412 l -90,-152 103,-1 q 103,0 103,1 z"
+       id="MJX-97-TEX-I-41" />
+    <path
+       d="m 231,637 q -27,0 -32,1 -5,1 -5,11 0,27 11,33 1,1 130,1 259,0 273,-2 63,-10 105,-45 42,-35 43,-92 0,-64 -58,-115 -58,-51 -133,-69 l -10,-3 q 64,-9 105,-46 41,-37 42,-92 Q 702,146 630,78 558,10 453,1 446,0 242,0 42,0 39,2 q -4,3 -4,8 0,7 2,14 5,19 10,21 4,1 15,1 h 6 q 27,0 60,3 14,3 19,12 3,4 72,278 69,274 69,289 0,7 -57,9 z m 418,-93 q 0,30 -15,56 -15,26 -49,34 -7,2 -92,3 -20,0 -42,0 -22,0 -35,-1 h -13 q -15,-1 -19,-10 -2,-4 -32,-120 0,-3 -1,-6 L 320,374 h 81 q 81,0 93,2 60,10 107,58 47,48 48,110 z M 595,229 q 0,44 -23,73 -23,29 -60,34 -6,1 -83,1 -118,0 -119,-1 0,-2 -17,-73 -17,-71 -35,-141 L 240,52 q 0,-4 12,-4 12,0 81,-2 89,0 96,1 62,7 114,58 52,51 52,124 z"
+       id="MJX-97-TEX-I-42" />
+    <path
+       d="m 720,510 q 0,-34 -16,-62 -16,-28 -39,-44 -23,-16 -46,-27 -23,-11 -39,-15 l -16,-3 19,-3 q 19,-3 49,-14 30,-11 58,-30 22,-20 35,-36 27,-41 27,-87 v -6 Q 752,160 741,125 698,18 547,2 543,1 288,0 H 39 V 62 H 147 V 624 H 39 v 62 h 225 145 q 93,0 133,-5 40,-5 82,-26 96,-48 96,-145 z m -157,3 q 0,40 -15,65 -15,25 -30,33 -15,8 -32,11 -7,2 -101,2 H 293 V 382 h 82 q 83,1 92,3 96,20 96,128 z m 27,-321 q 0,115 -85,137 -1,1 -2,1 l -105,1 H 293 V 62 h 98 9 44 q 52,0 84,13 32,13 52,56 10,24 10,61 z"
+       id="MJX-123-TEX-B-42" />
+    <path
+       d="m 39,168 q 0,57 19,104 19,47 49,78 30,31 67,52 37,21 70,31 33,10 63,9 h 3 q 45,0 78,-22 33,-22 33,-65 0,-90 -111,-118 -49,-13 -134,-14 -37,0 -38,-2 0,-2 -6,-35 -6,-33 -7,-58 0,-47 21,-74 21,-27 63,-28 42,-1 93,19 51,20 92,66 9,10 12,10 4,0 13,-9 9,-9 10,-14 1,-5 -9,-16 Q 410,71 390,55 370,39 344,24 318,9 281,-1 244,-11 205,-11 126,-11 83,42 40,95 39,168 Z m 334,185 q -6,52 -68,52 -33,0 -61,-14 -28,-14 -45,-34 -17,-20 -29,-41 -12,-21 -16,-36 -4,-15 -5,-19 0,-1 20,-1 113,0 158,24 45,24 46,69 z"
+       id="MJX-123-TEX-I-65" />
+    <path
+       d="m 52,289 q 7,42 54,97 47,55 116,56 35,0 64,-18 29,-18 43,-45 42,63 101,63 37,0 64,-22 27,-22 28,-59 0,-29 -14,-47 -14,-18 -27,-22 -13,-4 -23,-4 -19,0 -31,11 -12,11 -12,29 0,46 50,63 -11,13 -40,13 -13,0 -19,-2 -38,-16 -56,-66 -60,-221 -60,-258 0,-28 16,-40 16,-12 35,-12 37,0 73,33 36,33 49,81 3,10 6,11 3,1 16,2 h 4 q 15,0 15,-8 0,-1 -2,-11 Q 486,77 440,33 394,-11 333,-11 263,-11 227,52 186,-10 133,-10 h -6 q -49,0 -70,26 -21,26 -22,55 0,32 19,52 19,20 45,20 43,0 43,-42 Q 142,81 130,66 118,51 107,46 96,41 94,41 l -3,-1 q 0,-1 6,-4 6,-3 16,-7 10,-4 19,-3 36,0 62,45 9,16 23,68 14,52 28,108 14,56 16,66 5,27 5,39 0,28 -15,40 -15,12 -34,12 -40,0 -75,-32 -35,-32 -49,-82 -2,-9 -5,-10 -3,-1 -16,-2 H 58 q -6,6 -6,11 z"
+       id="MJX-123-TEX-I-78" />
+    <path
+       d="m 26,385 q -7,7 -7,10 0,4 3,16 3,12 5,14 2,5 9,5 7,0 51,1 h 53 l 19,80 q 3,11 7,29 4,18 7,26 3,8 6,20 3,12 8,17 5,5 10,12 5,7 14,9 9,2 18,2 18,-1 25,-11 7,-10 7,-19 0,-7 -9,-47 -9,-40 -20,-79 l -10,-37 q 0,-2 50,-2 h 51 q 7,-7 7,-11 0,-22 -13,-35 H 210 L 174,240 Q 135,80 135,68 q 0,-42 27,-42 35,0 68,34 33,34 53,84 2,6 5,7 3,1 15,2 h 4 q 15,0 15,-8 0,-3 -3,-12 Q 314,117 301,95 288,73 267,48 246,23 216,6 186,-11 155,-11 125,-11 98,4 71,19 59,56 57,64 57,83 v 18 l 35,140 q 35,141 36,142 0,2 -51,2 z"
+       id="MJX-123-TEX-I-74" />
+    <path
+       d="m 21,287 q 1,3 2,8 1,5 5,22 4,17 10,31 6,14 15,33 9,19 20,30 11,11 26,22 15,11 33,9 29,0 51,-12 22,-12 31,-22 9,-10 11,-20 2,-6 3,-6 1,0 8,7 48,52 111,52 h 3 q 48,0 72,-41 8,-19 8,-37 0,-30 -13,-48 -13,-18 -26,-23 -13,-5 -25,-4 -20,0 -32,11 -12,11 -12,29 0,48 56,64 -22,13 -36,13 -56,0 -103,-74 Q 229,315 224,298 219,281 190,165 156,25 151,16 138,-11 108,-11 95,-11 87,-5 79,1 76,7 q -3,6 -2,10 0,13 40,172 40,159 40,177 0,39 -26,39 -21,0 -36,-28 Q 77,349 68,316 59,283 57,280 55,278 41,278 H 27 q -6,6 -6,9 z"
+       id="MJX-123-TEX-I-72" />
+    <path
+       d="m 21,287 q 1,6 3,16 2,10 12,38 10,28 20,47 10,19 33,37 23,18 46,17 36,0 60,-18 24,-18 30,-34 6,-16 6,-21 0,-2 1,-2 l 11,11 q 61,64 139,64 54,0 87,-27 33,-27 34,-79 1,-52 -38,-157 -39,-105 -38,-127 0,-26 17,-26 6,0 9,1 29,5 52,38 23,33 35,80 2,8 20,8 20,0 20,-8 0,-1 -4,-15 -8,-29 -22,-57 -14,-28 -46,-56 -32,-28 -69,-27 -47,0 -68,27 -21,27 -21,56 0,19 36,120 36,101 37,152 0,59 -44,59 h -5 Q 288,404 229,303 L 222,291 189,157 Q 156,26 151,16 138,-11 108,-11 95,-11 87,-5 79,1 76,7 q -3,6 -2,10 0,13 38,163 38,150 40,163 1,5 1,23 0,39 -24,39 -38,0 -63,-100 -6,-20 -6,-21 -2,-6 -19,-6 H 27 q -6,6 -6,9 z"
+       id="MJX-123-TEX-I-6E" />
+    <path
+       d="m 33,157 q 0,101 76,192 76,91 171,92 51,0 90,-49 16,30 46,30 13,0 23,-8 10,-8 10,-20 0,-13 -37,-160 -37,-147 -38,-166 0,-25 7,-33 7,-8 21,-9 9,1 20,9 21,20 41,96 6,20 10,21 2,1 10,1 h 4 q 19,0 19,-9 0,-6 -5,-27 Q 496,96 481,63 466,30 449,13 436,0 417,-8 q -8,-2 -24,-2 -34,0 -57,15 -23,15 -30,31 l -6,15 q -1,1 -4,-1 -2,-2 -4,-4 -59,-56 -120,-56 -55,0 -97,40 -42,40 -42,127 z m 318,171 q 0,6 -5,22 -5,16 -23,35 -18,19 -46,20 -35,0 -67,-31 -32,-31 -50,-81 -29,-79 -41,-164 0,-3 0,-11 0,-8 -1,-12 0,-45 18,-62 18,-17 43,-18 38,0 75,33 37,33 44,51 2,4 27,107 25,103 26,111 z"
+       id="MJX-123-TEX-I-61" />
+    <path
+       d="m 117,59 q 0,-33 25,-33 37,0 63,105 6,20 10,21 2,1 10,1 h 4 q 9,0 12,0 3,0 5,-2 2,-2 2,-7 -1,-6 -3,-16 Q 243,118 234,90 225,62 214,43 203,24 183,6 163,-12 137,-11 101,-11 70,11 39,33 38,85 q 0,12 1,17 l 65,258 q 63,255 63,263 0,3 -1,5 -1,2 -4,4 -3,2 -5,2 -2,0 -8,1 -6,1 -8,1 -2,0 -9,1 -7,1 -10,0 -10,0 -13,0 -3,0 -8,1 -5,1 -6,3 -1,2 -1,6 0,2 2,14 5,19 11,21 6,2 72,6 15,1 34,2 19,1 30,3 11,2 11,1 12,0 12,-8 0,-11 -73,-300 -73,-289 -75,-303 0,-2 0,-8 0,-6 -1,-10 z"
+       id="MJX-123-TEX-I-6C" />
+    <path
+       d=""
+       id="MJX-123-TEX-N-A0" />
+    <path
+       d="m 56,237 q 0,0 0,13 0,13 14,20 h 765 q -116,87 -143,223 0,1 0,3 0,2 -1,3 0,12 17,12 h 3 q 9,0 12,-1 3,-1 6,-4 3,-3 3,-9 0,-6 3,-16 3,-10 8,-25 22,-67 73,-120 51,-53 119,-75 9,-3 9,-11 0,-6 -5,-9 -5,-3 -24,-10 -19,-7 -38,-19 -41,-26 -71,-60 -30,-34 -45,-67 -15,-33 -21,-50 -6,-17 -8,-31 -2,-10 -5,-12 -3,-2 -16,-3 -20,0 -20,11 0,7 5,25 32,126 139,205 H 70 q -14,7 -14,20 z"
+       id="MJX-123-TEX-N-2192" />
+    <path
+       d="m 409,688 q 4,6 12,6 h 8 13 q 6,-6 6,-8 0,-7 -30,-123 -7,-28 -14,-59 -7,-31 -12,-46 l -4,-16 q 0,-1 9,-1 9,0 32,-6 23,-6 48,-17 44,-21 73,-61 29,-40 29,-97 0,-57 -31,-109 Q 517,99 471,65 425,31 374,11 323,-9 279,-10 h -4 l -24,-95 q -6,-23 -13,-55 -8,-32 -11,-38 -3,-6 -12,-7 h -6 q -20,0 -20,7 0,5 22,95 l 23,92 q 0,1 -8,1 -5,0 -20,2 -15,2 -45,14 -30,12 -54,30 -24,18 -45,53 -21,35 -19,82 0,60 33,113 33,53 81,86 48,33 97,52 49,19 88,19 5,0 6,4 l 30,122 q 31,119 31,121 z M 122,150 q 0,-34 12,-59 12,-25 33,-38 21,-13 36,-18 15,-5 34,-8 h 7 l 93,377 q -4,0 -11,-1 -7,-1 -29,-8 -22,-7 -42,-16 -20,-9 -44,-29 -24,-20 -41,-46 -18,-28 -33,-67 -15,-46 -15,-87 z m 378,132 q 0,38 -16,65 -16,27 -40,38 -24,11 -39,15 -15,4 -24,4 h -3 L 332,217 284,29 q 0,-2 1,-2 8,0 32,6 24,6 40,14 43,19 74,53 31,34 44,70 13,36 19,64 6,28 6,48 z"
+       id="MJX-123-TEX-I-3D5" />
+    <path
+       d="m 96,585 q 56,81 153,81 48,0 96,-26 48,-26 78,-92 37,-83 37,-228 0,-155 -43,-237 -20,-42 -55,-67 -35,-25 -61,-31 -26,-6 -51,-7 -26,0 -52,6 -26,6 -61,32 -35,26 -55,67 -43,82 -43,237 0,174 57,265 z m 225,12 q -30,32 -71,32 -42,0 -72,-32 -25,-26 -33,-72 -8,-46 -8,-192 0,-158 8,-208 8,-50 36,-79 28,-30 69,-30 40,0 68,30 29,30 36,84 7,54 8,203 0,145 -8,191 -8,46 -33,73 z"
+       id="MJX-123-TEX-N-30" />
+    <path
+       d="m 109,429 q -27,0 -43,18 -16,18 -16,44 0,71 53,123 53,52 132,52 91,0 152,-56 61,-56 62,-145 0,-43 -20,-82 -20,-39 -48,-68 -28,-29 -80,-74 -36,-31 -100,-92 l -59,-56 76,-1 q 157,0 167,5 7,2 24,89 v 3 h 40 v -3 Q 448,183 436,95 424,7 421,3 V 0 H 50 v 19 12 q 0,7 6,15 6,8 30,35 29,32 50,56 9,10 34,37 25,27 34,37 9,10 29,33 20,23 28,34 8,11 23,30 15,19 21,32 6,13 15,29 9,16 13,32 4,16 7,30 3,14 3,33 0,63 -34,109 -34,46 -97,46 -33,0 -58,-17 -25,-17 -35,-33 -10,-16 -10,-19 0,-1 5,-1 18,0 37,-14 19,-14 19,-46 0,-25 -16,-42 -16,-17 -45,-18 z"
+       id="MJX-123-TEX-N-32" />
+    <path
+       d="m 56,347 q 0,13 14,20 h 637 q 15,-8 15,-20 0,-11 -14,-19 L 390,327 H 72 q -16,5 -16,20 z m 0,-194 q 0,15 16,20 h 636 q 14,-10 14,-20 0,-13 -15,-20 H 70 q -14,7 -14,20 z"
+       id="MJX-123-TEX-N-3D" />
+    <path
+       d="m 132,-11 q -34,0 -34,33 v 11 l 13,28 q 75,158 109,273 l 8,24 h -32 q -38,0 -54,-3 -16,-3 -39,-19 -11,-7 -22,-18 -11,-11 -19,-21 -8,-10 -9,-12 -2,-1 -15,-1 -19,0 -19,10 0,6 19,35 19,29 55,62 36,33 71,38 7,2 225,2 160,0 164,-1 20,-7 20,-28 0,-31 -32,-42 -6,-2 -69,-2 h -64 l -3,-17 q -12,-72 -12,-119 0,-52 9,-93 9,-41 19,-64 10,-23 10,-28 0,-17 -14,-32 -14,-15 -36,-15 -11,0 -18,3 -7,3 -16,24 -9,21 -16,60 -1,9 -1,44 0,49 9,105 9,56 18,92 9,36 10,40 h -98 l -1,-4 q 0,-3 -19,-79 Q 230,199 206,114 182,29 175,17 164,-11 132,-11 Z"
+       id="MJX-123-TEX-I-3C0" />
+    <path
+       d="m 56,237 q 0,0 0,13 0,13 14,20 h 299 v 150 l 1,150 q 10,13 19,13 13,0 20,-15 V 270 h 298 q 15,-8 15,-20 0,-12 -15,-20 H 409 V -68 q -8,-14 -18,-14 h -2 -2 q -12,0 -18,14 V 230 H 70 q -14,7 -14,20 z"
+       id="MJX-60-TEX-N-2B" />
+    <path
+       d="m 60,948 q 3,2 605,2 h 602 l 58,-135 q 59,-138 63,-146 h -40 l -7,14 q -21,41 -56,78 -50,48 -111,77 -61,29 -141,43 -80,14 -151,17 -71,3 -183,4 H 574 543 251 l 8,-11 q 463,-633 465,-639 1,-2 0,-6 -3,-3 -264,-302 L 196,-356 q 0,-1 211,-1 52,0 141,0 89,0 128,-1 136,0 220,5 84,5 167,21 83,16 141,49 58,33 103,87 21,26 41,72 h 40 q 0,-1 -7,-21 -7,-20 -25,-65 -18,-45 -31,-84 l -58,-155 -601,-1 q -602,0 -605,2 -6,2 -6,9 0,2 2,6 l 533,610 q 0,1 -33,45 -33,44 -105,144 -72,100 -130,178 L 56,909 55,924 q 0,21 5,24 z"
+       id="MJX-60-TEX-LO-2211" />
+    <path
+       d="m 694,-11 q 0,0 0,-8 0,-8 -6,-14 -6,-6 -10,-7 -7,0 -154,69 Q 377,98 234,166 L 90,235 q -7,5 -7,15 0,11 8,16 573,274 587,274 3,0 9,-6 6,-6 7,-15 1,-9 -7,-14 -1,-1 -270,-129 L 151,250 417,124 Q 686,-4 687,-5 q 7,-6 7,-14 z"
+       id="MJX-60-TEX-N-3C" />
+    <path
+       d="m 184,600 q 0,24 19,42 19,18 44,19 18,0 30,-12 12,-12 13,-30 0,-23 -20,-42 -20,-19 -44,-20 -15,0 -28,10 -13,10 -14,33 z M 21,287 q 0,8 9,31 9,23 24,51 15,28 44,51 29,23 60,22 39,0 65,-23 26,-23 27,-62 0,-17 -14,-56 -14,-39 -40,-105 -26,-66 -42,-113 -5,-22 -5,-32 0,-25 17,-25 9,0 19,3 10,3 23,14 13,11 27,35 14,24 25,59 3,12 5,14 2,2 17,2 20,0 20,-10 0,-8 -9,-31 -9,-23 -25,-51 -16,-28 -45,-50 -29,-22 -62,-22 -32,0 -59,21 -27,21 -28,64 0,17 5,32 5,15 43,114 38,101 44,121 6,20 7,39 0,24 -17,24 h -2 q -30,0 -55,-33 -25,-33 -38,-84 -1,-1 -2,-3 -1,-2 -1,-3 0,-1 -2,-2 -2,-1 -3,-1 -1,0 -4,0 -3,0 -8,0 H 27 q -6,6 -6,9 z"
+       id="MJX-60-TEX-I-69" />
+    <path
+       d="m 297,596 q 0,31 21,48 21,17 43,17 17,0 28,-10 11,-10 14,-28 0,-28 -19,-47 -19,-19 -44,-19 -18,0 -30,10 -12,10 -13,29 z m -9,-220 q 0,29 -26,29 -22,0 -42,-12 -20,-12 -35,-31 -15,-19 -24,-37 -9,-18 -17,-32 l -7,-14 q -2,-1 -16,-1 h -14 q -6,6 -6,8 0,2 4,13 21,49 59,92 38,43 88,50 1,0 8,0 7,0 12,1 24,-1 44,-10 25,-14 38,-31 13,-17 13,-53 V 332 L 318,133 q -51,-200 -54,-208 -18,-50 -70,-89 -52,-39 -119,-40 -50,0 -68,21 -18,21 -19,46 0,27 19,46 19,19 46,20 17,0 29,-10 12,-10 13,-31 0,-36 -32,-55 6,-1 14,-1 34,0 62,28 28,28 43,66 l 11,42 q 11,43 26,104 15,61 32,125 17,64 27,111 10,47 11,57 0,7 -1,11 z"
+       id="MJX-60-TEX-I-6A" />
+    <path
+       d="m 84,520 q 0,8 4,13 4,5 8,6 l 3,1 q 7,0 154,-69 147,-69 291,-137 l 143,-69 q 7,-5 7,-15 0,-10 -7,-15 -2,-2 -292,-139 L 107,-40 h -6 q -18,2 -18,20 0,1 0,3 -1,7 15,16 19,10 150,72 78,37 130,61 L 626,250 378,368 Q 90,504 86,509 q -2,4 -2,11 z"
+       id="MJX-60-TEX-N-3E" />
+    <path
+       d="m 224,-649 v 1799 h 231 v -51 H 275 V -598 h 180 v -51 z"
+       id="MJX-60-TEX-LO-5B" />
+    <path
+       d="m 33,157 q 0,101 76,192 76,91 171,92 51,0 90,-49 16,30 46,30 13,0 23,-8 10,-8 10,-20 0,-13 -37,-160 -37,-147 -38,-166 0,-25 7,-33 7,-8 21,-9 9,1 20,9 21,20 41,96 6,20 10,21 2,1 10,1 h 4 q 19,0 19,-9 0,-6 -5,-27 Q 496,96 481,63 466,30 449,13 436,0 417,-8 q -8,-2 -24,-2 -34,0 -57,15 -23,15 -30,31 l -6,15 q -1,1 -4,-1 -2,-2 -4,-4 -59,-56 -120,-56 -55,0 -97,40 -42,40 -42,127 z m 318,171 q 0,6 -5,22 -5,16 -23,35 -18,19 -46,20 -35,0 -67,-31 -32,-31 -50,-81 -29,-79 -41,-164 0,-3 0,-11 0,-8 -1,-12 0,-45 18,-62 18,-17 43,-18 38,0 75,33 37,33 44,51 2,4 27,107 25,103 26,111 z"
+       id="MJX-60-TEX-I-61" />
+    <path
+       d="m 182,675 q 13,30 40,30 12,0 21,-5 9,-5 10,-9 1,-4 10,-16 l -1,-20 q 0,-35 -10,-106 -10,-71 -12,-95 v -5 q 10,2 48,12 38,10 58,11 20,1 31,-11 11,-12 12,-30 0,-14 -10,-27 -10,-13 -33,-14 -19,0 -58,11 -39,11 -45,11 h -3 v -7 q 5,-38 10,-66 5,-28 8,-38 3,-10 3,-27 0,-17 2,-49 0,-101 -8,-266 -8,-165 -16,-172 -3,-3 -17,-3 h -5 q -11,0 -13,4 -2,4 -4,26 -1,11 -1,18 -18,206 -18,393 0,40 1,55 1,15 9,47 8,32 13,78 v 7 h -3 q -5,0 -44,-11 -39,-11 -59,-11 -22,0 -32,13 -10,13 -11,28 -1,15 10,27 11,12 33,14 18,0 57,-10 39,-10 50,-13 -1,3 -1,11 0,8 -3,30 -3,22 -8,57 -11,72 -11,108 z"
+       id="MJX-60-TEX-N-2020" />
+    <path
+       d="m 21,287 q 1,3 2,8 1,5 5,22 4,17 10,31 6,14 15,33 9,19 20,30 11,11 26,22 15,11 33,9 29,0 51,-12 22,-12 31,-22 9,-10 11,-20 2,-6 3,-6 1,0 8,7 48,52 111,52 h 3 q 48,0 72,-41 8,-19 8,-37 0,-30 -13,-48 -13,-18 -26,-23 -13,-5 -25,-4 -20,0 -32,11 -12,11 -12,29 0,48 56,64 -22,13 -36,13 -56,0 -103,-74 Q 229,315 224,298 219,281 190,165 156,25 151,16 138,-11 108,-11 95,-11 87,-5 79,1 76,7 q -3,6 -2,10 0,13 40,172 40,159 40,177 0,39 -26,39 -21,0 -36,-28 Q 77,349 68,316 59,283 57,280 55,278 41,278 H 27 q -6,6 -6,9 z"
+       id="MJX-60-TEX-I-72" />
+    <path
+       d="m 73,647 q 0,10 4,23 4,13 12,13 1,0 72,5 71,5 73,6 12,0 12,-9 0,-9 -34,-143 -8,-34 -17,-70 -9,-36 -15,-54 l -4,-19 q 0,-3 6,3 49,40 101,40 62,0 100,-46 38,-46 39,-116 Q 422,169 343,79 264,-11 173,-11 123,-11 82,27 41,65 40,150 v 9 q 0,21 8,58 8,37 49,197 50,197 50,209 0,12 -38,14 -5,0 -8,0 h -5 q -10,0 -13,0 -3,0 -7,3 -4,3 -3,7 z M 336,325 v 6 q 0,74 -61,74 -17,0 -35,-8 -18,-8 -33,-21 -15,-13 -26,-24 -11,-11 -18,-22 l -6,-8 -21,-86 q -22,-86 -22,-122 0,-48 24,-72 16,-16 40,-16 33,0 67,32 25,23 40,56 15,33 33,105 18,72 18,106 z"
+       id="MJX-60-TEX-I-62" />
+    <path
+       d="m 16,1099 v 51 H 247 V -649 H 16 v 51 h 180 v 1697 z"
+       id="MJX-60-TEX-LO-5D" />
+    <path
+       d="m 247,-949 v 2399 h 269 v -62 H 309 V -887 h 207 v -62 z"
+       id="MJX-60-TEX-S3-5B" />
+    <path
+       d="m 96,585 q 56,81 153,81 48,0 96,-26 48,-26 78,-92 37,-83 37,-228 0,-155 -43,-237 -20,-42 -55,-67 -35,-25 -61,-31 -26,-6 -51,-7 -26,0 -52,6 -26,6 -61,32 -35,26 -55,67 -43,82 -43,237 0,174 57,265 z m 225,12 q -30,32 -71,32 -42,0 -72,-32 -25,-26 -33,-72 -8,-46 -8,-192 0,-158 8,-208 8,-50 36,-79 28,-30 69,-30 40,0 68,30 29,30 36,84 7,54 8,203 0,145 -8,191 -8,46 -33,73 z"
+       id="MJX-60-TEX-N-30" />
+    <path
+       d="m 26,385 q -7,7 -7,10 0,4 3,16 3,12 5,14 2,5 9,5 7,0 51,1 h 53 l 19,80 q 3,11 7,29 4,18 7,26 3,8 6,20 3,12 8,17 5,5 10,12 5,7 14,9 9,2 18,2 18,-1 25,-11 7,-10 7,-19 0,-7 -9,-47 -9,-40 -20,-79 l -10,-37 q 0,-2 50,-2 h 51 q 7,-7 7,-11 0,-22 -13,-35 H 210 L 174,240 Q 135,80 135,68 q 0,-42 27,-42 35,0 68,34 33,34 53,84 2,6 5,7 3,1 15,2 h 4 q 15,0 15,-8 0,-3 -3,-12 Q 314,117 301,95 288,73 267,48 246,23 216,6 186,-11 155,-11 125,-11 98,4 71,19 59,56 57,64 57,83 v 18 l 35,140 q 35,141 36,142 0,2 -51,2 z"
+       id="MJX-60-TEX-I-74" />
+    <path
+       d="m 84,237 q 0,0 0,13 0,13 14,20 h 581 q 15,-8 15,-20 0,-12 -15,-20 H 98 q -14,7 -14,20 z"
+       id="MJX-60-TEX-N-2212" />
+    <path
+       d="m 11,1388 v 62 H 280 V -949 H 11 v 62 h 207 v 2275 z"
+       id="MJX-60-TEX-S3-5D" />
+    <path
+       d="m 447,131 h 11 q 20,0 20,-14 0,-5 -7,-22 Q 464,78 439,51 414,24 377,9 330,-6 286,-6 196,-6 135,35 39,96 39,222 q 0,102 62,162 68,69 185,69 73,0 125,-22 52,-22 53,-78 0,-34 -19,-51 -19,-17 -50,-18 -35,0 -52,21 -17,21 -18,48 0,27 13,43 h -5 q -16,2 -38,2 h -3 q -12,0 -21,-1 -9,-1 -26,-7 -17,-6 -27,-17 -10,-11 -21,-35 -11,-24 -14,-55 -1,-8 -1,-52 0,-32 2,-51 2,-19 9,-48 7,-29 27,-47 20,-18 50,-28 19,-7 47,-7 h 9 q 59,0 88,65 5,12 9,14 4,2 24,2 z"
+       id="MJX-60-TEX-B-63" />
+    <path
+       d="m 56,347 q 0,13 14,20 h 637 q 15,-8 15,-20 0,-11 -14,-19 L 390,327 H 72 q -16,5 -16,20 z m 0,-194 q 0,15 16,20 h 636 q 14,-10 14,-20 0,-13 -15,-20 H 70 q -14,7 -14,20 z"
+       id="MJX-60-TEX-N-3D" />
+    <path
+       d="m 94,250 q 0,69 10,131 10,62 23,107 13,45 37,88 24,43 38,67 14,24 42,52 28,28 33,34 5,6 25,21 h 13 4 q 14,0 14,-9 0,-3 -17,-21 -17,-18 -41,-53 -24,-35 -49,-86 -25,-51 -42,-138 -17,-87 -17,-193 0,-106 17,-192 17,-86 41,-139 24,-53 49,-86 25,-33 42,-53 17,-20 17,-21 0,-9 -15,-9 h -3 -13 l -28,24 Q 180,-141 137,-14 94,113 94,250 Z"
+       id="MJX-60-TEX-N-28" />
+    <path
+       d="M 227,0 Q 212,3 121,3 40,3 28,0 h -7 v 62 h 96 L 245,213 109,382 H 26 v 62 h 8 q 15,-3 109,-3 104,0 122,3 h 9 v -62 h -28 l 35,-43 q 34,-42 35,-42 4,0 38,44 l 35,41 h -37 v 62 h 8 q 15,-3 106,-3 81,0 93,3 h 7 V 382 H 471 L 355,246 504,63 545,62 h 41 V 0 h -8 Q 563,3 469,3 365,3 347,0 h -9 v 62 h 28 q 0,1 -40,50 -40,49 -41,51 L 198,63 217,62 h 18 V 0 Z"
+       id="MJX-60-TEX-B-78" />
+    <path
+       d="m 112,560 137,134 8,-8 Q 387,562 387,560 l -26,-29 q -2,1 -58,50 l -53,46 -55,-47 q -13,-11 -26,-23 -13,-12 -21,-19 l -8,-6 q -2,-2 -15,14 z"
+       id="MJX-60-TEX-N-5E" />
+    <path
+       d="m 84,-102 q 0,-8 3,-17 3,-9 15,-19 12,-10 31,-11 15,1 29,6 14,5 24,12 10,7 20,17 10,10 16,19 6,9 12,19 6,10 9,17 3,7 6,14 3,7 3,8 L 269,0 96,382 H 26 v 62 h 8 q 15,-3 112,-3 106,0 124,3 h 9 v -62 h -24 q -23,0 -23,-2 L 337,151 442,382 h -48 v 62 h 7 q 12,-3 94,-3 73,0 79,3 h 6 V 382 H 510 L 406,152 Q 298,-84 297,-87 q -28,-52 -72,-82 -44,-30 -94,-31 -46,0 -77,28 -31,28 -31,72 0,36 21,50 21,14 43,15 24,0 43,-15 19,-15 22,-42 v -8 H 84 Z"
+       id="MJX-60-TEX-B-79" />
+    <path
+       d="m 60,749 4,1 q 5,0 10,0 h 12 l 28,-24 q 94,-85 137,-212 43,-127 43,-264 0,-68 -10,-131 -10,-63 -23,-107 -13,-44 -37,-88 -24,-44 -38,-67 -14,-23 -41,-51 -27,-28 -32,-33 -5,-5 -23,-19 -3,-3 -4,-4 H 74 q -8,0 -11,0 -3,0 -5,3 -2,3 -3,9 1,1 11,13 155,161 155,475 0,314 -155,475 -10,12 -11,13 0,8 5,11 z"
+       id="MJX-60-TEX-N-29" />
+    <path
+       d="m 56,237 q 0,0 0,13 0,13 14,20 h 299 v 150 l 1,150 q 10,13 19,13 13,0 20,-15 V 270 h 298 q 15,-8 15,-20 0,-12 -15,-20 H 409 V -68 q -8,-14 -18,-14 h -2 -2 q -12,0 -18,14 V 230 H 70 q -14,7 -14,20 z"
+       id="MJX-60-TEX-N-2B-2" />
+    <path
+       d="m 60,948 q 3,2 605,2 h 602 l 58,-135 q 59,-138 63,-146 h -40 l -7,14 q -21,41 -56,78 -50,48 -111,77 -61,29 -141,43 -80,14 -151,17 -71,3 -183,4 H 574 543 251 l 8,-11 q 463,-633 465,-639 1,-2 0,-6 -3,-3 -264,-302 L 196,-356 q 0,-1 211,-1 52,0 141,0 89,0 128,-1 136,0 220,5 84,5 167,21 83,16 141,49 58,33 103,87 21,26 41,72 h 40 q 0,-1 -7,-21 -7,-20 -25,-65 -18,-45 -31,-84 l -58,-155 -601,-1 q -602,0 -605,2 -6,2 -6,9 0,2 2,6 l 533,610 q 0,1 -33,45 -33,44 -105,144 -72,100 -130,178 L 56,909 55,924 q 0,21 5,24 z"
+       id="MJX-60-TEX-LO-2211-0" />
+    <path
+       d="m 694,-11 q 0,0 0,-8 0,-8 -6,-14 -6,-6 -10,-7 -7,0 -154,69 Q 377,98 234,166 L 90,235 q -7,5 -7,15 0,11 8,16 573,274 587,274 3,0 9,-6 6,-6 7,-15 1,-9 -7,-14 -1,-1 -270,-129 L 151,250 417,124 Q 686,-4 687,-5 q 7,-6 7,-14 z"
+       id="MJX-60-TEX-N-3C-9" />
+    <path
+       d="m 184,600 q 0,24 19,42 19,18 44,19 18,0 30,-12 12,-12 13,-30 0,-23 -20,-42 -20,-19 -44,-20 -15,0 -28,10 -13,10 -14,33 z M 21,287 q 0,8 9,31 9,23 24,51 15,28 44,51 29,23 60,22 39,0 65,-23 26,-23 27,-62 0,-17 -14,-56 -14,-39 -40,-105 -26,-66 -42,-113 -5,-22 -5,-32 0,-25 17,-25 9,0 19,3 10,3 23,14 13,11 27,35 14,24 25,59 3,12 5,14 2,2 17,2 20,0 20,-10 0,-8 -9,-31 -9,-23 -25,-51 -16,-28 -45,-50 -29,-22 -62,-22 -32,0 -59,21 -27,21 -28,64 0,17 5,32 5,15 43,114 38,101 44,121 6,20 7,39 0,24 -17,24 h -2 q -30,0 -55,-33 -25,-33 -38,-84 -1,-1 -2,-3 -1,-2 -1,-3 0,-1 -2,-2 -2,-1 -3,-1 -1,0 -4,0 -3,0 -8,0 H 27 q -6,6 -6,9 z"
+       id="MJX-60-TEX-I-69-4" />
+    <path
+       d="m 297,596 q 0,31 21,48 21,17 43,17 17,0 28,-10 11,-10 14,-28 0,-28 -19,-47 -19,-19 -44,-19 -18,0 -30,10 -12,10 -13,29 z m -9,-220 q 0,29 -26,29 -22,0 -42,-12 -20,-12 -35,-31 -15,-19 -24,-37 -9,-18 -17,-32 l -7,-14 q -2,-1 -16,-1 h -14 q -6,6 -6,8 0,2 4,13 21,49 59,92 38,43 88,50 1,0 8,0 7,0 12,1 24,-1 44,-10 25,-14 38,-31 13,-17 13,-53 V 332 L 318,133 q -51,-200 -54,-208 -18,-50 -70,-89 -52,-39 -119,-40 -50,0 -68,21 -18,21 -19,46 0,27 19,46 19,19 46,20 17,0 29,-10 12,-10 13,-31 0,-36 -32,-55 6,-1 14,-1 34,0 62,28 28,28 43,66 l 11,42 q 11,43 26,104 15,61 32,125 17,64 27,111 10,47 11,57 0,7 -1,11 z"
+       id="MJX-60-TEX-I-6A-2" />
+    <path
+       d="m 84,520 q 0,8 4,13 4,5 8,6 l 3,1 q 7,0 154,-69 147,-69 291,-137 l 143,-69 q 7,-5 7,-15 0,-10 -7,-15 -2,-2 -292,-139 L 107,-40 h -6 q -18,2 -18,20 0,1 0,3 -1,7 15,16 19,10 150,72 78,37 130,61 L 626,250 378,368 Q 90,504 86,509 q -2,4 -2,11 z"
+       id="MJX-60-TEX-N-3E-4" />
+    <path
+       d="m 224,-649 v 1799 h 231 v -51 H 275 V -598 h 180 v -51 z"
+       id="MJX-60-TEX-LO-5B-9" />
+    <path
+       d="m 33,157 q 0,101 76,192 76,91 171,92 51,0 90,-49 16,30 46,30 13,0 23,-8 10,-8 10,-20 0,-13 -37,-160 -37,-147 -38,-166 0,-25 7,-33 7,-8 21,-9 9,1 20,9 21,20 41,96 6,20 10,21 2,1 10,1 h 4 q 19,0 19,-9 0,-6 -5,-27 Q 496,96 481,63 466,30 449,13 436,0 417,-8 q -8,-2 -24,-2 -34,0 -57,15 -23,15 -30,31 l -6,15 q -1,1 -4,-1 -2,-2 -4,-4 -59,-56 -120,-56 -55,0 -97,40 -42,40 -42,127 z m 318,171 q 0,6 -5,22 -5,16 -23,35 -18,19 -46,20 -35,0 -67,-31 -32,-31 -50,-81 -29,-79 -41,-164 0,-3 0,-11 0,-8 -1,-12 0,-45 18,-62 18,-17 43,-18 38,0 75,33 37,33 44,51 2,4 27,107 25,103 26,111 z"
+       id="MJX-60-TEX-I-61-7" />
+    <path
+       d="m 182,675 q 13,30 40,30 12,0 21,-5 9,-5 10,-9 1,-4 10,-16 l -1,-20 q 0,-35 -10,-106 -10,-71 -12,-95 v -5 q 10,2 48,12 38,10 58,11 20,1 31,-11 11,-12 12,-30 0,-14 -10,-27 -10,-13 -33,-14 -19,0 -58,11 -39,11 -45,11 h -3 v -7 q 5,-38 10,-66 5,-28 8,-38 3,-10 3,-27 0,-17 2,-49 0,-101 -8,-266 -8,-165 -16,-172 -3,-3 -17,-3 h -5 q -11,0 -13,4 -2,4 -4,26 -1,11 -1,18 -18,206 -18,393 0,40 1,55 1,15 9,47 8,32 13,78 v 7 h -3 q -5,0 -44,-11 -39,-11 -59,-11 -22,0 -32,13 -10,13 -11,28 -1,15 10,27 11,12 33,14 18,0 57,-10 39,-10 50,-13 -1,3 -1,11 0,8 -3,30 -3,22 -8,57 -11,72 -11,108 z"
+       id="MJX-60-TEX-N-2020-3" />
+    <path
+       d="m 21,287 q 1,3 2,8 1,5 5,22 4,17 10,31 6,14 15,33 9,19 20,30 11,11 26,22 15,11 33,9 29,0 51,-12 22,-12 31,-22 9,-10 11,-20 2,-6 3,-6 1,0 8,7 48,52 111,52 h 3 q 48,0 72,-41 8,-19 8,-37 0,-30 -13,-48 -13,-18 -26,-23 -13,-5 -25,-4 -20,0 -32,11 -12,11 -12,29 0,48 56,64 -22,13 -36,13 -56,0 -103,-74 Q 229,315 224,298 219,281 190,165 156,25 151,16 138,-11 108,-11 95,-11 87,-5 79,1 76,7 q -3,6 -2,10 0,13 40,172 40,159 40,177 0,39 -26,39 -21,0 -36,-28 Q 77,349 68,316 59,283 57,280 55,278 41,278 H 27 q -6,6 -6,9 z"
+       id="MJX-60-TEX-I-72-1" />
+    <path
+       d="m 73,647 q 0,10 4,23 4,13 12,13 1,0 72,5 71,5 73,6 12,0 12,-9 0,-9 -34,-143 -8,-34 -17,-70 -9,-36 -15,-54 l -4,-19 q 0,-3 6,3 49,40 101,40 62,0 100,-46 38,-46 39,-116 Q 422,169 343,79 264,-11 173,-11 123,-11 82,27 41,65 40,150 v 9 q 0,21 8,58 8,37 49,197 50,197 50,209 0,12 -38,14 -5,0 -8,0 h -5 q -10,0 -13,0 -3,0 -7,3 -4,3 -3,7 z M 336,325 v 6 q 0,74 -61,74 -17,0 -35,-8 -18,-8 -33,-21 -15,-13 -26,-24 -11,-11 -18,-22 l -6,-8 -21,-86 q -22,-86 -22,-122 0,-48 24,-72 16,-16 40,-16 33,0 67,32 25,23 40,56 15,33 33,105 18,72 18,106 z"
+       id="MJX-60-TEX-I-62-1" />
+    <path
+       d="m 16,1099 v 51 H 247 V -649 H 16 v 51 h 180 v 1697 z"
+       id="MJX-60-TEX-LO-5D-9" />
+    <path
+       d="m 247,-949 v 2399 h 269 v -62 H 309 V -887 h 207 v -62 z"
+       id="MJX-60-TEX-S3-5B-4" />
+    <path
+       d="m 96,585 q 56,81 153,81 48,0 96,-26 48,-26 78,-92 37,-83 37,-228 0,-155 -43,-237 -20,-42 -55,-67 -35,-25 -61,-31 -26,-6 -51,-7 -26,0 -52,6 -26,6 -61,32 -35,26 -55,67 -43,82 -43,237 0,174 57,265 z m 225,12 q -30,32 -71,32 -42,0 -72,-32 -25,-26 -33,-72 -8,-46 -8,-192 0,-158 8,-208 8,-50 36,-79 28,-30 69,-30 40,0 68,30 29,30 36,84 7,54 8,203 0,145 -8,191 -8,46 -33,73 z"
+       id="MJX-60-TEX-N-30-3" />
+    <path
+       d="m 26,385 q -7,7 -7,10 0,4 3,16 3,12 5,14 2,5 9,5 7,0 51,1 h 53 l 19,80 q 3,11 7,29 4,18 7,26 3,8 6,20 3,12 8,17 5,5 10,12 5,7 14,9 9,2 18,2 18,-1 25,-11 7,-10 7,-19 0,-7 -9,-47 -9,-40 -20,-79 l -10,-37 q 0,-2 50,-2 h 51 q 7,-7 7,-11 0,-22 -13,-35 H 210 L 174,240 Q 135,80 135,68 q 0,-42 27,-42 35,0 68,34 33,34 53,84 2,6 5,7 3,1 15,2 h 4 q 15,0 15,-8 0,-3 -3,-12 Q 314,117 301,95 288,73 267,48 246,23 216,6 186,-11 155,-11 125,-11 98,4 71,19 59,56 57,64 57,83 v 18 l 35,140 q 35,141 36,142 0,2 -51,2 z"
+       id="MJX-60-TEX-I-74-0" />
+    <path
+       d="m 84,237 q 0,0 0,13 0,13 14,20 h 581 q 15,-8 15,-20 0,-12 -15,-20 H 98 q -14,7 -14,20 z"
+       id="MJX-60-TEX-N-2212-3" />
+    <path
+       d="m 11,1388 v 62 H 280 V -949 H 11 v 62 h 207 v 2275 z"
+       id="MJX-60-TEX-S3-5D-8" />
+    <path
+       d="m 447,131 h 11 q 20,0 20,-14 0,-5 -7,-22 Q 464,78 439,51 414,24 377,9 330,-6 286,-6 196,-6 135,35 39,96 39,222 q 0,102 62,162 68,69 185,69 73,0 125,-22 52,-22 53,-78 0,-34 -19,-51 -19,-17 -50,-18 -35,0 -52,21 -17,21 -18,48 0,27 13,43 h -5 q -16,2 -38,2 h -3 q -12,0 -21,-1 -9,-1 -26,-7 -17,-6 -27,-17 -10,-11 -21,-35 -11,-24 -14,-55 -1,-8 -1,-52 0,-32 2,-51 2,-19 9,-48 7,-29 27,-47 20,-18 50,-28 19,-7 47,-7 h 9 q 59,0 88,65 5,12 9,14 4,2 24,2 z"
+       id="MJX-60-TEX-B-63-8" />
+    <path
+       d="m 56,347 q 0,13 14,20 h 637 q 15,-8 15,-20 0,-11 -14,-19 L 390,327 H 72 q -16,5 -16,20 z m 0,-194 q 0,15 16,20 h 636 q 14,-10 14,-20 0,-13 -15,-20 H 70 q -14,7 -14,20 z"
+       id="MJX-60-TEX-N-3D-5" />
+    <path
+       d="m 94,250 q 0,69 10,131 10,62 23,107 13,45 37,88 24,43 38,67 14,24 42,52 28,28 33,34 5,6 25,21 h 13 4 q 14,0 14,-9 0,-3 -17,-21 -17,-18 -41,-53 -24,-35 -49,-86 -25,-51 -42,-138 -17,-87 -17,-193 0,-106 17,-192 17,-86 41,-139 24,-53 49,-86 25,-33 42,-53 17,-20 17,-21 0,-9 -15,-9 h -3 -13 l -28,24 Q 180,-141 137,-14 94,113 94,250 Z"
+       id="MJX-60-TEX-N-28-0" />
+    <path
+       d="M 227,0 Q 212,3 121,3 40,3 28,0 h -7 v 62 h 96 L 245,213 109,382 H 26 v 62 h 8 q 15,-3 109,-3 104,0 122,3 h 9 v -62 h -28 l 35,-43 q 34,-42 35,-42 4,0 38,44 l 35,41 h -37 v 62 h 8 q 15,-3 106,-3 81,0 93,3 h 7 V 382 H 471 L 355,246 504,63 545,62 h 41 V 0 h -8 Q 563,3 469,3 365,3 347,0 h -9 v 62 h 28 q 0,1 -40,50 -40,49 -41,51 L 198,63 217,62 h 18 V 0 Z"
+       id="MJX-60-TEX-B-78-7" />
+    <path
+       d="m 112,560 137,134 8,-8 Q 387,562 387,560 l -26,-29 q -2,1 -58,50 l -53,46 -55,-47 q -13,-11 -26,-23 -13,-12 -21,-19 l -8,-6 q -2,-2 -15,14 z"
+       id="MJX-60-TEX-N-5E-5" />
+    <path
+       d="m 84,-102 q 0,-8 3,-17 3,-9 15,-19 12,-10 31,-11 15,1 29,6 14,5 24,12 10,7 20,17 10,10 16,19 6,9 12,19 6,10 9,17 3,7 6,14 3,7 3,8 L 269,0 96,382 H 26 v 62 h 8 q 15,-3 112,-3 106,0 124,3 h 9 v -62 h -24 q -23,0 -23,-2 L 337,151 442,382 h -48 v 62 h 7 q 12,-3 94,-3 73,0 79,3 h 6 V 382 H 510 L 406,152 Q 298,-84 297,-87 q -28,-52 -72,-82 -44,-30 -94,-31 -46,0 -77,28 -31,28 -31,72 0,36 21,50 21,14 43,15 24,0 43,-15 19,-15 22,-42 v -8 H 84 Z"
+       id="MJX-60-TEX-B-79-9" />
+    <path
+       d="m 60,749 4,1 q 5,0 10,0 h 12 l 28,-24 q 94,-85 137,-212 43,-127 43,-264 0,-68 -10,-131 -10,-63 -23,-107 -13,-44 -37,-88 -24,-44 -38,-67 -14,-23 -41,-51 -27,-28 -32,-33 -5,-5 -23,-19 -3,-3 -4,-4 H 74 q -8,0 -11,0 -3,0 -5,3 -2,3 -3,9 1,1 11,13 155,161 155,475 0,314 -155,475 -10,12 -11,13 0,8 5,11 z"
+       id="MJX-60-TEX-N-29-3" />
+    <path
+       d="m 132,-11 q -34,0 -34,33 v 11 l 13,28 q 75,158 109,273 l 8,24 h -32 q -38,0 -54,-3 -16,-3 -39,-19 -11,-7 -22,-18 -11,-11 -19,-21 -8,-10 -9,-12 -2,-1 -15,-1 -19,0 -19,10 0,6 19,35 19,29 55,62 36,33 71,38 7,2 225,2 160,0 164,-1 20,-7 20,-28 0,-31 -32,-42 -6,-2 -69,-2 h -64 l -3,-17 q -12,-72 -12,-119 0,-52 9,-93 9,-41 19,-64 10,-23 10,-28 0,-17 -14,-32 -14,-15 -36,-15 -11,0 -18,3 -7,3 -16,24 -9,21 -16,60 -1,9 -1,44 0,49 9,105 9,56 18,92 9,36 10,40 h -98 l -1,-4 q 0,-3 -19,-79 Q 230,199 206,114 182,29 175,17 164,-11 132,-11 Z"
+       id="MJX-97-TEX-I-3C0-5" />
+    <path
+       d=""
+       id="MJX-97-TEX-N-A0-7" />
+    <path
+       d="m 64,349 q 0,50 43,77 43,27 148,27 91,0 147,-30 56,-30 71,-82 5,-14 5,-31 0,-17 1,-114 V 77 q 14,-14 50,-15 20,0 24,-5 4,-5 5,-26 Q 558,9 552,5 546,1 514,0 H 497 481 Q 375,0 367,56 L 356,46 Q 300,-6 210,-6 130,-6 81,30 32,66 32,121 q 0,67 79,105 79,38 221,46 h 18 v 20 q 0,21 -2,35 -2,14 -11,34 -9,20 -31,30 -22,10 -58,11 -36,1 -54,-3 h -5 q 15,-23 15,-45 0,-27 -17,-48 -17,-21 -53,-22 -37,0 -53,21 -16,21 -17,44 z M 164,121 q 0,-32 22,-54 22,-22 52,-22 36,0 69,18 33,18 39,45 l 4,9 v 109 h -3 q -99,-8 -141,-37 -42,-29 -42,-68 z"
+       id="MJX-97-TEX-B-61-5" />
+    <path
+       d="m 213,578 -13,-5 q -14,-5 -40,-10 -26,-5 -58,-7 H 83 v 46 h 19 q 47,2 87,15 40,13 56,24 16,11 28,22 2,3 12,3 9,0 17,-6 V 361 l 1,-300 q 7,-7 12,-9 5,-2 24,-4 19,-2 62,-2 h 26 V 0 H 416 Q 395,3 257,3 121,3 100,0 H 88 v 46 h 26 q 22,0 38,0 16,0 25,1 9,1 16,3 7,2 8,2 1,0 6,5 5,5 6,4 z"
+       id="MJX-97-TEX-N-31-7" />
+    <path
+       d="m 56,347 q 0,13 14,20 h 637 q 15,-8 15,-20 0,-11 -14,-19 L 390,327 H 72 q -16,5 -16,20 z m 0,-194 q 0,15 16,20 h 636 q 14,-10 14,-20 0,-13 -15,-20 H 70 q -14,7 -14,20 z"
+       id="MJX-97-TEX-N-3D-6" />
+    <path
+       d="m 33,157 q 0,101 76,192 76,91 171,92 51,0 90,-49 16,30 46,30 13,0 23,-8 10,-8 10,-20 0,-13 -37,-160 -37,-147 -38,-166 0,-25 7,-33 7,-8 21,-9 9,1 20,9 21,20 41,96 6,20 10,21 2,1 10,1 h 4 q 19,0 19,-9 0,-6 -5,-27 Q 496,96 481,63 466,30 449,13 436,0 417,-8 q -8,-2 -24,-2 -34,0 -57,15 -23,15 -30,31 l -6,15 q -1,1 -4,-1 -2,-2 -4,-4 -59,-56 -120,-56 -55,0 -97,40 -42,40 -42,127 z m 318,171 q 0,6 -5,22 -5,16 -23,35 -18,19 -46,20 -35,0 -67,-31 -32,-31 -50,-81 -29,-79 -41,-164 0,-3 0,-11 0,-8 -1,-12 0,-45 18,-62 18,-17 43,-18 38,0 75,33 37,33 44,51 2,4 27,107 25,103 26,111 z"
+       id="MJX-97-TEX-I-61-0" />
+    <path
+       d="M 227,0 Q 212,3 121,3 40,3 28,0 h -7 v 62 h 96 L 245,213 109,382 H 26 v 62 h 8 q 15,-3 109,-3 104,0 122,3 h 9 v -62 h -28 l 35,-43 q 34,-42 35,-42 4,0 38,44 l 35,41 h -37 v 62 h 8 q 15,-3 106,-3 81,0 93,3 h 7 V 382 H 471 L 355,246 504,63 545,62 h 41 V 0 h -8 Q 563,3 469,3 365,3 347,0 h -9 v 62 h 28 q 0,1 -40,50 -40,49 -41,51 L 198,63 217,62 h 18 V 0 Z"
+       id="MJX-97-TEX-B-78-8" />
+    <path
+       d="m 112,560 137,134 8,-8 Q 387,562 387,560 l -26,-29 q -2,1 -58,50 l -53,46 -55,-47 q -13,-11 -26,-23 -13,-12 -21,-19 l -8,-6 q -2,-2 -15,14 z"
+       id="MJX-97-TEX-N-5E-4" />
+    <path
+       d="m 109,429 q -27,0 -43,18 -16,18 -16,44 0,71 53,123 53,52 132,52 91,0 152,-56 61,-56 62,-145 0,-43 -20,-82 -20,-39 -48,-68 -28,-29 -80,-74 -36,-31 -100,-92 l -59,-56 76,-1 q 157,0 167,5 7,2 24,89 v 3 h 40 v -3 Q 448,183 436,95 424,7 421,3 V 0 H 50 v 19 12 q 0,7 6,15 6,8 30,35 29,32 50,56 9,10 34,37 25,27 34,37 9,10 29,33 20,23 28,34 8,11 23,30 15,19 21,32 6,13 15,29 9,16 13,32 4,16 7,30 3,14 3,33 0,63 -34,109 -34,46 -97,46 -33,0 -58,-17 -25,-17 -35,-33 -10,-16 -10,-19 0,-1 5,-1 18,0 37,-14 19,-14 19,-46 0,-25 -16,-42 -16,-17 -45,-18 z"
+       id="MJX-97-TEX-N-32-3" />
+    <path
+       d="m 84,-102 q 0,-8 3,-17 3,-9 15,-19 12,-10 31,-11 15,1 29,6 14,5 24,12 10,7 20,17 10,10 16,19 6,9 12,19 6,10 9,17 3,7 6,14 3,7 3,8 L 269,0 96,382 H 26 v 62 h 8 q 15,-3 112,-3 106,0 124,3 h 9 v -62 h -24 q -23,0 -23,-2 L 337,151 442,382 h -48 v 62 h 7 q 12,-3 94,-3 73,0 79,3 h 6 V 382 H 510 L 406,152 Q 298,-84 297,-87 q -28,-52 -72,-82 -44,-30 -94,-31 -46,0 -77,28 -31,28 -31,72 0,36 21,50 21,14 43,15 24,0 43,-15 19,-15 22,-42 v -8 H 84 Z"
+       id="MJX-97-TEX-B-79-5" />
+    <path
+       d="m 228,637 q -34,0 -36,4 -1,2 -1,8 0,24 11,33 2,1 17,1 41,-2 136,-2 34,0 63,0 29,0 45,1 16,1 20,0 16,0 16,-10 0,-2 -2,-14 -5,-17 -10,-20 h -2 q -2,0 -5,0 -3,0 -7,0 -4,0 -9,-1 -5,-1 -9,0 -39,-1 -50,-3 -11,-2 -18,-11 -3,-4 -32,-123 -7,-26 -15,-58 -8,-32 -12,-47 l -4,-15 q 0,-2 145,-2 h 145 l 1,3 q 0,3 31,123 28,115 28,123 0,8 -57,10 -23,0 -30,2 -7,2 -7,9 0,2 2,12 4,17 6,19 2,2 16,3 5,0 42,-1 37,-1 94,-1 62,0 95,1 33,1 36,1 17,0 17,-10 0,-27 -12,-34 h -2 q -2,0 -5,0 -3,0 -7,0 -4,0 -9,-1 -5,-1 -9,0 -39,-1 -50,-3 -11,-2 -18,-11 -3,-5 -72,-283 -69,-278 -70,-282 0,-7 4,-7 8,-3 54,-5 h 31 q 6,-8 6,-9 0,-1 -3,-18 Q 722,6 716,0 h -15 q -37,2 -134,2 -34,0 -63,0 -29,0 -46,0 -17,0 -21,-1 -17,0 -17,9 0,5 3,14 5,19 10,21 4,1 15,1 h 6 q 27,0 60,3 6,1 8,1 2,0 6,5 4,5 6,9 2,4 6,18 4,14 7,28 3,14 11,43 7,28 11,45 33,132 33,133 0,1 -145,1 H 312 L 279,197 Q 245,63 245,58 q 0,-7 8,-9 8,-2 50,-3 h 31 q 6,-8 6,-9 0,-1 -3,-18 Q 333,6 327,0 H 312 Q 275,2 178,2 144,2 115,2 86,2 69,2 52,2 48,1 31,1 31,10 q 0,2 3,14 5,19 10,21 4,1 15,1 h 6 q 27,0 60,3 14,3 19,12 3,4 72,278 69,274 69,289 0,7 -57,9 z"
+       id="MJX-97-TEX-I-48-7" />
+    <path
+       d="m 21,287 q 1,3 2,8 1,5 5,22 4,17 10,31 6,14 15,33 9,19 20,30 11,11 26,22 15,11 33,9 29,0 51,-12 22,-12 31,-22 9,-10 11,-20 2,-6 3,-6 1,0 8,7 48,52 111,52 h 3 q 48,0 72,-41 8,-19 8,-37 0,-30 -13,-48 -13,-18 -26,-23 -13,-5 -25,-4 -20,0 -32,11 -12,11 -12,29 0,48 56,64 -22,13 -36,13 -56,0 -103,-74 Q 229,315 224,298 219,281 190,165 156,25 151,16 138,-11 108,-11 95,-11 87,-5 79,1 76,7 q -3,6 -2,10 0,13 40,172 40,159 40,177 0,39 -26,39 -21,0 -36,-28 Q 77,349 68,316 59,283 57,280 55,278 41,278 H 27 q -6,6 -6,9 z"
+       id="MJX-97-TEX-I-72-2" />
+    <path
+       d="m 60,948 q 3,2 605,2 h 602 l 58,-135 q 59,-138 63,-146 h -40 l -7,14 q -21,41 -56,78 -50,48 -111,77 -61,29 -141,43 -80,14 -151,17 -71,3 -183,4 H 574 543 251 l 8,-11 q 463,-633 465,-639 1,-2 0,-6 -3,-3 -264,-302 L 196,-356 q 0,-1 211,-1 52,0 141,0 89,0 128,-1 136,0 220,5 84,5 167,21 83,16 141,49 58,33 103,87 21,26 41,72 h 40 q 0,-1 -7,-21 -7,-20 -25,-65 -18,-45 -31,-84 l -58,-155 -601,-1 q -602,0 -605,2 -6,2 -6,9 0,2 2,6 l 533,610 q 0,1 -33,45 -33,44 -105,144 -72,100 -130,178 L 56,909 55,924 q 0,21 5,24 z"
+       id="MJX-97-TEX-LO-2211-2" />
+    <path
+       d="m 694,-11 q 0,0 0,-8 0,-8 -6,-14 -6,-6 -10,-7 -7,0 -154,69 Q 377,98 234,166 L 90,235 q -7,5 -7,15 0,11 8,16 573,274 587,274 3,0 9,-6 6,-6 7,-15 1,-9 -7,-14 -1,-1 -270,-129 L 151,250 417,124 Q 686,-4 687,-5 q 7,-6 7,-14 z"
+       id="MJX-97-TEX-N-3C-3" />
+    <path
+       d="m 184,600 q 0,24 19,42 19,18 44,19 18,0 30,-12 12,-12 13,-30 0,-23 -20,-42 -20,-19 -44,-20 -15,0 -28,10 -13,10 -14,33 z M 21,287 q 0,8 9,31 9,23 24,51 15,28 44,51 29,23 60,22 39,0 65,-23 26,-23 27,-62 0,-17 -14,-56 -14,-39 -40,-105 -26,-66 -42,-113 -5,-22 -5,-32 0,-25 17,-25 9,0 19,3 10,3 23,14 13,11 27,35 14,24 25,59 3,12 5,14 2,2 17,2 20,0 20,-10 0,-8 -9,-31 -9,-23 -25,-51 -16,-28 -45,-50 -29,-22 -62,-22 -32,0 -59,21 -27,21 -28,64 0,17 5,32 5,15 43,114 38,101 44,121 6,20 7,39 0,24 -17,24 h -2 q -30,0 -55,-33 -25,-33 -38,-84 -1,-1 -2,-3 -1,-2 -1,-3 0,-1 -2,-2 -2,-1 -3,-1 -1,0 -4,0 -3,0 -8,0 H 27 q -6,6 -6,9 z"
+       id="MJX-97-TEX-I-69-7" />
+    <path
+       d="m 297,596 q 0,31 21,48 21,17 43,17 17,0 28,-10 11,-10 14,-28 0,-28 -19,-47 -19,-19 -44,-19 -18,0 -30,10 -12,10 -13,29 z m -9,-220 q 0,29 -26,29 -22,0 -42,-12 -20,-12 -35,-31 -15,-19 -24,-37 -9,-18 -17,-32 l -7,-14 q -2,-1 -16,-1 h -14 q -6,6 -6,8 0,2 4,13 21,49 59,92 38,43 88,50 1,0 8,0 7,0 12,1 24,-1 44,-10 25,-14 38,-31 13,-17 13,-53 V 332 L 318,133 q -51,-200 -54,-208 -18,-50 -70,-89 -52,-39 -119,-40 -50,0 -68,21 -18,21 -19,46 0,27 19,46 19,19 46,20 17,0 29,-10 12,-10 13,-31 0,-36 -32,-55 6,-1 14,-1 34,0 62,28 28,28 43,66 l 11,42 q 11,43 26,104 15,61 32,125 17,64 27,111 10,47 11,57 0,7 -1,11 z"
+       id="MJX-97-TEX-I-6A-2" />
+    <path
+       d="m 84,520 q 0,8 4,13 4,5 8,6 l 3,1 q 7,0 154,-69 147,-69 291,-137 l 143,-69 q 7,-5 7,-15 0,-10 -7,-15 -2,-2 -292,-139 L 107,-40 h -6 q -18,2 -18,20 0,1 0,3 -1,7 15,16 19,10 150,72 78,37 130,61 L 626,250 378,368 Q 90,504 86,509 q -2,4 -2,11 z"
+       id="MJX-97-TEX-N-3E-2" />
+    <path
+       d="m 224,-649 v 1799 h 231 v -51 H 275 V -598 h 180 v -51 z"
+       id="MJX-97-TEX-LO-5B-1" />
+    <path
+       d="m 182,675 q 13,30 40,30 12,0 21,-5 9,-5 10,-9 1,-4 10,-16 l -1,-20 q 0,-35 -10,-106 -10,-71 -12,-95 v -5 q 10,2 48,12 38,10 58,11 20,1 31,-11 11,-12 12,-30 0,-14 -10,-27 -10,-13 -33,-14 -19,0 -58,11 -39,11 -45,11 h -3 v -7 q 5,-38 10,-66 5,-28 8,-38 3,-10 3,-27 0,-17 2,-49 0,-101 -8,-266 -8,-165 -16,-172 -3,-3 -17,-3 h -5 q -11,0 -13,4 -2,4 -4,26 -1,11 -1,18 -18,206 -18,393 0,40 1,55 1,15 9,47 8,32 13,78 v 7 h -3 q -5,0 -44,-11 -39,-11 -59,-11 -22,0 -32,13 -10,13 -11,28 -1,15 10,27 11,12 33,14 18,0 57,-10 39,-10 50,-13 -1,3 -1,11 0,8 -3,30 -3,22 -8,57 -11,72 -11,108 z"
+       id="MJX-97-TEX-N-2020-7" />
+    <path
+       d="m 73,647 q 0,10 4,23 4,13 12,13 1,0 72,5 71,5 73,6 12,0 12,-9 0,-9 -34,-143 -8,-34 -17,-70 -9,-36 -15,-54 l -4,-19 q 0,-3 6,3 49,40 101,40 62,0 100,-46 38,-46 39,-116 Q 422,169 343,79 264,-11 173,-11 123,-11 82,27 41,65 40,150 v 9 q 0,21 8,58 8,37 49,197 50,197 50,209 0,12 -38,14 -5,0 -8,0 h -5 q -10,0 -13,0 -3,0 -7,3 -4,3 -3,7 z M 336,325 v 6 q 0,74 -61,74 -17,0 -35,-8 -18,-8 -33,-21 -15,-13 -26,-24 -11,-11 -18,-22 l -6,-8 -21,-86 q -22,-86 -22,-122 0,-48 24,-72 16,-16 40,-16 33,0 67,32 25,23 40,56 15,33 33,105 18,72 18,106 z"
+       id="MJX-97-TEX-I-62-5" />
+    <path
+       d="m 16,1099 v 51 H 247 V -649 H 16 v 51 h 180 v 1697 z"
+       id="MJX-97-TEX-LO-5D-5" />
+    <path
+       d="m 247,-949 v 2399 h 269 v -62 H 309 V -887 h 207 v -62 z"
+       id="MJX-97-TEX-S3-5B-6" />
+    <path
+       d="m 84,237 q 0,0 0,13 0,13 14,20 h 581 q 15,-8 15,-20 0,-12 -15,-20 H 98 q -14,7 -14,20 z"
+       id="MJX-97-TEX-N-2212-6" />
+    <path
+       d="m 26,385 q -7,7 -7,10 0,4 3,16 3,12 5,14 2,5 9,5 7,0 51,1 h 53 l 19,80 q 3,11 7,29 4,18 7,26 3,8 6,20 3,12 8,17 5,5 10,12 5,7 14,9 9,2 18,2 18,-1 25,-11 7,-10 7,-19 0,-7 -9,-47 -9,-40 -20,-79 l -10,-37 q 0,-2 50,-2 h 51 q 7,-7 7,-11 0,-22 -13,-35 H 210 L 174,240 Q 135,80 135,68 q 0,-42 27,-42 35,0 68,34 33,34 53,84 2,6 5,7 3,1 15,2 h 4 q 15,0 15,-8 0,-3 -3,-12 Q 314,117 301,95 288,73 267,48 246,23 216,6 186,-11 155,-11 125,-11 98,4 71,19 59,56 57,64 57,83 v 18 l 35,140 q 35,141 36,142 0,2 -51,2 z"
+       id="MJX-97-TEX-I-74-8" />
+    <path
+       d="m 11,1388 v 62 H 280 V -949 H 11 v 62 h 207 v 2275 z"
+       id="MJX-97-TEX-S3-5D-5" />
+    <path
+       d="m 208,74 q 0,-24 46,-28 18,0 18,-11 0,-1 -2,-13 Q 267,8 264,4 261,0 251,0 249,0 239,0 229,0 205,1 181,2 141,2 70,2 50,0 h -8 q -7,7 -7,11 2,27 13,35 h 14 q 70,3 102,50 6,6 181,305 175,299 178,303 7,12 24,12 h 8 17 q 6,-9 6,-10 l 28,-323 q 28,-323 30,-326 5,-11 65,-11 25,0 25,-10 0,-2 -3,-14 Q 720,7 718,4 716,1 704,0 701,0 690,0 679,0 651,1 623,2 578,2 484,2 455,0 h -12 q -6,6 -6,9 0,3 2,18 4,13 6,16 l 4,3 h 20 q 54,3 64,17 L 521,213 H 283 L 249,155 Q 208,86 208,74 Z m 308,186 q 0,11 -12,156 -12,145 -14,146 L 463,519 Q 447,492 400,412 l -90,-152 103,-1 q 103,0 103,1 z"
+       id="MJX-97-TEX-I-41-1" />
+    <path
+       d="m 231,637 q -27,0 -32,1 -5,1 -5,11 0,27 11,33 1,1 130,1 259,0 273,-2 63,-10 105,-45 42,-35 43,-92 0,-64 -58,-115 -58,-51 -133,-69 l -10,-3 q 64,-9 105,-46 41,-37 42,-92 Q 702,146 630,78 558,10 453,1 446,0 242,0 42,0 39,2 q -4,3 -4,8 0,7 2,14 5,19 10,21 4,1 15,1 h 6 q 27,0 60,3 14,3 19,12 3,4 72,278 69,274 69,289 0,7 -57,9 z m 418,-93 q 0,30 -15,56 -15,26 -49,34 -7,2 -92,3 -20,0 -42,0 -22,0 -35,-1 h -13 q -15,-1 -19,-10 -2,-4 -32,-120 0,-3 -1,-6 L 320,374 h 81 q 81,0 93,2 60,10 107,58 47,48 48,110 z M 595,229 q 0,44 -23,73 -23,29 -60,34 -6,1 -83,1 -118,0 -119,-1 0,-2 -17,-73 -17,-71 -35,-141 L 240,52 q 0,-4 12,-4 12,0 81,-2 89,0 96,1 62,7 114,58 52,51 52,124 z"
+       id="MJX-97-TEX-I-42-4" />
+    <path
+       d="m 64,349 q 0,50 43,77 43,27 148,27 91,0 147,-30 56,-30 71,-82 5,-14 5,-31 0,-17 1,-114 V 77 q 14,-14 50,-15 20,0 24,-5 4,-5 5,-26 Q 558,9 552,5 546,1 514,0 H 497 481 Q 375,0 367,56 L 356,46 Q 300,-6 210,-6 130,-6 81,30 32,66 32,121 q 0,67 79,105 79,38 221,46 h 18 v 20 q 0,21 -2,35 -2,14 -11,34 -9,20 -31,30 -22,10 -58,11 -36,1 -54,-3 h -5 q 15,-23 15,-45 0,-27 -17,-48 -17,-21 -53,-22 -37,0 -53,21 -16,21 -17,44 z M 164,121 q 0,-32 22,-54 22,-22 52,-22 36,0 69,18 33,18 39,45 l 4,9 v 109 h -3 q -99,-8 -141,-37 -42,-29 -42,-68 z"
+       id="MJX-95-TEX-B-61" />
+    <path
+       d="m 213,578 -13,-5 q -14,-5 -40,-10 -26,-5 -58,-7 H 83 v 46 h 19 q 47,2 87,15 40,13 56,24 16,11 28,22 2,3 12,3 9,0 17,-6 V 361 l 1,-300 q 7,-7 12,-9 5,-2 24,-4 19,-2 62,-2 h 26 V 0 H 416 Q 395,3 257,3 121,3 100,0 H 88 v 46 h 26 q 22,0 38,0 16,0 25,1 9,1 16,3 7,2 8,2 1,0 6,5 5,5 6,4 z"
+       id="MJX-95-TEX-N-31" />
+    <path
+       d="m 56,347 q 0,13 14,20 h 637 q 15,-8 15,-20 0,-11 -14,-19 L 390,327 H 72 q -16,5 -16,20 z m 0,-194 q 0,15 16,20 h 636 q 14,-10 14,-20 0,-13 -15,-20 H 70 q -14,7 -14,20 z"
+       id="MJX-95-TEX-N-3D" />
+    <path
+       d="m 33,157 q 0,101 76,192 76,91 171,92 51,0 90,-49 16,30 46,30 13,0 23,-8 10,-8 10,-20 0,-13 -37,-160 -37,-147 -38,-166 0,-25 7,-33 7,-8 21,-9 9,1 20,9 21,20 41,96 6,20 10,21 2,1 10,1 h 4 q 19,0 19,-9 0,-6 -5,-27 Q 496,96 481,63 466,30 449,13 436,0 417,-8 q -8,-2 -24,-2 -34,0 -57,15 -23,15 -30,31 l -6,15 q -1,1 -4,-1 -2,-2 -4,-4 -59,-56 -120,-56 -55,0 -97,40 -42,40 -42,127 z m 318,171 q 0,6 -5,22 -5,16 -23,35 -18,19 -46,20 -35,0 -67,-31 -32,-31 -50,-81 -29,-79 -41,-164 0,-3 0,-11 0,-8 -1,-12 0,-45 18,-62 18,-17 43,-18 38,0 75,33 37,33 44,51 2,4 27,107 25,103 26,111 z"
+       id="MJX-95-TEX-I-61" />
+    <path
+       d="m 701,-940 q 0,-3 -6,-9 h -31 q -2,2 -28,27 -26,25 -45,43 -19,18 -54,61 -35,43 -62,81 -27,38 -63,101 -36,63 -62,125 -26,62 -55,149 -29,87 -45,176 -16,89 -29,203 -13,114 -12,234 0,711 364,1110 23,25 43,44 20,19 33,32 13,13 15,13 h 31 q 6,-6 6,-9 0,-5 -20,-26 -20,-21 -52,-59 -32,-38 -72,-95 -40,-57 -81,-143 -41,-86 -76,-191 -35,-105 -60,-252 -25,-147 -32,-316 -2,-38 -2,-109 0,-389 94,-680 94,-291 290,-494 11,-12 11,-16 z"
+       id="MJX-95-TEX-S3-28" />
+    <path
+       d="m 109,429 q -27,0 -43,18 -16,18 -16,44 0,71 53,123 53,52 132,52 91,0 152,-56 61,-56 62,-145 0,-43 -20,-82 -20,-39 -48,-68 -28,-29 -80,-74 -36,-31 -100,-92 l -59,-56 76,-1 q 157,0 167,5 7,2 24,89 v 3 h 40 v -3 Q 448,183 436,95 424,7 421,3 V 0 H 50 v 19 12 q 0,7 6,15 6,8 30,35 29,32 50,56 9,10 34,37 25,27 34,37 9,10 29,33 20,23 28,34 8,11 23,30 15,19 21,32 6,13 15,29 9,16 13,32 4,16 7,30 3,14 3,33 0,63 -34,109 -34,46 -97,46 -33,0 -58,-17 -25,-17 -35,-33 -10,-16 -10,-19 0,-1 5,-1 18,0 37,-14 19,-14 19,-46 0,-25 -16,-42 -16,-17 -45,-18 z"
+       id="MJX-95-TEX-N-32" />
+    <path
+       d="m 95,178 q -6,0 -14,8 -8,8 -9,14 -1,6 31,30 32,24 66,50 34,26 38,29 2,2 5,2 h 1 q 6,0 14,-17 8,-17 54,-117 19,-43 31,-69 l 85,-185 q 1,0 104,213 103,213 206,429 103,216 107,221 6,14 20,14 7,0 12,-6 5,-6 7,-12 v -6 L 620,293 385,-193 q -4,-7 -19,-7 -9,0 -12,3 -2,2 -98,212 L 160,225 144,214 Q 129,202 113,190 97,178 95,178 Z"
+       id="MJX-95-TEX-N-221A" />
+    <path
+       d="m 127,463 q -27,0 -42,17 -15,17 -16,44 0,55 48,98 48,43 116,43 35,0 44,-1 74,-12 113,-53 39,-41 40,-89 0,-52 -34,-101 -34,-49 -94,-71 l -3,-2 q 0,-1 9,-3 9,-2 29,-9 20,-7 38,-21 82,-53 82,-140 0,-79 -62,-138 -62,-59 -157,-59 -80,0 -138,43 -58,43 -58,109 0,28 18,45 18,17 45,18 28,0 46,-18 18,-18 18,-45 0,-11 -3,-20 -3,-9 -7,-16 -4,-7 -11,-12 -7,-5 -12,-8 -5,-3 -10,-4 -5,-1 -8,-3 l -4,-1 q 51,-45 124,-45 55,0 83,53 17,33 17,101 v 20 q 0,95 -64,127 -15,6 -61,7 l -42,1 -3,2 q -2,3 -2,16 0,18 8,18 28,0 58,5 34,5 62,42 28,37 28,112 v 8 q 0,57 -35,79 -22,14 -47,14 -32,0 -59,-11 -27,-11 -38,-23 -11,-12 -11,-12 h 3 q 3,-1 8,-2 5,-1 10,-5 5,-4 12,-7 7,-3 10,-11 3,-8 8,-15 5,-7 3,-20 0,-22 -14,-39 -14,-17 -45,-18 z"
+       id="MJX-95-TEX-N-33" />
+    <path
+       d="M 227,0 Q 212,3 121,3 40,3 28,0 h -7 v 62 h 96 L 245,213 109,382 H 26 v 62 h 8 q 15,-3 109,-3 104,0 122,3 h 9 v -62 h -28 l 35,-43 q 34,-42 35,-42 4,0 38,44 l 35,41 h -37 v 62 h 8 q 15,-3 106,-3 81,0 93,3 h 7 V 382 H 471 L 355,246 504,63 545,62 h 41 V 0 h -8 Q 563,3 469,3 365,3 347,0 h -9 v 62 h 28 q 0,1 -40,50 -40,49 -41,51 L 198,63 217,62 h 18 V 0 Z"
+       id="MJX-95-TEX-B-78" />
+    <path
+       d="m 112,560 137,134 8,-8 Q 387,562 387,560 l -26,-29 q -2,1 -58,50 l -53,46 -55,-47 q -13,-11 -26,-23 -13,-12 -21,-19 l -8,-6 q -2,-2 -15,14 z"
+       id="MJX-95-TEX-N-5E" />
+    <path
+       d="m 56,237 q 0,0 0,13 0,13 14,20 h 299 v 150 l 1,150 q 10,13 19,13 13,0 20,-15 V 270 h 298 q 15,-8 15,-20 0,-12 -15,-20 H 409 V -68 q -8,-14 -18,-14 h -2 -2 q -12,0 -18,14 V 230 H 70 q -14,7 -14,20 z"
+       id="MJX-95-TEX-N-2B" />
+    <path
+       d="m 84,-102 q 0,-8 3,-17 3,-9 15,-19 12,-10 31,-11 15,1 29,6 14,5 24,12 10,7 20,17 10,10 16,19 6,9 12,19 6,10 9,17 3,7 6,14 3,7 3,8 L 269,0 96,382 H 26 v 62 h 8 q 15,-3 112,-3 106,0 124,3 h 9 v -62 h -24 q -23,0 -23,-2 L 337,151 442,382 h -48 v 62 h 7 q 12,-3 94,-3 73,0 79,3 h 6 V 382 H 510 L 406,152 Q 298,-84 297,-87 q -28,-52 -72,-82 -44,-30 -94,-31 -46,0 -77,28 -31,28 -31,72 0,36 21,50 21,14 43,15 24,0 43,-15 19,-15 22,-42 v -8 H 84 Z"
+       id="MJX-95-TEX-B-79" />
+    <path
+       d="m 34,1438 q 0,8 3,10 3,2 13,2 h 6 15 q 2,-2 28,-27 26,-25 45,-43 19,-18 54,-61 35,-43 62,-81 27,-38 63,-101 36,-63 62,-124 26,-61 55,-149 29,-88 45,-176 16,-88 29,-203 13,-115 12,-234 0,-117 -7,-198 -47,-572 -357,-913 -23,-25 -43,-44 -20,-19 -33,-32 -13,-13 -15,-13 H 56 q -13,0 -17,2 -4,2 -5,10 54,54 106,124 288,383 288,1064 0,202 -26,377 -26,175 -64,294 -38,119 -93,224 -55,105 -100,163 -45,58 -99,116 -2,2 -4,4 -2,2 -3,4 -1,2 -3,3 z"
+       id="MJX-95-TEX-S3-29" />
+    <path
+       d="m 84,237 q 0,0 0,13 0,13 14,20 h 581 q 15,-8 15,-20 0,-12 -15,-20 H 98 q -14,7 -14,20 z"
+       id="MJX-95-TEX-N-2212" />
+    <path
+       d="m 132,-11 q -34,0 -34,33 v 11 l 13,28 q 75,158 109,273 l 8,24 h -32 q -38,0 -54,-3 -16,-3 -39,-19 -11,-7 -22,-18 -11,-11 -19,-21 -8,-10 -9,-12 -2,-1 -15,-1 -19,0 -19,10 0,6 19,35 19,29 55,62 36,33 71,38 7,2 225,2 160,0 164,-1 20,-7 20,-28 0,-31 -32,-42 -6,-2 -69,-2 h -64 l -3,-17 q -12,-72 -12,-119 0,-52 9,-93 9,-41 19,-64 10,-23 10,-28 0,-17 -14,-32 -14,-15 -36,-15 -11,0 -18,3 -7,3 -16,24 -9,21 -16,60 -1,9 -1,44 0,49 9,105 9,56 18,92 9,36 10,40 h -98 l -1,-4 q 0,-3 -19,-79 Q 230,199 206,114 182,29 175,17 164,-11 132,-11 Z"
+       id="MJX-97-TEX-I-3C0-53" />
+    <path
+       d=""
+       id="MJX-97-TEX-N-A0-3" />
+    <path
+       d="m 64,349 q 0,50 43,77 43,27 148,27 91,0 147,-30 56,-30 71,-82 5,-14 5,-31 0,-17 1,-114 V 77 q 14,-14 50,-15 20,0 24,-5 4,-5 5,-26 Q 558,9 552,5 546,1 514,0 H 497 481 Q 375,0 367,56 L 356,46 Q 300,-6 210,-6 130,-6 81,30 32,66 32,121 q 0,67 79,105 79,38 221,46 h 18 v 20 q 0,21 -2,35 -2,14 -11,34 -9,20 -31,30 -22,10 -58,11 -36,1 -54,-3 h -5 q 15,-23 15,-45 0,-27 -17,-48 -17,-21 -53,-22 -37,0 -53,21 -16,21 -17,44 z M 164,121 q 0,-32 22,-54 22,-22 52,-22 36,0 69,18 33,18 39,45 l 4,9 v 109 h -3 q -99,-8 -141,-37 -42,-29 -42,-68 z"
+       id="MJX-97-TEX-B-61-8" />
+    <path
+       d="m 213,578 -13,-5 q -14,-5 -40,-10 -26,-5 -58,-7 H 83 v 46 h 19 q 47,2 87,15 40,13 56,24 16,11 28,22 2,3 12,3 9,0 17,-6 V 361 l 1,-300 q 7,-7 12,-9 5,-2 24,-4 19,-2 62,-2 h 26 V 0 H 416 Q 395,3 257,3 121,3 100,0 H 88 v 46 h 26 q 22,0 38,0 16,0 25,1 9,1 16,3 7,2 8,2 1,0 6,5 5,5 6,4 z"
+       id="MJX-97-TEX-N-31-1" />
+    <path
+       d="m 56,347 q 0,13 14,20 h 637 q 15,-8 15,-20 0,-11 -14,-19 L 390,327 H 72 q -16,5 -16,20 z m 0,-194 q 0,15 16,20 h 636 q 14,-10 14,-20 0,-13 -15,-20 H 70 q -14,7 -14,20 z"
+       id="MJX-97-TEX-N-3D-4" />
+    <path
+       d="m 33,157 q 0,101 76,192 76,91 171,92 51,0 90,-49 16,30 46,30 13,0 23,-8 10,-8 10,-20 0,-13 -37,-160 -37,-147 -38,-166 0,-25 7,-33 7,-8 21,-9 9,1 20,9 21,20 41,96 6,20 10,21 2,1 10,1 h 4 q 19,0 19,-9 0,-6 -5,-27 Q 496,96 481,63 466,30 449,13 436,0 417,-8 q -8,-2 -24,-2 -34,0 -57,15 -23,15 -30,31 l -6,15 q -1,1 -4,-1 -2,-2 -4,-4 -59,-56 -120,-56 -55,0 -97,40 -42,40 -42,127 z m 318,171 q 0,6 -5,22 -5,16 -23,35 -18,19 -46,20 -35,0 -67,-31 -32,-31 -50,-81 -29,-79 -41,-164 0,-3 0,-11 0,-8 -1,-12 0,-45 18,-62 18,-17 43,-18 38,0 75,33 37,33 44,51 2,4 27,107 25,103 26,111 z"
+       id="MJX-97-TEX-I-61-3" />
+    <path
+       d="M 227,0 Q 212,3 121,3 40,3 28,0 h -7 v 62 h 96 L 245,213 109,382 H 26 v 62 h 8 q 15,-3 109,-3 104,0 122,3 h 9 v -62 h -28 l 35,-43 q 34,-42 35,-42 4,0 38,44 l 35,41 h -37 v 62 h 8 q 15,-3 106,-3 81,0 93,3 h 7 V 382 H 471 L 355,246 504,63 545,62 h 41 V 0 h -8 Q 563,3 469,3 365,3 347,0 h -9 v 62 h 28 q 0,1 -40,50 -40,49 -41,51 L 198,63 217,62 h 18 V 0 Z"
+       id="MJX-97-TEX-B-78-6" />
+    <path
+       d="m 112,560 137,134 8,-8 Q 387,562 387,560 l -26,-29 q -2,1 -58,50 l -53,46 -55,-47 q -13,-11 -26,-23 -13,-12 -21,-19 l -8,-6 q -2,-2 -15,14 z"
+       id="MJX-97-TEX-N-5E-43" />
+    <path
+       d="m 109,429 q -27,0 -43,18 -16,18 -16,44 0,71 53,123 53,52 132,52 91,0 152,-56 61,-56 62,-145 0,-43 -20,-82 -20,-39 -48,-68 -28,-29 -80,-74 -36,-31 -100,-92 l -59,-56 76,-1 q 157,0 167,5 7,2 24,89 v 3 h 40 v -3 Q 448,183 436,95 424,7 421,3 V 0 H 50 v 19 12 q 0,7 6,15 6,8 30,35 29,32 50,56 9,10 34,37 25,27 34,37 9,10 29,33 20,23 28,34 8,11 23,30 15,19 21,32 6,13 15,29 9,16 13,32 4,16 7,30 3,14 3,33 0,63 -34,109 -34,46 -97,46 -33,0 -58,-17 -25,-17 -35,-33 -10,-16 -10,-19 0,-1 5,-1 18,0 37,-14 19,-14 19,-46 0,-25 -16,-42 -16,-17 -45,-18 z"
+       id="MJX-97-TEX-N-32-37" />
+    <path
+       d="m 84,-102 q 0,-8 3,-17 3,-9 15,-19 12,-10 31,-11 15,1 29,6 14,5 24,12 10,7 20,17 10,10 16,19 6,9 12,19 6,10 9,17 3,7 6,14 3,7 3,8 L 269,0 96,382 H 26 v 62 h 8 q 15,-3 112,-3 106,0 124,3 h 9 v -62 h -24 q -23,0 -23,-2 L 337,151 442,382 h -48 v 62 h 7 q 12,-3 94,-3 73,0 79,3 h 6 V 382 H 510 L 406,152 Q 298,-84 297,-87 q -28,-52 -72,-82 -44,-30 -94,-31 -46,0 -77,28 -31,28 -31,72 0,36 21,50 21,14 43,15 24,0 43,-15 19,-15 22,-42 v -8 H 84 Z"
+       id="MJX-97-TEX-B-79-50" />
+    <path
+       d="m 228,637 q -34,0 -36,4 -1,2 -1,8 0,24 11,33 2,1 17,1 41,-2 136,-2 34,0 63,0 29,0 45,1 16,1 20,0 16,0 16,-10 0,-2 -2,-14 -5,-17 -10,-20 h -2 q -2,0 -5,0 -3,0 -7,0 -4,0 -9,-1 -5,-1 -9,0 -39,-1 -50,-3 -11,-2 -18,-11 -3,-4 -32,-123 -7,-26 -15,-58 -8,-32 -12,-47 l -4,-15 q 0,-2 145,-2 h 145 l 1,3 q 0,3 31,123 28,115 28,123 0,8 -57,10 -23,0 -30,2 -7,2 -7,9 0,2 2,12 4,17 6,19 2,2 16,3 5,0 42,-1 37,-1 94,-1 62,0 95,1 33,1 36,1 17,0 17,-10 0,-27 -12,-34 h -2 q -2,0 -5,0 -3,0 -7,0 -4,0 -9,-1 -5,-1 -9,0 -39,-1 -50,-3 -11,-2 -18,-11 -3,-5 -72,-283 -69,-278 -70,-282 0,-7 4,-7 8,-3 54,-5 h 31 q 6,-8 6,-9 0,-1 -3,-18 Q 722,6 716,0 h -15 q -37,2 -134,2 -34,0 -63,0 -29,0 -46,0 -17,0 -21,-1 -17,0 -17,9 0,5 3,14 5,19 10,21 4,1 15,1 h 6 q 27,0 60,3 6,1 8,1 2,0 6,5 4,5 6,9 2,4 6,18 4,14 7,28 3,14 11,43 7,28 11,45 33,132 33,133 0,1 -145,1 H 312 L 279,197 Q 245,63 245,58 q 0,-7 8,-9 8,-2 50,-3 h 31 q 6,-8 6,-9 0,-1 -3,-18 Q 333,6 327,0 H 312 Q 275,2 178,2 144,2 115,2 86,2 69,2 52,2 48,1 31,1 31,10 q 0,2 3,14 5,19 10,21 4,1 15,1 h 6 q 27,0 60,3 14,3 19,12 3,4 72,278 69,274 69,289 0,7 -57,9 z"
+       id="MJX-97-TEX-I-48-2" />
+    <path
+       d="m 21,287 q 1,3 2,8 1,5 5,22 4,17 10,31 6,14 15,33 9,19 20,30 11,11 26,22 15,11 33,9 29,0 51,-12 22,-12 31,-22 9,-10 11,-20 2,-6 3,-6 1,0 8,7 48,52 111,52 h 3 q 48,0 72,-41 8,-19 8,-37 0,-30 -13,-48 -13,-18 -26,-23 -13,-5 -25,-4 -20,0 -32,11 -12,11 -12,29 0,48 56,64 -22,13 -36,13 -56,0 -103,-74 Q 229,315 224,298 219,281 190,165 156,25 151,16 138,-11 108,-11 95,-11 87,-5 79,1 76,7 q -3,6 -2,10 0,13 40,172 40,159 40,177 0,39 -26,39 -21,0 -36,-28 Q 77,349 68,316 59,283 57,280 55,278 41,278 H 27 q -6,6 -6,9 z"
+       id="MJX-97-TEX-I-72-3" />
+    <path
+       d="m 60,948 q 3,2 605,2 h 602 l 58,-135 q 59,-138 63,-146 h -40 l -7,14 q -21,41 -56,78 -50,48 -111,77 -61,29 -141,43 -80,14 -151,17 -71,3 -183,4 H 574 543 251 l 8,-11 q 463,-633 465,-639 1,-2 0,-6 -3,-3 -264,-302 L 196,-356 q 0,-1 211,-1 52,0 141,0 89,0 128,-1 136,0 220,5 84,5 167,21 83,16 141,49 58,33 103,87 21,26 41,72 h 40 q 0,-1 -7,-21 -7,-20 -25,-65 -18,-45 -31,-84 l -58,-155 -601,-1 q -602,0 -605,2 -6,2 -6,9 0,2 2,6 l 533,610 q 0,1 -33,45 -33,44 -105,144 -72,100 -130,178 L 56,909 55,924 q 0,21 5,24 z"
+       id="MJX-97-TEX-LO-2211-3" />
+    <path
+       d="m 694,-11 q 0,0 0,-8 0,-8 -6,-14 -6,-6 -10,-7 -7,0 -154,69 Q 377,98 234,166 L 90,235 q -7,5 -7,15 0,11 8,16 573,274 587,274 3,0 9,-6 6,-6 7,-15 1,-9 -7,-14 -1,-1 -270,-129 L 151,250 417,124 Q 686,-4 687,-5 q 7,-6 7,-14 z"
+       id="MJX-97-TEX-N-3C-2" />
+    <path
+       d="m 184,600 q 0,24 19,42 19,18 44,19 18,0 30,-12 12,-12 13,-30 0,-23 -20,-42 -20,-19 -44,-20 -15,0 -28,10 -13,10 -14,33 z M 21,287 q 0,8 9,31 9,23 24,51 15,28 44,51 29,23 60,22 39,0 65,-23 26,-23 27,-62 0,-17 -14,-56 -14,-39 -40,-105 -26,-66 -42,-113 -5,-22 -5,-32 0,-25 17,-25 9,0 19,3 10,3 23,14 13,11 27,35 14,24 25,59 3,12 5,14 2,2 17,2 20,0 20,-10 0,-8 -9,-31 -9,-23 -25,-51 -16,-28 -45,-50 -29,-22 -62,-22 -32,0 -59,21 -27,21 -28,64 0,17 5,32 5,15 43,114 38,101 44,121 6,20 7,39 0,24 -17,24 h -2 q -30,0 -55,-33 -25,-33 -38,-84 -1,-1 -2,-3 -1,-2 -1,-3 0,-1 -2,-2 -2,-1 -3,-1 -1,0 -4,0 -3,0 -8,0 H 27 q -6,6 -6,9 z"
+       id="MJX-97-TEX-I-69-8" />
+    <path
+       d="m 297,596 q 0,31 21,48 21,17 43,17 17,0 28,-10 11,-10 14,-28 0,-28 -19,-47 -19,-19 -44,-19 -18,0 -30,10 -12,10 -13,29 z m -9,-220 q 0,29 -26,29 -22,0 -42,-12 -20,-12 -35,-31 -15,-19 -24,-37 -9,-18 -17,-32 l -7,-14 q -2,-1 -16,-1 h -14 q -6,6 -6,8 0,2 4,13 21,49 59,92 38,43 88,50 1,0 8,0 7,0 12,1 24,-1 44,-10 25,-14 38,-31 13,-17 13,-53 V 332 L 318,133 q -51,-200 -54,-208 -18,-50 -70,-89 -52,-39 -119,-40 -50,0 -68,21 -18,21 -19,46 0,27 19,46 19,19 46,20 17,0 29,-10 12,-10 13,-31 0,-36 -32,-55 6,-1 14,-1 34,0 62,28 28,28 43,66 l 11,42 q 11,43 26,104 15,61 32,125 17,64 27,111 10,47 11,57 0,7 -1,11 z"
+       id="MJX-97-TEX-I-6A-0" />
+    <path
+       d="m 84,520 q 0,8 4,13 4,5 8,6 l 3,1 q 7,0 154,-69 147,-69 291,-137 l 143,-69 q 7,-5 7,-15 0,-10 -7,-15 -2,-2 -292,-139 L 107,-40 h -6 q -18,2 -18,20 0,1 0,3 -1,7 15,16 19,10 150,72 78,37 130,61 L 626,250 378,368 Q 90,504 86,509 q -2,4 -2,11 z"
+       id="MJX-97-TEX-N-3E-5" />
+    <path
+       d="m 224,-649 v 1799 h 231 v -51 H 275 V -598 h 180 v -51 z"
+       id="MJX-97-TEX-LO-5B-6" />
+    <path
+       d="m 182,675 q 13,30 40,30 12,0 21,-5 9,-5 10,-9 1,-4 10,-16 l -1,-20 q 0,-35 -10,-106 -10,-71 -12,-95 v -5 q 10,2 48,12 38,10 58,11 20,1 31,-11 11,-12 12,-30 0,-14 -10,-27 -10,-13 -33,-14 -19,0 -58,11 -39,11 -45,11 h -3 v -7 q 5,-38 10,-66 5,-28 8,-38 3,-10 3,-27 0,-17 2,-49 0,-101 -8,-266 -8,-165 -16,-172 -3,-3 -17,-3 h -5 q -11,0 -13,4 -2,4 -4,26 -1,11 -1,18 -18,206 -18,393 0,40 1,55 1,15 9,47 8,32 13,78 v 7 h -3 q -5,0 -44,-11 -39,-11 -59,-11 -22,0 -32,13 -10,13 -11,28 -1,15 10,27 11,12 33,14 18,0 57,-10 39,-10 50,-13 -1,3 -1,11 0,8 -3,30 -3,22 -8,57 -11,72 -11,108 z"
+       id="MJX-97-TEX-N-2020-8" />
+    <path
+       d="m 73,647 q 0,10 4,23 4,13 12,13 1,0 72,5 71,5 73,6 12,0 12,-9 0,-9 -34,-143 -8,-34 -17,-70 -9,-36 -15,-54 l -4,-19 q 0,-3 6,3 49,40 101,40 62,0 100,-46 38,-46 39,-116 Q 422,169 343,79 264,-11 173,-11 123,-11 82,27 41,65 40,150 v 9 q 0,21 8,58 8,37 49,197 50,197 50,209 0,12 -38,14 -5,0 -8,0 h -5 q -10,0 -13,0 -3,0 -7,3 -4,3 -3,7 z M 336,325 v 6 q 0,74 -61,74 -17,0 -35,-8 -18,-8 -33,-21 -15,-13 -26,-24 -11,-11 -18,-22 l -6,-8 -21,-86 q -22,-86 -22,-122 0,-48 24,-72 16,-16 40,-16 33,0 67,32 25,23 40,56 15,33 33,105 18,72 18,106 z"
+       id="MJX-97-TEX-I-62-3" />
+    <path
+       d="m 16,1099 v 51 H 247 V -649 H 16 v 51 h 180 v 1697 z"
+       id="MJX-97-TEX-LO-5D-7" />
+    <path
+       d="m 247,-949 v 2399 h 269 v -62 H 309 V -887 h 207 v -62 z"
+       id="MJX-97-TEX-S3-5B-0" />
+    <path
+       d="m 84,237 q 0,0 0,13 0,13 14,20 h 581 q 15,-8 15,-20 0,-12 -15,-20 H 98 q -14,7 -14,20 z"
+       id="MJX-97-TEX-N-2212-69" />
+    <path
+       d="m 26,385 q -7,7 -7,10 0,4 3,16 3,12 5,14 2,5 9,5 7,0 51,1 h 53 l 19,80 q 3,11 7,29 4,18 7,26 3,8 6,20 3,12 8,17 5,5 10,12 5,7 14,9 9,2 18,2 18,-1 25,-11 7,-10 7,-19 0,-7 -9,-47 -9,-40 -20,-79 l -10,-37 q 0,-2 50,-2 h 51 q 7,-7 7,-11 0,-22 -13,-35 H 210 L 174,240 Q 135,80 135,68 q 0,-42 27,-42 35,0 68,34 33,34 53,84 2,6 5,7 3,1 15,2 h 4 q 15,0 15,-8 0,-3 -3,-12 Q 314,117 301,95 288,73 267,48 246,23 216,6 186,-11 155,-11 125,-11 98,4 71,19 59,56 57,64 57,83 v 18 l 35,140 q 35,141 36,142 0,2 -51,2 z"
+       id="MJX-97-TEX-I-74-5" />
+    <path
+       d="m 11,1388 v 62 H 280 V -949 H 11 v 62 h 207 v 2275 z"
+       id="MJX-97-TEX-S3-5D-8" />
+    <path
+       d="m 208,74 q 0,-24 46,-28 18,0 18,-11 0,-1 -2,-13 Q 267,8 264,4 261,0 251,0 249,0 239,0 229,0 205,1 181,2 141,2 70,2 50,0 h -8 q -7,7 -7,11 2,27 13,35 h 14 q 70,3 102,50 6,6 181,305 175,299 178,303 7,12 24,12 h 8 17 q 6,-9 6,-10 l 28,-323 q 28,-323 30,-326 5,-11 65,-11 25,0 25,-10 0,-2 -3,-14 Q 720,7 718,4 716,1 704,0 701,0 690,0 679,0 651,1 623,2 578,2 484,2 455,0 h -12 q -6,6 -6,9 0,3 2,18 4,13 6,16 l 4,3 h 20 q 54,3 64,17 L 521,213 H 283 L 249,155 Q 208,86 208,74 Z m 308,186 q 0,11 -12,156 -12,145 -14,146 L 463,519 Q 447,492 400,412 l -90,-152 103,-1 q 103,0 103,1 z"
+       id="MJX-97-TEX-I-41-2" />
+    <path
+       d="m 231,637 q -27,0 -32,1 -5,1 -5,11 0,27 11,33 1,1 130,1 259,0 273,-2 63,-10 105,-45 42,-35 43,-92 0,-64 -58,-115 -58,-51 -133,-69 l -10,-3 q 64,-9 105,-46 41,-37 42,-92 Q 702,146 630,78 558,10 453,1 446,0 242,0 42,0 39,2 q -4,3 -4,8 0,7 2,14 5,19 10,21 4,1 15,1 h 6 q 27,0 60,3 14,3 19,12 3,4 72,278 69,274 69,289 0,7 -57,9 z m 418,-93 q 0,30 -15,56 -15,26 -49,34 -7,2 -92,3 -20,0 -42,0 -22,0 -35,-1 h -13 q -15,-1 -19,-10 -2,-4 -32,-120 0,-3 -1,-6 L 320,374 h 81 q 81,0 93,2 60,10 107,58 47,48 48,110 z M 595,229 q 0,44 -23,73 -23,29 -60,34 -6,1 -83,1 -118,0 -119,-1 0,-2 -17,-73 -17,-71 -35,-141 L 240,52 q 0,-4 12,-4 12,0 81,-2 89,0 96,1 62,7 114,58 52,51 52,124 z"
+       id="MJX-97-TEX-I-42-49" />
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker2222-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path2220-9" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker14731-1"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path14729-5"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(0.6)" />
+    </marker>
+    <path
+       d="m 32,225 q 0,107 70,167 70,60 170,60 h 11 q 99,0 153,-51 58,-58 58,-158 0,-17 -8,-21 -8,-4 -46,-5 -9,0 -46,0 -37,0 -67,1 H 175 v -9 q 0,-32 4,-55 4,-23 17,-47 13,-24 40,-38 27,-14 70,-19 6,-1 17,-1 53,0 87,36 11,14 17,26 6,12 7,16 1,4 8,6 7,2 21,2 h 5 q 26,0 26,-18 0,-7 -5,-20 Q 484,84 468,66 452,48 431,32 410,16 373,5 336,-6 292,-6 181,-6 107,55 33,116 32,225 Z m 351,51 q -6,70 -35,98 -29,28 -68,28 -27,0 -50,-12 -23,-12 -35,-33 -16,-26 -19,-78 v -13 h 207 z"
+       id="MJX-11-TEX-B-65" />
+    <path
+       d="m 112,560 137,134 8,-8 Q 387,562 387,560 l -26,-29 q -2,1 -58,50 l -53,46 -55,-47 q -13,-11 -26,-23 -13,-12 -21,-19 l -8,-6 q -2,-2 -15,14 z"
+       id="MJX-11-TEX-N-5E" />
+    <path
+       d="m 184,600 q 0,24 19,42 19,18 44,19 18,0 30,-12 12,-12 13,-30 0,-23 -20,-42 -20,-19 -44,-20 -15,0 -28,10 -13,10 -14,33 z M 21,287 q 0,8 9,31 9,23 24,51 15,28 44,51 29,23 60,22 39,0 65,-23 26,-23 27,-62 0,-17 -14,-56 -14,-39 -40,-105 -26,-66 -42,-113 -5,-22 -5,-32 0,-25 17,-25 9,0 19,3 10,3 23,14 13,11 27,35 14,24 25,59 3,12 5,14 2,2 17,2 20,0 20,-10 0,-8 -9,-31 -9,-23 -25,-51 -16,-28 -45,-50 -29,-22 -62,-22 -32,0 -59,21 -27,21 -28,64 0,17 5,32 5,15 43,114 38,101 44,121 6,20 7,39 0,24 -17,24 h -2 q -30,0 -55,-33 -25,-33 -38,-84 -1,-1 -2,-3 -1,-2 -1,-3 0,-1 -2,-2 -2,-1 -3,-1 -1,0 -4,0 -3,0 -8,0 H 27 q -6,6 -6,9 z"
+       id="MJX-11-TEX-I-69" />
+    <path
+       d="m 297,596 q 0,31 21,48 21,17 43,17 17,0 28,-10 11,-10 14,-28 0,-28 -19,-47 -19,-19 -44,-19 -18,0 -30,10 -12,10 -13,29 z m -9,-220 q 0,29 -26,29 -22,0 -42,-12 -20,-12 -35,-31 -15,-19 -24,-37 -9,-18 -17,-32 l -7,-14 q -2,-1 -16,-1 h -14 q -6,6 -6,8 0,2 4,13 21,49 59,92 38,43 88,50 1,0 8,0 7,0 12,1 24,-1 44,-10 25,-14 38,-31 13,-17 13,-53 V 332 L 318,133 q -51,-200 -54,-208 -18,-50 -70,-89 -52,-39 -119,-40 -50,0 -68,21 -18,21 -19,46 0,27 19,46 19,19 46,20 17,0 29,-10 12,-10 13,-31 0,-36 -32,-55 6,-1 14,-1 34,0 62,28 28,28 43,66 l 11,42 q 11,43 26,104 15,61 32,125 17,64 27,111 10,47 11,57 0,7 -1,11 z"
+       id="MJX-11-TEX-I-6A" />
+    <path
+       d="m 32,225 q 0,107 70,167 70,60 170,60 h 11 q 99,0 153,-51 58,-58 58,-158 0,-17 -8,-21 -8,-4 -46,-5 -9,0 -46,0 -37,0 -67,1 H 175 v -9 q 0,-32 4,-55 4,-23 17,-47 13,-24 40,-38 27,-14 70,-19 6,-1 17,-1 53,0 87,36 11,14 17,26 6,12 7,16 1,4 8,6 7,2 21,2 h 5 q 26,0 26,-18 0,-7 -5,-20 Q 484,84 468,66 452,48 431,32 410,16 373,5 336,-6 292,-6 181,-6 107,55 33,116 32,225 Z m 351,51 q -6,70 -35,98 -29,28 -68,28 -27,0 -50,-12 -23,-12 -35,-33 -16,-26 -19,-78 v -13 h 207 z"
+       id="MJX-18-TEX-B-65" />
+    <path
+       d="m 112,560 137,134 8,-8 Q 387,562 387,560 l -26,-29 q -2,1 -58,50 l -53,46 -55,-47 q -13,-11 -26,-23 -13,-12 -21,-19 l -8,-6 q -2,-2 -15,14 z"
+       id="MJX-18-TEX-N-5E" />
+    <path
+       d="m 184,600 q 0,24 19,42 19,18 44,19 18,0 30,-12 12,-12 13,-30 0,-23 -20,-42 -20,-19 -44,-20 -15,0 -28,10 -13,10 -14,33 z M 21,287 q 0,8 9,31 9,23 24,51 15,28 44,51 29,23 60,22 39,0 65,-23 26,-23 27,-62 0,-17 -14,-56 -14,-39 -40,-105 -26,-66 -42,-113 -5,-22 -5,-32 0,-25 17,-25 9,0 19,3 10,3 23,14 13,11 27,35 14,24 25,59 3,12 5,14 2,2 17,2 20,0 20,-10 0,-8 -9,-31 -9,-23 -25,-51 -16,-28 -45,-50 -29,-22 -62,-22 -32,0 -59,21 -27,21 -28,64 0,17 5,32 5,15 43,114 38,101 44,121 6,20 7,39 0,24 -17,24 h -2 q -30,0 -55,-33 -25,-33 -38,-84 -1,-1 -2,-3 -1,-2 -1,-3 0,-1 -2,-2 -2,-1 -3,-1 -1,0 -4,0 -3,0 -8,0 H 27 q -6,6 -6,9 z"
+       id="MJX-18-TEX-I-69" />
+    <path
+       d="m 297,596 q 0,31 21,48 21,17 43,17 17,0 28,-10 11,-10 14,-28 0,-28 -19,-47 -19,-19 -44,-19 -18,0 -30,10 -12,10 -13,29 z m -9,-220 q 0,29 -26,29 -22,0 -42,-12 -20,-12 -35,-31 -15,-19 -24,-37 -9,-18 -17,-32 l -7,-14 q -2,-1 -16,-1 h -14 q -6,6 -6,8 0,2 4,13 21,49 59,92 38,43 88,50 1,0 8,0 7,0 12,1 24,-1 44,-10 25,-14 38,-31 13,-17 13,-53 V 332 L 318,133 q -51,-200 -54,-208 -18,-50 -70,-89 -52,-39 -119,-40 -50,0 -68,21 -18,21 -19,46 0,27 19,46 19,19 46,20 17,0 29,-10 12,-10 13,-31 0,-36 -32,-55 6,-1 14,-1 34,0 62,28 28,28 43,66 l 11,42 q 11,43 26,104 15,61 32,125 17,64 27,111 10,47 11,57 0,7 -1,11 z"
+       id="MJX-18-TEX-I-6A" />
+    <path
+       d="m 56,347 q 0,13 14,20 h 637 q 15,-8 15,-20 0,-11 -14,-19 L 390,327 H 72 q -16,5 -16,20 z m 0,-194 q 0,15 16,20 h 636 q 14,-10 14,-20 0,-13 -15,-20 H 70 q -14,7 -14,20 z"
+       id="MJX-18-TEX-N-3D" />
+    <path
+       d="m 351,686 91,4 q 91,4 92,4 h 6 V 389 q 0,-62 0,-136 0,-74 -1,-90 0,-66 2,-80 2,-14 14,-17 14,-4 41,-4 h 13 V 31 q 0,-31 -1,-31 -20,0 -98,-3 -78,-3 -98,-3 -1,0 -1,22 V 38 L 401,31 Q 337,-6 265,-6 159,-6 99,58 39,122 38,224 q 0,41 13,79 13,38 41,72 28,34 73,54 45,20 107,20 87,0 145,-37 v 95 48 q 0,42 -2,52 -2,10 -13,13 -14,4 -41,4 h -13 v 62 z m 60,-336 q -49,49 -120,49 -13,0 -35,-7 -22,-7 -38,-21 -23,-20 -29,-51 -6,-31 -7,-82 v -17 q 0,-42 1,-62 1,-20 8,-44 7,-24 21,-41 29,-28 76,-28 70,0 116,54 l 7,9 z"
+       id="MJX-18-TEX-B-64" />
+    <path
+       d="m 213,578 -13,-5 q -14,-5 -40,-10 -26,-5 -58,-7 H 83 v 46 h 19 q 47,2 87,15 40,13 56,24 16,11 28,22 2,3 12,3 9,0 17,-6 V 361 l 1,-300 q 7,-7 12,-9 5,-2 24,-4 19,-2 62,-2 h 26 V 0 H 416 Q 395,3 257,3 121,3 100,0 H 88 v 46 h 26 q 22,0 38,0 16,0 25,1 9,1 16,3 7,2 8,2 1,0 6,5 5,5 6,4 z"
+       id="MJX-18-TEX-N-31" />
+    <path
+       d="M 630,29 Q 630,9 609,9 604,9 587,25 570,41 493,118 L 389,222 284,117 Q 178,13 175,11 q -4,-2 -7,-2 -8,0 -14,6 -6,6 -7,14 0,7 14,22 14,15 94,95 L 359,250 255,354 q -81,81 -94,95 -13,14 -14,22 0,9 6,14 6,5 15,5 5,0 7,-1 3,-2 109,-106 L 389,278 493,382 q 77,77 94,93 17,16 22,16 21,0 21,-20 0,-7 -10,-18 -10,-11 -98,-98 L 418,250 522,145 q 84,-84 96,-97 12,-13 12,-19 z"
+       id="MJX-18-TEX-N-D7" />
+    <path
+       d="m 109,429 q -27,0 -43,18 -16,18 -16,44 0,71 53,123 53,52 132,52 91,0 152,-56 61,-56 62,-145 0,-43 -20,-82 -20,-39 -48,-68 -28,-29 -80,-74 -36,-31 -100,-92 l -59,-56 76,-1 q 157,0 167,5 7,2 24,89 v 3 h 40 v -3 Q 448,183 436,95 424,7 421,3 V 0 H 50 v 19 12 q 0,7 6,15 6,8 30,35 29,32 50,56 9,10 34,37 25,27 34,37 9,10 29,33 20,23 28,34 8,11 23,30 15,19 21,32 6,13 15,29 9,16 13,32 4,16 7,30 3,14 3,33 0,63 -34,109 -34,46 -97,46 -33,0 -58,-17 -25,-17 -35,-33 -10,-16 -10,-19 0,-1 5,-1 18,0 37,-14 19,-14 19,-46 0,-25 -16,-42 -16,-17 -45,-18 z"
+       id="MJX-18-TEX-N-32" />
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker14731-1-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart">
+      <path
+         transform="scale(0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path14729-5-1" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow1Mend-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1305-0" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow1Mend-1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1305-3" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="131.46078"
+     inkscape:cy="192.33439"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:object-nodes="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1046"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     fit-margin-top="3"
+     lock-margins="true"
+     fit-margin-left="3"
+     fit-margin-right="3"
+     fit-margin-bottom="3"
+     inkscape:snap-global="true">
+    <sodipodi:guide
+       position="-117.98866,78.4168"
+       orientation="0,-1"
+       id="guide858" />
+    <sodipodi:guide
+       position="-82.174548,53.293468"
+       orientation="0,-1"
+       id="guide860" />
+    <sodipodi:guide
+       position="-123.60132,28.437398"
+       orientation="0,-1"
+       id="guide862" />
+    <sodipodi:guide
+       position="23.129643,-9.2476098"
+       orientation="1,0"
+       id="guide864" />
+    <sodipodi:guide
+       position="47.985704,-3.9022208"
+       orientation="1,0"
+       id="guide866" />
+    <sodipodi:guide
+       position="72.841772,-23.94743"
+       orientation="1,0"
+       id="guide868" />
+    <sodipodi:guide
+       position="47.982694,40.890997"
+       orientation="0,-1"
+       id="guide3180" />
+    <sodipodi:guide
+       position="47.985704,65.938451"
+       orientation="0,-1"
+       id="guide3182" />
+    <sodipodi:guide
+       position="35.544607,53.290458"
+       orientation="1,0"
+       id="guide3184" />
+    <sodipodi:guide
+       position="60.420165,53.293478"
+       orientation="1,0"
+       id="guide3186" />
+    <sodipodi:guide
+       position="11.095931,23.27325"
+       orientation="1,0"
+       id="guide4825" />
+    <sodipodi:guide
+       position="38.56842,57.564344"
+       orientation="1,0"
+       id="guide14308" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-52.240364,-1.1479182)">
+    <path
+       style="opacity:0.798701;fill:none;stroke:#808080;stroke-width:0.36;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.16, 0.36;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 67.129296,26.772987 c 10.715698,6.401122 21.431084,12.802058 32.14616,19.202809"
+       id="path14384"
+       inkscape:path-effect="#path-effect14386"
+       inkscape:original-d="m 67.129296,26.772987 c 10.715651,6.401201 21.431038,12.802136 32.14616,19.202809" />
+    <path
+       style="opacity:0.798701;fill:none;stroke:#808080;stroke-width:0.36;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.16, 0.36;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 67.129296,64.970924 C 77.844762,58.639164 88.560149,52.307449 99.275456,45.975783"
+       id="path14388"
+       inkscape:path-effect="#path-effect14390"
+       inkscape:original-d="M 67.129296,64.970924 C 77.844948,58.639479 88.560334,52.307762 99.275456,45.975783" />
+    <path
+       style="opacity:0.798701;fill:none;stroke:#808080;stroke-width:0.36;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.16, 0.36;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 99.275456,45.975796 c 0,12.395824 0,24.791384 0,37.186679"
+       id="path14392"
+       inkscape:path-effect="#path-effect14394"
+       inkscape:original-d="m 99.275456,45.975796 c 2.6e-4,12.395824 2.6e-4,24.791384 0,37.186679" />
+    <circle
+       r="3.3208048"
+       cy="45.975784"
+       cx="99.275459"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.202911;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path841-2" />
+    <circle
+       id="path841-1-7"
+       style="fill:none;stroke:#000000;stroke-width:0.202911;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       cx="120.76576"
+       cy="45.975784"
+       r="3.3208048" />
+    <path
+       sodipodi:nodetypes="ccc"
+       style="opacity:0.3;fill:none;stroke:#000000;stroke-width:0.259378;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.518756, 0.259378;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 129.62961,61.71051 c -1.21866,-2.110886 -2.43728,-4.221719 -3.66276,-6.344319 -1.22549,-2.1226 -2.45783,-4.256962 -3.69014,-6.391277"
+       id="path1052-1-5"
+       inkscape:path-effect="#path-effect4774"
+       inkscape:original-d="m 129.62961,61.71051 c -1.21846,-2.110999 -2.43723,-4.221748 -3.65588,-6.332506 -1.23232,-2.134441 -2.46451,-4.268889 -3.69702,-6.40309"
+       inkscape:transform-center-x="-5.2678438"
+       inkscape:transform-center-y="9.2860372" />
+    <path
+       inkscape:transform-center-y="9.286037"
+       inkscape:transform-center-x="5.2678443"
+       id="path1052-1-5-9"
+       d="m 89.885647,61.903783 c 1.218656,-2.110886 2.437282,-4.22172 3.662766,-6.344319 1.225484,-2.122599 2.457824,-4.256961 3.690138,-6.391276"
+       style="opacity:0.3;fill:none;stroke:#000000;stroke-width:0.259378;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.518756, 0.259378;stroke-dashoffset:0;stroke-opacity:1"
+       sodipodi:nodetypes="ccc"
+       inkscape:original-d="m 89.885647,61.903783 c 1.218462,-2.110998 2.437235,-4.221747 3.655879,-6.332505 1.232321,-2.134442 2.464513,-4.26889 3.697025,-6.40309"
+       inkscape:path-effect="#path-effect4793" />
+    <circle
+       id="path841-2-5"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.202911;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       cx="131.05896"
+       cy="64.566536"
+       r="3.3208048" />
+    <circle
+       cy="64.970917"
+       cx="88.413681"
+       style="fill:none;stroke:#000000;stroke-width:0.202911;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path841-1-7-5"
+       r="3.3208048" />
+    <path
+       inkscape:path-effect="#path-effect4965"
+       inkscape:original-d="m 90.153115,29.868552 c 1.218462,2.110998 2.437235,4.221747 3.655879,6.332505 1.232321,2.134442 2.464513,4.26889 3.697025,6.403091"
+       sodipodi:nodetypes="ccc"
+       style="opacity:0.3;fill:none;stroke:#000000;stroke-width:0.259378;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.518756, 0.259378;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 90.153115,29.868552 c 1.218656,2.110886 2.437282,4.22172 3.662766,6.344319 1.225483,2.122599 2.457824,4.256962 3.690138,6.391277"
+       id="path1052-1-5-9-8"
+       inkscape:transform-center-x="5.2678442"
+       inkscape:transform-center-y="-9.2860367" />
+    <circle
+       r="3.3208048"
+       cy="26.77298"
+       cx="131.51643"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.202911;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path841-2-5-6" />
+    <circle
+       r="3.3208048"
+       cy="26.77298"
+       cx="88.413681"
+       style="fill:none;stroke:#000000;stroke-width:0.202911;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path841-1-7-1" />
+    <circle
+       r="3.3208048"
+       cy="26.77298"
+       cx="-131.51643"
+       style="fill:none;stroke:#000000;stroke-width:0.202911;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path841-1-7-8"
+       transform="scale(-1,1)" />
+    <circle
+       r="3.3208048"
+       cy="26.77298"
+       cx="88.413681"
+       style="fill:none;stroke:#000000;stroke-width:0.202911;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path841-1-7-6" />
+    <path
+       sodipodi:nodetypes="ccc"
+       style="opacity:0.3;fill:none;stroke:#000000;stroke-width:0.259378;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.518756, 0.259378;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 70.304299,26.772987 c 2.4374,5.7e-5 4.874756,1.15e-4 7.325721,1.15e-4 2.450965,0 4.915548,-5.8e-5 7.38007,-1.15e-4"
+       id="path1052-1-9"
+       inkscape:original-d="m 70.304299,26.772987 c 2.4374,2.86e-4 4.874756,1.71e-4 7.312043,1.72e-4 2.464643,0 4.929226,1.14e-4 7.393748,-1.72e-4"
+       inkscape:path-effect="#path-effect5090" />
+    <path
+       inkscape:path-effect="#path-effect5086"
+       inkscape:original-d="m 97.544828,10.859018 c -1.218462,2.110999 -2.437236,4.221748 -3.655879,6.332506 -1.232322,2.134442 -2.464514,4.268889 -3.697025,6.403091"
+       sodipodi:nodetypes="ccc"
+       style="opacity:0.3;fill:none;stroke:#000000;stroke-width:0.259378;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.518756, 0.259378;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 97.544828,10.859018 c -1.218656,2.110887 -2.437282,4.221721 -3.662766,6.344321 -1.225484,2.122599 -2.457824,4.25696 -3.690138,6.391276"
+       id="path1052-1-5-4-1"
+       inkscape:transform-center-x="-5.2678446"
+       inkscape:transform-center-y="-9.2860369" />
+    <path
+       inkscape:transform-center-y="-9.2860359"
+       inkscape:transform-center-x="5.2678446"
+       inkscape:original-d="m 90.153115,68.066497 c 1.218463,2.110988 2.437236,4.22173 3.655879,6.332487 1.232322,2.134431 2.464515,4.268869 3.697025,6.403057"
+       inkscape:path-effect="#path-effect5168"
+       id="path1052-1-5-9-8-2"
+       d="m 90.153115,68.066497 c 1.218654,2.110878 2.43728,4.221705 3.662765,6.344297 1.225485,2.122593 2.457826,4.256945 3.690139,6.391247"
+       style="opacity:0.3;fill:none;stroke:#000000;stroke-width:0.259378;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.518756, 0.259378;stroke-dashoffset:0;stroke-opacity:1"
+       sodipodi:nodetypes="ccc" />
+    <circle
+       id="path841-1-7-1-5"
+       style="fill:none;stroke:#000000;stroke-width:0.202911;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       cx="88.413681"
+       cy="64.970917"
+       r="3.3208048" />
+    <path
+       inkscape:original-d="m 85.01009,64.970926 c -2.437401,2.86e-4 -4.874756,1.73e-4 -7.312043,1.73e-4 -2.464643,0 -4.929226,1.13e-4 -7.393748,-1.73e-4"
+       inkscape:path-effect="#path-effect5164"
+       id="path1052-1-9-9"
+       d="m 85.01009,64.970926 c -2.437401,5.8e-5 -4.874756,1.15e-4 -7.325721,1.15e-4 -2.450965,0 -4.915548,-5.7e-5 -7.38007,-1.15e-4"
+       style="opacity:0.3;fill:none;stroke:#000000;stroke-width:0.259378;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.518756, 0.259378;stroke-dashoffset:0;stroke-opacity:1"
+       sodipodi:nodetypes="ccc" />
+    <path
+       inkscape:path-effect="#path-effect7388"
+       inkscape:original-d="m 99.275456,45.975796 c 5.383454,-3.205864 10.766554,-6.41228 16.149734,-9.618506 5.36384,-3.194711 10.72778,-6.389234 16.09136,-9.584303"
+       style="opacity:1;fill:none;stroke:#000000;stroke-width:0.529;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-mid:url(#Arrow1Mend)"
+       d="m 99.275456,45.975796 c 5.383264,-3.206181 10.766514,-6.412351 16.140024,-9.612817 5.37351,-3.200465 10.7373,-6.395236 16.10107,-9.589992"
+       id="path7386"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="opacity:0.334416;fill:none;stroke:#000000;stroke-width:0.26;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.26, 0.26;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 99.275456,45.975796 c 10.594814,6.19708 21.189334,12.393991 31.783584,18.590743"
+       id="path7394"
+       inkscape:path-effect="#path-effect7396"
+       inkscape:original-d="m 99.275456,45.975796 c 10.594774,6.197142 21.189294,12.394058 31.783584,18.590743" />
+    <circle
+       id="path841-2-6"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.202911;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       cx="99.275459"
+       cy="83.162476"
+       r="3.3208048" />
+    <circle
+       r="3.3208048"
+       cy="8.4499016"
+       cx="99.064873"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.202911;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path841-2-6-9" />
+    <circle
+       id="path841-2-9"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.202911;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       cx="67.129295"
+       cy="26.772987"
+       r="3.3208048" />
+    <circle
+       id="path841-2-98"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.202911;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       cx="67.129295"
+       cy="64.970924"
+       r="3.3208048" />
+    <path
+       style="opacity:0.39;fill:none;stroke:#000000;stroke-width:0.129285px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 95.643498,26.064431 -0.694914,0.694906"
+       id="path15583" />
+    <g
+       style="fill:#000000;stroke:#000000;stroke-width:0"
+       data-mml-node="mi"
+       transform="matrix(0.00478861,0,0,-0.00478861,110.17667,32.796427)"
+       id="g9167-4">
+      <use
+         xlink:href="#MJX-97-TEX-I-41-1"
+         id="use9165-9"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </g>
+    <text
+       id="text1767"
+       y="34.012344"
+       x="113.73456"
+       style="font-style:oblique;font-weight:500;font-size:2.28269px;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Medium Oblique';stroke-width:0.122287"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.122287"
+         y="34.012344"
+         x="113.73456"
+         id="tspan1765"
+         sodipodi:role="line">1</tspan></text>
+    <path
+       inkscape:path-effect="#path-effect2094"
+       inkscape:original-d="m 122.51501,42.705301 c 1.21846,-2.110998 2.43723,-4.221747 3.65588,-6.332505 1.23232,-2.134442 2.46451,-4.26889 3.69702,-6.40309"
+       sodipodi:nodetypes="ccc"
+       style="opacity:0.3;fill:none;stroke:#000000;stroke-width:0.259378;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.518756, 0.259378;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 122.51501,42.705301 c 1.21866,-2.110885 2.43728,-4.221718 3.66276,-6.344318 1.22549,-2.122601 2.45783,-4.256963 3.69014,-6.391277"
+       id="path1052-1-5-9-81"
+       inkscape:transform-center-x="5.2678443"
+       inkscape:transform-center-y="9.286037" />
+    <path
+       inkscape:path-effect="#path-effect2113"
+       inkscape:original-d="m 117.27247,46.656197 c -2.4374,2.91e-4 -4.87476,1.71e-4 -7.31205,1.72e-4 -2.46464,0 -4.92921,1.14e-4 -7.39376,-1.72e-4"
+       id="path1052-1-0-3-2-3"
+       d="m 117.27247,46.656197 c -2.4374,5.7e-5 -4.87476,1.15e-4 -7.32572,1.15e-4 -2.45097,0 -4.91554,-5.8e-5 -7.38009,-1.15e-4"
+       style="opacity:0.3;fill:none;stroke:#000000;stroke-width:0.259378;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.518756, 0.259378;stroke-dashoffset:0;stroke-opacity:1"
+       sodipodi:nodetypes="ccc" />
+    <path
+       inkscape:transform-center-y="-18.921714"
+       inkscape:transform-center-x="0.076766916"
+       sodipodi:nodetypes="ccc"
+       id="path7386-6"
+       d="M 99.275459,45.975784 C 99.240379,39.710168 99.205298,33.444576 99.1702,27.190267 99.135103,20.935958 99.099987,14.692915 99.064872,8.4499018"
+       style="opacity:1;fill:none;stroke:#000000;stroke-width:0.529;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-mid:url(#Arrow1Mend-3)"
+       inkscape:original-d="m 99.275459,45.975784 c -0.03471,-6.265618 -0.07008,-12.531208 -0.105241,-18.796771 -0.03504,-6.243055 -0.06987,-12.4861 -0.105346,-18.7291112"
+       inkscape:path-effect="#path-effect2230" />
+    <path
+       sodipodi:nodetypes="ccc"
+       id="path7386-2"
+       d="m 98.817857,45.363727 c 5.383273,3.206183 10.766523,6.412351 16.140033,9.612816 5.37351,3.200466 10.7373,6.395237 16.10107,9.589993"
+       style="opacity:1;fill:none;stroke:#000000;stroke-width:0.529;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-mid:url(#Arrow1Mend-1)"
+       inkscape:original-d="m 98.817857,45.363727 c 5.383463,3.205864 10.766563,6.412279 16.149743,9.618505 5.36384,3.194711 10.72778,6.389235 16.09136,9.584304"
+       inkscape:path-effect="#path-effect2457" />
+    <g
+       id="g9167-4-3"
+       transform="matrix(0.00478861,0,0,-0.00478861,101.59699,26.860541)"
+       data-mml-node="mi"
+       style="fill:#000000;stroke:#000000;stroke-width:0">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         id="use9165-9-1"
+         xlink:href="#MJX-97-TEX-I-41-1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:oblique;font-weight:500;font-size:2.28269px;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Medium Oblique';stroke-width:0.122287"
+       x="105.15501"
+       y="28.07646"
+       id="text1767-5"><tspan
+         sodipodi:role="line"
+         id="tspan1765-5"
+         x="105.15501"
+         y="28.07646"
+         style="stroke-width:0.122287">2</tspan></text>
+    <g
+       style="fill:#000000;stroke:#000000;stroke-width:0"
+       data-mml-node="mi"
+       transform="matrix(0.00478861,0,0,-0.00478861,113.68802,60.822345)"
+       id="g9167-4-3-6">
+      <use
+         xlink:href="#MJX-97-TEX-I-41-1"
+         id="use9165-9-1-4"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </g>
+    <text
+       id="text1767-5-8"
+       y="62.038269"
+       x="117.24612"
+       style="font-style:oblique;font-weight:500;font-size:2.28269px;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Medium Oblique';stroke-width:0.122287"
+       xml:space="preserve"><tspan
+         id="tspan2646"
+         style="stroke-width:0.122287"
+         y="62.038269"
+         x="117.24612"
+         sodipodi:role="line">3</tspan></text>
+  </g>
+</svg>
