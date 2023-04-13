@@ -6,7 +6,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Crystal Graphs</title>
+    <title>Functions as Vectors</title>
 
     <script>
         document.documentElement.classList.remove('no-js');
@@ -150,7 +150,7 @@
                             <header class="entry__header">
     
                                 <h1 class="entry__title">
-                                    Representing Crystalline Structures as Graphs (with Feature Vectors).
+                                    Why You Should Think of Functions as Vectors.
                                 </h1>
 
                                 <div class="entry__meta">
@@ -166,7 +166,7 @@
                                             <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
                                             <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
                                         </svg>
-                                        February 17, 2023
+                                        April 6, 2023
                                     </div>
                                     <div class="entry__meta-cat">
                                         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -175,15 +175,15 @@
                                         </svg>
                                           
                                         <span class="cat-links">
-                                            <a href="#0">Mathematics of Physics</a>
+                                            <a href="#0">Physics</a>
                                         </span>
                                     </div>
                                 </div>
                             </header>
 
-                            <div class="entry__media center">
-                                <figure class="alignwide" >
-                                    <img src="../../assets/images/halfbaked/crystalcover.svg"   alt="Cover for crystal graphs.">
+                            <div class="entry__media">
+                                <figure class="alignwide center" >
+                                    <img src="../../assets/images/halfbaked/functionvectors.svg"   alt="Functions as vectors cover image.">
                                 </figure>
                             </div>
 
@@ -191,240 +191,208 @@
 
                                 <div class="entry__content">
                                     <p class="lead">
-                                        Below, the representation of crystalline structures as graphs is discussed. This is a framework 
-                                        often used in machine-learning models (i.e. graph neural networks) applied to materials science.
+                                        
                                     </p> 
 
                                     <p class="drop-cap">
-                                       Modern machine learning models applied to the prediction of material properties from crystalline structures 
-                                       depict such crystalline structures as graphs. In these graphs, nodes represent
-                                       atoms and edges represent some general bond between or pairing of atoms. The construction of these graphs 
-                                       then requires us to define, at minimum, some criteria for the construction of edges. 
-                                       Often, the edges are just made for the 12 nearest neigbors; or based upon some distance cut-off.
+                                       
                                     </p>
-                                    <figure class="align center">
-                                        <img src="../../assets/images/halfbaked/crystalgraphintro.svg"  alt="An example of a crystal graph">
-                                    </figure>
                                     <p>
-                                        Such a basic model of these crystalline structures obviously includes no substantial atomic information, and hence 
-                                        doesn't have enough physical information for any downstream model to perform well in most predictive tasks.
+                                        Occasionally one might hear that functions are actually vectors living in the more abstract 
+                                        world of a vector space. This may seem like a useless generalization touted by practicioners of functional analysis, but it actually has  
+                                        a lot of use in the understanding of many physics concepts.
                                     </p>
-                                    
-                                    <figure class="align center">
-                                        <img src="../../assets/images/halfbaked/crystalgraphintro2.svg"  alt="An example of a crystal graph with features">
-                                    </figure>
                                     <p>
-                                        To resolve this, both nodes and edges in these graphs then each have some additional 'hidden' feature vector or 'representation' that 
-                                        describes the physical characteristics of it's corresponding graph element. Generally, these initial features are derived from known properties 
-                                        of the element's corresponding physical state; and then updated via some graph convolutional network. The output of the network 
-                                        then is some 'learned representation' of the crystal structure (generally after the pooling of node features). This learned representation 
-                                        is then used as input for some (trained) predictive neural network.
+                                        Specifically, the intuition gained by modelling functions as vectors allows us to project functions onto different basis sets; 
+                                        to model differentiation and integration as linear operators, much like matrices; and then extract useful representations of functions 
+                                        in the context of self-adjoint operators.
+                                    </p>
+                                    <p>
+                                        Below, we'll first give a brief refresher on the axioms of vector spaces, and then show how these properties can be applied 
+                                        to functions.
+                                    </p>
+                                    <blockquote>
+                                        <h3 style="margin-top: 0.5em;">Axioms of a Vector Space</h3>
+                                        <br>
+                                        <p>
+                                            For a vector space \(V\) over a field \(F\) with vectors denoted by \(\vec{a},\vec{b}\) and scalars denoted \(\alpha,\beta\), we have (atleast) two products: 
+                                            one termed vector addition and denoted \(\vec{a}+\vec{b}\), and another termed scalar multiplication, denoted \(\alpha \vec{a}\). These operations are compatible together,
+                                            such that scalar multiplication is associative with the underlying field's operations; as well are the operations distributive with respect to 
+                                            each other.
+                                        </p>
+                                        <br>
+                                        <em>See <a href="https://www.math.ucla.edu/~tao/resource/general/121.1.00s/vector_axioms.html">Terry Tao's overview</a> for a more formal statement</em>
+                                    </blockquote>
+                                    <h3>Functions as Vectors</h3>
+                                    <p>
+                                        Functions may be seen to be vectors by making the following identifications: scalar multiplication is 
+                                        simply multiplication of the function at all points by the underlying field element; and vector addition is point-wise addition of 
+                                        functions, that is 
+                                        <div class="eq center">
+                                        \begin{align}
+                                        \text{Scalar Multiplication: }\quad a*f(x)&=af(x)\\
+                                        \text{Vector Addition: }\quad f(x)+g(x)&=(f+g)(x)\\
+                                        \end{align}
+                                        </div>
+                                    </p>
+                                    <p>
+                                        These two products should be easily seen to satisfy the vector space axioms.
+                                    </p>
+                                    <p>
+                                        Below, we consider just one-dimensional, complex-valued functions as an example, where the underlying scalar field is complex numbers.
+                                    </p>
+                                    <h2>Functional Bases</h2>
+                                    <p>
+                                        If we think of vectors in a typical vector space, we often wish to think in terms of components of these vectors in some basis. That is, 
+                                        for a vector \(\vec{v}\) in a \(d\)-dimensional vector space, we may always choose some basis set of \(d\) orthonormal unit vectors \({\hat{b}_n}\)
+                                        such that:
+                                        <div class="eq center">
+                                            \[
+                                            \vec{v}=\sum_{i=1}^n c_i \hat{b}_i
+                                            \]
+                                            where
+                                            \[
+                                            \langle \hat{b}_i, \hat{b}_j\rangle=\delta_{ij}
+                                            \]
+                                        </div>
+                                        The same then applies to functions, though we now require infinite dimensional basis vector sets. 
+                                    </p>
+                                    <p>
+                                        As an example, consider the representation of a (well-behaved/differentiable) function as a power series, much as we do for Taylor series expansions.
+                                        <div class="eq center">
+                                            \[
+                                                f(x)= \sum_{n=0}^{\infty}c_nx^n
+                                            \]
+                                        </div>
+                                        In this case, we may consider the function to be projected onto a certain set of vectors \(\lbrace x^n\rbrace\) that 
+                                        span the space (though the terms \(x^n\) aren't orthonormal here, with respect to the inner product defined below).
+                                    </p>
+                                    <p>
+                                        Note that the definition above of an orthonormal basis requires we introduce an inner product on the space \(\langle \cdot,\cdot \rangle\).
+                                        Below, we define this 'inner product of functions' in the context of general linear operators.
+                                    </p>
+                                    <h2>Linear Operators as Change of Bases</h2>
+                                    <p>
+                                        How is a derivative or integral like a matrix? They're all linear operators! As such, we can take the usual operators of differentiation and 
+                                        integration, and treat them somewhat analagously as matrices. This means we can apply the usual decompositions of linear operators.
+                                    </p>
+                                    <p>
+                                        As an example of a derivative acting like a matrix, let's again consider some function \(f\) represented as a power series, so that we 
+                                        have the following identification:
+                                        <div class="eq center">
+                                            \[
+                                                f(x)= \sum_{n=0}^{\infty}c_nx^n =\begin{bmatrix}c_0 \\ c_1 \\ c_2 \\ \vdots \\ \end{bmatrix}
+                                            \]
+                                        </div> 
+                                        And now, acoording to the power law of differentiation, we may represent the derivative's action as the following:
+                                        <div class="eq center">
+                                            \[
+                                                \frac{d}{dx}f(x)= \begin{bmatrix} 0 & 1 & 0 & 0 & \cdots \\ 0& 0 & 2 & 0 &\cdots \\ 0& 0 & 0 & 3 &\cdots\\ \vdots &\vdots 
+                                                &\vdots &\vdots & \ddots \\ \end{bmatrix} \begin{bmatrix}c_0 \\ c_1 \\ c_2 \\ \vdots \\ \end{bmatrix}
+                                            \]
+                                        </div> 
+                                        While this identification as a matrix isn't so pretty in all possible bases, it should now be clear that some parallel between the two may be drawn.
+                                    </p>
+                                    <p>
+                                        We need now introduce one last set of operations, which allow us to define a special type of operator highly relevant for physics; and which naturally yield nice sets of orthonormal bases.
+                                        This operation is that of an inner product between vectors, a specific type of bi-linear form.
+                                    </p>
+                                    <h2>Bi-Linear Forms</h2>
+                                    <p>
+                                        Bi-linear forms are simply forms which take in two elements of the vector space and return an element of the underling scalar field, and which are linear in 
+                                        both arguments.
+                                    </p>
+                                    <h3>Inner Products</h3>
+                                    <p>
+                                        In many vector spaces, we often define a specific bi-linear form on vectors: the inner product. In the case 
+                                        of functions, we often may do the same.
+                                    </p>
+                                    <p>
+                                        A commonly defined inner product \(\langle\cdot,\cdot\rangle\) between two functions \(f\) and \(g\) is the following:
+                                        <div class="eq center">
+                                            \[
+                                            \langle f , g \rangle = \int_a^b  dx \ f(x) g^*(x) w(x)
+                                            \]
+                                        </div>
+                                        where \(w(x)\) is some weighting function, which also might depend on the choice of coordinates (though one set of 
+                                        coordinates is often implicit); and the integral is defined strictly over some 
+                                        definite interval, that is from \(x=[a,b] \).
+                                    </p>
+                                    <p>
+                                        Note that the complex conjugate is included so that inner-products of (complex-valued) functions with themselves (that is \(\langle f,f\rangle \))
+                                        are guaranteed to be real. This condition allows us to define a real-valued norm on the space. The inner product is sometimes also defined to apply the 
+                                        complex conjugate to the left-hand element of the input (as in bra-ket notation).
+                                    </p>
+                                    <h3>Self-adjoint Operators</h3>
+                                    <p>
+                                        We may now define a self-adjoint operator (or Hermitian operator) \(L\), in general, as the following:
+                                        <div class="eq center"> 
+                                            \[
+                                            \langle L f , g \rangle = \langle f , L g\rangle 
+                                            \]
+                                        </div>
+                                        So, in the specific case of complex-valued functions, we have that self-adjoint operators (such 
+                                        as Sturm-Liouville operators) satisfy the following:
+                                        <div class="eq center">
+                                            \[
+                                            \int_a^b  dx \ L\big( f(x)\big) g^*(x) w(x) = \int_a^b  dx \  f(x) \big[ L\big( g(x)\big)\big]^* w(x)
+                                            \]
+                                        </div>
+                                    </p>
+                                    <p>
+                                        If we now recall the spectral decomposition theorem, we know that any self-adjoint operator's set of 
+                                        eigenvectors form an orthonormal basis for the underlying vector space.
+                                        So if we have some Hermitian (self-adjoint) linear operator, such as a Sturm-Liouville operator,
+                                        we can get bases for functional spaces! In fact, this is where
+                                        spherical harmonics, Legendre polynomials, and Bessel functions come from.
+                                        The sometimes strange coefficients in these functions are often then just to normalize their inner product.
                                     </p>
                                     <div class="boxed">
-                                        <h6 class="boxtitle">Example Graph Network:</h6>
+                                        <h4 class="boxtitle">Where do Bessel functions come from?</h4>
                                         <p>
-                                             As an example of the use of these graph encodings, consider the 
-                                            graph convolutional network architecture below:
-                                            
-                                        <figure class="align center">
-                                            <img src="../../assets/images/halfbaked/workingarch.svg"  alt="An example of a crystal graph convolutional network (CGCNN)">
-                                        </figure>
-                                            which is generally trained on the order of tens of thousands of crystals to predict specfic physical properties (such as formation energy 
-                                            per atom, total energy, minimum band gaps, etc.).
+                                            The dreaded Bessel functions really are there to make your life easier. Note that the 
+                                            Bessel equaton of the first kind arises as the radial component of cylindrical 
+                                            coordinate poisson functions (after applying separation of variables). 
+                                        </p>
+                                        <div class="eq center">
+                                            \[
+                                            \frac{r}{R}\frac{\partial}{\partial r}\left(r\frac{\partial R}{\partial r} \right)+r^2n^2-m^2 = 0
+                                            \]
+                                        </div>
+                                        <p>
+                                            Note that this operator is linear and also happens to be Hermitian (self-adjoint). Hence, we may 
+                                            define some basis \(J_n\):
+                                            <div class="eq center">
+                                            \[
+                                                \Rightarrow \ \ R(r)=J_n(kr)\quad \text{(Bessel Functions of First Kind)}
+                                            \]
+                                            </div>
+                                            indexed by \(n\) which takes integer values ranging from \(0\) to \(\infty\), and the corresponding 
+                                            definite interval for the inner product being \(0\) to \(1\). The coefficients of the function are chosen so 
+                                            that the functions are normalized (with respect to the inner product with themselves) over this range.
                                         </p>
                                         <p>
-                                            The architecture displayed here is heavily inspired by the model utilized in this  <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.145301">paper</a>, and which we refer to as CGCNN.
+                                            Of course, the Bessel equation is second-order, so there's really two sets of solutions that we may extract 
+                                            from it. This second set is the lesser-used Neumann functions (which diverge at the origin).
+                                        </p>
+                                        <p>
+                                            Note also, that other basis are possible to extract from the Bessel equations (though they'll always be linear combinations 
+                                            of the previous two sets of equations), such as Hankel functions.
                                         </p>
                                     </div>
                                     <br>
                                     <p>
-                                        Below, we discuss the usual schemes of graph encoding, along with their included feature schemes, employed in some famous crystal graph convolutional 
-                                        networks. Then, we consider limitations of the models and discuss a possible extension of the framework.
+                                        So, if we have a self-adjoint differential equation (as we often do in physics) we can always 
+                                        project our functions onto a particularly nice basis. This is similar to the concept of quantum numbers:
+                                        for example, the \(n,l,m\) quantum numbers describing a Hydrogen-like wavefunciton are exactly the index values 
+                                        for the related bases (that is, the wave-functions are characterizable by what basis functions 
+                                        they are composed of). This suggests that non-simultaneous quantum numbers are evident of a poor or inconsistent choice of basis.
                                     </p>
-                                    <h2>Crystal Graphs</h2>
-                                    <p>
-                                        The mathematical object known generally as a <em>graph</em> is just a set of nodes (or vertices) and a set of edges between them.
-                                        They may be represented diagrammatically rather nicely, with one displayed below:
-                                        <figure class="align">
-                                            <img src="../../assets/images/halfbaked/undgraphex.svg"  alt="An example undirected graph with node and edge sets labelled. Note that we assume the edge tuples are order independent here.">
-                                        </figure>
-
-                                        They also may be decribed explicitly as a set of two sets: one set of nodes \(\mathcal{V}\); and one set of tuples \(\mathcal{E}\), denoting an edge between two nodes in the previous set.
-                                    </p>
-                                    <p>
-                                        For the matter at hand, we'll use this basic structure as a framework for the mathematical representation of crystalline strucutres. 
-                                        And then, we attach some sort of representation to the constituent elements in a way that encodes the physical information of the system.
-                                    </p>
-                                    
-                                    
-                                    <figure class="align center">
-                                        <img src="../../assets/images/halfbaked/ex_struc.svg"  alt="An example of a (diatomic simple cubic) crystal structure">
-                                    </figure>
-
-                                    <p>
-                                        For the underlying graph we can simply take the atoms to be the nodes, but then edges must be constructed according to some 
-                                        criteria. That is, the nodes obviously can be taken as the atomic sites of the lattice, but we need to define explicitly what
-                                        an edge between two nodes represents. Below, some of these criteria for edge construction are discussed, with specific criteria from 
-                                        previous works being used as examples.
-                                    </p>
-                                    <h3>Edge Criteria</h3>
-                                   
-                                    <p>
-                                        Most of the edge criteria employed are very basic, and consider only distance. This is to effectively maintain 
-                                        generality of task and to minimize computational complexity (perhaps as well as intellectual). These criteria are crude, 
-                                        but proven to work with modern CGCNNs rather well.
-                                    </p>
-                                    
-                                    <figure class="align">
-                                        <img src="../../assets/images/halfbaked/ex_bondcriteria.svg"  alt="An example of maximum distance cut-off and max # of neighbor cutoff for crystal graph edge criteria">
-                                    </figure>
-
-                                    <h4>Distance Cut-off</h4>
-                                    <p>
-                                        Distance cut-off is one of the most common approaches. The interatomic cut-off is often in the range of 5-10 Angstroms. 
-                                        So, for every given atomic site (or node), the edges are determined to be those sites around it within the cut-off distance.
-                                    </p>
-                                    <figure class="align center">
-                                        <img src="../../assets/images/halfbaked/ex_crystalgraph.svg"  alt="An example crystal graph">
-                                    </figure>
-                                    <h4>Set Number of Neighbors</h4>
-                                    <p>
-                                        Sometimes a protocol calls for a certain number of neighbors for every node. This may always be accomplished in crystalline 
-                                        structures by assuming periodicity and including those within neighboring cells (if there aren't enough in a single unit cell).
-                                    </p>
-                                    <p>
-                                        Often, both a maximum number of neighbors and a maximum distance cut-off are used in conjunction with each other to minimize the total 
-                                        number of edges but still capture relevant neighborhoods of each site.
-                                    </p>
-                                    <p>
-                                        To avoid treating all of these neighbors (with varying distance) exactly the same, the difference in distance will be accounted 
-                                        for in the associated edge features, as discussed later.
-                                    </p>
-                                    <h4>Other Criteria</h4>
-                                    <p>
-                                        More sophisticated criteria are rarely used in modern models, but more rigorous means by which we may determine 
-                                        the set of relevant site neighbors are possible. Some other commonly used criteria (in the general determination of
-                                        nearest neighbors) are solid angle cut-offs, Voronoii tesselation neighbors, and scaled cut-offs (that depend on the site's closest neighbor). 
-                                    </p>
-                                    <p>
-                                        These more sophisticated criteria are more often applied in physical applications, such as the determination of a site's local 
-                                        symmetry or motif structure.
-                                    </p>
-                                    <h2>Initial Features</h2>
-                                    <p>
-                                        With a graph in hand, we now need a way to associate the important physical information of the crystal with the graph. 
-                                        This is done by associating a vector, termed the feature vector, with each node, and often edge, of the graph. The feature vectors 
-                                        are intended to encode the relevant physical data for the chosen predictive task.
-                                    </p>
-                                    <p>
-                                        Note that we term these initial features, since they are usually taken as input for some machine learning model, which will 
-                                        consequently update the features layer-by-layer. 
-                                        Having acknowledged this, we drop the term initial in the following 
-                                        discussions and consider the features of these two objects: the atoms or nodes; and the edges.
-                                    </p>
-                                    <h3>Node/Atom Features</h3>
-                                    <p>
-                                        Nodes of the crystal graph represent atoms most usually, so we may essentially consider this to be a discussion of 
-                                        atom representation vectors.
-                                    </p>
-                                    <p>
-                                        Of course, atoms have corresponding valence charges, differing orbital structures, and groups. A common 
-                                        scheme for atom representation vectors is that employed in the classic <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.145301">CGCNN</a> by Xie & Grossman. This is described
-                                        succinctly in the diagram below:
-                                        
-                                    <figure class="align">
-                                        <img src="../../assets/images/halfbaked/atom_feat.svg" alt="CGCNN inspired atom feature vector">
-                                    </figure>
-                                        Note that some values are one-hot encoded; others are expansions, etc. The implementation of the scheme above can be found as
-                                        atom_init.json <a href="https://github.com/txie-93/cgcnn/blob/master/data/sample-classification/atom_init.json">here</a>,
-                                        organized by proton number.
-                                    </p>
-
-                                    <div class="boxed">
-                                        <h6 class="boxtitle">One Hot Encoding:</h6>
-                                        <p>
-                                             When we need to describe something that's a true or false property, we may 
-                                            place a zero or one to describe this true-false relationship. Alternatively, to increase the dimensionality, we could have an
-                                            inefficient two-dimensional space where either of the two must be one, with the first being one and the other zero (denoting true) and 
-                                            then vice versa (denoting false) being the only two options.
-                                        </p>
-                                           
-                                    <figure class="align center">
-                                        <img src="../../assets/images/halfbaked/onehot.svg"  alt="An 2-D example of a one-hot encoding of two mutually exclusive categories">
-                                    </figure>
-                                        <p>
-                                            This padded representation that extends the dimensionality is termed <em>one-hot encoding</em>;
-                                            where the example above for true or false may naturally be extended to describe a larger set (>2) of mutually-exclusive categories 
-                                            (such as an elements group number).
-                                        </p>
-                                        <p>
-                                            One-hot encoding is inefficient, but, it may help communicate better the 
-                                            different classes to the model it's input in to. This is especially true in models for which the first layers
-                                            act effectively as linear maps.
-                                        </p>
-                                    </div>
-                                    <br>
-                                    <p>
-                                        Sometimes no atomic information is provided with the graph (or some randomly initialized set of orthogonal vectors may be chosen).
-                                        The workflow defined in this <a href="https://pubs.acs.org/doi/10.1021/acs.chemmater.9b01294">paper</a>, and which we will refer to as MEGNet, implemented random
-                                        feature vectors for the atoms. Suprisingly, negligible difference in performance of the model for certain tasks was observed (compared to the previously discussed physical atom vectors). 
-                                    </p>
-
-                                    <h3>Edge/"Bond" Features</h3>
-                                    <p>
-                                        Apparently, due to their simple criteria for construction, the feature vector of most crystal graph edges 
-                                        is only based upon distance.
-                                    </p>
-                                    <p>
-                                        We can always describe a distance as a scalar distance, but we may also 
-                                        describe it as an offset vector (though there is some ambiguity up to a minus sign).  
-                                        More frequently, the scalar distance corresponding to the edge is expanded in a so-called Gaussian distance expansion, or Radial-Basis Function 
-                                        expansion (RBF). This gives us a larger dimensional representation vector based only on the distance.
-                                    </p>
-                                    <figure class="align">
-                                        <img src="../../assets/images/halfbaked/bond_feat.svg" alt="Gaussian expansion of distance as bond feature vector">
-                                    </figure>
-                                    <p>
-                                        One could also conceivably include other information about the bond, such as the combined charge or combined electrostatic valency of the 
-                                        neighbors, but this then wouldn't apply to next nearest neighbors very well, or the next next etc. which may have been included in the edge construction.
-                                        Of course, the loose definition of an edge requires us to drop any interpretation of the edges as 'chemical bonds' 
-                                        between graph neighbors; 
-                                        but other bond-specific attributes may also be incorporated, such as displacement vectors (in terms of components) and the like. 
-                                    </p>
-                                    
-                                    <h2>Conclusion</h2>
-                                    <p>
-                                        Modern models utilizing the basic constructions discussed above have shown suprisingly good performance on a multitude of 
-                                        training tasks such as: formation energy per atom, minimum band-gap, metal/non-metal classification, etc. This suggests that the 
-                                        information packaged in such a structure, as above, is an intrinsically useful representation of the corresponding physical structures.
-                                    </p>
-                                    <p>
-                                        Greater performance and more robust representations are almost certainly intertwined, however. To that end, it's useful 
-                                        to consider what flaws such models may have, in hopes we may improve them.
-                                    </p>
-                                    <h3>Flaws</h3>
-                                    <p>
-                                        One major flaw with these techniques is their lack of inclusion of larger geometrical information. Then again, the high performance of 
-                                        such models without this geometrical information may be a testament to it's neglible effect on the chosen targets.
-                                    </p>
-                                    <h3>Extensions</h3>
-                                    <p>
-                                        The above graph constructions have been extended to some extent in more modern models; two notable examples being the <a href="https://www.nature.com/articles/s41524-021-00650-1">atomistic LINE graph</a>, 
-                                        and the state vector of the <a href="https://pubs.acs.org/doi/10.1021/acs.chemmater.9b01294">MEGNet model</a>. The atomistic LINE graph approach associated a secondary, 'line' graph to each crystal, in which 
-                                        nodes represented edges of the crystal graph and connections between these 'edge' nodes describe the angle made between connected bonds. Megnet's 
-                                        approach associated an additional state-level vector with each crystal graph as a sort of graph-level feature.
-                                    </p>
-                                   <!-- <p>
-                                        Future works may also take advantage of the fact that these constructions are actually sheafs! A point 
-                                        not yet applied in the literature.
-                                    </p> -->
-
-
                                     <p class="entry__tags">
                                         <strong>Tags:</strong>
                     
                                         <span class="entry__tag-list">
-                                           <a href="#0">Physics</a>
+                                            <a href="#0">Solid State</a><a href="#0">Physics</a> <a href="#0">Intro</a>
                                         </span>
                         
                                
@@ -449,15 +417,15 @@
                                 <div class="post-nav">
                                     
                                     <div class="post-nav__prev">
-                                        <a href="../torquebivector/index.html" rel="prev">
+                                        <a href="../tightbinding/index.html" rel="prev">
                                             <span>Prev</span>
-                                            Torque as a Bivector. 
+                                            Second-Quantized Tight-Binding Hamiltonian
                                         </a>
                                     </div>
                                     <div class="post-nav__next">
-                                        <a href="../ubiquityofnum/index.html" rel="next">
+                                        <a href="../crystalgraphs/index.html" rel="next">
                                             <span>Next</span>
-                                            On the Ubiquity of Numbers.                                            
+                                            Crystal Graphs for Machine Learning                                          
                                         </a>
                                     </div>
                                 </div>

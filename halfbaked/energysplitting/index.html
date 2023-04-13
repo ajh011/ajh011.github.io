@@ -6,7 +6,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Crystal Graphs</title>
+    <title>Energy Splitting</title>
 
     <script>
         document.documentElement.classList.remove('no-js');
@@ -150,7 +150,7 @@
                             <header class="entry__header">
     
                                 <h1 class="entry__title">
-                                    Representing Crystalline Structures as Graphs (with Feature Vectors).
+                                    Common Energy-Level Splitting Effects for Particles.
                                 </h1>
 
                                 <div class="entry__meta">
@@ -166,7 +166,7 @@
                                             <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
                                             <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
                                         </svg>
-                                        February 17, 2023
+                                        April 6, 2023
                                     </div>
                                     <div class="entry__meta-cat">
                                         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -175,15 +175,15 @@
                                         </svg>
                                           
                                         <span class="cat-links">
-                                            <a href="#0">Mathematics of Physics</a>
+                                            <a href="#0">Physics</a>
                                         </span>
                                     </div>
                                 </div>
                             </header>
 
-                            <div class="entry__media center">
-                                <figure class="alignwide" >
-                                    <img src="../../assets/images/halfbaked/crystalcover.svg"   alt="Cover for crystal graphs.">
+                            <div class="entry__media">
+                                <figure class="alignwide center" >
+                                    <img src="../../assets/images/halfbaked/energysplitting.svg"   alt="Energy splitting effects cover image.">
                                 </figure>
                             </div>
 
@@ -191,240 +191,54 @@
 
                                 <div class="entry__content">
                                     <p class="lead">
-                                        Below, the representation of crystalline structures as graphs is discussed. This is a framework 
-                                        often used in machine-learning models (i.e. graph neural networks) applied to materials science.
+                                        Several common effects are responsible for a wide range of energy levels in many important systems. Below, we 
+                                        consider some energy-level splitting effects resulting from interaction between particles and AC/DC electric and magnetic fields.
                                     </p> 
 
                                     <p class="drop-cap">
-                                       Modern machine learning models applied to the prediction of material properties from crystalline structures 
-                                       depict such crystalline structures as graphs. In these graphs, nodes represent
-                                       atoms and edges represent some general bond between or pairing of atoms. The construction of these graphs 
-                                       then requires us to define, at minimum, some criteria for the construction of edges. 
-                                       Often, the edges are just made for the 12 nearest neigbors; or based upon some distance cut-off.
+                                       
                                     </p>
-                                    <figure class="align center">
-                                        <img src="../../assets/images/halfbaked/crystalgraphintro.svg"  alt="An example of a crystal graph">
-                                    </figure>
+
+                                    <h2>Zeeman Effect</h2>
                                     <p>
-                                        Such a basic model of these crystalline structures obviously includes no substantial atomic information, and hence 
-                                        doesn't have enough physical information for any downstream model to perform well in most predictive tasks.
+                                        The Zeeman effect refers to the energy of a magnetic dipole aligned or anti-aligned with some external magnetic field.
+                                    </p>
+
+                                    <div class="boxed">
+                                        <h4 class="boxtitle">Fine Structure</h4>
+                                        <p>
+                                            The fine structure refers to the splitting of spectral lines of atomic samples (most often Hydrogen). This results from the effective 
+                                            Zeeman contribution resulting from the ion-electron spin-orbit interaction, as well as relativistic corrections.
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <h2>Stark Effect</h2>
+                                    <p>
+                                        The Stark effect refers to the resulting shift in energy due to a constant, uniform electric field.
+                                    </p>
+                                    <h2>Autler-Towns Effect</h2>
+                                    <p>
+                                        Autler-Towns refers to interactions with alternating electric fields (such as a laser), as opposed to constant electric fields.
                                     </p>
                                     
-                                    <figure class="align center">
-                                        <img src="../../assets/images/halfbaked/crystalgraphintro2.svg"  alt="An example of a crystal graph with features">
-                                    </figure>
-                                    <p>
-                                        To resolve this, both nodes and edges in these graphs then each have some additional 'hidden' feature vector or 'representation' that 
-                                        describes the physical characteristics of it's corresponding graph element. Generally, these initial features are derived from known properties 
-                                        of the element's corresponding physical state; and then updated via some graph convolutional network. The output of the network 
-                                        then is some 'learned representation' of the crystal structure (generally after the pooling of node features). This learned representation 
-                                        is then used as input for some (trained) predictive neural network.
-                                    </p>
                                     <div class="boxed">
-                                        <h6 class="boxtitle">Example Graph Network:</h6>
+                                        <h4 class="boxtitle">Rabi Oscillations</h4>
                                         <p>
-                                             As an example of the use of these graph encodings, consider the 
-                                            graph convolutional network architecture below:
-                                            
-                                        <figure class="align center">
-                                            <img src="../../assets/images/halfbaked/workingarch.svg"  alt="An example of a crystal graph convolutional network (CGCNN)">
-                                        </figure>
-                                            which is generally trained on the order of tens of thousands of crystals to predict specfic physical properties (such as formation energy 
-                                            per atom, total energy, minimum band gaps, etc.).
-                                        </p>
-                                        <p>
-                                            The architecture displayed here is heavily inspired by the model utilized in this  <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.145301">paper</a>, and which we refer to as CGCNN.
+                                            In a two-level quantum system, we may apply time-dependent perturbation theory to derive a 
+                                            certain form of the coefficients of the pair of states.
                                         </p>
                                     </div>
                                     <br>
                                     <p>
-                                        Below, we discuss the usual schemes of graph encoding, along with their included feature schemes, employed in some famous crystal graph convolutional 
-                                        networks. Then, we consider limitations of the models and discuss a possible extension of the framework.
-                                    </p>
-                                    <h2>Crystal Graphs</h2>
-                                    <p>
-                                        The mathematical object known generally as a <em>graph</em> is just a set of nodes (or vertices) and a set of edges between them.
-                                        They may be represented diagrammatically rather nicely, with one displayed below:
-                                        <figure class="align">
-                                            <img src="../../assets/images/halfbaked/undgraphex.svg"  alt="An example undirected graph with node and edge sets labelled. Note that we assume the edge tuples are order independent here.">
-                                        </figure>
-
-                                        They also may be decribed explicitly as a set of two sets: one set of nodes \(\mathcal{V}\); and one set of tuples \(\mathcal{E}\), denoting an edge between two nodes in the previous set.
-                                    </p>
-                                    <p>
-                                        For the matter at hand, we'll use this basic structure as a framework for the mathematical representation of crystalline strucutres. 
-                                        And then, we attach some sort of representation to the constituent elements in a way that encodes the physical information of the system.
-                                    </p>
-                                    
-                                    
-                                    <figure class="align center">
-                                        <img src="../../assets/images/halfbaked/ex_struc.svg"  alt="An example of a (diatomic simple cubic) crystal structure">
-                                    </figure>
-
-                                    <p>
-                                        For the underlying graph we can simply take the atoms to be the nodes, but then edges must be constructed according to some 
-                                        criteria. That is, the nodes obviously can be taken as the atomic sites of the lattice, but we need to define explicitly what
-                                        an edge between two nodes represents. Below, some of these criteria for edge construction are discussed, with specific criteria from 
-                                        previous works being used as examples.
-                                    </p>
-                                    <h3>Edge Criteria</h3>
-                                   
-                                    <p>
-                                        Most of the edge criteria employed are very basic, and consider only distance. This is to effectively maintain 
-                                        generality of task and to minimize computational complexity (perhaps as well as intellectual). These criteria are crude, 
-                                        but proven to work with modern CGCNNs rather well.
-                                    </p>
-                                    
-                                    <figure class="align">
-                                        <img src="../../assets/images/halfbaked/ex_bondcriteria.svg"  alt="An example of maximum distance cut-off and max # of neighbor cutoff for crystal graph edge criteria">
-                                    </figure>
-
-                                    <h4>Distance Cut-off</h4>
-                                    <p>
-                                        Distance cut-off is one of the most common approaches. The interatomic cut-off is often in the range of 5-10 Angstroms. 
-                                        So, for every given atomic site (or node), the edges are determined to be those sites around it within the cut-off distance.
-                                    </p>
-                                    <figure class="align center">
-                                        <img src="../../assets/images/halfbaked/ex_crystalgraph.svg"  alt="An example crystal graph">
-                                    </figure>
-                                    <h4>Set Number of Neighbors</h4>
-                                    <p>
-                                        Sometimes a protocol calls for a certain number of neighbors for every node. This may always be accomplished in crystalline 
-                                        structures by assuming periodicity and including those within neighboring cells (if there aren't enough in a single unit cell).
-                                    </p>
-                                    <p>
-                                        Often, both a maximum number of neighbors and a maximum distance cut-off are used in conjunction with each other to minimize the total 
-                                        number of edges but still capture relevant neighborhoods of each site.
-                                    </p>
-                                    <p>
-                                        To avoid treating all of these neighbors (with varying distance) exactly the same, the difference in distance will be accounted 
-                                        for in the associated edge features, as discussed later.
-                                    </p>
-                                    <h4>Other Criteria</h4>
-                                    <p>
-                                        More sophisticated criteria are rarely used in modern models, but more rigorous means by which we may determine 
-                                        the set of relevant site neighbors are possible. Some other commonly used criteria (in the general determination of
-                                        nearest neighbors) are solid angle cut-offs, Voronoii tesselation neighbors, and scaled cut-offs (that depend on the site's closest neighbor). 
-                                    </p>
-                                    <p>
-                                        These more sophisticated criteria are more often applied in physical applications, such as the determination of a site's local 
-                                        symmetry or motif structure.
-                                    </p>
-                                    <h2>Initial Features</h2>
-                                    <p>
-                                        With a graph in hand, we now need a way to associate the important physical information of the crystal with the graph. 
-                                        This is done by associating a vector, termed the feature vector, with each node, and often edge, of the graph. The feature vectors 
-                                        are intended to encode the relevant physical data for the chosen predictive task.
-                                    </p>
-                                    <p>
-                                        Note that we term these initial features, since they are usually taken as input for some machine learning model, which will 
-                                        consequently update the features layer-by-layer. 
-                                        Having acknowledged this, we drop the term initial in the following 
-                                        discussions and consider the features of these two objects: the atoms or nodes; and the edges.
-                                    </p>
-                                    <h3>Node/Atom Features</h3>
-                                    <p>
-                                        Nodes of the crystal graph represent atoms most usually, so we may essentially consider this to be a discussion of 
-                                        atom representation vectors.
-                                    </p>
-                                    <p>
-                                        Of course, atoms have corresponding valence charges, differing orbital structures, and groups. A common 
-                                        scheme for atom representation vectors is that employed in the classic <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.145301">CGCNN</a> by Xie & Grossman. This is described
-                                        succinctly in the diagram below:
                                         
-                                    <figure class="align">
-                                        <img src="../../assets/images/halfbaked/atom_feat.svg" alt="CGCNN inspired atom feature vector">
-                                    </figure>
-                                        Note that some values are one-hot encoded; others are expansions, etc. The implementation of the scheme above can be found as
-                                        atom_init.json <a href="https://github.com/txie-93/cgcnn/blob/master/data/sample-classification/atom_init.json">here</a>,
-                                        organized by proton number.
                                     </p>
-
-                                    <div class="boxed">
-                                        <h6 class="boxtitle">One Hot Encoding:</h6>
-                                        <p>
-                                             When we need to describe something that's a true or false property, we may 
-                                            place a zero or one to describe this true-false relationship. Alternatively, to increase the dimensionality, we could have an
-                                            inefficient two-dimensional space where either of the two must be one, with the first being one and the other zero (denoting true) and 
-                                            then vice versa (denoting false) being the only two options.
-                                        </p>
-                                           
-                                    <figure class="align center">
-                                        <img src="../../assets/images/halfbaked/onehot.svg"  alt="An 2-D example of a one-hot encoding of two mutually exclusive categories">
-                                    </figure>
-                                        <p>
-                                            This padded representation that extends the dimensionality is termed <em>one-hot encoding</em>;
-                                            where the example above for true or false may naturally be extended to describe a larger set (>2) of mutually-exclusive categories 
-                                            (such as an elements group number).
-                                        </p>
-                                        <p>
-                                            One-hot encoding is inefficient, but, it may help communicate better the 
-                                            different classes to the model it's input in to. This is especially true in models for which the first layers
-                                            act effectively as linear maps.
-                                        </p>
-                                    </div>
-                                    <br>
-                                    <p>
-                                        Sometimes no atomic information is provided with the graph (or some randomly initialized set of orthogonal vectors may be chosen).
-                                        The workflow defined in this <a href="https://pubs.acs.org/doi/10.1021/acs.chemmater.9b01294">paper</a>, and which we will refer to as MEGNet, implemented random
-                                        feature vectors for the atoms. Suprisingly, negligible difference in performance of the model for certain tasks was observed (compared to the previously discussed physical atom vectors). 
-                                    </p>
-
-                                    <h3>Edge/"Bond" Features</h3>
-                                    <p>
-                                        Apparently, due to their simple criteria for construction, the feature vector of most crystal graph edges 
-                                        is only based upon distance.
-                                    </p>
-                                    <p>
-                                        We can always describe a distance as a scalar distance, but we may also 
-                                        describe it as an offset vector (though there is some ambiguity up to a minus sign).  
-                                        More frequently, the scalar distance corresponding to the edge is expanded in a so-called Gaussian distance expansion, or Radial-Basis Function 
-                                        expansion (RBF). This gives us a larger dimensional representation vector based only on the distance.
-                                    </p>
-                                    <figure class="align">
-                                        <img src="../../assets/images/halfbaked/bond_feat.svg" alt="Gaussian expansion of distance as bond feature vector">
-                                    </figure>
-                                    <p>
-                                        One could also conceivably include other information about the bond, such as the combined charge or combined electrostatic valency of the 
-                                        neighbors, but this then wouldn't apply to next nearest neighbors very well, or the next next etc. which may have been included in the edge construction.
-                                        Of course, the loose definition of an edge requires us to drop any interpretation of the edges as 'chemical bonds' 
-                                        between graph neighbors; 
-                                        but other bond-specific attributes may also be incorporated, such as displacement vectors (in terms of components) and the like. 
-                                    </p>
-                                    
-                                    <h2>Conclusion</h2>
-                                    <p>
-                                        Modern models utilizing the basic constructions discussed above have shown suprisingly good performance on a multitude of 
-                                        training tasks such as: formation energy per atom, minimum band-gap, metal/non-metal classification, etc. This suggests that the 
-                                        information packaged in such a structure, as above, is an intrinsically useful representation of the corresponding physical structures.
-                                    </p>
-                                    <p>
-                                        Greater performance and more robust representations are almost certainly intertwined, however. To that end, it's useful 
-                                        to consider what flaws such models may have, in hopes we may improve them.
-                                    </p>
-                                    <h3>Flaws</h3>
-                                    <p>
-                                        One major flaw with these techniques is their lack of inclusion of larger geometrical information. Then again, the high performance of 
-                                        such models without this geometrical information may be a testament to it's neglible effect on the chosen targets.
-                                    </p>
-                                    <h3>Extensions</h3>
-                                    <p>
-                                        The above graph constructions have been extended to some extent in more modern models; two notable examples being the <a href="https://www.nature.com/articles/s41524-021-00650-1">atomistic LINE graph</a>, 
-                                        and the state vector of the <a href="https://pubs.acs.org/doi/10.1021/acs.chemmater.9b01294">MEGNet model</a>. The atomistic LINE graph approach associated a secondary, 'line' graph to each crystal, in which 
-                                        nodes represented edges of the crystal graph and connections between these 'edge' nodes describe the angle made between connected bonds. Megnet's 
-                                        approach associated an additional state-level vector with each crystal graph as a sort of graph-level feature.
-                                    </p>
-                                   <!-- <p>
-                                        Future works may also take advantage of the fact that these constructions are actually sheafs! A point 
-                                        not yet applied in the literature.
-                                    </p> -->
-
+                                    <h2>Zeeman Effect</h2>
 
                                     <p class="entry__tags">
                                         <strong>Tags:</strong>
                     
                                         <span class="entry__tag-list">
-                                           <a href="#0">Physics</a>
+                                            <a href="#0">Solid State</a><a href="#0">Physics</a> <a href="#0">Intro</a>
                                         </span>
                         
                                
@@ -449,15 +263,15 @@
                                 <div class="post-nav">
                                     
                                     <div class="post-nav__prev">
-                                        <a href="../torquebivector/index.html" rel="prev">
+                                        <a href="../tightbinding/index.html" rel="prev">
                                             <span>Prev</span>
-                                            Torque as a Bivector. 
+                                            Second-Quantized Tight-Binding Hamiltonian
                                         </a>
                                     </div>
                                     <div class="post-nav__next">
-                                        <a href="../ubiquityofnum/index.html" rel="next">
+                                        <a href="../crystalgraphs/index.html" rel="next">
                                             <span>Next</span>
-                                            On the Ubiquity of Numbers.                                            
+                                            Crystal Graphs for Machine Learning                                          
                                         </a>
                                     </div>
                                 </div>

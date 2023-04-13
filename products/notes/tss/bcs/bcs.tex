@@ -1,0 +1,111 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{fullpage}
+\usepackage{svg}
+\usepackage{titling}
+\usepackage{tikz}
+\usepackage{physics}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{multicol}
+
+\title{BCS Gap Temperature Dependence \& Landau-Ginzberg Fluctuations}
+\author{Alexander Heilman}
+
+\setlength{\droptitle}{-8em}   % This is your set screw
+%\setlength{\parindent}{0pt}
+\begin{document}
+
+\vspace{-3cm}
+ 
+\maketitle
+
+\begin{multicols}{2}
+\section{BCS Gap Temperature Dependence}
+The BCS gap equation is given as the following:
+$$
+\frac{1}{g\nu}=\int_0^{\omega_D}d\xi\ \frac{\tanh(\lambda(\xi)/2T)}{\lambda_(\xi)}
+$$
+where $\lambda(T)=\sqrt{\xi^2+\Delta^2}$. 
+
+We wish to solve for the critical temperature $T_c$, where the superconducting state is reached. We now make the assumption that at the critical temperature, $T_c$, the order parameter $\Delta$ is zero, so that $\Delta(T_c)=0$ and $\lambda(T)=|\xi |$. Further noting that the largest contribution to the integral is the region where $\tanh(x)\approx 1$, we first take the simple route and approximate the numerator as $1$, as below (making the transformation $x=\xi/2T_c$).
+\begin{align*}
+\frac{1}{g\nu}&\approx \int_0^{\omega_D /2T_c} \frac{1}{x}\ dx
+ = \ln(\omega_D/2T_c)
+\end{align*}
+This gives us an approximate critical temperature of the form below:
+$$
+T_c = C \times \omega_D e^{-\frac{1}{g\nu}}
+$$
+Note that this is the same form for the critical temperature reached from consideration of the four-point correlation function of the effective BCS Hamiltonian!
+
+Now we wish to extract some more information about the analytic behaviour of this function around the critical temperature $T_c$. The form of the integral cannot easily be treated in an analytic manner. However, we may seek a perturbative expansion of the function about the critical temperature.
+
+To achieve this perturbative expansion, we first add and subtract our approximate form of the integral about $T_c$ ($\int \tanh(x)/x$), as below.
+\begin{align*}
+\frac{1}{g\nu}& = \int_0^{\omega_D/2T}dx\ \Big[\frac{\tanh(x^2+\kappa^2)^{1/2}}{(x^2+\kappa^2)^{1/2}} -\frac{\tanh x}{x} \Big]\\&\hspace{3.35cm} +\int_0^{\omega_D/2T}\underbrace{dx\ \frac{\tanh x}{x}}_{\approx \ln(\omega_D/2T) }
+\end{align*}
+with $x=\xi/2T_c$ and $\kappa = \Delta/2T$. We then apply our previous approximation for the added integral, and expand with $\ln(\Delta/2T) = \ln(\Delta/2T_c) + \delta T/ T_c$ to arrive at the integral below:
+\begin{align*}
+\frac{1}{g\nu}& \approx \int_0^{\omega_D/2T}dx\ \Big[\frac{\tanh(x^2+\kappa^2)^{1/2}}{(x^2+\kappa^2)^{1/2}} -\frac{\tanh x}{x} \Big]\\&\hspace{4.85cm} +\frac{1}{g\nu} + \frac{\delta T}{T_c}\\
+\\
+-\frac{\delta T}{T_c}&=\int_0^{\omega_D/2T}dx\ \Big[\frac{\tanh(x^2+\kappa^2)^{1/2}}{(x^2+\kappa^2)^{1/2}} -\frac{\tanh x}{x} \Big]
+\end{align*}
+Which leaves us only to consider the remaining integral on the righthand side of the equality.
+
+This integral can be treated approximately by splitting it into two effective parts. The first region, where $x$ ranges from zero to one, allows us to Taylor expand the hyperbolic tangent, resulting in a contribution of $C \times \kappa^2$. In the second region, with $x$ ranging from one to the upper limit of the integral ($\omega_D/2T$), the hyperbolic tangent may be approximated as one (similar to our previous approximation), which also results in a contribution of the form $C \times \kappa^2$. The sum of these two contributions then gives us the approximate equality below:
+$$
+-\frac{\delta T}{T_c}\approx C\times \kappa^2
+$$
+$$
+\Rightarrow\quad \  \Delta \approx C\times \big(T_c(T_c-T)\big)^{1/2}\quad\quad
+$$
+
+where, again, $C$ is some numerical constant.
+\section{Landau-Ginzberg Fluctuations}
+\small
+\begin{align*}
+\chi_{n,\mathbf{q}}^c &= -\frac{k_BT}{V}\sum_{m,\mathbf{p}}G_{0}(\mathbf{p},i\omega_m)G_0(-\mathbf{p}+\mathbf{q},-i\omega_m+i\omega_n)\\
+&=\frac{1}{V}\sum_p\frac{1-n_F(\xi_{p})-n_F(\xi_{p+q})}{i\omega_n-\xi_p-\xi_{-p+q}}
+\end{align*}\normalsize
+Now, converting the sum of momentum vectors into an integral (with the appropriate coefficients of $2\pi$), we have the following form for the zero
+mode:
+$$
+\chi_{0,\mathbf{q}}^c = -\int \frac{d^d p}{(2\pi)^d}\frac{1-n_F(\xi_{p})-n_F(\xi_{p+q})}{-\xi_p-\xi_{-p+q}}
+$$
+The integral over all momenta here makes it transparent that we may make the 
+transformation $p\rightarrow p-q/2$. Implementing this transformation, and noting that $\xi_p=\xi_{-p}$, we arrive at the form below.
+$$
+\chi_{0,\mathbf{q}}^c = \int \frac{d^d p}{(2\pi)^d}\frac{1-n_F(\xi_{p-q/2})-n_F(\xi_{p+q/2})}{\xi_{p-q/2}+\xi_{p+q/2}}
+$$
+Now, in the regions near mean field, we expect $q$ to be small. So, noting that the free particle dispersion, expanded about some point $k$ is the following:
+$$
+\epsilon_{k+q}=\frac{\hbar^2}{2m}\big(k^2+2k\cdot q + q^2 \big)
+$$
+We may approximate $\xi_p=\epsilon_k -\mu$ as $\xi_{p+q}\approx \xi_p + \frac{p\cdot q}{m}$, if we assume $q$ is small such that $q^2$ is negligible (and set $\hbar=1$). Applying this linear approximation, we are left with the following integral:
+$$
+\chi_{0,\mathbf{q}}^c = \int \frac{d^d p}{(2\pi)^d}\frac{1-n_F(\xi_{p})-\partial_{\xi}^2n_F(\xi_p)\frac{(q\cdot p)^2}{4m^2}}{2\xi_{p}}
+$$
+Now, we seek fluctuations from the mean field (where $q=0$). So noting, the form of the correlation function at $\omega_n=0$ and $q=0$, we have
+$$
+\chi_{0,\mathbf{q}}^c = \chi_{0,0}^c-\int \frac{d^d p}{(2\pi)^d}\frac{1-n_F(\xi_{p})-\partial_{\xi}^2n_F(\xi_p)\frac{(q\cdot p)^2}{4m^2}}{2\xi_{p}}
+$$
+Making the approximation that $p^2/2m\approx \mu$ at $\xi$ comparable to thermal energy $k_B$, and then converting the into one over energy, we have the following:
+$$
+\chi_{0,\mathbf{q}}^c = \chi_{0,0}^c-\frac{\nu \mu q^2}{12 m}\int \frac{d\epsilon}\epsilon^{-1} \partial^2_{\epsilon}n_F(\epsilon)
+$$
+And use the relation
+$$
+\int d\epsilon \epsilon^{-1}\partial_{\epsilon}^2 n_F(\epsilon) =\frac{7}{2\pi^2}\upsilon(s)\beta^{2}
+$$
+where $\upsilon(x)=\sum_{n=1}^{\infty}n^x$, to arrive at the final, quadratic form, below.
+$$
+\chi_{0,\mathbf{q}}^c = \chi_{0,0}^c-\frac{1}{24}\frac{7}{2\pi^2}\upsilon(s)\nu v_F^2\beta^{2}q^2
+$$
+\end{multicols}
+
+\end{document}
