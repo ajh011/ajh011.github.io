@@ -6,7 +6,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Energy Splitting</title>
+    <title>NV-Center Qubit</title>
 
     <script>
         document.documentElement.classList.remove('no-js');
@@ -150,7 +150,7 @@
                             <header class="entry__header">
     
                                 <h1 class="entry__title">
-                                    Common Energy-Level Splitting Effects for Atoms.
+                                    An Overview of the (-) NV-Center in Diamond as a Prospective Qubit.
                                 </h1>
 
                                 <div class="entry__meta">
@@ -166,7 +166,7 @@
                                             <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
                                             <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
                                         </svg>
-                                        April 6, 2023
+                                        April 12, 2023
                                     </div>
                                     <div class="entry__meta-cat">
                                         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -175,7 +175,7 @@
                                         </svg>
                                           
                                         <span class="cat-links">
-                                            <a href="#0">Physics</a>
+                                            <a href="#0">Solid State</a> <a href="#0">Quantum Computation</a>
                                         </span>
                                     </div>
                                 </div>
@@ -183,7 +183,7 @@
 
                             <div class="entry__media">
                                 <figure class="alignwide center" >
-                                    <img src="../../assets/images/halfbaked/energysplitting.svg"   alt="Energy splitting effects cover image.">
+                                    <img src="../../assets/images/halfbaked/nvcenter.svg"   alt="NV-Center in diamond.">
                                 </figure>
                             </div>
 
@@ -191,126 +191,48 @@
 
                                 <div class="entry__content">
                                     <p class="lead">
-                                        Several common effects are responsible for a wide range of energy level modulations in many important systems. Below, we 
-                                        consider some energy-level splitting effects resulting from interaction between particles and external AC/DC electric and magnetic fields.
+                                        A certain defect of the diamond lattice, termed an NV-center, is often presented as a plausible 
+                                        candidate for a room-temperature stable, solid-state qubit. An overview of this defect as a qubit, the relevant energy levels, 
+                                        and their origin from a total Hamiltonian is given below.
                                     </p> 
+
                                     <p class="drop-cap">
-                                        
+                                        A well-studied defect of the diamond lattice is one in which a nitrogen replaces a carbon and a vacany neighbors this substitution site.
+                                        This so-called NV-center leaves one pair of unbonded electrons, which may occupy a certain set of energy levels that we may implement as a qubit.
                                     </p>
                                     <p>
-                                        These effects are most often considered in the context of atomic orbitals of electrons in orbit around an ionic center. That is,
-                                        these are generally atomic effects. Though they may have some analagous application to other quantum systems, such as point defects (or 
-                                        other potentials with localized electron wavefunctions).
-                                    </p>
 
-
-                                    <div class="boxed">
-                                        <h4 class="boxtitle">Hydrogen-Like Atoms & Orbitals</h4>
-                                        <p>
-                                            One of the few soluble Schrodinger equations is a simple (but relatively good) model of the hydrogen atom, shown below in position space:
-                                            <div class="eq">
-                                                \begin{align}
-                                                   H\psi_n(\mathbf{r}) =  \Big(\ \overbrace{-\frac{1}{2\mu}\nabla^2}^{\text{Kinetic}} - \overbrace{k\frac{e^2}{r}}^{\text{Coulomb}} \ \Big)\psi_n(\mathbf{r})& =E_n\psi_n(\mathbf{r})\\
-                                                \end{align}
-                                            </div>
-                                            with \(\mu= m_e / (m_e+m_p) \) the reduced mass; and \(\nabla^2\) representing the position space Laplacian.
-                                        </p>
-                                        <p>
-                                            This differential equation is separable, so that in spherical coordinates we may make the following statement:
-                                            <div class="eq">
-                                                \[
-                                                    \psi_n(\mathbf{r})=R(r)\Theta(\theta)\Phi(\phi)
-                                                \]
-                                            </div>
-                                            and solve for each of the three (now one-dimensional) functions in a respective, simplified differential equation
-                                            such that we have the following solutions:
-                                            <div class="eq">
-                                                \begin{align}
-                                                    R_n(r)&=\\
-                                                    \Theta_m(\theta)&=\\
-                                                    \Phi_{\ell}(\phi)&=\\
-                                                \end{align}
-                                            </div>
-                                        </p>
-                                        <p>
-                                            Though other atoms have insoluble Schodinger equations (due to the electron-electron interaction terms), 
-                                            some (particularly those with only one electron valence shells, i.e. alkali earth metals) can be shown to have solutions qualitatively similar 
-                                            to these Hydrogen wave-functions.
-                                        </p>
-                                    </div>
-                                    <p>
-
-                                    </p>
-
-                                    <h3>Effects as Perturbations</h3>
-                                    <p>
-                                        Assuming the interaction terms are relatively small compared to the Coulombic interaction between the electrons themselves and the nucleus (where screening of the other 
-                                        electrons is generally assumed), we have the following
-                                        
-                                        <div class="eq">
-                                            \[
-                                                H = H_{\text{Kinetic}}+H_{\text{Coulomb}} + H_{e^- - e^- \text{ Interaction}}+\lambda H_{\text{Effect}}
-                                            \]
-                                        </div>
-                                        where the Coulombic interaction is the electric interaction between the electron and the protons of the nucleus.
-                                    </p>
-                                    <p>
-                                        Furthermore, to a very good approximation, most nuclear and fundamental particles can be assumed to have only a non-negligible electric and magnetic
-                                        dipole moment.
-                                    </p>
-
-                                    <h2>Zeeman Effect</h2>
-                                    <p>
-                                        The Zeeman effect refers to the energy of a magnetic dipole aligned or anti-aligned with some external magnetic field.
-
-                                        <div class="eq">
-                                            \[
-                                                H_{\text{Zeeman}}=-\mathbf{\mu}\cdot \mathbf{B}
-                                            \]
-                                        </div>
-                                    </p>
-
-                                    <div class="boxed">
-                                        <h4 class="boxtitle">Zero Field Splitting (ZFS)</h4>
-                                        <p>
-                                            Zero field splitting describes the splitting of (to zeroth order degenerate) electron energy levels in the absence of any external magnetic field (that is,
-                                            any field not resulting from the electron or ionic center of the atom).
-                                            
-                                        </p>
-                                        <div class="hl"></div>                                        
-                                        <h4 class="boxtitle">Fine Structure</h4>
-                                        <p>
-                                            The fine structure refers to the splitting of spectral lines of atomic samples (most often Hydrogen). This results from the effective 
-                                            Zeeman contribution resulting from the ion-electron spin-orbit interaction, as well as relativistic corrections.
-                                        </p>
-                                    </div>
-                                    <br>
-                                    <h2>Stark Effect</h2>
-                                    <p>
-                                        The Stark effect refers to the resulting shift in energy due to a constant, uniform electric field.
-                                        <div class="eq">
-                                            \[
-                                                H_{\text{Stark}}=-\mathbf{d}\cdot\mathbf{F}
-                                            \]
-                                        </div>
-                                    </p>
-                                    <h2>Autler-Towns Effect (AC Stark Effect)</h2>
-                                    <p>
-                                        Autler-Towns refers to interactions with alternating electric fields (such as a laser), as opposed to constant electric fields.
                                     </p>
                                     
                                     <div class="boxed">
-                                        <h4 class="boxtitle">Rabi Oscillations</h4>
+                                        <h4 class="boxtitle">Triplet \(\leftrightarrow\) Singlet Qubit</h4>
                                         <p>
-                                            In a two-level quantum system, we may apply time-dependent perturbation theory to derive a 
-                                            certain form of the coefficients of the pair of states.
+                                            A two-electron pair may be taken as a single qubit by taking the singlet state to be the zero state and the triplet state to be the 
+                                            one state, or vice versa.
                                         </p>
-                                    </div>
-                                    <br>
+                                        </div>
+                                        <br>
+                                    <h3>What we're looking for...</h3>
                                     <p>
-                                        
+                                        Before showing the results, it's important to give some intuition for the model considered. And, atleast two concepts should be explicitly considered 
+                                        to motivate what follows: the resistivity of superconductors drops to zero discontinuously at a certain temperature (as opposed to some smooth
+                                        transition), which hints at a <em>phase transition</em> that should be characterizable by some order parameter; and, furthermore, the behaviour of these states 
+                                        depends on the underlying ionic lattice (shown experimentally).
                                     </p>
-                                    <h2>Zeeman Effect</h2>
+                                    <p>
+                                        The order parameter we're looking for turns out to be a so-called <em>gap function</em> which corresponds to a certain singularity in the two-particle 
+                                        correlation function. And the lattice dependence points towards a phonon-mediated effect on the electrons.
+                                    </p>
+                                    <h2>Further Resources</h2>
+                                    <p>
+                                        The approaches taken here are really just to give a rough heuristic for the behaviour of typical superconductors. A more refined 
+                                        treatement may utilize the functional field integral approach. 
+                                    </p>
+                                    <p>
+                                        Much of the discussion here is covered (arguably better, and in more detail) in Altland and Simmons <em>Condensed Matter Field 
+                                        Theory</em> in section 6.5; as well as in this set of <a href="https://portal.ifi.unicamp.br/images/files/graduacao/aulas-on-line/fen-emerg/lecture_notes_BCS.pdf">
+                                        lecture notes</a>.
+                                    </p>
 
                                     <p class="entry__tags">
                                         <strong>Tags:</strong>
