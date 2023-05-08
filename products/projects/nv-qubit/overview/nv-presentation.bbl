@@ -1,0 +1,41 @@
+\begin{thebibliography}{1}
+
+\bibitem{PhysRevX.9.031045}
+C.~E. Bradley, J.~Randall, M.~H. Abobeih, R.~C. Berrevoets, M.~J. Degen, M.~A.
+  Bakker, M.~Markham, D.~J. Twitchen, and T.~H. Taminiau.
+\newblock A ten-qubit solid-state spin register with quantum memory up to one
+  minute.
+\newblock {\em Phys. Rev. X}, 9:031045, Sep 2019.
+
+\bibitem{PhysRevLett.129.100501}
+Yue Fu, Wenquan Liu, Xiangyu Ye, Ya~Wang, Chengjie Zhang, Chang-Kui Duan, Xing
+  Rong, and Jiangfeng Du.
+\newblock Experimental investigation of quantum correlations in a two-qutrit
+  spin system.
+\newblock {\em Phys. Rev. Lett.}, 129:100501, Aug 2022.
+
+\bibitem{gali2019ab}
+{\'A}d{\'a}m Gali.
+\newblock Ab initio theory of the nitrogen-vacancy center in diamond.
+\newblock {\em Nanophotonics}, 8(11):1907--1943, 2019.
+
+\bibitem{hadden2010strongly}
+JP~Hadden, JP~Harrison, Antony~C Stanley-Clarke, L~Marseglia, Y-LD Ho,
+  BR~Patton, Jeremy~L O’Brien, and JG~Rarity.
+\newblock Strongly enhanced photon collection from diamond defect centers under
+  microfabricated integrated solid immersion lenses.
+\newblock {\em Applied Physics Letters}, 97(24):241901, 2010.
+
+\bibitem{nemoto2016photonic}
+Kae Nemoto, Michael Trupke, Simon~J Devitt, Burkhard Scharfenberger, Kathrin
+  Buczak, J{\"o}rg Schmiedmayer, and William~J Munro.
+\newblock Photonic quantum networks formed from nv- centers.
+\newblock {\em Scientific reports}, 6(1):1--12, 2016.
+
+\bibitem{PhysRevLett.105.177403}
+Lucio Robledo, Hannes Bernien, Ilse van Weperen, and Ronald Hanson.
+\newblock Control and coherence of the optical transition of single nitrogen
+  vacancy centers in diamond.
+\newblock {\em Phys. Rev. Lett.}, 105:177403, Oct 2010.
+
+\end{thebibliography}

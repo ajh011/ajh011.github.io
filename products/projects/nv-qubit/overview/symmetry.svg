@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="symmetry.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 161.83717 158.52859"
+   height="158.52859mm"
+   width="161.83717mm">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow2Mend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path953" />
+    </marker>
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect922"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect918"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect914"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect908"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect883"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect864"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect845"
+       effect="bspline" />
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-1"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path953-8"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
+    <path
+       id="MJX-18-TEX-I-43"
+       d="m 50,252 q 0,115 67,221 67,106 169,168 102,62 204,63 90,0 143,-51 9,-10 15,-17 6,-7 8,-10 l 1,-3 q 3,0 27,26 7,6 15,14 8,8 16,16 8,8 10,11 l 15,15 h 6 q 14,0 14,-7 0,-4 -32,-137 -36,-139 -36,-140 -2,-5 -5,-6 -3,-1 -18,-2 h -16 q -6,6 -6,9 0,1 1,7 1,6 2,20 1,14 1,32 0,71 -32,124 -32,53 -109,54 -26,0 -56,-7 -30,-7 -72,-24 -42,-17 -83,-56 -41,-39 -73,-93 -32,-57 -51,-133 -19,-76 -19,-124 0,-114 76,-164 48,-34 118,-34 91,0 162,68 71,68 94,148 4,13 6,15 2,2 16,2 20,0 20,-9 0,-5 -1,-9 Q 618,132 523,55 428,-22 319,-22 206,-22 128,53 50,128 50,252 Z" />
+    <path
+       id="MJX-18-TEX-N-33"
+       d="m 127,463 q -27,0 -42,17 -15,17 -16,44 0,55 48,98 48,43 116,43 35,0 44,-1 74,-12 113,-53 39,-41 40,-89 0,-52 -34,-101 -34,-49 -94,-71 l -3,-2 q 0,-1 9,-3 9,-2 29,-9 20,-7 38,-21 82,-53 82,-140 0,-79 -62,-138 -62,-59 -157,-59 -80,0 -138,43 -58,43 -58,109 0,28 18,45 18,17 45,18 28,0 46,-18 18,-18 18,-45 0,-11 -3,-20 -3,-9 -7,-16 -4,-7 -11,-12 -7,-5 -12,-8 -5,-3 -10,-4 -5,-1 -8,-3 l -4,-1 q 51,-45 124,-45 55,0 83,53 17,33 17,101 v 20 q 0,95 -64,127 -15,6 -61,7 l -42,1 -3,2 q -2,3 -2,16 0,18 8,18 28,0 58,5 34,5 62,42 28,37 28,112 v 8 q 0,57 -35,79 -22,14 -47,14 -32,0 -59,-11 -27,-11 -38,-23 -11,-12 -11,-12 h 3 q 3,-1 8,-2 5,-1 10,-5 5,-4 12,-7 7,-3 10,-11 3,-8 8,-15 5,-7 3,-20 0,-22 -14,-39 -14,-17 -45,-18 z" />
+    <path
+       id="MJX-18-TEX-N-A0"
+       d="" />
+    <path
+       id="MJX-18-TEX-N-32"
+       d="m 109,429 q -27,0 -43,18 -16,18 -16,44 0,71 53,123 53,52 132,52 91,0 152,-56 61,-56 62,-145 0,-43 -20,-82 -20,-39 -48,-68 -28,-29 -80,-74 -36,-31 -100,-92 l -59,-56 76,-1 q 157,0 167,5 7,2 24,89 v 3 h 40 v -3 Q 448,183 436,95 424,7 421,3 V 0 H 50 v 19 12 q 0,7 6,15 6,8 30,35 29,32 50,56 9,10 34,37 25,27 34,37 9,10 29,33 20,23 28,34 8,11 23,30 15,19 21,32 6,13 15,29 9,16 13,32 4,16 7,30 3,14 3,33 0,63 -34,109 -34,46 -97,46 -33,0 -58,-17 -25,-17 -35,-33 -10,-16 -10,-19 0,-1 5,-1 18,0 37,-14 19,-14 19,-46 0,-25 -16,-42 -16,-17 -45,-18 z" />
+    <path
+       id="MJX-18-TEX-I-3C3"
+       d="m 184,-11 q -68,0 -110,45 -42,45 -43,113 0,100 73,186 73,86 170,97 1,1 140,1 h 138 q 1,-1 3,-2 2,-1 4,-2 2,-1 3,-2 1,-1 3,-3 2,-2 2,-2 0,0 2,-4 2,-4 1,-4 -1,0 1,-5 2,-5 1,-6 0,-44 -65,-44 -7,0 -17,0 -10,0 -14,1 h -60 l 5,-10 q 18,-38 18,-85 0,-110 -80,-192 -80,-82 -175,-82 z m 177,289 q 0,80 -85,80 -124,0 -161,-174 -1,-4 -1,-6 -8,-37 -8,-61 0,-50 25,-70 25,-20 57,-21 54,0 99,47 29,30 47,80 18,50 22,80 4,30 5,45 z" />
+    <path
+       id="MJX-18-TEX-I-76"
+       d="m 173,380 q 0,25 -19,25 -24,0 -50,-29 -26,-29 -43,-89 -1,-1 -2,-3 -1,-2 -1,-3 0,-1 -2,-2 -2,-1 -3,-1 -1,0 -4,0 -3,0 -8,0 H 27 q -6,6 -6,9 0,7 8,29 8,22 24,52 16,30 44,51 28,21 63,22 42,0 65,-24 23,-24 24,-56 0,-17 -3,-26 0,-6 -15,-44 -15,-38 -31,-89 -16,-51 -18,-89 0,-27 5,-44 13,-43 63,-43 37,0 69,34 32,34 50,79 18,45 29,83 11,38 11,55 0,23 -8,40 -8,17 -18,26 -10,9 -18,18 -8,9 -8,22 0,22 19,41 19,19 41,19 19,0 34,-18 15,-18 16,-58 0,-27 -12,-83 Q 443,228 418,159 393,90 347,40 301,-10 241,-11 q -64,0 -102,33 -37,32 -37,95 0,31 8,64 8,33 41,117 22,64 22,82 z" />
+    <path
+       id="MJX-18-TEX-N-2032"
+       d="m 79,43 q -6,0 -27,6 -21,6 -22,12 0,7 55,232 55,225 61,235 15,32 52,32 20,0 42,-15 22,-15 22,-44 0,-5 -2,-15 -1,-7 -87,-223 Q 87,47 84,45 81,43 79,43 Z" />
+  </defs>
+  <sodipodi:namedview
+     lock-margins="true"
+     fit-margin-bottom="3"
+     fit-margin-right="3"
+     fit-margin-left="3"
+     fit-margin-top="3"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-11"
+     inkscape:window-x="-11"
+     inkscape:window-height="1046"
+     inkscape:window-width="1920"
+     inkscape:snap-center="true"
+     inkscape:guide-bbox="true"
+     showguides="false"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="724.14537"
+     inkscape:cx="573.87834"
+     inkscape:zoom="0.49497475"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base">
+    <sodipodi:guide
+       id="guide833"
+       orientation="1,0"
+       position="66.313169,205.50791" />
+    <sodipodi:guide
+       id="guide835"
+       orientation="1,0"
+       position="16.60104,188.66993" />
+    <sodipodi:guide
+       id="guide837"
+       orientation="1,0"
+       position="116.29257,188.9372" />
+    <sodipodi:guide
+       id="guide839"
+       orientation="0,-1"
+       position="-27.498431,133.61241" />
+    <sodipodi:guide
+       id="guide885"
+       orientation="0,-1"
+       position="16.601039,47.402566" />
+    <sodipodi:guide
+       id="guide887"
+       orientation="0,-1"
+       position="77.779058,81.715146" />
+    <sodipodi:guide
+       id="guide1897"
+       orientation="0,-1"
+       position="133.76673,116.53966" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-33.9129,-50.186548)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <path
+       inkscape:transform-center-y="36.898012"
+       inkscape:transform-center-x="4.5e-06"
+       inkscape:original-d="m 52.559443,158.64683 c 33.230774,2.7e-4 66.461277,2.7e-4 99.691527,0"
+       inkscape:path-effect="#path-effect845"
+       id="path843"
+       d="m 52.559443,158.64683 c 33.230774,0 66.461277,0 99.691527,0"
+       style="fill:none;stroke:#3a2ef9;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:transform-center-y="-6.2696801"
+       inkscape:transform-center-x="-24.922879"
+       style="fill:none;stroke:#de4343;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 102.40521,72.311445 c 16.61539,28.778695 33.23063,57.557145 49.84576,86.335385"
+       id="path843-9"
+       inkscape:path-effect="#path-effect864"
+       inkscape:original-d="m 102.40521,72.311445 c 16.61517,28.778815 33.23041,57.557275 49.84576,86.335385" />
+    <path
+       inkscape:transform-center-y="-6.2696801"
+       inkscape:transform-center-x="24.92288"
+       inkscape:original-d="M 102.40521,72.311445 C 85.790051,101.09026 69.174803,129.86872 52.559452,158.64683"
+       inkscape:path-effect="#path-effect883"
+       id="path843-9-1"
+       d="M 102.40521,72.311445 C 85.789828,101.09013 69.174577,129.86859 52.559452,158.64683"
+       style="fill:none;stroke:#5dc527;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <circle
+       r="3.6319921"
+       cy="129.9104"
+       cx="102.24256"
+       id="path889"
+       style="opacity:0.811688;fill:none;stroke:#000000;stroke-width:0.217563;stroke-miterlimit:4;stroke-dasharray:none" />
+    <circle
+       r="0.37690485"
+       cy="129.9104"
+       cx="102.24256"
+       id="path910"
+       style="opacity:0.811688;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.217563;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       inkscape:original-d="m 102.40521,53.370712 c 3.1e-4,47.262898 3.1e-4,94.731558 0,142.096698"
+       inkscape:path-effect="#path-effect914"
+       id="path912"
+       d="m 102.40521,53.370712 c 0,47.262898 0,94.731558 0,142.096698"
+       style="opacity:0.383117;fill:none;stroke:#000000;stroke-width:1.00669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       inkscape:original-d="M 167.75175,167.58857 C 124.21228,142.45114 80.672504,117.31346 37.132458,92.175481"
+       inkscape:path-effect="#path-effect918"
+       id="path916"
+       d="M 167.75175,167.58857 C 124.21232,142.45107 80.672556,117.31337 37.132458,92.175481"
+       style="opacity:0.383117;fill:none;stroke:#000000;stroke-width:0.878233;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       inkscape:original-d="m 42.53011,164.4306 c 41.716799,-24.08475 83.4333,-48.16978 125.14952,-72.255112"
+       inkscape:path-effect="#path-effect922"
+       id="path920"
+       d="m 42.53011,164.4306 c 41.716601,-24.08509 83.4331,-48.17013 125.14952,-72.255112"
+       style="opacity:0.383117;fill:none;stroke:#000000;stroke-width:0.909355;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       sodipodi:open="true"
+       d="m 102.62306,53.809679 a 75.134926,75.134926 0 0 1 64.21272,35.953343 75.134926,75.134926 0 0 1 2.70741,73.543098"
+       sodipodi:arc-type="arc"
+       sodipodi:end="0.4749924"
+       sodipodi:start="4.7110191"
+       sodipodi:ry="75.134926"
+       sodipodi:rx="75.134926"
+       sodipodi:cy="128.94453"
+       sodipodi:cx="102.72598"
+       sodipodi:type="arc"
+       id="path924"
+       style="opacity:0.383117;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.24612;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend)" />
+    <path
+       style="opacity:0.383117;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.286;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-1)"
+       id="path924-0"
+       sodipodi:type="arc"
+       sodipodi:cx="96.686104"
+       sodipodi:cy="129.75206"
+       sodipodi:rx="65.480621"
+       sodipodi:ry="65.480621"
+       sodipodi:start="4.7987525"
+       sodipodi:end="2.4908579"
+       sodipodi:arc-type="arc"
+       d="m 102.33421,64.515486 a 65.480621,65.480621 0 0 1 59.00306,54.847254 65.480621,65.480621 0 0 1 -38.84845,70.5718 65.480621,65.480621 0 0 1 -77.901647,-20.51621"
+       sodipodi:open="true" />
+    <g
+       style="fill:#000000;stroke:#000000;stroke-width:0"
+       id="g1776"
+       data-mml-node="math"
+       transform="matrix(0.00478872,0,0,-0.00478872,263.08055,63.097754)">
+      <g
+         transform="matrix(2.1005042,0,0,2.1005042,-16867.228,-18890.55)"
+         id="g1682"
+         data-mml-node="msub">
+        <g
+           id="g1676"
+           data-mml-node="mi">
+          <use
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use1674"
+             xlink:href="#MJX-18-TEX-I-43" />
+        </g>
+        <g
+           id="g1680"
+           transform="matrix(0.707,0,0,0.707,715,-150)"
+           data-mml-node="mn">
+          <use
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use1678"
+             xlink:href="#MJX-18-TEX-N-33" />
+        </g>
+      </g>
+      <g
+         id="g1686"
+         transform="translate(1118.6)"
+         data-mml-node="mtext">
+        <use
+           height="100%"
+           width="100%"
+           y="0"
+           x="0"
+           id="use1684"
+           xlink:href="#MJX-18-TEX-N-A0" />
+      </g>
+      <g
+         id="g1690"
+         transform="translate(1368.6)"
+         data-mml-node="mtext">
+        <use
+           height="100%"
+           width="100%"
+           y="0"
+           x="0"
+           id="use1688"
+           xlink:href="#MJX-18-TEX-N-A0" />
+      </g>
+      <g
+         id="g1694"
+         transform="translate(1618.6)"
+         data-mml-node="mtext">
+        <use
+           height="100%"
+           width="100%"
+           y="0"
+           x="0"
+           id="use1692"
+           xlink:href="#MJX-18-TEX-N-A0" />
+      </g>
+      <g
+         id="g1698"
+         transform="translate(1868.6)"
+         data-mml-node="mtext">
+        <use
+           height="100%"
+           width="100%"
+           y="0"
+           x="0"
+           id="use1696"
+           xlink:href="#MJX-18-TEX-N-A0" />
+      </g>
+      <g
+         id="g1712"
+         transform="matrix(2.1005042,0,0,2.1005042,-43121.074,-29230.449)"
+         data-mml-node="msubsup">
+        <g
+           id="g1702"
+           data-mml-node="mi">
+          <use
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use1700"
+             xlink:href="#MJX-18-TEX-I-43" />
+        </g>
+        <g
+           id="g1706"
+           transform="matrix(0.707,0,0,0.707,715,413)"
+           data-mml-node="mn">
+          <use
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use1704"
+             xlink:href="#MJX-18-TEX-N-32" />
+        </g>
+        <g
+           id="g1710"
+           transform="matrix(0.707,0,0,0.707,715,-247)"
+           data-mml-node="mn">
+          <use
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use1708"
+             xlink:href="#MJX-18-TEX-N-33" />
+        </g>
+      </g>
+      <g
+         id="g1716"
+         transform="translate(3237.1)"
+         data-mml-node="mtext">
+        <use
+           height="100%"
+           width="100%"
+           y="0"
+           x="0"
+           id="use1714"
+           xlink:href="#MJX-18-TEX-N-A0" />
+      </g>
+      <g
+         id="g1720"
+         transform="translate(3487.1)"
+         data-mml-node="mtext">
+        <use
+           height="100%"
+           width="100%"
+           y="0"
+           x="0"
+           id="use1718"
+           xlink:href="#MJX-18-TEX-N-A0" />
+      </g>
+      <g
+         id="g1724"
+         transform="translate(3737.1)"
+         data-mml-node="mtext">
+        <use
+           height="100%"
+           width="100%"
+           y="0"
+           x="0"
+           id="use1722"
+           xlink:href="#MJX-18-TEX-N-A0" />
+      </g>
+      <g
+         id="g1734"
+         transform="matrix(2.1005042,0,0,2.1005042,-36350.043,-545.30231)"
+         data-mml-node="msub">
+        <g
+           id="g1728"
+           data-mml-node="mi">
+          <use
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use1726"
+             xlink:href="#MJX-18-TEX-I-3C3" />
+        </g>
+        <g
+           id="g1732"
+           transform="matrix(0.707,0,0,0.707,571,-150)"
+           data-mml-node="mi">
+          <use
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use1730"
+             xlink:href="#MJX-18-TEX-I-76" />
+        </g>
+      </g>
+      <g
+         id="g1738"
+         transform="translate(4951.1)"
+         data-mml-node="mtext">
+        <use
+           height="100%"
+           width="100%"
+           y="0"
+           x="0"
+           id="use1736"
+           xlink:href="#MJX-18-TEX-N-A0" />
+      </g>
+      <g
+         id="g1752"
+         transform="matrix(2.1005042,0,0,2.1005042,-26851.944,-7867.051)"
+         data-mml-node="msubsup">
+        <g
+           id="g1742"
+           data-mml-node="mi">
+          <use
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use1740"
+             xlink:href="#MJX-18-TEX-I-3C3" />
+        </g>
+        <g
+           id="g1746"
+           transform="matrix(0.707,0,0,0.707,571,413)"
+           data-mml-node="mo">
+          <use
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use1744"
+             xlink:href="#MJX-18-TEX-N-2032" />
+        </g>
+        <g
+           id="g1750"
+           transform="matrix(0.707,0,0,0.707,571,-247)"
+           data-mml-node="mi">
+          <use
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use1748"
+             xlink:href="#MJX-18-TEX-I-76" />
+        </g>
+      </g>
+      <g
+         id="g1756"
+         transform="translate(6165)"
+         data-mml-node="mtext">
+        <use
+           height="100%"
+           width="100%"
+           y="0"
+           x="0"
+           id="use1754"
+           xlink:href="#MJX-18-TEX-N-A0" />
+      </g>
+      <g
+         id="g1774"
+         transform="matrix(2.1005042,0,0,2.1005042,-42321.015,-7824.4904)"
+         data-mml-node="msubsup">
+        <g
+           id="g1760"
+           data-mml-node="mi">
+          <use
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use1758"
+             xlink:href="#MJX-18-TEX-I-3C3" />
+        </g>
+        <g
+           id="g1768"
+           transform="matrix(0.707,0,0,0.707,571,413)"
+           data-mml-node="mo">
+          <g
+             id="g1766"
+             data-c="2033">
+            <use
+               height="100%"
+               width="100%"
+               y="0"
+               x="0"
+               id="use1762"
+               xlink:href="#MJX-18-TEX-N-2032" />
+            <use
+               height="100%"
+               width="100%"
+               y="0"
+               x="0"
+               id="use1764"
+               transform="translate(275)"
+               xlink:href="#MJX-18-TEX-N-2032" />
+          </g>
+        </g>
+        <g
+           id="g1772"
+           transform="matrix(0.707,0,0,0.707,571,-247)"
+           data-mml-node="mi">
+          <use
+             height="100%"
+             width="100%"
+             y="0"
+             x="0"
+             id="use1770"
+             xlink:href="#MJX-18-TEX-I-76" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
