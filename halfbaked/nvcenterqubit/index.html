@@ -166,7 +166,7 @@
                                             <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
                                             <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
                                         </svg>
-                                        April 12, 2023
+                                        July 21, 2023
                                     </div>
                                     <div class="entry__meta-cat">
                                         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -200,17 +200,173 @@
                                         A well-studied defect of the diamond lattice is one in which a nitrogen replaces a carbon and a vacany neighbors this substitution site.
                                         This so-called NV-center leaves one pair of unbonded electrons, which may occupy a certain set of energy levels that we may implement as a qubit.
                                     </p>
+                                    <figure class="align center" >
+                                        <img src="../../assets/images/halfbaked/diamond_nv.svg"   alt="NV-Center in diamond.">
+                                    </figure>
                                     <p>
+                                        We wish to use the spin state of the electron pair (in the electronic ground state) as our qubit state.
+                                        As such, we need consider the relevant effects that influence the energy level of the spin state.
+                                    </p>
+                                    <p>
+                                        Spins generally interact most strongly with magnetic fields and other spins (which effectively generate magnetic fields).
+                                        Below, we consider only two of the most prominent effects to illustrate the basic concept; namely zero-field splitting of the different spin states due to electron-electron 
+                                        interactions; and, the Zeeman splitting of the magnetic energy levels resulting from external magnetic fields.                                    
+                                    </p>
 
+                                    <div class="boxed">
+                                    <h4 class="boxtitle">Why a Defect?</h4>
+                                    <p>
+                                        Solid state defects offer unique systems that allow us to realize localized electronic states within crystals.
+                                        The defect considered here is chosen primarily because of it's nice energy levels, and a particular asymmetry 
+                                        in an excited state relaxation. The treatment would otherwise apply equally well to most similar systems. 
+                                    </p>
+
+
+                                    <h4 class="boxtitle">Why Diamond?</h4>
+                                    <p>
+                                        Diamond is then a particularly well suited host material for the defect because of it's low density of phonon modes, and
+                                        correspondingly high Debye temperature. This lower density of phonon modes generally increases the coherence time of the 
+                                        quantum state of the defect's electrons; allowing us to have a qubit platform that can reach coherence times on the order of seconds 
+                                        to minutes even at room temperature!
+                                    </p>
+                                    </div>
+
+                                    
+                                    <h3>Zero-Field Splitting</h3>
+                                    <p>
+                                        Zero-field splitting (ZFS) refers to the electron-electron interaction (between their spins) of the pair. With no other magnetic fields around, 
+                                        or other spins, this will result in a splitting of the \(m_s\) energy levels dependent only on the magnitude (so that \(m_s=+1,-1\) are still degenerate). 
+                                        Generally, these interactions can be described via a term as below:            
+                                        <div class="eq">
+                                        \[H_{ZFS}=\vec{\hat{S}}\mathbf{D}\vec{\hat{S}}\]
+                                        </div>
+                                        where \(\vec{\hat{S}}\) is the spin state of the pair, and \(\mathbf{D}\) is the dipole-dipole interaction tensor (which is necessarily symmetric and traceless). 
+                                    </p>
+
+                                    <p>
+                                        In the case of a singlet state, there is only one state, and hence the ZFS is irrelevant. However, for the triplet state, the relevant term may be expanded as below (where we choose a basis that diagonalizes the interaction tensor).
+                                        <div class="eq">
+                                        \[H_{ZFS}=D \Big( S_z^2-\frac{1}{3}S(S+1)\Big) + E (S_x^2-S_y^2) \]
+                                        </div>
+                                        where \(D=\frac{3}{2}D_{zz}\) and \(E=\frac{1}{2}(D_{xx}-D_{yy})\). Further assuming the wavefunction of the defect state to be symmetric under rotation about the \(z\)-axis (which we've chosen to align with the symmetry axis of the defect,
+                                        connecting the vacancy and the substitution), we may further take \(E=0\) in this case. We are then left essentially with the following term:
+                                        <div class="eq">
+                                            \[H_{ZFS}=D S_z^2-D\frac{1}{3}S(S+1) \]
+                                        </div>
+                                    </p>
+                                    <h3>Zeeman Effect</h3>
+                                    <p>
+                                        The Zeeman effect refers to the splitting of spin-state energy levels aligned or anti-aligned with an external field.
+                                        <div class="eq">
+                                            \[H_{Zeeman}=\vec{\hat{S}}\mathbf{g}_s\vec{B}\]
+                                        </div>
+                                        where \(\vec{B}\) denotes the externally applied magnetic field vector and \(\mathbf{g}\) denotes the Zeeman interaction tensor (which is closely related to the
+                                        gyromagnetic ratios of the corresponding elements). We may simplify this tensorial expression into a simple algebraic form as below by considering only magnetic fields applied 
+                                        in the direction of the symmetry axis (the \(z\)-axis):
+                                        <div class="eq">
+                                            \[H_{Zeeman}=\gamma B_z S_z\]
+                                        </div>
+                                    </p>
+
+                                    <h2>Simplifications</h2>
+                                    <p>
+                                        There are many interactions not covered here (see this <a href="../../products/projects/nv-qubit/overview/nv-overview.pdf">article</a> for a more in-depth overview), 
+                                        we wish only to portray the system as clearly as possible as a (potential) qubit here. In this sense, we simplify the relevant Hamiltonian immensely 
+                                        and consider only the two above effects, resulting in the following effective spin Hamiltonian for the triplet state:
+                                        <div class="eq">
+                                            \[H_{\text{eff}} = DS_z^2 + \omega_eS_z\]
+                                        </div>
+                                        Where \(D=2\pi\times (2.87 GHz)\) is the dipole coupling constant, and \(\omega_e = \gamma B\)  is the the Larmor frequency of the center with gryomagnetic ratio \(\gamma\).
+                                        Essentially, we just need a set of quantum states that are discernible (with different energy levels) that we then can read out by some means, and control. 
+                                    </p>
+                                    <h2>Energy States</h2>
+                                    <p>
+                                        The relevant energy states of the NV-Center are then those depicted below.   
+                                        <figure class="align center" >
+                                            <img src="../../assets/images/halfbaked/energy_raw_inline.svg"   alt="NV-Center energy levels in diamond.">
+                                        </figure>
+                                        The common notation has \(^3A_1\) denoting the triplet's electronic ground state, \(^3E\) denoting the triplet's first excited state, \(^1A_2\) denoting the singlet's
+                                        ground state, and \(^1 E\) denoting the singlet's first excited state.
+                                    </p>
+                                    <p>
+                                        Note that the \(m_s=\pm 1\) states are degenerate (with our simplifications) in the absence of any external magnetic field.
                                     </p>
                                     
-                                    <div class="boxed">
+                                    <!--<div class="boxed">
                                     <h4 class="boxtitle">Triplet \(\leftrightarrow\) Singlet Qubit</h4>
                                     <p>
                                         A two-electron pair may be taken as a single qubit by taking the singlet state to be the zero state and the triplet state to be the 
                                         one state, or vice versa.
                                     </p>
-                                    </div>
+                                    </div>-->
+
+                                    <h2>NV-Center as a Qubit Platform</h2>
+                                    <p>
+                                        We now will consider how we may utilize these spin states as a qubit platform.
+                                    </p>
+                                    <p>
+                                        We first need to choose two energy levels for use as our qubit states. The prototypical choice is the triplet ground state's
+                                        \(m_s=0\) level as the \(\vert 0 \rangle\) state of the computational basis and the triplet ground state's \(m_s=-1\) level as the computational basis' \(\vert 1 \rangle\) state.
+                                        <figure class="align center" >
+                                            <img src="../../assets/images/halfbaked/energy_qubit.svg"   alt="NV-Center qubit levels in diamond.">
+                                        </figure>
+                                        Of course, this requires some externally applied magnetic field that allows the degeneracy of the two non-zero \(m_s\) states to be lifted. Typically, this is applied at a
+                                        magnitude such that the transition between the newly defined \(\vert 0 \rangle\) and \(\vert 1 \rangle\) states corresponds to the microwave regime.
+                                    </p>
+                                    <p>
+                                        With these computational basis states now associated with some real quantum states, we will consider two basic elements of any quantum computer: 
+                                        initialization and measurement.
+                                    </p>
+                                    <h2>Initialization</h2>
+                                    <p>
+                                        Initialization to the zero state can be achieved by an asymmetric relaxation from the first excited triplet state (\(^3E\)) to the triplet ground state (\(^3A\)). 
+                                    </p>
+                                    <p>
+                                        First applying a resonant pulse (532 nm) excites all triplet ground states to their corresponding excited states (\(\Delta m_s=0\)).
+                                        <figure class="align center" >
+                                            <img src="../../assets/images/halfbaked/energy_init_relax.svg"   alt="NV-Center qubit initialization schematic">
+                                        </figure>
+                                        Excited \(m_s=0\) states then have been shown to decay back into \(m_s=0\) ground states via another optical transition, but \(m_s=\pm 1\) excited states allow a non-radiative 
+                                        (vibronic; mediated by phonons as well as photons) decay mode via the singlet states, back into the \(m_s=0\) ground state. 
+                                    </p>
+                                    <p>
+                                        This may be exploited to intialize the spin state into our \(\vert 0 \rangle\) state. Since the transitions generally increase the population of the \(\vert 0 \rangle\)
+                                        state and decrease the population of the \(\vert 1 \rangle\) state, the state can be considered to be initialized if the resonant pulses are applied enough times.
+                                    </p>
+
+
+                                    <h2>Measurement</h2>
+                                    <p>
+                                        Much like the initialization technique, optically detected magnetic resonance (ODMR) takes advantage of the asymmetric relaxation modes of the excited state.
+                                    </p>
+                                    <p>
+                                        The asymmetric relaxation of the spin states allows us to determine the final (observed/measured) state of the system by essentially hitting the state with another resonant pulse (of the wavelength corresponding to the first excitation of the electronic state) and seeing if we observe another optical transition back down.
+                                    <figure class="align center" >
+                                        <img src="../../assets/images/halfbaked/energy_measure.svg"   alt="NV-Center qubit measurement schematic">
+                                    </figure>
+                                        Hence, if the defect flouresces when hit with a resonant pulse, it was measured to be in the \(\vert 0 \rangle\) state, but if it's 'dark' after a resonant pulse, it can be considered to have been in the \(\vert 1 \rangle\) state.
+                                    </p>
+                                    <p>
+                                        Note that the similarity in mechanism allows our read-out to essentially be part of the next computation's initialization.
+                                    </p>
+                                        
+                                    <p>
+                                        One problem, however, is the possibility of internal reflection of the emitted photon. This can be solved with an immersion lens built into the diamond (see this <a href="https://doi.org/10.1063/1.3519847">article</a>).
+                                    </p>
+                                    <h2>Conclusion</h2>
+                                    <p>
+                                        Here, we've given an intuitive overview of the basics of the  NV-Center and a simple means by which we may realize the system as a qubit. In actuality, there are many other terms in the spin Hamiltonian we need consider.
+                                    </p>
+                                    <p>
+                                        We also need a scalable system with an arbitrary number of qubits that can somehow interact with each other. This is generally achieved in two ways: by using the NV-center as a register to read out the surrounding the nuclear spins 
+                                        (via the, here neglected, hyperfine interactions); and by coupling photons to the quantum states of distant centers, so that the distant centers may interact via their coupled photons. 
+                                        Recently, 10-qubit control was performed using the center's spin state and the surrounding nuclear spins (see this <a href="https://link.aps.org/doi/10.1103/PhysRevX.9.031045">article</a>).
+                                        Spin-photon entanglement has also been demonstrated and used to have distant centers interact up to a distance of 1.3 km (see this <a href="https://doi.org/10.1038/srep26284">article</a>).
+                                    </p>
+                                    <p>
+                                        The NV-center is a promising candidate due in large part to it's stability (relatively long decoherence times) even at room temperature.
+                                        For a more in-depth introduction and (somewhat outdated) overview of the experimental progress in the technique, see
+                                    </p>
                                     <br>
 
                                     <p class="entry__tags">
