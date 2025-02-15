@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: chgcnn.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 10880 items from 5000.
+Database file #1: chgcnn-blx.bib
+Database file #2: chgcnn.bib
+Warning--I didn't find a database entry for "chemicalmotifcharacterization"
+Biblatex version: 3.20
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 41 entries,
+            6402 wiz_defined-function locations,
+            1503 strings with 26180 characters,
+and the built_in function-call counts, 499283 in all, are:
+= -- 44461
+> -- 5436
+< -- 1570
++ -- 16144
+- -- 2083
+* -- 36226
+:= -- 61068
+add.period$ -- 0
+call.type$ -- 41
+change.case$ -- 952
+chr.to.int$ -- 91
+cite$ -- 80
+duplicate$ -- 52082
+empty$ -- 41238
+format.name$ -- 3656
+if$ -- 97997
+int.to.chr$ -- 0
+int.to.str$ -- 107
+missing$ -- 0
+newline$ -- 2001
+num.names$ -- 2254
+pop$ -- 16070
+preamble$ -- 1
+purify$ -- 1337
+quote$ -- 0
+skip$ -- 8702
+stack$ -- 0
+substring$ -- 85471
+swap$ -- 8185
+text.length$ -- 1182
+text.prefix$ -- 40
+top$ -- 1
+type$ -- 1382
+warning$ -- 0
+while$ -- 7464
+width$ -- 0
+write$ -- 1961
+(There was 1 warning)

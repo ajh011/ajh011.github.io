@@ -1,0 +1,92 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{\textbf{Project Extension Proposal}: Transfer Learning for the Equivariant Prediciton of Tensor Data for Crystal Structures}
+\begin{document}
+
+\maketitle
+
+\noindent \textbf{OVERVIEW:} Shortly after the advent of the Crystal Graph Convolution Neural Network (CGCNN), a multi-target approach was taken with a similar model \cite{mtcgcnn}. This multi-target approach simultaneously trained a model on various physical quantities of each input in a supervised manner by simply summing up the loss of each individual target and applying gradient descent to this total loss. Such an approach showed substantial improvement in results, as well as providing a means to generate 'more descriptive' crystal-level features after convolution and pooling. Transfer learning was also applied to CGCNN in other works \cite{tlcgcnn}, as a way to leverage larger datasets in the prediction of targets with sparser training sets.
+
+Recent works have utilized $SE(3)$ equivariant networks to predict tensorial targets related to physical systems by means of spherical harmonic decompositoins of the target tensors. Such an approach has been used in the prediction of elastic \cite{MatTen}, dielectric \cite{ETGNN}, and piezoelectric \cite{ETGNN} tensors for crystals, as well as NMR spectral shift tensors \cite{venetos2023machine} and other molecular targets \cite{moleculartensors}.
+
+While equivariant networks are relatively well-suited for small datasets, their performance still benefits from more expressive and larger datasets. Of the three tensorial targets for crystal systems mentioned above, the elastic tensor has the largest available dataset (~10,000 accessible via Materials Project), while data for dielectric (~7,700) and especially piezoelectric tensors (~3,300) is more sparse. Some of this discrepancy results from the number of materials that may be modeled with certain relationships. That is, dielectric tensors only describe a subset of materials (insulators) which may have a well-defined elastic tensor (applicable to all homogenous materials), and piezoelectric response is only possible in an even more exclusive set of materials (insulators with no spatial-inversion symmetry). However, the small amount of available data for all three sets is perhaps also a testament to their intensive calculation methods.
+
+We propose a transfer learning scheme, leveraging all three sets of data simultaneously to improve model accuracy in spite of relatively small data sets. Such a model will have two distinct parts: a convolutional representation-updating module, which will be fed into a task-specific MLP. Two approaches may suit us here: either we may (1) train the convolutional layers exclusively on the largest dataset (elastic tensors) and then swap out only the MLPs for different tasks; or (2), we may train the convolutional layers on the largest dataset and then train, or fine-tune, them also on the other tasks. Note that materials may have only one or two of the different tensors available, making a true simultaneous multi-target model unfeasible, as this would restrict us (at most) to the smallest dataset.
+
+Note further that SUCH AN APPROACH HAS BEEN EXPLICITY MENTIONED in the elastic tensor (MatTen \cite{MatTen}) paper. This suggests we need to work according to a very short timeline for this project to remain viable!
+
+\vspace{7cm}
+
+\noindent \textbf{PROPOSED TIMELINE:} 2-3 weeks
+
+\medskip
+
+WEEK 1:  Data gathering/model splitting
+
+\medskip
+
+$\bullet$ Gather data for dielectric tensors from materials project
+
+\medskip
+
+$\bullet$ Gather data for piezoelectric tensors from materials project
+
+
+\medskip
+
+$\bullet$ Construct and code harmonic decompositon for piezoelectric tensor
+
+
+\medskip
+
+$\bullet$ Construct and code harmonic decompositon for dielectric tensor
+
+\medskip
+
+$\bullet$ Redesign model as two parts: convolution and a task-specific MLP
+
+\medskip
+
+\medskip
+
+WEEK 2: Transfer Learning from Larger Datasets
+
+\medskip
+
+$\bullet$ Train convolutional layers and MLP on elasticity dataset (largest)
+
+\medskip
+
+$\bullet$ Swap out MLP and train (MLP only) on dielectric dataset 
+
+\medskip
+
+$\bullet$ Swap out MLP and train (MLP only) on piezo dataset 
+
+\medskip
+
+\medskip
+
+WEEK 2/3: Fine Tuning on Smaller Datasets
+\medskip
+
+$\bullet$ Test fine-tuning (train convolution + MLP) on dielectric dataset 
+
+\medskip
+
+$\bullet$ Test fine-tuning (train convolution + MLP) on piezo dataset 
+
+
+\newpage
+
+
+
+
+\bibliographystyle{annotate}
+\bibliography{\jobname}
+
+\end{document}

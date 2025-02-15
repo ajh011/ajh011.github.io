@@ -1,3 +1,9 @@
-\beamer@sectionintoc {1}{Qubit Criteria}{2}{0}{1}
-\beamer@sectionintoc {2}{Defects in Diamond}{3}{0}{2}
-\beamer@sectionintoc {3}{NV as Qubit}{5}{0}{3}
+\beamer@sectionintoc {1}{Qubit Criteria}{7}{0}{1}
+\beamer@sectionintoc {2}{Defects in Diamond}{16}{0}{2}
+\beamer@subsectionintoc {2}{1}{Hamiltonian}{26}{0}{2}
+\beamer@subsectionintoc {2}{2}{Simplifications}{35}{0}{2}
+\beamer@subsectionintoc {2}{3}{Energy Levels}{38}{0}{2}
+\beamer@sectionintoc {3}{NV as Qubit}{39}{0}{3}
+\beamer@subsectionintoc {3}{1}{Initialization}{42}{0}{3}
+\beamer@subsectionintoc {3}{2}{Gates}{44}{0}{3}
+\beamer@subsectionintoc {3}{3}{Measurement}{45}{0}{3}

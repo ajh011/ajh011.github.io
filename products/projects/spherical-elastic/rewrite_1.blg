@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: rewrite_1.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: annotate.bst
+Reallocating 'name_of_file' (item size: 1) to 28 items.
+Database file #1: paper-spherical-elastic.bib
+Warning--I didn't find a database entry for "segnn"
+Warning--I didn't find a database entry for "seconv"
+Warning--I didn't find a database entry for "sestranform"
+Warning--I didn't find a database entry for "e3nn"
+Warning--empty journal in ETGNN
+Warning--empty journal in harmonictensors
+Warning--empty journal in StrainNet
+Warning--empty journal in MatTen
+You've used 11 entries,
+            2588 wiz_defined-function locations,
+            645 strings with 8151 characters,
+and the built_in function-call counts, 4196 in all, are:
+= -- 411
+> -- 193
+< -- 4
++ -- 66
+- -- 63
+* -- 329
+:= -- 703
+add.period$ -- 33
+call.type$ -- 11
+change.case$ -- 67
+chr.to.int$ -- 11
+cite$ -- 15
+duplicate$ -- 154
+empty$ -- 302
+format.name$ -- 77
+if$ -- 824
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 11
+newline$ -- 70
+num.names$ -- 33
+pop$ -- 54
+preamble$ -- 1
+purify$ -- 78
+quote$ -- 0
+skip$ -- 131
+stack$ -- 0
+substring$ -- 246
+swap$ -- 7
+text.length$ -- 4
+text.prefix$ -- 4
+top$ -- 0
+type$ -- 88
+warning$ -- 4
+while$ -- 40
+width$ -- 12
+write$ -- 149
+(There were 8 warnings)

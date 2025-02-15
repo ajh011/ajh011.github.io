@@ -1,0 +1,59 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{WHM{\etalchar{+}}23}
+
+\bibitem[HXG22]{ETGNN}
+Hongyu~Yu Hongjun~Xiang, Yang~Zhong and Xinggao Gong.
+\newblock A general tensor prediction framework based on graph neural networks.
+\newblock 2022.
+ \begin{quotation}\noindent This paper proposes a similar SO(3) decomposition
+  of tensors to predict piezoelectric, dielectric, and other tensors.
+  \end{quotation}
+
+\bibitem[LA21]{tlcgcnn}
+Joohwi Lee and Ryoji Asahi.
+\newblock Transfer learning for materials informatics using crystal graph
+  convolutional neural network.
+\newblock {\em Computational Materials Science}, 190:110314, 2021.
+ \begin{quotation}\noindent Here, transfer learning is utilized for a
+  CGCNN-like model where pretraining is performed on the larger datasets of
+  targets (like formation energy per atom) and then the model is adapted to
+  sparser target sets (like bulk moduli) \end{quotation}
+
+\bibitem[NL22]{moleculartensors}
+Vu~Ha~Anh Nguyen and Alessandro Lunghi.
+\newblock Predicting tensorial molecular properties with equivariant machine
+  learning models.
+\newblock {\em Phys. Rev. B}, 105:165131, Apr 2022.
+ \begin{quotation}\noindent Here, equivariant tensor prediction is applied to
+  various molecular targets. \end{quotation}
+
+\bibitem[SBY{\etalchar{+}}18]{mtcgcnn}
+Soumya Sanyal, Janakiraman Balachandran, Naganand Yadati, Abhishek Kumar,
+  Padmini Rajagopalan, Suchismita Sanyal, and Partha Talukdar.
+\newblock Mt-cgcnn: Integrating crystal graph convolutional neural network with
+  multitask learning for material property prediction.
+\newblock 2018.
+ \begin{quotation}\noindent This was the first attempt to train a multi-target
+  CGCNN for scalar target properties. \end{quotation}
+
+\bibitem[VWP23]{venetos2023machine}
+Maxwell~C Venetos, Mingjian Wen, and Kristin~A Persson.
+\newblock Machine learning full nmr chemical shift tensors of silicon oxides
+  with equivariant graph neural networks.
+\newblock {\em The Journal of Physical Chemistry A}, 127(10):2388--2398, 2023.
+ \begin{quotation}\noindent This paper applies symmetry and harmonic
+  decompositions to the NMR spectra shift tensor to predict them equivariantly.
+  \end{quotation}
+
+\bibitem[WHM{\etalchar{+}}23]{MatTen}
+Mingjian Wen, Matthew~K. Horton, Jason~M. Munro, Patrick Huck, and Kristin~A.
+  Persson.
+\newblock A universal equivariant graph neural network for the elasticity
+  tensors of any crystal system.
+\newblock 2023.
+ \begin{quotation}\noindent This paper by the materials project team is our
+  original punchline, giving Backus' spherical harmonic decomposition of the
+  elastic tensor and reading it off of the irreps of the equivariant output.
+  \end{quotation}
+
+\end{thebibliography}

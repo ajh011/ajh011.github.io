@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Equivariance}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{NEquiP}{6}{0}{1}
+\beamer@subsectionintoc {1}{2}{Crystal Networks}{8}{0}{1}
+\beamer@sectionintoc {2}{Project Ideas/Extensions}{9}{0}{2}

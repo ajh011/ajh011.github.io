@@ -1,0 +1,3 @@
+\beamer@sectionintoc {1}{Crystal Graphs}{13}{0}{1}
+\beamer@sectionintoc {2}{Crystal Hypergraphs}{23}{0}{2}
+\beamer@sectionintoc {3}{Results}{59}{0}{3}

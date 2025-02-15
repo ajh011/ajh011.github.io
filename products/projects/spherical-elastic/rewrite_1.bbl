@@ -1,0 +1,101 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{WHM{\etalchar{+}}23}
+
+\bibitem[Bac70]{backus1970geometrical}
+George Backus.
+\newblock A geometrical picture of anisotropic elastic tensors.
+\newblock {\em Reviews of geophysics}, 8(3):633--671, 1970.
+ \begin{quotation}\noindent This paper is the original spherical harmonic
+  decomposition of the elastic tensor (as far as I'm aware). It does the
+  harmonic decomposition in terms of a Maxwell multipole expansion, so that one
+  can get a set of bundles of vectors that represent a 'geometrical' picture of
+  an elastic tensor. \end{quotation}
+
+\bibitem[HXG22]{ETGNN}
+Hongyu~Yu Hongjun~Xiang, Yang~Zhong and Xinggao Gong.
+\newblock A general tensor prediction framework based on graph neural networks.
+\newblock 2022.
+ \begin{quotation}\noindent This paper proposes a similar SO(3) decomposition
+  of tensors to predict piezoelectric, dielectric, and other tensors.
+  \end{quotation}
+
+\bibitem[IR22]{Itin-r3}
+Yakov Itin and Shulamit Reches.
+\newblock Decomposition of third-order constitutive tensors.
+\newblock {\em Mathematics and Mechanics of Solids}, 27(2):222--249, 2022.
+ \begin{quotation}\noindent A very helpful introduction to the decomposition of
+  a tensor product space into $SO(3)$ invariant subspaces, with a worked
+  example of a piezo-electric like tensor space. \end{quotation}
+
+\bibitem[Iti20]{doi:10.1177/1081286520913596}
+Yakov Itin.
+\newblock Irreducible matrix resolution for symmetry classes of elasticity
+  tensors.
+\newblock {\em Mathematics and Mechanics of Solids}, 25(10):1873--1895, 2020.
+ \begin{quotation}\noindent Itin's approach to the $SO(3)$ decomposition of
+  Elastic tensor-like spaces, and his classification of the symmetry classes.
+  \end{quotation}
+
+\bibitem[LM20]{harmonictensors}
+Francisco~Gonzalez Ledesma and Matthew Mewes.
+\newblock Spherical harmonic tensors.
+\newblock 2020.
+ \begin{quotation}\noindent This paper gives a mathematical treatment of
+  spherical harmonic tensors and uses them in decompositions of symmetric
+  tensors in general. It also introduces Young diagrams in Appendix B, and
+  applies them in two instances. \end{quotation}
+
+\bibitem[Moc88]{mochizuki1988spherical}
+Eiji Mochizuki.
+\newblock Spherical harmonic decomposition of an elastic tensor.
+\newblock {\em Geophysical Journal International}, 93(3):521--526, 1988.
+ \begin{quotation}\noindent This paper offers a novel harmonic decomposition of
+  the elastic tensor by means of a unique choice of basis: the $J_z$ basis.
+  This allows one to clearly see the connection between real-space components
+  and harmonic components via Clebsch-Gordan coefficients. \end{quotation}
+
+\bibitem[Moc96]{mochizuki1996spherical}
+Eiji Mochizuki.
+\newblock Spherical harmonic decomposition of an elastic tensor ii.
+\newblock {\em Journal of Physics of the Earth}, 44(1):79--84, 1996.
+ \begin{quotation}\noindent A second decomposition offered by Mochizuki that I
+  haven't used. \end{quotation}
+
+\bibitem[NL22]{moleculartensors}
+Vu~Ha~Anh Nguyen and Alessandro Lunghi.
+\newblock Predicting tensorial molecular properties with equivariant machine
+  learning models.
+\newblock {\em Phys. Rev. B}, 105:165131, Apr 2022.
+
+
+\bibitem[PEC23]{StrainNet}
+Teerachote Pakornchote, Annop Ektarawong, and Thiparat Chotibut.
+\newblock Straintensornet: Predicting crystal structure elastic properties
+  using se(3)-equivariant graph neural networks.
+\newblock 2023.
+ \begin{quotation}\noindent StrainTensorNet predicts the components of the
+  elastic tensor using an equivariant network by predicting the Strain-Energy
+  Density (SED) components (an invariant representation) for various stresses
+  and using these to extract elastic properties. \end{quotation}
+
+\bibitem[VWP23]{venetos2023machine}
+Maxwell~C Venetos, Mingjian Wen, and Kristin~A Persson.
+\newblock Machine learning full nmr chemical shift tensors of silicon oxides
+  with equivariant graph neural networks.
+\newblock {\em The Journal of Physical Chemistry A}, 127(10):2388--2398, 2023.
+ \begin{quotation}\noindent This paper applies symmetry and harmonic
+  decompositions to the NMR spectra shift tensor to predict them equivariantly.
+  Also, pretty much exactly what I'm doing. \end{quotation}
+
+\bibitem[WHM{\etalchar{+}}23]{MatTen}
+Mingjian Wen, Matthew~K. Horton, Jason~M. Munro, Patrick Huck, and Kristin~A.
+  Persson.
+\newblock A universal equivariant graph neural network for the elasticity
+  tensors of any crystal system.
+\newblock 2023.
+ \begin{quotation}\noindent This paper by the materials project team is our
+  original punchline, giving Backus' spherical harmonic decomposition of the
+  elastic tensor and reading it off of the irreps of the equivariant output.
+  \end{quotation}
+
+\end{thebibliography}

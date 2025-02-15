@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.15)  10 APR 2023 09:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.15)  21 APR 2023 21:08
 entering extended mode
 **./nv-overview.tex
 (nv-overview.tex
@@ -655,20 +655,20 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 (nv-overview.aux)
 \openout1 = `nv-overview.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -688,42 +688,107 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
-[]\OT1/cmr/bx/n/14.4 Resources/Literature Re-
+<diamond_nv.pdf, id=4, 427.63239pt x 304.6788pt>
+File: diamond_nv.pdf Graphic file (type pdf)
+<use diamond_nv.pdf>
+Package pdftex.def Info: diamond_nv.pdf  used on input line 104.
+(pdftex.def)             Requested size: 226.64409pt x 161.47899pt.
+
+Overfull \hbox (5.16014pt too wide) in paragraph at lines 104--105
+ [] 
  []
 
-(nv-overview.bbl) [1
+<symmetry.pdf, id=5, 491.76941pt x 451.05756pt>
+File: symmetry.pdf Graphic file (type pdf)
+<use symmetry.pdf>
+Package pdftex.def Info: symmetry.pdf  used on input line 114.
+(pdftex.def)             Requested size: 196.70427pt x 180.41982pt.
+[1
 
-{C:/Users/ajh01/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (nv-overvie
-w.aux) ) 
+{C:/Users/ajh01/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./diamond_n
+v.pdf>]
+Underfull \hbox (badness 7649) in paragraph at lines 120--121
+[]$\OML/cmm/m/it/10 C[]$ \OT1/cmr/m/n/10 sym-me-try is some-what com-mon in
+ []
+
+[2 <./symmetry.pdf>]
+<energy_raw_inline.pdf, id=85, 321.29297pt x 299.3942pt>
+File: energy_raw_inline.pdf Graphic file (type pdf)
+<use energy_raw_inline.pdf>
+Package pdftex.def Info: energy_raw_inline.pdf  used on input line 205.
+(pdftex.def)             Requested size: 231.33075pt x 215.56364pt.
+
+Overfull \hbox (9.8468pt too wide) in paragraph at lines 205--206
+ [] 
+ []
+
+[3 <./energy_raw_inline.pdf>]
+<energy_qubit.pdf, id=119, 191.80865pt x 77.21292pt>
+File: energy_qubit.pdf Graphic file (type pdf)
+<use energy_qubit.pdf>
+Package pdftex.def Info: energy_qubit.pdf  used on input line 215.
+(pdftex.def)             Requested size: 201.39915pt x 81.07358pt.
+<energy_init_relax.pdf, id=120, 387.54047pt x 241.1727pt>
+File: energy_init_relax.pdf Graphic file (type pdf)
+<use energy_init_relax.pdf>
+Package pdftex.def Info: energy_init_relax.pdf  used on input line 226.
+(pdftex.def)             Requested size: 193.76974pt x 120.58604pt.
+<energy_measure.pdf, id=121, 213.232pt x 197.5097pt>
+File: energy_measure.pdf Graphic file (type pdf)
+<use energy_measure.pdf>
+Package pdftex.def Info: energy_measure.pdf  used on input line 239.
+(pdftex.def)             Requested size: 162.05473pt x 150.10591pt.
+ [4 <./energy_qubit.pdf> <./energy_init_relax.pdf
+
+pdfTeX warning: pdflatex (file ./energy_init_relax.pdf): PDF inclusion: multipl
+e pdfs with page group included in a single page
+> <./energy_measure.pdf
+
+pdfTeX warning: pdflatex (file ./energy_measure.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+>]
+<rabi.png, id=189, 220.32312pt x 149.55875pt>
+File: rabi.png Graphic file (type png)
+<use rabi.png>
+Package pdftex.def Info: rabi.png  used on input line 256.
+(pdftex.def)             Requested size: 220.32257pt x 149.55838pt.
+ (nv-overview.bbl [5 <./rabi.png>]) [6] (nv-overview.aux) ) 
 Here is how much of TeX's memory you used:
- 14669 strings out of 479620
- 284211 string characters out of 2873140
- 565534 words of memory out of 3000000
- 31535 multiletter control sequences out of 15000+200000
- 409632 words of font info for 50 fonts, out of 3000000 for 9000
+ 14742 strings out of 479620
+ 285532 string characters out of 2873140
+ 576643 words of memory out of 3000000
+ 31595 multiletter control sequences out of 15000+200000
+ 412258 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 97i,6n,102p,415b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on nv-overview.pdf (1 page, 72231 bytes).
+ 97i,9n,102p,567b,341s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmti10.pfb>
+Output written on nv-overview.pdf (6 pages, 374024 bytes).
 PDF statistics:
- 29 PDF objects out of 1000 (max. 8388607)
+ 239 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

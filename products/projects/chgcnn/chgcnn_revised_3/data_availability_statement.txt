@@ -1,0 +1,1 @@
+The code used in this paper's results were built on pytorch-geometric and can be found in the following Github repository: https://github.com/qmatyanlab/CHGCNN. The processed data including bond, triplet, and motif features is available in a Zenodo repository with DOI: 10.5281/zenodo.14756640.

@@ -1,0 +1,545 @@
+\documentclass[11pt]{beamer}
+\usetheme{Goettingen}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[hang,flushmargin]{footmisc}
+
+\title{Point Group Equivariant Convolutional Graph Neural Networks}
+\author{Alex Heilman}
+%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{} 
+%\logo{} 
+%\date{} 
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/\inserttotalframenumber
+}
+
+
+\usepackage[style=authortitle,backend=bibtex]{biblatex}
+\addbibresource{chgcnn.bib}
+
+\newenvironment{boxed2}
+    {\begin{center}
+    \begin{tabular}{|p{0.95\textwidth}|}
+    \hline\\
+    }
+    { 
+    \\\\\hline
+    \end{tabular} 
+    \end{center}
+    }
+
+
+\renewbibmacro*{\tiny cite:title}{\tiny%
+  \printtext[bibhyperref]{%
+    \printfield[citetitle]{labeltitle}%
+    \setunit{\space}%
+    \printtext[parens]{\printdate}%
+  }%
+}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+%\begin{frame}
+%\tableofcontents
+%\end{frame}
+
+\begin{frame}{Overview}
+
+\end{frame}
+
+\section{Groups and Vector Spaces}
+\begin{frame}{Vector Space Definition}
+	A vector space $V$ over a field $K$
+	
+
+	\begin{boxed2}
+		
+		\vspace{-.61cm}
+		
+		\textbf{Example: $\mathbb{R}^3$, Real 3 Dimensional Space} 
+		
+		Locations in physical space may be modeled with a three dimensional vector space  $\mathbb{R}^3$ over the real numbers $\mathbb{R}$ with basis functions $\hat{x},\hat{y},\hat{z}$.
+		
+		\vspace{-.3cm}
+		
+	\end{boxed2}	
+	
+	Often, we may construct new vector spaces from sets of known vector spaces.
+	
+		\begin{boxed2}
+		
+		\vspace{-.41cm}
+		
+		\textbf{Example: Functions on Real 3 Dimensional Space} 
+		
+		Scalar functions on physical space also form a vector space over the real numbers, albeit infinite-dimensional. In this case, the group operation between vectors (functions) is point-wise addition.
+		
+		\vspace{-.3cm}
+		
+	\end{boxed2}	
+\end{frame}
+
+
+\begin{frame}{Group Definition}
+	A group $G$ is a set of elements $\lbrace g_1, ..., g_n\rbrace$ with a binary operation $*:G\times G \rightarrow G$ between elements that satisfies the conditions of identity, associativity, invertability, and closure.
+	
+	\begin{boxed2}
+		
+		\vspace{-.5cm}
+		
+		\textbf{Example: General Linear Group}
+		
+	The general linear group $GL(V)$ formed over some vector space $V$ is the set of non-singular $d_v\times d_v$ matrices acting on $V$. The general linear group is itself a vector space, and we may also form tensor products and direct sums of general linear group vectors.
+	\end{boxed2}
+\end{frame}
+
+\begin{frame}{Cartesian Products}
+	content...
+\end{frame}
+
+\begin{frame}{Direct Sums}
+We may form direct sums $V\oplus W$ of vector spaces $V,W$ by stipulating that the operation further enforces scalar distributivity to respective subspaces with a set of scalars $K_V\oplus K_W$.
+
+\begin{boxed2}
+	
+	\vspace{-.57cm}
+	
+	\textbf{Example: Direct Sum of Matrices}
+	
+	
+	\vspace{-.12cm}
+	
+	$$
+		\begin{bmatrix}
+			a_1&b\\
+			c&a_2\\
+		\end{bmatrix}
+		\oplus 
+		\begin{bmatrix}
+			d_1&0\\
+			0&d_2\\
+		\end{bmatrix}
+		=\begin{bmatrix}
+			a_1&b&0&0\\
+			c&a_2&0&0\\
+			0&0 &d_1 &0\\
+			0&0&0&d_2\\
+		\end{bmatrix}
+	$$
+
+\vspace{-.3cm}
+
+\end{boxed2}
+	
+Direct sums of vector spaces are themselves vector spaces.
+\end{frame}
+
+\begin{frame}{Tensor Products}
+We may construct tensor products $V\otimes W$ of vector spaces $V,W$.
+\begin{boxed2}
+	
+	\vspace{-.57cm}
+	
+	\textbf{Example: Tensor Product of Matrices} Also known as "Kronecker Product".
+	
+	
+	\vspace{-.12cm}
+	
+	$$
+	\begin{bmatrix}
+		a_1&b\\
+		c&a_2\\
+	\end{bmatrix}
+	\otimes 
+	\begin{bmatrix}
+		d_1&0\\
+		0&d_2\\
+	\end{bmatrix}
+	=\begin{bmatrix}
+		a_1d_1&0&bd_1&0\\
+		0&a_1d_2&0&bd_2\\
+		cd_1&0 &a_2d_1 &0\\
+		0&cd_2&0&a_2d_2\\
+	\end{bmatrix}
+	$$
+	
+	\vspace{-.3cm}
+	
+\end{boxed2}
+
+Tensor products of vector spaces are themselves vector spaces.
+\end{frame}
+
+
+\section{Representation Theory}
+\begin{frame}{Group Representations}
+	A representation $\rho_G$ of a group $G$ is a homomorphism from elements $g$ to a set of linear operators (square matrices). 
+	
+	\vspace{0.25cm}\small
+	
+		\begin{boxed2}
+		
+		\vspace{-.5cm}
+		
+		\textbf{Example: 3D Representation of $C_3$}
+		
+		Consider three identical points:
+		
+		These clearly are symmetrical under three-fold rotations about the origin in the xy plane. These $C_3$ group actions act on this Cartesian basis with the representation $\rho$ defined:\tiny
+		
+		$$
+		\rho(\mathbb{I}) = \begin{bmatrix}
+			1&0&0\\
+			0&1&0\\
+			0&0&1\\
+		\end{bmatrix}\quad 		\rho(C_3) = \begin{bmatrix}
+		-\frac{1}{2}&-\frac{\sqrt{3}}{2}&0\\
+		\frac{\sqrt{3}}{2}&-\frac{1}{2}&0\\
+		0&0&1\\
+		\end{bmatrix}\quad 
+		\rho(C_3^2) = \begin{bmatrix}
+		-\frac{1}{2}&\frac{\sqrt{3}}{2}&0\\
+		-\frac{\sqrt{3}}{2}&-\frac{1}{2}&0\\
+		0&0&1\\
+		\end{bmatrix}
+		$$
+	\end{boxed2}
+\end{frame}
+
+
+\begin{frame}{Irreducible Representations (IRs)}
+	For atomic arrangements, 3D group representations $\rho$ are  often reducible in terms of a direct sum of 'smaller' group representations $\rho^{(\alpha)}$:
+	$$
+	\rho = \bigoplus_{\alpha}c_{\alpha}\rho^{(\alpha)}
+	$$
+	
+	Maschke's theorem guarantees that any given representation is always decomposable as a direct sum of irreducible representations. 
+
+	\vspace{0.3cm}
+	
+	This set may always be taken to satisfy:
+	
+	\medskip
+	
+	$\bullet$ Unitarity
+	
+	\medskip
+	
+	$\bullet$ Orthogonality
+	
+	\medskip
+	
+	$\bullet$ $\sum_{\alpha} d_{\alpha}^2 = N $ where $d_{\alpha} $ is the dimension of IR $\alpha$ and $N$ is the order
+	
+\end{frame}
+
+\begin{frame}{IRs (cont.)}
+
+\begin{boxed2}
+	
+	\vspace{-.57cm}
+	
+	\textbf{Example: IRs of $C_3$} The previously shown representation of $C_3$ elements is reducible into a two-dimensional subspace and a one-dimensional subspace. 
+	
+	\vspace{-.12cm}
+
+$$
+\rho(\mathbb{I}) =
+% \begin{bmatrix}
+%	1&0&0\\
+%	0&1&0\\
+%	0&0&1\\
+%\end{bmatrix}
+%=
+\rho^{(2)}(\mathbb{I})\oplus\rho^{(1)}(\mathbb{I})
+=
+\begin{bmatrix}
+1&0\\
+0&1\\
+\end{bmatrix}
+\oplus 
+\begin{bmatrix}
+1
+\end{bmatrix}
+\\
+\rho(C_3)
+%=
+%\begin{bmatrix}
+%	-\frac{1}{2}&-\frac{\sqrt{3}}{2}&0\\
+%	\frac{\sqrt{3}}{2}&-\frac{1}{2}&0\\
+%	0&0&1\\
+%\end{bmatrix}
+=\rho^{(2)}(C_3)\oplus\rho^{(1)}(C_3)=
+\begin{bmatrix}
+	-\frac{1}{2}&-\frac{\sqrt{3}}{2}\\
+	\frac{\sqrt{3}}{2}&-\frac{1}{2}\\
+\end{bmatrix}
+\oplus
+\begin{bmatrix}
+	1
+\end{bmatrix}
+\\
+\rho(C_3^2) 
+=
+%\begin{bmatrix}
+%	-\frac{1}{2}&\frac{\sqrt{3}}{2}&0\\
+%	-\frac{\sqrt{3}}{2}&-\frac{1}{2}&0\\
+%	0&0&1\\
+%\end{bmatrix}
+%=
+\rho^{(2)}(C_3^2)\oplus\rho^{(1)}(C_3^2)
+= 
+\begin{bmatrix}
+	-\frac{1}{2}&\frac{\sqrt{3}}{2}\\
+	-\frac{\sqrt{3}}{2}&-\frac{1}{2}\\
+\end{bmatrix}
+\oplus
+\begin{bmatrix}
+	1
+\end{bmatrix}
+$$
+	
+	\vspace{-.3cm}
+	
+\end{boxed2}
+\end{frame}
+
+\begin{frame}{Equivalence Classes}
+Equivalence classes are subsets of group elements that mutually exchange under conjugation, where element $g$ conjugated by element $h$ means:
+$$
+g\rightarrow hgh^{-1}
+$$
+In the space of a representation, this is referred to as a similarity transformation, which is essentially a change of basis.
+
+\medskip
+
+Note that the number of equivalence classes $N_c$ is equal to the number of irreducible representations.
+$$
+N_{\text{IR}} = N_{c}
+$$
+\end{frame}
+
+\begin{frame}{Character Tables}
+	Irreducible representations are only unique up to change of basis, but their traces are invariant.
+	
+	$$
+	\chi^{(\alpha)}(g)= \text{Tr}\big(\rho^{(\alpha)}(g)\big)
+	$$
+	
+	The trace of a representation is known as it's character $\chi$, which is unique for equivalence classes $\langle g \rangle$.
+	
+	
+		\begin{boxed2}
+		
+		\vspace{-.57cm}
+		
+		\textbf{Example: $C_4$ Character Table}
+		
+		\vspace{-.12cm}
+		
+		$$
+		\begin{array}{c|c c c c}
+			$C_4$ & $\langle \mathbb{I}\rangle$  & $\langle C_4\rangle$  & $\langle C_4^2\rangle$  & $\langle C_4^3\rangle$ \\
+			\hline 
+			$a_1$ & 1 & 1 & 1 & 1 \\
+			$a_2$ & 1 & -1 & 1 & -1 \\
+			$a_3$ & 1 & i & -1 & -i \\
+			$a_4$ & 1 & -i & -1 & i \\
+		\end{array}
+		$$
+		
+		\vspace{-.3cm}
+		
+	\end{boxed2}
+		
+	Characters are often displayed in 'character tables', with IRs on one axis and equivalence classes along the other.
+	
+\end{frame}
+
+\begin{frame}{Orthogonality Theorems}
+	IRs are orthogonal in the following ways:
+	$$
+	\frac{1}{N}\sum_{g}\chi^{(\alpha)*}(g)\chi^{(\beta)}(g) = \delta_{\alpha\beta}
+	$$
+	$$
+	\sum_{\alpha}\chi^{(\alpha)*}(c_k)\chi^{(\alpha)}(c_h)= \frac{N}{N_k}\delta_{kh}
+	$$
+	where $N$ is the number of elements in $G$ and $N_k$ is the number of elements in equivalence class $k$.
+	
+	\medskip
+	
+	This allows us to decompose reducible representations by determining the coeffecients of expansion $c_{\alpha}$ as:
+	
+	$$
+	c_{\alpha} = \frac{1}{N}\sum_{g}\chi^{(\alpha)*}(g)\chi(g)
+	$$ 
+\end{frame}
+
+\begin{frame}{Orthogonality Theorems (cont.) }
+	\small
+\begin{boxed2}
+	
+	\vspace{-.41cm}
+	
+	\textbf{Example: d-shell Splitting in Octohedral Coordinations} 
+	
+	Take the Hydrogen-like orbitals $\psi_{\ell m}$ as a basis for spherically symmetric states. The d-shell orbitals are the basis functions of the $\ell=2$ representations.
+	
+	\medskip
+	
+%conventionally given as:
+%	$$
+%	\lbrace xy, xz, yz, 2z^2-x^2-y^2, x^2-y^2 \rbrace
+%	$$
+	The octohedral complex's symmetry group is $O$, with it's character table and the $\Gamma^{\ell=2}$ representation:
+	$$
+	\begin{array}{c|c c c c c}
+		O & 1\langle \mathbb{I}\rangle  & 8\langle C_3\rangle  & 3\langle C_2\rangle  & 6\langle C_2'\rangle & 6\langle C_4^3\rangle \\
+		\hline 
+		(d)\ \Gamma^{\ell=2} & 5 & -1 & 1 & 1 & -1 \\
+		A_1 & 1 &  1&  1&  1&  1\\
+		A_2 & 1&  1&  1&  -1&  -1\\
+		E & 2 & -1 & 2 & 0 & 0 \\
+		T_1 & 3 & 0 & -1 & -1 &1\\
+		T_2 & 3 & 0 & -1 & 1 &-1\\
+	\end{array}
+	$$
+	Orthogonality then gives $\gamma^{\ell=2}=E\oplus T_2$. In practice, this results in a 5-fold degeneracy being lifted into a two- and three-fold degeneracy.
+	
+	\vspace{-.3cm}
+	
+\end{boxed2}
+\end{frame}
+
+\begin{frame}{Basis Functions}
+	Suppose we have some Hamiltonian group, so that the group operators $\hat{O}(g)$ commute with $\hat{H}$.
+	$$
+	[\hat{H},\hat{O}(g)] = 0 \quad \quad \forall g \in G
+	$$
+	In such a case, the operators must have a simultaneous set of eigenvectors $\psi^{k}_{\alpha}$ that span the space of functions:
+	
+	$$
+	f(\vec{r})=\sum_{k,\alpha}c_{k}^{\alpha}\psi^{k}_{\alpha} =\sum_{k,\alpha}f^k_{\alpha}(\vec{r})
+	$$
+	
+	\medskip
+	
+	We have some freedom in choice of this set of basis functions on which the linear operators of the representations act.
+\end{frame}
+
+\begin{frame}{Basis Functions (cont.)}
+		\small
+	\begin{boxed2}
+		
+		\vspace{-.41cm}
+		
+		\textbf{Example: Tight Binding} 
+		
+		The tight binding approximation often uses localized Hydrogen-like orbitals $\psi_{ell m}$ as a basis for many-body systems
+		
+		\vspace{-.3cm}
+		
+	\end{boxed2}
+	
+	\begin{boxed2}
+		
+		\vspace{-.5cm}
+		
+		\textbf{Example: Group of a Hamiltonian}
+		
+		Consider a general Hamiltonian $\hat{H}(\vec{r})$ that depends only on the spatial coordinate $\vec{r}$ of some particle. We then define the operator $\hat{O}_G$ to be a representation of a group $G$ that acts on $H$'s input space $\vec{r}$ as:
+		$$
+		\hat{O}_G(g)\hat{H}(\vec{r}) = \hat{H}(g^{-1}\vec{r})
+		$$
+		The "group of the Hamiltonian" is the largest group of the form above that commutes with the Hamiltonian.
+	\end{boxed2}
+\end{frame}
+
+\begin{frame}{Projection Operators}
+	If we have an explicit form for IR $\alpha$, we may project an arbitrary function onto the $k$-th basis function $f^{\alpha}_k$ of IR $\alpha$ with $\hat{P}_{\alpha}^{kk}$:
+	$$
+	\hat{P}_{\alpha}^{kk} = \frac{d_{\alpha}}{N}\sum_g \big[\Gamma^{kk}_{\alpha}(g) \big]^* O(g)
+	$$
+	where $d_{\alpha}$ is the dimensional of IR $\alpha$, and then we have:
+	$$
+	f_{\alpha}^k(\vec{r}) = \hat{P}_{\alpha}^{kk}f(\vec{r})
+	$$
+	From the characters alone, we may project a function onto it's total $\alpha$ subspace with $\hat{P}_{\alpha}$:
+	$$
+	\hat{P}_{\alpha} = \sum_k\hat{P}^{kk}_{\alpha} = \frac{d_{\alpha}}{N}\sum_{g}\chi^{(\alpha)*}(g)\hat{O}(g)
+	$$
+
+
+\end{frame}
+
+\begin{frame}{Coupling Coefficients}
+Consider a direct product decomposition of the irreps $\Gamma$:
+$$
+\Gamma^{\alpha}\Gamma^{\beta}=\bigoplus_{\gamma}c_{\alpha\beta\gamma}\Gamma^{\gamma}
+$$
+	
+Products of basis functions $u^{\alpha}_iv^{\beta}_j$ then decompose similarly into a direct sum of irreps with basis functions $\psi_{n}^{\gamma}$ via the coupling coefficients $U_{\alpha i \beta j}^{\gamma n}$ as:
+$$
+\psi_{n}^{\gamma}= \sum_{i,j}U_{\alpha i \beta j}^{\gamma n}u^{\alpha}_iv^{\beta}_j
+$$
+
+	\begin{boxed2}
+	
+	\vspace{-.41cm}
+	
+	\textbf{Example: Clebsch-Gordan Coefficients} 
+	
+	The Clebsch-Gordan coefficients are the coupling coefficients of $SO(3)$, which relate tensor product spaces of spherical harmonics to direct sums of spherical harmonics.
+	
+	\vspace{-.3cm}
+	
+\end{boxed2}
+
+\end{frame}
+
+\section{Group Equivariant Networks}
+\begin{frame}{Equivariant Functions}
+	An equivariant function $f:X\rightarrow Y$, where $X,Y$ are vector spaces, is one that 'commutes' with a group's actions, satisfying:
+	$$
+	f\Big(\mathcal{D}^X(g)x\Big)=\mathcal{D}^Y(g)f(x)
+	$$
+	Tensor products are uniquely equivariant with respect to their argument vector spaces.
+\end{frame}
+\begin{frame}{SO(3) Equivariant \textit{Tensor Field Networks}}
+
+	$$
+	\big(v^{L+1}_{nc}\big) ^{\ell}_{m}=v^{L}_{nc}+\sum_{b\in \mathcal{N}(n)}\sum_{\ell_f, m_f , \ell_i,m_i}c_{\ell_fm_f\ell_im_i}^{\ell m}\big(F^{L}_c(r_{nb})\big)^{\ell_f}_{m_f}\big(v_{bc}^L \big)^{\ell_i}_{m_i}
+	$$
+\end{frame}
+
+\section{Hamiltonian Learning}
+
+\begin{frame}{DeepH}
+$\bullet$ Take hydrogen-like orbitals and treat them as $SO(3)$ features in e3nn. 
+
+\medskip
+
+$\bullet$ Allows for the learning of all rotational symmetries but doesn't enforce them from physical considerations.
+
+
+\end{frame}
+
+\begin{frame}{}
+$\bullet$ Incorporate point group symmetry of crystal and molecular sites by directly learning features associated with basis functions that transform as irreducible representations.
+
+
+\end{frame}
+
+\end{document}

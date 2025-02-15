@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: extension-proposal.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: annotate.bst
+Reallocating 'name_of_file' (item size: 1) to 19 items.
+Database file #1: extension-proposal.bib
+Warning--empty journal in ETGNN
+Warning--empty journal in mtcgcnn
+Warning--empty journal in MatTen
+You've used 6 entries,
+            2588 wiz_defined-function locations,
+            606 strings with 6578 characters,
+and the built_in function-call counts, 2537 in all, are:
+= -- 236
+> -- 162
+< -- 0
++ -- 59
+- -- 57
+* -- 208
+:= -- 447
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 45
+chr.to.int$ -- 6
+cite$ -- 9
+duplicate$ -- 81
+empty$ -- 155
+format.name$ -- 61
+if$ -- 483
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 6
+newline$ -- 40
+num.names$ -- 18
+pop$ -- 39
+preamble$ -- 1
+purify$ -- 51
+quote$ -- 0
+skip$ -- 73
+stack$ -- 0
+substring$ -- 111
+swap$ -- 3
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 48
+warning$ -- 3
+while$ -- 22
+width$ -- 7
+write$ -- 81
+(There were 3 warnings)

@@ -1,0 +1,3 @@
+\beamer@sectionintoc {1}{Spherical Harmonics}{3}{0}{1}
+\beamer@sectionintoc {2}{Clebsch-Gordon}{8}{0}{2}
+\beamer@sectionintoc {3}{CGCNN}{10}{0}{3}

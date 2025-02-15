@@ -1,0 +1,65 @@
+\providecommand*{\mcitethebibliography}{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}
+{\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{6}
+\providecommand*{\natexlab}[1]{#1}
+\providecommand*{\mciteSetBstSublistMode}[1]{}
+\providecommand*{\mciteSetBstMaxWidthForm}[2]{}
+\providecommand*{\mciteBstWouldAddEndPuncttrue}
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*{\mciteBstWouldAddEndPunctfalse}
+  {\let\EndOfBibitem\relax}
+\providecommand*{\mciteSetBstMidEndSepPunct}[3]{}
+\providecommand*{\mciteSetBstSublistLabelBeginEnd}[3]{}
+\providecommand*{\EndOfBibitem}{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}
+{(\emph{\alph{mcitesubitemcount}})}
+\mciteSetBstSublistLabelBeginEnd{\mcitemaxwidthsubitemform\space}
+{\relax}{\relax}
+
+\bibitem[Zimmermann \emph{et~al.}(2017)Zimmermann, Horton, Jain, and
+  Haranczyk]{orderparam1}
+N.~E.~R. Zimmermann, M.~K. Horton, A.~Jain and M.~Haranczyk, \emph{Front.
+  Mater.}, 2017, \textbf{4}, article 34\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Zimmermann and Jain(2020)]{orderparam2}
+N.~E. Zimmermann and A.~Jain, \emph{RSC adv.}, 2020, \textbf{10}, pp.
+  6063--6081\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Chen \emph{et~al.}(2024)Chen, Xu, Yang, Yan, Wei, Chen, Wei, and
+  Chen]{chemgnn}
+C.~Chen, E.~Xu, D.~Yang, C.~Yan, T.~Wei, H.~Chen, Y.~Wei and M.~Chen,
+  \emph{Neural Comput. Apl.}, 2024,  pp. 1--15\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Choudhary and DeCost(2021)]{alignn}
+K.~Choudhary and B.~DeCost, \emph{{npj} Comput. Mater.}, 2021, \textbf{7}, pp.
+  1--8\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Chen and Ong(2022)]{m3gnet}
+C.~Chen and S.~P. Ong, \emph{Nat. Comput. Sci.}, 2022, \textbf{2}, pp.
+  718--728\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Bai \emph{et~al.}(2021)Bai, Zhang, and Torr]{hypergraphconv}
+S.~Bai, F.~Zhang and P.~H. Torr, \emph{Pattern Recogn.}, 2021, \textbf{110},
+  article 107637\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

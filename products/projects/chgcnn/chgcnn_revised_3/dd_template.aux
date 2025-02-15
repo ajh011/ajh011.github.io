@@ -1,0 +1,122 @@
+\relax 
+\providecommand \babel@aux [2]{\global \let \babel@toc \@gobbletwo }
+\@nameuse{bbl@beforestart}
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{mlcite1,mlreview1,mlreview2,mlreview3}
+\citation{schnet,cgcnn,megnet,chemgnn,geocgcnn,icgcnn}
+\citation{mpnn}
+\citation{congn}
+\citation{alignn,m3gnet,congn}
+\citation{paulings_rules,coordpolyshapes,motifstats,motifexplore,clustermotifsanal,motife3nn}
+\citation{orderparam1,orderparam2,molorderparam}
+\citation{clease,cce_crys,cce_gen}
+\citation{cgcnn}
+\citation{megnet}
+\babel@aux{english}{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background}{1}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Crystal Graphs}{1}{subsection.2.1}\protected@file@percent }
+\citation{mpnn}
+\citation{motifstats}
+\citation{orderparam1,orderparam2}
+\citation{csm_polyhedra,chemenv}
+\citation{alignn}
+\citation{coordination_comp}
+\citation{orderparam1,orderparam2}
+\citation{csm_polyhedra}
+\citation{mpnn}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methods}{2}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Crystal Hypergraph Construction}{2}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Bond Edges}{2}{subsubsection.3.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Triplet Hyperedges}{2}{subsubsection.3.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.3}Motif Hyperedges}{2}{subsubsection.3.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Crystal Hypergraph Convolution}{2}{section.4}\protected@file@percent }
+\citation{linegraph_general}
+\citation{cgcnn}
+\citation{alignn}
+\citation{mpnn}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces An example of two distinct geometries that are mapped to the same distance-based crystal graph. With inclusion of a first-shell feature vector encoding local geometry however, these structures are mapped to two distinct crystal hypergraphs. Note these are two possible coordination environments in oxides, determined statistically in \cite  {motifstats}.}}{3}{figure.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:graph_cntex}{{1}{3}{An example of two distinct geometries that are mapped to the same distance-based crystal graph. With inclusion of a first-shell feature vector encoding local geometry however, these structures are mapped to two distinct crystal hypergraphs. Note these are two possible coordination environments in oxides, determined statistically in \cite {motifstats}}{figure.caption.2}{}}
+\newlabel{fig:graph_cntex@cref}{{[figure][1][]1}{[1][2][]3}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Three Possible Approaches to Hyperedge Convolution}{3}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Hyperedge Relatives Graph}{3}{subsubsection.4.1.1}\protected@file@percent }
+\citation{cgcnn}
+\citation{cgcnn}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Typical construction loop for a crystal hypergraph. First, pair-wise bonds/edges are determined, then triplets are derived from overlapping pairs of bonds, and finally motifs are determined as first-shells of neighbors by some (generally more restrictive) criteria. Features for each and upper bounds on numbers of hyperedges for each type are also listed.}}{4}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:hypergraph-loop}{{2}{4}{Typical construction loop for a crystal hypergraph. First, pair-wise bonds/edges are determined, then triplets are derived from overlapping pairs of bonds, and finally motifs are determined as first-shells of neighbors by some (generally more restrictive) criteria. Features for each and upper bounds on numbers of hyperedges for each type are also listed}{figure.caption.3}{}}
+\newlabel{fig:hypergraph-loop@cref}{{[figure][2][]2}{[1][2][]4}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Total Exchange Message Passing}{4}{subsubsection.4.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.3}Neighborhood Aggregation}{4}{subsubsection.4.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Model Architecture}{4}{subsection.4.2}\protected@file@percent }
+\citation{cgcnn}
+\citation{matproj}
+\citation{matbench}
+\citation{matbench}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Overview of three possible message functions $m$ for nodes $v$ that generalize the message function in \cite  {mpnn} to hyperedges $h$ with more (or less) than two nodes. Here, $n$ represents the average number of nodes in a hyperedge and the scaling relation is then for the total number of messages for one layer, for each hyperedge and each approach.}}{5}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:hmpnn}{{3}{5}{Overview of three possible message functions $m$ for nodes $v$ that generalize the message function in \cite {mpnn} to hyperedges $h$ with more (or less) than two nodes. Here, $n$ represents the average number of nodes in a hyperedge and the scaling relation is then for the total number of messages for one layer, for each hyperedge and each approach}{figure.caption.4}{}}
+\newlabel{fig:hmpnn@cref}{{[figure][3][]3}{[1][3][]5}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results \& Discussion}{5}{section.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Example architecture for the crystal hypergraph convolutional network implemented in this work. Essentially, the model is a generalizaiton of CGCNN's \cite  {cgcnn} model architecture with CGConv being replaced by $R$ hypergraph convolutional layers (CHGConv). Here, CHGConv updates nodes first according to edges (bonds), and then according to triplets or motifs. }}{6}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:architecture}{{4}{6}{Example architecture for the crystal hypergraph convolutional network implemented in this work. Essentially, the model is a generalizaiton of CGCNN's \cite {cgcnn} model architecture with CGConv being replaced by $R$ hypergraph convolutional layers (CHGConv). Here, CHGConv updates nodes first according to edges (bonds), and then according to triplets or motifs}{figure.caption.5}{}}
+\newlabel{fig:architecture@cref}{{[figure][4][]4}{[1][5][]6}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Validation dataset results for five MatBench target sets: highest frequency phonon peak $\omega _p$, refractive index $n$, perovskite formation energy $E_f$, and bulk moduli $K_{vrh}$ and shear moduli $G_{vrh}$. Note that the italicized numbers below the target name correspond to the total size of each dataset. Best results are indicated in bold.}}{6}{table.caption.6}\protected@file@percent }
+\newlabel{fig:matbench_table}{{1}{6}{Validation dataset results for five MatBench target sets: highest frequency phonon peak $\omega _p$, refractive index $n$, perovskite formation energy $E_f$, and bulk moduli $K_{vrh}$ and shear moduli $G_{vrh}$. Note that the italicized numbers below the target name correspond to the total size of each dataset. Best results are indicated in bold}{table.caption.6}{}}
+\newlabel{fig:matbench_table@cref}{{[table][1][]1}{[1][5][]6}{}{}{}}
+\citation{matproj}
+\citation{amdnet}
+\citation{contrastivelearn_motif,motifexplore,motife3nn}
+\citation{molecule2,molecule3}
+\citation{alignn,congn}
+\citation{e3nn,tfn,o3transformer1}
+\bibdata{chgcnn}
+\bibcite{mlcite1}{{1}{2016}{{Ward \emph  {et~al.}}}{{Ward, Agrawal, Choudhary, and Wolverton}}}
+\bibcite{mlreview1}{{2}{2019}{{Wei \emph  {et~al.}}}{{Wei, Chu, Sun, Xu, Deng, Chen, Wei, and Lei}}}
+\bibcite{mlreview2}{{3}{2020}{{Liu \emph  {et~al.}}}{{Liu, Niu, Wang, Gan, Zhu, Sun, and Shen}}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{7}{section.6}\protected@file@percent }
+\bibcite{mlreview3}{{4}{2023}{{Mobarak \emph  {et~al.}}}{{Mobarak, Mimona, Islam, Hossain, Zohura, Imtiaz, and Rimon}}}
+\bibcite{schnet}{{5}{2018}{{Schütt \emph  {et~al.}}}{{Schütt, Sauceda, Kindermans, Tkatchenko, and Müller}}}
+\bibcite{cgcnn}{{6}{2018}{{Xie and Grossman}}{{}}}
+\bibcite{megnet}{{7}{2019}{{Chen \emph  {et~al.}}}{{Chen, Ye, Zuo, Zheng, and Ong}}}
+\bibcite{chemgnn}{{8}{2024}{{Chen \emph  {et~al.}}}{{Chen, Xu, Yang, Yan, Wei, Chen, Wei, and Chen}}}
+\bibcite{geocgcnn}{{9}{2021}{{Cheng \emph  {et~al.}}}{{Cheng, Zhang, and Dong}}}
+\bibcite{icgcnn}{{10}{2020}{{Park and Wolverton}}{{}}}
+\bibcite{mpnn}{{11}{2017}{{Gilmer \emph  {et~al.}}}{{Gilmer, Schoenholz, Riley, Vinyals, and Dahl}}}
+\bibcite{congn}{{12}{2024}{{Ruff \emph  {et~al.}}}{{Ruff, Reiser, St{\"u}hmer, and Friederich}}}
+\bibcite{alignn}{{13}{2021}{{Choudhary and DeCost}}{{}}}
+\bibcite{m3gnet}{{14}{2022}{{Chen and Ong}}{{}}}
+\bibcite{paulings_rules}{{15}{1929}{{Pauling}}{{}}}
+\bibcite{coordpolyshapes}{{16}{1996}{{King}}{{}}}
+\bibcite{motifstats}{{17}{2017}{{Waroquiers \emph  {et~al.}}}{{Waroquiers, Gonze, Rignanese, Welker-Nieuwoudt, Rosowski, Gobel, Schenk, Degelmann, Andr{\'e}, Glaum,\emph  {et~al.}}}}
+\bibcite{motifexplore}{{18}{2022}{{Dan \emph  {et~al.}}}{{Dan, Zhao, He, Loh, and Pennycook}}}
+\bibcite{clustermotifsanal}{{19}{2009}{{Yang and Tang}}{{}}}
+\bibcite{motife3nn}{{20}{2024}{{Sheriff \emph  {et~al.}}}{{Sheriff, Cao, and Freitas}}}
+\bibcite{orderparam1}{{21}{2017}{{Zimmermann \emph  {et~al.}}}{{Zimmermann, Horton, Jain, and Haranczyk}}}
+\bibcite{orderparam2}{{22}{2020}{{Zimmermann and Jain}}{{}}}
+\bibcite{molorderparam}{{23}{2011}{{Santiso and Trout}}{{}}}
+\bibcite{clease}{{24}{2019}{{Chang \emph  {et~al.}}}{{Chang, Kleiven, Melander, Akola, Garcia-Lastra, and Vegge}}}
+\bibcite{cce_crys}{{25}{2008}{{van~de Walle}}{{}}}
+\bibcite{cce_gen}{{26}{1984}{{Sanchez \emph  {et~al.}}}{{Sanchez, Ducastelle, and Gratias}}}
+\bibcite{csm_polyhedra}{{27}{1998}{{Pinsky and Avnir}}{{}}}
+\bibcite{chemenv}{{28}{2020}{{Waroquiers \emph  {et~al.}}}{{Waroquiers, George, Horton, Schenk, Persson, Rignanese, Gonze, and Hautier}}}
+\bibcite{coordination_comp}{{29}{2021}{{Pan \emph  {et~al.}}}{{Pan, Ganose, Horton, Aykol, Persson, Zimmermann, and Jain}}}
+\bibcite{linegraph_general}{{30}{2017}{{Chen \emph  {et~al.}}}{{Chen, Li, and Bruna}}}
+\bibcite{matproj}{{31}{2013}{{Jain \emph  {et~al.}}}{{Jain, Ong, Hautier, Chen, Richards, Dacek, Cholia, Gunter, Skinner, Ceder, and Persson}}}
+\bibcite{matbench}{{32}{2020}{{Dunn \emph  {et~al.}}}{{Dunn, Wang, Ganose, Dopp, and Jain}}}
+\bibcite{amdnet}{{33}{2021}{{Banjade \emph  {et~al.}}}{{Banjade, Hauri, Zhang, Ricci, Gong, Hautier, Vucetic, and Yan}}}
+\bibcite{contrastivelearn_motif}{{34}{2020}{{Zhang \emph  {et~al.}}}{{Zhang, Hu, Subramonian, and Sun}}}
+\bibcite{molecule2}{{35}{2018}{{Collins \emph  {et~al.}}}{{Collins, Gordon, Von~Lilienfeld, and Yaron}}}
+\bibcite{molecule3}{{36}{2022}{{Fedik \emph  {et~al.}}}{{Fedik, Zubatyuk, Kulichenko, Lubbers, Smith, Nebgen, Messerly, Li, Boldyrev, Barros,\emph  {et~al.}}}}
+\bibcite{e3nn}{{37}{2022}{{Geiger and Smidt}}{{}}}
+\bibcite{tfn}{{38}{2018}{{Thomas \emph  {et~al.}}}{{Thomas, Smidt, Kearnes, Yang, Li, Kohlhoff, and Riley}}}
+\bibcite{o3transformer1}{{39}{2024}{{Yan \emph  {et~al.}}}{{Yan, Fu, Qian, Qian, and Ji}}}
+\bibstyle{rsc}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Validation dataset results for three Materials Project target sets: formation energy $E_f$, band gap $E_g$, and metalicity. Here, each dataset included a total of 152,605 materials after 300 epochs of training with 5-fold nested cross validation. Best results are indicated in bold.}}{8}{table.caption.7}\protected@file@percent }
+\newlabel{fig:mp_table}{{2}{8}{Validation dataset results for three Materials Project target sets: formation energy $E_f$, band gap $E_g$, and metalicity. Here, each dataset included a total of 152,605 materials after 300 epochs of training with 5-fold nested cross validation. Best results are indicated in bold}{table.caption.7}{}}
+\newlabel{fig:mp_table@cref}{{[table][2][]2}{[1][7][]8}{}{}{}}
+\newlabel{LastPage}{{6}{8}{Acknowledgements}{page.8}{}}
+\gdef\lastpage@lastpage{8}
+\gdef\lastpage@lastpageHy{8}
+\gdef \@abspage@last{8}

@@ -1,0 +1,16 @@
+\contentsline {chapter}{\numberline {1}Introduction: Machine Learning Applied to Materials Science}{2}{}%
+\contentsline {chapter}{\numberline {2}Background: Groups}{3}{}%
+\contentsline {section}{\numberline {2.1}Hamiltonian Group}{3}{}%
+\contentsline {section}{\numberline {2.2}Representations of Groups}{3}{}%
+\contentsline {subsection}{\numberline {2.2.1}Irreducible Representations}{4}{}%
+\contentsline {subsection}{\numberline {2.2.2}Characters}{4}{}%
+\contentsline {section}{\numberline {2.3}Basis Functions}{5}{}%
+\contentsline {subsection}{\numberline {2.3.1}SO(3) Basis Functions}{5}{}%
+\contentsline {subsection}{\numberline {2.3.2}Irreducible Representations of Permutation Groups}{5}{}%
+\contentsline {subsubsection}{Young Diagrams}{5}{}%
+\contentsline {subsubsection}{Schur-Weyl Duality}{7}{}%
+\contentsline {section}{\numberline {2.4}Coupling and Clebsch-Gordan Coefficients}{8}{}%
+\contentsline {chapter}{\numberline {3}Equivariant Graph Neural Networks}{9}{}%
+\contentsline {section}{\numberline {3.1}Graph Neural Networks}{9}{}%
+\contentsline {subsection}{\numberline {3.1.1}Equivariance}{9}{}%
+\contentsline {chapter}{\numberline {4}Crystal Group Equivariant Networks}{10}{}%

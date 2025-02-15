@@ -1,0 +1,200 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{m3gnet}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CC}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Chi},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=OSP}{%
+         family={Ong},
+         familyi={O\bibinitperiod},
+         given={Shyue\bibnamedelima Ping},
+         giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group US New York}%
+    }
+    \strng{namehash}{CCOSP1}
+    \strng{fullhash}{CCOSP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{11}
+    \field{pages}{718\bibrangedash 728}
+    \field{title}{A universal graph deep learning interatomic potential for the
+  periodic table}
+    \field{volume}{2}
+    \field{journaltitle}{Nature Computational Science}
+    \field{year}{2022}
+  \endentry
+
+  \entry{alignn}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CK}{%
+         family={Choudhary},
+         familyi={C\bibinitperiod},
+         given={Kamal},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=DB}{%
+         family={DeCost},
+         familyi={D\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{CKDB1}
+    \strng{fullhash}{CKDB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 8}
+    \field{title}{Atomistic Line Graph Neural Network for improved materials
+  property predictions}
+    \field{volume}{7}
+    \field{journaltitle}{npj Computational Materials}
+    \field{year}{2021}
+  \endentry
+
+  \entry{mpnn}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=GJ}{%
+         family={Gilmer},
+         familyi={G\bibinitperiod},
+         given={Justin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SSS}{%
+         family={Schoenholz},
+         familyi={S\bibinitperiod},
+         given={Samuel\bibnamedelima S},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=RPF}{%
+         family={Riley},
+         familyi={R\bibinitperiod},
+         given={Patrick\bibnamedelima F},
+         giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=VO}{%
+         family={Vinyals},
+         familyi={V\bibinitperiod},
+         given={Oriol},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=DGE}{%
+         family={Dahl},
+         familyi={D\bibinitperiod},
+         given={George\bibnamedelima E},
+         giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {PMLR}%
+    }
+    \strng{namehash}{GJ+1}
+    \strng{fullhash}{GJSSSRPFVODGE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{International conference on machine learning}
+    \field{pages}{1263\bibrangedash 1272}
+    \field{title}{Neural message passing for quantum chemistry}
+    \field{year}{2017}
+  \endentry
+
+  \entry{cgcnn}{article}{}
+    \name{author}{2}{}{%
+      {{hash=XT}{%
+         family={Xie},
+         familyi={X\bibinitperiod},
+         given={Tian},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=GJC}{%
+         family={Grossman},
+         familyi={G\bibinitperiod},
+         given={Jeffrey\bibnamedelima C},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{XTGJC1}
+    \strng{fullhash}{XTGJC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{X}
+    \field{sortinithash}{X}
+    \field{number}{14}
+    \field{pages}{145301}
+    \field{title}{Crystal graph convolutional neural networks for an accurate
+  and interpretable prediction of material properties}
+    \field{volume}{120}
+    \field{journaltitle}{Physical review letters}
+    \field{year}{2018}
+  \endentry
+
+  \entry{orderparam}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ZNE}{%
+         family={Zimmermann},
+         familyi={Z\bibinitperiod},
+         given={Nils\bibnamedelima ER},
+         giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=JA}{%
+         family={Jain},
+         familyi={J\bibinitperiod},
+         given={Anubhav},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Royal Society of Chemistry}%
+    }
+    \strng{namehash}{ZNEJA1}
+    \strng{fullhash}{ZNEJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{number}{10}
+    \field{pages}{6063\bibrangedash 6081}
+    \field{title}{Local structure order parameters and site fingerprints for
+  quantification of coordination environment and crystal structure similarity}
+    \field{volume}{10}
+    \field{journaltitle}{RSC advances}
+    \field{year}{2020}
+  \endentry
+\enddatalist
+\endinput
