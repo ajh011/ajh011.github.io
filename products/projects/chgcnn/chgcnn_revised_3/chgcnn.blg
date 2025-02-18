@@ -17,16 +17,15 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 10880 items from 5000.
+Reallocated field_info (elt_size=4) to 10740 items from 5000.
 Database file #1: chgcnn-blx.bib
 Database file #2: chgcnn.bib
-Warning--I didn't find a database entry for "chemicalmotifcharacterization"
 Biblatex version: 3.20
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 41 entries,
             6402 wiz_defined-function locations,
-            1503 strings with 26180 characters,
+            1502 strings with 26151 characters,
 and the built_in function-call counts, 499283 in all, are:
 = -- 44461
 > -- 5436
@@ -65,4 +64,3 @@ warning$ -- 0
 while$ -- 7464
 width$ -- 0
 write$ -- 1961
-(There was 1 warning)

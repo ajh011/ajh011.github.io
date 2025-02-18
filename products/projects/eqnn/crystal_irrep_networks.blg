@@ -2,11 +2,6 @@ This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: crystal_irrep_networks.aux
 The style file: biblatex.bst
-I couldn't open database file chgcnn.bib
----line 6 of file crystal_irrep_networks.aux
- : \bibdata{crystal_irrep_networks-blx,chgcnn
- :                                           }
-I'm skipping whatever remains of this command
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -23,48 +18,48 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: crystal_irrep_networks-blx.bib
+Database file #2: chgcnn.bib
 Biblatex version: 3.20
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 1 entry,
+You've used 3 entries,
             6402 wiz_defined-function locations,
-            1203 strings with 9027 characters,
-and the built_in function-call counts, 1534 in all, are:
-= -- 73
-> -- 70
-< -- 1
-+ -- 49
-- -- 28
-* -- 32
-:= -- 370
+            1218 strings with 9450 characters,
+and the built_in function-call counts, 23050 in all, are:
+= -- 1923
+> -- 305
+< -- 56
++ -- 809
+- -- 133
+* -- 1573
+:= -- 3096
 add.period$ -- 0
-call.type$ -- 1
-change.case$ -- 0
+call.type$ -- 3
+change.case$ -- 18
 chr.to.int$ -- 42
-cite$ -- 0
-duplicate$ -- 11
-empty$ -- 104
-format.name$ -- 0
-if$ -- 325
+cite$ -- 4
+duplicate$ -- 2482
+empty$ -- 1846
+format.name$ -- 180
+if$ -- 4436
 int.to.chr$ -- 0
-int.to.str$ -- 0
+int.to.str$ -- 4
 missing$ -- 0
-newline$ -- 20
-num.names$ -- 0
-pop$ -- 47
+newline$ -- 117
+num.names$ -- 82
+pop$ -- 850
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 37
 quote$ -- 0
-skip$ -- 78
+skip$ -- 427
 stack$ -- 0
-substring$ -- 154
-swap$ -- 1
-text.length$ -- 20
-text.prefix$ -- 0
+substring$ -- 3544
+swap$ -- 368
+text.length$ -- 82
+text.prefix$ -- 2
 top$ -- 1
-type$ -- 22
+type$ -- 90
 warning$ -- 0
-while$ -- 64
+while$ -- 424
 width$ -- 0
-write$ -- 20
-(There was 1 error message)
+write$ -- 115

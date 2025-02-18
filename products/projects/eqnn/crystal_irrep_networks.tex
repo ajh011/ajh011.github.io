@@ -6,6 +6,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{extarrows}
 \usepackage[hang,flushmargin]{footmisc}
 
 \title{Point Group Equivariant Convolutional Graph Neural Networks}
@@ -56,12 +57,40 @@
 %\end{frame}
 
 \begin{frame}{Overview}
+\begin{itemize}
+	\item Brief review of mathematics
+	\item Group representation theory
+	\begin{itemize}
+	\item Irreps
+	\item Basis Functions
+	\item Coupling Coefficients
+	\end{itemize}
+	\item Equivariant networks
+	\begin{itemize}
+		\item $SO(3)$ Equivariance
+	\end{itemize}
+	\item Applications
 
+\end{itemize}
 \end{frame}
 
 \section{Groups and Vector Spaces}
+
+\begin{frame}{Group Definition}
+	A group $G$ is a set of elements $\lbrace g_1, ..., g_n\rbrace$ with a binary operation $*:G\times G \rightarrow G$ between elements that satisfies the conditions of identity, associativity, invertability, and closure.
+	
+	\begin{boxed2}
+		
+		\vspace{-.5cm}
+		
+		\textbf{Example: General Linear Group}
+		
+		The general linear group $GL(V)$ formed over some vector space $V$ is the set of non-singular $d_v\times d_v$ matrices acting on $V$ with the group operation being matrix multiplication. The general linear group is itself a vector space.
+	\end{boxed2}
+\end{frame}
+
 \begin{frame}{Vector Space Definition}
-	A vector space $V$ over a field $K$
+	A vector space $V$ over a field $K$ is a group of vectors equipped with a distributive scalar multiplication. Vectors are often defined by way of a basis set that spans the space under scalar multiplication.
 	
 
 	\begin{boxed2}
@@ -76,11 +105,10 @@
 		
 	\end{boxed2}	
 	
-	Often, we may construct new vector spaces from sets of known vector spaces.
 	
 		\begin{boxed2}
 		
-		\vspace{-.41cm}
+		\vspace{-.61cm}
 		
 		\textbf{Example: Functions on Real 3 Dimensional Space} 
 		
@@ -89,28 +117,19 @@
 		\vspace{-.3cm}
 		
 	\end{boxed2}	
-\end{frame}
-
-
-\begin{frame}{Group Definition}
-	A group $G$ is a set of elements $\lbrace g_1, ..., g_n\rbrace$ with a binary operation $*:G\times G \rightarrow G$ between elements that satisfies the conditions of identity, associativity, invertability, and closure.
 	
-	\begin{boxed2}
-		
-		\vspace{-.5cm}
-		
-		\textbf{Example: General Linear Group}
-		
-	The general linear group $GL(V)$ formed over some vector space $V$ is the set of non-singular $d_v\times d_v$ matrices acting on $V$. The general linear group is itself a vector space, and we may also form tensor products and direct sums of general linear group vectors.
-	\end{boxed2}
+We may construct new vector spaces from sets of existing vector spaces by taking tensor products and direct sums.
+
 \end{frame}
 
-\begin{frame}{Cartesian Products}
-	content...
-\end{frame}
+
+
+%\begin{frame}{Cartesian Products}
+%	content...
+%\end{frame}
 
 \begin{frame}{Direct Sums}
-We may form direct sums $V\oplus W$ of vector spaces $V,W$ by stipulating that the operation further enforces scalar distributivity to respective subspaces with a set of scalars $K_V\oplus K_W$.
+We may form direct sums $V\oplus W$ of vector spaces $V,W$ by block-diagonal concatenation. This operation enjoys scalar distributivity to respective subspaces with the set of scalars $K_V\oplus K_W$.
 
 \begin{boxed2}
 	
@@ -139,7 +158,7 @@ We may form direct sums $V\oplus W$ of vector spaces $V,W$ by stipulating that t
 		\end{bmatrix}
 	$$
 
-\vspace{-.3cm}
+\vspace{-.1cm}
 
 \end{boxed2}
 	
@@ -147,12 +166,14 @@ Direct sums of vector spaces are themselves vector spaces.
 \end{frame}
 
 \begin{frame}{Tensor Products}
-We may construct tensor products $V\otimes W$ of vector spaces $V,W$.
+Tensor products $V\otimes W$ of vector spaces $V,W$ are uniquely bilinear so that $\lambda V\otimes W = V\otimes\lambda W = \lambda (V\otimes W)$. 
 \begin{boxed2}
 	
 	\vspace{-.57cm}
 	
-	\textbf{Example: Tensor Product of Matrices} Also known as "Kronecker Product".
+	\textbf{Example: Tensor Product of Matrices}
+	
+	Also known as "Kronecker Product".
 	
 	
 	\vspace{-.12cm}
@@ -251,18 +272,12 @@ Tensor products of vector spaces are themselves vector spaces.
 	
 	\vspace{-.57cm}
 	
-	\textbf{Example: IRs of $C_3$} The previously shown representation of $C_3$ elements is reducible into a two-dimensional subspace and a one-dimensional subspace. 
+	\textbf{Example: IRs of $D_3$} The previously shown representation of $C_3$ elements is reducible into a two-dimensional subspace and a one-dimensional subspace of $D_3$. 
 	
 	\vspace{-.12cm}
 
 $$
 \rho(\mathbb{I}) =
-% \begin{bmatrix}
-%	1&0&0\\
-%	0&1&0\\
-%	0&0&1\\
-%\end{bmatrix}
-%=
 \rho^{(2)}(\mathbb{I})\oplus\rho^{(1)}(\mathbb{I})
 =
 \begin{bmatrix}
@@ -273,14 +288,9 @@ $$
 \begin{bmatrix}
 1
 \end{bmatrix}
-\\
+$$
+$$
 \rho(C_3)
-%=
-%\begin{bmatrix}
-%	-\frac{1}{2}&-\frac{\sqrt{3}}{2}&0\\
-%	\frac{\sqrt{3}}{2}&-\frac{1}{2}&0\\
-%	0&0&1\\
-%\end{bmatrix}
 =\rho^{(2)}(C_3)\oplus\rho^{(1)}(C_3)=
 \begin{bmatrix}
 	-\frac{1}{2}&-\frac{\sqrt{3}}{2}\\
@@ -290,15 +300,10 @@ $$
 \begin{bmatrix}
 	1
 \end{bmatrix}
-\\
+$$
+$$
 \rho(C_3^2) 
 =
-%\begin{bmatrix}
-%	-\frac{1}{2}&\frac{\sqrt{3}}{2}&0\\
-%	-\frac{\sqrt{3}}{2}&-\frac{1}{2}&0\\
-%	0&0&1\\
-%\end{bmatrix}
-%=
 \rho^{(2)}(C_3^2)\oplus\rho^{(1)}(C_3^2)
 = 
 \begin{bmatrix}
@@ -351,12 +356,12 @@ $$
 		
 		$$
 		\begin{array}{c|c c c c}
-			$C_4$ & $\langle \mathbb{I}\rangle$  & $\langle C_4\rangle$  & $\langle C_4^2\rangle$  & $\langle C_4^3\rangle$ \\
+			C_4 & \langle \mathbb{I}\rangle  & \langle C_4\rangle  & \langle C_4^2\rangle  & \langle C_4^3\rangle \\
 			\hline 
-			$a_1$ & 1 & 1 & 1 & 1 \\
-			$a_2$ & 1 & -1 & 1 & -1 \\
-			$a_3$ & 1 & i & -1 & -i \\
-			$a_4$ & 1 & -i & -1 & i \\
+			a_1 & 1 & 1 & 1 & 1 \\
+			a_2 & 1 & -1 & 1 & -1 \\
+			a_3 & 1 & i & -1 & -i \\
+			a_4 & 1 & -i & -1 & i \\
 		\end{array}
 		$$
 		
@@ -422,49 +427,60 @@ $$
 	
 \end{boxed2}
 \end{frame}
-
 \begin{frame}{Basis Functions}
-	Suppose we have some Hamiltonian group, so that the group operators $\hat{O}(g)$ commute with $\hat{H}$.
-	$$
-	[\hat{H},\hat{O}(g)] = 0 \quad \quad \forall g \in G
-	$$
-	In such a case, the operators must have a simultaneous set of eigenvectors $\psi^{k}_{\alpha}$ that span the space of functions:
+	Every representation of a group inherits a vector space on which it has a natural action. This vector space is spanned by a chosen set of basis functions $\vert \psi^{\alpha}_i\rangle$.
+
+	\vspace{0.5cm}
 	
-	$$
-	f(\vec{r})=\sum_{k,\alpha}c_{k}^{\alpha}\psi^{k}_{\alpha} =\sum_{k,\alpha}f^k_{\alpha}(\vec{r})
-	$$
+	\begin{itemize}
+		\item 	An irrep $\Gamma^{\alpha}$'s components are determined by basis:
+		$$\Big(\Gamma^{\alpha}(g)\Big)_{i}^{j}=\langle\psi^{\alpha}_j\vert \Gamma^{\alpha}(g) \vert \psi^{\alpha}_i\rangle$$
+		
+		\item Basis functions are said to ``transform as an irrep $\alpha$" if:
+		$$
+		\Gamma^{\alpha}(g) \vert \psi^{\alpha}_i\rangle =\sum_{j} \Big(\Gamma^{\alpha}(g)\Big)^j_i \vert \psi^{\alpha}_j\rangle
+		$$
+	\end{itemize}
 	
-	\medskip
-	
-	We have some freedom in choice of this set of basis functions on which the linear operators of the representations act.
+
 \end{frame}
+
 
 \begin{frame}{Basis Functions (cont.)}
 		\small
+
 	\begin{boxed2}
+		
+		\vspace{-.5cm}
+		
+		\textbf{Example: $3D$ Basis Functions of $D_3$}
+		
+		Consider previous $3D$ representation of $C_3$ rotations in $D_3$, which act on vectors $\vec{r}_{\rho}$:
+		$$
+		\vec{r}_{\rho}=\begin{bmatrix}
+			x\\y\\z
+		\end{bmatrix} = \vec{r}_{\rho^{(2)}}\oplus\vec{r}_{\rho^{(1)}} =\begin{bmatrix}
+		x\\y
+		\end{bmatrix}\oplus\begin{bmatrix}
+		z
+		\end{bmatrix}
+		$$
+		Clearly, $x,y$ is a basis transforming as $\Gamma^{2}$ and $z$ is a basis for $\Gamma^1$.
+
+	\end{boxed2}
+	
+		\begin{boxed2}
 		
 		\vspace{-.41cm}
 		
 		\textbf{Example: Tight Binding} 
 		
-		The tight binding approximation often uses localized Hydrogen-like orbitals $\psi_{ell m}$ as a basis for many-body systems
+		The tight binding approximation often uses localized Hydrogen-like orbitals $\psi_{nm}^{\ell}$ as a basis for many-body systems
 		
 		\vspace{-.3cm}
 		
 	\end{boxed2}
 	
-	\begin{boxed2}
-		
-		\vspace{-.5cm}
-		
-		\textbf{Example: Group of a Hamiltonian}
-		
-		Consider a general Hamiltonian $\hat{H}(\vec{r})$ that depends only on the spatial coordinate $\vec{r}$ of some particle. We then define the operator $\hat{O}_G$ to be a representation of a group $G$ that acts on $H$'s input space $\vec{r}$ as:
-		$$
-		\hat{O}_G(g)\hat{H}(\vec{r}) = \hat{H}(g^{-1}\vec{r})
-		$$
-		The "group of the Hamiltonian" is the largest group of the form above that commutes with the Hamiltonian.
-	\end{boxed2}
 \end{frame}
 
 \begin{frame}{Projection Operators}
@@ -485,9 +501,9 @@ $$
 \end{frame}
 
 \begin{frame}{Coupling Coefficients}
-Consider a direct product decomposition of the irreps $\Gamma$:
+Consider a direct product decomposition of some irreps $\Gamma$:
 $$
-\Gamma^{\alpha}\Gamma^{\beta}=\bigoplus_{\gamma}c_{\alpha\beta\gamma}\Gamma^{\gamma}
+\Gamma^{\alpha}\otimes\Gamma^{\beta}=\bigoplus_{\gamma}c_{\alpha\beta\gamma}\Gamma^{\gamma}
 $$
 	
 Products of basis functions $u^{\alpha}_iv^{\beta}_j$ then decompose similarly into a direct sum of irreps with basis functions $\psi_{n}^{\gamma}$ via the coupling coefficients $U_{\alpha i \beta j}^{\gamma n}$ as:
@@ -495,13 +511,16 @@ $$
 \psi_{n}^{\gamma}= \sum_{i,j}U_{\alpha i \beta j}^{\gamma n}u^{\alpha}_iv^{\beta}_j
 $$
 
-	\begin{boxed2}
+	\begin{boxed2}\tiny
 	
-	\vspace{-.41cm}
+	\vspace{-.61cm}
 	
 	\textbf{Example: Clebsch-Gordan Coefficients} 
 	
-	The Clebsch-Gordan coefficients are the coupling coefficients of $SO(3)$, which relate tensor product spaces of spherical harmonics to direct sums of spherical harmonics.
+	The Clebsch-Gordan coefficients $C^{\ell_f  m_f}_{\ell_1  m_1\ell_2 m_2}$ are the coupling coefficients of $SO(3)$, which relate tensor product spaces of spherical harmonics $Y^{\ell}_m$ to direct sums of spherical harmonics.
+	$$
+	Y_{\ell_1}^{m_1}(\Omega)Y_{\ell_2}^{m_2}(\Omega)=\sum_{\ell_3, m_3}\sqrt{\frac{(2\ell_1+1)(2\ell_2+1)}{4\pi(2\ell_3+1)}}C^{\ell_3m_3}_{\ell_1m_1\ell_2m_2}C^{\ell_30}_{\ell_1 0\ell_2 0}Y_{\ell_3m_3}(\Omega)
+	$$
 	
 	\vspace{-.3cm}
 	
@@ -517,29 +536,308 @@ $$
 	$$
 	Tensor products are uniquely equivariant with respect to their argument vector spaces.
 \end{frame}
-\begin{frame}{SO(3) Equivariant \textit{Tensor Field Networks}}
+\begin{frame}{Why Equivariant Functions?}
+	Physics assumes there exists a map between configurations and properties of physical systems: 
+	$$
+	  \lbrace\vec{r}_i \rbrace \xrightarrow[\text{Nature}]{}
+	  \lbrace\vec{r}_i' \rbrace
+	$$
+	Neural network techniques assume maps between abstract input and output spaces exist:
+	$$
+	X
+	\xrightarrow[\text{Neural Network}]{}
+	Y
+	$$
+	and that these may be expressed in a basis of adequately large neural networks.
+\end{frame}
+\begin{frame}{Why Equivariant Functions? (cont.)}
+	\begin{center}
+	Physical processes respect coordinate system rotations $R$:
+	$$
+	\lbrace R\vec{r}_i \rbrace \xrightarrow[\text{Nature}]{}
+	\lbrace R\vec{r}_i' \rbrace
+	$$
+	In general, neural networks do not:
+	$$
+	RX
+	\xrightarrow[\text{Neural Network}]{} \ \ 
+	?
+	$$
+	
+	So what do we want?
+
+	\end{center}
+\end{frame}
+\begin{frame}{Equivariant Networks}
+\begin{center}
+We want equivariant networks for physics!
 
 	$$
-	\big(v^{L+1}_{nc}\big) ^{\ell}_{m}=v^{L}_{nc}+\sum_{b\in \mathcal{N}(n)}\sum_{\ell_f, m_f , \ell_i,m_i}c_{\ell_fm_f\ell_im_i}^{\ell m}\big(F^{L}_c(r_{nb})\big)^{\ell_f}_{m_f}\big(v_{bc}^L \big)^{\ell_i}_{m_i}
+	RX
+	\xrightarrow[\text{Neural Network}]{\text{Equivariant}} RY
 	$$
+	
+\vspace{0.6cm}
+
+\end{center}
+	
+In equivariant networks, we consider feature vectors in basis of representation space as:
+$$
+v^{\alpha}_i
+$$
+with indexes $\alpha$ denoting the irrep it transforms as, and $i$ denoting the dimension of irrep space $\alpha$.
 \end{frame}
+\begin{frame}{Equivariant Networks (cont.)}
+Compositions of equivariant functions are equivariant \cite{tacovariant}. We consider building blocks:{\small
+\begin{itemize}
+
+	\item Self-interaction:
+	$$
+	v'_{nc} = W^i_c v_{ni}
+	$$
+	\item Non-linear functions along channels  (for trivial irrep $\alpha=1$):
+	$$
+	v'_{nc}=f(v_{nc}+b_{nc})
+	$$
+	\item Group correlation with filters:
+	$$
+	[F\star v](g)=\sum_{h\in G}\sum_c F_c(h)v_c(g^{-1}h)
+	$$
+	\item Tensor products with filters:
+	$$
+	(v'_{nc})^{\gamma}_{n} = \sum_{ij}U_{\alpha i \beta j}^{\gamma n}\big(F_{j}^{\beta}\otimes V^{\alpha}_i \big) 
+	$$
+	\item Pooling over nodes or channels:
+	$$
+	v_c = \sum_n v_{nc}
+	$$
+\end{itemize}}
+\end{frame}
+\begin{frame}{$SO(3)$ Properties}
+Most modern equivariant networks are specifically $SO(3)$-Equivariant.
+
+\vspace{0.5cm}
+
+\begin{itemize}
+\item Inifinite order $\rightarrow$ infinite irreps
+\item Irreps are Wigner $\mathcal{D}^{\ell}$ matrices
+\item Natural basis set $Y^{\ell}_m$ of dimension $d_{\ell}=2\ell+1$
+\end{itemize}
+
+\vspace{0.5cm}
+
+Many models are further referred to as $E(3)$-equivariant for the Euclidean group (add parity and translation invariance).
+\end{frame}
+
+\begin{frame}{\textit{Tensor Field Networks}}
+	Tensor field networks \cite{tfn} use SO(3) equivariant convolution:{\small
+	$$
+	\big(v^{L+1}_{nc}\big) ^{\ell}_{m}=\big(v^{L}_{nc}\big)^{\ell}_m+\sum_{b\in \mathcal{N}(n)}\sum_{\ell_f m_f , \ell_i m_i}^{\ell_{\text{max}} m_{\text{max}}}c_{\ell_fm_f\ell_im_i}^{\ell m}\big(F^{L}_c(r_{nb})\big)^{\ell_f}_{m_f}\big(v_{bc}^L \big)^{\ell_i}_{m_i}
+	$$}
+	\begin{itemize}
+		\item $v_{nc}^{L}$: Node feature of node $n$, channel $c$, layer $L$
+		\item $c_{\ell_fm_f\ell_im_i}^{\ell_om_o}$: Clebsch-Gordan coefficients
+		\item $F_c^L$: Filter function (trainable)
+		\item $r_{nb}$: Radius between nodes $n$ and neighbor $b\in \mathcal{N}(n)$
+	\end{itemize}
+	
+	\vspace{.7cm}
+	
+	$F$ is generally a neural network; $r$ is often expanded with some radial basis function (RBF): Gaussian, Bessel, etc.
+\end{frame}
+
+\section{Point Groups and Space Groups}
+
+\begin{frame}{Point Group Properties}
+Groups of operations that leave at least one point fixed and are compatible with a Bravais lattice.
+
+\vspace{0.3cm}
+	
+Point groups (in 3D) have following properties:
+	\begin{itemize}
+		\item 32 crystallographic point groups in 3D
+		\item Finite number of irreps for each
+		\item All irreps of point groups are of dimension $d_{\alpha}=1,2,3$
+		\item All allow a (often reducible) 3D representation
+		\item Decompositions with $c_{\alpha\beta\gamma}=0,1,2$
+	\end{itemize}
+	
+{\small
+(Point group representations may be used to generate induced representations of space groups)}
+\end{frame}
+
+\begin{frame}{Site-symmetry Equivariant Networks}
+\begin{center}
+	Index vectors by $\alpha ,i$  from site-symmetry group instead!
+\end{center}
+{\small
+	$$
+	\big(v^{L+1}_{nc}\big) ^{\ell}_{m}=\big(v^{L}_{nc}\big)^{\gamma}_n+\sum_{b\in \mathcal{N}(n)}\sum_{\alpha i, \beta j}U_{\alpha i \beta j}^{\gamma n}\big(F^{L}_c(r_{nb})\big)^{\beta }_{j}\big(v_{bc}^L \big)^{\alpha}_{i}
+	$$}
+	
+\begin{itemize}
+	\item Natural cutoff (finite summation over $\alpha,\beta$)
+	\item Natural readout for symmetric properties ($\gamma=1$)
+	\item Accounts for all physical symmetry but not more
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Space Groups}
+Semidirect product of point group $R$ and lattice translation group $T$:
+$$
+G = T\ltimes R
+$$
+\begin{itemize}
+	\item Describes all symmetries of crystals
+	\item Infinite order $\rightarrow$ infinite irreps
+	\item Can learn features associated with point group and induce for space group
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Induced Representations}
+	\begin{center}
+	"Opposite of a reduced representation"
+	\end{center}
+
+\vspace{0.15cm}
+
+Use subgroup $G$ representation $\tilde{\rho}$ to form representation $\rho$ of parent $H$:
+$$
+\rho_{\alpha i ,\beta j}(h) = \begin{cases}
+\ \ \tilde{\rho}(g)_{ij}	\quad\text{if } h_{\alpha}^{-1}h h_{\beta}=g\in G \\ 
+\ \ 0 \quad \quad \quad  \text{else} \\
+\end{cases}
+$$
+where $\alpha$ indexes a coset decomposition of $H$  into $G\subset H$.
+
+
+\begin{boxed2}
+	
+	\vspace{-.61cm}
+	\footnotesize
+	\textbf{Example: Induced Representation of $S_2$} 
+	
+	Take trivial group $E$ with representation $\tilde{\rho}(E)=1$. Induced rep. of $S_2$ then is:
+$$
+		\rho_{S_2}(\mathbb{I})=\begin{bmatrix}
+			\tilde{\rho}(\mathbb{I}) &\tilde{\rho}([12]) \\
+			 \tilde{\rho}([12])&\tilde{\rho}([12][12]) \\
+		\end{bmatrix}
+		=\begin{bmatrix}
+			1 & 0 \\
+			0 & 1 \\
+		\end{bmatrix}
+$$
+$$
+	\rho_{S_2}([12]) =\begin{bmatrix}
+		\tilde{\rho}([12]) &\tilde{\rho}([12][12]) \\
+		\tilde{\rho}([12][12])&\tilde{\rho}([12][12][12]) \\
+	\end{bmatrix}
+	=\begin{bmatrix}
+		0 & 1 \\
+		1 & 0 \\
+	\end{bmatrix}
+$$
+	
+
+	\vspace{-.3cm}
+	
+\end{boxed2}	
+
+\end{frame}
+
+
 
 \section{Hamiltonian Learning}
 
+\begin{frame}{Hamiltonian Group}
+	We define the operator $\hat{O}_G$ to be a representation of a group $G$ that acts on $H$'s input space $\vec{r}$ as:
+	$$
+	\hat{O}_G(g)\hat{H}(\vec{r}) = \hat{H}(g^{-1}\vec{r})
+	$$
+	The "group of the Hamiltonian" is the largest group of the form above that commutes with the Hamiltonian.
+	$$
+	[\hat{H},\hat{O}(g)] = 0 \quad \quad \forall g \in G
+	$$
+	In such a case, the operators must have a simultaneous set of eigenvectors $\psi^{k}_{\alpha}$ that span the space of functions:
+	
+	$$
+	f(\vec{r})=\sum_{k,\alpha}c_{k}^{\alpha}\psi^{k}_{\alpha} =\sum_{k,\alpha}f^k_{\alpha}(\vec{r})
+	$$
+	
+	\medskip
+	
+	We have some freedom in choice of this set of basis functions on which the linear operators of the representations act.
+\end{frame}
+\begin{frame}{Hydrogen Orbitals}
+The Hydrogen Hamiltonian $\hat{H}_H(\vec{r})$ for a non-relativistic electron has separable eigenfunctions:
+$$
+\psi_i(\vec{r})=R_i(r)\Omega_i(\theta,\phi)
+$$
+Furthermore, $\hat{H}_H$ commutes with $SO(3)$ so these must be simultaneous with $SO(3)$:
+{\small
+$$
+[\hat{H},\hat{O}(g)] = 0 \quad \forall g \in SO(3) \quad \Rightarrow \quad \psi_{nm}^{\ell}(\vec{r})=R_{n}^{\ell}(r)Y^{\ell}_{m}(\theta,\phi)
+$$
+ (where $R$ is also indexed by $\ell$ due to an 'accidental' symmetry) }
+
+\vspace{0.4cm}
+
+\begin{itemize}
+	\item  $\theta,\phi$ dependence determined by group theory
+	\item  $r$ dependence determined by specific form of $\hat{H}_H$
+\end{itemize}
+\end{frame}
+\begin{frame}{Tight-Binding Approximations}
+In simplest form, consider H-like orbitals $\vert \psi_{nmp}^{\ell}\rangle$ localized at points $p$ as basis for many particle system defined by $\hat{H}$ so:
+$$
+\hat{H}_{nmp\ell,jkhl}=\langle \psi_{jkh}^l\vert\hat{H}\vert\psi_{nmp}^{\ell}\rangle
+$$
+
+\end{frame}
+
 \begin{frame}{DeepH}
-$\bullet$ Take hydrogen-like orbitals and treat them as $SO(3)$ features in e3nn. 
+	
+	
+$\bullet$ Take hydrogen-like orbitals and treat them as $SO(3)$ features 
 
 \medskip
 
 $\bullet$ Allows for the learning of all rotational symmetries but doesn't enforce them from physical considerations.
 
 
+\medskip 
+
+$\bullet$ Predicts DFT Hamiltonian from first large set of data
+
 \end{frame}
 
-\begin{frame}{}
+
+
+\begin{frame}{DeepSymmetry}
 $\bullet$ Incorporate point group symmetry of crystal and molecular sites by directly learning features associated with basis functions that transform as irreducible representations.
 
+\medskip
 
+$\bullet$ Predict symmetry of properties \textit{ab initio} but use machine learning for specific values
+
+\medskip
+
+$\bullet$ Target data less clear, Wannier functions?
+
+\vspace{0.5cm}
+
+Maybe variational approach, minimize basic Hamiltonian?
+
+\end{frame}
+
+
+\begin{frame}{References}
+
+	\printbibliography
 \end{frame}
 
 \end{document}

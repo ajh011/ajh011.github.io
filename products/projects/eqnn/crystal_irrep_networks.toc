@@ -1,4 +1,5 @@
 \beamer@sectionintoc {1}{Groups and Vector Spaces}{3}{0}{1}
-\beamer@sectionintoc {2}{Representation Theory}{8}{0}{2}
-\beamer@sectionintoc {3}{Group Equivariant Networks}{19}{0}{3}
-\beamer@sectionintoc {4}{Hamiltonian Learning}{21}{0}{4}
+\beamer@sectionintoc {2}{Representation Theory}{7}{0}{2}
+\beamer@sectionintoc {3}{Group Equivariant Networks}{18}{0}{3}
+\beamer@sectionintoc {4}{Point Groups and Space Groups}{25}{0}{4}
+\beamer@sectionintoc {5}{Hamiltonian Learning}{29}{0}{5}

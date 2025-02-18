@@ -311,8 +311,12 @@ Bond-and-triplet models performed best overall in predicting refractive indices 
 		Bond \& Triplet & 77.5& \textbf{0.398} & \textbf{0.0598} & 0.0966 & 0.0757 \\
 		Bond \& Motif & \textbf{74.3}& 0.424 & 0.0599 & \textbf{0.0943} & \textbf{0.0730}\\
 		\hline
+		Bond Messages & 112,596 & 960,912 & 1,135,680 & 1,061,628 & 1,061,628\\
+		Triplet Messages & 927,135 &5,756,865& 13,032,891 & 10,281,801  & 10,281,801\\
+		Motif Messages & 9,383 & 80,076 & 94,640 & 88,469 & 88,469 \\
+		\hline
 	\end{tabular*}
-	\caption{Validation dataset results for five MatBench target sets: highest frequency phonon peak $\omega_p$, refractive index $n$, perovskite formation energy $E_f$, and bulk moduli $K_{vrh}$ and shear moduli $G_{vrh}$. Note that the italicized numbers below the target name correspond to the total size of each dataset. Best results are indicated in bold.}\label{fig:matbench_table}
+	\caption{Validation dataset results for five MatBench target sets: highest frequency phonon peak $\omega_p$, refractive index $n$, perovskite formation energy $E_f$, and bulk moduli $K_{vrh}$ and shear moduli $G_{vrh}$. Note that the italicized numbers below the target name correspond to the total size of each dataset. Best results are indicated in bold. The number of messages contributed per layer for each type of hyperedge is listed below the line dividing the tables elements for each target set, respectively. }\label{fig:matbench_table}
 \end{table*}
 
 
@@ -336,7 +340,7 @@ For the Materials Project dataset, the bond-and-triplet model performed best for
 		Bond \& Motif &  0.0506 & 0.366 & .932\\
 		\hline
 	\end{tabular*}
-	\caption{Validation dataset results for three Materials Project target sets: formation energy $E_f$, band gap $E_g$, and metalicity. Here, each dataset included a total of 152,605 materials after 300 epochs of training with 5-fold nested cross validation. Best results are indicated in bold.}\label{fig:mp_table}
+	\caption{Validation dataset results for three Materials Project target sets: formation energy $E_f$, band gap $E_g$, and metalicity. Here, each dataset included a total of 152,605 materials after 300 epochs of training with 5-fold nested cross validation. Best results are indicated in bold. Here, bond edges contributed a total of 51,829,881 messages per layer; triplets contributed 330,198,684 messages per layer; and motifs 4,319,157 per layer.}\label{fig:mp_table}
 \end{table*}
 
 
