@@ -1,0 +1,165 @@
+@article{StrainNet,
+      title={StrainTensorNet: Predicting crystal structure elastic properties using SE(3)-equivariant graph neural networks}, 
+      author={Teerachote Pakornchote and Annop Ektarawong and Thiparat Chotibut},
+      year={2023},
+      eprint={2306.12818},
+      archivePrefix={arXiv},
+      primaryClass={cond-mat.dis-nn},
+      ANNOTATE = {StrainTensorNet predicts the components of the elastic tensor using an equivariant network by predicting the Strain-Energy Density (SED) components (an invariant representation) for various stresses and using these to extract elastic properties.},
+      url = {https://arxiv.org/abs/2306.12818}
+}
+
+@article{harmonictensors,
+      title={Spherical Harmonic Tensors}, 
+      author={Francisco Gonzalez Ledesma and Matthew Mewes},
+      year={2020},
+      eprint={2010.09433},
+      archivePrefix={arXiv},
+      primaryClass={},
+      ANNOTATE = {This paper gives a mathematical treatment of spherical harmonic tensors and uses them in decompositions of symmetric tensors in general. It also introduces Young diagrams in Appendix B, and applies them in two instances.},
+      url = {https://arxiv.org/pdf/2010.09433}
+}
+
+@article{ETGNN,
+	title={A general tensor prediction framework based on graph neural networks},
+	author={Hongjun Xiang, Yang Zhong, Hongyu Yu and Xinggao Gong},
+	year = {2022},
+    ANNOTATE = {This paper proposes a similar SO(3) decomposition of tensors to predict piezoelectric, dielectric, and other tensors.},	
+ 	url = {https://doi.org/10.21203/rs.3.rs-1900756/v1}
+}
+
+
+@article{MatTen,
+	title={A universal equivariant graph neural network for the elasticity tensors of any crystal system},
+	author={Mingjian Wen and Matthew K. Horton and Jason M. Munro and Patrick Huck and Kristin A. Persson},
+      year={2023},
+      eprint={2307.15242},
+      archivePrefix={arXiv},
+      primaryClass={cond-mat.mtrl-sci},
+    ANNOTATE = {This paper by the materials project team is our original punchline, giving Backus' spherical harmonic decomposition of the elastic tensor and reading it off of the irreps of the equivariant output. },	
+ 	url = {https://arxiv.org/abs/2307.15242}
+}
+
+@article{venetos2023machine,
+  title={Machine learning full NMR chemical shift tensors of silicon oxides with equivariant graph neural networks},
+  author={Venetos, Maxwell C and Wen, Mingjian and Persson, Kristin A},
+  journal={The Journal of Physical Chemistry A},
+  volume={127},
+  number={10},
+  pages={2388--2398},
+  year={2023},
+  publisher={ACS Publications},
+  ANNOTATE = {This paper applies symmetry and harmonic decompositions to the NMR spectra shift tensor to predict them equivariantly. Also, pretty much exactly what I'm doing. }
+}
+
+@article{moleculartensors,
+  title = {Predicting tensorial molecular properties with equivariant machine learning models},
+  author = {Nguyen, Vu Ha Anh and Lunghi, Alessandro},
+  journal = {Phys. Rev. B},
+  volume = {105},
+  issue = {16},
+  pages = {165131},
+  numpages = {6},
+  year = {2022},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.105.165131},
+  ANNOTATE = {},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.105.165131}
+}
+
+@article{backus1970geometrical,
+  title={A geometrical picture of anisotropic elastic tensors},
+  author={Backus, George},
+  journal={Reviews of geophysics},
+  volume={8},
+  number={3},
+  pages={633--671},
+  year={1970},
+  publisher={Wiley Online Library},
+  url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/RG008i003p00633},
+  ANNOTATE = {This paper is the original spherical harmonic decomposition of the elastic tensor (as far as I'm aware). It does the harmonic decomposition in terms of a Maxwell multipole expansion, so that one can get a set of bundles of vectors that represent a 'geometrical' picture of an elastic tensor.}
+}
+
+@article{mochizuki1988spherical,
+  title={Spherical harmonic decomposition of an elastic tensor},
+  author={Mochizuki, Eiji},
+  journal={Geophysical Journal International},
+  volume={93},
+  number={3},
+  pages={521--526},
+  year={1988},
+  publisher={Blackwell Publishing Ltd Oxford, UK},
+ url = {https://academic.oup.com/gji/article/93/3/521/662002},
+  ANNOTATE = {This paper offers a novel harmonic decomposition of the elastic tensor by means of a unique choice of basis: the $J_z$ basis. This allows one to clearly see the connection between real-space components and harmonic components via Clebsch-Gordan coefficients.}
+}
+
+@article{mochizuki1996spherical,
+  title={Spherical Harmonic Decomposition of an Elastic Tensor II},
+  author={Mochizuki, Eiji},
+  journal={Journal of Physics of the Earth},
+  volume={44},
+  number={1},
+  pages={79--84},
+  year={1996},
+  url = {https://www.jstage.jst.go.jp/article/jpe1952/44/1/44_1_79/_article/-char/ja/},
+  ANNOTATE = {A second decomposition offered by Mochizuki that I haven't used.}
+}
+
+
+
+
+
+
+
+@article{Itin-r3,
+author = {Yakov Itin and Shulamit Reches},
+title ={Decomposition of third-order constitutive tensors},
+
+journal = {Mathematics and Mechanics of Solids},
+volume = {27},
+number = {2},
+pages = {222-249},
+year = {2022},
+doi = {10.1177/10812865211016530},
+
+URL = {    
+        https://doi.org/10.1177/10812865211016530
+},
+eprint = { 
+        https://doi.org/10.1177/10812865211016530
+        },
+  ANNOTATE = {A very helpful introduction to the decomposition of a tensor product space into $SO(3)$ invariant subspaces, with a worked example of a piezo-electric like tensor space.}
+}
+
+
+
+
+
+
+
+
+@article{doi:10.1177/1081286520913596,
+author = {Yakov Itin},
+title ={Irreducible matrix resolution for symmetry classes of elasticity tensors},
+
+journal = {Mathematics and Mechanics of Solids},
+volume = {25},
+number = {10},
+pages = {1873-1895},
+year = {2020},
+doi = {10.1177/1081286520913596},
+
+URL = { 
+    
+        https://doi.org/10.1177/1081286520913596
+    
+    
+
+},
+eprint = {    
+        https://doi.org/10.1177/1081286520913596
+},
+  ANNOTATE = {Itin's approach to the $SO(3)$ decomposition of Elastic tensor-like spaces, and his classification of the symmetry classes.}
+}
+

@@ -17,50 +17,50 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 10740 items from 5000.
+Reallocated field_info (elt_size=4) to 10600 items from 5000.
 Database file #1: chgcnn-blx.bib
 Database file #2: chgcnn.bib
 Biblatex version: 3.20
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 41 entries,
+You've used 40 entries,
             6402 wiz_defined-function locations,
-            1502 strings with 26151 characters,
-and the built_in function-call counts, 499283 in all, are:
-= -- 44461
-> -- 5436
-< -- 1570
-+ -- 16144
-- -- 2083
-* -- 36226
-:= -- 61068
+            1492 strings with 25745 characters,
+and the built_in function-call counts, 491561 in all, are:
+= -- 43391
+> -- 6098
+< -- 1620
++ -- 16247
+- -- 2675
+* -- 36662
+:= -- 60200
 add.period$ -- 0
-call.type$ -- 41
-change.case$ -- 952
-chr.to.int$ -- 91
-cite$ -- 80
-duplicate$ -- 52082
-empty$ -- 41238
-format.name$ -- 3656
-if$ -- 97997
+call.type$ -- 40
+change.case$ -- 817
+chr.to.int$ -- 95
+cite$ -- 78
+duplicate$ -- 50619
+empty$ -- 39650
+format.name$ -- 3765
+if$ -- 96931
 int.to.chr$ -- 0
-int.to.str$ -- 107
+int.to.str$ -- 103
 missing$ -- 0
-newline$ -- 2001
-num.names$ -- 2254
-pop$ -- 16070
+newline$ -- 1884
+num.names$ -- 2078
+pop$ -- 15664
 preamble$ -- 1
-purify$ -- 1337
+purify$ -- 1225
 quote$ -- 0
-skip$ -- 8702
+skip$ -- 8805
 stack$ -- 0
-substring$ -- 85471
-swap$ -- 8185
-text.length$ -- 1182
-text.prefix$ -- 40
+substring$ -- 83428
+swap$ -- 7750
+text.length$ -- 1281
+text.prefix$ -- 0
 top$ -- 1
-type$ -- 1382
+type$ -- 1348
 warning$ -- 0
-while$ -- 7464
+while$ -- 7260
 width$ -- 0
-write$ -- 1961
+write$ -- 1845

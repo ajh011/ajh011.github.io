@@ -1,0 +1,106 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{WGH{\etalchar{+}}20}
+
+\bibitem[BHZ{\etalchar{+}}21]{amdnet}
+Huta~R Banjade, Sandro Hauri, Shanshan Zhang, Francesco Ricci, Weiyi Gong,
+  Geoffroy Hautier, Slobodan Vucetic, and Qimin Yan.
+\newblock Structure motif--centric learning framework for inorganic crystalline
+  systems.
+\newblock {\em Science advances}, 7(17):eabf1754, 2021.
+
+
+\bibitem[BZT21]{hypergraphconv}
+Song Bai, Feihu Zhang, and Philip~HS Torr.
+\newblock Hypergraph convolution and hypergraph attention.
+\newblock {\em Pattern Recognition}, 110:107637, 2021.
+
+
+\bibitem[CD21]{alignn}
+Kamal Choudhary and Brian DeCost.
+\newblock Atomistic line graph neural network for improved materials property
+  predictions.
+\newblock {\em npj Computational Materials}, 7(1):1--8, 2021.
+
+
+\bibitem[CO22]{m3gnet}
+Chi Chen and Shyue~Ping Ong.
+\newblock A universal graph deep learning interatomic potential for the
+  periodic table.
+\newblock {\em Nature Computational Science}, 2(11):718--728, 2022.
+
+
+\bibitem[CYZ{\etalchar{+}}19]{megnet}
+Chi Chen, Weike Ye, Yunxing Zuo, Chen Zheng, and Shyue~Ping Ong.
+\newblock Graph networks as a universal machine learning framework for
+  molecules and crystals.
+\newblock {\em Chemistry of Materials}, 31(9):3564--3572, 2019.
+
+
+\bibitem[GSR{\etalchar{+}}17]{mpnn}
+Justin Gilmer, Samuel~S Schoenholz, Patrick~F Riley, Oriol Vinyals, and
+  George~E Dahl.
+\newblock Neural message passing for quantum chemistry.
+\newblock In {\em International conference on machine learning}, pages
+  1263--1272. PMLR, 2017.
+
+\bibitem[JBL{\etalchar{+}}21]{jo2021edge}
+Jaehyeong Jo, Jinheon Baek, Seul Lee, Dongki Kim, Minki Kang, and Sung~Ju
+  Hwang.
+\newblock Edge representation learning with hypergraphs.
+\newblock {\em Advances in Neural Information Processing Systems},
+  34:7534--7546, 2021.
+
+
+\bibitem[PA98]{csm_polyhedra}
+Mark Pinsky and David Avnir.
+\newblock Continuous symmetry measures. 5. the classical polyhedra.
+\newblock {\em Inorganic chemistry}, 37(21):5575--5582, 1998.
+
+
+\bibitem[RRSF24]{congn}
+Robin Ruff, Patrick Reiser, Jan St{\"u}hmer, and Pascal Friederich.
+\newblock Connectivity optimized nested line graph networks for crystal
+  structures.
+\newblock {\em Digital Discovery}, 2024.
+
+
+\bibitem[SKSF{\etalchar{+}}17]{schnet}
+Kristof Sch{\"u}tt, Pieter-Jan Kindermans, Huziel~Enoc Sauceda~Felix, Stefan
+  Chmiela, Alexandre Tkatchenko, and Klaus-Robert M{\"u}ller.
+\newblock Schnet: A continuous-filter convolutional neural network for modeling
+  quantum interactions.
+\newblock {\em Advances in neural information processing systems}, 30, 2017.
+
+
+\bibitem[WGH{\etalchar{+}}20]{chemenv}
+David Waroquiers, Janine George, Matthew Horton, Stephan Schenk, Kristin~A
+  Persson, G-M Rignanese, Xavier Gonze, and Geoffroy Hautier.
+\newblock Chemenv: a fast and robust coordination environment identification
+  tool.
+\newblock {\em Acta Crystallographica Section B: Structural Science, Crystal
+  Engineering and Materials}, 76(4):683--695, 2020.
+
+
+\bibitem[XG18]{cgcnn}
+Tian Xie and Jeffrey~C Grossman.
+\newblock Crystal graph convolutional neural networks for an accurate and
+  interpretable prediction of material properties.
+\newblock {\em Physical review letters}, 120(14):145301, 2018.
+
+
+\bibitem[ZHJH17]{orderparam1}
+Nils E.~R. Zimmermann, Matthew~K. Horton, Anubhav Jain, and Maciej Haranczyk.
+\newblock Assessing local structure motifs using order parameters for motif
+  recognition, interstitial identification, and diffusion path
+  characterization.
+\newblock {\em Frontiers in Materials}, 4, 2017.
+
+
+\bibitem[ZJ20]{orderparam2}
+Nils~ER Zimmermann and Anubhav Jain.
+\newblock Local structure order parameters and site fingerprints for
+  quantification of coordination environment and crystal structure similarity.
+\newblock {\em RSC advances}, 10(10):6063--6081, 2020.
+
+
+\end{thebibliography}

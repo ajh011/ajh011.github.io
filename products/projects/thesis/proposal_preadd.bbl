@@ -1,0 +1,2139 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global/global}
+  \entry{mlreview1}{article}{}{}
+    \name{author}{8}{}{%
+      {{hash=WJ}{%
+         family={Wei},
+         familyi={W\bibinitperiod},
+         given={Jing},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CX}{%
+         family={Chu},
+         familyi={C\bibinitperiod},
+         given={Xuan},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=SXY}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Xiang-Yu},
+         giveni={X\bibinithyphendelim Y\bibinitperiod},
+      }}%
+      {{hash=XK}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Kun},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=DHX}{%
+         family={Deng},
+         familyi={D\bibinitperiod},
+         given={Hui-Xiong},
+         giveni={H\bibinithyphendelim X\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Jigen},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wei},
+         familyi={W\bibinitperiod},
+         given={Zhongming},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lei},
+         familyi={L\bibinitperiod},
+         given={Ming},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{WJ+1}
+    \strng{fullhash}{WJCXSXYXKDHXCJWZLM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{338\bibrangedash 358}
+    \field{title}{Machine learning in materials science}
+    \field{volume}{1}
+    \field{journaltitle}{InfoMat}
+    \field{year}{2019}
+  \endentry
+
+  \entry{mlreview1.5}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=CS}{%
+         family={Chibani},
+         familyi={C\bibinitperiod},
+         given={Siwar},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CFX}{%
+         family={Coudert},
+         familyi={C\bibinitperiod},
+         given={Fran{\c{c}}ois-Xavier},
+         giveni={F\bibinithyphendelim X\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {AIP Publishing}%
+    }
+    \strng{namehash}{CSCFX1}
+    \strng{fullhash}{CSCFX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{8}
+    \field{title}{Machine learning approaches for the prediction of materials
+  properties}
+    \field{volume}{8}
+    \field{journaltitle}{{APL} Mater.}
+    \field{year}{2020}
+  \endentry
+
+  \entry{mlreview2}{article}{}{}
+    \name{author}{7}{}{%
+      {{hash=LY}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Yingli},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=NC}{%
+         family={Niu},
+         familyi={N\bibinitperiod},
+         given={Chen},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Zhuo},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Gan},
+         familyi={G\bibinitperiod},
+         given={Yong},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Yan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Shuhong},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={Tao},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \keyw{Materials genome initiative (MGI), Materials database, Machine
+  learning, Materials properties prediction, Materials design and discovery}
+    \strng{namehash}{LY+1}
+    \strng{fullhash}{LYNCWZGYZYSSST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Discovering new materials with excellent performance is a hot issue in the
+  materials genome initiative. Traditional experiments and calculations often
+  waste large amounts of time and money and are also limited by various
+  conditions. Therefore, it is imperative to develop a new method to accelerate
+  the discovery and design of new materials. In recent years, material
+  discovery and design methods using machine learning have attracted much
+  attention from material experts and have made some progress. This review
+  first outlines available materials database and material data analytics tools
+  and then elaborates on the machine learning algorithms used in materials
+  science. Next, the field of application of machine learning in materials
+  science is summarized, focusing on the aspects of structure determination,
+  performance prediction, fingerprint prediction, and new material discovery.
+  Finally, the review points out the problems of data and machine learning in
+  materials science and points to future research. Using machine learning
+  algorithms, the authors hope to achieve amazing results in material discovery
+  and design.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.jmst.2020.01.067
+    \endverb
+    \field{issn}{1005-0302}
+    \field{pages}{113\bibrangedash 122}
+    \field{title}{Machine learning in materials genome initiative: A review}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S1005030220303327
+    \endverb
+    \field{volume}{57}
+    \field{journaltitle}{J. Mater. Sci. Tech.}
+    \field{year}{2020}
+  \endentry
+
+  \entry{mlreview2.25}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=CCH}{%
+         family={Chan},
+         familyi={C\bibinitperiod},
+         given={Cheuk\bibnamedelima Hei},
+         giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Mingzi},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Bolong},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{CCH+1}
+    \strng{fullhash}{CCHSMHB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{e12194}
+    \field{title}{Application of machine learning for advanced material
+  prediction and design}
+    \field{volume}{4}
+    \field{journaltitle}{EcoMat}
+    \field{year}{2022}
+  \endentry
+
+  \entry{mlreview2.5}{article}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{10}{}{%
+      {{hash=RP}{%
+         family={Reiser},
+         familyi={R\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Neubert},
+         familyi={N\bibinitperiod},
+         given={Marlen},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=EA}{%
+         family={Eberhard},
+         familyi={E\bibinitperiod},
+         given={Andr{\'e}},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TL}{%
+         family={Torresi},
+         familyi={T\bibinitperiod},
+         given={Luca},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=ZC}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Chen},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Shao},
+         familyi={S\bibinitperiod},
+         given={Chen},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MH}{%
+         family={Metni},
+         familyi={M\bibinitperiod},
+         given={Houssam},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=vHC}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={Hoesel},
+         familyi={H\bibinitperiod},
+         given={Clint},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Schopmans},
+         familyi={S\bibinitperiod},
+         given={Henrik},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Sommer},
+         familyi={S\bibinitperiod},
+         given={Timo},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group UK London}%
+    }
+    \strng{namehash}{RP+1}
+    \strng{fullhash}{RPNMEATLZCSCMHHCvSHST+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{93}
+    \field{title}{Graph neural networks for materials science and chemistry}
+    \field{volume}{3}
+    \field{journaltitle}{Commun. Mater.}
+    \field{year}{2022}
+  \endentry
+
+  \entry{mlreview2.75}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=KS}{%
+         family={Kadulkar},
+         familyi={K\bibinitperiod},
+         given={Sanket},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SZM}{%
+         family={Sherman},
+         familyi={S\bibinitperiod},
+         given={Zachary\bibnamedelima M},
+         giveni={Z\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=GV}{%
+         family={Ganesan},
+         familyi={G\bibinitperiod},
+         given={Venkat},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=TTM}{%
+         family={Truskett},
+         familyi={T\bibinitperiod},
+         given={Thomas\bibnamedelima M},
+         giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Annual Reviews}%
+    }
+    \strng{namehash}{KS+1}
+    \strng{fullhash}{KSSZMGVTTM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2022}
+    \field{pages}{235\bibrangedash 254}
+    \field{title}{Machine learning--assisted design of material properties}
+    \field{volume}{13}
+    \field{journaltitle}{Annu. Rev. Chem. Biomol. Eng.}
+    \field{year}{2022}
+  \endentry
+
+  \entry{mlreview3}{article}{}{}
+    \name{author}{7}{}{%
+      {{hash=MMH}{%
+         family={Mobarak},
+         familyi={M\bibinitperiod},
+         given={Md\bibnamedelima Hosne},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=MMA}{%
+         family={Mimona},
+         familyi={M\bibinitperiod},
+         given={Mariam\bibnamedelima Akter},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=IMA}{%
+         family={Islam},
+         familyi={I\bibinitperiod},
+         given={Md.\bibnamedelima Aminul},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=HN}{%
+         family={Hossain},
+         familyi={H\bibinitperiod},
+         given={Nayem},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=ZFT}{%
+         family={Zohura},
+         familyi={Z\bibinitperiod},
+         given={Fatema\bibnamedelima Tuz},
+         giveni={F\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=II}{%
+         family={Imtiaz},
+         familyi={I\bibinitperiod},
+         given={Ibnul},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=RMIH}{%
+         family={Rimon},
+         familyi={R\bibinitperiod},
+         given={Md\bibnamedelima Israfil\bibnamedelima Hossain},
+         giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim
+  H\bibinitperiod},
+      }}%
+    }
+    \keyw{Machine learning, Materials research, Machine learning methods,
+  Material synthesis, Image processing}
+    \strng{namehash}{MMH+1}
+    \strng{fullhash}{MMHMMAIMAHNZFTIIRMIH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.apsadv.2023.100523
+    \endverb
+    \field{issn}{2666-5239}
+    \field{pages}{100523}
+    \field{title}{Scope of machine learning in materials research—A review}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S2666523923001575
+    \endverb
+    \field{volume}{18}
+    \field{journaltitle}{Appl. Surf. Sci. Adv.}
+    \field{year}{2023}
+  \endentry
+
+  \entry{cgcnn}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=XT}{%
+         family={Xie},
+         familyi={X\bibinitperiod},
+         given={Tian},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=GJC}{%
+         family={Grossman},
+         familyi={G\bibinitperiod},
+         given={Jeffrey\bibnamedelima C},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{XTGJC1}
+    \strng{fullhash}{XTGJC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{14}
+    \field{pages}{145301}
+    \field{title}{Crystal graph convolutional neural networks for an accurate
+  and interpretable prediction of material properties}
+    \field{volume}{120}
+    \field{journaltitle}{{PRL}}
+    \field{year}{2018}
+  \endentry
+
+  \entry{alignn}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=CK}{%
+         family={Choudhary},
+         familyi={C\bibinitperiod},
+         given={Kamal},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=DB}{%
+         family={DeCost},
+         familyi={D\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{CKDB1}
+    \strng{fullhash}{CKDB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 8}
+    \field{title}{Atomistic Line Graph Neural Network for improved materials
+  property predictions}
+    \field{volume}{7}
+    \field{journaltitle}{{npj} Comput. Mater.}
+    \field{year}{2021}
+  \endentry
+
+  \entry{amdnet}{article}{}{}
+    \name{author}{8}{}{%
+      {{hash=BHR}{%
+         family={Banjade},
+         familyi={B\bibinitperiod},
+         given={Huta\bibnamedelima R},
+         giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Hauri},
+         familyi={H\bibinitperiod},
+         given={Sandro},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ZS}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Shanshan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RF}{%
+         family={Ricci},
+         familyi={R\bibinitperiod},
+         given={Francesco},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=GW}{%
+         family={Gong},
+         familyi={G\bibinitperiod},
+         given={Weiyi},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Hautier},
+         familyi={H\bibinitperiod},
+         given={Geoffroy},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=VS}{%
+         family={Vucetic},
+         familyi={V\bibinitperiod},
+         given={Slobodan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=YQ}{%
+         family={Yan},
+         familyi={Y\bibinitperiod},
+         given={Qimin},
+         giveni={Q\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Association for the Advancement of Science}%
+    }
+    \strng{namehash}{BHR+1}
+    \strng{fullhash}{BHRHSZSRFGWHGVSYQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{17}
+    \field{pages}{eabf1754}
+    \field{title}{Structure motif--centric learning framework for inorganic
+  crystalline systems}
+    \field{volume}{7}
+    \field{journaltitle}{Sci. Adv.}
+    \field{year}{2021}
+  \endentry
+
+  \entry{tfn}{article}{}{}
+    \name{author}{7}{}{%
+      {{hash=TN}{%
+         family={Thomas},
+         familyi={T\bibinitperiod},
+         given={Nathaniel},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Smidt},
+         familyi={S\bibinitperiod},
+         given={Tess},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kearnes},
+         familyi={K\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=YL}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Lusann},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kohlhoff},
+         familyi={K\bibinitperiod},
+         given={Kai},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=RP}{%
+         family={Riley},
+         familyi={R\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TN+1}
+    \strng{fullhash}{TNSTKSYLLLKKRP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{eprint}
+    \verb 1802.08219
+    \endverb
+    \field{title}{Tensor field networks: Rotation- and translation-equivariant
+  neural networks for 3D point clouds}
+    \verb{url}
+    \verb https://arxiv.org/abs/1802.08219
+    \endverb
+    \field{journaltitle}{arXiv:1802.08219}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.LG}
+    \field{year}{2018}
+  \endentry
+
+  \entry{megnet}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=CC}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Chi},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=YW}{%
+         family={Ye},
+         familyi={Y\bibinitperiod},
+         given={Weike},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zuo},
+         familyi={Z\bibinitperiod},
+         given={Yunxing},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZC}{%
+         family={Zheng},
+         familyi={Z\bibinitperiod},
+         given={Chen},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=OSP}{%
+         family={Ong},
+         familyi={O\bibinitperiod},
+         given={Shyue\bibnamedelima Ping},
+         giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACS Publications}%
+    }
+    \strng{namehash}{CC+1}
+    \strng{fullhash}{CCYWZYZCOSP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{9}
+    \field{pages}{3564\bibrangedash 3572}
+    \field{title}{Graph networks as a universal machine learning framework for
+  molecules and crystals}
+    \field{volume}{31}
+    \field{journaltitle}{Chem. Mater.}
+    \field{year}{2019}
+  \endentry
+
+  \entry{m3gnet}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=CC}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Chi},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=OSP}{%
+         family={Ong},
+         familyi={O\bibinitperiod},
+         given={Shyue\bibnamedelima Ping},
+         giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group US New York}%
+    }
+    \strng{namehash}{CCOSP1}
+    \strng{fullhash}{CCOSP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{11}
+    \field{pages}{718\bibrangedash 728}
+    \field{title}{A universal graph deep learning interatomic potential for the
+  periodic table}
+    \field{volume}{2}
+    \field{journaltitle}{Nat. Comput. Sci.}
+    \field{year}{2022}
+  \endentry
+
+  \entry{schnet}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=SKT}{%
+         family={Schütt},
+         familyi={S\bibinitperiod},
+         given={K.\bibnamedelima T.},
+         giveni={K\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=SHE}{%
+         family={Sauceda},
+         familyi={S\bibinitperiod},
+         given={H.\bibnamedelima E.},
+         giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=KPJ}{%
+         family={Kindermans},
+         familyi={K\bibinitperiod},
+         given={P.-J.},
+         giveni={P\bibinithyphendelim J\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Tkatchenko},
+         familyi={T\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MKR}{%
+         family={Müller},
+         familyi={M\bibinitperiod},
+         given={K.-R.},
+         giveni={K\bibinithyphendelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SKT+1}
+    \strng{fullhash}{SKTSHEKPJTAMKR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Deep learning has led to a paradigm shift in artificial intelligence,
+  including web, text, and image search, speech recognition, as well as
+  bioinformatics, with growing impact in chemical physics. Machine learning, in
+  general, and deep learning, in particular, are ideally suitable for
+  representing quantum-mechanical interactions, enabling us to model nonlinear
+  potential-energy surfaces or enhancing the exploration of chemical compound
+  space. Here we present the deep learning architecture SchNet that is
+  specifically designed to model atomistic systems by making use of
+  continuous-filter convolutional layers. We demonstrate the capabilities of
+  SchNet by accurately predicting a range of properties across chemical space
+  for molecules and materials, where our model learns chemically plausible
+  embeddings of atom types across the periodic table. Finally, we employ SchNet
+  to predict potential-energy surfaces and energy-conserving force fields for
+  molecular dynamics simulations of small molecules and perform an exemplary
+  study on the quantum-mechanical properties of C20-fullerene that would have
+  been infeasible with regular ab initio molecular dynamics.%
+    }
+    \verb{doi}
+    \verb 10.1063/1.5019779
+    \endverb
+    \verb{eprint}
+    \verb https://pubs.aip.org/aip/jcp/article-pdf/doi/10.1063/1.5019779/166556
+    \verb 78/241722\_1\_online.pdf
+    \endverb
+    \field{issn}{0021-9606}
+    \field{number}{24}
+    \field{pages}{241722}
+    \field{title}{SchNet – A deep learning architecture for molecules and
+  materials}
+    \verb{url}
+    \verb https://doi.org/10.1063/1.5019779
+    \endverb
+    \field{volume}{148}
+    \field{journaltitle}{J. Chem. Phys.}
+    \field{month}{03}
+    \field{year}{2018}
+  \endentry
+
+  \entry{molecule0}{article}{}{}
+    \name{author}{8}{}{%
+      {{hash=MG}{%
+         family={Montavon},
+         familyi={M\bibinitperiod},
+         given={Gr{\'e}goire},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Rupp},
+         familyi={R\bibinitperiod},
+         given={Matthias},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GV}{%
+         family={Gobre},
+         familyi={G\bibinitperiod},
+         given={Vivekanand},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=VMA}{%
+         family={Vazquez-Mayagoitia},
+         familyi={V\bibinithyphendelim M\bibinitperiod},
+         given={Alvaro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Hansen},
+         familyi={H\bibinitperiod},
+         given={Katja},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Tkatchenko},
+         familyi={T\bibinitperiod},
+         given={Alexandre},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MKR}{%
+         family={M{\"u}ller},
+         familyi={M\bibinitperiod},
+         given={Klaus-Robert},
+         giveni={K\bibinithyphendelim R\bibinitperiod},
+      }}%
+      {{hash=VLOA}{%
+         family={Von\bibnamedelima Lilienfeld},
+         familyi={V\bibinitperiod\bibinitdelim L\bibinitperiod},
+         given={O\bibnamedelima Anatole},
+         giveni={O\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOP Publishing}%
+    }
+    \strng{namehash}{MG+1}
+    \strng{fullhash}{MGRMGVVMAHKTAMKRVLOA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{9}
+    \field{pages}{095003}
+    \field{title}{Machine learning of molecular electronic properties in
+  chemical compound space}
+    \field{volume}{15}
+    \field{journaltitle}{New J. Phys.}
+    \field{year}{2013}
+  \endentry
+
+  \entry{molecule1}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=PGA}{%
+         family={Pinheiro},
+         familyi={P\bibinitperiod},
+         given={Gabriel\bibnamedelima A},
+         giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Mucelini},
+         familyi={M\bibinitperiod},
+         given={Johnatan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SMD}{%
+         family={Soares},
+         familyi={S\bibinitperiod},
+         given={Marinalva\bibnamedelima D},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=PRC}{%
+         family={Prati},
+         familyi={P\bibinitperiod},
+         given={Ronaldo\bibnamedelima C},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=DSJL}{%
+         family={Da\bibnamedelima Silva},
+         familyi={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+         given={Juarez\bibnamedelima LF},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=QMG}{%
+         family={Quiles},
+         familyi={Q\bibinitperiod},
+         given={Marcos\bibnamedelima G},
+         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACS Publications}%
+    }
+    \strng{namehash}{PGA+1}
+    \strng{fullhash}{PGAMJSMDPRCDSJLQMG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{47}
+    \field{pages}{9854\bibrangedash 9866}
+    \field{title}{Machine learning prediction of nine molecular properties
+  based on the SMILES representation of the QM9 quantum-chemistry dataset}
+    \field{volume}{124}
+    \field{journaltitle}{J. Phys. Chem. A}
+    \field{year}{2020}
+  \endentry
+
+  \entry{molecule2}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=CCR}{%
+         family={Collins},
+         familyi={C\bibinitperiod},
+         given={Christopher\bibnamedelima R},
+         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=GGJ}{%
+         family={Gordon},
+         familyi={G\bibinitperiod},
+         given={Geoffrey\bibnamedelima J},
+         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=VLOA}{%
+         family={Von\bibnamedelima Lilienfeld},
+         familyi={V\bibinitperiod\bibinitdelim L\bibinitperiod},
+         given={O\bibnamedelima Anatole},
+         giveni={O\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=YDJ}{%
+         family={Yaron},
+         familyi={Y\bibinitperiod},
+         given={David\bibnamedelima J},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {AIP Publishing}%
+    }
+    \strng{namehash}{CCR+1}
+    \strng{fullhash}{CCRGGJVLOAYDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{24}
+    \field{title}{Constant size descriptors for accurate machine learning
+  models of molecular properties}
+    \field{volume}{148}
+    \field{journaltitle}{J. Chem. Phys.}
+    \field{year}{2018}
+  \endentry
+
+  \entry{nn_overview}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=IM}{%
+         family={Islam},
+         familyi={I\bibinitperiod},
+         given={Mohaiminul},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Guorong},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=JS}{%
+         family={Jin},
+         familyi={J\bibinitperiod},
+         given={Shangzhu},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Science Publishing Group}%
+    }
+    \strng{namehash}{IM+1}
+    \strng{fullhash}{IMCGJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{7\bibrangedash 11}
+    \field{title}{An overview of neural network}
+    \field{volume}{5}
+    \field{journaltitle}{American Journal of Neural Networks and Applications}
+    \field{year}{2019}
+  \endentry
+
+  \entry{universal1}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=HK}{%
+         family={Hornik},
+         familyi={H\bibinitperiod},
+         given={Kurt},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Stinchcombe},
+         familyi={S\bibinitperiod},
+         given={Maxwell},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WH}{%
+         family={White},
+         familyi={W\bibinitperiod},
+         given={Halbert},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{HK+1}
+    \strng{fullhash}{HKSMWH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{359\bibrangedash 366}
+    \field{title}{Multilayer feedforward networks are universal approximators}
+    \field{volume}{2}
+    \field{journaltitle}{Neural networks}
+    \field{year}{1989}
+  \endentry
+
+  \entry{universal2}{article}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{1}{}{%
+      {{hash=CBC}{%
+         family={Cs{\'a}ji},
+         familyi={C\bibinitperiod},
+         given={Bal{\'a}zs\bibnamedelima Csan{\'a}d},
+         giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CBC+1}
+    \strng{fullhash}{CBC+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{48}
+    \field{pages}{7}
+    \field{title}{Approximation with artificial neural networks}
+    \field{volume}{24}
+    \field{journaltitle}{Faculty of Sciences, Etvs Lornd University, Hungary}
+    \field{year}{2001}
+  \endentry
+
+  \entry{gnnintro}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=SLB}{%
+         family={Sanchez-Lengeling},
+         familyi={S\bibinithyphendelim L\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=RE}{%
+         family={Reif},
+         familyi={R\bibinitperiod},
+         given={Emily},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pearce},
+         familyi={P\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WAB}{%
+         family={Wiltschko},
+         familyi={W\bibinitperiod},
+         given={Alexander\bibnamedelima B},
+         giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SLB+1}
+    \strng{fullhash}{SLBREPAWAB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{9}
+    \field{pages}{e33}
+    \field{title}{A gentle introduction to graph neural networks}
+    \field{volume}{6}
+    \field{journaltitle}{Distill}
+    \field{year}{2021}
+  \endentry
+
+  \entry{MPNN}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=GJ}{%
+         family={Gilmer},
+         familyi={G\bibinitperiod},
+         given={Justin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SSS}{%
+         family={Schoenholz},
+         familyi={S\bibinitperiod},
+         given={Samuel\bibnamedelima S},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=RPF}{%
+         family={Riley},
+         familyi={R\bibinitperiod},
+         given={Patrick\bibnamedelima F},
+         giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=VO}{%
+         family={Vinyals},
+         familyi={V\bibinitperiod},
+         given={Oriol},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=DGE}{%
+         family={Dahl},
+         familyi={D\bibinitperiod},
+         given={George\bibnamedelima E},
+         giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GJ+1}
+    \strng{fullhash}{GJSSSRPFVODGE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{1263\bibrangedash 1272}
+    \field{title}{Neural message passing for quantum chemistry}
+    \field{volume}{70}
+    \field{journaltitle}{34th Int. Conf. Mach. Learn.}
+    \field{year}{2017}
+  \endentry
+
+  \entry{cnn_intro}{misc}{}{}
+    \name{author}{2}{}{%
+      {{hash=OK}{%
+         family={O'Shea},
+         familyi={O\bibinitperiod},
+         given={Keiron},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=NR}{%
+         family={Nash},
+         familyi={N\bibinitperiod},
+         given={Ryan},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OKNR1}
+    \strng{fullhash}{OKNR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{eprint}
+    \verb 1511.08458
+    \endverb
+    \field{title}{An Introduction to Convolutional Neural Networks}
+    \verb{url}
+    \verb https://arxiv.org/abs/1511.08458
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.NE}
+    \field{year}{2015}
+  \endentry
+
+  \entry{congn}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=RR}{%
+         family={Ruff},
+         familyi={R\bibinitperiod},
+         given={Robin},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=RP}{%
+         family={Reiser},
+         familyi={R\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={St{\"u}hmer},
+         familyi={S\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=FP}{%
+         family={Friederich},
+         familyi={F\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Royal Society of Chemistry}%
+    }
+    \strng{namehash}{RR+1}
+    \strng{fullhash}{RRRPSJFP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{594\bibrangedash 601}
+    \field{title}{Connectivity optimized nested line graph networks for crystal
+  structures}
+    \field{volume}{3}
+    \field{journaltitle}{Digit. Discov.}
+    \field{year}{2024}
+  \endentry
+
+  \entry{icgcnn}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=PCW}{%
+         family={Park},
+         familyi={P\bibinitperiod},
+         given={Cheol\bibnamedelima Woo},
+         giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={Wolverton},
+         familyi={W\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{PCWWC1}
+    \strng{fullhash}{PCWWC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{063801}
+    \field{title}{Developing an improved crystal graph convolutional neural
+  network framework for accelerated materials discovery}
+    \field{volume}{4}
+    \field{journaltitle}{Phys. Rev. Mater.}
+    \field{year}{2020}
+  \endentry
+
+  \entry{voronoi_alg}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=DQ}{%
+         family={Du},
+         familyi={D\bibinitperiod},
+         given={Qiang},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=FV}{%
+         family={Faber},
+         familyi={F\bibinitperiod},
+         given={Vance},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gunzburger},
+         familyi={G\bibinitperiod},
+         given={Max},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{DQ+1}
+    \strng{fullhash}{DQFVGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{637\bibrangedash 676}
+    \field{title}{Centroidal Voronoi tessellations: Applications and
+  algorithms}
+    \field{volume}{41}
+    \field{journaltitle}{SIAM review}
+    \field{year}{1999}
+  \endentry
+
+  \entry{chgcnn}{misc}{}{}
+    \name{author}{3}{}{%
+      {{hash=HAJ}{%
+         family={Heilman},
+         familyi={H\bibinitperiod},
+         given={Alexander\bibnamedelima J.},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=GW}{%
+         family={Gong},
+         familyi={G\bibinitperiod},
+         given={Weiyi},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=YQ}{%
+         family={Yan},
+         familyi={Y\bibinitperiod},
+         given={Qimin},
+         giveni={Q\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HAJ+1}
+    \strng{fullhash}{HAJGWYQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{eprint}
+    \verb 2411.12616
+    \endverb
+    \field{title}{Crystal Hypergraph Convolutional Networks}
+    \verb{url}
+    \verb https://arxiv.org/abs/2411.12616
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cond-mat.mtrl-sci}
+    \field{year}{2024}
+  \endentry
+
+  \entry{equivariant_cohen}{inproceedings}{}{}
+    \name{author}{2}{}{%
+      {{hash=CT}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Taco},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Welling},
+         familyi={W\bibinitperiod},
+         given={Max},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=BMF}{%
+         family={Balcan},
+         familyi={B\bibinitperiod},
+         given={Maria\bibnamedelima Florina},
+         giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=WKQ}{%
+         family={Weinberger},
+         familyi={W\bibinitperiod},
+         given={Kilian\bibnamedelima Q.},
+         giveni={K\bibinitperiod\bibinitdelim Q\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {PMLR}%
+    }
+    \strng{namehash}{CTWM1}
+    \strng{fullhash}{CTWM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We introduce Group equivariant Convolutional Neural Networks (G-CNNs), a
+  natural generalization of convolutional neural networks that reduces sample
+  complexity by exploiting symmetries. G-CNNs use G-convolutions, a new type of
+  layer that enjoys a substantially higher degree of weight sharing than
+  regular convolution layers. G-convolutions increase the expressive capacity
+  of the network without increasing the number of parameters. Group convolution
+  layers are easy to use and can be implemented with negligible computational
+  overhead for discrete groups generated by translations, reflections and
+  rotations. G-CNNs achieve state of the art results on CIFAR10 and rotated
+  MNIST.%
+    }
+    \field{booktitle}{Proceedings of The 33rd International Conference on
+  Machine Learning}
+    \field{pages}{2990\bibrangedash 2999}
+    \field{series}{Proceedings of Machine Learning Research}
+    \field{title}{Group Equivariant Convolutional Networks}
+    \verb{url}
+    \verb https://proceedings.mlr.press/v48/cohenc16.html
+    \endverb
+    \field{volume}{48}
+    \list{location}{1}{%
+      {New York, New York, USA}%
+    }
+    \verb{file}
+    \verb http://proceedings.mlr.press/v48/cohenc16.pdf
+    \endverb
+    \field{month}{06}
+    \field{year}{2016}
+  \endentry
+
+  \entry{e3nn}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=GM}{%
+         family={Geiger},
+         familyi={G\bibinitperiod},
+         given={Mario},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Smidt},
+         familyi={S\bibinitperiod},
+         given={Tess},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GMST1}
+    \strng{fullhash}{GMST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{e3nn: Euclidean neural networks}
+    \field{journaltitle}{arXiv:2207.09453}
+    \field{year}{2022}
+  \endentry
+
+  \entry{tensorfieldnetworks}{article}{}{}
+    \name{author}{7}{}{%
+      {{hash=TN}{%
+         family={Thomas},
+         familyi={T\bibinitperiod},
+         given={Nathaniel},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Smidt},
+         familyi={S\bibinitperiod},
+         given={Tess},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kearnes},
+         familyi={K\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=YL}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Lusann},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kohlhoff},
+         familyi={K\bibinitperiod},
+         given={Kai},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=RP}{%
+         family={Riley},
+         familyi={R\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TN+1}
+    \strng{fullhash}{TNSTKSYLLLKKRP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{eprint}
+    \verb 1802.08219
+    \endverb
+    \field{title}{Tensor field networks: Rotation- and translation-equivariant
+  neural networks for 3D point clouds}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.LG}
+    \field{year}{2018}
+  \endentry
+
+  \entry{motifstats}{article}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{10}{}{%
+      {{hash=WD}{%
+         family={Waroquiers},
+         familyi={W\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GX}{%
+         family={Gonze},
+         familyi={G\bibinitperiod},
+         given={Xavier},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=RGM}{%
+         family={Rignanese},
+         familyi={R\bibinitperiod},
+         given={Gian-Marco},
+         giveni={G\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=WNC}{%
+         family={Welker-Nieuwoudt},
+         familyi={W\bibinithyphendelim N\bibinitperiod},
+         given={Cathrin},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=RF}{%
+         family={Rosowski},
+         familyi={R\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gobel},
+         familyi={G\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Schenk},
+         familyi={S\bibinitperiod},
+         given={Stephan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={Degelmann},
+         familyi={D\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=AR}{%
+         family={Andr{\'e}},
+         familyi={A\bibinitperiod},
+         given={Rute},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Glaum},
+         familyi={G\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACS Publications}%
+    }
+    \strng{namehash}{WD+1}
+    \strng{fullhash}{WDGXRGMWNCRFGMSSDPARGR+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{19}
+    \field{pages}{8346\bibrangedash 8360}
+    \field{title}{Statistical analysis of coordination environments in oxides}
+    \field{volume}{29}
+    \field{journaltitle}{Chem. Mater.}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Mulas2022}{book}{}{}
+    \name{author}{3}{}{%
+      {{hash=MR}{%
+         family={Mulas},
+         familyi={M\bibinitperiod},
+         given={Raffaella},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Horak},
+         familyi={H\bibinitperiod},
+         given={Danijela},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JJ}{%
+         family={Jost},
+         familyi={J\bibinitperiod},
+         given={J{\"u}rgen},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=BF}{%
+         family={Battiston},
+         familyi={B\bibinitperiod},
+         given={Federico},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Petri},
+         familyi={P\bibinitperiod},
+         given={Giovanni},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer International Publishing}%
+    }
+    \strng{namehash}{MR+1}
+    \strng{fullhash}{MRHDJJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    In this chapter we discuss the spectral theory of discrete structures such
+  as graphs, simplicial complexes and hypergraphs. We focus, in particular, on
+  the corresponding Laplace operators. We present the theoretical foundations,
+  but we also discuss the motivation to model and study real data with these
+  tools.%
+    }
+    \field{booktitle}{Higher-Order Systems}
+    \verb{doi}
+    \verb 10.1007/978-3-030-91374-8_1
+    \endverb
+    \field{isbn}{978-3-030-91374-8}
+    \field{pages}{1\bibrangedash 58}
+    \field{title}{Graphs, Simplicial Complexes and Hypergraphs: Spectral
+  Theory and Topology}
+    \verb{url}
+    \verb https://doi.org/10.1007/978-3-030-91374-8_1
+    \endverb
+    \list{location}{1}{%
+      {Cham}%
+    }
+    \field{year}{2022}
+  \endentry
+
+  \entry{orderparam1}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=ZNER}{%
+         family={Zimmermann},
+         familyi={Z\bibinitperiod},
+         given={Nils E.\bibnamedelima R.},
+         giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+      }}%
+      {{hash=HMK}{%
+         family={Horton},
+         familyi={H\bibinitperiod},
+         given={Matthew\bibnamedelima K.},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=JA}{%
+         family={Jain},
+         familyi={J\bibinitperiod},
+         given={Anubhav},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Haranczyk},
+         familyi={H\bibinitperiod},
+         given={Maciej},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZNER+1}
+    \strng{fullhash}{ZNERHMKJAHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.3389/fmats.2017.00034
+    \endverb
+    \field{issn}{2296-8016}
+    \field{pages}{34}
+    \field{title}{Assessing Local Structure Motifs Using Order Parameters for
+  Motif Recognition, Interstitial Identification, and Diffusion Path
+  Characterization}
+    \verb{url}
+    \verb https://www.frontiersin.org/articles/10.3389/fmats.2017.00034
+    \endverb
+    \field{volume}{4}
+    \field{journaltitle}{Front. Mater.}
+    \field{year}{2017}
+  \endentry
+
+  \entry{orderparam2}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=ZNE}{%
+         family={Zimmermann},
+         familyi={Z\bibinitperiod},
+         given={Nils\bibnamedelima ER},
+         giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=JA}{%
+         family={Jain},
+         familyi={J\bibinitperiod},
+         given={Anubhav},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Royal Society of Chemistry}%
+    }
+    \strng{namehash}{ZNEJA1}
+    \strng{fullhash}{ZNEJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{10}
+    \field{pages}{6063\bibrangedash 6081}
+    \field{title}{Local structure order parameters and site fingerprints for
+  quantification of coordination environment and crystal structure similarity}
+    \field{volume}{10}
+    \field{journaltitle}{RSC Adv.}
+    \field{year}{2020}
+  \endentry
+
+  \entry{csm_polyhedra}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=PM}{%
+         family={Pinsky},
+         familyi={P\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Avnir},
+         familyi={A\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACS Publications}%
+    }
+    \strng{namehash}{PMAD1}
+    \strng{fullhash}{PMAD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{21}
+    \field{pages}{5575\bibrangedash 5582}
+    \field{title}{Continuous symmetry measures. 5. The classical polyhedra}
+    \field{volume}{37}
+    \field{journaltitle}{Inorg. Chem.}
+    \field{year}{1998}
+  \endentry
+
+  \entry{chemenv}{article}{}{}
+    \name{author}{8}{}{%
+      {{hash=WD}{%
+         family={Waroquiers},
+         familyi={W\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={George},
+         familyi={G\bibinitperiod},
+         given={Janine},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Horton},
+         familyi={H\bibinitperiod},
+         given={Matthew},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Schenk},
+         familyi={S\bibinitperiod},
+         given={Stephan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PKA}{%
+         family={Persson},
+         familyi={P\bibinitperiod},
+         given={Kristin\bibnamedelima A},
+         giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=RGM}{%
+         family={Rignanese},
+         familyi={R\bibinitperiod},
+         given={G-M},
+         giveni={G\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=GX}{%
+         family={Gonze},
+         familyi={G\bibinitperiod},
+         given={Xavier},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Hautier},
+         familyi={H\bibinitperiod},
+         given={Geoffroy},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {International Union of Crystallography}%
+    }
+    \strng{namehash}{WD+1}
+    \strng{fullhash}{WDGJHMSSPKARGMGXHG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{683\bibrangedash 695}
+    \field{title}{ChemEnv: a fast and robust coordination environment
+  identification tool}
+    \field{volume}{76}
+    \field{journaltitle}{Acta Crystallogr. B}
+    \field{year}{2020}
+  \endentry
+
+  \entry{linegraph_general}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=CZ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Zhengdao},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Xiang},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Bruna},
+         familyi={B\bibinitperiod},
+         given={Joan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CZ+1}
+    \strng{fullhash}{CZLXBJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Supervised community detection with line graph neural
+  networks}
+    \field{journaltitle}{arXiv:1705.08415}
+    \field{year}{2017}
+  \endentry
+
+  \entry{harmonictensors}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=LFG}{%
+         family={Ledesma},
+         familyi={L\bibinitperiod},
+         given={Francisco\bibnamedelima Gonzalez},
+         giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mewes},
+         familyi={M\bibinitperiod},
+         given={Matthew},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LFGMM1}
+    \strng{fullhash}{LFGMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{eprint}
+    \verb 2010.09433
+    \endverb
+    \field{title}{Spherical Harmonic Tensors}
+    \verb{url}
+    \verb https://arxiv.org/pdf/2010.09433
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{year}{2020}
+  \endentry
+
+  \entry{heilman_tensor}{misc}{}{}
+    \name{author}{3}{}{%
+      {{hash=HA}{%
+         family={Heilman},
+         familyi={H\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Schlesinger},
+         familyi={S\bibinitperiod},
+         given={Claire},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=YQ}{%
+         family={Yan},
+         familyi={Y\bibinitperiod},
+         given={Qimin},
+         giveni={Q\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HA+1}
+    \strng{fullhash}{HASCYQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{eprint}
+    \verb 2406.03563
+    \endverb
+    \field{title}{Equivariant Graph Neural Networks for Prediction of Tensor
+  Material Properties of Crystals}
+    \verb{url}
+    \verb https://arxiv.org/abs/2406.03563
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{physics.comp-ph}
+    \field{year}{2024}
+  \endentry
+
+  \entry{young_diagram}{inbook}{}{}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    In chapters 2 and 3, we have constructed simple representations of various
+  Lie groups and Lie algebras. In this chapter, we will discuss how more
+  complicated representations can be constructed and how the Young tableau or
+  the Young diagrams (named after the British mathematician Alfred Young) prove
+  to be of great help in this direction. For simplicity we will restrict
+  ourselves to the U(N) and SU(N) groups.%
+    }
+    \field{booktitle}{Lie Groups and Lie Algebras for Physicists}
+    \field{chapter}{Chapter 5}
+    \verb{doi}
+    \verb 10.1142/9789814603287_0005
+    \endverb
+    \verb{eprint}
+    \verb https://www.worldscientific.com/doi/pdf/10.1142/9789814603287_0005
+    \endverb
+    \field{pages}{125\bibrangedash 156}
+    \field{title}{Irreducible tensor representations and Young tableau}
+    \verb{url}
+    \verb https://www.worldscientific.com/doi/abs/10.1142/9789814603287_0005
+    \endverb
+  \endentry
+
+  \entry{itin-elastic}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=IY}{%
+         family={Itin},
+         familyi={I\bibinitperiod},
+         given={Yakov},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IY1}
+    \strng{fullhash}{IY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1177/1081286520913596
+    \endverb
+    \verb{eprint}
+    \verb https://doi.org/10.1177/1081286520913596
+    \endverb
+    \field{number}{10}
+    \field{pages}{1873\bibrangedash 1895}
+    \field{title}{Irreducible matrix resolution for symmetry classes of
+  elasticity tensors}
+    \verb{url}
+    \verb https://doi.org/10.1177/1081286520913596
+    \endverb
+    \field{volume}{25}
+    \field{journaltitle}{Mathematics and Mechanics of Solids}
+    \field{year}{2020}
+  \endentry
+
+  \entry{itin-rank3}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=IY}{%
+         family={Itin},
+         familyi={I\bibinitperiod},
+         given={Yakov},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Reches},
+         familyi={R\bibinitperiod},
+         given={Shulamit},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IYRS1}
+    \strng{fullhash}{IYRS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1177/10812865211016530
+    \endverb
+    \verb{eprint}
+    \verb https://doi.org/10.1177/10812865211016530
+    \endverb
+    \field{number}{2}
+    \field{pages}{222\bibrangedash 249}
+    \field{title}{Decomposition of third-order constitutive tensors}
+    \verb{url}
+    \verb https://doi.org/10.1177/10812865211016530
+    \endverb
+    \field{volume}{27}
+    \field{journaltitle}{Mathematics and Mechanics of Solids}
+    \field{year}{2022}
+  \endentry
+
+  \entry{projection_op}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=IAF}{%
+         family={Izmaylov},
+         familyi={I\bibinitperiod},
+         given={Artur\bibnamedelima F},
+         giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACS Publications}%
+    }
+    \strng{namehash}{IAF1}
+    \strng{fullhash}{IAF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{15}
+    \field{pages}{3429\bibrangedash 3433}
+    \field{title}{On construction of projection operators}
+    \field{volume}{123}
+    \field{journaltitle}{The Journal of Physical Chemistry A}
+    \field{year}{2019}
+  \endentry
+
+  \entry{dirl1979}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=DR}{%
+         family={Dirl},
+         familyi={D\bibinitperiod},
+         given={R},
+         giveni={R},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Institute of Physics}%
+    }
+    \strng{namehash}{DR1}
+    \strng{fullhash}{DR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{659\bibrangedash 663}
+    \field{title}{Clebsch--Gordan coefficients: General theory}
+    \field{volume}{20}
+    \field{journaltitle}{Journal of Mathematical Physics}
+    \field{year}{1979}
+  \endentry
+
+  \entry{matproj}{article}{}{}
+    \name{author}{11}{}{%
+      {{hash=JA}{%
+         family={Jain},
+         familyi={J\bibinitperiod},
+         given={Anubhav},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=OSP}{%
+         family={Ong},
+         familyi={O\bibinitperiod},
+         given={Shyue\bibnamedelima Ping},
+         giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Hautier},
+         familyi={H\bibinitperiod},
+         given={Geoffroy},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CW}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=RWD}{%
+         family={Richards},
+         familyi={R\bibinitperiod},
+         given={William\bibnamedelima Davidson},
+         giveni={W\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Dacek},
+         familyi={D\bibinitperiod},
+         given={Stephen},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Cholia},
+         familyi={C\bibinitperiod},
+         given={Shreyas},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Gunter},
+         familyi={G\bibinitperiod},
+         given={Dan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Skinner},
+         familyi={S\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Ceder},
+         familyi={C\bibinitperiod},
+         given={Gerbrand},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PKA}{%
+         family={Persson},
+         familyi={P\bibinitperiod},
+         given={Kristin\bibnamedelima A.},
+         giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JA+1}
+    \strng{fullhash}{JAOSPHGCWRWDDSCSGDSDCGPKA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    {Accelerating the discovery of advanced materials is essential for human
+  welfare and sustainable, clean energy. In this paper, we introduce the
+  Materials Project (www.materialsproject.org), a core program of the Materials
+  Genome Initiative that uses high-throughput computing to uncover the
+  properties of all known inorganic materials. This open dataset can be
+  accessed through multiple channels for both interactive exploration and data
+  mining. The Materials Project also seeks to create open-source platforms for
+  developing robust, sophisticated materials analyses. Future efforts will
+  enable users to perform ‘‘rapid-prototyping’’ of new materials in
+  silico, and provide researchers with new avenues for cost-effective,
+  data-driven materials design.}%
+    }
+    \verb{doi}
+    \verb 10.1063/1.4812323
+    \endverb
+    \verb{eprint}
+    \verb https://pubs.aip.org/aip/apm/article-pdf/doi/10.1063/1.4812323/131638
+    \verb 69/011002\_1\_online.pdf
+    \endverb
+    \field{issn}{2166-532X}
+    \field{number}{1}
+    \field{pages}{011002}
+    \field{title}{Commentary: The Materials Project: A materials genome
+  approach to accelerating materials innovation}
+    \verb{url}
+    \verb https://doi.org/10.1063/1.4812323
+    \endverb
+    \field{volume}{1}
+    \field{journaltitle}{APL Mater.}
+    \field{month}{07}
+    \field{year}{2013}
+  \endentry
+
+  \entry{symmetry_wannier}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=SR}{%
+         family={Sakuma},
+         familyi={S\bibinitperiod},
+         given={Rei},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{SR1}
+    \strng{fullhash}{SR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{23}
+    \field{pages}{235109}
+    \field{title}{Symmetry-adapted Wannier functions in the maximal
+  localization procedure}
+    \field{volume}{87}
+    \field{journaltitle}{Physical Review B—Condensed Matter and Materials
+  Physics}
+    \field{year}{2013}
+  \endentry
+\enddatalist
+\endinput

@@ -1,0 +1,71 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: proposal_slides.aux
+The style file: biblatex.bst
+This database file appears more than once: chgcnn.bib
+---line 6 of file proposal_slides.aux
+ : \bibdata{proposal_slides-blx,chgcnn,chgcnn
+ :                                           }
+I'm skipping whatever remains of this command
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: proposal_slides-blx.bib
+Database file #2: chgcnn.bib
+Biblatex version: 3.20
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 22 entries,
+            6402 wiz_defined-function locations,
+            1362 strings with 15924 characters,
+and the built_in function-call counts, 219000 in all, are:
+= -- 19188
+> -- 2570
+< -- 676
++ -- 7041
+- -- 924
+* -- 15026
+:= -- 26455
+add.period$ -- 0
+call.type$ -- 22
+change.case$ -- 431
+chr.to.int$ -- 73
+cite$ -- 42
+duplicate$ -- 23261
+empty$ -- 18305
+format.name$ -- 1658
+if$ -- 43190
+int.to.chr$ -- 0
+int.to.str$ -- 60
+missing$ -- 0
+newline$ -- 906
+num.names$ -- 1124
+pop$ -- 8148
+preamble$ -- 1
+purify$ -- 617
+quote$ -- 0
+skip$ -- 4308
+stack$ -- 0
+substring$ -- 35935
+swap$ -- 3639
+text.length$ -- 491
+text.prefix$ -- 1
+top$ -- 1
+type$ -- 736
+warning$ -- 0
+while$ -- 3286
+width$ -- 0
+write$ -- 885
+(There was 1 error message)

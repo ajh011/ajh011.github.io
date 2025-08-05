@@ -1,11 +1,28 @@
 \documentclass[]{article}
 \usepackage{graphicx}
 \usepackage{amsmath}
-\usepackage[sort, numbers]{natbib}
+
+\makeatletter
+\renewcommand \thesection{S\@arabic\c@section}
+\renewcommand\thetable{S\@arabic\c@table}
+\renewcommand \thefigure{S\@arabic\c@figure}
+\makeatother
+
+
+\usepackage[backend=bibtex, style=phys, articletitle=false,  biblabel=brackets, sorting=none]{biblatex}
+\bibliography{chgcnn}
+
+\DeclareFieldFormat{journaltitle}{\mkbibemph{#1}}
+\DeclareFieldFormat{pages}{#1}
 
 
 %opening
 \title{Supplementary Materials for Crystal Hypergraph Convolutional Neural Networks}
+
+  
+\date{}
+
+
 \author{Alexander J. Heilman, Weiyi Gong, Qimin Yan}
 
 \begin{document}
@@ -15,9 +32,8 @@
 \section{Motif Features: Structure Order Parameters \& Continuous Symmetry Measures}
 The geometry of the motifs were incorporated as features composed of a concatenated list of structure order parameters and continuous symmetry measures (CSMs) for a set of common local environments. 
 
-Structure order parameters are coordinate system invariant measures of 3 dimensional structure that are designed to be close to one when a given structure is similar to some prototypical arrangement. Note that this isn't in general a true 'distance'-like measure to some shape as a CSM is, however. The list of order parameters included those implemented in pymatgen code and described in \cite{orderparam1, orderparam2}.
+Structure order parameters are coordinate system invariant measures of 3 dimensional structure that are designed to be close to one when a given structure is similar to some prototypical arrangement. Note that this isn't in general a true 'distance'-like measure to some shape as a CSM is, however. A CSM is essentially defined so that it may act as a 'distance' from some prototypical shape to some given structure. The list of order parameters included as motif features are those that implemented in existing pymatgen code and described in \cite{orderparam1, orderparam2}.
 
-A CSM is defined precisely so that it may act as a 'distance' from some prototypical shape to some given structure.
 
 \section{CHGConv}\label{chgconv}
 A specific implementation of a hypergraph convolutional operator in the hypergraph message passing framework is a generalization of CGConv implemented in pytorch geometric and based on CGCNN's convolutional operator defined in eq (5) of the original paper.
@@ -30,7 +46,7 @@ A specific implementation of a hypergraph convolutional operator in the hypergra
 In the model utilized in this work, we generally employed use of a learnable set of common aggregation functions for the neighborhood feature aggregation ($\text{AGG}$ above), inspired by \textit{ChemGNN} \cite{chemgnn}.
 
 \section{Hyperparameters for Testing}\label{app:hyperparam}
-For each convolutional structure, testing was done for a model with 3 convolutional layers. Each convolutional layer consists of back-to-back convolution from the smallest to the largest hyperedge type (for example two bond \& motif layers consist of a total sequence of bond, motif bond, motif). 
+For each convolutional structure, testing was done for a model with 3 convolutional layers. Each convolutional layer consists of back-to-back convolution from the smallest to the largest hyperedge type (for example two bond \& motif layers consist of a total sequence of bond, motif, bond and motif convolution). 
 
 Stochastic gradient descent (SGD) was used as an optimizer through training with an initial learning rate of 0.01. A multi-step learning rate scheduler divided this learning rate by a factor of 10 at epoch 150, with training running for a total of 300 epochs.  
 
@@ -53,14 +69,13 @@ Here, we incorporate a similar level of higher-order geometrical structure inste
 
 \section{Hyperedge Index}
 Hypergraphs are treated as a set of node feactures $x$, hyperedge features $h$, and hyperedge indices $I$. 
-
 The hyperedge index is, computationally, treated as a $[2,nm]$ dimensional vector (where $m$ is the number of hyperedges and $n$ is the avereage number of nodes contained in any hyperedge). 
 The first index is the node contained and the second index is the containing hyperedge (as in \cite{hypergraphconv}).
 \begin{center}
 	\includegraphics[scale = 1]{hyperedge_index.pdf}
 \end{center}
 
-\bibliography{chgcnn} %You need to replace "rsc" on this line with the name of your .bib file
-\bibliographystyle{rsc} %the RSC's .bst file
+
+\printbibliography 
 
 \end{document}

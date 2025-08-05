@@ -4,14 +4,17 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{hyperref}
+%\usepackage{hyperref}
 \usepackage{cleveref}
 %\usepackage{multicol}
 
 %\usepackage[backend=bibtex,style=numeric,sorting=none]{biblatex}
-\usepackage[backend=bibtex]{biblatex}
-
+\usepackage[backend = bibtex,style=phys, articletitle=false,  biblabel=brackets, sorting=none]{biblatex}
 \usepackage{authblk}
+
+\DeclareFieldFormat{journaltitle}{\mkbibemph{#1}}
+\DeclareFieldFormat{pages}{#1}
+\DeclareFieldFormat{booktitle}{\mkbibemph{#1}}
 
 
 
@@ -29,11 +32,13 @@
 \author{
 Alexander J. Heilman, Weiyi Gong, and Qimin Yan
   }
+  
+\date{}
 
 \affil{\textit{
 Department of Physics}\\
 \textit{Northeastern University, 
-360 Huntington Ave, Boston, MA 02115}}
+Boston, MA 02115, USA}}
 
 \begin{document}
 \twocolumn[
@@ -106,7 +111,7 @@ Alternatively, one could include atomic position in the node features or a vecto
 
 \begin{figure*}
 	\centering
-	\includegraphics[scale=0.7]{graph2hgraph_tall_revise2.pdf}
+	\includegraphics[scale=0.64]{graph2hgraph_tall_revise2.pdf}
 	\caption{An example of two distinct geometries that are mapped to the same distance-based crystal graph. With inclusion of a first-shell feature vector encoding local geometry however, these structures are mapped to two distinct crystal hypergraphs. Note these are two possible coordination environments in oxides, determined statistically in \cite{motifstats}.}
 	\label{fig:graph_cntex}
 \end{figure*}
@@ -117,20 +122,17 @@ Alternatively, one could include atomic position in the node features or a vecto
 The method proposed here reduces the intrinsic limitations of invariant crystal graph featurs by allowing the explicit incorporation of higher-order geometrical information in the form of hyperedges, which can be used to directly represent these higher-order structures.
 
 
-A crystal hypergraph $\mathcal{H}=\lbrace\mathcal{V}, \mathit{H} \rbrace$ is a collection of nodes $v_i\in \mathcal{V}$ and hyperedges $h_j\in \mathit{H}$ (containing an arbitrary number of nodes), where the hyperedges are most generally heterogeneous. That is, we may wish to describe different types of hyperedges (e.g. bonds, triplets, and motifs) in the same hypergraph. These objects then have associated feature vectors encoding relevant physical information, which we also refer to as $v$ and $h$.
+A crystal hypergraph $\mathcal{H}=\lbrace\mathcal{V}, \mathit{H} \rbrace$ is a collection of nodes $v_i\in \mathcal{V}$ and hyperedges $h_j\in \mathit{H}$ (containing an arbitrary number of nodes, see Supplementary Note S5), where the hyperedges are most generally heterogeneous. That is, we may wish to describe different types of hyperedges (e.g. bonds, triplets, and motifs) in the same hypergraph. These objects then have associated feature vectors encoding relevant physical information, which we also refer to as $v$ and $h$.
 
 For the purpose of modeling material systems, we need to identify what different order structures are most important in their representation. Of course, atomic and bond level information is particularly important. However, higher-order structures may also be of interest, such as triplets of atoms and local environments of atoms, which we refer to as motifs in crystals.
 
 Each of the aforementioned structures also has a natural set of distinct, coordinate-system invariant features that may be associated with them. At the triplet level (where two bonds share some common node), there is always a corresponding angle. While at the motif level, order parameters \cite{orderparam1, orderparam2} or continuous symmetry measures \cite{csm_polyhedra, chemenv} may be used to describe 3-dimensional coordination environments quantitatively. 
 These different order structures may all be represented in a single crystal hypergraph. 
-
-
-
 Below, we discuss the generation of, and association of features with, all of the above-mentioned structures in crystalline solids. 
 
 \begin{figure*}[!ht]
 	\centering
-	\includegraphics[scale=0.31]{crystal_hgraph_ex+revamp3.pdf}
+	\includegraphics[scale=0.27]{crystal_hgraph_ex+revamp3.pdf}
 	\caption{Typical construction loop for a crystal hypergraph. First, pair-wise bonds/edges are determined, then triplets are derived from overlapping pairs of bonds, and finally motifs are determined as first-shells of neighbors by some (generally more restrictive) criteria. Features for each and upper bounds on numbers of hyperedges for each type are also listed.}
 	\label{fig:hypergraph-loop}
 \end{figure*}
@@ -142,7 +144,7 @@ Bonds, or pair-wise atomic connections, are determined in the same manner as in 
 \subsubsection{Triplet Hyperedges}
 Triplet hyperedges are then formed from the set of bonds. For each set of bonds connected by one node, a triplet hyperedge is formed. The feature of these triplet hyperedges is also a Gaussian expansion, though now of the angle formed by the unit vectors of the two bonds \cite{alignn}.
 Triplet hyperedges give us a way to incorporate some angular resolution into our representation scheme in a coordinate-system-invariant manner.
-For a node with $N$ bonds then, there will be $N(N-1)/2$ triplets. Thus, the price we pay for complete angular resolution of any two bonds is a quadratic increase in the number of hyperedges.
+For a node with $N$ bonds then, there will be $N(N-1)/2$ triplets. Thus, the price we pay for complete angular resolution of any two bonds is a quadratic increase in the number of hyperedges. For a comparison between our inclusion of triplet information and the more usual construction by way of a line-graph, see Supplementary Note S4.
 
 
 %\begin{center}
@@ -160,7 +162,7 @@ For a node with $N$ bonds then, there will be $N(N-1)/2$ triplets. Thus, the pri
 Motif determination may be achieved by a wide range of functions, and is akin to an algorithmic determination of coordination number \cite{coordination_comp}. Here, we use a modified Voronoi algorithm with a cut-off radius implemented as CrystalNN in pymatgen.
 Note this is a much stricter algorithm than that used to determine edges and triplets, since the motifs features depend heavily on the selected first-shell.
 
-The features of these motifs are a concatenation of Zimmerman's 34 local structure order parameters \cite{orderparam1,orderparam2}, and continuous symmetry measures \cite{csm_polyhedra} (e.g. 'distance to a perfect shape') for 59 common coordination environments. In essence, both are just sets of quantitative measures designed to describe 3 dimensional physical shape. 
+The features of these motifs are a concatenation of Zimmerman's 34 local structure order parameters \cite{orderparam1,orderparam2}, and continuous symmetry measures \cite{csm_polyhedra} (e.g. 'distance to a perfect shape') for 59 common coordination environments (see Supplementary Note S1). In essence, both are just sets of quantitative measures designed to describe 3 dimensional physical shape. 
 Motifs give us a way to describe the local geometry of sites in material systems with much fewer hyperedges. Since each node will contribute one motif hyperedge, for a crystal with $N_{\text{nodes}}$ nodes, we just have $N_{\text{nodes}}$ motifs. 
 
 
@@ -204,7 +206,7 @@ The definition of the relatives graph allows us to perform the usual methods of 
 
 \begin{figure*}
 	\centering
-	\includegraphics[scale=.81]{HMPNN.pdf}
+	\includegraphics[scale=.71]{HMPNN.pdf}
 	\caption{Overview of three possible message functions $m$ for nodes $v$ that generalize the message function in \cite{mpnn} to hyperedges $h$ with more (or less) than two nodes. Here, $n$ represents the average number of nodes in a hyperedge and the scaling relation is then for the total number of messages for one layer, for each hyperedge and each approach.}
 	\label{fig:hmpnn}
 \end{figure*}
@@ -238,7 +240,7 @@ This results in a set of node-wise messages that scales linearly with the averag
 \subsection{Model Architecture}
 In our CHGCNN model, initial atomic features were those used in CGCNN \cite{cgcnn}, consisting of a concatenated set of one-hot encoded atomic properties. For bond features, we used a Gaussian expansion of interatomic distance of dimension 40 ranging from 0 to 6 \AA, triplet features were a Gaussian expansion of the cosine of bond angle, also of dimension 40, and motif features were a concatenation of 93 scalar order parameters and continuous symmetry measures. In the model considered in this work, initial node and hyperedge features were first passed into a linear embedding layer (with no activation function) with an output dimension of 64. 
 
-These embedded features were then fed into a set of Crystal HyperGraph Convolutional (CHGConv) layers which utilize the neighborhood aggregation method presented above. In CHGConv, we use a set of CGConv \cite{cgcnn} layers applied to consecutively larger hyperedge types, taking as input the origin node of the hyperedge, the connecting hyperedge feature as the edge feature, and an aggregated set of neighborhood features as the connected node feature. So, for every CHGConv layer, the atoms are updated by each hyperedge type chosen once (see Fig. \ref{fig:architecture}). Note that each CGConv for different hyperedge types have independent trainable parameters. 
+These embedded features were then fed into a set of Crystal HyperGraph Convolutional (CHGConv) layers which utilize the neighborhood aggregation method presented above (see Supplementary Note S2). In CHGConv, we use a set of CGConv \cite{cgcnn} layers applied to consecutively larger hyperedge types, taking as input the origin node of the hyperedge, the connecting hyperedge feature as the edge feature, and an aggregated set of neighborhood features as the connected node feature. So, for every CHGConv layer, the atoms are updated by each hyperedge type chosen once (see Fig. \ref{fig:architecture}). Note that each CGConv for different hyperedge types have independent trainable parameters. 
 
 These learned node features are then mean pooled to form a crystal vector, which is passed to a fully connected layer and then projected down to a one-dimensional (scalar) output for regression. In the case of classification tasks, the fully connected layer, after mean pooling, utilized a dropout mechanism and output a probability distribution of classes by way of a softmax activation function.
 
@@ -254,7 +256,7 @@ These learned node features are then mean pooled to form a crystal vector, which
 Crystal hypergraph networks provide a unique opportunity to investigate the importance of different order structures in the prediction of various material properties. Specifically, we may compare performance between models based on different types of hyperedges to probe the relevance of certain structures (e.g. motifs vs. triplets) in material property prediction. From the different hyperedge types considered here, we build three different models based on the architecture given in Fig. \ref{fig:architecture}.
 We first test a basic bond-only network equivalent to CGCNN, and compare its performance against two models incorporating two types of hyperedges: bond-and-triplet and bond-and-motif models. 
 %We consider three models incorporating only one type of hyperedge: bond-only, triplet-only, and motif-only; as well as two models incorporating two types of hyperedges: bond-and-triplet, and bond-and-motif models. 
-For compound models (including more than one hyperedge type) each CHGConv layer performs convolution over the hyperedges in ascending order of hyperedge size. These models were each trained on sets of training data from two different databases of material properties: the Materials Project \cite{matproj} and MatBench \cite{matbench}. Details on the hyperparameters and training protocol can be found in the supplementary materials. Note that models using both motif and triplet-level edges, in general, diverged through training or did not perform any better than models using just motifs or triplets. As such, we only compare models using one or the other here.
+For compound models (including more than one hyperedge type) each CHGConv layer performs convolution over the hyperedges in ascending order of hyperedge size. These models were each trained on sets of training data from two different databases of material properties: the Materials Project \cite{matproj} and MatBench \cite{matbench}. Details on the hyperparameters and training protocol can be found in the Supplementary Note S3. Note that models using both motif and triplet-level edges, in general, diverged through training or did not perform any better than models using just motifs or triplets. As such, we only compare models using one or the other here.
 
 We first focus on the comparative performance of models incorporating only bonds, models incorporating both bond-and-motif hyperedges and models with both bond-and-triplet hyperedges on five MatBench target datasets \cite{matbench}. Mean absolute error (MAE) on validation sets for these tasks are reported in Table \ref{fig:matbench_table}. These five datasets consist of the following targets: the highest frequency phonon peak $\omega_p$ for 1,265 materials, refractive indices $n$ for 4,764 materials, formation energies $E_f$ for a set of 18,829 perovskite materials, and 10,987 bulk and shear moduli, $K_{vrh}$ and $G_{vrh}$, respectively.
 On all tasks of this set, the larger models incorporating both bonds and higher-order hyperedges performed best. 
@@ -335,9 +337,9 @@ For the Materials Project dataset, the bond-and-triplet model performed best for
 		Hyperedge & $E_f$ & $E_g$ & Metal/Non-metal Classification \\
 		Types & Best MAE (eV/Atom) & Best MAE (eV) & Best AUC \\
 		\hline
-		Bond-only & 0.0512 & 0.356 & .927 \\
-		Bond \& Triplet &  \textbf{0.0484} & \textbf{0.325 } & \textbf{.933}\\
-		Bond \& Motif &  0.0506 & 0.366 & .932\\
+		Bond-only & 0.0512 & 0.356 & 92.7\% \\
+		Bond \& Triplet &  \textbf{0.0484} & \textbf{0.325 } & \textbf{93.3\%}\\
+		Bond \& Motif &  0.0506 & 0.366 & 93.2\%\\
 		\hline
 	\end{tabular*}
 	\caption{Validation dataset results for three Materials Project target sets: formation energy $E_f$, band gap $E_g$, and metalicity. Here, each dataset included a total of 152,605 materials after 300 epochs of training with 5-fold nested cross validation. Best results are indicated in bold. Here, bond edges contributed a total of 51,829,881 messages per layer; triplets contributed 330,198,684 messages per layer; and motifs 4,319,157 per layer.}\label{fig:mp_table}
@@ -372,7 +374,9 @@ Future works may investigate more powerful hypergraph convolutional operators th
 
 
 \section{Data Availability}
-The code used in this paper's results were built on pytorch-geometric and can be found in the following Github repository: \hyperlink{https://github.com/qmatyanlab/CHGCNN}{https://github.com/qmatyanlab/CHGCNN}. The processed data including bond, triplet, and motif features is available in a Zenodo repository with DOI: 10.5281/zenodo.14756640.
+The code used in this paper's results were built on pytorch-geometric and can be found in the following Github repository:
+%\hyperlink{https://github.com/qmatyanlab/CHGCNN}{https://github.com/qmatyanlab/CHGCNN}
+https://github.com/qmatyanlab/CHGCNN. The processed data including bond, triplet, and motif features is available in a Zenodo repository with DOI: 10.5281/zenodo.14756640.
 
 
 \section{Acknowledgments}
@@ -404,56 +408,6 @@ This work is supported by the U.S. Department of Energy, Office of Science, Basi
 %\end{tabular}
 %\end{center}
 %The more restrictive definitions of motifs increased in performance incrementally. This is likely since the larger motifs would tend to 'smoosh' the atomic information too much through aggregation of neighborhood features and messages.
-
-
-
-\section{Motif Features: Structure Order Parameters \& Continuous Symmetry Measures}
-The geometry of the motifs were incorporated as features composed of a concatenated list of structure order parameters and continuous symmetry measures (CSMs) for a set of common local environments. 
-
-Structure order parameters are coordinate system invariant measures of 3 dimensional structure that are designed to be close to one when a given structure is similar to some prototypical arrangement. Note that this isn't in general a true 'distance'-like measure to some shape as a CSM is, however. The list of order parameters included those implemented in pymatgen code and described in \cite{orderparam1, orderparam2}.
-
-A CSM is defined precisely so that it may act as a 'distance' from some prototypical shape to some given structure.
-
-\section{CHGConv}\label{chgconv}
-A specific implementation of a hypergraph convolutional operator in the hypergraph message passing framework is a generalization of CGConv implemented in pytorch geometric and based on CGCNN's convolutional operator defined in eq (5) of the original paper.
-
-\begin{align*}
-x_i^{t+1} &= \sum_{b_j} f(x_i^t, b_j,\text{AGG}(\lbrace x_j^t\in b_j \rbrace )) \\ 
-& = \text{BN}\bigg[\sum_{b_j}\sigma \big(W_c\cdot [x_j\oplus b_j\oplus \text{AGG}(\lbrace x_j^t\in b_j \rbrace ] )\big)\\
-&\quad\quad\cdot S^+ (W_f\cdot (x_j\oplus b_j\oplus \text{AGG}(\lbrace x_j^t\in b_j \rbrace ) )  ) \bigg]
-\end{align*}
-In the model utilized in this work, we generally employed use of a learnable set of common aggregation functions for the neighborhood feature aggregation ($\text{AGG}$ above), inspired by \textit{ChemGNN} \cite{chemgnn}.
-
-\section{Hyperparameters for Testing}\label{app:hyperparam}
-For each convolutional structure, testing was done for a model with 3 convolutional layers. Each convolutional layer consists of back-to-back convolution from the smallest to the largest hyperedge type (for example two bond \& motif layers consist of a total sequence of bond, motif bond, motif). 
-
-Stochastic gradient descent (SGD) was used as an optimizer through training with an initial learning rate of 0.01. A multi-step learning rate scheduler divided this learning rate by a factor of 10 at epoch 150, with training running for a total of 300 epochs.  
-
-Hidden node features were of dimension 64 through all convolutional layers, and a hidden output layer of dimension 128 was used (similar to CGCNN's architecture). The loss functions utilized were MSE (for regression tasks) and cross entropy (for classification tasks). Accuracy is then reported in MAE for regression tasks and area under curve (AUC) for classification tasks. 
-
-Results reported were averaged over 5 folds of nested cross-validation. The datasets were divided into 80\% for training and 20\% for test for each fold, with a further 20\% of the training subset being used as an indicative validation set, where the best performance on this dataset was used to select the model applied to the test set. 
-
-
-\section{Comparison to Line Graph}
-A more usual approach for the incorporation of bond angle information is via the construction of a line graph, as in \cite{alignn, m3gnet}. 
-\begin{center}
-\includegraphics[scale=0.38]{line_graph_ex.pdf}
-\end{center}
-These models generally first update the edge features of the crystal graph $\mathcal{G}$ by first applying some graph convolutional operator to the line graph $L(\mathcal{G})$ with angles encoded in  $L(\mathcal{G})$'s initial edge features.
-
-Our argument against such representation schemes here is that the order of messages grows combinatorically for derived line graphs as $\mathcal{O}(nm^2)$, where $n$ is the number of nodes and $m$ is the average number of edges per node in $\mathcal{G}$.
-
-Here, we incorporate a similar level of higher-order geometrical structure instead in a local environment, or 'motif', hyperedge (defined below). Note that these include only an extra number of messages on the order $\mathcal{O}(mn)$ if each node in a motif gets a message, or on the order $\mathcal{O}(n)$ if only center nodes are updated by their own motif hyperedges.
-
-
-\section{Hyperedge Index}
-Hypergraphs are treated as a set of node feactures $x$, hyperedge features $h$, and hyperedge indices $I$. 
-
-The hyperedge index is, computationally, treated as a $[2,nm]$ dimensional vector (where $m$ is the number of hyperedges and $n$ is the avereage number of nodes contained in any hyperedge). 
-The first index is the node contained and the second index is the containing hyperedge (as in \cite{hypergraphconv}).
-\begin{center}
-\includegraphics[scale = 1]{hyperedge_index.pdf}
-\end{center}
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.8)  27 JAN 2025 11:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.8)  4 AUG 2025 20:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -501,29 +501,26 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write6
 \openout6 = `CompResourcesReport.toc'.
 
-<qyg-c1-schem.pdf, id=83, 728.20482pt x 465.96233pt>
-File: qyg-c1-schem.pdf Graphic file (type pdf)
-<use qyg-c1-schem.pdf>
-Package pdftex.def Info: qyg-c1-schem.pdf  used on input line 33.
-(pdftex.def)             Requested size: 254.8755pt x 163.08925pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 
 [1
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<qyg-c1-schem.pdf, id=142, 728.20482pt x 465.96233pt>
+File: qyg-c1-schem.pdf Graphic file (type pdf)
+<use qyg-c1-schem.pdf>
+Package pdftex.def Info: qyg-c1-schem.pdf  used on input line 33.
+(pdftex.def)             Requested size: 364.10152pt x 232.98059pt.
+
 
 [2
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.60 \begin{verbatim}
-                      <./qyg-c1-schem.pdf>]
-Overfull \hbox (55.2404pt too wide) in paragraph at lines 69--69
+l.51 
+      <./qyg-c1-schem.pdf>]
+Overfull \hbox (55.2404pt too wide) in paragraph at lines 93--93
 []  \OT1/cmtt/m/n/10 sudo iptables -A FORWARD -i enp36s0f1 -o enp36s0f0  -m sta
 te --state RELATED,ESTABLISHED -j ACCEPT[] 
  []
@@ -531,13 +528,76 @@ te --state RELATED,ESTABLISHED -j ACCEPT[]
 
 
 [3]
+Overfull \hbox (53.43509pt too wide) in paragraph at lines 106--107
+\OT1/cmr/m/n/10 See []$\OT1/cmtt/m/n/10 https : / / askubuntu . com / questions
+ / 66890 / how-[]can-[]i-[]make-[]a-[]specific-[]set-[]of-[]iptables-[]rules-[]
+permanent$[]\OT1/cmr/m/n/10 . 
+ []
+
+
+Overfull \hbox (10.3246pt too wide) in paragraph at lines 117--118
+\OT1/cmr/m/n/10 tail, see []$\OT1/cmtt/m/n/10 https : / / datawookie . dev / bl
+og / 2018 / 10 / dns-[]on-[]ubuntu/$[] \OT1/cmr/m/n/10 or []$\OT1/cmtt/m/n/10 h
+ttps : / / anyware . hp . com / web-[]help /
+ []
+
+
 
 [4]
+Overfull \hbox (2.74086pt too wide) in paragraph at lines 146--146
+[] \OT1/cmtt/m/n/10 scp -J <gateway-user>@<gateway-ip> <file-to-copy> <user>@<r
+emote-ip>:<remote-destination>[] 
+ []
+
+
+Overfull \hbox (21.43536pt too wide) in paragraph at lines 147--148
+\OT1/cmr/m/n/10 See []$\OT1/cmtt/m/n/10 https : / / superuser . com / questions
+ / 456438 / how-[]do-[]i-[]scp-[]a-[]file-[]through-[]an-[]intermediate-[]serve
+r$[]\OT1/cmr/m/n/10 .
+ []
+
+
+Overfull \hbox (72.07428pt too wide) in paragraph at lines 147--148
+\OT1/cmr/m/n/10 yJump, as in []$\OT1/cmtt/m/n/10 https : / / superuser . com / 
+questions / 174160 / scp-[]over-[]a-[]proxy-[]with-[]one-[]command-[]from-[]loc
+al-[]machine$[]\OT1/cmr/m/n/10 . 
+ []
+
+
+Overfull \hbox (67.40709pt too wide) in paragraph at lines 168--170
+[]$\OT1/cmtt/m/n/10 https : / / serverfault . com / questions / 518967 / do-[]i
+-[]need-[]to-[]restart-[]my-[]server-[]after-[]editing-[]fstab-[]and-[]mtab$[]\
+OT1/cmr/m/n/10 ). 
+ []
+
+
 
 [5]
 
 [6]
-runsystem(latexminted cleantemp  --timestamp 20250127113204 379E76D1F26EE8025B4
+
+[7]
+
+[8]
+Overfull \hbox (56.93759pt too wide) in paragraph at lines 336--337
+\OT1/cmr/m/n/10 For generic shell com-mands across the clus-ter us-ing an-si-bl
+e, see []$\OT1/cmtt/m/n/10 https : / / kodekloud . com / blog / ansible-[]shell
+-[]module/$[]\OT1/cmr/m/n/10 . 
+ []
+
+
+
+[9]
+Overfull \hbox (56.93759pt too wide) in paragraph at lines 370--371
+\OT1/cmr/m/n/10 For generic shell com-mands across the clus-ter us-ing an-si-bl
+e, see []$\OT1/cmtt/m/n/10 https : / / kodekloud . com / blog / ansible-[]shell
+-[]module/$[]\OT1/cmr/m/n/10 . 
+ []
+
+
+
+[10]
+runsystem(latexminted cleantemp  --timestamp 20250804200814 379E76D1F26EE8025B4
 CC1BEA4356ACC)...executed.
 
  (./CompResourcesReport.aux)
@@ -546,28 +606,39 @@ LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `CompResourcesReport.out' has not changed.
-(rerunfilecheck)             Checksum: BFF885DB5539AC46521B607949A4505F;2984.
+(rerunfilecheck)             Checksum: 21DCC247B35A12676A5E7DD3908CC079;5037.
  ) 
 Here is how much of TeX's memory you used:
- 16523 strings out of 473362
- 332612 string characters out of 5725051
- 859737 words of memory out of 5000000
- 39382 multiletter control sequences out of 15000+600000
- 563445 words of font info for 54 fonts, out of 8000000 for 9000
+ 16554 strings out of 473362
+ 333100 string characters out of 5725051
+ 861882 words of memory out of 5000000
+ 39394 multiletter control sequences out of 15000+600000
+ 563612 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,7n,93p,758b,626s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
-live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2024/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
-fb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on CompResourcesReport.pdf (6 pages, 167180 bytes).
+ 94i,7n,93p,758b,514s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{here} has been referenced but does not exist, repla
+ced by a fixed one
+
+
+pdfTeX warning (dest): name{https://askubuntu.com/questions/16700/how-can-i-cha
+nge-my-own-user-id} has been referenced but does not exist, replaced by a fixed
+ one
+
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texli
+ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2024/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texl
+ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2024/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on CompResourcesReport.pdf (10 pages, 216235 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
- 188 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 379 PDF objects out of 1000 (max. 8388607)
+ 311 compressed objects within 4 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 210 words of extra memory for PDF output out of 10000 (max. 10000000)
 

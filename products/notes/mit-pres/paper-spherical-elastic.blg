@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: paper-spherical-elastic.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: annotate.bst
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+Database file #1: paper-spherical-elastic.bib
+Warning--to sort, need author or key in elastictensors
+Warning--empty journal in ETGNN
+Warning--empty journal in harmonictensors
+Warning--empty journal in strainnet
+Warning--empty journal in MatTen
+You've used 10 entries,
+            2588 wiz_defined-function locations,
+            628 strings with 7727 characters,
+and the built_in function-call counts, 3619 in all, are:
+= -- 351
+> -- 167
+< -- 3
++ -- 58
+- -- 55
+* -- 277
+:= -- 598
+add.period$ -- 28
+call.type$ -- 10
+change.case$ -- 60
+chr.to.int$ -- 10
+cite$ -- 16
+duplicate$ -- 135
+empty$ -- 266
+format.name$ -- 66
+if$ -- 711
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 9
+newline$ -- 61
+num.names$ -- 27
+pop$ -- 58
+preamble$ -- 1
+purify$ -- 70
+quote$ -- 0
+skip$ -- 119
+stack$ -- 0
+substring$ -- 192
+swap$ -- 6
+text.length$ -- 3
+text.prefix$ -- 3
+top$ -- 0
+type$ -- 80
+warning$ -- 5
+while$ -- 33
+width$ -- 11
+write$ -- 129
+(There were 5 warnings)

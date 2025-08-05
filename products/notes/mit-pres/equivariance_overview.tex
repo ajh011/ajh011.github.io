@@ -1,0 +1,151 @@
+\documentclass[handout, 11pt]{beamer}
+\usetheme{Goettingen}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{microtype}
+\author{Alex Heilman}
+\title{Equivariant Networks}
+\subtitle{Applied to Crystal Structures}
+
+%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{} 
+%\logo{} 
+%\institute{} 
+%\date{} 
+%\subject{} 
+
+\newenvironment{boxed2}
+    {\begin{center}
+    \begin{tabular}{|p{0.95\textwidth}|}
+    \hline\\
+    }
+    { 
+    \\\\\hline
+    \end{tabular} 
+    \end{center}
+    }
+
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+%\begin{frame}
+%\tableofcontents
+%\end{frame}
+
+\begin{frame}{Overview}
+
+$\bullet$ What does equivariance mean in general? \pause
+
+\vspace{1cm}
+
+$\bullet$ Examples of Equivariant Convolutions for SO(3) and Crystal Structures \pause
+
+\vspace{1cm}
+
+$\bullet$ Project Ideas
+
+\end{frame}
+
+
+%\begin{frame}{{\small Aside:} Bessel Radial Functions}
+%In lieu of a Gaussian distance expansion, SO(3) equivariant networks tend to utilize a radial Bessesl function expansion
+%\end{frame}
+
+%\begin{frame}{EquiformerV2/SO(2)}
+
+%\end{frame}
+
+\subsection{Crystal Networks}
+\begin{frame}{Crystal Networks/Crystal Groups}
+Essentially, different atomic positions have different local site symmetries and these different site symmetries allow us to define different classes of atomic positions.
+
+\medskip
+
+The idea then is to have a different set of weights (parameter sharing) for each 'class' of atomic position. So, we effectively have a new index for the update and message functions, as below
+$$
+m_v^{\ell +1} \rightarrow m_v^{\ell +1, c}
+$$
+$$
+h_v^{\ell+1}\rightarrow h_v^{\ell +1, c}
+$$
+where the upper index $c$ denotes the class or flavor of message passing function, which acts only on certain subsets of atomic positions
+\end{frame}
+
+\section{Project Ideas/Extensions}
+\begin{frame}{Project Ideas}
+So what do we do?
+
+\vspace{1cm}
+
+Old Models, New Targets: Something that's actually equivariant! (Elasticity/Compliance Tensor, Dielectric Tensor, ...)
+
+\vspace{2cm}
+
+Old Targets, New Models: Maybe try to apply SO(3) convolution in a way similar to the crystal group approach
+\end{frame}
+
+\begin{frame}{New Target: Elasticity Tensor}
+Material strain (how it stretches) can be modeled as a linear transformation on the material stress
+$$
+T^{ij}=C_{ijkl}E^{kl}
+$$
+where $\mathbf{T}$ is the strain tensor and $\mathbf{E}$ is the stress tensor.
+
+\medskip
+
+Materials have corresponding compliance/elasticity tensors $\mathbf{C}$, perhaps we could use this as a target?
+\end{frame}
+
+\begin{frame}{New Target: Dielectric Tensor}
+Applied electric fields induce electric displacements in materials according to 
+$$
+D^i = \epsilon_{ij}E^j
+$$
+where $\mathbf{D}$ is the electric displacement field and $\mathbf{E}$ is the electric field. 
+
+\medskip
+
+Materials have corresponding permittivity/dielectric tensors $\mathbf{\epsilon}$, perhaps we could use this as a target?
+
+\end{frame}
+
+\begin{frame}{New Targets cont.}
+
+Both of these tensors are available for certain materials in the materials project database
+
+\medskip
+
+Note that these tensors have many restrictions that often make them simpler
+
+\medskip\pause
+
+These tensors should also be equivariant under rotations of the input crystal structure.
+This would utilize equivariance in a natural way, as opposed to the invariant quantities usually used as targets
+
+\vspace{.8cm}\pause
+
+Concerns: data may be lacking, do people care about these quantities?
+\end{frame}
+
+\begin{frame}{New Models}
+SO(3) convolution/traditional equivariant networks tend to promise smaller parameter spaces for similar performance
+
+\medskip
+
+Crystal group's approach seems to increase the parameter space (likely due to a relaxation of total permutation invariance)
+
+\medskip
+
+Perhaps we could utlilize SO(3) convolution in an approach similar to the crystal group paper, in which we have different classes for different point groups, each with their own convolutional weights
+
+
+\end{frame}
+\end{document}

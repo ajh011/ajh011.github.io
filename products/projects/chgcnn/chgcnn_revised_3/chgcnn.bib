@@ -15,11 +15,110 @@ day={01},
 publisher={American Chemical Society},
 volume={60},
 number={3},
-pages={pp.1590-1603},
+pages={  1590-1603},
 issn={0020-1669},
 doi={10.1021/acs.inorgchem.0c02996},
 url={https://doi.org/10.1021/acs.inorgchem.0c02996}
 }
+
+@article{molgraphcoarse1,
+	title={FunQG: molecular representation learning via quotient graphs},
+	author={Hajiabolhassan, Hossein and Taheri, Zahra and Hojatnia, Ali and Yeganeh, Yavar Taheri},
+	journal={Journal of chemical information and modeling},
+	volume={63},
+	number={11},
+	pages={3275--3287},
+	year={2023},
+	publisher={ACS Publications}
+}
+
+@article{dirl1979,
+	title={Clebsch--Gordan coefficients: General theory},
+	author={Dirl, R},
+	journal={Journal of Mathematical Physics},
+	volume={20},
+	number={4},
+	pages={659--663},
+	year={1979},
+	publisher={American Institute of Physics}
+}
+
+@article{ace_completeness,
+	title = {Atomic cluster expansion: Completeness, efficiency and stability},
+	journal = {J. Comput, Phys.},
+	volume = {454},
+	pages = {110946},
+	year = {2022},
+	issn = {0021-9991},
+	doi = {https://doi.org/10.1016/j.jcp.2022.110946},
+	url = {https://www.sciencedirect.com/science/article/pii/S0021999122000080},
+	author = {Geneviève Dusson and Markus Bachmayr and Gábor Csányi and Ralf Drautz and Simon Etter and Cas {van der Oord} and Christoph Ortner},
+	keywords = {Spherical harmonics, Interatomic potentials, Polynomial approximation, Isometry and permutation invariance, Symmetric functions},
+	abstract = {The Atomic Cluster Expansion (Drautz (2019) [21]) provides a framework to systematically derive polynomial basis functions for approximating isometry and permutation invariant functions, particularly with an eye to modelling properties of atomistic systems. Our presentation extends the derivation by proposing a precomputation algorithm that yields immediate guarantees that a complete basis is obtained. We provide a fast recursive algorithm for efficient evaluation and illustrate its performance in numerical tests. Finally, we discuss generalisations and open challenges, particularly from a numerical stability perspective, around basis optimisation and parameter estimation, paving the way towards a comprehensive analysis of the convergence to a high-fidelity reference model.}
+}
+
+@Article{ace_appplication,
+	author={Lysogorskiy, Yury
+	and Oord, Cas van der
+	and Bochkarev, Anton
+	and Menon, Sarath
+	and Rinaldi, Matteo
+	and Hammerschmidt, Thomas
+	and Mrovec, Matous
+	and Thompson, Aidan
+	and Cs{\'a}nyi, G{\'a}bor
+	and Ortner, Christoph
+	and Drautz, Ralf},
+	title={Performant implementation of the atomic cluster expansion (PACE) and application to copper and silicon},
+	journal={npj Comput. Mater.},
+	year={2021},
+	month={Jun},
+	day={28},
+	volume={7},
+	number={1},
+	pages={97},
+	abstract={The atomic cluster expansion is a general polynomial expansion of the atomic energy in multi-atom basis functions. Here we implement the atomic cluster expansion in the performant C++ code PACE that is suitable for use in large-scale atomistic simulations. We briefly review the atomic cluster expansion and give detailed expressions for energies and forces as well as efficient algorithms for their evaluation. We demonstrate that the atomic cluster expansion as implemented in PACE shifts a previously established Pareto front for machine learning interatomic potentials toward faster and more accurate calculations. Moreover, general purpose parameterizations are presented for copper and silicon and evaluated in detail. We show that the Cu and Si potentials significantly improve on the best available potentials for highly accurate large-scale atomistic simulations.},
+	issn={2057-3960},
+	doi={10.1038/s41524-021-00559-9},
+	url={https://doi.org/10.1038/s41524-021-00559-9}
+}
+
+
+
+@article{ace,
+	title = {Atomic cluster expansion for accurate and transferable interatomic potentials},
+	author = {Drautz, Ralf},
+	journal = {Phys. Rev. B},
+	volume = {99},
+	issue = {1},
+	pages = {014104},
+	numpages = {15},
+	year = {2019},
+	month = {Jan},
+	publisher = {American Physical Society},
+	doi = {10.1103/PhysRevB.99.014104},
+	url = {https://link.aps.org/doi/10.1103/PhysRevB.99.014104}
+}
+
+
+@book{Mulas2022,
+	author={Mulas, Raffaella
+	and Horak, Danijela
+	and Jost, J{\"u}rgen},
+	editor={Battiston, Federico
+	and Petri, Giovanni},
+	title={Graphs, Simplicial Complexes and Hypergraphs: Spectral Theory and Topology},
+	bookTitle={Higher-Order Systems},
+	year={2022},
+	publisher={Springer International Publishing},
+	address={Cham},
+	pages={1-58},
+	abstract={In this chapter we discuss the spectral theory of discrete structures such as graphs, simplicial complexes and hypergraphs. We focus, in particular, on the corresponding Laplace operators. We present the theoretical foundations, but we also discuss the motivation to model and study real data with these tools.},
+	isbn={978-3-030-91374-8},
+	doi={10.1007/978-3-030-91374-8_1},
+	url={https://doi.org/10.1007/978-3-030-91374-8_1}
+}
+
 
 
 
@@ -37,7 +136,7 @@ month={09},
 day={15},
 volume={6},
 number={1},
-pages={pp. 138},
+pages={   138},
 abstract={We present a benchmark test suite and an automated machine learning procedure for evaluating supervised machine learning (ML) models for predicting properties of inorganic bulk materials. The test suite, Matbench, is a set of 13{\thinspace}ML tasks that range in size from 312 to 132k samples and contain data from 10 density functional theory-derived and experimental sources. Tasks include predicting optical, thermal, electronic, thermodynamic, tensile, and elastic properties given a material's composition and/or crystal structure. The reference algorithm, Automatminer, is a highly-extensible, fully automated ML pipeline for predicting materials properties from materials primitives (such as composition and crystal structure) without user intervention or hyperparameter tuning. We test Automatminer on the Matbench test suite and compare its predictive power with state-of-the-art crystal graph neural networks and a traditional descriptor-based Random Forest model. We find Automatminer achieves the best performance on 8 of 13 tasks in the benchmark. We also show our test suite is capable of exposing predictive advantages of each algorithm---namely, that crystal graph methods appear to outperform traditional machine learning methods given {\textasciitilde}104 or greater data points. We encourage evaluating materials ML algorithms on the Matbench benchmark and comparing them against the latest version of Automatminer.},
 issn={2057-3960},
 doi={10.1038/s41524-020-00406-3},
@@ -53,7 +152,7 @@ url={https://doi.org/10.1038/s41524-020-00406-3}
   journal={Digit. Discov.},
   volume={3},
   number={3},
-  pages={pp. 594--601},
+  pages={   594--601},
   year={2024},
   publisher={Royal Society of Chemistry}
 }
@@ -66,7 +165,7 @@ url={https://doi.org/10.1038/s41524-020-00406-3}
     journal = {APL Mater.},
     volume = {1},
     number = {1},
-    pages = {article 011002},
+    pages = {   011002},
     year = {2013},
     month = {07},
     abstract = "{Accelerating the discovery of advanced materials is essential for human welfare and sustainable, clean energy. In this paper, we introduce the Materials Project (www.materialsproject.org), a core program of the Materials Genome Initiative that uses high-throughput computing to uncover the properties of all known inorganic materials. This open dataset can be accessed through multiple channels for both interactive exploration and data mining. The Materials Project also seeks to create open-source platforms for developing robust, sophisticated materials analyses. Future efforts will enable users to perform ‘‘rapid-prototyping’’ of new materials in silico, and provide researchers with new avenues for cost-effective, data-driven materials design.}",
@@ -84,7 +183,7 @@ url={https://doi.org/10.1038/s41524-020-00406-3}
   journal={J. Phys. Condens. Matter},
   volume={31},
   number={32},
-  pages={article 325901},
+  pages={   325901},
   year={2019},
   publisher={IOP Publishing}
 }
@@ -94,12 +193,22 @@ title = {Generalized cluster description of multicomponent systems},
 journal = {Physica A Stat. Mech. Appl.},
 volume = {128},
 number = {1},
-pages = {pp. 334-350},
+pages = {   334-350},
 year = {1984},
 issn = {0378-4371},
 doi = {https://doi.org/10.1016/0378-4371(84)90096-7},
 url = {https://www.sciencedirect.com/science/article/pii/0378437184900967},
 author = {J.M. Sanchez and F. Ducastelle and D. Gratias}
+}
+
+@article{wu2016cluster,
+	title={Cluster expansion method and its application in computational materials science},
+	author={Wu, Qu and He, Bing and Song, Tao and Gao, Jian and Shi, Siqi},
+	journal={Comput. Mater. Sci.},
+	volume={125},
+	pages={243--254},
+	year={2016},
+	publisher={Elsevier}
 }
 
 @Article{cce_crys,
@@ -111,7 +220,7 @@ month={06},
 day={01},
 volume={7},
 number={6},
-pages={pp. 455-458},
+pages={   455-458},
 abstract={Cluster expansion has been a particularly successful computational method that has allowed the identification of the relationship between lattice configurations and scalar properties in crystals. A tensorial version of the method that will enable prediction of tensor-valued properties is now introduced. It is validated by predicting anisotropic properties relevant to semiconductor optoelectronic devices.},
 issn={1476-4660},
 doi={10.1038/nmat2200},
@@ -127,7 +236,7 @@ url={https://doi.org/10.1038/nmat2200}
   author={Jo, Jaehyeong and Baek, Jinheon and Lee, Seul and Kim, Dongki and Kang, Minki and Hwang, Sung Ju},
   journal={Adv. Neural Inf. Process. Syst.},
   volume={34},
-  pages={pp. 7534--7546},
+  pages={   7534--7546},
   year={2021}
 }
 
@@ -138,7 +247,7 @@ url={https://doi.org/10.1038/nmat2200}
  journal = {J. Chem. Phys.},
  volume = {148},
  number = {24},
- pages = {article 241722},
+ pages = {   241722},
  year = {2018},
  month = {03},
  abstract = {Deep learning has led to a paradigm shift in artificial intelligence, including web, text, and image search, speech recognition, as well as bioinformatics, with growing impact in chemical physics. Machine learning, in general, and deep learning, in particular, are ideally suitable for representing quantum-mechanical interactions, enabling us to model nonlinear potential-energy surfaces or enhancing the exploration of chemical compound space. Here we present the deep learning architecture SchNet that is specifically designed to model atomistic systems by making use of continuous-filter convolutional layers. We demonstrate the capabilities of SchNet by accurately predicting a range of properties across chemical space for molecules and materials, where our model learns chemically plausible embeddings of atom types across the periodic table. Finally, we employ SchNet to predict potential-energy surfaces and energy-conserving force fields for molecular dynamics simulations of small molecules and perform an exemplary study on the quantum-mechanical properties of C20-fullerene that would have been infeasible with regular ab initio molecular dynamics.},
@@ -159,7 +268,7 @@ url={https://doi.org/10.1038/nmat2200}
   journal={{PRL}},
   volume={120},
   number={14},
-  pages={article 145301},
+  pages={   145301},
   year={2018},
   publisher={APS}
 }
@@ -172,7 +281,7 @@ url={https://doi.org/10.1038/nmat2200}
   journal={Sci. Adv.},
   volume={7},
   number={17},
-  pages={article eabf1754},
+  pages={   eabf1754},
   year={2021},
   publisher={American Association for the Advancement of Science}
 }
@@ -192,11 +301,12 @@ journal={Neural Comput. Apl.},
 year={2024},
 month={Dec},
 day={12},
+volume={37},
 abstract={This study presents a new machine learning algorithm, named Chemical Environment Graph Neural Network (ChemGNN), designed to accelerate materials property prediction and advance new materials discovery. Graphitic carbon nitride (g-C3N4) and its doped variants have gained significant interest for their potential as optical materials. Accurate prediction of their band gaps is crucial for practical applications; however, traditional quantum simulation methods are computationally expensive and challenging to explore the vast space of possible doped molecular structures. The proposed ChemGNN leverages the learning ability of current graph neural networks (GNNs) to satisfactorily capture the characteristics of atoms' chemical environment underlying complex molecular structures. Our experimental results demonstrate more than 100{\%} improvement in band gap prediction accuracy over existing GNNs on g-C3N4. Furthermore, the general ChemGNN model can precisely foresee band gaps of various doped g-C3N4 structures, making it a valuable tool for performing high-throughput prediction in materials design and development.},
 issn={1433-3058},
 doi={10.1007/s00521-024-10775-1},
 url={https://doi.org/10.1007/s00521-024-10775-1},
-pages = {pp. 1-15}
+pages = {   3287–3301}
 }
 
 
@@ -207,10 +317,30 @@ TITLE={Assessing Local Structure Motifs Using Order Parameters for Motif Recogni
 JOURNAL={Front. Mater.},      
 VOLUME={4},           
 YEAR={2017},    
-Pages={article 34},    
+Pages={   34},    
 URL={https://www.frontiersin.org/articles/10.3389/fmats.2017.00034},       
 DOI={10.3389/fmats.2017.00034},      
 ISSN={2296-8016}}
+
+@article{simplicial_networks,
+	title={Simplicial networks: A powerful tool for characterizing higher-order interactions},
+	author={Shi, Dinghua and Chen, Guanrong},
+	journal={Natl. Sci. Rev.},
+	volume={9},
+	number={5},
+	pages={nwac038},
+	year={2022},
+	publisher={Oxford University Press}
+}
+
+@inproceedings{equivariant_simplices,
+	title={E $(n) $ Equivariant Message Passing Simplicial Networks},
+	author={Eijkelboom, Floor and Hesselink, Rob and Bekkers, Erik J},
+	booktitle={International Conference on Machine Learning},
+	pages={9071--9081},
+	year={2023},
+	organization={PMLR}
+}
 
 @article{orderparam2,
   title={Local structure order parameters and site fingerprints for quantification of coordination environment and crystal structure similarity},
@@ -218,7 +348,7 @@ ISSN={2296-8016}}
   journal={RSC Adv.},
   volume={10},
   number={10},
-  pages={pp.  6063--6081},
+  pages={    6063--6081},
   year={2020},
   publisher={Royal Society of Chemistry}
 }
@@ -228,7 +358,7 @@ ISSN={2296-8016}}
   author={Santiso, Erik E and Trout, Bernhardt L},
   journal={J. Chem. Phys.},
   volume={134},
-  pages={article 6},
+  pages={   6},
   year={2011},
   publisher={AIP Publishing}
 }
@@ -240,7 +370,7 @@ ISSN={2296-8016}}
   journal={Inorg. Chem.},
   volume={37},
   number={21},
-  pages={pp.  5575--5582},
+  pages={    5575--5582},
   year={1998},
   publisher={ACS Publications}
 }
@@ -251,11 +381,21 @@ ISSN={2296-8016}}
   journal={Acta Crystallogr. B},
   volume={76},
   number={4},
-  pages={pp.  683--695},
+  pages={    683--695},
   year={2020},
   publisher={International Union of Crystallography}
 }
 
+@article{nequip,
+	title={E (3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials},
+	author={Batzner, Simon and Musaelian, Albert and Sun, Lixin and Geiger, Mario and Mailoa, Jonathan P and Kornbluth, Mordechai and Molinari, Nicola and Smidt, Tess E and Kozinsky, Boris},
+	journal={Nature communications},
+	volume={13},
+	number={1},
+	pages={2453},
+	year={2022},
+	publisher={Nature Publishing Group UK London}
+}
 
 %%M3GNet
 @article{m3gnet,
@@ -264,7 +404,7 @@ ISSN={2296-8016}}
   journal={Nat. Comput. Sci.},
   volume={2},
   number={11},
-  pages={pp.  718--728},
+  pages={    718--728},
   year={2022},
   publisher={Nature Publishing Group US New York}
 }
@@ -276,20 +416,19 @@ ISSN={2296-8016}}
   journal={{npj} Comput. Mater.},
   volume={7},
   number={1},
-  pages={pp.  1--8},
+  pages={    1--8},
   year={2021},
   publisher={Nature Publishing Group}
 }
 
 %%MPNN-Gilmore
-@inproceedings{mpnn,
+@article{mpnn,
   title={Neural message passing for quantum chemistry},
   author={Gilmer, Justin and Schoenholz, Samuel S and Riley, Patrick F and Vinyals, Oriol and Dahl, George E},
-  booktitle={34th Int. Conf. Mach. Learn.},
+  journal={34th Int. Conf. Mach. Learn.},
   pages={1263-1272},
   volume = {70},
   year={2017},
-  organization={PMLR}
 }
 
 %%%Hypergraph convolution 
@@ -298,7 +437,7 @@ ISSN={2296-8016}}
   author={Bai, Song and Zhang, Feihu and Torr, Philip HS},
   journal={Pattern Recogn.},
   volume={110},
-  pages={article 107637},
+  pages={   107637},
   year={2021},
   publisher={Elsevier}
 }
@@ -311,7 +450,7 @@ ISSN={2296-8016}}
   journal={Chem. Mater.},
   volume={31},
   number={9},
-  pages={pp. 3564--3572},
+  pages={   3564--3572},
   year={2019},
   publisher={ACS Publications}
 }
@@ -327,7 +466,7 @@ day={01},
 publisher={American Chemical Society},
 volume={51},
 number={4},
-pages={pp. 1010-1026},
+pages={   1010-1026},
 issn={0002-7863},
 doi={10.1021/ja01379a006},
 url={https://doi.org/10.1021/ja01379a006}
@@ -342,7 +481,7 @@ url={https://doi.org/10.1021/ja01379a006}
   journal={Acta Crystallogr. A},
   volume={46},
   number={1},
-  pages={pp. 1--11},
+  pages={   1--11},
   year={1990},
   publisher={International Union of Crystallography}
 }
@@ -359,7 +498,7 @@ month={09},
 day={13},
 volume={10},
 number={1},
-pages={article 215},
+pages={   215},
 abstract={Crystalline materials have atomic-scale fluctuations in their chemical composition that modulate various mesoscale properties. Establishing chemistry--microstructure relationships in such materials requires proper characterization of these chemical fluctuations. Yet, current characterization approaches (e.g., Warren--Cowley parameters) make only partial use of the complete chemical and structural information contained in local chemical motifs. Here we introduce a framework based on E(3)-equivariant graph neural networks that is capable of completely identifying chemical motifs in arbitrary crystalline structures with any number of chemical elements. This approach naturally leads to a proper information-theoretic measure for quantifying chemical short-range order (SRO) in chemically complex materials and a reduced representation of the chemical motif space. Our framework enables the correlation of any per-atom property with their corresponding local chemical motif, thereby enabling the exploration of structure--property relationships in chemically complex materials. Using the MoTaNbTi high-entropy alloy as a test system, we demonstrate the versatility of this approach by evaluating the lattice strain associated with each chemical motif, and computing the temperature dependence of chemical-fluctuations length scale.},
 issn={2057-3960},
 doi={10.1038/s41524-024-01393-5},
@@ -370,14 +509,14 @@ url={https://doi.org/10.1038/s41524-024-01393-5}
 @article{e3nn,
   title={e3nn: Euclidean neural networks},
   author={Geiger, Mario and Smidt, Tess},
-  journal={arXiv preprint arXiv:2207.09453},
+  journal={  arXiv:2207.09453},
   year={2022}
 }
 
 @article{tfn,
       title={Tensor field networks: Rotation- and translation-equivariant neural networks for 3D point clouds}, 
       author={Nathaniel Thomas and Tess Smidt and Steven Kearnes and Lusann Yang and Li Li and Kai Kohlhoff and Patrick Riley},
-	  journal={arXiv preprint arXiv:1802.08219},
+	  journal={  arXiv:1802.08219},
       year={2018},
       eprint={1802.08219},
       archivePrefix={arXiv},
@@ -389,7 +528,7 @@ url={https://doi.org/10.1038/s41524-024-01393-5}
       title={Complete and Efficient Graph Transformers for Crystal Material Property Prediction}, 
       author={Keqiang Yan and Cong Fu and Xiaofeng Qian and Xiaoning Qian and Shuiwang Ji},
       year={2024},
-      journal={arXiv preprint arXiv:2403.11857},
+      journal={  arXiv:2403.11857},
       eprint={2403.11857},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
@@ -403,7 +542,7 @@ url={https://doi.org/10.1038/s41524-024-01393-5}
   journal={Chem. Mater.},
   volume={29},
   number={19},
-  pages={pp. 8346--8360},
+  pages={   8346--8360},
   year={2017},
   publisher={ACS Publications}
 }
@@ -415,7 +554,7 @@ url={https://doi.org/10.1038/s41524-024-01393-5}
   journal = {Phys. Rev. B},
   volume = {79},
   issue = {4},
-  pages = {article 045402},
+  pages = {   045402},
   numpages = {5},
   year = {2009},
   month = {01},
@@ -430,7 +569,7 @@ url={https://doi.org/10.1038/s41524-024-01393-5}
   journal={J. Chem. Ed.},
   volume={73},
   number={10},
-  pages={article  993},
+  pages={    993},
   year={1996},
   publisher={ACS Publications}
 }
@@ -441,7 +580,7 @@ url={https://doi.org/10.1038/s41524-024-01393-5}
   journal={Nation. Sci. Rev.},
   volume={9},
   number={7},
-  pages={article  nwac017},
+  pages={    nwac017},
   year={2022},
   publisher={Oxford University Press}
 }
@@ -452,7 +591,7 @@ url={https://doi.org/10.1038/s41524-024-01393-5}
 linegraph_general,
 title={Supervised community detection with line graph neural networks},
 author={Chen, Zhengdao and Li, Xiang and Bruna, Joan},
-journal={arXiv preprint arXiv:1705.08415},
+journal={  arXiv:1705.08415},
 year={2017}
 }
 
@@ -463,7 +602,7 @@ year={2017}
   journal={{npj} Comput. Mater.},
   volume={2},
   number={1},
-  pages={pp.  1--7},
+  pages={    1--7},
   year={2016},
   publisher={Nature Publishing Group}
 }
@@ -474,7 +613,7 @@ year={2017}
   journal={InfoMat},
   volume={1},
   number={3},
-  pages={pp.  338--358},
+  pages={    338--358},
   year={2019},
   publisher={Wiley Online Library}
 }
@@ -494,7 +633,7 @@ year={2017}
 title = {Machine learning in materials genome initiative: A review},
 journal = {J. Mater. Sci.  Tech.},
 volume = {57},
-pages = {pp. 113-122},
+pages = {   113-122},
 year = {2020},
 issn = {1005-0302},
 doi = {https://doi.org/10.1016/j.jmst.2020.01.067},
@@ -510,7 +649,7 @@ abstract = {Discovering new materials with excellent performance is a hot issue 
   journal={EcoMat},
   volume={4},
   number={4},
-  pages={article   e12194},
+  pages={     e12194},
   year={2022},
   publisher={Wiley Online Library}
 }
@@ -521,7 +660,7 @@ abstract = {Discovering new materials with excellent performance is a hot issue 
   journal={Commun. Mater.},
   volume={3},
   number={1},
-  pages={article   93},
+  pages={     93},
   year={2022},
   publisher={Nature Publishing Group UK London}
 }
@@ -532,7 +671,7 @@ abstract = {Discovering new materials with excellent performance is a hot issue 
   journal={Annu. Rev. Chem. Biomol. Eng.},
   volume={13},
   number={2022},
-  pages={pp.   235--254},
+  pages={     235--254},
   year={2022},
   publisher={Annual Reviews}
 }
@@ -541,7 +680,7 @@ abstract = {Discovering new materials with excellent performance is a hot issue 
 title = {Scope of machine learning in materials research—A review},
 journal = {Appl. Surf. Sci. Adv.},
 volume = {18},
-pages = {article 100523},
+pages = {   100523},
 year = {2023},
 issn = {2666-5239},
 doi = {https://doi.org/10.1016/j.apsadv.2023.100523},
@@ -558,7 +697,7 @@ keywords = {Machine learning, Materials research, Machine learning methods, Mate
 @article{contrastivelearn_motif,
   title={Motif-driven contrastive learning of graph representations},
   author={Zhang, Shichang and Hu, Ziniu and Subramonian, Arjun and Sun, Yizhou},
-  journal={arXiv preprint arXiv:2012.12533},
+  journal={  arXiv:2012.12533},
   year={2020}
 }
 
@@ -569,7 +708,7 @@ keywords = {Machine learning, Materials research, Machine learning methods, Mate
   journal={Microsc. Microanal.},
   volume={28},
   number={S1},
-  pages={pp.   3002--3003},
+  pages={     3002--3003},
   year={2022},
   publisher={Cambridge University Press}
 }
@@ -582,7 +721,7 @@ keywords = {Machine learning, Materials research, Machine learning methods, Mate
   journal={Commun. Mater.},
   volume={2},
   number={1},
-  pages={article   92},
+  pages={     92},
   year={2021},
   publisher={Nature Publishing Group UK London}
 }
@@ -593,7 +732,7 @@ keywords = {Machine learning, Materials research, Machine learning methods, Mate
   journal={Phys. Rev. Mater.},
   volume={4},
   number={6},
-  pages={article   063801},
+  pages={     063801},
   year={2020},
   publisher={APS}
 }
@@ -608,7 +747,7 @@ keywords = {Machine learning, Materials research, Machine learning methods, Mate
   journal={New J. Phys.},
   volume={15},
   number={9},
-  pages={article   095003},
+  pages={     095003},
   year={2013},
   publisher={IOP Publishing}
 }
@@ -620,7 +759,7 @@ keywords = {Machine learning, Materials research, Machine learning methods, Mate
   journal={J. Phys. Chem. A},
   volume={124},
   number={47},
-  pages={pp.   9854--9866},
+  pages={     9854--9866},
   year={2020},
   publisher={ACS Publications}
 }
@@ -640,7 +779,7 @@ keywords = {Machine learning, Materials research, Machine learning methods, Mate
   author={Collins, Christopher R and Gordon, Geoffrey J and Von Lilienfeld, O Anatole and Yaron, David J},
   journal={J. Chem. Phys.},
   volume={148},
-  pages={article 24},
+  pages={   24},
   year={2018},
   publisher={AIP Publishing}
 }
@@ -651,7 +790,7 @@ keywords = {Machine learning, Materials research, Machine learning methods, Mate
   journal={Nat. Rev. Chem.},
   volume={6},
   number={9},
-  pages={pp.   653--672},
+  pages={     653--672},
   year={2022},
   publisher={Nature Publishing Group UK London}
 }

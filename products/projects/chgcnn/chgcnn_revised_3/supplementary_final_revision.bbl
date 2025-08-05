@@ -1,0 +1,442 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global/global}
+  \entry{orderparam1}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=ZNER}{%
+         family={Zimmermann},
+         familyi={Z\bibinitperiod},
+         given={Nils E.\bibnamedelima R.},
+         giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+      }}%
+      {{hash=HMK}{%
+         family={Horton},
+         familyi={H\bibinitperiod},
+         given={Matthew\bibnamedelima K.},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=JA}{%
+         family={Jain},
+         familyi={J\bibinitperiod},
+         given={Anubhav},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Haranczyk},
+         familyi={H\bibinitperiod},
+         given={Maciej},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZNER+1}
+    \strng{fullhash}{ZNERHMKJAHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.3389/fmats.2017.00034
+    \endverb
+    \field{issn}{2296-8016}
+    \field{pages}{34}
+    \field{title}{Assessing Local Structure Motifs Using Order Parameters for
+  Motif Recognition, Interstitial Identification, and Diffusion Path
+  Characterization}
+    \verb{url}
+    \verb https://www.frontiersin.org/articles/10.3389/fmats.2017.00034
+    \endverb
+    \field{volume}{4}
+    \field{journaltitle}{Front. Mater.}
+    \field{year}{2017}
+  \endentry
+
+  \entry{orderparam2}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=ZNE}{%
+         family={Zimmermann},
+         familyi={Z\bibinitperiod},
+         given={Nils\bibnamedelima ER},
+         giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=JA}{%
+         family={Jain},
+         familyi={J\bibinitperiod},
+         given={Anubhav},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Royal Society of Chemistry}%
+    }
+    \strng{namehash}{ZNEJA1}
+    \strng{fullhash}{ZNEJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{10}
+    \field{pages}{6063\bibrangedash 6081}
+    \field{title}{Local structure order parameters and site fingerprints for
+  quantification of coordination environment and crystal structure similarity}
+    \field{volume}{10}
+    \field{journaltitle}{RSC Adv.}
+    \field{year}{2020}
+  \endentry
+
+  \entry{chemgnn}{article}{}{}
+    \name{author}{8}{}{%
+      {{hash=CC}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Chen},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=XE}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Enze},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=YD}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Defu},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=YC}{%
+         family={Yan},
+         familyi={Y\bibinitperiod},
+         given={Chenggang},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Wei},
+         familyi={W\bibinitperiod},
+         given={Tao},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CH}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Hanning},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={Wei},
+         familyi={W\bibinitperiod},
+         given={Yong},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Minghan},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CC+1}
+    \strng{fullhash}{CCXEYDYCWTCHWYCM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This study presents a new machine learning algorithm, named Chemical
+  Environment Graph Neural Network (ChemGNN), designed to accelerate materials
+  property prediction and advance new materials discovery. Graphitic carbon
+  nitride (g-C3N4) and its doped variants have gained significant interest for
+  their potential as optical materials. Accurate prediction of their band gaps
+  is crucial for practical applications; however, traditional quantum
+  simulation methods are computationally expensive and challenging to explore
+  the vast space of possible doped molecular structures. The proposed ChemGNN
+  leverages the learning ability of current graph neural networks (GNNs) to
+  satisfactorily capture the characteristics of atoms' chemical environment
+  underlying complex molecular structures. Our experimental results demonstrate
+  more than 100{\%} improvement in band gap prediction accuracy over existing
+  GNNs on g-C3N4. Furthermore, the general ChemGNN model can precisely foresee
+  band gaps of various doped g-C3N4 structures, making it a valuable tool for
+  performing high-throughput prediction in materials design and development.%
+    }
+    \verb{doi}
+    \verb 10.1007/s00521-024-10775-1
+    \endverb
+    \field{issn}{1433-3058}
+    \field{pages}{3287–3301}
+    \field{title}{Chemical environment adaptive learning for optical band gap
+  prediction of doped graphitic carbon nitride nanosheets}
+    \verb{url}
+    \verb https://doi.org/10.1007/s00521-024-10775-1
+    \endverb
+    \field{volume}{37}
+    \field{journaltitle}{Neural Comput. Apl.}
+    \field{year}{2024}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{alignn}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=CK}{%
+         family={Choudhary},
+         familyi={C\bibinitperiod},
+         given={Kamal},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=DB}{%
+         family={DeCost},
+         familyi={D\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{CKDB1}
+    \strng{fullhash}{CKDB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 8}
+    \field{title}{Atomistic Line Graph Neural Network for improved materials
+  property predictions}
+    \field{volume}{7}
+    \field{journaltitle}{{npj} Comput. Mater.}
+    \field{year}{2021}
+  \endentry
+
+  \entry{m3gnet}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=CC}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Chi},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=OSP}{%
+         family={Ong},
+         familyi={O\bibinitperiod},
+         given={Shyue\bibnamedelima Ping},
+         giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group US New York}%
+    }
+    \strng{namehash}{CCOSP1}
+    \strng{fullhash}{CCOSP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{11}
+    \field{pages}{718\bibrangedash 728}
+    \field{title}{A universal graph deep learning interatomic potential for the
+  periodic table}
+    \field{volume}{2}
+    \field{journaltitle}{Nat. Comput. Sci.}
+    \field{year}{2022}
+  \endentry
+
+  \entry{hypergraphconv}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=BS}{%
+         family={Bai},
+         familyi={B\bibinitperiod},
+         given={Song},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ZF}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Feihu},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=TPH}{%
+         family={Torr},
+         familyi={T\bibinitperiod},
+         given={Philip\bibnamedelima HS},
+         giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BS+1}
+    \strng{fullhash}{BSZFTPH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{107637}
+    \field{title}{Hypergraph convolution and hypergraph attention}
+    \field{volume}{110}
+    \field{journaltitle}{Pattern Recogn.}
+    \field{year}{2021}
+  \endentry
+
+  \entry{csm_polyhedra}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=PM}{%
+         family={Pinsky},
+         familyi={P\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Avnir},
+         familyi={A\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACS Publications}%
+    }
+    \strng{namehash}{PMAD1}
+    \strng{fullhash}{PMAD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{21}
+    \field{pages}{5575\bibrangedash 5582}
+    \field{title}{Continuous symmetry measures. 5. The classical polyhedra}
+    \field{volume}{37}
+    \field{journaltitle}{Inorg. Chem.}
+    \field{year}{1998}
+  \endentry
+
+  \entry{coord_polyhedra}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=LdFJ}{%
+         prefix={Lima-de},
+         prefixi={L\bibinithyphendelim d\bibinitperiod},
+         family={Faria},
+         familyi={F\bibinitperiod},
+         given={J},
+         giveni={J},
+      }}%
+      {{hash=HE}{%
+         family={Hellner},
+         familyi={H\bibinitperiod},
+         given={E},
+         giveni={E},
+      }}%
+      {{hash=LF}{%
+         family={Liebau},
+         familyi={L\bibinitperiod},
+         given={F},
+         giveni={F},
+      }}%
+      {{hash=ME}{%
+         family={Makovicky},
+         familyi={M\bibinitperiod},
+         given={E},
+         giveni={E},
+      }}%
+      {{hash=PE}{%
+         family={Parth{\'e}},
+         familyi={P\bibinitperiod},
+         given={E},
+         giveni={E},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {International Union of Crystallography}%
+    }
+    \strng{namehash}{FJLd+1}
+    \strng{fullhash}{FJLdHELFMEPE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 11}
+    \field{title}{Nomenclature of inorganic structure types. Report of the
+  international union of crystallography commission on crystallographic
+  nomenclature subcommittee on the nomenclature of inorganic structure types}
+    \field{volume}{46}
+    \field{journaltitle}{Acta Crystallogr. A}
+    \field{year}{1990}
+  \endentry
+
+  \entry{matbench}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=DA}{%
+         family={Dunn},
+         familyi={D\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WQ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Qi},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Ganose},
+         familyi={G\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DD}{%
+         family={Dopp},
+         familyi={D\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JA}{%
+         family={Jain},
+         familyi={J\bibinitperiod},
+         given={Anubhav},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DA+1}
+    \strng{fullhash}{DAWQGADDJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We present a benchmark test suite and an automated machine learning
+  procedure for evaluating supervised machine learning (ML) models for
+  predicting properties of inorganic bulk materials. The test suite, Matbench,
+  is a set of 13{\thinspace}ML tasks that range in size from 312 to 132k
+  samples and contain data from 10 density functional theory-derived and
+  experimental sources. Tasks include predicting optical, thermal, electronic,
+  thermodynamic, tensile, and elastic properties given a material's composition
+  and/or crystal structure. The reference algorithm, Automatminer, is a
+  highly-extensible, fully automated ML pipeline for predicting materials
+  properties from materials primitives (such as composition and crystal
+  structure) without user intervention or hyperparameter tuning. We test
+  Automatminer on the Matbench test suite and compare its predictive power with
+  state-of-the-art crystal graph neural networks and a traditional
+  descriptor-based Random Forest model. We find Automatminer achieves the best
+  performance on 8 of 13 tasks in the benchmark. We also show our test suite is
+  capable of exposing predictive advantages of each algorithm---namely, that
+  crystal graph methods appear to outperform traditional machine learning
+  methods given {\textasciitilde}104 or greater data points. We encourage
+  evaluating materials ML algorithms on the Matbench benchmark and comparing
+  them against the latest version of Automatminer.%
+    }
+    \verb{doi}
+    \verb 10.1038/s41524-020-00406-3
+    \endverb
+    \field{issn}{2057-3960}
+    \field{number}{1}
+    \field{pages}{138}
+    \field{title}{Benchmarking materials property prediction methods: the
+  Matbench test set and Automatminer reference algorithm}
+    \verb{url}
+    \verb https://doi.org/10.1038/s41524-020-00406-3
+    \endverb
+    \field{volume}{6}
+    \field{journaltitle}{{npj} Comput. Mater.}
+    \field{month}{09}
+    \field{year}{2020}
+  \endentry
+\enddatalist
+\endinput

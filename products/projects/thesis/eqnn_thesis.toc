@@ -1,16 +1,33 @@
-\contentsline {chapter}{\numberline {1}Introduction: Machine Learning Applied to Materials Science}{2}{}%
-\contentsline {chapter}{\numberline {2}Background: Groups}{3}{}%
-\contentsline {section}{\numberline {2.1}Hamiltonian Group}{3}{}%
-\contentsline {section}{\numberline {2.2}Representations of Groups}{3}{}%
-\contentsline {subsection}{\numberline {2.2.1}Irreducible Representations}{4}{}%
-\contentsline {subsection}{\numberline {2.2.2}Characters}{4}{}%
-\contentsline {section}{\numberline {2.3}Basis Functions}{5}{}%
-\contentsline {subsection}{\numberline {2.3.1}SO(3) Basis Functions}{5}{}%
-\contentsline {subsection}{\numberline {2.3.2}Irreducible Representations of Permutation Groups}{5}{}%
-\contentsline {subsubsection}{Young Diagrams}{5}{}%
-\contentsline {subsubsection}{Schur-Weyl Duality}{7}{}%
-\contentsline {section}{\numberline {2.4}Coupling and Clebsch-Gordan Coefficients}{8}{}%
-\contentsline {chapter}{\numberline {3}Equivariant Graph Neural Networks}{9}{}%
-\contentsline {section}{\numberline {3.1}Graph Neural Networks}{9}{}%
-\contentsline {subsection}{\numberline {3.1.1}Equivariance}{9}{}%
-\contentsline {chapter}{\numberline {4}Crystal Group Equivariant Networks}{10}{}%
+\contentsline {chapter}{\numberline {1}Introduction: Machine Learning Applied to Materials Science}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Graph Neural Networks}{2}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Mathematical Background: Vector Spaces, Groups, and Hamiltonians}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Preliminaries}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Hamiltonian Group}{3}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Example: $D_2$ Oscillator Hamiltonian}{4}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Example: Tight-Binding Hamiltonian}{4}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Representations of Groups}{4}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Irreducible Representations}{4}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Physically Irreducible Representations}{4}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Characters}{5}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Schur-Weyl Indicator}{5}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}Basis Functions}{5}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}SO(3) Basis Functions \& Wigner $\mathcal {D}$ Matrices}{5}{subsection.2.4.1}%
+\contentsline {subsubsection}{Explicit Form of Wigner-$\mathcal {D}$ Matrices}{5}{section*.2}%
+\contentsline {subsection}{\numberline {2.4.2}Irreducible Representations of Permutation Groups}{6}{subsection.2.4.2}%
+\contentsline {subsubsection}{Young Diagrams}{6}{section*.3}%
+\contentsline {subsubsection}{Schur-Weyl Duality}{7}{section*.4}%
+\contentsline {subsection}{\numberline {2.4.3}Irreducible Representations of $\mathbb {R}^3$ Point Groups}{8}{subsection.2.4.3}%
+\contentsline {subsubsection}{Crystallographic Restrictions}{8}{section*.5}%
+\contentsline {subsection}{\numberline {2.4.4}Irreducible Representations of Translational Groups}{8}{subsection.2.4.4}%
+\contentsline {subsubsection}{Empty Space \& Plane Waves}{8}{section*.6}%
+\contentsline {subsubsection}{Bravais Lattices \& Bloch Functions}{8}{section*.7}%
+\contentsline {section}{\numberline {2.5}Projection Operators}{9}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Subgroup Chains}{9}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Products of Irreducible Subspaces}{9}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}$SO(3)$: Clebsch-Gordan Coefficients}{10}{subsection.2.7.1}%
+\contentsline {subsubsection}{Wigner n-$j$ Symbols}{10}{section*.8}%
+\contentsline {subsection}{\numberline {2.7.2}Point Group Coupling Coefficients}{11}{subsection.2.7.2}%
+\contentsline {chapter}{\numberline {3}Equivariant Graph Neural Networks}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Equivariance}{12}{section.3.1}%
+\contentsline {section}{\numberline {3.2}$SO(3)$ Equivariant Layers}{12}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Crystal Group Equivariant Networks}{14}{chapter.4}%

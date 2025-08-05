@@ -1,0 +1,118 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global/global}
+  \entry{tacovariant}{misc}{}{}
+    \name{author}{2}{}{%
+      {{hash=CTS}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Taco\bibnamedelima S.},
+         giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Welling},
+         familyi={W\bibinitperiod},
+         given={Max},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CTSWM1}
+    \strng{fullhash}{CTSWM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{eprint}
+    \verb 1602.07576
+    \endverb
+    \field{title}{Group Equivariant Convolutional Networks}
+    \verb{url}
+    \verb https://arxiv.org/abs/1602.07576
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.LG}
+    \field{year}{2016}
+  \endentry
+
+  \entry{tfn}{article}{}{}
+    \name{author}{7}{}{%
+      {{hash=TN}{%
+         family={Thomas},
+         familyi={T\bibinitperiod},
+         given={Nathaniel},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Smidt},
+         familyi={S\bibinitperiod},
+         given={Tess},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kearnes},
+         familyi={K\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=YL}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Lusann},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kohlhoff},
+         familyi={K\bibinitperiod},
+         given={Kai},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=RP}{%
+         family={Riley},
+         familyi={R\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TN+1}
+    \strng{fullhash}{TNSTKSYLLLKKRP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{eprint}
+    \verb 1802.08219
+    \endverb
+    \field{title}{Tensor field networks: Rotation- and translation-equivariant
+  neural networks for 3D point clouds}
+    \verb{url}
+    \verb https://arxiv.org/abs/1802.08219
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1802.08219}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.LG}
+    \field{year}{2018}
+  \endentry
+\enddatalist
+\endinput

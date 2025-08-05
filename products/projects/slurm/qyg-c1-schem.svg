@@ -38,9 +38,9 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="403.84398"
-     inkscape:cx="558.60584"
-     inkscape:zoom="1"
+     inkscape:cy="209.53085"
+     inkscape:cx="466.46064"
+     inkscape:zoom="1.3547046"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -64,7 +64,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -73,6 +73,11 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
+    <path
+       style="opacity:1;fill:none;stroke:#000000;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 115.07918,109.49414 -0.25405,6.55898 -65.564422,1.13314 v 11.78191"
+       id="path964-2"
+       sodipodi:nodetypes="cccc" />
     <rect
        y="89.188072"
        x="87.611313"
@@ -186,24 +191,24 @@
        x="207.66302"
        y="127.89651" />
     <path
-       sodipodi:nodetypes="cccc"
+       sodipodi:nodetypes="cc"
        id="path964"
-       d="m 105.41092,109.2333 v 8.44547 H 10.289877 v 11.07584"
-       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       d="m 10.289877,117.67877 v 11.07584"
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.39936102" />
     <rect
        y="126.10201"
        x="-6.182116"
        height="33.122814"
        width="32.569805"
        id="rect908-8-4"
-       style="opacity:0.565495;fill:#000000;fill-opacity:0.0961538;stroke:#241c1c;stroke-width:0.29351" />
+       style="opacity:0.39936102;fill:#000000;fill-opacity:0.0961538;stroke:#241c1c;stroke-width:0.29351" />
     <rect
        y="129.03145"
        x="6.8289299"
        height="5.8799295"
        width="6.9490075"
        id="rect835-2-5-0-6"
-       style="opacity:1;fill:#000000;fill-opacity:0.380769;stroke:#241c1c;stroke-width:0.4" />
+       style="opacity:0.39936102;fill:#000000;fill-opacity:0.380769;stroke:#241c1c;stroke-width:0.4" />
     <text
        id="text986"
        y="22.878002"
@@ -247,7 +252,7 @@
          y="39.692142"
          x="158.70438"
          id="tspan1024"
-         sodipodi:role="line">129.10.15.151</tspan></text>
+         sodipodi:role="line">129.10.15.189</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
@@ -305,25 +310,185 @@
          style="stroke-width:0.334095">129.10.1.2</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;opacity:0.693291;stroke-width:0.264583"
-       x="5.0252008"
-       y="145.8094"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;opacity:0.399361;stroke-width:0.264583"
+       x="0.54608756"
+       y="145.43523"
        id="text986-4-8-5"><tspan
          sodipodi:role="line"
          id="tspan984-83-3-4"
-         x="5.0252008"
-         y="145.8094"
-         style="font-size:4.23333px;stroke-width:0.264583">WS2</tspan></text>
+         x="0.54608756"
+         y="145.43523"
+         style="font-size:4.23333px;stroke-width:0.264583">DFTWS1</tspan></text>
     <text
        id="text1048-9-1"
        y="152.5453"
-       x="0.046135966"
-       style="font-size:3.56367px;line-height:1.25;font-family:sans-serif;stroke-width:0.334095"
+       x="-3.128864"
+       style="font-size:3.56367px;line-height:1.25;font-family:sans-serif;opacity:0.399361;stroke-width:0.334095"
        xml:space="preserve"><tspan
          style="stroke-width:0.334095"
          y="152.5453"
-         x="0.046135966"
+         x="-3.128864"
          id="tspan1046-0-9"
-         sodipodi:role="line">129.10.0.1</tspan></text>
+         sodipodi:role="line">129.10.2.X</tspan></text>
+    <rect
+       style="opacity:0.39936102;fill:#000000;fill-opacity:0.0961538;stroke:#241c1c;stroke-width:0.29351"
+       id="rect908-8-4-6"
+       width="32.569805"
+       height="33.122814"
+       x="32.975807"
+       y="126.0761" />
+    <rect
+       style="opacity:0.39936102;fill:#000000;fill-opacity:0.380769;stroke:#241c1c;stroke-width:0.4"
+       id="rect835-2-5-0-6-2"
+       width="6.9490075"
+       height="5.8799295"
+       x="45.986858"
+       y="129.00552" />
+    <text
+       id="text986-4-8-5-9"
+       y="145.78348"
+       x="40.478966"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;opacity:0.399361;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-size:4.23333px;stroke-width:0.264583"
+         y="145.78348"
+         x="40.478966"
+         id="tspan984-83-3-4-3"
+         sodipodi:role="line">DFTWS2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.56367px;line-height:1.25;font-family:sans-serif;opacity:0.399361;stroke-width:0.334095"
+       x="36.029064"
+       y="152.51938"
+       id="text1048-9-1-4"><tspan
+         sodipodi:role="line"
+         id="tspan1046-0-9-7"
+         x="36.029064"
+         y="152.51938"
+         style="stroke-width:0.334095">129.10.2.2</tspan></text>
+    <rect
+       y="125.81149"
+       x="72.398735"
+       height="33.122814"
+       width="32.569805"
+       id="rect908-8-4-6-7"
+       style="opacity:0.565495;fill:#000000;fill-opacity:0.0961538;stroke:#241c1c;stroke-width:0.29351" />
+    <rect
+       y="128.74091"
+       x="85.40979"
+       height="5.8799295"
+       width="6.9490075"
+       id="rect835-2-5-0-6-2-9"
+       style="opacity:1;fill:#000000;fill-opacity:0.380769;stroke:#241c1c;stroke-width:0.4" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;opacity:0.693291;stroke-width:0.264583"
+       x="79.901894"
+       y="145.51881"
+       id="text986-4-8-5-9-0"><tspan
+         sodipodi:role="line"
+         id="tspan984-83-3-4-3-4"
+         x="79.901894"
+         y="145.51881"
+         style="font-size:4.23333px;stroke-width:0.264583">DFTWS3</tspan></text>
+    <text
+       id="text1048-9-1-4-3"
+       y="152.25471"
+       x="78.626991"
+       style="font-size:3.56367px;line-height:1.25;font-family:sans-serif;stroke-width:0.334095"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.334095"
+         y="152.25471"
+         x="78.626991"
+         id="tspan1046-0-9-7-5"
+         sodipodi:role="line">129.10.2.3</tspan></text>
+    <rect
+       style="opacity:0.49201278;fill:#000000;fill-opacity:0.0961538;stroke:#241c1c;stroke-width:0.29351"
+       id="rect908-8-4-6-7-5"
+       width="32.569805"
+       height="33.122814"
+       x="110.76333"
+       y="125.81152" />
+    <rect
+       style="opacity:0.49201278;fill:#000000;fill-opacity:0.380769;stroke:#241c1c;stroke-width:0.4"
+       id="rect835-2-5-0-6-2-9-1"
+       width="6.9490075"
+       height="5.8799295"
+       x="123.77438"
+       y="128.74097" />
+    <text
+       id="text986-4-8-5-9-0-8"
+       y="145.51889"
+       x="118.26647"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;opacity:0.492013;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-size:4.23333px;stroke-width:0.264583"
+         y="145.51889"
+         x="118.26647"
+         id="tspan984-83-3-4-3-4-6"
+         sodipodi:role="line">DFTWS4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.56367px;line-height:1.25;font-family:sans-serif;opacity:0.492013;stroke-width:0.334095"
+       x="118.57909"
+       y="152.25478"
+       id="text1048-9-1-4-3-2"><tspan
+         sodipodi:role="line"
+         id="tspan1046-0-9-7-5-6"
+         x="118.57909"
+         y="152.25478"
+         style="stroke-width:0.334095">129.10.2.4</tspan></text>
+    <path
+       sodipodi:nodetypes="cccc"
+       id="path964-2-8"
+       d="m 124.0055,109.18604 0.0294,10.56611 -34.954386,0.52806 v 8.31604"
+       style="opacity:1;fill:none;stroke:#000000;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       style="opacity:1;fill:none;stroke:#000000;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 133.74154,108.9507 0.02,12.89442 -6.49682,0.0786 v 6.87119"
+       id="path964-2-8-4"
+       sodipodi:nodetypes="cccc" />
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:0.380769;stroke:#241c1c;stroke-width:0.4"
+       id="rect835-9"
+       width="6.9490075"
+       height="5.8799295"
+       x="111.30493"
+       y="103.32547" />
+    <rect
+       y="103.35337"
+       x="101.93642"
+       height="5.8799295"
+       width="6.9490075"
+       id="rect835-3-9"
+       style="opacity:1;fill:#d7d7d7;fill-opacity:1;stroke:#707070;stroke-width:0.4;stroke-opacity:1" />
+    <rect
+       y="103.17191"
+       x="120.69333"
+       height="5.8799295"
+       width="6.9490075"
+       id="rect835-9-2"
+       style="opacity:1;fill:#000000;fill-opacity:0.380769;stroke:#241c1c;stroke-width:0.4" />
+    <rect
+       y="103.14402"
+       x="130.06183"
+       height="5.8799295"
+       width="6.9490075"
+       id="rect835-9-7"
+       style="opacity:1;fill:#000000;fill-opacity:0.380769;stroke:#241c1c;stroke-width:0.4" />
+    <rect
+       y="128.74097"
+       x="123.77438"
+       height="5.8799295"
+       width="6.9490075"
+       id="rect835-9-73"
+       style="opacity:1;fill:#000000;fill-opacity:0.380769;stroke:#241c1c;stroke-width:0.4" />
+    <rect
+       y="129.00552"
+       x="45.986858"
+       height="5.8799295"
+       width="6.9490075"
+       id="rect835-9-9"
+       style="opacity:1;fill:#000000;fill-opacity:0.380769;stroke:#241c1c;stroke-width:0.4" />
   </g>
 </svg>
