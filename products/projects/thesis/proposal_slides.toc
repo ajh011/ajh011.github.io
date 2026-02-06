@@ -1,5 +1,0 @@
-\beamer@sectionintoc {1}{Graph Neural Networks}{15}{0}{1}
-\beamer@subsectionintoc {1}{1}{Crystal Hypergraphs}{30}{0}{1}
-\beamer@sectionintoc {2}{$O(3)$-Equivariant Networks}{49}{0}{2}
-\beamer@subsectionintoc {2}{1}{Tensor Prediction}{79}{0}{2}
-\beamer@sectionintoc {3}{Material Symmetry}{100}{0}{3}

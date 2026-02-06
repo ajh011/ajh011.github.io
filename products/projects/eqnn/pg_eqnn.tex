@@ -1,0 +1,478 @@
+\documentclass[11pt]{beamer}
+\usetheme{Goettingen}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{extarrows}
+\usepackage{dirtree}
+\usepackage[hang,flushmargin]{footmisc}
+
+\title{Point Group Equivariant Convolutional Graph Neural Networks}
+\author{Alex Heilman}
+%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{} 
+%\logo{} 
+%\date{} 
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/\inserttotalframenumber
+}
+
+
+\usepackage[style=numeric,backend=bibtex]{biblatex}
+\addbibresource{chgcnn.bib}
+
+\newenvironment{boxed2}
+    {\begin{center}
+    \begin{tabular}{|p{0.95\textwidth}|}
+    \hline\\
+    }
+    { 
+    \\\\\hline
+    \end{tabular} 
+    \end{center}
+    }
+
+
+\renewbibmacro*{\tiny cite:title}{\tiny%
+  \printtext[bibhyperref]{%
+    \printfield[citetitle]{labeltitle}%
+    \setunit{\space}%
+    \printtext[parens]{\printdate}%
+  }%
+}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+%\begin{frame}
+%\tableofcontents
+%\end{frame}
+
+\begin{frame}{Overview}
+\begin{itemize}
+	\item Point Group Irreps
+	\begin{itemize}
+	\item Scalar Harmonics
+	\item Transformation Matrices
+	\item State Labelling
+	\end{itemize}
+	\item PGEqnn
+	\begin{itemize}
+	\item Graphs
+	\item Models
+	\end{itemize}
+	\item Band Representations
+	\begin{itemize}
+		\item What is a band representation?
+		\item What basis do they act on?
+		%\item TQC Tables
+	\end{itemize} 
+\end{itemize}
+\end{frame}
+
+\section{Point Group Harmonics}
+
+\begin{frame}{Scalar Harmonics}
+	The  scalar-valued point group harmonics $H:\mathbb{R}^3\rightarrow \mathbb{R}$ are analogous to the scalar-valued spherical harmonics $Y:\mathbb{R}^3\rightarrow \mathbb{R}$ in $SO(3)$:
+	
+	$$H_{\mu ds}^{\ell}= (U^{\ell})_{\mu ds}^{m}Y_{m}^{\ell}$$
+	
+	Where $H$ is indexed by $\ell$ as usual, as well as the irreducible representation $\mu$ of the point group, dimension $d$ and, (sometimes) multiplicity $s$. 
+	
+	\begin{boxed2}
+		
+		\vspace{-.5cm}
+		
+		\textbf{Example: Cubic Harmonics}
+		
+		The cubic harmonics are the point group harmonics of the cubic point group $O_h$. See \url{https://winter.group.shef.ac.uk/orbitron/atomic_orbitals/5f/index.html} for the $5f$ cubic orbitals. 
+	\end{boxed2}
+\end{frame}
+
+\begin{frame}{Subgroup Chains}
+$SO(3)$ only partitions spaces into $2\ell+1$-dimensional subspaces, with \textit{rotational index} $\ell$ , labeling the $SO(3)$ irrep as which it transforms. 
+$$
+\lbrace Y^{\ell}\rbrace
+$$
+
+The additional $m$ of $Y^{\ell}_{m}$ is the \textit{azimuthal index} resulting from a labeling according to $SO(2)$ irreps, conventionally chosen to align with the $x,y$ plane in Cartesian space.
+
+$$
+SO(3)\subset SO(2)
+$$
+$$
+\ell \quad\quad m
+$$
+
+This compound labeling is thus according to some \textit{subgroup chain}.
+
+\end{frame}
+
+\begin{frame}{Subgroup Chains (cont.)}
+
+\begin{boxed2}
+	
+	\vspace{-.5cm}
+	
+	\textbf{Example: $O(3)$ Harmonics}
+	
+	Consider the subgroup chain
+	$$
+	O(3)\subset O(2)\subset C_i 
+	$$
+	where $C_i$ is the group of order two containing the inversion operation. In this case, we can label harmonics along an additional index $p$ for parity,
+	$$
+	Y_{\ell}^{mp}
+	$$
+	This denotes the irrep of $C_i$ which the harmonic transforms as.
+\end{boxed2}
+\end{frame}
+
+\begin{frame}{Point Group Labels}
+This compound labeling can be applied to point groups, which are always subgroups of $O(3)$.
+
+\begin{center}
+\includegraphics[scale=0.18]{pg_subgroup_chains.png}$^{[1]}$
+\end{center}
+These provide a convenient labeling scheme for states and properties of physical systems with such symmetries.
+
+{\tiny [1] https://commons.wikimedia.org/wiki/File:Group-subgroup\_relationship\_\%283D\%29.png}
+\end{frame}
+
+
+\begin{frame}{Wigner-D Matrices}
+The different irrep-labeled subspaces of some vector space transform independent of one another under the representation of such group elements.
+
+$$
+H(Rx) = \sum_{\ell}\mathcal{D}^{\ell}(R)H^{\ell}(x)
+$$
+
+For the point groups, these are the Wigner-D matrices $\mathcal{D}^{\ell}$, which are block-diagonal in PG bases for their group operations.
+$$
+\mathcal{D}^{\ell}(g)_{\mu_i \nu_j}\propto \delta_{\mu\nu} \ \ \text{for  }g\in PG 
+$$
+
+These can be gotten from the usual $m$-component instantiations with $U$.
+$$
+D^{(\ell)}_{\mu_i\nu_j} = U_{m\nu_j }D^{(\ell)}_{mn}U^*_{n\mu_i}
+$$
+\end{frame}
+
+\begin{frame}{Wigner-Eckhart Theorem}
+The Wigner Eckhart Theorem states that the resultant state of an operator of some irrep label depends on the irrep label of the state of the vector on which it acts.
+
+$$
+\langle j\,m|T_{q}^{(k)}|j'\,m'\rangle =\langle j'\,m'\,k\,q|j\,m\rangle \langle j\|T^{(k)}\|j'\rangle
+$$
+
+These relations allow us to reduce the number of free components of operators into a minimal set of \textit{irreducible tensor components}.
+
+\begin{boxed2}
+	
+	\vspace{-.5cm}
+	
+	\textbf{Example: Tight-Binding Hamiltonians}
+In symmetric systems, the Hamiltonian must transform as the trivial irrep $A_1$:
+$$
+	\langle \ell \Gamma d|H_{A_1}^{(k)}|\ell'\Gamma'd'\rangle =\delta_{\Gamma,\Gamma'}\delta_{d,d'}\langle \ell \Gamma d, k A_1|\ell'\Gamma' d' \rangle \langle \ell\|H^{(k)}\|\ell'\rangle
+$$
+
+\end{boxed2}
+
+\end{frame}
+
+%\begin{frame}{Clebsch-Gordan Coefficients}
+%Dirl's with U
+%\end{frame}
+
+
+\begin{frame}{Equivariant Network Components}
+\begin{itemize}
+	\item Self-interaction: $$
+	V_{acm}^{\ell} \rightarrow  \sum _{c}W^{\ell}_{c'c}V_{acm}^{\ell}
+	$$
+	\item Convolution:
+	$$
+	V_{acm_i}^{\ell_i} \rightarrow \sum_{m_f,m_i}c_{\ell_im_i\ell_fm_f}^{\ell_o m_o}\sum_{b}F^{\ell_f\ell_i}_{cm_f}(r_{ab})V_{bcm_i}^{\ell_i}Y^{\ell_f}_{m_f}(\hat{r}_{ab})
+	$$
+	\item Non-linearities:
+	$$
+	V_{acA_{1}}^{\ell=0}\rightarrow \sigma(V_{acA_{1}}^{\ell=0})
+	$$
+	\item Steering:
+	$$
+	V_{acm_i}^{\ell_i} \rightarrow \mathcal{D}^{\ell}_{m_i'm_i}V_{acm_i}^{\ell_i}
+	$$
+	\item Pooling:
+	$$
+	\text{AGG}_{a}(\lbrace V_{acm}^{\ell}\rbrace)
+	$$
+\end{itemize}
+
+\end{frame}
+
+\section{PGEqNN}
+\begin{frame}{PGEqNN}
+Code implementing the above can be found at: \url{https://github.com/qmatyanlab/PGEqNN/}
+
+\vspace{0.3cm}
+
+\medskip
+
+\dirtree{%
+	.1 pg\_eqnn.
+	.1 core.
+	.2 transformation.
+	.2 vector.
+	.2 wigner.
+	.2 scalar\_harmonic.
+	.1 torch.
+	.2 model.
+	.2 graph.
+}
+
+Note this package require manual installation of MultiPie [1] for the transformation matrices $U$.
+
+\vspace{0.3cm}
+
+{\small [1] \url{https://github.com/CMT-MU/MultiPie/}.}
+\end{frame}
+
+
+\begin{frame}{Scalar Harmonics}
+Handled with core/harmonic.py
+
+\vspace{0.45cm}
+
+$\bullet$ Class ScalarPGH can be used to evaluate scalar harmonics
+
+\vspace{0.35cm}
+
+$\bullet$ Calling ScalarPGH returns a set of all scalar harmonics for some $\mathbb{R}^3$ vector
+
+\vspace{0.35cm}
+
+$\bullet$ Used to evaluate edge harmonics through convolution
+
+\end{frame}
+
+\begin{frame}{Transformation Matrices}
+Handled with core/tranformation.py
+
+\vspace{0.45cm}
+
+$\bullet$ Class generate\_U returns transformation matrices from $SO(2)$ bases
+
+\vspace{0.35cm}
+
+$\bullet$  Class generate\_C returns complex-to-real transformation matrices in $SO(2)$ bases and openmx reordering matrices for
+
+\vspace{0.35cm}
+
+$\bullet$ Class generate\_R returns reordering matrix for OpenMX real harmonics from conventional 
+
+\end{frame}
+
+\begin{frame}{Vectors}
+	Handled with core/vector.py
+	
+	\vspace{0.45cm}
+	
+	$\bullet$ Class PGHVectorSet track irrep and channel dimensions of features
+	
+	\vspace{0.35cm}
+	
+	$\bullet$ Class CGSet returns PG Clebsch-Gordan coefficients
+	
+	\vspace{0.35cm}
+	
+	$\bullet$ Can transform vectors with PG Wigner-D's (imported from core/wigner.py)
+	
+	\vspace{0.35cm}
+	
+	$\bullet$ Perform CG expansions between PGHVectorSets
+	
+\end{frame}
+
+\begin{frame}{Crystal Graphs}
+Handled with torch/graph.py
+
+\vspace{0.45cm}
+
+$\bullet$ Generates graphs from material structures
+
+\vspace{0.35cm}
+
+$\bullet$ Can create minimal symmetrized graphs for materials, associates node features with Wyckoff positions
+
+\vspace{0.35cm}
+
+$\bullet$ Expands radii with RBFs
+\end{frame}
+
+\begin{frame}{Equivariant Model}
+Handled with torch/model.py
+
+	
+\vspace{0.45cm}
+
+$\bullet$ Self-interaction
+
+\vspace{0.35cm}
+
+$\bullet$ Radial functions
+
+\vspace{0.35cm}
+
+$\bullet$ Convolution
+
+\end{frame}
+
+
+\begin{frame}{Band Representation}
+	Band representations are induced representations of space groups, formed from it's corresponding point group representation.
+	
+	$$
+	\text{Band Representation} = \rho_{PG\uparrow SG}
+	$$
+	
+	Since a point group can be used to generate a coset decomposition of it's space group.
+\end{frame}
+
+\begin{frame}{Induced Representations}
+	An induced representation is conceptually the opposite of a 'reduced representation'
+	
+	\vspace{0.15cm}
+	
+	
+	Use subgroup $G$ representation $\tilde{\rho}$ to form representation $\rho$ of parent $H$:
+	$$
+	\rho_{\alpha i ,\beta j}(h) = \begin{cases}
+		\ \ \tilde{\rho}(g)_{ij}	\quad\text{if } h_{\alpha}^{-1}h h_{\beta}=g\in G \\ 
+		\ \ 0 \quad \quad \quad  \text{else} \\
+	\end{cases}
+	$$
+	where $\alpha$ indexes a coset decomposition of $H$  into $G\subset H$.
+	
+	
+	\begin{boxed2}
+		
+		\vspace{-.61cm}
+		\footnotesize
+		\textbf{Example: Induced Representation of $S_2$} 
+		
+		Take trivial group $E$ with representation $\tilde{\rho}(E)=1$. Induced rep. of $S_2$ then is:
+		$$
+		\rho_{S_2}(\mathbb{I})=\begin{bmatrix}
+			\tilde{\rho}(\mathbb{I}) &\tilde{\rho}([12]) \\
+			\tilde{\rho}([12])&\tilde{\rho}([12][12]) \\
+		\end{bmatrix}
+		=\begin{bmatrix}
+			1 & 0 \\
+			0 & 1 \\
+		\end{bmatrix}
+		$$
+		$$
+		\rho_{S_2}([12]) =\begin{bmatrix}
+			\tilde{\rho}([12]) &\tilde{\rho}([12][12]) \\
+			\tilde{\rho}([12][12])&\tilde{\rho}([12][12][12]) \\
+		\end{bmatrix}
+		=\begin{bmatrix}
+			0 & 1 \\
+			1 & 0 \\
+		\end{bmatrix}
+		$$
+		\vspace{-.3cm}
+		
+	\end{boxed2}	
+	
+	
+\end{frame}
+
+\begin{frame}{Band Rep. Bases}
+	What's really interesting is the basis on which these band representations act. 
+	$$
+	\rho_{PG\uparrow SG}(Tg)W_{i\alpha}(r-t)= \sum_{j}^{d_{\rho}}[\rho(g)]_{ji}W_{j\beta}(r-Rt-t_{\beta\alpha})
+	$$
+	This basis represents exponentially-localized Wannier functions [1].
+	
+	\vspace{0.4cm}
+	
+
+	However, not all bands admit a band representation! Those that do not are considered topological bands.
+
+	\vspace{0.4cm}
+	
+	{\small [1] \url{https://arxiv.org/pdf/2006.04890}}
+\end{frame}
+
+\begin{frame}{Conclusion}
+	\begin{itemize}
+		\item Point Group Irreps
+		\begin{itemize}
+			\item Scalar Harmonics
+			\item Transformation Matrices
+			\item State Labelling
+		\end{itemize}
+		\item PGEqnn
+		\begin{itemize}
+			\item Graphs
+			\item Models
+		\end{itemize}
+		\item Band Representations
+		\begin{itemize}
+			\item What is a band representation?
+			\item What basis do they act on?
+		\end{itemize} 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Computational Resource Repo}
+	A latex document detailing the set up of new cluster nodes is available at:
+	{\small
+	\url{https://github.com/qmatyanlab/ComputationalResources/}}
+	
+	\vspace{0.15cm}
+	
+	
+	\medskip
+	
+	\dirtree{%
+	.1 CompResourcesReport.pdf.
+	.1 tex.
+	.1 slurm.
+	.2 sbatch-example.
+	.1 ansible-playbooks.
+	.2 openmx-setup.
+	.2 slurm-setup.}
+	
+	\vspace{0.3cm}
+	
+	This contains ansible-playbooks for the automated setup and an example sbatch file.
+	
+\end{frame}
+
+\section{Topological Quantum Chemistry}
+
+
+
+
+\begin{frame}{TQC Tables}
+The label of a state along with it's Wyckoff position allow us to determine the high-symmetry k-points which it will have some influence over.
+
+\vspace{0.7cm}
+
+These effects are tabulated for instance, on bilbao or in certain Julia packages (SymmetricTB.jl).
+\end{frame}
+
+
+\end{document}

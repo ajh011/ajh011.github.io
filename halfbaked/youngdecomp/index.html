@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../../assets/css/halfbakedstyles.css">
     <link rel="stylesheet" href="../../assets/css/general.css">
     <link rel="stylesheet" href="../../assets/css/vendor.css">
-    <link rel="stylesheet" href="../../assets/css/saggingfloor.css">
+    <link rel="stylesheet" href="../../assets/css/youngtensors.css">
 
 
     <!-- favicons
@@ -150,7 +150,7 @@
                             <header class="entry__header">
     
                                 <h1 class="entry__title">
-                                    Young Decompostions of Tensors and GL-Invariant Spaces.
+                                    Young Decompostions of Tensors and Irreducible GL-Invariant Spaces.
                                 </h1>
 
                                 <div class="entry__meta">
@@ -183,7 +183,7 @@
 
                             <div class="entry__media">
                                 <figure class="alignwide center" >
-                                    <img src="../../assets/images/halfbaked/saggingfloor.svg"   alt="A sagging floor and the deflection of a simply-supported beam (Wood Credit: sukrit-lamthong from Pexels).">
+                                    <img src="../../assets/images/halfbaked/youngcover.svg"   alt="A graphic outlining a decomposition into Young Diagrams.">
                                 </figure>
                             </div>
 
@@ -197,20 +197,22 @@
                                     </p>
 
                                     <p class="drop-cap">
-                                        An invariant subspace with respect to some group \(G\) is one which is closed under operations \(g\in G\).
-                                        More intuitively, 'invariant' just means the operations in \(G\) don't take any element in the space outside of itself.
-                                        Naturally then, one may wonder about the smallest possible invariant subspaces of arbitrary tensor spaces, referred to 
+                                        An <em>invariant</em> subspace with respect to some group \(G\) is one which is closed under operations \(g\in G\).
+                                        More intuitively, for a space to be 'invariant' just means that operations in some group don't take any element in the space outside of itself. So, 
+                                        if some space  is said to split into a set of (disjoint) invariant subspaces, it simply means there's a set of subspaces that don't mix between 
+                                        each other under operations of the relevant group.
+                                        Naturally then, one may wonder about the smallest possible invariant subspaces of some tensor space; these are referred to 
                                         as <em>irreducible</em> subspaces.
                                     </p>
                                     <p>
-                                        Here we seek an approach to the decomposition of tensors (taken generally as \(\mathbb{C}^n\)) with respect to their corresponding
-                                        General Linear groups \(GL(\mathbb{C}^n)\). That is, we present the mathematics neccesary to construct projections onto 
-                                        irreducible invariant subspaces of tensors with respect to all invertible linear transformations on them.
+                                        Identifying and categorizing these irreducible spaces is essentially an application of group representation 
+                                        theory. A group representation is some mapping from a group's elements to linear operators on some vector space. 
                                     </p>
                                     <p>
-                                        Identifying and categorizing these irreducible spaces is essentially an application of group representation 
-                                        theory. The representations of \(GL(\mathbb{C}^n)\) are, by way of the Schur-Weyl Duality, indexed exactly by
-                                        the symmetric group \(S_n\) acting on the indices of the tensor space with operations \(\sigma_i\in S_n\).
+                                        Here we seek an approach to the decomposition of tensors (taken generally as \(\mathbb{C}^{\otimes n}\)) with respect to their corresponding
+                                        General Linear groups \(GL(\mathbb{C}^n)\).  The representations of \(GL(\mathbb{C}^n)\) are, by way of the Schur-Weyl Duality, indexed exactly by
+                                        the symmetric group \(S_n\) acting on the indices of the tensor space with operations \(\sigma_i\in S_n\). More specifically, we present the mathematics neccesary to construct projections onto 
+                                        irreducible invariant subspaces of tensors with respect to all invertible linear transformations on them.
                                     </p>
                                     <figure class="align center" >
                                         <img src="../../assets/images/halfbaked/simplysupportedbeam.svg"   alt="A simply supported beam.">
@@ -222,11 +224,12 @@
                                     </p>
                                     <p>
                                         Below, we first complete the motivation of this problem with a simple, likely familiar example. We then provide the tools 
-                                        to generalize the concept of \(GL\) invariant subspaces of tensor spaces, namely: Young diagrams, tableaux, and most importantly 
+                                        to generalize the concept of \(GL\) invariant subspaces of tensor spaces after discussing tensor spaces themselves, namely: Young diagrams, tableaux, and most importantly 
                                         symmetrizers.
                                     </p>
 
-                                    <h4>Example: Symmetric and Anti-symmetric Matrices</h4>
+                                    <div class="boxed">
+                                    <h4 class="boxtitle">Example: Symmetric and Anti-symmetric Matrices</h4>
                                     <p>
                                         Conisder a tensor of order 2, represented by a matrix \(M\) with components \(M_{ij}\). An arbitrary 
                                         matrix may always be broken into it's totally symmetric components \(S_{ij}\) and anti-symmetric components \(A_{ij}\), defined as:
@@ -234,10 +237,39 @@
                                             \begin{align*}
                                             S_{ij} &= \frac{1}{2}(M_{ij}+M_{ji})\\
                                             A_{ij} &=\frac{1}{2}(M_{ij}-M_{ji})\\
+                                            \\
                                              \Rightarrow M_{ij}&=S_{ij}+A_{ij}
                                             \end{align*}
                                         </div>
+                                        
+                                        This likely familiar decomposition is the case of \(GL\)-decomposition of order two tensors into irreducible subspaces.
                                     </p>
+                                    </div>
+
+                                    <h3>A Note on Tensors </h3>
+                                    <p>
+                                        Before continuining on to the characterization of GL-invariant tensor subspaces, I'd first like to comment on tensors themselves. Tensors are
+                                        often defined by physicist's somewhat recursively as <em>an object that transforms like a tensor</em>. This simply means, in some basis, the 
+                                        tensor's components \(a_{ijkl..}\) transform as:
+                                        <div class="eq">
+                                        \[
+                                        \hat{x}_i = \sum_{i'}R_{i}^{i'}\hat{x}_{i'}
+                                        \]
+                                        \[
+                                        a_{ijkl..}\ \hat{x}_i\otimes\hat{x}_j\otimes\hat{x}_k\otimes\hat{x}_l\otimes... = a'_{i'j'k'l'..}\ \hat{x}'_i\otimes\hat{x}'_j\otimes\hat{x}'_k\otimes\hat{x}'_l\otimes... 
+                                         \]
+                                         \[
+                                         a_{ijkl..}= \sum_{i,j,k,l,...}
+                                        a'_{i'j'k'l'..}(R^{-1})_{i}^{i'}(R^{-1})_{j}^{j'}(R^{-1})_{k}^{k'}(R^{-1})_{l}^{l'}...
+                                         \]
+                                    </div>
+                                    These tensors naturally live in tensor product spaces (hereafter, abrreviated to tensor spaces).
+                                    </p>
+                                    <p>
+                                        Here, we're most interested in group representations acting on tensor spaces (or, indices of tensor product spaces). To this end, it should be 
+                                        noted that while tensors are often constructed from several vector spaces, tensor product spaces are vector spaces as well.
+                                    </p>
+
                                     <h3>Conclusion & Extensions</h3>
                                     <p>
                                         Further decompositons with respect to subgroups of \(GL\) often can give more insight into 
@@ -249,7 +281,7 @@
                                         <strong>Tags:</strong>
                     
                                         <span class="entry__tag-list">
-                                            <a href="#0">Physics</a>
+                                            <a href="#0">Physics</a> <a href="#0">Math</a>
                                         </span>
                         
                                

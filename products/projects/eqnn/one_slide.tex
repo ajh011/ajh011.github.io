@@ -1,0 +1,108 @@
+\documentclass[11pt]{beamer}
+\usetheme{Goettingen}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{extarrows}
+\usepackage[hang,flushmargin]{footmisc}
+
+\title{Point Group Equivariant Convolutional Graph Neural Networks}
+\author{Alex Heilman}
+%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{} 
+%\logo{} 
+%\date{} 
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/\inserttotalframenumber
+}
+
+
+\usepackage[style=numeric,backend=bibtex]{biblatex}
+\addbibresource{chgcnn.bib}
+
+\newenvironment{boxed2}
+    {\begin{center}
+    \begin{tabular}{|p{0.95\textwidth}|}
+    \hline\\
+    }
+    { 
+    \\\\\hline
+    \end{tabular} 
+    \end{center}
+    }
+
+
+\renewbibmacro*{\tiny cite:title}{\tiny%
+  \printtext[bibhyperref]{%
+    \printfield[citetitle]{labeltitle}%
+    \setunit{\space}%
+    \printtext[parens]{\printdate}%
+  }%
+}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+%\begin{frame}
+%\tableofcontents
+%\end{frame}
+
+
+\begin{frame}{Group Definition}
+	A group $G$ is a set of elements $\lbrace g_1, ..., g_n\rbrace$ with a binary operation $*:G\times G \rightarrow G$ between elements that satisfies the conditions of identity, associativity, invertability, and closure.
+	
+	\begin{boxed2}
+		
+		\vspace{-.5cm}
+		
+		\textbf{Example: General Linear Group}
+		
+		The general linear group $GL(V)$ formed over some vector space $V$ is the set of non-singular $d_v\times d_v$ matrices acting on $V$ with the group operation being matrix multiplication. The general linear group is itself a vector space.
+	\end{boxed2}
+\end{frame}
+
+\begin{frame}{Vector Space Definition}
+	A vector space $V$ over a field $K$ is a group of vectors equipped with a distributive scalar multiplication. Vectors are often defined by way of a basis set that spans the space under scalar multiplication.
+	
+
+	\begin{boxed2}
+		
+		\vspace{-.61cm}
+		
+		\textbf{Example: $\mathbb{R}^3$, Real 3 Dimensional Space} 
+		
+		Locations in physical space may be modeled with a three dimensional vector space  $\mathbb{R}^3$ over the real numbers $\mathbb{R}$ with basis functions $\hat{x},\hat{y},\hat{z}$.
+		
+		\vspace{-.3cm}
+		
+	\end{boxed2}	
+	
+	
+		\begin{boxed2}
+		
+		\vspace{-.61cm}
+		
+		\textbf{Example: Functions on Real 3 Dimensional Space} 
+		
+		Scalar functions on physical space also form a vector space over the real numbers, albeit infinite-dimensional. In this case, the group operation between vectors (functions) is point-wise addition.
+		
+		\vspace{-.3cm}
+		
+	\end{boxed2}	
+	
+We may construct new vector spaces from sets of existing vector spaces by taking tensor products and direct sums.
+
+\end{frame}
+
+
+
+\end{document}

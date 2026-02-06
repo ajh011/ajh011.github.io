@@ -1798,6 +1798,71 @@
     \field{year}{2022}
   \endentry
 
+  \entry{equivariant_simplices}{inproceedings}{}{}
+    \name{author}{3}{}{%
+      {{hash=EF}{%
+         family={Eijkelboom},
+         familyi={E\bibinitperiod},
+         given={Floor},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Hesselink},
+         familyi={H\bibinitperiod},
+         given={Rob},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BEJ}{%
+         family={Bekkers},
+         familyi={B\bibinitperiod},
+         given={Erik\bibnamedelima J},
+         giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {PMLR}%
+    }
+    \strng{namehash}{EF+1}
+    \strng{fullhash}{EFHRBEJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{International Conference on Machine Learning}
+    \field{pages}{9071\bibrangedash 9081}
+    \field{title}{E $(n) $ Equivariant Message Passing Simplicial Networks}
+    \field{year}{2023}
+  \endentry
+
+  \entry{simplicial_networks}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=SD}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Dinghua},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Guanrong},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{SDCG1}
+    \strng{fullhash}{SDCG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{nwac038}
+    \field{title}{Simplicial networks: A powerful tool for characterizing
+  higher-order interactions}
+    \field{volume}{9}
+    \field{journaltitle}{Natl. Sci. Rev.}
+    \field{year}{2022}
+  \endentry
+
   \entry{csm_polyhedra}{article}{}{}
     \name{author}{2}{}{%
       {{hash=PM}{%

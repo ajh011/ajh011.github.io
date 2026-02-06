@@ -2,6 +2,8 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 
+\usepackage{authblk}
+
 \makeatletter
 \renewcommand \thesection{S\@arabic\c@section}
 \renewcommand\thetable{S\@arabic\c@table}
@@ -17,13 +19,17 @@
 
 
 %opening
-\title{Supplementary Materials for Crystal Hypergraph Convolutional Neural Networks}
 
+\title{Supplementary Information:\\ Crystal Hypergraph Convolutional Networks}
+\author{
+	Alexander J. Heilman$^{1}$, Weiyi Gong$^{1}$, and Qimin Yan\thanks{Corresponding Author: q.yan@northeastern.edu}$^{1}$
+}
+
+\affil{\textit{
+		$^1$Department of Physics, Northeastern University, 
+		Boston, MA 02115, USA}}
   
 \date{}
-
-
-\author{Alexander J. Heilman, Weiyi Gong, Qimin Yan}
 
 \begin{document}
 
@@ -57,7 +63,7 @@ For each convolutional structure, testing was done for a model with 3 convolutio
 	Post-Convolution Linear Width & 128\\
 	Number of Convolutional Layers & 3\\
 	Number of Epochs & 300 \\
-	Batch-size & 64 ($< 20,000$ Samples) \textit{or} 128 \\
+	Batch-size & 16 ($< 20,000$ Samples) \textit{or} 64 \\
 	Optimizer & SGD \\
 	Learning Rate (Epoch $<$150) & 0.01\\
 	Learning Rate (Epoch $>$150) & 0.001\\
@@ -87,23 +93,29 @@ Here, we incorporate a similar level of higher-order geometrical structure inste
 \section{Hyperedge Index}
 Hypergraphs are treated as a set of node feactures $x$, hyperedge features $h$, and hyperedge indices $I$. 
 The hyperedge index is, computationally, treated as a $[2,nm]$ dimensional vector (where $m$ is the number of hyperedges and $n$ is the avereage number of nodes contained in any hyperedge). 
-The first index is the node contained and the second index is the containing hyperedge (as in \cite{hypergraphconv}).
+The first index is the node contained and the second index is the containing hyperedge (as in \cite{hypergraphconv}). This scheme is depicted in an example in Figure \ref{hyperedgeindex_fig}
+\begin{figure}[!h]
 \begin{center}
-	\includegraphics[scale = 1]{hyperedge_index.pdf}
+	\includegraphics[scale = 0.8]{hyperedge_index.pdf}
 \end{center}
+\caption{Hyperedge index example for a specific hypergraph.}\label{hyperedgeindex_fig}
+\end{figure}
 
-\section{Message Number Scaling for Different Hyperedge Types}
-The rationale for including motifs in lieu of triplets (as in line graphs) is most poignant when considering material systems of increasing unit-cell size. To make this point most clear, here we consider the number of hyperedges required for the three different types of hyperedges considered in this work for different sized supercells of Manganese Oxide (MnO$_2$). 
+\section{\textcolor{red}{Message Number Scaling for Different Hyperedge Types}}
+\textcolor{red}{The rationale for including motifs in lieu of triplets (as in line graphs) is most poignant when considering material systems of increasing unit-cell size. To make this point most clear, here we consider the number of hyperedges required for the three different types of hyperedges considered in this work for different sized supercells of Manganese Oxide (MnO$_2$) in Figure \ref{message_scaling_fig}.}
 
+\begin{figure}[!h]
 \begin{center}
 	\includegraphics[scale=0.35]{message_scaling.pdf}
 \end{center}
+\caption{Figure tabulating the number of hyperedges of each type for increasing supercell size. The example material here is Manganese Oxide (MnO$_2$). }\label{message_scaling_fig}
+\end{figure}
+
 Here, the number of triplets clearly grows exponentially, whereas the number of bonds grows quadratically, and the number of motifs, linearly. As such, additional geometric resolution may be afforded by relatively few motif hyperedges, as compared to triplet-based constructions.
 
 
 \section{Case Study on Discrimination of Similar Environments}
-To demonstrate the importance of motif-level hyperedges in applications to material systems, the node embeddings of two compositionally-similar, but structurally distinct materials are considered here: $T$-phase and $H$-phase MoS$_2$. To demonstrate the effectiveness of the motif models in sooner recognizing structural differences, the difference in these node embeddings are compared within these material sets after 1 through 3 convolutional layers of either bond-, motif-, or triplet-level hyperedges. Node representation difference was calculated by subtracting the normalized dot-product of the central atom's
-node embeddings from one.
+To demonstrate the importance of motif-level hyperedges in applications to material systems, the node embeddings of two compositionally-similar, but structurally distinct materials are considered here: Trigonal ($T$-phase) and Hexagonal ($H$-phase) MoS$_2$. To demonstrate the effectiveness of the motif models in sooner recognizing structural differences, the difference in these node embeddings are compared within these material sets through 300 epochs of training for models with 1 convolutional layer of either bond-, motif-, or triplet-level hyperedges. Node representation difference was calculated by subtracting the normalized dot-product of the central atom's node embeddings from one. This node representation difference through training is shown in Figure \ref{node_diff_fig}.
 
 %\begin{figure}
 %\begin{center}
@@ -111,130 +123,258 @@ node embeddings from one.
 %\end{center}
 %\caption{Difference in node representations after 1-3 layers of either bond-, motif-, or triplet-only layers as determined by one minus the normalized dot product of central node representations for three crystalline phases of GeO$_2$. Note that the nodes under consideration are specified by bold black arrows overlayed on their material graphic. These material CIFs were taken from the Materials Project, and their corresponding MP-id is provided along with their graphic.}
 %\end{figure}
-While bond-only models could generally distinguish node embeddings of central atoms between different, but similar, structures after a few layers, motifs most often capture the structural differences earliest (that is, the one-layer models of motifs always show the greatest difference). However, it should be noted this metric is unreliable, insofar that neural networks are essentially black boxes and hence sheer differences in node embeddings are hard to translate directly to model performance. The ambiguity of this metric is made clear in the difference for 1H- vs 1T-MoS$_2$, where the initial motif features are orthogonal, but the node representation difference is minimal after the first layer.
+While bond-only models could generally distinguish the node embeddings of central atoms between these different, but similar, structures, the motif-based model captured the structural differences earliest (that is, the one-layer models of motifs always show the greatest difference). Specifically, the motif-only model had a representation difference of 0.004 after 1 epoch of training, whereas the triplet and bond-only models had an initial difference of 0.0005 and 0.00025, respectively. After 300 epochs, the motif-only model still had the largest difference of 0.075, while the triplet model's difference had increased to 0.008 and the bond-only model had remained similar with a difference of 0.00029. This demonstrates that the motif-only model had the greatest discrimination between the two similar environments, a difference relevant to the band gap target since $H$-phase MoS$_2$ is insulating (with a band gap of zero), and $T$-phase  MoS$_2$ is not (with a band gap of 1.2 eV). However, it should be noted this metric is unreliable, insofar that neural networks are essentially black boxes and hence sheer differences in node embeddings are hard to translate directly to model performance. 
 \begin{figure}[!h]
 \begin{center}
-	\includegraphics[scale=0.48]{MoS2_similar_cells.pdf}
+	\includegraphics[scale=0.4]{MoS2_similar_cells_update2.pdf}
 \end{center}
-\caption{Difference in node representations after 1-3 layers of either bond-, motif-, or triplet-only layers as determined by one minus the normalized dot product of central node representations for two phases of MoS$_2$, a common Transition Metal Dihalcogenide (TMD). }
+\caption{Normalized dot product difference between H-phase and T-phase MoS$_2$ central Molybdenum node representations across 300 epochs of 1 layer of either bond-, motif-, or triplet-only convolution. Here, red is the difference across epochs for the motif-only model; blue is for triplet-only model; and black represents the difference for the bond-only model.}\label{node_diff_fig}
 \end{figure}
 
 
 \section{Comparison of Order Parameters and Continuous Symmetry Measures as Motif Features}
-To compare the importance of motif features, the data set that most benefited from motif features were tested both with and without the two primary types of motif features considered in this work: Local Structure Order Parameters (LSOPs) as defined in \cite{orderparam1, orderparam2}; and Continuous Symmetry Measures \cite{csm_polyhedra,coord_polyhedra} for 59 common coordination polyhedra. Bond and motif convolutional models were tested on this bulk moduli dataset for 500 epochs with no motif features, only CSMs, only LSOPs, and both feature sets concatenated. For all tests, the batch size was 128, Stochastic Gradient Descent was used as the optimizer with an initial learning rate of 0.1, with a reduced learning rate of 0.01 being applied at epoch 300. These results are tabulated in \ref{motiffeattable}.
+To compare the importance of motif features, the data set that most benefited from motif features were tested both with and without the two primary types of motif features considered in this work: Local Structure Order Parameters (LSOPs) as defined in \cite{orderparam1, orderparam2}; and Continuous Symmetry Measures \cite{csm_polyhedra,coord_polyhedra} for 59 common coordination polyhedra. Bond and motif convolutional models were tested on this bulk moduli dataset for 500 epochs with no motif features, only CSMs, only LSOPs, and both feature sets concatenated. For all tests, the batch size was 128, Stochastic Gradient Descent was used as the optimizer with an initial learning rate of 0.1, with a reduced learning rate of 0.01 being applied at epoch 300. These results are tabulated in Table \ref{motiffeattable}.
 
+
+\begin{table}[!h]
 \begin{center}
 \begin{tabular}{|c|c|}
 	\hline
 \textbf{Motif}	&\textbf{Validation MAE} \\
 \textbf{Features} & $\text{Log}_{10}(K_{vrh})$\\
 	\hline
-	None & 0.777 \\
-	CSMs & 0.758 \\
-	LSOPs & 0.785 \\
-	Both &  0.772 \\
+	None & 0.0777 \\
+	CSMs & 0.0758 \\
+	LSOPs & 0.0785 \\
+	Both &  0.0772 \\
 	\hline
-\end{tabular}\label{motiffeattable}
+\end{tabular}
 \end{center}
-Suprisingly, the LSOP features negatively impact performance, both as the sole motif features and as compliments to CSM features. CSM-only features performed best on the validation set, suggesting they have offer better generalizatbility as a feature. This may be due to the fact that CSM-based features result in sparse (similar to one-hot) encodings, whereas LSOP features tend more towards scalar-valued features. That is, while both CSMs and LSOPs are scalar-valued, a large subset of incommensurate ideal shapes used in CSM calculations results in many zero entries, whereas LSOPs may generally be computed regardless and just return smaller scalar values, so that the sparse CSM features may more adequately distinguish environments through the model.
+\caption{Table showing validation results for model performance on bulk moduli after 500 epochs of training. Note that here, distinct validation and test sets are not used. Instead model performance is tested once on the validation set after training, with a 90\% training / 10\% validation split of the total data set.}\label{motiffeattable}
+\end{table}
+
+
+
+CSM-only features performed best on the validation set, suggesting they have offer better generalizatbility as a feature. This may be due to the fact that CSM-based features result in sparse (similar to one-hot) encodings, whereas LSOP features tend more towards scalar-valued features. That is, while both CSMs and LSOPs are scalar-valued, a large subset of incommensurate ideal shapes used in CSM calculations results in many zero entries, whereas LSOPs may generally be computed regardless and just return smaller scalar values, so that the sparse CSM features may more adequately distinguish environments through the model.
 
 \section{Performance on Matbench Folds}
 Results tabulated in the main text are averaged over 5 folds of nested cross-validation, with test indexes supplied by MatBench \cite{matbench}. Accordingly, the uncertainty in test performance $\Delta x$ is calculated as:
 \begin{equation}
 \Delta x = \frac{R}{2\sqrt{N}}
 \end{equation}
-with $R$ the range of values and $N$ the number of runs (here, 5 for the 5 folds). Furthermore, the test set performance for each fold is tabulated below.
-\begin{center}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		\multicolumn{4}{|c|}{MP - Band Gap} \\
-		\hline
-		 Fold & Bond-only & Bond \& Motif & Bond \& Triplet\\
-		\hline
-		1 & 0.353&0.367 &0.338 \\
-		2 & 0.360&0.374&0.323 \\
-		3 & 0.360&0.370&0.317 \\
-		4 & 0.357&0.356&0.321 \\
-		5 & 0.351&0.363&0.323\\
-		\hline
-	\end{tabular}
-\end{center}
-\begin{center}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		\multicolumn{4}{|c|}{MP - Formation Energy} \\
-		\hline
-		Fold & Bond-only & Bond \& Motif & Bond \& Triplet\\
-		\hline
-		1 & 0.353&0.367 &0.338 \\
-		2 & 0.360&0.374&0.323 \\
-		3 & 0.360&0.370&0.317 \\
-		4 & 0.357&0.356&0.321 \\
-		5 & 0.351&0.363&0.323\\
-		\hline
-	\end{tabular}
-\end{center}
-\begin{center}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		\multicolumn{4}{|c|}{MP - Metalicity} \\
-		\hline
-		Fold & Bond-only & Bond \& Motif & Bond \& Triplet\\
-		\hline
-		1 & 0.353&0.367 &0.338 \\
-		2 & 0.360&0.374&0.323 \\
-		3 & 0.360&0.370&0.317 \\
-		4 & 0.357&0.356&0.321 \\
-		5 & 0.351&0.363&0.323\\
-		\hline
-	\end{tabular}
-\end{center}
-\begin{center}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		\multicolumn{4}{|c|}{Log$_{10}$(K$_{vrh}$)} \\
-		\hline
-		Fold & Bond-only & Bond \& Motif & Bond \& Triplet\\
-		\hline
-		1 & 0.353&0.367 &0.338 \\
-		2 & 0.360&0.374&0.323 \\
-		3 & 0.360&0.370&0.317 \\
-		4 & 0.357&0.356&0.321 \\
-		5 & 0.351&0.363&0.323\\
-		\hline
-	\end{tabular}
-\end{center}
-\begin{center}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		\multicolumn{4}{|c|}{Log$_{10}$(G$_{vrh}$)} \\
-		\hline
-		Fold & Bond-only & Bond \& Motif & Bond \& Triplet\\
-		\hline
-		1 & 0.353&0.367 &0.338 \\
-		2 & 0.360&0.374&0.323 \\
-		3 & 0.360&0.370&0.317 \\
-		4 & 0.357&0.356&0.321 \\
-		5 & 0.351&0.363&0.323\\
-		\hline
-	\end{tabular}
-\end{center}
-\begin{center}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		\multicolumn{4}{|c|}{Log$_{10}$(K$_{vrh}$)} \\
-		\hline
-		Fold & Bond-only & Bond \& Motif & Bond \& Triplet\\
-		\hline
-		1 & 0.353&0.367 &0.338 \\
-		2 & 0.360&0.374&0.323 \\
-		3 & 0.360&0.370&0.317 \\
-		4 & 0.357&0.356&0.321 \\
-		5 & 0.351&0.363&0.323\\
-		\hline
-	\end{tabular}
-\end{center}
+with $R$ the range of values and $N$ the number of runs (here, 5 for the 5 folds). Furthermore, the test set performance for each fold is tabulated below. Furthermore, in the following, $\bar{x}$ denotes the average of the values in the column above. These results are shown in Tables S2-S10 below. Note that in the following the bond-only results reported are CGCNN's \cite{cgcnn} reported MatBench results since our code is implemented directly into CGCNN's publicly available source code.
 
+\newpage
+
+\begin{table}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{Perovskite - Formation Energy} \\
+			\multicolumn{4}{|c|}{Test MAE (meV/atom)}\\
+		\hline
+		Fold & Bond-only & Bond \& Motif & Bond \& Triplet\\
+		\hline
+		1 & 45.6&42.7&42.2 \\
+		2 & 46.2&43.3&42.7 \\
+		3 & 44.8&42.0&43.1 \\
+		4 & 45.4&40.4&42.3 \\
+		5 & 44.2&43.0&42.9\\
+		\hline
+		$\bar{x}$ &45.2 &42.3 & 42.6 \\
+		$\Delta x$ &0.4& 0.7& 0.2\\
+		\hline
+	\end{tabular}
+\end{center}
+\caption{Performance across the 5 MatBench test folds  on 18,928 materials of the perovskite formation energy target set.}
+\end{table}
+
+\begin{table}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{Log$_{10}$(K$_{vrh}$)} \\
+					\multicolumn{4}{|c|}{Test MAE  (Log$_{10}$GPa)}\\
+		\hline
+		Fold & Bond-only & Bond \& Motif & Bond \& Triplet\\
+		\hline
+		1 & 0.0702&0.0627 &0.0649 \\
+		2 & 0.0722&0.0649&0.0669 \\
+		3 & 0.0665&0.0613&0.0672 \\
+		4 & 0.0748&0.0667&0.0680 \\
+		5 & 0.0724&0.0623&0.0661\\
+		\hline
+		$\bar{x}$ &0.0712 &0.0636 & 0.0666 \\
+		$\Delta x$ &1.9$\times$10$^{-3}$& 1.2$\times$10$^{-3}$& 0.7$\times$10$^{-3}$\\
+		\hline
+	\end{tabular}
+\end{center}
+\caption{Performance across the 5 MatBench test folds on 10,987 materials of the bulk moduli target set.}
+\end{table}
+
+\begin{table}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{Log$_{10}$(G$_{vrh}$) } \\
+							\multicolumn{4}{|c|}{Test MAE  (Log$_{10}$GPa)}\\
+		\hline
+		Fold & Bond-only & Bond \& Motif & Bond \& Triplet\\
+		\hline
+		1 & 0.0870&0.0805 &0.0840 \\
+		2 & 0.0899&0.0815&0.0866 \\
+		3 & 0.0887&0.0817&0.0853 \\
+		4 & 0.0902&0.0797&0.0825 \\
+		5 & 0.0918&0.0813&0.0844\\
+		\hline
+		$\bar{x}$ &0.0895 &0.0809 & 0.0846 \\
+		$\Delta x$ &11$\times$10$^{-4}$& 4$\times$10$^{-4}$& 9$\times$10$^{-4}$\\
+		\hline
+	\end{tabular}
+\end{center}
+\caption{Performance across the 5 MatBench test folds on 10,987 materials of the  shear moduli target set.}
+\end{table}
+
+\begin{table}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{Highest Phonon Peak $\omega$ } \\
+		\multicolumn{4}{|c|}{Test MAE  (cm$^{-1}$)}\\
+		\hline
+		Fold & Bond-only & Bond \& Motif & Bond \& Triplet\\
+		\hline
+		1 & 81.2& 59.7 & 79.8 \\
+		2 & 45.1& 43.8 & 40.8 \\
+		3 & 54.3& 55.3 & 63.7 \\
+		4 & 56.6& 55.9 & 56.8 \\
+		5 & 51.7& 50.0 & 62.4\\
+		\hline
+		$\bar{x}$ &57.8 &52.9 & 60.7 \\
+		$\Delta x$ &8.1& 3.6& 8.7\\
+		\hline
+	\end{tabular}
+\end{center}
+\caption{Performance across the 5 MatBench test folds on 1,265 materials of the  phonon peak target set.}
+\end{table}
+
+\begin{table}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{Dielectric Constant} \\
+		\multicolumn{4}{|c|}{Test MAE}\\
+		\hline
+		Fold & Bond-only & Bond \& Motif & Bond \& Triplet\\
+		\hline
+		1 & 0.470 & 0.343 & 0.353 \\
+		2 & 0.572& 0.419 & 0.380 \\
+		3 & 0.730& 0.533 & 0.582 \\
+		4 & 0.611& 0.447 & 0.476 \\
+		5 & 0.610& 0.415 & 0.407\\
+		\hline
+				$\bar{x}$ &0.599 &0.431 & 0.440 \\
+		$\Delta x$ &0.058 & 0.043 & 0.051\\
+		\hline
+	\end{tabular}
+\end{center}
+\caption{Performance across the 5 MatBench test folds on 4,764 materials of the dielectric constant target set.}
+\end{table}
+
+\begin{table}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{Exfoliation Energy (Jdft2d)} \\
+		\multicolumn{4}{|c|}{Test MAE  (meV/Atom)}\\
+		\hline
+		Fold & Bond-only & Bond \& Motif & Bond \& Triplet\\
+		\hline
+		1 & 32.5 & 48.4 & 38.5 \\
+		2 & 51.1& 44.8 & 57.4 \\
+		3 & 69.4& 63.1 & 77.2 \\
+		4 & 42.7& 30.4 & 64.6 \\
+		5 & 48.4& 47.9 & 56.3\\
+		\hline
+		$\bar{x}$ &48.8&46.9& 58.8 \\
+		$\Delta x$ &8.3& 7.3&8.7 \\
+		\hline
+	\end{tabular}
+\end{center}
+\caption{Performance across the 5 MatBench test folds on the exfoliation energy target set for a set of 626 2D materials (labelled Jdft2d by MatBench).}
+\end{table}
+
+\begin{table}
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{|c|}{MP - Band Gap} \\
+		\multicolumn{3}{|c|}{Test MAE (meV)}\\
+		\hline
+		Fold & Bond-only & Bond \& Motif \\
+		\hline
+		1 & 0.298 & 0.239 \\
+		2 & 0.294 & 0.229 \\
+		3 & 0.296 & 0.226 \\
+		4 & 0.295 & 0.222 \\
+		5 & 0.304 & 0.239 \\
+		\hline
+		$\bar{x}$ &0.297
+		 &0.231 \\
+		$\Delta x$ & 0.002 & 0.004 \\
+		\hline
+	\end{tabular}
+\end{center}
+\caption{Performance across the 5 MatBench test folds on 106,113 materials of the Materials Project band gap target set.}
+\end{table}
+
+\begin{table}
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{|c|}{MP - Formation Energy} \\
+		\multicolumn{3}{|c|}{Test MAE (meV/atom)}\\
+		\hline
+		Fold & Bond-only & Bond \& Motif \\
+		\hline
+		1 & 34.0&34.7 \\
+		2 & 34.0&40.2 \\
+		3 & 32.8&36.9 \\
+		4 & 33.2&49.8 \\
+		5 & 34.6&37.0 \\
+		\hline
+		$\bar{x}$ &33.7&39.7 \\
+		$\Delta x$ &0.3&3.4\\
+		\hline
+	\end{tabular}
+\end{center}
+\caption{Performance across the 5 MatBench test folds on 132,752 materials of the Materials Project formation energy target set.}
+\end{table}
+
+\begin{table}
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{|c|}{MP - Metalicity} \\
+		\multicolumn{3}{|c|}{Test AUC}\\
+		\hline
+		Fold & Bond-only & Bond \& Motif\\
+		\hline
+		1 & .959& .960 \\
+		2 & .945& .957 \\
+		3 & .964& .958 \\
+		4 & .948& .960 \\
+		5 & .951& .955 \\
+		\hline
+		$\bar{x}$ &0.953&0.958 \\
+		$\Delta x$ & 4$\times$10$^{-3}$&1 $\times$10$^{-3}$\\
+		\hline
+		\end{tabular}
+\end{center}
+\caption{Performance across the 5 MatBench test folds on 106,113 materials of the Materials Project metallicity target set.}
+\end{table}
+
+\newpage
 
 \printbibliography 
 

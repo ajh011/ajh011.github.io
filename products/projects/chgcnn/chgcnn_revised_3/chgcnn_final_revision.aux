@@ -129,6 +129,12 @@
 \citation{Mulas2022}
 \abx@aux@cite{0}{Mulas2022}
 \abx@aux@segm{0}{0}{Mulas2022}
+\citation{equivariant_simplices}
+\abx@aux@cite{0}{equivariant_simplices}
+\abx@aux@segm{0}{0}{equivariant_simplices}
+\citation{simplicial_networks}
+\abx@aux@cite{0}{simplicial_networks}
+\abx@aux@segm{0}{0}{simplicial_networks}
 \citation{orderparam1}
 \abx@aux@cite{0}{orderparam1}
 \abx@aux@segm{0}{0}{orderparam1}
@@ -167,16 +173,16 @@
 \citation{linegraph_general}
 \abx@aux@cite{0}{linegraph_general}
 \abx@aux@segm{0}{0}{linegraph_general}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces An example of two distinct geometries that are mapped to the same distance-based crystal graph. With inclusion of a first-shell feature vector encoding local geometry however, these structures are mapped to two distinct crystal hypergraphs. Note these are two possible coordination environments in oxides, determined statistically in \blx@tocontentsinit {0}\cite {motifstats}.}}{4}{}\protected@file@percent }
+\newlabel{fig:graph_cntex}{{1}{4}{}{figure.1}{}}
+\newlabel{fig:graph_cntex@cref}{{[figure][1][]1}{[1][3][]4}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Crystal Hypergraph Convolution}{4}{}\protected@file@percent }
 \citation{cgcnn}
 \abx@aux@cite{0}{cgcnn}
 \abx@aux@segm{0}{0}{cgcnn}
 \citation{alignn}
 \abx@aux@cite{0}{alignn}
 \abx@aux@segm{0}{0}{alignn}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces An example of two distinct geometries that are mapped to the same distance-based crystal graph. With inclusion of a first-shell feature vector encoding local geometry however, these structures are mapped to two distinct crystal hypergraphs. Note these are two possible coordination environments in oxides, determined statistically in \blx@tocontentsinit {0}\cite {motifstats}.}}{4}{}\protected@file@percent }
-\newlabel{fig:graph_cntex}{{1}{4}{}{figure.1}{}}
-\newlabel{fig:graph_cntex@cref}{{[figure][1][]1}{[1][3][]4}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Crystal Hypergraph Convolution}{4}{}\protected@file@percent }
 \citation{mpnn}
 \abx@aux@cite{0}{mpnn}
 \abx@aux@segm{0}{0}{mpnn}
@@ -188,9 +194,6 @@
 \newlabel{fig:hypergraph-loop@cref}{{[figure][2][]2}{[1][3][]5}{}{}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Three Possible Approaches to Hyperedge Convolution}{5}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Hyperedge Relatives Graph}{5}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Overview of three possible message functions $M$ for nodes that generalize the message function in \blx@tocontentsinit {0}\cite {mpnn} to hyperedges $h$ with more (or less) than two nodes. $\text  {AGG}$ specifies some aggregation function acting on the set of node features in the hyperedge, such as max, min, or average.}}{6}{}\protected@file@percent }
-\newlabel{fig:hmpnn}{{3}{6}{}{figure.3}{}}
-\newlabel{fig:hmpnn@cref}{{[figure][3][]3}{[1][5][]6}{}{}{}}
 \citation{cgcnn}
 \abx@aux@cite{0}{cgcnn}
 \abx@aux@segm{0}{0}{cgcnn}
@@ -206,28 +209,47 @@
 \citation{cgcnn}
 \abx@aux@cite{0}{cgcnn}
 \abx@aux@segm{0}{0}{cgcnn}
-\citation{matproj}
-\abx@aux@cite{0}{matproj}
-\abx@aux@segm{0}{0}{matproj}
 \citation{matbench}
 \abx@aux@cite{0}{matbench}
 \abx@aux@segm{0}{0}{matbench}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Total Exchange Message Passing}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.3}Neighborhood Aggregation}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Model Architecture}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Results \& Discussion}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Total Exchange Message Passing}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.3}Neighborhood Aggregation}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Model Architecture}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Overview of three possible message functions $M$ for nodes that generalize the message function in \blx@tocontentsinit {0}\cite {mpnn} to hyperedges $h$ with more (or less) than two nodes. $\text  {AGG}$ specifies some aggregation function acting on the set of node features in the hyperedge, such as max, min, or average.}}{7}{}\protected@file@percent }
+\newlabel{fig:hmpnn}{{3}{7}{}{figure.3}{}}
+\newlabel{fig:hmpnn@cref}{{[figure][3][]3}{[1][5][]7}{}{}{}}
 \citation{matbench}
 \abx@aux@cite{0}{matbench}
 \abx@aux@segm{0}{0}{matbench}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Example architecture for the crystal hypergraph convolutional network implemented in this work. Essentially, the model is a generalization of CGCNN's \blx@tocontentsinit {0}\cite {cgcnn} model architecture with CGConv being replaced by $R$ hypergraph convolutional layers (CHGConv). Here, CHGConv updates nodes first according to edges (bonds), and then according to triplets or motifs. }}{8}{}\protected@file@percent }
 \newlabel{fig:architecture}{{4}{8}{}{figure.4}{}}
-\newlabel{fig:architecture@cref}{{[figure][4][]4}{[1][7][]8}{}{}{}}
+\newlabel{fig:architecture@cref}{{[figure][4][]4}{[1][6][]8}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results \& Discussion}{8}{}\protected@file@percent }
+\citation{matbench}
+\abx@aux@cite{0}{matbench}
+\abx@aux@segm{0}{0}{matbench}
+\citation{matbench}
+\abx@aux@cite{0}{matbench}
+\abx@aux@segm{0}{0}{matbench}
 \citation{matproj}
 \abx@aux@cite{0}{matproj}
 \abx@aux@segm{0}{0}{matproj}
+\citation{matbench}
+\abx@aux@cite{0}{matbench}
+\abx@aux@segm{0}{0}{matbench}
+\citation{matbench}
+\abx@aux@cite{0}{matbench}
+\abx@aux@segm{0}{0}{matbench}
 \citation{amdnet}
 \abx@aux@cite{0}{amdnet}
 \abx@aux@segm{0}{0}{amdnet}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{9}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Test results averaged over 5 folds of nested cross-validation for five MatBench target sets: highest frequency phonon peak $\omega _p$, refractive index $n$, perovskite formation energy $E_f$, and bulk moduli $K_{vrh}$ and shear moduli $G_{vrh}$. Note that the italicized numbers below the target name in parentheses correspond to the total size of each dataset, while test results are reported as an average on the test sets of the 5 MatBench \blx@tocontentsinit {0}\cite {matbench} folds. Best results are indicated in bold. The number of messages contributed per layer for each type of hyperedge is listed below the line dividing the tables elements for each target set, respectively.}}{10}{}\protected@file@percent }
+\newlabel{fig:matbench_table}{{1}{10}{}{table.1}{}}
+\newlabel{fig:matbench_table@cref}{{[table][1][]1}{[1][9][]10}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Test results for three Materials Project target sets: formation energy $E_f$, band gap $E_g$, and metallicity. Note that the italicized numbers below the target name in parentheses correspond to the total size of each dataset, while test results are reported as an average on the test sets of the 5 MatBench \blx@tocontentsinit {0}\cite {matbench} folds. Best results are indicated in bold. The number of messages contributed per layer for each type of hyperedge is listed below the line dividing the tables elements for each target set, respectively.}}{10}{}\protected@file@percent }
+\newlabel{fig:mp_table}{{2}{10}{}{table.2}{}}
+\newlabel{fig:mp_table@cref}{{[table][2][]2}{[1][9][]10}{}{}{}}
 \citation{contrastivelearn_motif}
 \abx@aux@cite{0}{contrastivelearn_motif}
 \abx@aux@segm{0}{0}{contrastivelearn_motif}
@@ -258,16 +280,9 @@
 \citation{o3transformer1}
 \abx@aux@cite{0}{o3transformer1}
 \abx@aux@segm{0}{0}{o3transformer1}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{9}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Test results averaged over 5 folds of nested cross-validation for five MatBench target sets: highest frequency phonon peak $\omega _p$, refractive index $n$, perovskite formation energy $E_f$, and bulk moduli $K_{vrh}$ and shear moduli $G_{vrh}$. Note that the italicized numbers below the target name in parentheses correspond to the total size of each dataset, while test results are reported as an average over performance on subsets of one-tenth the total size. Best results are indicated in bold. The number of messages contributed per layer for each type of hyperedge is listed below the line dividing the tables elements for each target set, respectively.}}{10}{}\protected@file@percent }
-\newlabel{fig:matbench_table}{{1}{10}{}{table.1}{}}
-\newlabel{fig:matbench_table@cref}{{[table][1][]1}{[1][9][]10}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Test results for three Materials Project target sets: formation energy $E_f$, band gap $E_g$, and metallicity. Here, each dataset included a total of 152,605 materials. Reported results are after 300 epochs of training and averaged over 5 folds of nested cross validation with test sets one-tenth the size of the total dataset. Best results are indicated in bold. Here, for the total dataset, bond edges contributed a total of 51,829,881 messages per layer; triplets contributed 330,198,684 messages per layer; and motifs 4,319,157 per layer.}}{10}{}\protected@file@percent }
-\newlabel{fig:mp_table}{{2}{10}{}{table.2}{}}
-\newlabel{fig:mp_table@cref}{{[table][2][]2}{[1][9][]10}{}{}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {7}Data Availability}{11}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {8}Acknowledgments}{11}{}\protected@file@percent }
-\abx@aux@read@bbl@mdfivesum{C3D989B43528BB1FF217FC21465270B2}
+\abx@aux@read@bbl@mdfivesum{5F6D82D482128D613AEBCD2C5519AB72}
 \abx@aux@defaultrefcontext{0}{mlcite1}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{mlreview1}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{mlreview2}{none/global//global/global/global}
@@ -303,6 +318,8 @@
 \abx@aux@defaultrefcontext{0}{tfn}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{e3nn}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{Mulas2022}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{equivariant_simplices}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{simplicial_networks}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{csm_polyhedra}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{chemenv}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{coordination_comp}{none/global//global/global/global}
@@ -349,6 +366,8 @@
 \abx@aux@defaultlabelprefix{0}{tfn}{}
 \abx@aux@defaultlabelprefix{0}{e3nn}{}
 \abx@aux@defaultlabelprefix{0}{Mulas2022}{}
+\abx@aux@defaultlabelprefix{0}{equivariant_simplices}{}
+\abx@aux@defaultlabelprefix{0}{simplicial_networks}{}
 \abx@aux@defaultlabelprefix{0}{csm_polyhedra}{}
 \abx@aux@defaultlabelprefix{0}{chemenv}{}
 \abx@aux@defaultlabelprefix{0}{coordination_comp}{}

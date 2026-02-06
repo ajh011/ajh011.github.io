@@ -438,5 +438,36 @@
     \field{month}{09}
     \field{year}{2020}
   \endentry
+
+  \entry{cgcnn}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=XT}{%
+         family={Xie},
+         familyi={X\bibinitperiod},
+         given={Tian},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=GJC}{%
+         family={Grossman},
+         familyi={G\bibinitperiod},
+         given={Jeffrey\bibnamedelima C},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{XTGJC1}
+    \strng{fullhash}{XTGJC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{14}
+    \field{pages}{145301}
+    \field{title}{Crystal graph convolutional neural networks for an accurate
+  and interpretable prediction of material properties}
+    \field{volume}{120}
+    \field{journaltitle}{{PRL}}
+    \field{year}{2018}
+  \endentry
 \enddatalist
 \endinput

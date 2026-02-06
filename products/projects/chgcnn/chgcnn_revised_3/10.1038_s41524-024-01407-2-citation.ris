@@ -1,0 +1,18 @@
+TY  - JOUR
+AU  - Lee, Brian H.
+AU  - Larentzos, James P.
+AU  - Brennan, John K.
+AU  - Strachan, Alejandro
+PY  - 2024
+DA  - 2024/09/07
+TI  - Graph neural network coarse-grain force field for the molecular crystal RDX
+JO  - npj Computational Materials
+SP  - 208
+VL  - 10
+IS  - 1
+AB  - Condense phase molecular systems organize in wide range of distinct molecular configurations, including amorphous melt and glass as well as crystals often exhibiting polymorphism, that originate from their intricate intra- and intermolecular forces. While accurate coarse-grain (CG) models for these materials are critical to understand phenomena beyond the reach of all-atom simulations, current models cannot capture the diversity of molecular structures. We introduce a generally applicable approach to develop CG force fields for molecular crystals combining graph neural networks (GNN) and data from an all-atom simulations and apply it to the high-energy density material RDX. We address the challenge of expanding the training data with relevant configurations via an iterative procedure that performs CG molecular dynamics of processes of interest and reconstructs the atomistic configurations using a pre-trained neural network decoder. The multi-site CG model uses a GNN architecture constructed to satisfy translational invariance and rotational covariance for forces. The resulting model captures both crystalline and amorphous states for a wide range of temperatures and densities.
+SN  - 2057-3960
+UR  - https://doi.org/10.1038/s41524-024-01407-2
+DO  - 10.1038/s41524-024-01407-2
+ID  - Lee2024
+ER  - 

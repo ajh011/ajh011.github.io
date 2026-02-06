@@ -15,7 +15,10 @@
 
 $SE(3)$-Equivariant networks have proven effective in applications within the physical sciences, suggesting that physical symmetries are a useful inductive bias in the design of machine learning techniques. While $SE(3)$ networks, in principle, can fully incorporate all possible symmetries of a system, in some applications other symmetry subgroups may be more relevant. One case of this is applications of machine learning to condensed matter systems, where atoms are arranged in periodic structures where each atomic position has some point symmetry group.
 
-In $SE(3)$ Equivariant networks, initial edge features $\vec{e}_{ij}^{L=0}$ are often spherical harmonic functions $Y_{m}^{\ell}(\vec{r}_{ab}$ evaluated for interatomic radii $\vec{r}_{ab}$ of atom pairs $(a,b)$. Point group features may be derived from interatomic radii by way of projection operators $\hat{P}_{ij}^{\mu}$, which project arbitrary vector spaces onto subspaces $V_{\mu}$ transforming as irreducible representations $\mu$ of point group $G$. While $SE(3)$ networks rely on Clebsch-Gordan expansions of tensor products of neighboring sites and filters, point group networks instead require generalized CG coefficients or `coupling coefficients' $U^{\gamma n}_{\alpha i \beta j}$ for the direct sum decompositions of point group-irreducible features:
+%Citations + Motivation
+%2 Ps, intro, motivation
+%separate Lit. Review
+In $SE(3)$ Equivariant networks, initial edge features $\vec{e}_{ij}^{L=0}$ are often spherical harmonic functions $Y_{m}^{\ell}(\vec{r}_{ab})$ evaluated for interatomic radii $\vec{r}_{ab}$ of atom pairs $(a,b)$. Point group features may be derived from interatomic radii by way of projection operators $\hat{P}_{ij}^{\mu}$, which project arbitrary vector spaces onto subspaces $V_{\mu}$ transforming as irreducible representations $\mu$ of point group $G$. While $SE(3)$ networks rely on Clebsch-Gordan expansions of tensor products of neighboring sites and filters, point group networks instead require generalized CG coefficients or `coupling coefficients' $U^{\gamma n}_{\alpha i \beta j}$ for the direct sum decompositions of point group-irreducible features:
 $$
 \psi_{n}^{\gamma} = \bigoplus_{\alpha i,\beta j} U^{\gamma n}_{\alpha i \beta j} \big( u^{\alpha}_i\otimes v_{j}^{\beta}\big)
 $$

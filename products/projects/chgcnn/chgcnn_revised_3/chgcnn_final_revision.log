@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.8)  30 JUL 2025 10:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.8)  14 AUG 2025 21:36
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -534,20 +534,17 @@ Package biblatex Warning: BibTeX reported the following issues
 )
 Package biblatex Info: Reference section=0 on input line 43.
 Package biblatex Info: Reference segment=0 on input line 43.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
 
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
 
 
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \vbox (badness 2961) has occurred while \output is active []
-
-
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -565,11 +562,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <graph2hgraph_tall_revise2.pdf, id=21, 710.12286pt x 391.6028pt>
 File: graph2hgraph_tall_revise2.pdf Graphic file (type pdf)
 <use graph2hgraph_tall_revise2.pdf>
-Package pdftex.def Info: graph2hgraph_tall_revise2.pdf  used on input line 118.
+Package pdftex.def Info: graph2hgraph_tall_revise2.pdf  used on input line 120.
 
 (pdftex.def)             Requested size: 454.47708pt x 250.62492pt.
 
-Overfull \hbox (1.50919pt too wide) in paragraph at lines 118--119
+Overfull \hbox (1.50919pt too wide) in paragraph at lines 120--121
  [][] 
  []
 
@@ -578,54 +575,45 @@ Overfull \hbox (1.50919pt too wide) in paragraph at lines 118--119
 <crystal_hgraph_ex+revamp3.pdf, id=22, 1594.52586pt x 1100.65733pt>
 File: crystal_hgraph_ex+revamp3.pdf Graphic file (type pdf)
 <use crystal_hgraph_ex+revamp3.pdf>
-Package pdftex.def Info: crystal_hgraph_ex+revamp3.pdf  used on input line 138.
+Package pdftex.def Info: crystal_hgraph_ex+revamp3.pdf  used on input line 140.
 
 (pdftex.def)             Requested size: 430.52774pt x 297.18144pt.
 
-LaTeX Warning: Command \r invalid in math mode on input line 144.
+LaTeX Warning: Command \r invalid in math mode on input line 146.
 
 
 
 [3]
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [4 <./graph2hgraph_tall_revise2.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 <HMPNN_loop.pdf, id=270, 659.08998pt x 567.03096pt>
 File: HMPNN_loop.pdf Graphic file (type pdf)
 <use HMPNN_loop.pdf>
-Package pdftex.def Info: HMPNN_loop.pdf  used on input line 212.
-(pdftex.def)             Requested size: 415.22888pt x 357.23138pt.
-
-Underfull \vbox (badness 3746) has occurred while \output is active []
+Package pdftex.def Info: HMPNN_loop.pdf  used on input line 214.
+(pdftex.def)             Requested size: 448.17525pt x 385.57594pt.
 
 
+[5 <./crystal_hgraph_ex+revamp3.pdf>]
 
-[5 <./crystal_hgraph_ex+revamp3.pdf>] [6 <./HMPNN_loop.pdf>]
 
-
-Underfull \hbox (badness 1205) in paragraph at lines 250--251
+Underfull \hbox (badness 1205) in paragraph at lines 252--253
 []\OT1/cmr/m/n/10 These learned node fea-tures are then mean
  []
 
-<arch_horiz.pdf, id=1464, 598.40115pt x 324.52094pt>
+<arch_horiz.pdf, id=1382, 598.40115pt x 324.52094pt>
 File: arch_horiz.pdf Graphic file (type pdf)
 <use arch_horiz.pdf>
-Package pdftex.def Info: arch_horiz.pdf  used on input line 254.
+Package pdftex.def Info: arch_horiz.pdf  used on input line 256.
 (pdftex.def)             Requested size: 448.79976pt x 243.3901pt.
 
+Underfull \vbox (badness 2293) has occurred while \output is active []
 
-[7]
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[6] [7 <./HMPNN_loop.pdf>]
 
 
 
@@ -634,50 +622,55 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [9] [10]
-Underfull \hbox (badness 3312) in paragraph at lines 382--385
+Underfull \hbox (badness 3312) in paragraph at lines 387--390
 \OT1/cmr/m/n/10 The code used in this pa-per's re-sults were
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--385
+Underfull \hbox (badness 10000) in paragraph at lines 387--390
 \OT1/cmr/m/n/10 built on pytorch-geometric and can be
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--385
+Underfull \hbox (badness 10000) in paragraph at lines 387--390
 \OT1/cmr/m/n/10 found in the fol-low-ing Github repos-i-tory:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--385
+Underfull \hbox (badness 10000) in paragraph at lines 387--390
 \OT1/cmr/m/n/10 https://github.com/qmatyanlab/CHGCNN.
  []
 
 
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 393--393
+Underfull \hbox (badness 1635) in paragraph at lines 398--398
 []\OT1/cmr/m/n/10 R. Ruff, P. Reiser, J. St^^?uhmer, and P.
  []
 
 
 
 [11]
-Underfull \hbox (badness 3792) in paragraph at lines 393--393
+Underfull \hbox (badness 3792) in paragraph at lines 398--398
 []\OT1/cmr/m/n/10 N. Thomas, T. Smidt, S. Kearnes, L.
  []
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 393--393
+Underfull \hbox (badness 1158) in paragraph at lines 398--398
 \OT1/cmr/m/n/10 Yang, L. Li, K. Kohlhoff, and P. Ri-ley,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--393
-[]\OT1/cmr/m/n/10 Z. Chen, X. Li, and J. Bruna,
+Underfull \hbox (badness 2027) in paragraph at lines 398--398
+[]\OT1/cmr/m/n/10 F. Ei-jkel-boom, R. Hes-selink, and E. J.
  []
 
 
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--398
+[]\OT1/cmr/m/n/10 Z. Chen, X. Li, and J. Bruna,
+ []
 
 
 
@@ -700,10 +693,10 @@ Package logreq Info: Writing requests to 'chgcnn_final_revision.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13034 strings out of 473362
- 252226 string characters out of 5725051
- 869380 words of memory out of 5000000
- 36021 multiletter control sequences out of 15000+600000
+ 13044 strings out of 473362
+ 252693 string characters out of 5725051
+ 870608 words of memory out of 5000000
+ 36031 multiletter control sequences out of 15000+600000
  567080 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,10n,81p,1887b,1347s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -726,7 +719,7 @@ ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2024/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2024/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti9.pfb>
-Output written on chgcnn_final_revision.pdf (12 pages, 999534 bytes).
+Output written on chgcnn_final_revision.pdf (12 pages, 1000978 bytes).
 PDF statistics:
  1733 PDF objects out of 2073 (max. 8388607)
  1140 compressed objects within 12 object streams
